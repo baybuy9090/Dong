@@ -213,7 +213,7 @@
       .controls { flex-direction: column; align-items: stretch; }
       .controls select, .controls input { width: 100%; min-width: 0; }
 
-      table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      table:not(.heatmap-table) { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 
       #brandRanking, #regionRanking {
         overflow-x: auto; overflow-y: visible; -webkit-overflow-scrolling: touch; padding-bottom: 4px;
@@ -1193,7 +1193,11 @@
 
       let heatmapHtml = `<table class="matrix-table heatmap-table">
         <thead><tr><th class="brand-col">브랜드 \\ 상권</th>` +
-        heatmapRegions.map(rg => `<th style="writing-mode:vertical-rl;white-space:nowrap;padding:6px 3px;font-size:10.5px;background:#2c2c34;color:white;" title="${rg}">${rg.replace('상권','')}</th>`).join('') +
+        heatmapRegions.map(rg => {
+          const label = rg.replace('상권', '').split('·').join('<br>');
+          return `<th style="padding:8px 4px;font-size:10.5px;font-weight:600;background:#2c2c34;color:white;` +
+            `min-width:58px;max-width:70px;white-space:normal;line-height:1.3;text-align:center;vertical-align:bottom;" title="${rg}">${label}</th>`;
+        }).join('') +
         `</tr></thead><tbody>`;
       tierOrder.forEach(tier => {
         const rowsInTier = brandRows.filter(r => tierOf(r.brand) === tier).sort((a,b) => b.total - a.total);
