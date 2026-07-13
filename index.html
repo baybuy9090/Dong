@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>정재의 동업계 남성 컨템 브랜드 입점 현황</title>
+  <title>정재의 동업계 남성 컨템 브랜드 현황</title>
   <meta name="description" content="롯데·현대·신세계 남성 컨템포러리 브랜드 입점 현황 자동 크롤링 대시보드">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="정재의 동업계 남성 컨템 브랜드 입점 현황">
+  <meta property="og:title" content="정재의 동업계 남성 컨템 브랜드 현황">
   <meta property="og:description" content="롯데·현대·신세계 남성 컨템포러리 브랜드 입점 현황 자동 크롤링 대시보드">
   <meta property="og:image" content="https://baybuy9090.github.io/Dong/og-image.jpg">
   <meta property="og:image:type" content="image/jpeg">
@@ -16,7 +16,7 @@
   <meta property="og:url" content="https://baybuy9090.github.io/Dong/">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="정재의 동업계 남성 컨템 브랜드 입점 현황">
+  <meta name="twitter:title" content="정재의 동업계 남성 컨템 브랜드 현황">
   <meta name="twitter:description" content="롯데·현대·신세계 남성 컨템포러리 브랜드 입점 현황 자동 크롤링 대시보드">
   <meta name="twitter:image" content="https://baybuy9090.github.io/Dong/og-image.jpg">
   <style>
@@ -177,6 +177,10 @@
     .news-card a:hover { text-decoration: underline; }
     .news-card .news-meta { font-size: 11px; color: #999; margin-top: 2px; }
     .news-card .news-empty { color: #bbb; font-size: 12px; }
+    .news-card-industry { grid-column: 1 / -1; background: #2c2c34; border-color: #2c2c34; }
+    .news-card-industry h4 { color: white; }
+    .news-card-industry a { color: #cfe8ff; }
+    .news-card-industry .news-meta { color: #9aa0a6; }
     .matrix-table { min-width: 900px; }
     .matrix-table th.brand-col, .matrix-table td.brand-col {
       position: sticky; left: 0; background: white; z-index: 1;
@@ -284,7 +288,7 @@
       <a class="contact-btn" href="mailto:lee.jj@lotte.net">✉️ 문의하기</a>
       <span class="copyright">© 이정재</span>
     </div>
-    <h1>동업계 남성 컨템 브랜드 입점 현황</h1>
+    <h1>동업계 남성 컨템 브랜드 현황</h1>
     <div class="subtitle">롯데·현대·신세계 자동 크롤링</div>
     <div class="last-updated" id="lastUpdated"><span class="dot"></span> 최종 업데이트 확인 중...</div>
   </div>
@@ -1860,13 +1864,17 @@
     }
 
     let newsData = {};
+    let newsIndustry = [];
     let newsLastUpdated = '';
+    // 뉴스 크롤링에서 제외된 브랜드 (검색 결과가 부실하거나 관련성이 낮아 제외 요청됨)
+    const NEWS_EXCLUDED_BRANDS = new Set(['지제로', 'TEN-C', '모드맨', '헤리티지플로스']);
 
     function loadNews() {
       fetch('news.json?_=' + Date.now())
         .then(res => { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
         .then(payload => {
           newsData = payload.data || {};
+          newsIndustry = payload.industry || [];
           newsLastUpdated = payload.lastUpdated || '';
           if (currentTab === 'news') renderNews();
         })
@@ -1882,39 +1890,50 @@
       return Math.floor(days / 30) + '개월 전';
     }
 
+    function newsArticleListHtml(items, escapeHtml) {
+      return items.map(a => `
+        <li>
+          <a href="${escapeHtml(a.link)}" target="_blank" rel="noopener">${escapeHtml(a.title)}</a>
+          <div class="news-meta">${escapeHtml(a.source || '')} · ${timeAgo(a.pubDate)}</div>
+        </li>`).join('');
+    }
+
     function renderNews() {
       const escapeHtml = s => String(s == null ? '' : s)
         .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
       const updatedEl = document.getElementById('newsUpdated');
       updatedEl.textContent = newsLastUpdated
-        ? '뉴스 최종 수집: ' + new Date(newsLastUpdated).toLocaleString('ko-KR', { year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit' })
+        ? '뉴스 최종 수집: ' + new Date(newsLastUpdated).toLocaleString('ko-KR', { year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit' }) + ' · 최근 2개월 이내 기사만 표시'
         : '뉴스 데이터 없음 (GitHub Actions "브랜드 뉴스 크롤링" 워크플로우가 아직 실행되지 않았을 수 있습니다)';
 
       const keyword = (document.getElementById('newsSearchInput').value || '').trim().toUpperCase();
-      const brands = ALL_BRANDS_ORDERED.filter(b => !keyword || b.toUpperCase().includes(keyword));
+      const brands = ALL_BRANDS_ORDERED.filter(b =>
+        !NEWS_EXCLUDED_BRANDS.has(b) && (newsData[b] || []).length > 0 && (!keyword || b.toUpperCase().includes(keyword)));
       const container = document.getElementById('newsList');
 
-      if (brands.length === 0) {
-        container.innerHTML = '<div class="empty" style="grid-column:1/-1;">검색 결과가 없습니다.</div>';
+      const industryCard = (!keyword && newsIndustry.length > 0)
+        ? `<div class="news-card news-card-industry">
+            <h4><span>🏬 남성 컨템포러리 업계 전체</span></h4>
+            <ul>${newsArticleListHtml(newsIndustry, escapeHtml)}</ul>
+          </div>`
+        : '';
+
+      if (brands.length === 0 && !industryCard) {
+        container.innerHTML = '<div class="empty" style="grid-column:1/-1;">최근 2개월 이내 표시할 뉴스가 없습니다.</div>';
         return;
       }
 
-      container.innerHTML = brands.map(b => {
+      const brandCards = brands.map(b => {
         const items = newsData[b] || [];
-        const list = items.length
-          ? items.map(a => `
-              <li>
-                <a href="${escapeHtml(a.link)}" target="_blank" rel="noopener">${escapeHtml(a.title)}</a>
-                <div class="news-meta">${escapeHtml(a.source || '')} · ${timeAgo(a.pubDate)}</div>
-              </li>`).join('')
-          : '<li class="news-empty">관련 뉴스가 없습니다.</li>';
         return `
           <div class="news-card">
             <h4><span>${escapeHtml(b)}</span><span class="tier-label">${escapeHtml(tierOf(b))}</span></h4>
-            <ul>${list}</ul>
+            <ul>${newsArticleListHtml(items, escapeHtml)}</ul>
           </div>`;
       }).join('');
+
+      container.innerHTML = industryCard + brandCards;
     }
 
     loadData('data.json', 'data.json');
