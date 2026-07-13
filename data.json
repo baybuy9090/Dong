@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-13T05:29:20.476Z",
+  "lastUpdated": "2026-07-13T06:03:43.103Z",
   "baselineAsOf": "2026-06",
   "data": [
     {
@@ -3638,6 +3638,14 @@
       "company": "롯데",
       "store": "본점",
       "brand": "바버",
+      "sales": "",
+      "note": "확인",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "신세계",
+      "store": "강남",
+      "brand": "POTTERY",
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"

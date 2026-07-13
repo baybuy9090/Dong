@@ -291,6 +291,9 @@ async function main() {
   // 뒤로 "남성" 마커가 안 나와서 여성 구역으로 오판됨) 사람이 확인한 건 항상 정상 처리.
   const MANUAL_CONFIRMED = [
     { company: '롯데', store: '본점', brand: '바버' },
+    // 신세계 강남 POTTERY: 실제 태그는 정상(shop_nm:"포터리")인데, 그보다 3천자+
+    // 앞에 있는 완전히 무관한 매장의 "여성캐주얼" 카테고리 표시 때문에 오판됨
+    { company: '신세계', store: '강남', brand: 'POTTERY' },
   ];
   MANUAL_CONFIRMED.forEach(({ company, store, brand }) => {
     const already = results.some(r => r.company === company && r.store === store && r.brand === brand);
