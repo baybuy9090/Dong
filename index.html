@@ -1409,7 +1409,7 @@
           <td>${r.brand}</td>
           <td>${r.strongest[0]}</td>
           <td style="font-weight:700;">${r.strongest[1]}</td>
-          <td style="font-size:11.5px;color:#8b2fc9;">${r.absent.slice(0,3).join(', ')}${r.absent.length>3 ? ' 외 '+(r.absent.length-3)+'곳' : ''}</td>
+          <td style="font-size:11.5px;color:#8b2fc9;">${r.absent.join(', ')}</td>
         </tr>`).join('') || '<tr><td colspan="5" style="text-align:center;color:#999;">뚜렷한 상권 격차가 있는 브랜드가 없습니다</td></tr>';
 
       renderRegionDetail(filtered, allRegions);
