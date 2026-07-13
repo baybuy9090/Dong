@@ -86,13 +86,6 @@ function matchBrands(rawText) {
     '우영미': ['디자이너 우영미', '우영미의 하이앤드', '우영미의 하이엔드'],
   };
 
-  // 남성/여성 라인이 같이 있어서 문서 전체 범위의 "가장 가까운 마커" 방식으로는
-  // 오탐이 잦은 브랜드. 이 브랜드들은 매칭 지점 바로 근처(전후 NEAR_WINDOW자)에
-  // 남성 마커가 확실히 있을 때만 인정하고, 없으면 포함하지 않는다 (기존 브랜드들의
-  // "문서 전체에서 가장 가까운 마커" 로직은 그대로 유지).
-  const AMBIGUOUS_BRANDS = new Set(['아페쎄맨', 'POTTERY', 'DKNY맨', '아스페시', 'CP컴퍼니']);
-  const NEAR_WINDOW = 400;
-
   function findAllMarkerPositions(text, markers, isMenSearch) {
     const positions = [];
     markers.forEach(marker => {
@@ -159,16 +152,6 @@ function matchBrands(rawText) {
     if (hasTrailingWomen) return;
     const hasTrailingMen = MEN_MARKERS_UP.some(w => trailingWindow.includes(w));
     if (hasTrailingMen) { found.add(m.brand); return; }
-
-    if (AMBIGUOUS_BRANDS.has(m.brand)) {
-      const nearBefore = upperText.substring(Math.max(0, m.start - NEAR_WINDOW), m.start);
-      const nearAfter = upperText.substring(m.end, m.end + NEAR_WINDOW);
-      const nearHasWomen = WOMEN_MARKERS_UP.some(w => nearBefore.includes(w) || nearAfter.includes(w));
-      if (nearHasWomen) return;
-      const nearHasMen = MEN_MARKERS_UP.some(w => nearBefore.includes(w) || nearAfter.includes(w));
-      if (nearHasMen) found.add(m.brand);
-      return;
-    }
 
     const lastMen = Math.max(-1, ...menPositions.filter(pos => pos <= m.start));
     const lastWomen = Math.max(-1, ...womenPositions.filter(pos => pos <= m.start));
