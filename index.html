@@ -145,14 +145,14 @@
     .matrix-table th.brand-col { background: #2c2c34; color: white; z-index: 2; }
     .matrix-cell { text-align: center; }
 
-    /* overflow-x:auto만 걸고 overflow-y는 visible로 둬도, 스펙상 둘 중 하나라도
-       visible이 아니면 나머지 축도 auto로 강제 계산돼서 sticky 기준점이 페이지가
-       아니라 이 박스 자신이 되어버림 → 아예 두 축 다 auto로 통일하고 높이를
-       제한해서 내부 스크롤 박스로 만들면 sticky가 이 박스 기준으로 확실히 동작함 */
-    #regionRanking { max-height: 640px; overflow: auto; border-radius: 8px; }
+    /* 가로 스크롤(overflow-x)이 걸린 박스 안에서는 CSS position:sticky가 페이지
+       기준이 아니라 그 박스 기준이 되어버려 원하는 대로 동작하지 않음(스펙상
+       overflow-x/y 중 하나라도 visible이 아니면 둘 다 스크롤 컨테이너가 됨).
+       그래서 헤더는 CSS sticky 대신 JS로 복제해서 고정하는 방식(아래 스크립트의
+       refreshHeatmapStickyHeaderContent/updateHeatmapStickyHeader)을 사용함. */
+    #regionRanking { overflow-x: auto; -webkit-overflow-scrolling: touch; }
     .heatmap-table { border-collapse: separate; border-spacing: 3px; }
-    .heatmap-table thead th { position: sticky; top: 0; z-index: 3; }
-    .heatmap-table thead th.brand-col { z-index: 4; }
+    #regionRankingStickyHeader table { margin: 0; }
     .heatmap-table td.matrix-cell {
       border-radius: 6px; transition: filter 0.12s ease, box-shadow 0.12s ease;
     }
@@ -289,7 +289,7 @@
 
     <div class="panel" style="margin-bottom:14px;">
       <h3>상권별 브랜드 입점 수 랭킹</h3>
-      <div class="subtitle" style="margin-bottom:8px;">브랜드별로 어느 상권에 몇 개 지점 입점했는지 한눈에 보는 표입니다. 표 안에서 스크롤하면 브랜드/상권 헤더가 위에 고정됩니다. 칸에 마우스를 올리면 지점명이 나옵니다. <span id="regionRankingLegend"></span></div>
+      <div class="subtitle" style="margin-bottom:8px;">브랜드별로 어느 상권에 몇 개 지점 입점했는지 한눈에 보는 표입니다. 페이지를 스크롤하면 이 표를 지나가는 동안 브랜드/상권 헤더가 화면 위에 고정됩니다. 칸에 마우스를 올리면 지점명이 나옵니다. <span id="regionRankingLegend"></span></div>
       <div id="regionRanking"></div>
     </div>
 
@@ -960,6 +960,10 @@
       if (tab === 'overview') renderOverview();
       if (tab === 'floor') renderFloorView();
       if (tab === 'map') renderMap();
+      if (tab !== 'overview') {
+        const stickyHeader = document.getElementById('regionRankingStickyHeader');
+        if (stickyHeader) stickyHeader.style.display = 'none';
+      }
     }
 
     let floorSub = 'store';
@@ -1103,6 +1107,46 @@
       if (currentTab === 'map' && kakaoMap) renderMapMarkers();
     }
 
+    // 상권별 브랜드 입점 수 히트맵의 헤더 행을 페이지 스크롤 기준으로 고정.
+    // 가로 스크롤 박스 안에서는 CSS position:sticky가 안정적으로 안 먹혀서
+    // (박스 자체가 스크롤 컨테이너가 되어버림), thead를 복제해 JS로 위치를 맞춤.
+    function updateHeatmapStickyHeader() {
+      const container = document.getElementById('regionRanking');
+      const overlay = document.getElementById('regionRankingStickyHeader');
+      const table = container && container.querySelector('table.heatmap-table');
+      if (!container || !overlay || !table) { if (overlay) overlay.style.display = 'none'; return; }
+      const thead = table.querySelector('thead');
+      const containerRect = container.getBoundingClientRect();
+      const theadRect = thead.getBoundingClientRect();
+      const show = theadRect.top < 0 && containerRect.bottom > theadRect.height;
+      if (show) {
+        overlay.style.display = 'block';
+        overlay.style.left = containerRect.left + 'px';
+        overlay.style.width = containerRect.width + 'px';
+        overlay.scrollLeft = container.scrollLeft;
+      } else {
+        overlay.style.display = 'none';
+      }
+    }
+    function refreshHeatmapStickyHeaderContent() {
+      const container = document.getElementById('regionRanking');
+      const table = container && container.querySelector('table.heatmap-table');
+      let overlay = document.getElementById('regionRankingStickyHeader');
+      if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'regionRankingStickyHeader';
+        overlay.style.cssText = 'display:none;position:fixed;top:0;overflow:hidden;z-index:50;box-shadow:0 2px 8px rgba(0,0,0,0.25);';
+        document.body.appendChild(overlay);
+        window.addEventListener('scroll', updateHeatmapStickyHeader, { passive: true });
+        window.addEventListener('resize', updateHeatmapStickyHeader);
+        container.addEventListener('scroll', () => { overlay.scrollLeft = container.scrollLeft; }, { passive: true });
+      }
+      if (!table) { overlay.style.display = 'none'; return; }
+      const thead = table.querySelector('thead');
+      overlay.innerHTML = '<table class="matrix-table heatmap-table" style="border-spacing:3px;">' + thead.outerHTML + '</table>';
+      updateHeatmapStickyHeader();
+    }
+
     function renderOverview() {
       const filtered = currentFiltered();
 
@@ -1224,6 +1268,7 @@
       });
       heatmapHtml += `</tbody></table>`;
       document.getElementById('regionRanking').innerHTML = heatmapHtml;
+      refreshHeatmapStickyHeaderContent();
       document.getElementById('regionRankingLegend').innerHTML = '적음 ' + SEQ_RAMP.map(c =>
         `<span style="display:inline-block;width:14px;height:14px;background:${c};vertical-align:middle;margin:0 1px;"></span>`
       ).join('') + ' 많음 (진할수록 해당 상권 내 입점 지점 수가 많음)';
