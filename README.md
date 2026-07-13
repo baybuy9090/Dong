@@ -6,15 +6,16 @@
 
 - `crawler.js` — 크롤링 스크립트 (Node.js)
 - `.github/workflows/crawl.yml` — 매달 1일 자동 실행 (수동 실행도 가능)
-- `data.json` — 크롤링 결과 (자동 생성/갱신됨)
-- `truth.json` — 정답 대조용 데이터 (직접 채워야 함, 아래 참고)
+- `data.json` — 최신 크롤링 결과 (자동 생성/갱신됨)
+- `history/YYYY-MM.json` — 매달 크롤링 결과 스냅샷 보관 (자동 생성), `history/index.json`은 보관된 월 목록
+- `baseline.json` — 비교 기준 스냅샷 (직접 채워야 함, 아래 참고). **"정답"이 아니라 `asOf`에 적힌 특정 시점에 수기로 확인한 데이터일 뿐**이며, 시간이 지나면 실제 현황과 자연히 달라질 수 있습니다. 대시보드의 "이전 데이터와 다름" 표시는 이 스냅샷 대비 다르다는 뜻이지, 크롤링이 틀렸다는 뜻이 아닙니다.
 - `index.html` — 대시보드 화면
 
 ## 처음 설정하는 방법
 
 1. **저장소 만들기**
    - GitHub에서 새 저장소 생성 (Public)
-   - 이 5개 파일을 그대로 올리기 (`crawler.js`, `.github/workflows/crawl.yml`, `data.json`, `truth.json`, `index.html`)
+   - 이 파일들을 그대로 올리기 (`crawler.js`, `.github/workflows/crawl.yml`, `data.json`, `baseline.json`, `index.html`)
 
 2. **GitHub Pages 켜기**
    - 저장소 → Settings → Pages
@@ -26,16 +27,20 @@
    - "Run workflow" 버튼으로 수동 실행 (완료까지 몇 분 소요, GAS와 달리 6분 제한 없음)
    - 완료되면 `data.json`이 자동으로 커밋됨 → 대시보드 새로고침하면 반영
 
-4. **정답 대조 데이터 채우기 (선택)**
-   - `truth.json`을 아래 형식의 배열로 채우기:
+4. **비교 기준 스냅샷 채우기 (선택)**
+   - `baseline.json`을 아래 형식으로 채우기 (`asOf`는 이 데이터를 확인한 시점):
    ```json
-   [
-     { "company": "롯데", "store": "본점", "brand": "타임옴므" },
-     { "company": "롯데", "store": "본점", "brand": "스톤아일랜드" }
-   ]
+   {
+     "asOf": "2026-06",
+     "data": [
+       { "company": "롯데", "store": "본점", "brand": "타임옴므" },
+       { "company": "롯데", "store": "본점", "brand": "스톤아일랜드" }
+     ]
+   }
    ```
    - "맨즈 컨템 현황" 시트에서 1로 표시된 (회사, 지점, 브랜드) 조합을 전부 이 형식으로 옮기면 됩니다.
-   - 비워두면(`[]`) 정답 대조 없이 크롤링 결과만 보여줍니다.
+   - 비워두면(`{"asOf":"","data":[]}`) 비교 없이 크롤링 결과만 보여줍니다.
+   - **이 파일은 정답지가 아닙니다.** `asOf` 시점 이후 신규 입점/철수가 생기면 실제 현황과 자연히 달라지므로, 주기적으로 최신 스냅샷으로 갱신하는 걸 권장합니다.
 
 ## 이후 사용
 

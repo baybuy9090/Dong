@@ -323,6 +323,7 @@
 
   <script>
     let allData = [];
+    let baselineAsOf = ''; // baseline.json이 "정답"이 아니라 어느 시점 스냅샷인지 (예: '2026-06')
     let currentTab = 'overview';
     let sortKey = null, sortDir = 1;
     let favOnly = false;
@@ -528,15 +529,15 @@
 
     function statusOf(r) {
       const note = r.note || '';
-      const truth = r.truthCheck || '';
+      const baseline = r.baselineCheck || '';
       if (note.includes('캐시 의심')) return 'warn';
-      if (truth.includes('오탐 의심')) return 'suspect';
+      if (baseline.startsWith('⚠')) return 'suspect';
       if (note.includes('신규 입점') || note.includes('누락')) {
         return note.includes('누락') ? 'removed' : 'new';
       }
       return 'none';
     }
-    // 요약 카드/필터용: '캐시 의심'과 '정답 불일치'는 둘 다 "사람이 확인해야 하는 것"으로 묶음
+    // 요약 카드/필터용: '캐시 의심'과 'baseline과 다름'은 둘 다 "사람이 확인해야 하는 것"으로 묶음
     function statusGroup(r) {
       const s = statusOf(r);
       if (s === 'warn' || s === 'suspect') return 'verify';
@@ -547,7 +548,7 @@
         new: ['badge-new', '신규 입점'],
         removed: ['badge-removed', '누락/철수'],
         warn: ['badge-warn', '캐시 의심'],
-        suspect: ['badge-suspect', '정답 불일치'],
+        suspect: ['badge-suspect', '이전 데이터와 다름'],
         none: ['badge-none', '확인됨'],
       };
       const [cls, label] = map[status];
@@ -973,7 +974,7 @@
           let dot = '';
           if (status === 'new') dot = '<span class="dot dot-new" title="신규 입점 의심"></span>';
           else if (status === 'removed') dot = '<span class="dot dot-removed" title="누락/철수 의심"></span>';
-          else if (status === 'suspect') dot = '<span class="dot dot-suspect" title="정답 불일치"></span>';
+          else if (status === 'suspect') dot = '<span class="dot dot-suspect" title="이전 데이터와 다름"></span>';
           else if (status) dot = '<span class="dot dot-yes"></span>';
           return `<td class="matrix-cell">${dot}</td>`;
         }).join('');
@@ -1018,7 +1019,7 @@
     }
 
     function statusBadgeText(status) {
-      return { new:'신규입점', removed:'누락철수', warn:'캐시의심', suspect:'정답불일치', none:'확인됨' }[status];
+      return { new:'신규입점', removed:'누락철수', warn:'캐시의심', suspect:'이전데이터와다름', none:'확인됨' }[status];
     }
 
     function openBrandDetail(brand) {
@@ -1097,7 +1098,8 @@
       if (s === 'warn') {
         return '⚠ 현대 사이트 응답이 직전 지점과 의심스럽게 동일하게 수집됨 — 캐시/로딩 오류로 잘못 수집됐을 가능성이 있습니다. 실제 페이지를 열어 직접 확인해주세요.';
       }
-      return '⚠ 사이트 페이지 텍스트에서 브랜드명은 발견됐지만, 정답 데이터(truth.json)엔 없는 조합입니다. 신규 입점이거나, 골프/키즈 등 다른 라인이나 무관한 영역의 텍스트를 잘못 잡은 오탐일 수 있습니다.';
+      const asOf = baselineAsOf ? `${baselineAsOf} 시점` : '이전';
+      return `⚠ 사이트 페이지 텍스트에서 브랜드명은 발견됐지만, ${asOf}에 수기로 확인해둔 데이터(baseline.json)엔 없던 조합입니다. baseline.json은 "정답"이 아니라 그 시점의 스냅샷일 뿐이라, 그 이후 생긴 신규 입점이거나 골프/키즈 등 다른 라인·무관한 영역의 텍스트를 잘못 잡은 오탐일 수 있습니다.`;
     }
 
     function openSummaryDetail(type) {
@@ -1126,7 +1128,7 @@
         const rows = allData.filter(r => statusOf(r) === type);
         title = type === 'new' ? '신규 입점 가능성 브랜드' : '누락/철수 가능성 브랜드';
         subtitle = type === 'new'
-          ? `직전 크롤링엔 없었는데 이번엔 새로 발견됐고, 정답 데이터와도 일치하는 조합 — 총 ${rows.length}건`
+          ? `직전 크롤링엔 없었는데 이번엔 새로 발견됐고, ${baselineAsOf || '이전'} 스냅샷에도 있던 조합(오탐 가능성 낮음) — 총 ${rows.length}건`
           : `직전 크롤링엔 있었는데 이번엔 발견되지 않은 조합 — 총 ${rows.length}건`;
         bodyHtml = rows.length ? rows.map(r => {
           const url = floorGuideUrl(r.company, r.store);
@@ -1138,7 +1140,7 @@
       } else if (type === 'verify') {
         const rows = allData.filter(r => statusGroup(r) === 'verify');
         title = '확인 필요 브랜드';
-        subtitle = `크롤링 결과가 정답 데이터와 다르거나(오탐 의심), 페이지 응답이 의심스러운(캐시 의심) 조합 — 총 ${rows.length}건`;
+        subtitle = `크롤링 결과가 ${baselineAsOf || '이전'} 스냅샷과 다르거나, 페이지 응답이 의심스러운(캐시 의심) 조합 — 총 ${rows.length}건`;
         bodyHtml = rows.length ? rows.map(r => {
           const url = floorGuideUrl(r.company, r.store);
           return `<div style="padding:6px 0;border-bottom:1px solid #f2f2f2;font-size:12.5px;">
@@ -1190,6 +1192,7 @@
         })
         .then(payload => {
           allData = payload.data || [];
+          baselineAsOf = payload.baselineAsOf || '';
           populateFilters();
           render();
           if (allData.length === 0) {

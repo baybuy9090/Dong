@@ -290,29 +290,33 @@ async function main() {
     }
   });
 
-  // 정답 대조 (truth.json이 있으면)
-  const truthPath = path.join(__dirname, 'truth.json');
-  let truthSet = null;
-  if (fs.existsSync(truthPath)) {
-    const truthData = JSON.parse(fs.readFileSync(truthPath, 'utf8'));
-    truthSet = new Set(truthData.map(t => `${t.company}|${t.store}|${t.brand}`));
+  // baseline.json 대비 비교. baseline.json은 "정답"이 아니라 특정 시점(asOf)에
+  // 수기로 확인해둔 스냅샷일 뿐이며, 시간이 지날수록 실제 현황과 자연히 벌어질 수 있음.
+  const baselinePath = path.join(__dirname, 'baseline.json');
+  let baselineSet = null;
+  let baselineAsOf = '';
+  if (fs.existsSync(baselinePath)) {
+    const baseline = JSON.parse(fs.readFileSync(baselinePath, 'utf8'));
+    baselineAsOf = baseline.asOf || '';
+    baselineSet = new Set((baseline.data || []).map(t => `${t.company}|${t.store}|${t.brand}`));
   }
 
   const finalResults = results.map(r => {
-    let truthCheck = '';
-    if (truthSet) {
+    let baselineCheck = '';
+    if (baselineSet) {
       const key = `${r.company}|${r.store}|${r.brand}`;
       if (r.brand !== '(확인된 브랜드 없음)' && r.brand !== '(오류)') {
-        truthCheck = truthSet.has(key) ? '일치' : '⚠ 오탐 의심(정답엔 없음)';
+        baselineCheck = baselineSet.has(key) ? '일치' : `⚠ ${baselineAsOf} 데이터엔 없음`;
       }
     } else {
-      truthCheck = '대조불가(truth.json 없음)';
+      baselineCheck = '비교불가(baseline.json 없음)';
     }
-    return { ...r, truthCheck };
+    return { ...r, baselineCheck };
   });
 
   const output = {
     lastUpdated: new Date().toISOString(),
+    baselineAsOf,
     data: finalResults,
   };
 
