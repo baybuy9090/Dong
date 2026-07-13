@@ -1900,7 +1900,7 @@
     let newsIndustry = [];
     let newsLastUpdated = '';
     // 뉴스 크롤링에서 제외된 브랜드 (검색 결과가 부실하거나 관련성이 낮아 제외 요청됨)
-    const NEWS_EXCLUDED_BRANDS = new Set(['지제로', 'TEN-C', '모드맨', '헤리티지플로스', '플랫폼플레이스']);
+    const NEWS_EXCLUDED_BRANDS = new Set(['지제로', 'TEN-C', '모드맨', '헤리티지플로스', '플랫폼플레이스', '알레그리']);
 
     function loadNews() {
       fetch('news.json?_=' + Date.now())
