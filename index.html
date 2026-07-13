@@ -1142,8 +1142,22 @@
         container.addEventListener('scroll', () => { overlay.scrollLeft = container.scrollLeft; }, { passive: true });
       }
       if (!table) { overlay.style.display = 'none'; return; }
-      const thead = table.querySelector('thead');
-      overlay.innerHTML = '<table class="matrix-table heatmap-table" style="border-spacing:3px;">' + thead.outerHTML + '</table>';
+      // 복제 표는 원본과 따로 열 너비를 계산하기 때문에 그대로 복제하면 폭이 어긋남.
+      // 실제 렌더링된 th 너비를 측정해서 그대로 고정시켜야 두 표가 정확히 맞음.
+      const theadCells = table.querySelectorAll('thead th');
+      const widths = [...theadCells].map(th => th.getBoundingClientRect().width);
+      const cloneThead = table.querySelector('thead').cloneNode(true);
+      cloneThead.querySelectorAll('th').forEach((th, i) => {
+        th.style.width = widths[i] + 'px';
+        th.style.minWidth = widths[i] + 'px';
+        th.style.maxWidth = widths[i] + 'px';
+      });
+      overlay.innerHTML = '';
+      const cloneTable = document.createElement('table');
+      cloneTable.className = 'matrix-table heatmap-table';
+      cloneTable.style.cssText = 'border-spacing:3px; table-layout:fixed; margin:0;';
+      cloneTable.appendChild(cloneThead);
+      overlay.appendChild(cloneTable);
       updateHeatmapStickyHeader();
     }
 
