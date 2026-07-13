@@ -145,6 +145,11 @@
     .matrix-table th.brand-col { background: #2c2c34; color: white; z-index: 2; }
     .matrix-cell { text-align: center; }
 
+    /* overflow-x:auto만 걸고 overflow-y는 visible로 둬도, 스펙상 둘 중 하나라도
+       visible이 아니면 나머지 축도 auto로 강제 계산돼서 sticky 기준점이 페이지가
+       아니라 이 박스 자신이 되어버림 → 아예 두 축 다 auto로 통일하고 높이를
+       제한해서 내부 스크롤 박스로 만들면 sticky가 이 박스 기준으로 확실히 동작함 */
+    #regionRanking { max-height: 640px; overflow: auto; border-radius: 8px; }
     .heatmap-table { border-collapse: separate; border-spacing: 3px; }
     .heatmap-table thead th { position: sticky; top: 0; z-index: 3; }
     .heatmap-table thead th.brand-col { z-index: 4; }
@@ -215,9 +220,7 @@
 
       table:not(.heatmap-table) { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 
-      #brandRanking, #regionRanking {
-        overflow-x: auto; overflow-y: visible; -webkit-overflow-scrolling: touch; padding-bottom: 4px;
-      }
+      #brandRanking { overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 4px; }
       .bar-row { min-width: 480px; }
 
       .overview-grid { gap: 10px; }
@@ -286,7 +289,7 @@
 
     <div class="panel" style="margin-bottom:14px;">
       <h3>상권별 브랜드 입점 수 랭킹</h3>
-      <div class="subtitle" style="margin-bottom:8px;">브랜드별로 어느 상권에 몇 개 지점 입점했는지 한눈에 보는 표입니다. 칸에 마우스를 올리면 지점명이 나옵니다. <span id="regionRankingLegend"></span></div>
+      <div class="subtitle" style="margin-bottom:8px;">브랜드별로 어느 상권에 몇 개 지점 입점했는지 한눈에 보는 표입니다. 표 안에서 스크롤하면 브랜드/상권 헤더가 위에 고정됩니다. 칸에 마우스를 올리면 지점명이 나옵니다. <span id="regionRankingLegend"></span></div>
       <div id="regionRanking"></div>
     </div>
 

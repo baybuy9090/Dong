@@ -233,7 +233,7 @@ function buildJobList() {
 
 async function main() {
   const jobs = buildJobList();
-  const results = [];
+  let results = [];
 
   // 직전 크롤링 결과 (신규 입점 / 누락·철수 후보 판정용)
   const dataPath = path.join(__dirname, 'data.json');
@@ -297,11 +297,20 @@ async function main() {
     if (!already) results.push({ company, store, brand, sales: '', note: '확인' });
   });
 
-  // 사람이 "삭제 확정"한 조합은 prevSet에 남아있어도 누락/철수 후보로 다시 띄우지 않음
-  // (아니면 data.json → 다음 달 prevSet으로 계속 이어져서 영원히 되살아남)
+  // 사람이 "삭제 확정"한 조합은 완전히 제외. 크롤링에서 다시 활성 감지되거나
+  // (아직 원인 못 찾은 오탐), prevSet에 남아있어서 누락/철수 후보로 계속 되살아나는
+  // 것(→ data.json → 다음 달 prevSet으로 영원히 이어짐) 둘 다 막아줌.
   const MANUAL_REJECTED = new Set([
     '신세계|대전|이로맨',
+    '현대|천호|POTTERY', '현대|목동|POTTERY', '현대|울산|POTTERY',
+    '신세계|대구|아스페시', '신세계|강남|아스페시', '신세계|본점|아스페시', '현대|목동|아스페시',
+    '신세계|하남|우영미',
+    '롯데|동탄점|아페쎄맨', '롯데|잠실점|아페쎄맨', '신세계|광주|아페쎄맨',
+    '현대|본점|아페쎄맨', '신세계|대전|아페쎄맨', '현대|여의도|아페쎄맨',
+    '현대|미아|DKNY맨',
+    '롯데|잠실점|CP컴퍼니',
   ]);
+  results = results.filter(r => !MANUAL_REJECTED.has(`${r.company}|${r.store}|${r.brand}`));
 
   // 직전엔 있었는데 이번엔 발견되지 않은 조합 → 누락/철수 후보로 추가
   const newSet = new Set(

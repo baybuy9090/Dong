@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-13T05:21:56.441Z",
+  "lastUpdated": "2026-07-13T05:29:20.476Z",
   "baselineAsOf": "2026-06",
   "data": [
     {
@@ -821,14 +821,6 @@
     {
       "company": "롯데",
       "store": "잠실점",
-      "brand": "CP컴퍼니",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
-    },
-    {
-      "company": "롯데",
-      "store": "잠실점",
       "brand": "질스튜어트뉴욕",
       "sales": "",
       "note": "확인",
@@ -1261,14 +1253,6 @@
     {
       "company": "현대",
       "store": "목동",
-      "brand": "아스페시",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
-    },
-    {
-      "company": "현대",
-      "store": "목동",
       "brand": "알레그리",
       "sales": "",
       "note": "확인",
@@ -1593,14 +1577,6 @@
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"
-    },
-    {
-      "company": "현대",
-      "store": "여의도",
-      "brand": "아페쎄맨",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
     },
     {
       "company": "현대",
@@ -3665,110 +3641,6 @@
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"
-    },
-    {
-      "company": "신세계",
-      "store": "대구",
-      "brand": "아스페시",
-      "sales": "",
-      "note": "누락/철수 가능성",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
-    },
-    {
-      "company": "신세계",
-      "store": "강남",
-      "brand": "아스페시",
-      "sales": "",
-      "note": "누락/철수 가능성",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
-    },
-    {
-      "company": "신세계",
-      "store": "본점",
-      "brand": "아스페시",
-      "sales": "",
-      "note": "누락/철수 가능성",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
-    },
-    {
-      "company": "신세계",
-      "store": "하남",
-      "brand": "우영미",
-      "sales": "",
-      "note": "누락/철수 가능성",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
-    },
-    {
-      "company": "롯데",
-      "store": "동탄점",
-      "brand": "아페쎄맨",
-      "sales": "",
-      "note": "누락/철수 가능성",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
-    },
-    {
-      "company": "롯데",
-      "store": "잠실점",
-      "brand": "아페쎄맨",
-      "sales": "",
-      "note": "누락/철수 가능성",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
-    },
-    {
-      "company": "현대",
-      "store": "천호",
-      "brand": "POTTERY",
-      "sales": "",
-      "note": "누락/철수 가능성",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
-    },
-    {
-      "company": "신세계",
-      "store": "광주",
-      "brand": "아페쎄맨",
-      "sales": "",
-      "note": "누락/철수 가능성",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
-    },
-    {
-      "company": "현대",
-      "store": "목동",
-      "brand": "POTTERY",
-      "sales": "",
-      "note": "누락/철수 가능성",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
-    },
-    {
-      "company": "현대",
-      "store": "미아",
-      "brand": "DKNY맨",
-      "sales": "",
-      "note": "누락/철수 가능성",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
-    },
-    {
-      "company": "현대",
-      "store": "본점",
-      "brand": "아페쎄맨",
-      "sales": "",
-      "note": "누락/철수 가능성",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
-    },
-    {
-      "company": "현대",
-      "store": "울산",
-      "brand": "POTTERY",
-      "sales": "",
-      "note": "누락/철수 가능성",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
-    },
-    {
-      "company": "신세계",
-      "store": "대전",
-      "brand": "아페쎄맨",
-      "sales": "",
-      "note": "누락/철수 가능성",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
     }
   ]
 }
