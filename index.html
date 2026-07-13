@@ -39,6 +39,8 @@
     .card.warn .num { color: #d97e0e; }
     .card.suspect { border-left-color: #8b2fc9; }
     .card.suspect .num { color: #8b2fc9; }
+    .card.clickable { cursor: pointer; transition: box-shadow 0.15s; }
+    .card.clickable:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
 
     .skeleton {
       background: linear-gradient(90deg, #eee 25%, #f5f5f5 50%, #eee 75%);
@@ -152,7 +154,7 @@
 <body>
   <div class="header-bar">
     <h1>동업계 남성 컨템 브랜드 입점 현황</h1>
-    <div class="subtitle">롯데·현대·신세계 자동 크롤링 (2607 기준) — 보라색 = 정답 데이터와 불일치(의심)</div>
+    <div class="subtitle">롯데·현대·신세계 자동 크롤링</div>
     <div class="last-updated" id="lastUpdated"><span class="dot"></span> 최종 업데이트 확인 중...</div>
   </div>
 
@@ -595,10 +597,10 @@
 
       document.getElementById('summary').innerHTML = `
         <div class="card"><div class="num">${totalBrandCount}</div><div class="label">총 입점 매장 수</div></div>
-        <div class="card"><div class="num">${uniqueBrands}</div><div class="label">고유 브랜드 수</div></div>
-        <div class="card new"><div class="num">${newCount}</div><div class="label">신규 입점 가능성 브랜드</div></div>
-        <div class="card removed"><div class="num">${removedCount}</div><div class="label">누락/철수 가능성 브랜드</div></div>
-        <div class="card suspect"><div class="num">${verifyCount}</div><div class="label">확인 필요 브랜드</div></div>
+        <div class="card clickable" onclick="openSummaryDetail('brands')"><div class="num">${uniqueBrands}</div><div class="label">고유 브랜드 수</div></div>
+        <div class="card new clickable" onclick="openSummaryDetail('new')"><div class="num">${newCount}</div><div class="label">신규 입점 가능성 브랜드</div></div>
+        <div class="card removed clickable" onclick="openSummaryDetail('removed')"><div class="num">${removedCount}</div><div class="label">누락/철수 가능성 브랜드</div></div>
+        <div class="card suspect clickable" onclick="openSummaryDetail('verify')"><div class="num">${verifyCount}</div><div class="label">확인 필요 브랜드</div></div>
       `;
 
       if (currentTab === 'matrix') renderMatrix();
@@ -638,9 +640,9 @@
               <span class="brand-link" onclick="openBrandDetail('${r.brand}')" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${r.brand}</span>
             </div>
             <div class="bar-track" style="display:flex;">
-              <div class="bar-fill" style="width:${r.l/maxTotal*100}%;background:#c8102e;" title="롯데 ${r.l}"></div>
-              <div class="bar-fill" style="width:${r.h/maxTotal*100}%;background:#1a9d4c;" title="현대 ${r.h}"></div>
-              <div class="bar-fill" style="width:${r.sg/maxTotal*100}%;background:#004990;" title="신세계 ${r.sg}"></div>
+              <div class="bar-fill" style="width:${r.l/maxTotal*100}%;background:#c8102e;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="롯데 ${r.l}">${r.l>0?`<span style="color:white;font-size:9px;font-weight:600;white-space:nowrap;">롯데 ${r.l}개</span>`:''}</div>
+              <div class="bar-fill" style="width:${r.h/maxTotal*100}%;background:#1a9d4c;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="현대 ${r.h}">${r.h>0?`<span style="color:white;font-size:9px;font-weight:600;white-space:nowrap;">현대 ${r.h}개</span>`:''}</div>
+              <div class="bar-fill" style="width:${r.sg/maxTotal*100}%;background:#004990;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="신세계 ${r.sg}">${r.sg>0?`<span style="color:white;font-size:9px;font-weight:600;white-space:nowrap;">신세계 ${r.sg}개</span>`:''}</div>
             </div>
             <div style="width:170px;font-size:10.5px;color:#666;flex-shrink:0;">롯데 ${r.l}개 현대 ${r.h}개 신세계 ${r.sg}개</div>
             <div class="bar-num">${r.total}</div>
@@ -970,6 +972,69 @@
 
     function closeStoreDetail() {
       document.getElementById('storeModal').style.display = 'none';
+    }
+
+    function verifyReason(r) {
+      const s = statusOf(r);
+      if (s === 'warn') {
+        return '⚠ 현대 사이트 응답이 직전 지점과 의심스럽게 동일하게 수집됨 — 캐시/로딩 오류로 잘못 수집됐을 가능성이 있습니다. 실제 페이지를 열어 직접 확인해주세요.';
+      }
+      return '⚠ 사이트 페이지 텍스트에서 브랜드명은 발견됐지만, 정답 데이터(truth.json)엔 없는 조합입니다. 신규 입점이거나, 골프/키즈 등 다른 라인이나 무관한 영역의 텍스트를 잘못 잡은 오탐일 수 있습니다.';
+    }
+
+    function openSummaryDetail(type) {
+      let title = '', subtitle = '', bodyHtml = '';
+
+      if (type === 'brands') {
+        const brands = [...new Set(allData.map(r => r.brand))]
+          .filter(b => b !== '(확인된 브랜드 없음)' && b !== '(오류)')
+          .sort((a,b) => a.localeCompare(b,'ko'));
+        title = '고유 브랜드 목록';
+        subtitle = `총 ${brands.length}개 브랜드`;
+        const byTier = {};
+        brands.forEach(b => { (byTier[tierOf(b)] = byTier[tierOf(b)] || []).push(b); });
+        const tierOrderLocal = ['SA급','Designer','Global','Select','B급','Classic','New','New Select','Contents','미분류'];
+        tierOrderLocal.forEach(t => {
+          if (!byTier[t]) return;
+          bodyHtml += `<div style="font-size:11px;font-weight:700;color:#888;margin:8px 0 4px;">${t}</div>`;
+          bodyHtml += byTier[t].map(b => {
+            const cnt = allData.filter(r => r.brand === b).length;
+            return `<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #f2f2f2;font-size:12.5px;">
+              <span class="brand-link" onclick="closeStoreDetail();openBrandDetail('${b}')"><span class="tier-dot" style="background:${tierColor(b)};"></span>${b}</span>
+              <span style="color:#888;">${cnt}개 지점</span></div>`;
+          }).join('');
+        });
+      } else if (type === 'new' || type === 'removed') {
+        const rows = allData.filter(r => statusOf(r) === type);
+        title = type === 'new' ? '신규 입점 가능성 브랜드' : '누락/철수 가능성 브랜드';
+        subtitle = type === 'new'
+          ? `직전 크롤링엔 없었는데 이번엔 새로 발견됐고, 정답 데이터와도 일치하는 조합 — 총 ${rows.length}건`
+          : `직전 크롤링엔 있었는데 이번엔 발견되지 않은 조합 — 총 ${rows.length}건`;
+        bodyHtml = rows.length ? rows.map(r => {
+          const url = floorGuideUrl(r.company, r.store);
+          return `<div style="padding:6px 0;border-bottom:1px solid #f2f2f2;font-size:12.5px;">
+            <div><span class="${companyClass(r.company)}">${r.company}</span> ${r.store} · <b>${r.brand}</b></div>
+            ${url ? `<a href="${url}" target="_blank" rel="noopener" style="font-size:11px;color:#004990;">🔗 도면에서 확인 →</a>` : ''}
+          </div>`;
+        }).join('') : `<div class="empty">현재 ${type === 'new' ? '신규 입점' : '누락/철수'} 후보가 없습니다. (직전 크롤링 결과와 비교했을 때 변동이 있는 조합만 표시됩니다)</div>`;
+      } else if (type === 'verify') {
+        const rows = allData.filter(r => statusGroup(r) === 'verify');
+        title = '확인 필요 브랜드';
+        subtitle = `크롤링 결과가 정답 데이터와 다르거나(오탐 의심), 페이지 응답이 의심스러운(캐시 의심) 조합 — 총 ${rows.length}건`;
+        bodyHtml = rows.length ? rows.map(r => {
+          const url = floorGuideUrl(r.company, r.store);
+          return `<div style="padding:6px 0;border-bottom:1px solid #f2f2f2;font-size:12.5px;">
+            <div><span class="${companyClass(r.company)}">${r.company}</span> ${r.store} · <b>${r.brand}</b> ${statusBadge(statusOf(r))}</div>
+            <div style="color:#888;font-size:11px;margin-top:2px;">${verifyReason(r)}</div>
+            ${url ? `<a href="${url}" target="_blank" rel="noopener" style="font-size:11px;color:#004990;">🔗 실제 층별 안내에서 확인 →</a>` : ''}
+          </div>`;
+        }).join('') : '<div class="empty">확인이 필요한 브랜드가 없습니다.</div>';
+      }
+
+      document.getElementById('modalTitle').textContent = title;
+      document.getElementById('modalSubtitle').innerHTML = subtitle;
+      document.getElementById('modalBody').innerHTML = bodyHtml;
+      document.getElementById('storeModal').style.display = 'block';
     }
 
     function populateFilters() {

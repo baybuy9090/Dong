@@ -75,7 +75,14 @@ function matchBrands(rawText) {
   const upperText = rawText.toUpperCase();
   const MEN_MARKERS = ['남성', '맨즈', '옴므', "MEN'S", 'MENSWEAR', 'MENS', 'MEN'];
   const WOMEN_MARKERS = ['여성', '우먼즈', '팜므', "WOMEN'S", 'WOMENSWEAR', 'WOMENS', 'WOMEN', 'LADIES', '레이디스'];
-  const EXCLUDE_PATTERNS = { '바버': ['바버샵', '마제스티바버샵', '마제스티 바버샵'] };
+  const EXCLUDE_PATTERNS = {
+    '바버': ['바버샵', '마제스티바버샵', '마제스티 바버샵'],
+    'POTTERY': ['우치포터리', '포터리하우스'],
+    '아페쎄맨': [
+      'A.P.C. 골프', 'A.P.C.골프', 'A.P.C골프', 'A.P.C 골프', '아페쎄골프', '아페쎄 골프',
+      'CAFE A.P.C.', 'CAFE A.P.C',
+    ],
+  };
 
   function findAllMarkerPositions(text, markers, isMenSearch) {
     const positions = [];
@@ -120,15 +127,27 @@ function matchBrands(rawText) {
   const claimed = [];
   function isOverlapping(start, end) { return claimed.some(c => start < c.end && end > c.start); }
 
+  const MEN_MARKERS_UP = MEN_MARKERS.map(m => m.toUpperCase());
+  const WOMEN_MARKERS_UP = WOMEN_MARKERS.map(m => m.toUpperCase());
+
   const found = new Set();
   allMatches.forEach(m => {
     if (isPoisoned(m.start, m.end)) return;
     if (isOverlapping(m.start, m.end)) return;
+    claimed.push({ start: m.start, end: m.end });
+
+    // 브랜드명 바로 뒤에 성별 표기가 붙는 경우 (예: "DKNY(여성)") 최우선으로 반영.
+    // 기존 로직은 마커가 브랜드명보다 "앞"에 있을 때만 인식해서 이런 케이스를 놓쳤음.
+    const trailingWindow = upperText.substring(m.end, m.end + 10);
+    const hasTrailingWomen = WOMEN_MARKERS_UP.some(w => trailingWindow.includes(w));
+    if (hasTrailingWomen) return;
+    const hasTrailingMen = MEN_MARKERS_UP.some(w => trailingWindow.includes(w));
+    if (hasTrailingMen) { found.add(m.brand); return; }
+
     const lastMen = Math.max(-1, ...menPositions.filter(pos => pos <= m.start));
     const lastWomen = Math.max(-1, ...womenPositions.filter(pos => pos <= m.start));
     if (lastMen === -1 && lastWomen === -1) found.add(m.brand);
     else if (lastMen > lastWomen) found.add(m.brand);
-    claimed.push({ start: m.start, end: m.end });
   });
   return Array.from(found);
 }
@@ -207,6 +226,22 @@ async function main() {
   const jobs = buildJobList();
   const results = [];
 
+  // 직전 크롤링 결과 (신규 입점 / 누락·철수 후보 판정용)
+  const dataPath = path.join(__dirname, 'data.json');
+  const prevSet = new Set();
+  if (fs.existsSync(dataPath)) {
+    try {
+      const prev = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+      (prev.data || []).forEach(r => {
+        if (r.brand !== '(확인된 브랜드 없음)' && r.brand !== '(오류)') {
+          prevSet.add(`${r.company}|${r.store}|${r.brand}`);
+        }
+      });
+    } catch (e) {
+      console.log(`이전 data.json 읽기 실패 (신규/누락 비교 생략): ${e.message}`);
+    }
+  }
+
   for (let i = 0; i < jobs.length; i++) {
     const job = jobs[i];
     try {
@@ -226,7 +261,13 @@ async function main() {
       if (brands.length === 0) {
         results.push({ company: job.company, store: job.store, brand: '(확인된 브랜드 없음)', sales: '', note });
       } else {
-        brands.forEach(b => results.push({ company: job.company, store: job.store, brand: b, sales: '', note }));
+        brands.forEach(b => {
+          let brandNote = note;
+          if (brandNote === '확인' && !prevSet.has(`${job.company}|${job.store}|${b}`)) {
+            brandNote = '신규 입점 가능성';
+          }
+          results.push({ company: job.company, store: job.store, brand: b, sales: '', note: brandNote });
+        });
       }
       console.log(`[${i + 1}/${jobs.length}] ${job.company} ${job.store}: ${brands.length}개 브랜드 확인`);
     } catch (e) {
@@ -235,6 +276,19 @@ async function main() {
     }
     await sleep(500);
   }
+
+  // 직전엔 있었는데 이번엔 발견되지 않은 조합 → 누락/철수 후보로 추가
+  const newSet = new Set(
+    results
+      .filter(r => r.brand !== '(확인된 브랜드 없음)' && r.brand !== '(오류)')
+      .map(r => `${r.company}|${r.store}|${r.brand}`)
+  );
+  prevSet.forEach(key => {
+    if (!newSet.has(key)) {
+      const [company, store, brand] = key.split('|');
+      results.push({ company, store, brand, sales: '', note: '누락/철수 가능성' });
+    }
+  });
 
   // 정답 대조 (truth.json이 있으면)
   const truthPath = path.join(__dirname, 'truth.json');
