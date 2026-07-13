@@ -347,12 +347,6 @@
     <select id="companyFilter"><option value="">전체 회사</option></select>
     <select id="storeFilter"><option value="">전체 지점</option></select>
     <select id="regionFilter"><option value="">전체 상권</option></select>
-    <select id="statusFilter">
-      <option value="">전체 상태</option>
-      <option value="new">신규 입점 가능성</option>
-      <option value="removed">누락/철수 가능성</option>
-      <option value="verify">확인 필요</option>
-    </select>
     <input id="brandSearch" placeholder="브랜드명 검색" oninput="render()">
   </div>
 
@@ -1137,7 +1131,6 @@
       const company = document.getElementById('companyFilter').value;
       const store = document.getElementById('storeFilter').value;
       const region = document.getElementById('regionFilter').value;
-      const status = document.getElementById('statusFilter').value;
       const q = document.getElementById('brandSearch').value.trim().toLowerCase();
       return allData.filter(r => {
         if (r.brand === '(확인된 브랜드 없음)' || r.brand === '(오류)') return false;
@@ -1145,7 +1138,6 @@
         if (company && r.company !== company) return false;
         if (store && r.store !== store) return false;
         if (region && regionOf(r.company, r.store) !== region) return false;
-        if (status && statusGroup(r) !== status) return false;
         if (favOnly && !favorites.has(r.brand)) return false;
         if (q && !r.brand.toLowerCase().includes(q)) return false;
         return true;
@@ -1836,7 +1828,6 @@
 
     document.getElementById('companyFilter').addEventListener('change', () => { populateFilters(); render(); });
     document.getElementById('storeFilter').addEventListener('change', render);
-    document.getElementById('statusFilter').addEventListener('change', render);
 
     function showGlobalError(source, err) {
       const el = document.getElementById('globalError');
