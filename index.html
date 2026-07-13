@@ -100,11 +100,6 @@
     .empty { padding: 40px; text-align: center; color: #999; font-size: 13px; }
 
     #matrixView, #floorView, #mapView { display: none; }
-    .map-bubble { cursor: pointer; }
-    .map-bubble:hover circle { filter: brightness(1.12); }
-    .map-label { font-size: 11px; font-weight: 700; fill: #333; pointer-events: none; }
-    .map-count { font-size: 10px; fill: #fff; font-weight: 700; pointer-events: none; }
-    .map-legend-label { font-size: 10.5px; fill: #777; }
     .matrix-table { min-width: 900px; }
     .matrix-table th.brand-col, .matrix-table td.brand-col {
       position: sticky; left: 0; background: white; z-index: 1;
@@ -155,6 +150,7 @@
     .region-store-line { font-size: 11.5px; color: #444; margin-bottom: 2px; padding-left: 6px; }
     .region-store-line b { color: #222; }
   </style>
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8bd8d20b20b6e21a2865e280d779164e"></script>
 </head>
 <body>
   <div class="header-bar">
@@ -297,15 +293,13 @@
 
   <!-- 상권 지도 -->
   <div id="mapView">
-    <div class="panel" style="margin-bottom:14px;">
-      <h3>전국 상권 분포</h3>
-      <div class="subtitle" style="margin-bottom:10px;">원 크기·색 진하기 = 해당 상권의 고유 브랜드 수. 클릭하면 상세 목록이 뜹니다. 수도권은 아래 확대 지도를 참고하세요.</div>
-      <div id="mapNational" style="overflow-x:auto;"></div>
-    </div>
     <div class="panel">
-      <h3>수도권 확대</h3>
-      <div class="subtitle" style="margin-bottom:10px;">서울·경기·인천 9개 상권 (실제 지리와는 다른 개략적 배치입니다)</div>
-      <div id="mapMetro" style="overflow-x:auto;"></div>
+      <h3>지점별 위치</h3>
+      <div class="subtitle" style="margin-bottom:10px;">
+        원 크기·색 진하기 = 해당 지점의 고유 브랜드 수. 클릭하면 지점 상세 목록이 뜹니다. 좌표는 실제 주소 기준 근사치입니다.
+        <span id="mapLegendInline" style="margin-left:8px;"></span>
+      </div>
+      <div id="kakaoMap" style="width:100%;height:600px;border-radius:10px;background:#f0f0f0;"></div>
     </div>
   </div>
 
@@ -408,30 +402,47 @@
     };
     function regionOf(company, store) { return STORE_REGIONS[`${company}|${store}`] || '미분류'; }
 
-    // ── 상권 지도 (API 키 없는 개략적 시각화) ──
-    // 실제 위경도가 아닌, 대략적인 상대 방향(북/남/동/서)만 반영한 스키매틱 좌표입니다.
-    const METRO_REGIONS = [
-      '서울서부·일산상권','서울동북·경기북부상권','서울서북상권','명동상권','서울동북상권',
-      '강남·잠실상권','영등포상권','경기남부·동남부상권','인천·부천상권',
-    ];
-    const METRO_COORDS = {
-      '서울서부·일산상권': {x:100,y:120}, '서울동북·경기북부상권': {x:220,y:60},
-      '서울서북상권': {x:150,y:160}, '명동상권': {x:205,y:185}, '서울동북상권': {x:285,y:140},
-      '강남·잠실상권': {x:280,y:225}, '영등포상권': {x:135,y:225},
-      '경기남부·동남부상권': {x:235,y:300}, '인천·부천상권': {x:55,y:240},
-    };
-    const NATIONAL_COORDS = {
-      '수도권': {x:150,y:80}, '호남·충청상권': {x:150,y:200}, '광주상권': {x:100,y:290},
-      '대구상권': {x:230,y:270}, '경남상권': {x:210,y:340}, '부산·경남상권': {x:260,y:380},
-      '울산상권': {x:290,y:330},
+    // ── 상권 지도 (카카오맵) ──
+    // 각 지점의 위경도는 실제 주소 기준 근사치입니다. 정확한 좌표가 필요하면 STORE_COORDS 값을 보정하세요.
+    const STORE_COORDS = {
+      '롯데': {
+        '강남점': {lat:37.5044, lng:127.0403}, '광복점': {lat:35.0996, lng:129.0306},
+        '광주점': {lat:35.1478, lng:126.9184}, '노원점': {lat:37.6547, lng:127.0616},
+        '대구점': {lat:35.8697, lng:128.5946}, '동탄점': {lat:37.2003, lng:127.0724},
+        '본점': {lat:37.5647, lng:126.9816}, '부산본점': {lat:35.1602, lng:129.1607},
+        '수원점': {lat:37.2749, lng:127.0116}, '영등포': {lat:37.5158, lng:126.9070},
+        '울산점': {lat:35.5384, lng:129.3114}, '인천점': {lat:37.4487, lng:126.6947},
+        '일산': {lat:37.6584, lng:126.7717}, '잠실점': {lat:37.5133, lng:127.1001},
+        '잠실에비뉴엘': {lat:37.5119, lng:127.1023}, '전주점': {lat:35.8380, lng:127.1150},
+        '창원점': {lat:35.2280, lng:128.6811}, '청량리': {lat:37.5803, lng:127.0473},
+        '평촌점': {lat:37.3925, lng:126.9689},
+      },
+      '현대': {
+        '목동': {lat:37.5262, lng:126.8656}, '무역센터': {lat:37.5089, lng:127.0603},
+        '미아': {lat:37.6135, lng:127.0300}, '본점': {lat:37.5274, lng:127.0287},
+        '신촌': {lat:37.5599, lng:126.9367}, '여의도': {lat:37.5251, lng:126.9291},
+        '울산': {lat:35.5380, lng:129.3300}, '중동': {lat:37.5075, lng:126.7639},
+        '천호': {lat:37.5384, lng:127.1237}, '충청': {lat:36.4870, lng:127.2820},
+        '킨텍스': {lat:37.6688, lng:126.7444}, '판교': {lat:37.3947, lng:127.1112},
+        '대구': {lat:35.8867, lng:128.6206},
+      },
+      '신세계': {
+        '강남': {lat:37.5045, lng:127.0038}, '광주': {lat:35.1600, lng:126.8496},
+        '김해': {lat:35.2114, lng:128.8811}, '대구': {lat:35.8734, lng:128.6288},
+        '대전': {lat:36.3719, lng:127.3860}, '마산': {lat:35.2100, lng:128.5700},
+        '본점': {lat:37.5600, lng:126.9827}, '센텀': {lat:35.1691, lng:129.1306},
+        '의정부': {lat:37.7383, lng:127.0470}, '천안아산': {lat:36.7952, lng:127.0980},
+        '타임스퀘어': {lat:37.5172, lng:126.9034}, '하남': {lat:37.5397, lng:127.2148},
+        '경기': {lat:37.2789, lng:127.0559},
+      },
     };
     const SEQ_RAMP = ['#86b6ef','#5598e7','#2a78d6','#1c5cab','#104281','#0d366b'];
 
-    function regionMagnitude(region, filtered) {
-      return new Set(filtered.filter(r => regionOf(r.company, r.store) === region).map(r => r.brand)).size;
+    function storeMagnitude(company, store, filtered) {
+      return new Set(filtered.filter(r => r.company === company && r.store === store).map(r => r.brand)).size;
     }
     function radiusFor(value, max) {
-      const minR = 20, maxR = 46;
+      const minR = 12, maxR = 26;
       if (max <= 0) return minR;
       return minR + Math.sqrt(value / max) * (maxR - minR);
     }
@@ -439,54 +450,63 @@
       if (max <= 0) return 0;
       return Math.min(SEQ_RAMP.length - 1, Math.floor((value / max) * SEQ_RAMP.length));
     }
-    function mapBubble(region, coords, filtered, maxVal) {
-      const val = regionMagnitude(region, filtered);
-      const total = filtered.filter(r => regionOf(r.company, r.store) === region).length;
-      const r = radiusFor(val, maxVal);
-      const bucketIdx = seqBucket(val, maxVal);
-      const fill = SEQ_RAMP[bucketIdx];
-      const textColor = bucketIdx <= 1 ? '#0b0b0b' : '#ffffff';
-      const shortName = region.replace('상권', '');
-      return `
-        <g class="map-bubble" onclick="openRegionModal('${region}')">
-          <circle cx="${coords.x}" cy="${coords.y}" r="${r}" fill="${fill}" stroke="#fff" stroke-width="2"><title>${region} · 고유 브랜드 ${val}개 · 총 ${total}건</title></circle>
-          <text x="${coords.x}" y="${coords.y}" class="map-count" text-anchor="middle" dominant-baseline="central" fill="${textColor}">${val}</text>
-          <text x="${coords.x}" y="${coords.y + r + 14}" class="map-label" text-anchor="middle">${shortName}</text>
-        </g>`;
-    }
-    function mapLegend(x, y, maxVal) {
-      const swW = 26;
-      let html = `<g transform="translate(${x},${y})">`;
-      SEQ_RAMP.forEach((c, i) => { html += `<rect x="${i*swW}" y="0" width="${swW-2}" height="12" fill="${c}"></rect>`; });
-      html += `<text x="0" y="26" class="map-legend-label">적음</text>`;
-      html += `<text x="${SEQ_RAMP.length*swW}" y="26" class="map-legend-label" text-anchor="end">많음(고유 브랜드 수)</text>`;
-      html += `</g>`;
-      return html;
-    }
+
+    let kakaoMap = null;
+    let kakaoOverlays = [];
+
     function renderMap() {
+      const legend = document.getElementById('mapLegendInline');
+      legend.innerHTML = '적음 ' + SEQ_RAMP.map(c =>
+        `<span style="display:inline-block;width:14px;height:14px;background:${c};vertical-align:middle;margin:0 1px;"></span>`
+      ).join('') + ' 많음';
+
+      const container = document.getElementById('kakaoMap');
+      if (typeof kakao === 'undefined' || !kakao.maps) {
+        container.innerHTML = '<div class="empty">카카오맵 SDK를 불러오지 못했습니다. index.html의 API 키/도메인 등록(developers.kakao.com)을 확인해주세요.</div>';
+        return;
+      }
+      if (!kakaoMap) {
+        kakaoMap = new kakao.maps.Map(container, {
+          center: new kakao.maps.LatLng(36.5, 127.6),
+          level: 13,
+        });
+      }
+
+      kakaoOverlays.forEach(o => o.setMap(null));
+      kakaoOverlays = [];
+
       const filtered = currentFiltered();
+      let maxVal = 1;
+      Object.entries(STORE_COORDS).forEach(([company, stores]) => {
+        Object.keys(stores).forEach(store => {
+          maxVal = Math.max(maxVal, storeMagnitude(company, store, filtered));
+        });
+      });
 
-      const nationalRegions = Object.keys(NATIONAL_COORDS).filter(r => r !== '수도권');
-      const maxNational = Math.max(1, ...nationalRegions.map(r => regionMagnitude(r, filtered)));
-      let nationalSvg = `<svg viewBox="0 0 350 440" style="width:100%;max-width:480px;height:auto;">`;
-      nationalSvg += nationalRegions.map(r => mapBubble(r, NATIONAL_COORDS[r], filtered, maxNational)).join('');
-      const capCoords = NATIONAL_COORDS['수도권'];
-      const capBrands = new Set(filtered.filter(r => METRO_REGIONS.includes(regionOf(r.company, r.store))).map(r => r.brand)).size;
-      nationalSvg += `<g>
-        <circle cx="${capCoords.x}" cy="${capCoords.y}" r="42" fill="#eef2f7" stroke="#8a93a6" stroke-dasharray="4 3" stroke-width="2"></circle>
-        <text x="${capCoords.x}" y="${capCoords.y - 5}" text-anchor="middle" class="map-count" fill="#445066" style="font-size:11px;">수도권</text>
-        <text x="${capCoords.x}" y="${capCoords.y + 11}" text-anchor="middle" class="map-count" fill="#445066" style="font-size:9px;">고유 ${capBrands}개 · 아래 참고</text>
-      </g>`;
-      nationalSvg += mapLegend(20, 405, maxNational);
-      nationalSvg += `</svg>`;
-      document.getElementById('mapNational').innerHTML = nationalSvg;
-
-      const maxMetro = Math.max(1, ...METRO_REGIONS.map(r => regionMagnitude(r, filtered)));
-      let metroSvg = `<svg viewBox="0 0 340 360" style="width:100%;max-width:480px;height:auto;">`;
-      metroSvg += METRO_REGIONS.map(r => mapBubble(r, METRO_COORDS[r], filtered, maxMetro)).join('');
-      metroSvg += mapLegend(20, 325, maxMetro);
-      metroSvg += `</svg>`;
-      document.getElementById('mapMetro').innerHTML = metroSvg;
+      Object.entries(STORE_COORDS).forEach(([company, stores]) => {
+        Object.entries(stores).forEach(([store, coords]) => {
+          const val = storeMagnitude(company, store, filtered);
+          if (val === 0) return;
+          const r = radiusFor(val, maxVal);
+          const bucketIdx = seqBucket(val, maxVal);
+          const fill = SEQ_RAMP[bucketIdx];
+          const textColor = bucketIdx <= 1 ? '#0b0b0b' : '#ffffff';
+          const el = document.createElement('div');
+          el.title = `${company} ${store} · 고유 브랜드 ${val}개`;
+          el.style.cssText = `width:${r*2}px;height:${r*2}px;border-radius:50%;background:${fill};` +
+            `border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.35);display:flex;align-items:center;` +
+            `justify-content:center;color:${textColor};font-size:10.5px;font-weight:700;cursor:pointer;`;
+          el.textContent = val;
+          el.onclick = () => openStoreDetail(company, store);
+          const overlay = new kakao.maps.CustomOverlay({
+            position: new kakao.maps.LatLng(coords.lat, coords.lng),
+            content: el,
+            yAnchor: 0.5,
+          });
+          overlay.setMap(kakaoMap);
+          kakaoOverlays.push(overlay);
+        });
+      });
     }
 
     // 실제 층별 안내 페이지 링크 생성용 지점 코드 (Code.gs와 동일하게 유지)
@@ -919,16 +939,6 @@
           ${storeLines}
         </div>`;
       }).join('') || '<div class="empty" style="padding:12px;">데이터 없음</div>';
-    }
-
-    function openRegionModal(region) {
-      const filtered = currentFiltered();
-      const rows = filtered.filter(r => regionOf(r.company, r.store) === region);
-      const uniqueBrands = new Set(rows.map(r => r.brand)).size;
-      document.getElementById('modalTitle').textContent = region;
-      document.getElementById('modalSubtitle').innerHTML = `고유 브랜드 ${uniqueBrands}개 · 총 ${rows.length}건`;
-      document.getElementById('modalBody').innerHTML = regionCompanyBreakdownHtml(region, filtered);
-      document.getElementById('storeModal').style.display = 'block';
     }
 
     function renderRegionDetail(filtered, allRegions) {
