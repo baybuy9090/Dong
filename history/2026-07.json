@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-13T05:09:35.375Z",
+  "lastUpdated": "2026-07-13T05:21:56.441Z",
   "baselineAsOf": "2026-06",
   "data": [
     {
@@ -3664,14 +3664,6 @@
       "brand": "바버",
       "sales": "",
       "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "신세계",
-      "store": "대전",
-      "brand": "이로맨",
-      "sales": "",
-      "note": "누락/철수 가능성",
       "baselineCheck": "일치"
     },
     {

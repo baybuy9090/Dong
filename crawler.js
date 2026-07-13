@@ -297,16 +297,11 @@ async function main() {
     if (!already) results.push({ company, store, brand, sales: '', note: '확인' });
   });
 
-  // 수동 관찰 목록: baseline.json엔 있는데 크롤링으로는 실제 사이트에서 흔적을
-  // 못 찾은 것들(오탐이라 확신할 근거도 없음). "정상"으로 강제하기엔 근거가 부족해서,
-  // 계속 "누락/철수 가능성"으로 띄워서 사람이 주기적으로 확인하도록 함.
-  const MANUAL_WATCHLIST = [
-    { company: '신세계', store: '대전', brand: '이로맨' }, // "이로 남성" 라벨이 없어 실재 확인 안 됨
-  ];
-  MANUAL_WATCHLIST.forEach(({ company, store, brand }) => {
-    const already = results.some(r => r.company === company && r.store === store && r.brand === brand);
-    if (!already) results.push({ company, store, brand, sales: '', note: '누락/철수 가능성' });
-  });
+  // 사람이 "삭제 확정"한 조합은 prevSet에 남아있어도 누락/철수 후보로 다시 띄우지 않음
+  // (아니면 data.json → 다음 달 prevSet으로 계속 이어져서 영원히 되살아남)
+  const MANUAL_REJECTED = new Set([
+    '신세계|대전|이로맨',
+  ]);
 
   // 직전엔 있었는데 이번엔 발견되지 않은 조합 → 누락/철수 후보로 추가
   const newSet = new Set(
@@ -315,7 +310,7 @@ async function main() {
       .map(r => `${r.company}|${r.store}|${r.brand}`)
   );
   prevSet.forEach(key => {
-    if (!newSet.has(key)) {
+    if (!newSet.has(key) && !MANUAL_REJECTED.has(key)) {
       const [company, store, brand] = key.split('|');
       results.push({ company, store, brand, sales: '', note: '누락/철수 가능성' });
     }

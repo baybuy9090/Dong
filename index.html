@@ -1077,11 +1077,12 @@
       }).join('');
       document.getElementById('emptyMsg').style.display = allData.length === 0 ? 'block' : 'none';
 
-      const newCount = allData.filter(r => statusOf(r) === 'new').length;
-      const removedCount = allData.filter(r => statusOf(r) === 'removed').length;
-      const verifyCount = allData.filter(r => statusGroup(r) === 'verify').length;
-      const uniqueBrands = new Set(allData.map(r => r.brand)).size;
-      const totalBrandCount = allData.filter(r =>
+      const notRejected = allData.filter(r => baselineOverrides[decisionKey(r)] !== 'reject');
+      const newCount = notRejected.filter(r => statusOf(r) === 'new').length;
+      const removedCount = notRejected.filter(r => statusOf(r) === 'removed').length;
+      const verifyCount = notRejected.filter(r => statusGroup(r) === 'verify').length;
+      const uniqueBrands = new Set(notRejected.map(r => r.brand)).size;
+      const totalBrandCount = notRejected.filter(r =>
         r.brand !== '(확인된 브랜드 없음)' && r.brand !== '(오류)'
       ).length;
 
