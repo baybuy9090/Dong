@@ -286,6 +286,17 @@ async function main() {
     await sleep(500);
   }
 
+  // 수동 예외: 특정 회사/지점/브랜드는 크롤링 매칭 로직상 구조적으로 놓치기 쉬워서
+  // (예: 롯데 본점 바버는 같은 층 페이지 훨씬 앞쪽에 무관한 "OO 여성" 브랜드가 있고 그
+  // 뒤로 "남성" 마커가 안 나와서 여성 구역으로 오판됨) 사람이 확인한 건 항상 정상 처리.
+  const MANUAL_CONFIRMED = [
+    { company: '롯데', store: '본점', brand: '바버' },
+  ];
+  MANUAL_CONFIRMED.forEach(({ company, store, brand }) => {
+    const already = results.some(r => r.company === company && r.store === store && r.brand === brand);
+    if (!already) results.push({ company, store, brand, sales: '', note: '확인' });
+  });
+
   // 직전엔 있었는데 이번엔 발견되지 않은 조합 → 누락/철수 후보로 추가
   const newSet = new Set(
     results
