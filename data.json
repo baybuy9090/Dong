@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-13T02:54:29.415Z",
+  "lastUpdated": "2026-07-13T05:09:35.375Z",
   "baselineAsOf": "2026-06",
   "data": [
     {
@@ -2477,6 +2477,14 @@
     {
       "company": "신세계",
       "store": "강남",
+      "brand": "이로맨",
+      "sales": "",
+      "note": "확인",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "신세계",
+      "store": "강남",
       "brand": "이스트로그(프레이트)",
       "sales": "",
       "note": "확인",
@@ -2734,6 +2742,14 @@
       "company": "신세계",
       "store": "대구",
       "brand": "준지",
+      "sales": "",
+      "note": "확인",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "신세계",
+      "store": "대구",
+      "brand": "이로맨",
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"
@@ -3110,6 +3126,14 @@
       "company": "신세계",
       "store": "센텀",
       "brand": "CP컴퍼니",
+      "sales": "",
+      "note": "확인",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "신세계",
+      "store": "센텀",
+      "brand": "이로맨",
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"
@@ -3640,6 +3664,14 @@
       "brand": "바버",
       "sales": "",
       "note": "확인",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "신세계",
+      "store": "대전",
+      "brand": "이로맨",
+      "sales": "",
+      "note": "누락/철수 가능성",
       "baselineCheck": "일치"
     },
     {

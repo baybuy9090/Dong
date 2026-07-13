@@ -1549,24 +1549,30 @@
     }
 
     function downloadUpdatedBaseline() {
-      const baseSet = new Set();
-      // 원래 baseline.json에 있었던 것: 크롤링 데이터 중 baselineCheck가 '일치'인 조합에서 역산
-      allData.forEach(r => { if (r.baselineCheck === '일치') baseSet.add(`${r.company}|${r.store}|${r.brand}`); });
-      Object.entries(baselineOverrides).forEach(([key, decision]) => {
-        if (decision === 'confirm') baseSet.add(key);
-        else baseSet.delete(key);
-      });
-      const data = [...baseSet].sort().map(key => {
-        const [company, store, brand] = key.split('|');
-        return { company, store, brand };
-      });
-      const payload = { asOf: baselineAsOf || new Date().toISOString().slice(0,7), data };
-      const blob = new Blob([JSON.stringify(payload, null, 2) + '\n'], { type: 'application/json;charset=utf-8;' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url; a.download = 'baseline.json';
-      document.body.appendChild(a); a.click(); document.body.removeChild(a);
-      URL.revokeObjectURL(url);
+      // 실제 baseline.json을 다시 불러와서 그걸 출발점으로 삼아야 함.
+      // (예전엔 "이번 크롤링에서 baselineCheck가 일치인 것들"로 역산했는데, 그러면
+      // 원래 baseline엔 있었지만 이번 한 번의 크롤링에서 우연히 못 잡은 항목이
+      // 사용자가 지운 적도 없는데 통째로 빠지는 버그가 있었음)
+      fetch('baseline.json?_=' + Date.now())
+        .then(res => res.json())
+        .then(baseline => {
+          const baseSet = new Set((baseline.data || []).map(d => `${d.company}|${d.store}|${d.brand}`));
+          Object.entries(baselineOverrides).forEach(([key, decision]) => {
+            if (decision === 'confirm') baseSet.add(key);
+            else baseSet.delete(key);
+          });
+          const data = [...baseSet].sort().map(key => {
+            const [company, store, brand] = key.split('|');
+            return { company, store, brand };
+          });
+          const payload = { asOf: baseline.asOf || baselineAsOf || new Date().toISOString().slice(0,7), data };
+          const blob = new Blob([JSON.stringify(payload, null, 2) + '\n'], { type: 'application/json;charset=utf-8;' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url; a.download = 'baseline.json';
+          document.body.appendChild(a); a.click(); document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+        });
     }
 
     function openSummaryDetail(type) {

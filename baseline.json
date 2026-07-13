@@ -378,6 +378,11 @@
     },
     {
       "company": "롯데",
+      "store": "부산본점",
+      "brand": "스톤아일랜드"
+    },
+    {
+      "company": "롯데",
       "store": "수원점",
       "brand": "시스템옴므"
     },
@@ -410,6 +415,21 @@
       "company": "롯데",
       "store": "수원점",
       "brand": "스톤아일랜드"
+    },
+    {
+      "company": "롯데",
+      "store": "수원점",
+      "brand": "CP컴퍼니"
+    },
+    {
+      "company": "롯데",
+      "store": "수원점",
+      "brand": "바버"
+    },
+    {
+      "company": "롯데",
+      "store": "수원점",
+      "brand": "솔리드옴므"
     },
     {
       "company": "롯데",
@@ -1143,6 +1163,11 @@
     },
     {
       "company": "현대",
+      "store": "중동",
+      "brand": "CP컴퍼니"
+    },
+    {
+      "company": "현대",
       "store": "천호",
       "brand": "솔리드옴므"
     },
@@ -1360,6 +1385,11 @@
       "company": "현대",
       "store": "판교",
       "brand": "준지"
+    },
+    {
+      "company": "현대",
+      "store": "판교",
+      "brand": "CP컴퍼니"
     },
     {
       "company": "현대",
@@ -1574,7 +1604,27 @@
     {
       "company": "신세계",
       "store": "강남",
+      "brand": "이로맨"
+    },
+    {
+      "company": "신세계",
+      "store": "강남",
+      "brand": "POTTERY"
+    },
+    {
+      "company": "신세계",
+      "store": "강남",
+      "brand": "수트서플라이"
+    },
+    {
+      "company": "신세계",
+      "store": "강남",
       "brand": "이스트로그(프레이트)"
+    },
+    {
+      "company": "신세계",
+      "store": "강남",
+      "brand": "헤리티지플로스"
     },
     {
       "company": "신세계",
@@ -1723,6 +1773,16 @@
     },
     {
       "company": "신세계",
+      "store": "대구",
+      "brand": "이로맨"
+    },
+    {
+      "company": "신세계",
+      "store": "대구",
+      "brand": "스톤아일랜드"
+    },
+    {
+      "company": "신세계",
       "store": "대전",
       "brand": "질스튜어트뉴욕"
     },
@@ -1795,6 +1855,11 @@
       "company": "신세계",
       "store": "대전",
       "brand": "바버"
+    },
+    {
+      "company": "신세계",
+      "store": "대전",
+      "brand": "이로맨"
     },
     {
       "company": "신세계",
@@ -1970,6 +2035,16 @@
       "company": "신세계",
       "store": "센텀",
       "brand": "우영미"
+    },
+    {
+      "company": "신세계",
+      "store": "센텀",
+      "brand": "이로맨"
+    },
+    {
+      "company": "신세계",
+      "store": "센텀",
+      "brand": "수트서플라이"
     },
     {
       "company": "신세계",

@@ -57,7 +57,7 @@ const BRAND_PATTERNS = {
   '알레그리': ['알레그리'],
   '에잇디비젼': ['에잇디비젼', '8DIVISION'],
   '우영미': ['우영미', 'WOOYOUNGMI'],
-  '이로맨': ['이로맨'],
+  '이로맨': ['이로맨', '이로 남성'],
   '이스트로그(프레이트)': ['이스트로그', '프레이트'],
   '준지': ['준지', 'JUUN.J', 'JUUNJ'],
   '지오송지오': ['지오송지오'],
@@ -295,6 +295,17 @@ async function main() {
   MANUAL_CONFIRMED.forEach(({ company, store, brand }) => {
     const already = results.some(r => r.company === company && r.store === store && r.brand === brand);
     if (!already) results.push({ company, store, brand, sales: '', note: '확인' });
+  });
+
+  // 수동 관찰 목록: baseline.json엔 있는데 크롤링으로는 실제 사이트에서 흔적을
+  // 못 찾은 것들(오탐이라 확신할 근거도 없음). "정상"으로 강제하기엔 근거가 부족해서,
+  // 계속 "누락/철수 가능성"으로 띄워서 사람이 주기적으로 확인하도록 함.
+  const MANUAL_WATCHLIST = [
+    { company: '신세계', store: '대전', brand: '이로맨' }, // "이로 남성" 라벨이 없어 실재 확인 안 됨
+  ];
+  MANUAL_WATCHLIST.forEach(({ company, store, brand }) => {
+    const already = results.some(r => r.company === company && r.store === store && r.brand === brand);
+    if (!already) results.push({ company, store, brand, sales: '', note: '누락/철수 가능성' });
   });
 
   // 직전엔 있었는데 이번엔 발견되지 않은 조합 → 누락/철수 후보로 추가
