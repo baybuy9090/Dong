@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-13T00:54:01.823Z",
+  "lastUpdated": "2026-07-13T01:24:55.819Z",
   "baselineAsOf": "2026-06",
   "data": [
     {
@@ -77,14 +77,6 @@
     {
       "company": "롯데",
       "store": "광주점",
-      "brand": "DKNY맨",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "롯데",
-      "store": "광주점",
       "brand": "타임옴므",
       "sales": "",
       "note": "확인",
@@ -149,14 +141,6 @@
     {
       "company": "롯데",
       "store": "대구점",
-      "brand": "CP컴퍼니",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "롯데",
-      "store": "대구점",
       "brand": "스톤아일랜드",
       "sales": "",
       "note": "확인",
@@ -206,14 +190,6 @@
       "company": "롯데",
       "store": "대구점",
       "brand": "송지오옴므",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "롯데",
-      "store": "동탄점",
-      "brand": "CP컴퍼니",
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"
@@ -293,14 +269,6 @@
     {
       "company": "롯데",
       "store": "본점",
-      "brand": "CP컴퍼니",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "롯데",
-      "store": "본점",
       "brand": "질스튜어트뉴욕",
       "sales": "",
       "note": "확인",
@@ -366,14 +334,6 @@
       "company": "롯데",
       "store": "본점",
       "brand": "슬로웨어",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "롯데",
-      "store": "본점",
-      "brand": "아스페시",
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"
@@ -462,14 +422,6 @@
       "company": "롯데",
       "store": "부산본점",
       "brand": "플랫폼플레이스",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "롯데",
-      "store": "부산본점",
-      "brand": "CP컴퍼니",
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"
@@ -781,14 +733,6 @@
     {
       "company": "롯데",
       "store": "인천점",
-      "brand": "CP컴퍼니",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "롯데",
-      "store": "인천점",
       "brand": "스톤아일랜드",
       "sales": "",
       "note": "확인",
@@ -805,26 +749,10 @@
     {
       "company": "롯데",
       "store": "일산",
-      "brand": "DKNY맨",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "롯데",
-      "store": "일산",
       "brand": "띠어리맨",
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"
-    },
-    {
-      "company": "롯데",
-      "store": "잠실점",
-      "brand": "CP컴퍼니",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
     },
     {
       "company": "롯데",
@@ -966,14 +894,6 @@
       "company": "롯데",
       "store": "잠실점",
       "brand": "준지",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "롯데",
-      "store": "잠실에비뉴엘",
-      "brand": "CP컴퍼니",
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"
@@ -1245,26 +1165,10 @@
     {
       "company": "현대",
       "store": "목동",
-      "brand": "DKNY맨",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "현대",
-      "store": "목동",
       "brand": "슬로웨어",
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"
-    },
-    {
-      "company": "현대",
-      "store": "목동",
-      "brand": "아스페시",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
     },
     {
       "company": "현대",
@@ -1597,14 +1501,6 @@
     {
       "company": "현대",
       "store": "여의도",
-      "brand": "아페쎄맨",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
-    },
-    {
-      "company": "현대",
-      "store": "여의도",
       "brand": "CP컴퍼니",
       "sales": "",
       "note": "확인",
@@ -1638,22 +1534,6 @@
       "company": "현대",
       "store": "여의도",
       "brand": "클럽모나코",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "현대",
-      "store": "여의도",
-      "brand": "DKNY맨",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "현대",
-      "store": "여의도",
-      "brand": "아스페시",
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"
@@ -1749,14 +1629,6 @@
     {
       "company": "현대",
       "store": "울산",
-      "brand": "CP컴퍼니",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "현대",
-      "store": "울산",
       "brand": "시스템옴므",
       "sales": "",
       "note": "확인",
@@ -2053,14 +1925,6 @@
     {
       "company": "현대",
       "store": "킨텍스",
-      "brand": "DKNY맨",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "현대",
-      "store": "킨텍스",
       "brand": "타임옴므",
       "sales": "",
       "note": "확인",
@@ -2109,14 +1973,6 @@
     {
       "company": "현대",
       "store": "판교",
-      "brand": "아페쎄맨",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "현대",
-      "store": "판교",
       "brand": "산드로옴므",
       "sales": "",
       "note": "확인",
@@ -2157,23 +2013,7 @@
     {
       "company": "현대",
       "store": "판교",
-      "brand": "DKNY맨",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "현대",
-      "store": "판교",
       "brand": "슬로웨어",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "현대",
-      "store": "판교",
-      "brand": "아스페시",
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"
@@ -2310,22 +2150,6 @@
       "company": "현대",
       "store": "대구",
       "brand": "클럽모나코",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "현대",
-      "store": "대구",
-      "brand": "DKNY맨",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "현대",
-      "store": "대구",
-      "brand": "아스페시",
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"
@@ -2521,14 +2345,6 @@
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"
-    },
-    {
-      "company": "신세계",
-      "store": "강남",
-      "brand": "아스페시",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
     },
     {
       "company": "신세계",
@@ -2749,14 +2565,6 @@
     {
       "company": "신세계",
       "store": "대구",
-      "brand": "아페쎄맨",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "신세계",
-      "store": "대구",
       "brand": "클럽모나코",
       "sales": "",
       "note": "확인",
@@ -2781,14 +2589,6 @@
     {
       "company": "신세계",
       "store": "대구",
-      "brand": "아스페시",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
-    },
-    {
-      "company": "신세계",
-      "store": "대구",
       "brand": "알레그리",
       "sales": "",
       "note": "확인",
@@ -2798,6 +2598,14 @@
       "company": "신세계",
       "store": "대구",
       "brand": "타임옴므",
+      "sales": "",
+      "note": "확인",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "신세계",
+      "store": "대구",
+      "brand": "아페쎄맨",
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"
@@ -3037,14 +2845,6 @@
     {
       "company": "신세계",
       "store": "본점",
-      "brand": "아스페시",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
-    },
-    {
-      "company": "신세계",
-      "store": "본점",
       "brand": "타임옴므",
       "sales": "",
       "note": "확인",
@@ -3205,14 +3005,6 @@
     {
       "company": "신세계",
       "store": "센텀",
-      "brand": "POTTERY",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "신세계",
-      "store": "센텀",
       "brand": "띠어리맨",
       "sales": "",
       "note": "확인",
@@ -3493,14 +3285,6 @@
     {
       "company": "신세계",
       "store": "하남",
-      "brand": "우영미",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
-    },
-    {
-      "company": "신세계",
-      "store": "하남",
       "brand": "바버",
       "sales": "",
       "note": "확인",
@@ -3534,14 +3318,6 @@
       "company": "신세계",
       "store": "경기",
       "brand": "준지",
-      "sales": "",
-      "note": "확인",
-      "baselineCheck": "일치"
-    },
-    {
-      "company": "신세계",
-      "store": "경기",
-      "brand": "아페쎄맨",
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"
@@ -3629,6 +3405,14 @@
     {
       "company": "신세계",
       "store": "경기",
+      "brand": "아페쎄맨",
+      "sales": "",
+      "note": "확인",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "신세계",
+      "store": "경기",
       "brand": "띠어리맨",
       "sales": "",
       "note": "확인",
@@ -3665,6 +3449,222 @@
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"
+    },
+    {
+      "company": "신세계",
+      "store": "대구",
+      "brand": "아스페시",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
+    },
+    {
+      "company": "신세계",
+      "store": "강남",
+      "brand": "아스페시",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
+    },
+    {
+      "company": "신세계",
+      "store": "본점",
+      "brand": "아스페시",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
+    },
+    {
+      "company": "롯데",
+      "store": "광주점",
+      "brand": "DKNY맨",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "롯데",
+      "store": "대구점",
+      "brand": "CP컴퍼니",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "롯데",
+      "store": "동탄점",
+      "brand": "CP컴퍼니",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "롯데",
+      "store": "본점",
+      "brand": "CP컴퍼니",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "롯데",
+      "store": "본점",
+      "brand": "아스페시",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "롯데",
+      "store": "부산본점",
+      "brand": "CP컴퍼니",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "롯데",
+      "store": "인천점",
+      "brand": "CP컴퍼니",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "롯데",
+      "store": "일산",
+      "brand": "DKNY맨",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "롯데",
+      "store": "잠실점",
+      "brand": "CP컴퍼니",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
+    },
+    {
+      "company": "롯데",
+      "store": "잠실에비뉴엘",
+      "brand": "CP컴퍼니",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "현대",
+      "store": "목동",
+      "brand": "DKNY맨",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "현대",
+      "store": "목동",
+      "brand": "아스페시",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
+    },
+    {
+      "company": "현대",
+      "store": "여의도",
+      "brand": "아페쎄맨",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
+    },
+    {
+      "company": "현대",
+      "store": "여의도",
+      "brand": "DKNY맨",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "현대",
+      "store": "여의도",
+      "brand": "아스페시",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "현대",
+      "store": "울산",
+      "brand": "CP컴퍼니",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "현대",
+      "store": "킨텍스",
+      "brand": "DKNY맨",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "현대",
+      "store": "판교",
+      "brand": "아페쎄맨",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "현대",
+      "store": "판교",
+      "brand": "DKNY맨",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "현대",
+      "store": "판교",
+      "brand": "아스페시",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "현대",
+      "store": "대구",
+      "brand": "DKNY맨",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "현대",
+      "store": "대구",
+      "brand": "아스페시",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "신세계",
+      "store": "센텀",
+      "brand": "POTTERY",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "신세계",
+      "store": "하남",
+      "brand": "우영미",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
     },
     {
       "company": "롯데",

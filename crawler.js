@@ -82,7 +82,16 @@ function matchBrands(rawText) {
       'A.P.C. 골프', 'A.P.C.골프', 'A.P.C골프', 'A.P.C 골프', '아페쎄골프', '아페쎄 골프',
       'CAFE A.P.C.', 'CAFE A.P.C',
     ],
+    // 다른 브랜드 소개 문구에 "디자이너 우영미"처럼 이름만 언급되는 경우 (실제 매장 아님)
+    '우영미': ['디자이너 우영미', '우영미의 하이앤드', '우영미의 하이엔드'],
   };
+
+  // 남성/여성 라인이 같이 있어서 문서 전체 범위의 "가장 가까운 마커" 방식으로는
+  // 오탐이 잦은 브랜드. 이 브랜드들은 매칭 지점 바로 근처(전후 NEAR_WINDOW자)에
+  // 남성 마커가 확실히 있을 때만 인정하고, 없으면 포함하지 않는다 (기존 브랜드들의
+  // "문서 전체에서 가장 가까운 마커" 로직은 그대로 유지).
+  const AMBIGUOUS_BRANDS = new Set(['아페쎄맨', 'POTTERY', 'DKNY맨', '아스페시', 'CP컴퍼니']);
+  const NEAR_WINDOW = 400;
 
   function findAllMarkerPositions(text, markers, isMenSearch) {
     const positions = [];
@@ -136,6 +145,13 @@ function matchBrands(rawText) {
     if (isOverlapping(m.start, m.end)) return;
     claimed.push({ start: m.start, end: m.end });
 
+    // 앞뒤가 둘 다 쉼표(사이 공백 허용)면 실제 매장 태그가 아니라 "관련/취급 브랜드 나열"
+    // 목록(다른 편집숍의 소개 문구 등)에 이름만 섞여 나온 경우. 실제 매장 표기는 항상
+    // 따옴표/태그로 감싸여 있어 양옆에 쉼표가 오지 않음.
+    const beforeChar = upperText.substring(Math.max(0, m.start - 2), m.start).trimEnd().slice(-1);
+    const afterChar = upperText.substring(m.end, m.end + 2).trimStart().slice(0, 1);
+    if (beforeChar === ',' && afterChar === ',') return;
+
     // 브랜드명 바로 뒤에 성별 표기가 붙는 경우 (예: "DKNY(여성)") 최우선으로 반영.
     // 기존 로직은 마커가 브랜드명보다 "앞"에 있을 때만 인식해서 이런 케이스를 놓쳤음.
     const trailingWindow = upperText.substring(m.end, m.end + 10);
@@ -143,6 +159,16 @@ function matchBrands(rawText) {
     if (hasTrailingWomen) return;
     const hasTrailingMen = MEN_MARKERS_UP.some(w => trailingWindow.includes(w));
     if (hasTrailingMen) { found.add(m.brand); return; }
+
+    if (AMBIGUOUS_BRANDS.has(m.brand)) {
+      const nearBefore = upperText.substring(Math.max(0, m.start - NEAR_WINDOW), m.start);
+      const nearAfter = upperText.substring(m.end, m.end + NEAR_WINDOW);
+      const nearHasWomen = WOMEN_MARKERS_UP.some(w => nearBefore.includes(w) || nearAfter.includes(w));
+      if (nearHasWomen) return;
+      const nearHasMen = MEN_MARKERS_UP.some(w => nearBefore.includes(w) || nearAfter.includes(w));
+      if (nearHasMen) found.add(m.brand);
+      return;
+    }
 
     const lastMen = Math.max(-1, ...menPositions.filter(pos => pos <= m.start));
     const lastWomen = Math.max(-1, ...womenPositions.filter(pos => pos <= m.start));

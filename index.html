@@ -294,9 +294,10 @@
   <!-- 상권 지도 -->
   <div id="mapView">
     <div class="panel">
-      <h3>지점별 위치</h3>
+      <h3>상권/지점 위치</h3>
       <div class="subtitle" style="margin-bottom:10px;">
-        원 크기·색 진하기 = 해당 지점의 고유 브랜드 수. 클릭하면 지점 상세 목록이 뜹니다. 좌표는 실제 주소 기준 근사치입니다.
+        축소하면 상권별로, 확대하면 지점별로 자동 전환됩니다. 원 크기·색 진하기 = 고유 브랜드 수, 클릭하면 상세 목록이 뜹니다.
+        상단 "브랜드명 검색"에 브랜드를 입력하면 그 브랜드가 있는 곳만 지도에 표시됩니다. 좌표는 실제 주소 기준 근사치입니다.
         <span id="mapLegendInline" style="margin-left:8px;"></span>
       </div>
       <div id="kakaoMap" style="width:100%;height:600px;border-radius:10px;background:#f0f0f0;"></div>
@@ -438,11 +439,30 @@
     };
     const SEQ_RAMP = ['#86b6ef','#5598e7','#2a78d6','#1c5cab','#104281','#0d366b'];
 
+    // 상권 중심 좌표 = 그 상권에 속한 지점들의 좌표 평균 (실제 좌표 기반, 하드코딩 아님)
+    const REGION_CENTROIDS = (() => {
+      const acc = {};
+      Object.entries(STORE_COORDS).forEach(([company, stores]) => {
+        Object.entries(stores).forEach(([store, coords]) => {
+          const region = regionOf(company, store);
+          if (!acc[region]) acc[region] = { latSum: 0, lngSum: 0, n: 0 };
+          acc[region].latSum += coords.lat;
+          acc[region].lngSum += coords.lng;
+          acc[region].n++;
+        });
+      });
+      const out = {};
+      Object.entries(acc).forEach(([region, a]) => { out[region] = { lat: a.latSum / a.n, lng: a.lngSum / a.n }; });
+      return out;
+    })();
+
     function storeMagnitude(company, store, filtered) {
       return new Set(filtered.filter(r => r.company === company && r.store === store).map(r => r.brand)).size;
     }
-    function radiusFor(value, max) {
-      const minR = 12, maxR = 26;
+    function regionMagnitude(region, filtered) {
+      return new Set(filtered.filter(r => regionOf(r.company, r.store) === region).map(r => r.brand)).size;
+    }
+    function radiusFor(value, max, minR, maxR) {
       if (max <= 0) return minR;
       return minR + Math.sqrt(value / max) * (maxR - minR);
     }
@@ -450,6 +470,29 @@
       if (max <= 0) return 0;
       return Math.min(SEQ_RAMP.length - 1, Math.floor((value / max) * SEQ_RAMP.length));
     }
+
+    function openRegionDetail(region) {
+      const filtered = currentFiltered();
+      const rows = filtered.filter(r => regionOf(r.company, r.store) === region);
+      const uniqueBrands = new Set(rows.map(r => r.brand)).size;
+      document.getElementById('modalTitle').textContent = region;
+      document.getElementById('modalSubtitle').innerHTML = `고유 브랜드 ${uniqueBrands}개 · 총 ${rows.length}건`;
+      document.getElementById('modalBody').innerHTML = regionCompanyBreakdownHtml(region, filtered);
+      document.getElementById('storeModal').style.display = 'block';
+    }
+
+    function bubbleLabelEl(circleHtml, labelHtml, onClick, titleText) {
+      const wrap = document.createElement('div');
+      wrap.style.cssText = 'display:flex;flex-direction:column;align-items:center;cursor:pointer;';
+      wrap.title = titleText;
+      wrap.innerHTML = circleHtml +
+        `<div style="margin-top:2px;font-size:10px;font-weight:700;color:#222;background:rgba(255,255,255,0.9);` +
+        `padding:1px 5px;border-radius:4px;white-space:nowrap;box-shadow:0 1px 2px rgba(0,0,0,0.2);">${labelHtml}</div>`;
+      wrap.onclick = onClick;
+      return wrap;
+    }
+
+    const MAP_STORE_ZOOM_THRESHOLD = 8; // 이 레벨 이하(더 확대)면 지점별, 초과(더 축소)면 상권별
 
     let kakaoMap = null;
     let kakaoOverlays = [];
@@ -470,34 +513,61 @@
           center: new kakao.maps.LatLng(36.5, 127.6),
           level: 13,
         });
+        kakao.maps.event.addListener(kakaoMap, 'zoom_changed', renderMapMarkers);
       }
+      renderMapMarkers();
+    }
 
+    function renderMapMarkers() {
       kakaoOverlays.forEach(o => o.setMap(null));
       kakaoOverlays = [];
 
       const filtered = currentFiltered();
-      let maxVal = 1;
-      Object.entries(STORE_COORDS).forEach(([company, stores]) => {
-        Object.keys(stores).forEach(store => {
-          maxVal = Math.max(maxVal, storeMagnitude(company, store, filtered));
-        });
-      });
+      const zoomedIn = kakaoMap.getLevel() <= MAP_STORE_ZOOM_THRESHOLD;
 
-      Object.entries(STORE_COORDS).forEach(([company, stores]) => {
-        Object.entries(stores).forEach(([store, coords]) => {
-          const val = storeMagnitude(company, store, filtered);
+      if (zoomedIn) {
+        let maxVal = 1;
+        Object.entries(STORE_COORDS).forEach(([company, stores]) => {
+          Object.keys(stores).forEach(store => { maxVal = Math.max(maxVal, storeMagnitude(company, store, filtered)); });
+        });
+        Object.entries(STORE_COORDS).forEach(([company, stores]) => {
+          Object.entries(stores).forEach(([store, coords]) => {
+            const val = storeMagnitude(company, store, filtered);
+            if (val === 0) return;
+            const r = radiusFor(val, maxVal, 12, 24);
+            const bucketIdx = seqBucket(val, maxVal);
+            const fill = SEQ_RAMP[bucketIdx];
+            const textColor = bucketIdx <= 1 ? '#0b0b0b' : '#ffffff';
+            const circleHtml = `<div style="width:${r*2}px;height:${r*2}px;border-radius:50%;background:${fill};` +
+              `border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.35);display:flex;align-items:center;` +
+              `justify-content:center;color:${textColor};font-size:10.5px;font-weight:700;">${val}</div>`;
+            const labelHtml = `<span style="color:${companyColor(company)};">${company}</span> ${store}`;
+            const el = bubbleLabelEl(circleHtml, labelHtml, () => openStoreDetail(company, store), `${company} ${store} · 고유 브랜드 ${val}개`);
+            const overlay = new kakao.maps.CustomOverlay({
+              position: new kakao.maps.LatLng(coords.lat, coords.lng),
+              content: el,
+              yAnchor: 0.5,
+            });
+            overlay.setMap(kakaoMap);
+            kakaoOverlays.push(overlay);
+          });
+        });
+      } else {
+        const regions = Object.keys(REGION_CENTROIDS);
+        let maxVal = 1;
+        regions.forEach(rg => { maxVal = Math.max(maxVal, regionMagnitude(rg, filtered)); });
+        regions.forEach(rg => {
+          const val = regionMagnitude(rg, filtered);
           if (val === 0) return;
-          const r = radiusFor(val, maxVal);
+          const coords = REGION_CENTROIDS[rg];
+          const r = radiusFor(val, maxVal, 16, 34);
           const bucketIdx = seqBucket(val, maxVal);
           const fill = SEQ_RAMP[bucketIdx];
           const textColor = bucketIdx <= 1 ? '#0b0b0b' : '#ffffff';
-          const el = document.createElement('div');
-          el.title = `${company} ${store} · 고유 브랜드 ${val}개`;
-          el.style.cssText = `width:${r*2}px;height:${r*2}px;border-radius:50%;background:${fill};` +
+          const circleHtml = `<div style="width:${r*2}px;height:${r*2}px;border-radius:50%;background:${fill};` +
             `border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.35);display:flex;align-items:center;` +
-            `justify-content:center;color:${textColor};font-size:10.5px;font-weight:700;cursor:pointer;`;
-          el.textContent = val;
-          el.onclick = () => openStoreDetail(company, store);
+            `justify-content:center;color:${textColor};font-size:12px;font-weight:700;">${val}</div>`;
+          const el = bubbleLabelEl(circleHtml, rg, () => openRegionDetail(rg), `${rg} · 고유 브랜드 ${val}개`);
           const overlay = new kakao.maps.CustomOverlay({
             position: new kakao.maps.LatLng(coords.lat, coords.lng),
             content: el,
@@ -506,7 +576,7 @@
           overlay.setMap(kakaoMap);
           kakaoOverlays.push(overlay);
         });
-      });
+      }
     }
 
     // 실제 층별 안내 페이지 링크 생성용 지점 코드 (Code.gs와 동일하게 유지)
@@ -731,6 +801,7 @@
       if (currentTab === 'matrix') renderMatrix();
       if (currentTab === 'overview') renderOverview();
       if (currentTab === 'floor') renderFloorView();
+      if (currentTab === 'map' && kakaoMap) renderMapMarkers();
     }
 
     function renderOverview() {
@@ -765,9 +836,9 @@
               <span class="brand-link" onclick="openBrandDetail('${r.brand}')" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${r.brand}</span>
             </div>
             <div class="bar-track" style="display:flex;">
-              <div class="bar-fill" style="width:${r.l/maxTotal*100}%;background:#c8102e;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="롯데 ${r.l}">${r.l>0?`<span style="color:white;font-size:9px;font-weight:600;white-space:nowrap;">롯데 ${r.l}개</span>`:''}</div>
-              <div class="bar-fill" style="width:${r.h/maxTotal*100}%;background:#1a9d4c;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="현대 ${r.h}">${r.h>0?`<span style="color:white;font-size:9px;font-weight:600;white-space:nowrap;">현대 ${r.h}개</span>`:''}</div>
-              <div class="bar-fill" style="width:${r.sg/maxTotal*100}%;background:#004990;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="신세계 ${r.sg}">${r.sg>0?`<span style="color:white;font-size:9px;font-weight:600;white-space:nowrap;">신세계 ${r.sg}개</span>`:''}</div>
+              <div class="bar-fill" style="width:${r.l/maxTotal*100}%;background:#c8102e;" title="롯데 ${r.l}"></div>
+              <div class="bar-fill" style="width:${r.h/maxTotal*100}%;background:#1a9d4c;" title="현대 ${r.h}"></div>
+              <div class="bar-fill" style="width:${r.sg/maxTotal*100}%;background:#004990;" title="신세계 ${r.sg}"></div>
             </div>
             <div style="width:170px;font-size:10.5px;color:#666;flex-shrink:0;">롯데 ${r.l}개 현대 ${r.h}개 신세계 ${r.sg}개</div>
             <div class="bar-num">${r.total}</div>
@@ -962,10 +1033,27 @@
       }).join('');
     }
 
+    function orderedBrands(filtered) {
+      const tierOrderLocal = ['SA급','Designer','Global','Select','B급','Classic','New','New Select','Contents','미분류'];
+      const counts = {};
+      filtered.forEach(r => { counts[r.brand] = (counts[r.brand] || 0) + 1; });
+      const byTier = {};
+      [...new Set(filtered.map(r => r.brand))].forEach(b => {
+        (byTier[tierOf(b)] = byTier[tierOf(b)] || []).push(b);
+      });
+      const result = [];
+      tierOrderLocal.forEach(t => {
+        if (!byTier[t]) return;
+        byTier[t].sort((a, b) => (counts[b] || 0) - (counts[a] || 0));
+        result.push(...byTier[t]);
+      });
+      return result;
+    }
+
     function renderMatrix() {
       const filtered = currentFiltered();
       const stores = [...new Set(filtered.map(r => `${r.company}|${r.store}`))].sort();
-      const brands = [...new Set(filtered.map(r => r.brand))].sort((a,b)=>a.localeCompare(b,'ko'));
+      const brands = orderedBrands(filtered);
 
       const header = document.getElementById('matrixHeader');
       header.innerHTML = '<th class="brand-col">브랜드 \\ 지점</th>' +
@@ -1138,7 +1226,7 @@
         const rows = allData.filter(r => statusOf(r) === type);
         title = type === 'new' ? '신규 입점 가능성 브랜드' : '누락/철수 가능성 브랜드';
         subtitle = type === 'new'
-          ? `직전 크롤링엔 없었는데 이번엔 새로 발견됐고, ${baselineAsOf || '이전'} 스냅샷에도 있던 조합(오탐 가능성 낮음) — 총 ${rows.length}건`
+          ? `직전 크롤링엔 없었는데 이번엔 새로 발견된 조합 — 총 ${rows.length}건`
           : `직전 크롤링엔 있었는데 이번엔 발견되지 않은 조합 — 총 ${rows.length}건`;
         bodyHtml = rows.length ? rows.map(r => {
           const url = floorGuideUrl(r.company, r.store);
@@ -1168,20 +1256,34 @@
     }
 
     function populateFilters() {
-      const companies = [...new Set(allData.map(r => r.company))];
-      const stores = [...new Set(allData.map(r => r.store))];
-      const regions = [...new Set(allData.map(r => regionOf(r.company, r.store)))].sort((a,b)=>a.localeCompare(b,'ko'));
       const companySel = document.getElementById('companyFilter');
       const storeSel = document.getElementById('storeFilter');
       const regionSel = document.getElementById('regionFilter');
-      companies.forEach(c => companySel.innerHTML += `<option value="${c}">${c}</option>`);
-      stores.forEach(s => storeSel.innerHTML += `<option value="${s}">${s}</option>`);
-      regions.forEach(r => regionSel.innerHTML += `<option value="${r}">${r}</option>`);
+      const companyVal = companySel.value;
+      const prevStoreVal = storeSel.value;
+      const prevRegionVal = regionSel.value;
+
+      const companies = [...new Set(allData.map(r => r.company))];
+      const relevantRows = companyVal ? allData.filter(r => r.company === companyVal) : allData;
+      const stores = [...new Set(relevantRows.map(r => r.store))];
+      const regions = [...new Set(relevantRows.map(r => regionOf(r.company, r.store)))].sort((a,b)=>a.localeCompare(b,'ko'));
+
+      companySel.innerHTML = '<option value="">전체 회사</option>' +
+        companies.map(c => `<option value="${c}">${c}</option>`).join('');
+      companySel.value = companyVal;
+
+      storeSel.innerHTML = '<option value="">전체 지점</option>' +
+        stores.map(s => `<option value="${s}">${s}</option>`).join('');
+      if (stores.includes(prevStoreVal)) storeSel.value = prevStoreVal;
+
+      regionSel.innerHTML = '<option value="">전체 상권</option>' +
+        regions.map(r => `<option value="${r}">${r}</option>`).join('');
+      if (regions.includes(prevRegionVal)) regionSel.value = prevRegionVal;
     }
 
     document.getElementById('regionFilter').addEventListener('change', render);
 
-    document.getElementById('companyFilter').addEventListener('change', render);
+    document.getElementById('companyFilter').addEventListener('change', () => { populateFilters(); render(); });
     document.getElementById('storeFilter').addEventListener('change', render);
     document.getElementById('statusFilter').addEventListener('change', render);
 
