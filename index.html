@@ -57,6 +57,37 @@
     .tab-btn:hover { background: #dcdce2; }
     .tab-btn.active { background: #2c2c34; color: white; }
 
+    .chip {
+      display: inline-block; padding: 4px 10px; margin: 2px 3px 2px 0; border-radius: 12px;
+      background: #eee; color: #555; font-size: 11.5px; cursor: pointer; border: 1px solid transparent;
+      user-select: none;
+    }
+    .chip:hover { background: #e2e2e6; }
+    .chip.active { background: #2c2c34; color: white; }
+
+    .map-chip-row {
+      display: flex; flex-wrap: nowrap; overflow-x: auto; padding: 4px 2px 8px;
+      white-space: nowrap; -webkit-overflow-scrolling: touch;
+    }
+    .map-chip-row .chip { flex-shrink: 0; }
+    .map-select-row { display: flex; gap: 8px; margin-bottom: 10px; }
+    .map-select-row select {
+      padding: 7px 10px; border: 1px solid #ddd; border-radius: 8px; font-size: 13px; background: white;
+    }
+
+    @keyframes mapPopIn { from { transform: scale(0); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    .map-circle {
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      border: 2.5px solid #fff; color: #fff; font-weight: 800; cursor: pointer;
+      transition: transform 0.15s ease; animation: mapPopIn 0.3s cubic-bezier(.34,1.56,.64,1);
+    }
+    .map-circle:hover { transform: scale(1.15); }
+    .map-label-pill {
+      margin-top: 3px; font-size: 10px; font-weight: 700; color: #222;
+      background: rgba(255,255,255,0.95); padding: 2px 8px; border-radius: 20px;
+      white-space: nowrap; box-shadow: 0 2px 6px rgba(0,0,0,0.25); border: 1px solid rgba(0,0,0,0.06);
+    }
+
     .controls { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
     select, input {
       padding: 7px 10px; border: 1px solid #ddd; border-radius: 8px;
@@ -149,6 +180,38 @@
     .region-company-block .cname { font-weight: 700; font-size: 12px; margin-bottom: 3px; }
     .region-store-line { font-size: 11.5px; color: #444; margin-bottom: 2px; padding-left: 6px; }
     .region-store-line b { color: #222; }
+
+    /* ── 모바일 반응형 ── */
+    @media (max-width: 680px) {
+      body { padding: 0 10px 16px; }
+      .header-bar { margin: 0 -10px 14px; padding: 16px 14px 14px; }
+      .header-bar h1 { font-size: 16px; }
+      .subtitle { font-size: 11px; }
+
+      .summary { gap: 8px; }
+      .card { min-width: calc(50% - 4px); flex: none; padding: 10px 12px; }
+      .card .num { font-size: 18px; }
+
+      .tabs { gap: 4px; }
+      .tab-btn { padding: 6px 10px; font-size: 12px; }
+
+      .controls { flex-direction: column; align-items: stretch; }
+      .controls select, .controls input { width: 100%; min-width: 0; }
+
+      table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+      #brandRanking, #regionRanking { overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 4px; }
+      .bar-row { min-width: 480px; }
+
+      .overview-grid { gap: 10px; }
+
+      #kakaoMap { height: 420px !important; }
+      .map-select-row { flex-direction: column; }
+
+      #storeModal > div { margin: 16px !important; max-height: 85vh !important; }
+
+      .matrix-table { min-width: 700px; }
+    }
   </style>
   <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8bd8d20b20b6e21a2865e280d779164e"></script>
 </head>
@@ -167,10 +230,10 @@
 
   <div class="tabs">
     <button class="tab-btn active" id="tabOverview" onclick="switchTab('overview')">📊 한눈에 보기</button>
-    <button class="tab-btn" id="tabTable" onclick="switchTab('table')">📋 표로 보기</button>
+    <button class="tab-btn" id="tabMap" onclick="switchTab('map')">📍 상권 지도</button>
     <button class="tab-btn" id="tabMatrix" onclick="switchTab('matrix')">🔲 매트릭스</button>
     <button class="tab-btn" id="tabFloor" onclick="switchTab('floor')">🗺️ 층 도면 보기</button>
-    <button class="tab-btn" id="tabMap" onclick="switchTab('map')">📍 상권 지도</button>
+    <button class="tab-btn" id="tabTable" onclick="switchTab('table')">📋 표로 보기</button>
     <button class="tab-btn" id="favToggle" onclick="toggleFavOnly()">☆ 즐겨찾기만</button>
   </div>
 
@@ -247,30 +310,32 @@
   <!-- 표 -->
   <div id="tableView">
     <div style="margin-bottom:10px;">
-      <button class="tab-btn" style="background:#2c2c34;color:white;" onclick="exportTableCSV()">CSV로 내보내기</button>
+      <button class="tab-btn" style="background:#2c2c34;color:white;" onclick="exportTableExcel()">엑셀로 내보내기</button>
     </div>
-    <table>
-      <thead>
-        <tr>
-          <th class="sortable" onclick="setSortKey('company')">회사<span class="arrow" id="arrow-company"></span></th>
-          <th class="sortable" onclick="setSortKey('store')">지점<span class="arrow" id="arrow-store"></span></th>
-          <th class="sortable" onclick="setSortKey('region')">상권<span class="arrow" id="arrow-region"></span></th>
-          <th class="sortable" onclick="setSortKey('brand')">브랜드<span class="arrow" id="arrow-brand"></span></th>
-          <th>매출</th>
-          <th class="sortable" onclick="setSortKey('status')">상태<span class="arrow" id="arrow-status"></span></th>
-        </tr>
-      </thead>
-      <tbody id="tbody"></tbody>
-    </table>
+    <div style="overflow-x:auto;">
+      <table style="min-width:640px;">
+        <thead>
+          <tr>
+            <th class="sortable" onclick="setSortKey('company')">회사<span class="arrow" id="arrow-company"></span></th>
+            <th class="sortable" onclick="setSortKey('store')">지점<span class="arrow" id="arrow-store"></span></th>
+            <th class="sortable" onclick="setSortKey('region')">상권<span class="arrow" id="arrow-region"></span></th>
+            <th class="sortable" onclick="setSortKey('brand')">브랜드<span class="arrow" id="arrow-brand"></span></th>
+            <th>매출</th>
+            <th class="sortable" onclick="setSortKey('status')">상태<span class="arrow" id="arrow-status"></span></th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
     <div id="emptyMsg" class="empty" style="display:none;">
-      데이터가 없습니다. Apps Script 편집기에서 start2607Update()를 먼저 실행해주세요.
+      데이터가 없습니다. GitHub Actions 워크플로우(월간 브랜드 크롤링)를 먼저 실행해주세요.
     </div>
   </div>
 
   <!-- 매트릭스 -->
   <div id="matrixView">
     <div style="margin-bottom:10px;">
-      <button class="tab-btn" style="background:#2c2c34;color:white;" onclick="exportMatrixCSV()">CSV로 내보내기</button>
+      <button class="tab-btn" style="background:#2c2c34;color:white;" onclick="exportMatrixExcel()">엑셀로 내보내기</button>
     </div>
     <div id="matrixWrap">
       <table class="matrix-table">
@@ -295,10 +360,20 @@
   <div id="mapView">
     <div class="panel">
       <h3>상권/지점 위치</h3>
-      <div class="subtitle" style="margin-bottom:10px;">
-        축소하면 상권별로, 확대하면 지점별로 자동 전환됩니다. 원 크기·색 진하기 = 고유 브랜드 수, 클릭하면 상세 목록이 뜹니다.
-        상단 "브랜드명 검색"에 브랜드를 입력하면 그 브랜드가 있는 곳만 지도에 표시됩니다. 좌표는 실제 주소 기준 근사치입니다.
+      <div class="subtitle" style="margin-bottom:8px;">
+        축소하면 상권별, 확대하면 지점별로 자동 전환됩니다. 상권 원을 클릭하면 그 상권으로 확대되고, 지점을 클릭하면 입점 브랜드 목록이 뜹니다.
+        원 크기·색 진하기 = 브랜드 수. 좌표는 실제 주소 기준 근사치입니다.
         <span id="mapLegendInline" style="margin-left:8px;"></span>
+      </div>
+      <div id="mapBrandChips" class="map-chip-row"></div>
+      <div class="map-select-row">
+        <select id="mapRegionSelect" onchange="setMapRegion(this.value)"><option value="">전체 상권</option></select>
+        <select id="mapCompanySelect" onchange="setMapCompany(this.value)">
+          <option value="">전체 회사</option>
+          <option value="롯데">롯데</option>
+          <option value="현대">현대</option>
+          <option value="신세계">신세계</option>
+        </select>
       </div>
       <div id="kakaoMap" style="width:100%;height:600px;border-radius:10px;background:#f0f0f0;"></div>
     </div>
@@ -471,23 +546,91 @@
       return Math.min(SEQ_RAMP.length - 1, Math.floor((value / max) * SEQ_RAMP.length));
     }
 
-    function openRegionDetail(region) {
-      const filtered = currentFiltered();
-      const rows = filtered.filter(r => regionOf(r.company, r.store) === region);
-      const uniqueBrands = new Set(rows.map(r => r.brand)).size;
-      document.getElementById('modalTitle').textContent = region;
-      document.getElementById('modalSubtitle').innerHTML = `고유 브랜드 ${uniqueBrands}개 · 총 ${rows.length}건`;
-      document.getElementById('modalBody').innerHTML = regionCompanyBreakdownHtml(region, filtered);
-      document.getElementById('storeModal').style.display = 'block';
+    function zoomToRegion(region) {
+      const coordsList = [];
+      Object.entries(STORE_COORDS).forEach(([company, stores]) => {
+        Object.entries(stores).forEach(([store, coords]) => {
+          if (regionOf(company, store) === region) coordsList.push(coords);
+        });
+      });
+      if (coordsList.length === 0) return;
+      if (coordsList.length === 1) {
+        kakaoMap.setLevel(MAP_STORE_ZOOM_THRESHOLD - 2);
+        kakaoMap.setCenter(new kakao.maps.LatLng(coordsList[0].lat, coordsList[0].lng));
+      } else {
+        const bounds = new kakao.maps.LatLngBounds();
+        coordsList.forEach(c => bounds.extend(new kakao.maps.LatLng(c.lat, c.lng)));
+        kakaoMap.setBounds(bounds, 80, 80, 80, 80);
+      }
+    }
+
+    let selectedMapBrands = new Set();
+    let selectedMapRegion = '';
+    let selectedMapCompany = '';
+    function mapFilteredRows(filtered) {
+      let rows = filtered;
+      if (selectedMapBrands.size > 0) rows = rows.filter(r => selectedMapBrands.has(r.brand));
+      if (selectedMapRegion) rows = rows.filter(r => regionOf(r.company, r.store) === selectedMapRegion);
+      if (selectedMapCompany) rows = rows.filter(r => r.company === selectedMapCompany);
+      return rows;
+    }
+    function toggleMapBrand(brand, safeId) {
+      if (selectedMapBrands.has(brand)) selectedMapBrands.delete(brand);
+      else selectedMapBrands.add(brand);
+      const chip = document.getElementById('chip-' + safeId);
+      if (chip) chip.classList.toggle('active', selectedMapBrands.has(brand));
+      if (kakaoMap) renderMapMarkers();
+    }
+    function setMapRegion(region) {
+      selectedMapRegion = region;
+      if (kakaoMap) {
+        if (region) zoomToRegion(region);
+        renderMapMarkers();
+      }
+    }
+    function setMapCompany(company) {
+      selectedMapCompany = company;
+      if (kakaoMap) renderMapMarkers();
+    }
+    let mapChipsBuilt = false;
+    function renderMapBrandChips() {
+      if (mapChipsBuilt) return;
+      mapChipsBuilt = true;
+      const brands = orderedBrands(allData.filter(r => r.brand !== '(확인된 브랜드 없음)' && r.brand !== '(오류)'));
+      document.getElementById('mapBrandChips').innerHTML = brands.map(b => {
+        const safeId = b.replace(/[^a-zA-Z0-9가-힣]/g, '');
+        return `<span class="chip" id="chip-${safeId}" onclick="toggleMapBrand('${b}','${safeId}')">${b}</span>`;
+      }).join('');
+      const regionSel = document.getElementById('mapRegionSelect');
+      const regions = [...new Set(Object.entries(STORE_COORDS).flatMap(([c, stores]) => Object.keys(stores).map(s => regionOf(c, s))))]
+        .sort((a, b) => a.localeCompare(b, 'ko'));
+      regionSel.innerHTML = '<option value="">전체 상권</option>' + regions.map(r => `<option value="${r}">${r}</option>`).join('');
+    }
+
+    function lightenHex(hex, amt) {
+      const n = parseInt(hex.slice(1), 16);
+      const r = Math.round(((n >> 16) & 255) + (255 - ((n >> 16) & 255)) * amt);
+      const g = Math.round(((n >> 8) & 255) + (255 - ((n >> 8) & 255)) * amt);
+      const b = Math.round((n & 255) + (255 - (n & 255)) * amt);
+      return `rgb(${r},${g},${b})`;
+    }
+    function hexToRgba(hex, alpha) {
+      const n = parseInt(hex.slice(1), 16);
+      return `rgba(${(n>>16)&255},${(n>>8)&255},${n&255},${alpha})`;
+    }
+    function mapCircleHtml(val, r, fill, fontSize) {
+      const textColor = '#ffffff';
+      const gradient = `radial-gradient(circle at 32% 28%, ${lightenHex(fill, 0.4)}, ${fill})`;
+      const glow = `0 3px 10px ${hexToRgba(fill, 0.55)}, 0 1px 3px rgba(0,0,0,0.35)`;
+      return `<div class="map-circle" style="width:${r*2}px;height:${r*2}px;background:${gradient};` +
+        `box-shadow:${glow};color:${textColor};font-size:${fontSize}px;">${val}</div>`;
     }
 
     function bubbleLabelEl(circleHtml, labelHtml, onClick, titleText) {
       const wrap = document.createElement('div');
       wrap.style.cssText = 'display:flex;flex-direction:column;align-items:center;cursor:pointer;';
       wrap.title = titleText;
-      wrap.innerHTML = circleHtml +
-        `<div style="margin-top:2px;font-size:10px;font-weight:700;color:#222;background:rgba(255,255,255,0.9);` +
-        `padding:1px 5px;border-radius:4px;white-space:nowrap;box-shadow:0 1px 2px rgba(0,0,0,0.2);">${labelHtml}</div>`;
+      wrap.innerHTML = circleHtml + `<div class="map-label-pill">${labelHtml}</div>`;
       wrap.onclick = onClick;
       return wrap;
     }
@@ -508,6 +651,8 @@
         container.innerHTML = '<div class="empty">카카오맵 SDK를 불러오지 못했습니다. index.html의 API 키/도메인 등록(developers.kakao.com)을 확인해주세요.</div>';
         return;
       }
+      renderMapBrandChips();
+
       if (!kakaoMap) {
         kakaoMap = new kakao.maps.Map(container, {
           center: new kakao.maps.LatLng(36.5, 127.6),
@@ -522,7 +667,7 @@
       kakaoOverlays.forEach(o => o.setMap(null));
       kakaoOverlays = [];
 
-      const filtered = currentFiltered();
+      const filtered = mapFilteredRows(currentFiltered());
       const zoomedIn = kakaoMap.getLevel() <= MAP_STORE_ZOOM_THRESHOLD;
 
       if (zoomedIn) {
@@ -537,10 +682,7 @@
             const r = radiusFor(val, maxVal, 12, 24);
             const bucketIdx = seqBucket(val, maxVal);
             const fill = SEQ_RAMP[bucketIdx];
-            const textColor = bucketIdx <= 1 ? '#0b0b0b' : '#ffffff';
-            const circleHtml = `<div style="width:${r*2}px;height:${r*2}px;border-radius:50%;background:${fill};` +
-              `border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.35);display:flex;align-items:center;` +
-              `justify-content:center;color:${textColor};font-size:10.5px;font-weight:700;">${val}</div>`;
+            const circleHtml = mapCircleHtml(val, r, fill, 10.5);
             const labelHtml = `<span style="color:${companyColor(company)};">${company}</span> ${store}`;
             const el = bubbleLabelEl(circleHtml, labelHtml, () => openStoreDetail(company, store), `${company} ${store} · 고유 브랜드 ${val}개`);
             const overlay = new kakao.maps.CustomOverlay({
@@ -563,11 +705,11 @@
           const r = radiusFor(val, maxVal, 16, 34);
           const bucketIdx = seqBucket(val, maxVal);
           const fill = SEQ_RAMP[bucketIdx];
-          const textColor = bucketIdx <= 1 ? '#0b0b0b' : '#ffffff';
-          const circleHtml = `<div style="width:${r*2}px;height:${r*2}px;border-radius:50%;background:${fill};` +
-            `border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.35);display:flex;align-items:center;` +
-            `justify-content:center;color:${textColor};font-size:12px;font-weight:700;">${val}</div>`;
-          const el = bubbleLabelEl(circleHtml, rg, () => openRegionDetail(rg), `${rg} · 고유 브랜드 ${val}개`);
+          const circleHtml = mapCircleHtml(val, r, fill, 12);
+          const el = bubbleLabelEl(circleHtml, rg, () => {
+            document.getElementById('mapRegionSelect').value = rg;
+            setMapRegion(rg);
+          }, `${rg} · 브랜드 ${val}개 (클릭하면 확대)`);
           const overlay = new kakao.maps.CustomOverlay({
             position: new kakao.maps.LatLng(coords.lat, coords.lng),
             content: el,
@@ -621,10 +763,11 @@
       const note = r.note || '';
       const baseline = r.baselineCheck || '';
       if (note.includes('캐시 의심')) return 'warn';
+      // 신규/누락 후보는 baseline 일치 여부와 무관하게 그대로 신규/누락으로 표시.
+      // (baseline 불일치까지 "확인 필요"로 다시 겹쳐 잡으면 같은 건이 두 번 카운트됨)
+      if (note.includes('누락')) return 'removed';
+      if (note.includes('신규 입점')) return 'new';
       if (baseline.startsWith('⚠')) return 'suspect';
-      if (note.includes('신규 입점') || note.includes('누락')) {
-        return note.includes('누락') ? 'removed' : 'new';
-      }
       return 'none';
     }
     // 요약 카드/필터용: '캐시 의심'과 'baseline과 다름'은 둘 다 "사람이 확인해야 하는 것"으로 묶음
@@ -821,6 +964,11 @@
       // ── 패널 1: 브랜드별 입점 수 랭킹 (티어 그룹별) ──
       const tierOrder = ['SA급','Designer','Global','Select','B급','Classic','New','New Select','Contents','미분류'];
       const maxTotal = Math.max(...brandRows.map(r => r.total), 1);
+      // 막대가 너무 좁으면(대략 1~2개 수준) 안에 텍스트가 안 들어가므로 그 구간만 생략
+      function segText(val, label, max) {
+        if (val <= 0 || val / max < 0.12) return '';
+        return `<span style="color:white;font-size:9px;font-weight:600;white-space:nowrap;">${label} ${val}개</span>`;
+      }
       let rankingHtml = '';
       tierOrder.forEach(tier => {
         const rowsInTier = brandRows.filter(r => tierOf(r.brand) === tier)
@@ -836,9 +984,9 @@
               <span class="brand-link" onclick="openBrandDetail('${r.brand}')" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${r.brand}</span>
             </div>
             <div class="bar-track" style="display:flex;">
-              <div class="bar-fill" style="width:${r.l/maxTotal*100}%;background:#c8102e;" title="롯데 ${r.l}"></div>
-              <div class="bar-fill" style="width:${r.h/maxTotal*100}%;background:#1a9d4c;" title="현대 ${r.h}"></div>
-              <div class="bar-fill" style="width:${r.sg/maxTotal*100}%;background:#004990;" title="신세계 ${r.sg}"></div>
+              <div class="bar-fill" style="width:${r.l/maxTotal*100}%;background:#c8102e;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="롯데 ${r.l}">${segText(r.l, '롯데', maxTotal)}</div>
+              <div class="bar-fill" style="width:${r.h/maxTotal*100}%;background:#1a9d4c;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="현대 ${r.h}">${segText(r.h, '현대', maxTotal)}</div>
+              <div class="bar-fill" style="width:${r.sg/maxTotal*100}%;background:#004990;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="신세계 ${r.sg}">${segText(r.sg, '신세계', maxTotal)}</div>
             </div>
             <div style="width:170px;font-size:10.5px;color:#666;flex-shrink:0;">롯데 ${r.l}개 현대 ${r.h}개 신세계 ${r.sg}개</div>
             <div class="bar-num">${r.total}</div>
@@ -1052,14 +1200,18 @@
 
     function renderMatrix() {
       const filtered = currentFiltered();
-      const stores = [...new Set(filtered.map(r => `${r.company}|${r.store}`))].sort();
+      const stores = [...new Set(filtered.map(r => `${r.company}|${r.store}`))].sort((a, b) => {
+        const [ac, as_] = a.split('|'), [bc, bs] = b.split('|');
+        const ar = regionOf(ac, as_), br = regionOf(bc, bs);
+        return ar.localeCompare(br, 'ko') || ac.localeCompare(bc, 'ko') || as_.localeCompare(bs, 'ko');
+      });
       const brands = orderedBrands(filtered);
 
       const header = document.getElementById('matrixHeader');
       header.innerHTML = '<th class="brand-col">브랜드 \\ 지점</th>' +
         stores.map(s => {
           const [comp, store] = s.split('|');
-          return `<th style="writing-mode:vertical-rl;white-space:nowrap;padding:6px 4px;cursor:pointer;" onclick="openStoreDetail('${comp}','${store}')">${store}<br><span style="font-size:9px;opacity:.7">${comp}</span></th>`;
+          return `<th style="writing-mode:vertical-rl;white-space:nowrap;padding:6px 4px;cursor:pointer;" onclick="openStoreDetail('${comp}','${store}')" title="${regionOf(comp,store)}">${store}<br><span style="font-size:9px;opacity:.7">${comp}</span></th>`;
         }).join('');
 
       const lookup = {};
@@ -1080,12 +1232,18 @@
       }).join('');
     }
 
-    function downloadCSV(rows, filename) {
-      const csv = rows.map(row => row.map(cell => {
-        const s = String(cell == null ? '' : cell);
-        return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
-      }).join(',')).join('\n');
-      const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' });
+    function downloadExcel(rows, filename) {
+      const escapeHtml = s => String(s == null ? '' : s)
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      const table = '<table>' + rows.map(row =>
+        '<tr>' + row.map(cell => `<td>${escapeHtml(cell)}</td>`).join('') + '</tr>'
+      ).join('') + '</table>';
+      const html = `<html xmlns:x="urn:schemas-microsoft-com:office:excel"><head><meta charset="UTF-8">` +
+        `<!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet>` +
+        `<x:Name>Sheet1</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions>` +
+        `</x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]-->` +
+        `</head><body>${table}</body></html>`;
+      const blob = new Blob(['\uFEFF' + html], { type: 'application/vnd.ms-excel;charset=utf-8;' });
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url; a.download = filename;
@@ -1093,17 +1251,21 @@
       URL.revokeObjectURL(url);
     }
 
-    function exportTableCSV() {
+    function exportTableExcel() {
       const filtered = currentFiltered();
       const rows = [['회사','지점','상권','브랜드','매출','상태']];
       filtered.forEach(r => rows.push([r.company, r.store, regionOf(r.company,r.store), r.brand, r.sales||'', statusBadgeText(statusOf(r))]));
-      downloadCSV(rows, '동업계_표_' + new Date().toISOString().slice(0,10) + '.csv');
+      downloadExcel(rows, '동업계_표_' + new Date().toISOString().slice(0,10) + '.xls');
     }
 
-    function exportMatrixCSV() {
+    function exportMatrixExcel() {
       const filtered = currentFiltered();
-      const stores = [...new Set(filtered.map(r => `${r.company}|${r.store}`))].sort();
-      const brands = [...new Set(filtered.map(r => r.brand))].sort((a,b)=>a.localeCompare(b,'ko'));
+      const stores = [...new Set(filtered.map(r => `${r.company}|${r.store}`))].sort((a, b) => {
+        const [ac, as_] = a.split('|'), [bc, bs] = b.split('|');
+        const ar = regionOf(ac, as_), br = regionOf(bc, bs);
+        return ar.localeCompare(br, 'ko') || ac.localeCompare(bc, 'ko') || as_.localeCompare(bs, 'ko');
+      });
+      const brands = orderedBrands(filtered);
       const lookup = {};
       filtered.forEach(r => { lookup[`${r.company}|${r.store}|${r.brand}`] = statusOf(r); });
       const rows = [['브랜드', ...stores.map(s => s.split('|')[1] + '(' + s.split('|')[0] + ')')]];
@@ -1113,7 +1275,7 @@
           return st ? statusBadgeText(st) : '';
         })]);
       });
-      downloadCSV(rows, '동업계_매트릭스_' + new Date().toISOString().slice(0,10) + '.csv');
+      downloadExcel(rows, '동업계_매트릭스_' + new Date().toISOString().slice(0,10) + '.xls');
     }
 
     function statusBadgeText(status) {
