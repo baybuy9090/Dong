@@ -9,10 +9,22 @@
       margin: 0; padding: 0 20px 20px; background: #f5f6f8; color: #1a1a1a;
     }
     .header-bar {
+      position: relative;
       margin: 0 -20px 18px; padding: 22px 20px 18px;
       background: linear-gradient(135deg, #1a1a2e 0%, #2c2c54 100%);
       color: white;
     }
+    .header-topright {
+      position: absolute; top: 12px; right: 16px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .header-topright .contact-btn {
+      color: white; text-decoration: none; background: rgba(255,255,255,0.15);
+      padding: 4px 10px; border-radius: 12px; font-size: 11px; white-space: nowrap;
+      transition: background 0.15s;
+    }
+    .header-topright .contact-btn:hover { background: rgba(255,255,255,0.28); }
+    .header-topright .copyright { font-size: 10.5px; color: rgba(255,255,255,0.55); white-space: nowrap; }
     .header-bar h1 { font-size: 19px; margin: 0 0 4px; color: white; }
     .header-bar .subtitle { color: rgba(255,255,255,0.65); margin-bottom: 6px; }
     .last-updated {
@@ -205,8 +217,11 @@
     @media (max-width: 680px) {
       body { padding: 0 10px 16px; }
       .header-bar { margin: 0 -10px 14px; padding: 16px 14px 14px; }
-      .header-bar h1 { font-size: 16px; }
+      .header-bar h1 { font-size: 16px; padding-right: 70px; }
       .subtitle { font-size: 11px; }
+      .header-topright { top: 10px; right: 10px; flex-direction: column; align-items: flex-end; gap: 3px; }
+      .header-topright .contact-btn { font-size: 10px; padding: 3px 8px; }
+      .header-topright .copyright { font-size: 9px; }
 
       .summary { gap: 8px; }
       .card { min-width: calc(50% - 4px); flex: none; padding: 10px 12px; }
@@ -237,6 +252,10 @@
 </head>
 <body>
   <div class="header-bar">
+    <div class="header-topright">
+      <a class="contact-btn" href="mailto:lee.jj@lotte.net">✉️ 문의하기</a>
+      <span class="copyright">© 이정재</span>
+    </div>
     <h1>동업계 남성 컨템 브랜드 입점 현황</h1>
     <div class="subtitle">롯데·현대·신세계 자동 크롤링</div>
     <div class="last-updated" id="lastUpdated"><span class="dot"></span> 최종 업데이트 확인 중...</div>
