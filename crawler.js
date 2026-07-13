@@ -317,7 +317,23 @@ async function main() {
   };
 
   fs.writeFileSync(path.join(__dirname, 'data.json'), JSON.stringify(output, null, 2), 'utf8');
-  console.log(`\n완료: ${finalResults.length}건 저장 (data.json)`);
+
+  // 월별 스냅샷 저장 (history/YYYY-MM.json + 목록 파일)
+  const historyDir = path.join(__dirname, 'history');
+  if (!fs.existsSync(historyDir)) fs.mkdirSync(historyDir);
+  const monthKey = output.lastUpdated.slice(0, 7);
+  fs.writeFileSync(path.join(historyDir, `${monthKey}.json`), JSON.stringify(output, null, 2), 'utf8');
+
+  const indexPath = path.join(historyDir, 'index.json');
+  let months = [];
+  if (fs.existsSync(indexPath)) {
+    try { months = JSON.parse(fs.readFileSync(indexPath, 'utf8')); } catch (e) { months = []; }
+  }
+  if (!months.includes(monthKey)) months.push(monthKey);
+  months.sort();
+  fs.writeFileSync(indexPath, JSON.stringify(months, null, 2), 'utf8');
+
+  console.log(`\n완료: ${finalResults.length}건 저장 (data.json, history/${monthKey}.json)`);
 }
 
 main().catch(e => {

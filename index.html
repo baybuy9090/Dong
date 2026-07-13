@@ -99,7 +99,12 @@
 
     .empty { padding: 40px; text-align: center; color: #999; font-size: 13px; }
 
-    #matrixView, #floorView { display: none; }
+    #matrixView, #floorView, #mapView { display: none; }
+    .map-bubble { cursor: pointer; }
+    .map-bubble:hover circle { filter: brightness(1.12); }
+    .map-label { font-size: 11px; font-weight: 700; fill: #333; pointer-events: none; }
+    .map-count { font-size: 10px; fill: #fff; font-weight: 700; pointer-events: none; }
+    .map-legend-label { font-size: 10.5px; fill: #777; }
     .matrix-table { min-width: 900px; }
     .matrix-table th.brand-col, .matrix-table td.brand-col {
       position: sticky; left: 0; background: white; z-index: 1;
@@ -169,10 +174,12 @@
     <button class="tab-btn" id="tabTable" onclick="switchTab('table')">📋 표로 보기</button>
     <button class="tab-btn" id="tabMatrix" onclick="switchTab('matrix')">🔲 매트릭스</button>
     <button class="tab-btn" id="tabFloor" onclick="switchTab('floor')">🗺️ 층 도면 보기</button>
+    <button class="tab-btn" id="tabMap" onclick="switchTab('map')">📍 상권 지도</button>
     <button class="tab-btn" id="favToggle" onclick="toggleFavOnly()">☆ 즐겨찾기만</button>
   </div>
 
   <div class="controls">
+    <select id="monthFilter" onchange="loadMonth(this.value)"><option value="">최신 (이번 달)</option></select>
     <select id="companyFilter"><option value="">전체 회사</option></select>
     <select id="storeFilter"><option value="">전체 지점</option></select>
     <select id="regionFilter"><option value="">전체 상권</option></select>
@@ -288,6 +295,20 @@
     </div>
   </div>
 
+  <!-- 상권 지도 -->
+  <div id="mapView">
+    <div class="panel" style="margin-bottom:14px;">
+      <h3>전국 상권 분포</h3>
+      <div class="subtitle" style="margin-bottom:10px;">원 크기·색 진하기 = 해당 상권의 고유 브랜드 수. 클릭하면 상세 목록이 뜹니다. 수도권은 아래 확대 지도를 참고하세요.</div>
+      <div id="mapNational" style="overflow-x:auto;"></div>
+    </div>
+    <div class="panel">
+      <h3>수도권 확대</h3>
+      <div class="subtitle" style="margin-bottom:10px;">서울·경기·인천 9개 상권 (실제 지리와는 다른 개략적 배치입니다)</div>
+      <div id="mapMetro" style="overflow-x:auto;"></div>
+    </div>
+  </div>
+
   <!-- 지점 드릴다운 모달 -->
   <div id="storeModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:100;" onclick="closeStoreDetail()">
     <div style="background:white;max-width:480px;margin:40px auto;border-radius:12px;padding:20px;max-height:80vh;overflow-y:auto;" onclick="event.stopPropagation()">
@@ -386,6 +407,87 @@
     };
     function regionOf(company, store) { return STORE_REGIONS[`${company}|${store}`] || '미분류'; }
 
+    // ── 상권 지도 (API 키 없는 개략적 시각화) ──
+    // 실제 위경도가 아닌, 대략적인 상대 방향(북/남/동/서)만 반영한 스키매틱 좌표입니다.
+    const METRO_REGIONS = [
+      '서울서부·일산상권','서울동북·경기북부상권','서울서북상권','명동상권','서울동북상권',
+      '강남·잠실상권','영등포상권','경기남부·동남부상권','인천·부천상권',
+    ];
+    const METRO_COORDS = {
+      '서울서부·일산상권': {x:100,y:120}, '서울동북·경기북부상권': {x:220,y:60},
+      '서울서북상권': {x:150,y:160}, '명동상권': {x:205,y:185}, '서울동북상권': {x:285,y:140},
+      '강남·잠실상권': {x:280,y:225}, '영등포상권': {x:135,y:225},
+      '경기남부·동남부상권': {x:235,y:300}, '인천·부천상권': {x:55,y:240},
+    };
+    const NATIONAL_COORDS = {
+      '수도권': {x:150,y:80}, '호남·충청상권': {x:150,y:200}, '광주상권': {x:100,y:290},
+      '대구상권': {x:230,y:270}, '경남상권': {x:210,y:340}, '부산·경남상권': {x:260,y:380},
+      '울산상권': {x:290,y:330},
+    };
+    const SEQ_RAMP = ['#86b6ef','#5598e7','#2a78d6','#1c5cab','#104281','#0d366b'];
+
+    function regionMagnitude(region, filtered) {
+      return new Set(filtered.filter(r => regionOf(r.company, r.store) === region).map(r => r.brand)).size;
+    }
+    function radiusFor(value, max) {
+      const minR = 20, maxR = 46;
+      if (max <= 0) return minR;
+      return minR + Math.sqrt(value / max) * (maxR - minR);
+    }
+    function seqBucket(value, max) {
+      if (max <= 0) return 0;
+      return Math.min(SEQ_RAMP.length - 1, Math.floor((value / max) * SEQ_RAMP.length));
+    }
+    function mapBubble(region, coords, filtered, maxVal) {
+      const val = regionMagnitude(region, filtered);
+      const total = filtered.filter(r => regionOf(r.company, r.store) === region).length;
+      const r = radiusFor(val, maxVal);
+      const bucketIdx = seqBucket(val, maxVal);
+      const fill = SEQ_RAMP[bucketIdx];
+      const textColor = bucketIdx <= 1 ? '#0b0b0b' : '#ffffff';
+      const shortName = region.replace('상권', '');
+      return `
+        <g class="map-bubble" onclick="openRegionModal('${region}')">
+          <circle cx="${coords.x}" cy="${coords.y}" r="${r}" fill="${fill}" stroke="#fff" stroke-width="2"><title>${region} · 고유 브랜드 ${val}개 · 총 ${total}건</title></circle>
+          <text x="${coords.x}" y="${coords.y}" class="map-count" text-anchor="middle" dominant-baseline="central" fill="${textColor}">${val}</text>
+          <text x="${coords.x}" y="${coords.y + r + 14}" class="map-label" text-anchor="middle">${shortName}</text>
+        </g>`;
+    }
+    function mapLegend(x, y, maxVal) {
+      const swW = 26;
+      let html = `<g transform="translate(${x},${y})">`;
+      SEQ_RAMP.forEach((c, i) => { html += `<rect x="${i*swW}" y="0" width="${swW-2}" height="12" fill="${c}"></rect>`; });
+      html += `<text x="0" y="26" class="map-legend-label">적음</text>`;
+      html += `<text x="${SEQ_RAMP.length*swW}" y="26" class="map-legend-label" text-anchor="end">많음(고유 브랜드 수)</text>`;
+      html += `</g>`;
+      return html;
+    }
+    function renderMap() {
+      const filtered = currentFiltered();
+
+      const nationalRegions = Object.keys(NATIONAL_COORDS).filter(r => r !== '수도권');
+      const maxNational = Math.max(1, ...nationalRegions.map(r => regionMagnitude(r, filtered)));
+      let nationalSvg = `<svg viewBox="0 0 350 440" style="width:100%;max-width:480px;height:auto;">`;
+      nationalSvg += nationalRegions.map(r => mapBubble(r, NATIONAL_COORDS[r], filtered, maxNational)).join('');
+      const capCoords = NATIONAL_COORDS['수도권'];
+      const capBrands = new Set(filtered.filter(r => METRO_REGIONS.includes(regionOf(r.company, r.store))).map(r => r.brand)).size;
+      nationalSvg += `<g>
+        <circle cx="${capCoords.x}" cy="${capCoords.y}" r="42" fill="#eef2f7" stroke="#8a93a6" stroke-dasharray="4 3" stroke-width="2"></circle>
+        <text x="${capCoords.x}" y="${capCoords.y - 5}" text-anchor="middle" class="map-count" fill="#445066" style="font-size:11px;">수도권</text>
+        <text x="${capCoords.x}" y="${capCoords.y + 11}" text-anchor="middle" class="map-count" fill="#445066" style="font-size:9px;">고유 ${capBrands}개 · 아래 참고</text>
+      </g>`;
+      nationalSvg += mapLegend(20, 405, maxNational);
+      nationalSvg += `</svg>`;
+      document.getElementById('mapNational').innerHTML = nationalSvg;
+
+      const maxMetro = Math.max(1, ...METRO_REGIONS.map(r => regionMagnitude(r, filtered)));
+      let metroSvg = `<svg viewBox="0 0 340 360" style="width:100%;max-width:480px;height:auto;">`;
+      metroSvg += METRO_REGIONS.map(r => mapBubble(r, METRO_COORDS[r], filtered, maxMetro)).join('');
+      metroSvg += mapLegend(20, 325, maxMetro);
+      metroSvg += `</svg>`;
+      document.getElementById('mapMetro').innerHTML = metroSvg;
+    }
+
     // 실제 층별 안내 페이지 링크 생성용 지점 코드 (Code.gs와 동일하게 유지)
     const STORE_CODES = {
       '롯데': {
@@ -458,16 +560,18 @@
 
     function switchTab(tab) {
       currentTab = tab;
-      ['Overview','Table','Matrix','Floor'].forEach(t => {
+      ['Overview','Table','Matrix','Floor','Map'].forEach(t => {
         document.getElementById('tab'+t).classList.toggle('active', t.toLowerCase() === tab);
       });
       document.getElementById('overviewView').style.display = tab === 'overview' ? 'block' : 'none';
       document.getElementById('tableView').style.display = tab === 'table' ? 'block' : 'none';
       document.getElementById('matrixView').style.display = tab === 'matrix' ? 'block' : 'none';
       document.getElementById('floorView').style.display = tab === 'floor' ? 'block' : 'none';
+      document.getElementById('mapView').style.display = tab === 'map' ? 'block' : 'none';
       if (tab === 'matrix') renderMatrix();
       if (tab === 'overview') renderOverview();
       if (tab === 'floor') renderFloorView();
+      if (tab === 'map') renderMap();
     }
 
     let floorSub = 'store';
@@ -795,32 +899,46 @@
       if (body) body.classList.toggle('open');
     }
 
+    function regionCompanyBreakdownHtml(region, filtered) {
+      const rows = filtered.filter(r => regionOf(r.company, r.store) === region);
+      const companies = ['롯데','현대','신세계'];
+      return companies.map(comp => {
+        const compRows = rows.filter(r => r.company === comp);
+        if (compRows.length === 0) return '';
+        const byStore = {};
+        compRows.forEach(r => {
+          if (!byStore[r.store]) byStore[r.store] = [];
+          byStore[r.store].push(r.brand);
+        });
+        const storeLines = Object.entries(byStore).map(([store, brands]) =>
+          `<div class="region-store-line"><b>${store}</b>: ${brands.sort((a,b)=>a.localeCompare(b,'ko')).join(', ')}</div>`
+        ).join('');
+        return `<div class="region-company-block">
+          <div class="cname" style="color:${companyColor(comp)};">${comp}</div>
+          ${storeLines}
+        </div>`;
+      }).join('') || '<div class="empty" style="padding:12px;">데이터 없음</div>';
+    }
+
+    function openRegionModal(region) {
+      const filtered = currentFiltered();
+      const rows = filtered.filter(r => regionOf(r.company, r.store) === region);
+      const uniqueBrands = new Set(rows.map(r => r.brand)).size;
+      document.getElementById('modalTitle').textContent = region;
+      document.getElementById('modalSubtitle').innerHTML = `고유 브랜드 ${uniqueBrands}개 · 총 ${rows.length}건`;
+      document.getElementById('modalBody').innerHTML = regionCompanyBreakdownHtml(region, filtered);
+      document.getElementById('storeModal').style.display = 'block';
+    }
+
     function renderRegionDetail(filtered, allRegions) {
       const regionsSorted = [...allRegions].sort((a,b) => a.localeCompare(b,'ko'));
       const container = document.getElementById('regionDetailList');
       container.innerHTML = regionsSorted.map(region => {
         const rows = filtered.filter(r => regionOf(r.company, r.store) === region);
         const uniqueBrands = new Set(rows.map(r => r.brand)).size;
-        const companies = ['롯데','현대','신세계'];
         const safeId = region.replace(/[^a-zA-Z0-9가-힣]/g, '');
         const isOpen = openRegions.has(region);
-
-        const bodyHtml = companies.map(comp => {
-          const compRows = rows.filter(r => r.company === comp);
-          if (compRows.length === 0) return '';
-          const byStore = {};
-          compRows.forEach(r => {
-            if (!byStore[r.store]) byStore[r.store] = [];
-            byStore[r.store].push(r.brand);
-          });
-          const storeLines = Object.entries(byStore).map(([store, brands]) =>
-            `<div class="region-store-line"><b>${store}</b>: ${brands.sort((a,b)=>a.localeCompare(b,'ko')).join(', ')}</div>`
-          ).join('');
-          return `<div class="region-company-block">
-            <div class="cname" style="color:${companyColor(comp)};">${comp}</div>
-            ${storeLines}
-          </div>`;
-        }).join('') || '<div class="empty" style="padding:12px;">데이터 없음</div>';
+        const bodyHtml = regionCompanyBreakdownHtml(region, filtered);
 
         return `
           <div class="region-item">
@@ -1064,34 +1182,56 @@
       console.error(source, err);
     }
 
-    fetch('data.json?_=' + Date.now())
-      .then(res => {
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        return res.json();
-      })
-      .then(payload => {
-        allData = payload.data || [];
-        populateFilters();
-        render();
-        if (allData.length === 0) {
-          showGlobalError('data.json', '데이터가 0건입니다. GitHub Actions 워크플로우(월간 브랜드 크롤링)가 최소 한 번 실행됐는지 확인해주세요.');
-        }
+    function loadData(url, sourceLabel) {
+      fetch(url + '?_=' + Date.now())
+        .then(res => {
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          return res.json();
+        })
+        .then(payload => {
+          allData = payload.data || [];
+          populateFilters();
+          render();
+          if (allData.length === 0) {
+            showGlobalError(sourceLabel, '데이터가 0건입니다. GitHub Actions 워크플로우(월간 브랜드 크롤링)가 최소 한 번 실행됐는지 확인해주세요.');
+          }
 
-        const el = document.getElementById('lastUpdated');
-        if (!payload.lastUpdated) {
-          el.innerHTML = '<span class="dot" style="background:#999;"></span> 최종 업데이트 기록 없음';
-        } else {
-          const d = new Date(payload.lastUpdated);
-          const formatted = d.toLocaleString('ko-KR', { year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit' });
-          el.innerHTML = `<span class="dot"></span> 최종 업데이트: ${formatted}`;
-        }
-      })
-      .catch(err => {
-        document.getElementById('emptyMsg').style.display = 'block';
-        document.getElementById('emptyMsg').textContent = '데이터 로딩 오류: ' + err.message;
-        document.getElementById('lastUpdated').innerHTML = '<span class="dot" style="background:#999;"></span> 최종 업데이트 시각 확인 불가';
-        showGlobalError('data.json', err);
-      });
+          const el = document.getElementById('lastUpdated');
+          if (!payload.lastUpdated) {
+            el.innerHTML = '<span class="dot" style="background:#999;"></span> 최종 업데이트 기록 없음';
+          } else {
+            const d = new Date(payload.lastUpdated);
+            const formatted = d.toLocaleString('ko-KR', { year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit' });
+            el.innerHTML = `<span class="dot"></span> 최종 업데이트: ${formatted}`;
+          }
+        })
+        .catch(err => {
+          document.getElementById('emptyMsg').style.display = 'block';
+          document.getElementById('emptyMsg').textContent = '데이터 로딩 오류: ' + err.message;
+          document.getElementById('lastUpdated').innerHTML = '<span class="dot" style="background:#999;"></span> 최종 업데이트 시각 확인 불가';
+          showGlobalError(sourceLabel, err);
+        });
+    }
+
+    function loadMonth(month) {
+      if (!month) { loadData('data.json', 'data.json'); return; }
+      loadData('history/' + month + '.json', 'history/' + month + '.json');
+    }
+
+    function populateMonthFilter() {
+      fetch('history/index.json?_=' + Date.now())
+        .then(res => { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
+        .then(months => {
+          const sel = document.getElementById('monthFilter');
+          [...months].sort().reverse().forEach(m => {
+            sel.innerHTML += `<option value="${m}">${m}</option>`;
+          });
+        })
+        .catch(() => { /* history/index.json이 아직 없으면 "최신"만 보여줌 (신규 저장소 첫 실행 전 정상 상태) */ });
+    }
+
+    loadData('data.json', 'data.json');
+    populateMonthFilter();
   </script>
 </body>
 </html>
