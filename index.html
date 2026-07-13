@@ -136,7 +136,7 @@
 
     .empty { padding: 40px; text-align: center; color: #999; font-size: 13px; }
 
-    #matrixView, #floorView, #mapView { display: none; }
+    #tableView, #matrixView, #floorView, #mapView { display: none; }
     .matrix-table { min-width: 900px; }
     .matrix-table th.brand-col, .matrix-table td.brand-col {
       position: sticky; left: 0; background: white; z-index: 1;
@@ -144,6 +144,22 @@
     }
     .matrix-table th.brand-col { background: #2c2c34; color: white; z-index: 2; }
     .matrix-cell { text-align: center; }
+
+    .heatmap-table { border-collapse: separate; border-spacing: 3px; }
+    .heatmap-table thead th { position: sticky; top: 0; z-index: 3; }
+    .heatmap-table thead th.brand-col { z-index: 4; }
+    .heatmap-table td.matrix-cell {
+      border-radius: 6px; transition: transform 0.12s ease, filter 0.12s ease;
+    }
+    .heatmap-table tbody tr:hover td.matrix-cell:not(:empty) {
+      filter: brightness(1.08); transform: scale(1.06);
+    }
+    .heatmap-table tbody tr:hover td.brand-col { background: #3d3d47; }
+    .heatmap-table td.brand-col { transition: background 0.12s ease; }
+    .heatmap-table .tier-group-row td {
+      background: #f0f0f2; color: #888; font-size: 10.5px; font-weight: 700;
+      padding: 5px 8px; text-transform: uppercase; letter-spacing: 0.03em;
+    }
     .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; }
     .dot-yes { background: #444; }
     .dot-new { background: #1a9d4c; }
@@ -1158,7 +1174,7 @@
         const region = regionOf(r.company, r.store);
         if (!regionBrandStats[r.brand]) regionBrandStats[r.brand] = {};
         if (!regionBrandStats[r.brand][region]) regionBrandStats[r.brand][region] = new Set();
-        regionBrandStats[r.brand][region].add(r.store);
+        regionBrandStats[r.brand][region].add(`${r.company} ${r.store}`);
       });
 
       // ── 패널: 상권별 브랜드 입점 수 랭킹 (브랜드×상권 히트맵) ──
@@ -1172,14 +1188,14 @@
         Object.values(stats).forEach(set => { maxCell = Math.max(maxCell, set.size); });
       });
 
-      let heatmapHtml = `<table class="matrix-table">
+      let heatmapHtml = `<table class="matrix-table heatmap-table">
         <thead><tr><th class="brand-col">브랜드 \\ 상권</th>` +
-        heatmapRegions.map(rg => `<th style="writing-mode:vertical-rl;white-space:nowrap;padding:6px 3px;font-size:10.5px;" title="${rg}">${rg.replace('상권','')}</th>`).join('') +
+        heatmapRegions.map(rg => `<th style="writing-mode:vertical-rl;white-space:nowrap;padding:6px 3px;font-size:10.5px;background:#2c2c34;color:white;" title="${rg}">${rg.replace('상권','')}</th>`).join('') +
         `</tr></thead><tbody>`;
       tierOrder.forEach(tier => {
         const rowsInTier = brandRows.filter(r => tierOf(r.brand) === tier).sort((a,b) => b.total - a.total);
         if (rowsInTier.length === 0) return;
-        heatmapHtml += `<tr><td colspan="${heatmapRegions.length + 1}" style="background:#f5f5f7;color:#888;font-size:10.5px;font-weight:700;padding:4px 8px;text-transform:uppercase;">${tier}</td></tr>`;
+        heatmapHtml += `<tr class="tier-group-row"><td colspan="${heatmapRegions.length + 1}">${tier}</td></tr>`;
         rowsInTier.forEach(r => {
           const stats = regionBrandStats[r.brand] || {};
           heatmapHtml += `<tr><td class="brand-col"><span class="tier-dot" style="background:${tierColor(r.brand)};"></span><span class="brand-link" onclick="openBrandDetail('${r.brand}')">${r.brand}</span></td>`;
