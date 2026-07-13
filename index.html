@@ -165,7 +165,18 @@
 
     .empty { padding: 40px; text-align: center; color: #999; font-size: 13px; }
 
-    #tableView, #matrixView, #floorView, #mapView { display: none; }
+    #tableView, #matrixView, #floorView, #mapView, #newsView { display: none; }
+    .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+    .news-card { background: white; border: 1px solid #eee; border-radius: 10px; padding: 14px 16px; }
+    .news-card h4 { margin: 0 0 8px; font-size: 14px; display: flex; justify-content: space-between; align-items: center; }
+    .news-card .tier-label { font-size: 10px; color: #aaa; font-weight: 500; }
+    .news-card ul { list-style: none; margin: 0; padding: 0; }
+    .news-card li { margin-bottom: 9px; }
+    .news-card li:last-child { margin-bottom: 0; }
+    .news-card a { color: #2c2c34; font-weight: 600; text-decoration: none; font-size: 12.5px; line-height: 1.4; display: block; }
+    .news-card a:hover { text-decoration: underline; }
+    .news-card .news-meta { font-size: 11px; color: #999; margin-top: 2px; }
+    .news-card .news-empty { color: #bbb; font-size: 12px; }
     .matrix-table { min-width: 900px; }
     .matrix-table th.brand-col, .matrix-table td.brand-col {
       position: sticky; left: 0; background: white; z-index: 1;
@@ -290,6 +301,7 @@
     <button class="tab-btn" id="tabMatrix" onclick="switchTab('matrix')">🔲 매트릭스</button>
     <button class="tab-btn" id="tabFloor" onclick="switchTab('floor')">🗺️ 층 도면 보기</button>
     <button class="tab-btn" id="tabTable" onclick="switchTab('table')">📋 표로 보기</button>
+    <button class="tab-btn" id="tabNews" onclick="switchTab('news')">📰 브랜드 뉴스</button>
     <button class="tab-btn" id="favToggle" onclick="toggleFavOnly()">☆ 즐겨찾기만</button>
   </div>
 
@@ -432,6 +444,19 @@
     </div>
   </div>
 
+  <!-- 브랜드 뉴스 -->
+  <div id="newsView">
+    <div class="panel" style="margin-bottom:14px;">
+      <h3>브랜드별 뉴스</h3>
+      <div class="subtitle" style="margin-bottom:8px;">
+        구글 뉴스에서 브랜드명으로 검색한 최근 기사를 매일 오전 자동으로 모아옵니다. 브랜드가 워낙 많다 보니 일부 기사는 무관할 수 있어요 — 참고용으로 봐주세요.
+        <span id="newsUpdated" style="display:block;margin-top:4px;color:#888;font-size:11.5px;"></span>
+      </div>
+      <input id="newsSearchInput" placeholder="브랜드명 검색" oninput="renderNews()" style="width:220px;padding:6px 10px;border:1px solid #ddd;border-radius:6px;margin-bottom:12px;">
+      <div id="newsList" class="news-grid"></div>
+    </div>
+  </div>
+
   <!-- 지점 드릴다운 모달 -->
   <div id="storeModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:100;" onclick="closeStoreDetail()">
     <div style="background:white;max-width:480px;margin:40px auto;border-radius:12px;padding:20px;max-height:80vh;overflow-y:auto;" onclick="event.stopPropagation()">
@@ -514,6 +539,7 @@
       brands.forEach(b => { BRAND_TO_TIER[b] = tier; });
     });
     function tierOf(brand) { return BRAND_TO_TIER[brand] || '미분류'; }
+    const ALL_BRANDS_ORDERED = Object.values(BRAND_TIERS).flat();
 
     // 상권 그룹 (2026-07 확정본, 15개)
     const STORE_REGIONS = {
@@ -984,7 +1010,7 @@
 
     function switchTab(tab) {
       currentTab = tab;
-      ['Overview','Table','Matrix','Floor','Map'].forEach(t => {
+      ['Overview','Table','Matrix','Floor','Map','News'].forEach(t => {
         document.getElementById('tab'+t).classList.toggle('active', t.toLowerCase() === tab);
       });
       document.getElementById('overviewView').style.display = tab === 'overview' ? 'block' : 'none';
@@ -992,11 +1018,13 @@
       document.getElementById('matrixView').style.display = tab === 'matrix' ? 'block' : 'none';
       document.getElementById('floorView').style.display = tab === 'floor' ? 'block' : 'none';
       document.getElementById('mapView').style.display = tab === 'map' ? 'block' : 'none';
-      document.getElementById('controlsBar').style.display = tab === 'map' ? 'none' : 'flex';
+      document.getElementById('newsView').style.display = tab === 'news' ? 'block' : 'none';
+      document.getElementById('controlsBar').style.display = (tab === 'map' || tab === 'news') ? 'none' : 'flex';
       if (tab === 'matrix') renderMatrix();
       if (tab === 'overview') renderOverview();
       if (tab === 'floor') renderFloorView();
       if (tab === 'map') renderMap();
+      if (tab === 'news') renderNews();
       if (tab !== 'overview') {
         const stickyHeader = document.getElementById('regionRankingStickyHeader');
         if (stickyHeader) stickyHeader.style.display = 'none';
@@ -1831,8 +1859,67 @@
         .catch(() => { /* history/index.json이 아직 없으면 "최신"만 보여줌 (신규 저장소 첫 실행 전 정상 상태) */ });
     }
 
+    let newsData = {};
+    let newsLastUpdated = '';
+
+    function loadNews() {
+      fetch('news.json?_=' + Date.now())
+        .then(res => { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
+        .then(payload => {
+          newsData = payload.data || {};
+          newsLastUpdated = payload.lastUpdated || '';
+          if (currentTab === 'news') renderNews();
+        })
+        .catch(() => { /* news.json이 아직 없으면 (첫 자동 실행 전) 빈 상태로 보여줌 */ });
+    }
+
+    function timeAgo(pubDate) {
+      if (!pubDate) return '';
+      const days = Math.floor((Date.now() - new Date(pubDate).getTime()) / 86400000);
+      if (days <= 0) return '오늘';
+      if (days === 1) return '1일 전';
+      if (days < 30) return days + '일 전';
+      return Math.floor(days / 30) + '개월 전';
+    }
+
+    function renderNews() {
+      const escapeHtml = s => String(s == null ? '' : s)
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+      const updatedEl = document.getElementById('newsUpdated');
+      updatedEl.textContent = newsLastUpdated
+        ? '뉴스 최종 수집: ' + new Date(newsLastUpdated).toLocaleString('ko-KR', { year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit' })
+        : '뉴스 데이터 없음 (GitHub Actions "브랜드 뉴스 크롤링" 워크플로우가 아직 실행되지 않았을 수 있습니다)';
+
+      const keyword = (document.getElementById('newsSearchInput').value || '').trim().toUpperCase();
+      const brands = ALL_BRANDS_ORDERED.filter(b => !keyword || b.toUpperCase().includes(keyword));
+      const container = document.getElementById('newsList');
+
+      if (brands.length === 0) {
+        container.innerHTML = '<div class="empty" style="grid-column:1/-1;">검색 결과가 없습니다.</div>';
+        return;
+      }
+
+      container.innerHTML = brands.map(b => {
+        const items = newsData[b] || [];
+        const list = items.length
+          ? items.map(a => `
+              <li>
+                <a href="${escapeHtml(a.link)}" target="_blank" rel="noopener">${escapeHtml(a.title)}</a>
+                <div class="news-meta">${escapeHtml(a.source || '')} · ${timeAgo(a.pubDate)}</div>
+              </li>`).join('')
+          : '<li class="news-empty">관련 뉴스가 없습니다.</li>';
+        return `
+          <div class="news-card">
+            <h4><span>${escapeHtml(b)}</span><span class="tier-label">${escapeHtml(tierOf(b))}</span></h4>
+            <ul>${list}</ul>
+          </div>`;
+      }).join('');
+    }
+
     loadData('data.json', 'data.json');
     populateMonthFilter();
+    loadNews();
   </script>
 </body>
 </html>
