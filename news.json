@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-21T23:57:25.904Z",
+  "lastUpdated": "2026-07-23T00:02:12.584Z",
   "industry": [],
   "data": {
     "타임옴므": [
@@ -16,21 +16,8 @@
         "pubDate": "2026-05-25T07:00:00.000Z"
       }
     ],
-    "띠어리맨": [
-      {
-        "title": "“베스트셀러 라인업 역대급 할인” 롯데백화점 광주점, 여름 정기 세일",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5CYW9fLW4zVkprZUlfNU5nY09TWXlIT3hiZEZ6Q19iZkpoLWRMaHAzMTh1UVdWcXFRUldEWWlBSENrV1pwdnpYS1hsYU9qRmswaXfSAVNBVV95cUxPOXBCYUR1V05CdHpsZzRtU3RmdEo0a1JlTFVzVjl1MEgwTFJUWlFHRFlFdGY4OXNQSk9tTkMxd25YZno4OXBqV3VvT0RCMk9SUHVhWQ?oc=5",
-        "source": "서울경제",
-        "pubDate": "2026-06-24T07:00:00.000Z"
-      }
-    ],
+    "띠어리맨": [],
     "솔리드옴므": [
-      {
-        "title": "로로피아나, FW 컬렉션 공개...솔리드옴므, 파리서 SS 컬렉션 공개",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5UUWs0RUNnMjl3TUdwemNBa19rcW8tWnRDV1I4QThLT3lrZF8zR1VDY0tld0g0MC1HcXBmUEdMYUtrYVh4aTBWdmotdE9DQ2tOVFB6eTNHTlF5VnpyM2pZd0FOeDN4QQ?oc=5",
-        "source": "싱글리스트",
-        "pubDate": "2026-07-09T10:34:11.000Z"
-      },
       {
         "title": "디자이너 우영미의 브랜드 ‘솔리드옴므’, 파리 패션위크서 2027 봄·여름 컬렉션 개최",
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9WZ05IS2NiZXdBMGJKQVF3NUhjeXNqUE5JUHBHZnh5YTBUUU5GQjhtRE1vZzcwZ1VjdGd4Q2p1eDJpUHVFMWFhdlhCNGk5TWtiWm5EMDlvYzF3NVAzTWotUDNTbFltS01LRWN30gFrQVVfeXFMT1ZnTkhLY2Jld0EwYkpBUXc1SGN5c2pQTklQcEdmeHlhMFRRTkZCOG1ETW9nNzBnVWN0Z3hDanV4MmlQdUUxYWF2WEI0aTlNa2JabkQwOW9jMXc1UDNNai1QM1NsWW1LTUtFY3c?oc=5",
@@ -114,15 +101,15 @@
         "pubDate": "2026-07-09T07:00:00.000Z"
       },
       {
-        "title": "디자이너 우영미의 브랜드 솔리드옴므, 파리서 2027 봄·여름 컬렉션 공개",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE80WGk0dHV1dGpqR2dhaGhKblpaZzdTUjB6YjZ2ZFVfQllyX3l0UUJKWnV5TnpNQVlPRGxhbkNJV3A4THlKbGhnTHVYMTE3N0Q0SnllVTItV0dTR0pK?oc=5",
-        "source": "뉴스핌",
-        "pubDate": "2026-07-09T07:00:00.000Z"
-      },
-      {
         "title": "디자이너 우영미의 브랜드 솔리드옴므, 2027 S/S 파리 컬렉션 'After Nature' 선봬",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBvTEJjTldKajlzZ1R3U0kwaHo1ckpNZEpDWDFUMGp6bnJXOHg2bFdIekIxYldwRFZEU3B2clo5eG52QlZuTUxwaElDRW5yRDllMEpPYWFoazVLLWppbWpUS28tems?oc=5",
         "source": "서울경제TV",
+        "pubDate": "2026-07-09T07:00:00.000Z"
+      },
+      {
+        "title": "디자이너 우영미의 브랜드 솔리드옴므, 파리서 2027 봄·여름 컬렉션 공개",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE80WGk0dHV1dGpqR2dhaGhKblpaZzdTUjB6YjZ2ZFVfQllyX3l0UUJKWnV5TnpNQVlPRGxhbkNJV3A4THlKbGhnTHVYMTE3N0Q0SnllVTItV0dTR0pK?oc=5",
+        "source": "뉴스핌",
         "pubDate": "2026-07-09T07:00:00.000Z"
       },
       {
@@ -132,13 +119,31 @@
         "pubDate": "2026-07-07T07:00:00.000Z"
       },
       {
-        "title": "한국의 '흥'을 패션으로…우영미, 2027 SS 파리 컬렉션 공개",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ERzdSUkJldnZmQ1ZoUFJWejd5ci1UVDhydkloeFNoa1YzSTVDRVRmQ2dHS1NZX1hqRXZIR3BWbnlRbWxNS2I1YWZLcU1uZ1lSYVZ2Q3FpM0ljcUprOGFV?oc=5",
-        "source": "뉴스1",
+        "title": "우영미, 2027 S/S 파리 컬렉션 공개",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OTWNLV015dUtNYnpOdHg1dUdZa0E5VWVUQVhuNmJlbTJrU093enI1VXd5Q2VtemlYNDBTcDJGaUZHUWdvNTc0UEpIT3p2Y1VOX253SXowdi1YcVB2R1c5RjNyaFg4WXRpY0tpSkxn?oc=5",
+        "source": "아시아투데이",
         "pubDate": "2026-07-07T07:00:00.000Z"
       }
     ],
     "준지": [
+      {
+        "title": "[인터뷰] “혐오세력? 사실상 퀴어퍼레이드의 하이라이트”… MZ 레즈비언 커플 유튜버 ‘준지’",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5UU3d2SDVkeE1pU2xfQzZyWnpSWDBQOGZybXlUUlE0ZThCRTNGd1ZVcWVXdS1LOW1vWGJyTFNSV0dSem1VaEVjWElyVG1lTEJ2SjB2Ujl2cWVkSlhPMlppeXFoeEczeW1kdXl5VDJHYmJYcHfSAXNBVV95cUxOVFN3dkg1ZHhNaVNsX0M2clp6UlgwUDhmcm15VFJRNGU4QkUzRndWVXFlV3UtSzltb1hickxTUldHUnptVWhFY1hJclRtZUxCdkowdlI5dnFlZEpYTzJaaXlxaHhHM3ltZHV5eVQyR2JiWHB3?oc=5",
+        "source": "여성신문",
+        "pubDate": "2026-07-22T10:13:24.000Z"
+      },
+      {
+        "title": "“소름 돋아”..기안84, 존경심 담아 이토 준지 초상화 완성 (나혼산)[핫피플]",
+        "link": "https://news.google.com/rss/articles/CBMivARBVV95cUxPUGZhU1ZxSmpIcUZnT3ZSTXJocWhlTjFsR1d2VV9rRjJyeUtNVEhlYk1sVXhfSmlqWWFTbzlwTGhpQlJNQzB4S0JaQUo2aGdkZnZFQmRwWnFpVlJJb3lqeDR5Q0RXYjZ5dFY4cF9VNDJBa3JPNVBBM0k1MEpWWXRBdmxLNmxiYnpRdnF1MDE2V0NYMl9tVTNudUluNHFSUFRYbGpYNjB3eXZiN3lKMTRsY0Z1b1pxeHh6OTNfVHEzaXF5NXlIaFNXYXE5SE9FZmFRLXYxOGpHRklYeDNUQnlUUFl5WW9XQnhDUTdVclVranJWZEdOQjkyaUFuaVlDTDJpRDlVQk9YOGtKZWt5ZTRsSmJrcGRIT0RSWXRnMEhNNXlhZnpscWM4T1VuM2NtWko5VDRkMGtJME16eDViQTQ1aFJ6R1FJMDlETGdWQTJyeEtLODhHdFg1NUVuR0R3T2dmYnhENEtURTNzbm5lakZiQzlXTHI1WG5yLUNuWUg1eXNRM0pGSlN1ZE5pQXZNSUVaY0RGZTdHQmJReFVPc1ZfNTVOZUNxT1hrY2R0RmRIYlBldjA2R0ZJZGYwNE14a0ljREVBYnVadlRpY2lveFJ3ampBUkNRdkt3T293YmNPaEZDdmgtY1YycHVkbDRpZks4TEhma2VXMWE2NWpSN1h0dkRYenVmbHltUmJDV2pvcHdseTI2M2xHOERWUnNBNGVPQlZ3MVFjeWNlcHoxSW1lOWVRUkpxR3lFalA4MQ?oc=5",
+        "source": "MSN",
+        "pubDate": "2026-07-22T10:06:15.000Z"
+      },
+      {
+        "title": "Post de la Comunidad Jeongyeol - TV TOKY",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9CMHVuY3F5V2tIZmF4MVAwSEFubExCSmtZcmp4dzd5MlpUQ1FudW5NZm44VUlzTENmOHc4ZEtlTWdoNVdlaWJmOWFuSnFNS21Eb2JyODV3aWswblp2cHc?oc=5",
+        "source": "Weverse",
+        "pubDate": "2026-07-22T03:01:16.000Z"
+      },
       {
         "title": "이토 준지, 기안84가 선물한 초상화에 '폭풍 칭찬'... \"대단해요 진짜 잘 그렸네요\" ('나혼산')",
         "link": "https://news.google.com/rss/articles/CBMi7wNBVV95cUxOVFNrdlV4QTNtOHlQQ2Q4VDluVUYwSjFsTjFKdnJRS0pJLXVSRmlLb19wNy1zNU9BMTRCNVNFbndSOTgtRzN4WDl6ZnRvSUlPYUhUZDg5cXJhdzBnU2Q1ZXpOWjdjNlBRTlVhQ3FYQ1I5amttS0c5YWJ4MXFmb0o4VDJnWTZMN19Ld3NzM05sREQ1LTY1Z3piWHVXLXEzOUJ3X25SRU1rVHlROUR5T1JFNkxaV1JWLWJYWGdSaW1nWlpCWjlxNlFGSkdPSjhLaVY1T1hNSzNKRjlBcVlGNEtoa0UtTGdiLWd3RHRuMHdrMFVCUW9HdlN6eDVKZU8tTHN1T3NOYlBHQmtsaUVaSDZYcVBiZXZKLUZ4aDlMb1YwdDlSc29ROFotcVQ3YWVuWWwycjMzMUZ5S1hWUWY2LU1KckhzdlNQc2p0RzV4N083ZGFqS2NIVi1zb2laa2tUTm1zdkF0ejYyTGxoTi1WWlRnbE85US0zZFVxQ2l0dmxzM01lNnlHc3R4WnNaTG9OdUtPVkdrdTh0TjdjcXJBSzlULWxwQnBhOFViTGVObV9CZ1VuQWxuSTFLUzQ1SkktYXZoTlNOYmRSdXZCYWdkNW9jVEstbUFtTFdmOUNRUkNJMFZEUFcyWFpaNHRVb3g2VHc?oc=5",
@@ -152,37 +157,13 @@
         "pubDate": "2026-07-20T12:26:50.000Z"
       },
       {
-        "title": "“소름 돋아”..기안84, 존경심 담아 이토 준지 초상화 완성 (나혼산)[핫피플]",
-        "link": "https://news.google.com/rss/articles/CBMipgNBVV95cUxQYXVzZ1FGNWRHeG4wZHMzMFFCbEFhbmhSZ0FvOVp3OVhlUlY2UzhIYXVaUUNCUlFCajdKRjM3d2tNV2M1WEpsUlp4UmlmNkt3WjJPUVlpNzBZRzFpWlFqRzNwaG5uU3FYaWJBbU1tZ01Lc3hRMnQxc2lScDJCVDNBQjFTaXhzbXd5Q3hrNUFHajBjR2JmWWkzUGJUSmRNMUVEYkJOUGJiWWIyTkFZTXFGS3VZNG9HLTEwRDcwUEFJOVB1ZWVEc29ZWkNXajNWRHVyRmJtZ2xoT0RsQWFJZTYzMDRpdFNGcDVrYWRLcHhicWNILTFkNkxHSC1DejlYY3FpTW5ZTTQ1ZjdFWC12RW5uQ3I1UnhDeThfTTNheEpyZUw4WFl4WVNya3hkVEpobWhTbHlZb3pzYVhPUkRyMGY4U0ViWVluSHpidUwweXgwZVN1NDBRTDRhR1VZdFdMOHB1Smd5SU5JS1p5enBDcExLVHBzVS1ZZmFNcVY3R2YyMkdnSlB6Z0NRWnJxcTd5by0xZ2ZtVTkxMllBUmswWW9ReDdnamprQQ?oc=5",
-        "source": "MSN",
-        "pubDate": "2026-07-20T06:51:08.000Z"
-      },
-      {
-        "title": "10CM, 이토 준지 원작 드라마 테마곡 부른다",
-        "link": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxQMXhqNUN3Q3NfUkpiX3VIWDJkZWtucmhzTXpTbHFMRWNUMU9QWmxibHk4cFNlcmtkcmNpbG9BSU9VN2dBRjJhM0xNZWN2WjZtS2dUbzV6VnJDSmd4d3FpN0wxUzZJQUhpZ2U1QjE5ZEFubFhUV0JuRjRJZlRIRFMyRTJYc3dvWk1SM3lNQmI1R1BRVEpBSGQ0UUthQlRtRVB0SjVYcF9QalRQWEJad0tYS2hsWEkwRWtwLTlSTWs2Z1JpSlh3TDBxNVctdGtsMXJ6UGxjaTVadHp5WFJSSHRRTXByRnZIaDhueWNBa2JNZkJadUtackNGckZ1cGdvZHpwLXVsYm1ibnRqRHBpMHZGVTVueFN2dVNLd1piUkVPOERWbjgyc2gxOEtUWQ?oc=5",
-        "source": "MSN",
-        "pubDate": "2026-07-19T15:18:41.000Z"
-      },
-      {
-        "title": "10cm, 이토 준지와 '앙상블'",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNYUptTDI0VV9lZWhTYlFIMjlDa3I1cGQtRk53ei1HNmJneDlTZms0cEtVaDZvbEdKNHNOckJxX0wtbHdZWWgzNTBrYU54QmM0ZmVPUlZvWktLalhRX1VsRDZTMnBEU1ZSSW1UX0tWbVotTi02Mk5KejF2bW8wSkRYRjFOY1FSa1d6Sk11Vk40Sk1Id1J3YmJidkhYcWJYUlBza1dhR1pxbjc0VV96M3VRV3Y1NUF6dkFhTmpnMnhlel84NGRTTWRxY2Rkei1ZOVMzTEE?oc=5",
-        "source": "MSN",
-        "pubDate": "2026-07-16T17:32:18.000Z"
-      },
-      {
-        "title": "10CM, 이토 준지 세계관 노래한다…'The Darkest Night' 발매 [공식]",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9tNS04T01sTUh2cVR4NzBOeGJmTUlIUnQ4b2p0am5YM1VFU0R1RmcyUEtFT3Z0dUZBMl9henA5WWFIM2pzblpEOFdfU29DT3FLZ0Nn?oc=5",
-        "source": "네이트",
-        "pubDate": "2026-07-16T09:17:00.000Z"
+        "title": "10CM, 이토 준지 세계관 노래한다..‘The Darkest Night’ 발매 [공식]",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5ZWVFxSUZyNFBTTllldEJ3MHFjOE0zLTh6c1JSZ1dKQVQxYm5yMUFpNDlWWmh6Z05sTlozckZLQlVxQ1RBUm5mLVg5SkMyYWc?oc=5",
+        "source": "v.daum.net",
+        "pubDate": "2026-07-16T09:16:37.000Z"
       }
     ],
     "송지오옴므": [
-      {
-        "title": "파리 런웨이 장악…배정남, 송지오 뮤즈 등장",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5mWHBybGlSRW1FRW5obHFzS2p3TXhILXJpaUR5QS1jV0RNdzQyanhyVDV2MFZOM2RiblktZFpxb2NuU0ZlXzRMMnl0T0JJdw?oc=5",
-        "source": "전자신문",
-        "pubDate": "2026-06-26T07:00:00.000Z"
-      },
       {
         "title": "배정남, 파리 패션위크 송지오 런웨이서 뮤즈 존재감 과시",
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5fMUtKZC1EY3REd1JKTzZiQzJ4X3lJVk9POUF2UGRVY1JaX1l4V21mcHVrLUNUMldOTlBOWm5oMkF0Z3B3LWFmMWktUnE5RUI3OTV2VHdTVEVvYlBNME9zdjNjZFZCVFlsWG1mVnBhSjVpUQ?oc=5",
@@ -295,6 +276,12 @@
     ],
     "질스튜어트뉴욕": [
       {
+        "title": "MD가 입고 CEO가 말한다…패션업계, 직원이 콘텐츠 되는 시대",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAtbHBzeFY5ZkhqQ0dFbUlKbGlPcDNWN29IMGVCX2tQMVRiYzZZSkoxRjMyei0yQVV0WmtUekhRS2NyaTctOWVTTUt3dkZwVC1UWHp5NzRNN1pUeDNBWHVKYndPYTlfQWZtMmdobld5dnFsSG9NN1hOZtIBeEFVX3lxTFAtbHBzeFY5ZkhqQ0dFbUlKbGlPcDNWN29IMGVCX2tQMVRiYzZZSkoxRjMyei0yQVV0WmtUekhRS2NyaTctOWVTTUt3dkZwVC1UWHp5NzRNN1pUeDNBWHVKYndPYTlfQWZtMmdobld5dnFsSG9NN1hOZg?oc=5",
+        "source": "뉴시스",
+        "pubDate": "2026-07-22T06:10:11.000Z"
+      },
+      {
         "title": "질스튜어트뉴욕 여성, 뉴욕 오피스 감성 담은 26SS 컬렉션 공개",
         "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA5MUMzNndNVG5wQ25jU29OcEwxRGdudkhPVTQ0MTZad0dmZFB4Qlh1TnoyMGRIT1NBdC1yaklVUkVPR0FFbks3X2F5ay13QQ?oc=5",
         "source": "전자신문",
@@ -330,16 +317,22 @@
     "클럽모나코": [],
     "맨온더분": [
       {
+        "title": "빈티지에 빠진 남성 잡는다…신세계인터 맨온더분, 청담 플래그십서 빈티지 마켓 개최",
+        "link": "https://news.google.com/rss/articles/CBMimgVBVV95cUxQWXQzMFFzVnRDcGhjVDM4ZlU5djhoMG5mX0JPTlI2RG0xZlRFUFZDZHdKMHZReG8xbkFRWjQtMUxzR2xUd0gzdm9CX19ZS2M0MnBuY3N2c01UMG13Y2xhR2E0akY2T1Q3MDlqQVJfYk9aRkc3X0lZRmhSNG94NDE1T1JBdG5IVG15SGVnbUNHV082WGJNMGFKU2tuZTh0VEJyX2FMMnVqY29CSzNRamNHaWdVUUQ4MDlGc0ttcE1qbnJObzJvRk5xV3luaVQ0dUo0cklUcTN6bXdvTV9JRXFpcUxnYXMyVGk0MWphSjZEWkxCQ1QtRmdnRnUxQ0VndS1lTXFxbURDNmZYbDlmWXBua19LdnJ4cmZZaDhxNEVMWkZGeTZLamJKZm5DeTdDWk9GT1QwZGl6UG9EYUttZzctZVYwenh1ODJnT2pvd18yZVNwanltWmdQQlRHS0RwQlJTUkdfYXZZakpfMGJPMThEUzA2dHFfZllpVEoxRmhxSGR1TF9aaUUtbFJzaHc1M0EtTC04QVVuZTdoR2JOY1JRcW1uTWZpOTFsNTVWQmNCVk04Q09Kc1pBYkdqblozako5ZjZrNWpmeGlhREdJT2tqUWRBcVhZS2gxQmljcldyMWdSb3k2NWpseWxHdG1UZnpFaDlpNkdac3RKQ3RTRXJpVVpLRzJBS0hnSTJva0xqaF9kVG02VkoyNHZ4b0hFLTk4YXNsQ2pPRXNpdWYxdmNLcDhxd2xQWmlyME5UUE1DSzFxYTFDazhTYVJoZWs2VFRzRmhacld3QTBPcDhaZVJtdzRKQ3BPdHpUVFNVelc1UkhsWjc4REZKZlY3Mm5JZk9qRWFtX3NZcnBKQVVTY182em52NWxuTktjRnc?oc=5",
+        "source": "MSN",
+        "pubDate": "2026-07-19T10:31:54.000Z"
+      },
+      {
+        "title": "1940년대 데님부터 100년 넘은 시계까지…빈티지 마켓 가보니",
+        "link": "https://news.google.com/rss/articles/CBMiigNBVV95cUxQSnQyTkVyQ2hHUEQyR1pyVzg1SGtrdV9oTmhQTEhIcHdvMjgzdTB3TmRTSy11RllXM0VxNVBvRElYaExEZGxGX3JKNzBHSC13TlpEOVZSNFZxUzZkMzRiYXFPa0tpNjZmWlJNdEc4MVM5RFlZVndvU3ZwcG5GU3BwZkxEWTUwRU1JR0oxN0ZNZ3hKd0dodjMtSXFCXzlMSC13am5SYjdTR19uUVh0QjRVdzNPS0NxUVVONXpsQjBxSjM4bnpWNExyLWxKMnlpeFY4SjZWUFd5MG94MnZicFUzQWhDbUM0SnBnQzVYR1pKOFVCakgwNENLT1JqTjVpaHc2YkxlTWhVQVVMMGJoZ2I2eVp0dGdrVHk1SkJoeUpRRlYyd2tGcEVHZ1BCSGJtMUpqOGRPY1JCbHE2Z182SXozQ1VEVEFQRjZfaW5CQjNfMWJ1TW9wT0kwZEdKRHlPeFpjVkQ0WW1xQlRBSjdlTnVwa2gyY1UtZ2pLZGNFTjEtcDVnMS01bXRxSnV3?oc=5",
+        "source": "MSN",
+        "pubDate": "2026-07-19T08:00:45.000Z"
+      },
+      {
         "title": "맨온더분→던스트, 플래그십에 ‘취향 콘텐츠’ 강화",
         "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBRV1pjdTBvYWhRajkxNm03eE5UN0ZYZE1DNURIdGVVRkJVcF9NUllvdU5HSWdZQjR2SjlkN1VQc05LSWtPaDVqc2xFUFJveDVrbUFNRl9RU212WUpoM1ZwS25qajR5Zw?oc=5",
         "source": "싱글리스트",
         "pubDate": "2026-07-19T01:08:42.000Z"
-      },
-      {
-        "title": "1940년대 데님부터 100년 넘은 시계까지…빈티지 마켓 가보니",
-        "link": "https://news.google.com/rss/articles/CBMirANBVV95cUxNYV9nTThuei15VVJMeGlKcnZUMUVNc196a0JpUnFnZjU0RmNLYkhYbUdJbkJ0cC1xR1dHYzhyNFVTc0NGRHNSVk93NDYyZjd5Sk1RcnJJdEpZUXdRejh6Zmg0bDNmdTR0ZjBpU2N3YlZiZlZqV3dGSzlsXzFJQkkzR1hYdU9PaDl2N3V5TEpWemFCYUxTOFdOdXZicnBDR3QydUF3TF9PWl9IcWNuUlFPZnF3bDhTMTJ5YnY3VXBiTkFndXJoeW9iZ3pfWVhZN3l2bFZnTlF2RFc4cHVPS29BNjc3Z1Zwc0VZNGhsR3J0dDFJWU1vQ3FJX1FHZUllLVk1OWg4RFlLVTFaTmJ4dkJJNzdDREdVem9wR05XaVlWSmVXTUROaGlQLXhOWld5UDZJUG5pN1pScFNmaG5Ud3V1dEtpRzJtTmVrNzlLVy1uWHZrQUZJakkwQkpvcldsQXVfN1dNRlgzNFE4TVRaTFpNa18yZ05jdGxQdmFVV0lwbjlPcUhBVjFURXAtZFZRQjlrSFVQWXdSbWVoemNGUnM0cVBrYlp2WHlVcUxhdw?oc=5",
-        "source": "MSN",
-        "pubDate": "2026-07-18T22:47:13.000Z"
       },
       {
         "title": "\"1940년대 데님부터 100년 넘은 시계까지\"…빈티지 마켓 가보니",
@@ -358,12 +351,6 @@
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5BaVl3alZzbXlHZWZiMFpEYnZPdXRpTmZwM1R0Q3RzRXoxLUNiZjBSalRxLVJuZW9mcVNxUjdPY3FjY0RoV0dIc3h3cW9Id0RsQkhJZkFEVDJ5d1ExTFBaT0xNc3FNaEREZ0dSeQ?oc=5",
         "source": "이코노미톡뉴스",
         "pubDate": "2026-07-17T00:00:00.000Z"
-      },
-      {
-        "title": "맨온더분, 청담 플래스십 빈티지 마켓 운영, 국내외 한정판 판매",
-        "link": "https://news.google.com/rss/articles/CBMioANBVV95cUxQUXRieEcwQUFLX0FaMk5scEtPVmNXR09IZDY3dk9TOWtuZEVRUldCM1VCZ3FuV0w5VlVKbG1hUUljYmpkVEp6aEhxbHVuOGxVVnUwZ1BGSEpZZkV6blVEanVKZVAxdEo1bGFIR2c4SFkwZmo1aGxnY25OMFJOOGRLS0tfRXlFQjE3ZFppOG5BeHRnTXRVaVY3ZDdfR08wbWVnZ21TbnBMcGhhN2NVMVdxWkRSa1AwcWFNQmJuWDdReVhuRUduWHRaMEZPZmlPdGxmbjBTcUFsQXNXVXVadWlTRWpSVm03ZjRLb0EzcDUtUG9PUkFod1lxSWZXSmZXX0xMUmJxblloaEppc2kySjNQcDdCUGFNMkN4X2hXVElVTERsanVENFl5ZFNxQU5SRDVKdlJDU0J5RGxFa1lZZnBQckhXc3BneU9zdk1iREdhY1I4akpqNEM4Q0JUNzFXTEdadHUtZjdMNnN0RG8wb1VaQ05GSm9OTGc0Ym1nWUVVNlV4MFA2alJ5amUyTzFTMmxhZmlVaWEzd2plckxyaEM4UA?oc=5",
-        "source": "MSN",
-        "pubDate": "2026-07-16T09:27:10.000Z"
       }
     ],
     "수트서플라이": [],
@@ -386,20 +373,26 @@
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9ndlE2YTcwNHdaV0dOM0dUYVQ0OEFLdFBMcE44VW5OZWV5S2xodzQ0cm5NZkJqZWpZVVB3TW1zamp6SkxZT0o2NzN5LXg1dkhibk5iaE9SbEVnWS1rcEdBZHM1TTlvV2M?oc=5",
         "source": "어패럴뉴스",
         "pubDate": "2026-06-17T07:00:00.000Z"
-      },
-      {
-        "title": "수박부터 포터리 팝업까지…유통가, 초여름 쇼핑 수요 잡는다[위클리 쇼핑]",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5SVGthcDh3OE1RYmRIVlNoNnFJLW1IYXpIUTVGOHYyd2E1NW9FWEdwUVlxZkNLMkxuMmxHdXNZcm5XVVBBd1B2RTNZUEFWU0pWNjZqa2N2ZXlUTld6X3lNSNIBeEFVX3lxTE12QkVqbUF2QzBkbFNFaGRQakRRTnNDcDRsZFFFZ1Vfb2ZQQWVhNy1aZFlfM2hKSnR1U2N0Z0xUdjFkTkxvcFhhNGFxQWdsY3NvSDF5eGpuWUlmWVdTZnFiVV8wYW40SzhFMWhrQUJOWXFFZ2w4YVRFWA?oc=5",
-        "source": "뉴시스",
-        "pubDate": "2026-05-23T07:00:00.000Z"
       }
     ],
     "캡틴선샤인": [],
     "PAF": [
       {
+        "title": "디자이너 브랜드, 쇼룸의 진화 ‘브랜드 경험 공간’ 경쟁",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBaWE9YT1BIQ0d2Ui05bC1fb2l1T1p3RkFtN0ktQXUwQ0ZZRUViaG1jRVRNZFctSUROSkZrTm42WkRrX2JzU2ZxY0ktaXBYc25KWkJBR1BtZUN3ZWhQQ1F4Q2pZMFBTOWgw?oc=5",
+        "source": "한국섬유신문",
+        "pubDate": "2026-07-22T02:19:41.000Z"
+      },
+      {
         "title": "온, PAF와 협업 컬렉션 ‘커렌트 폼 4.0’",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1odHh4VlVuaEMzaUtEaTNGb2xwR1RtT3hWZ0tMMDFnckp3d1dEd09TRTFHTUNodDkxa0QzY29odEoyQjB6czBxN0swSVZJNC1ibVdXbmJzMFVfR2k3WWVISlNDOUNMOXdP?oc=5",
         "source": "한국섬유신문",
+        "pubDate": "2026-06-24T07:00:00.000Z"
+      },
+      {
+        "title": "온 X PAF, ‘탈바꿈’ 모티브 담은 커렌트 폼 4.0 선봬",
+        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9VSWtXLU5SajJJcmlrUF9FR2pWR2xiUmpCWEZLRldoRDBod3NTWUF3SGNtYUtMd0JYM3NnLXdyX25UbUVEdDBIWjhXNW8?oc=5",
+        "source": "TENANT news",
         "pubDate": "2026-06-24T07:00:00.000Z"
       },
       {
