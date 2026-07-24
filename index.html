@@ -1395,7 +1395,7 @@
       // 롯데/현대/신세계를 L/H/S로 줄여써서 막대가 좁아도(1~4개 수준) 텍스트가 들어가게 함
       function segText(val, label, max) {
         if (val <= 0) return '';
-        return `<span style="color:white;font-size:9px;font-weight:600;white-space:nowrap;">${label} ${val}개</span>`;
+        return `<span style="color:white;font-size:9px;font-weight:600;white-space:nowrap;">${label} ${val}</span>`;
       }
       let rankingHtml = '';
       tierOrder.forEach(tier => {
