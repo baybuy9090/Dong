@@ -33,7 +33,7 @@ const INDUSTRY_QUERIES = ['남성 컨템포러리', '맨즈 컨템포러리'];
 
 const ARTICLES_PER_BRAND = 6;
 const INDUSTRY_ARTICLES = 8;
-const MAX_AGE_DAYS = 60; // 최대 2달 이내 기사만 수집
+const MAX_AGE_DAYS = 14; // 최근 14일 이내 기사만 수집
 
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 

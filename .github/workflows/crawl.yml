@@ -1,8 +1,8 @@
-name: 월간 브랜드 크롤링
+name: 브랜드 입점 크롤링 (3일마다)
 
 on:
   schedule:
-    - cron: '0 0 1 * *'
+    - cron: '0 0 */3 * *'
   workflow_dispatch: {}
 
 permissions:
