@@ -1,7 +1,12 @@
-// 브랜드별 뉴스 크롤러 — 구글 뉴스 RSS에서 브랜드별 최신 기사를 모아 news.json으로 저장.
-// 매일 오전(KST) GitHub Actions로 자동 실행됨 (.github/workflows/news.yml).
+// 브랜드별 뉴스 크롤러 — 구글 뉴스 RSS + 네이버 뉴스 검색 API에서 브랜드별 최신 기사를
+// 모아 news.json으로 저장. 매일 오전(KST) GitHub Actions로 자동 실행됨
+// (.github/workflows/news.yml). 네이버는 NAVER_CLIENT_ID/NAVER_CLIENT_SECRET
+// 환경변수(GitHub Secrets)가 설정된 경우에만 수집하고, 없으면 구글만 사용.
 const fs = require('fs');
 const path = require('path');
+
+const NAVER_CLIENT_ID = process.env.NAVER_CLIENT_ID || '';
+const NAVER_CLIENT_SECRET = process.env.NAVER_CLIENT_SECRET || '';
 
 // 실제 매장 리스트에 쓰이는 브랜드명 그대로 검색하면 결과가 안 나오거나(내부 표기용 이름)
 // 너무 짧아 무관한 기사가 섞이는 브랜드가 있어, 그런 경우만 검색용 키워드를 따로 지정.
@@ -31,7 +36,7 @@ const BRANDS = [
 // 업계 전체 동향 카드 (특정 브랜드가 아닌 일반 검색어)
 const INDUSTRY_QUERIES = ['남성 컨템포러리', '맨즈 컨템포러리'];
 
-const ARTICLES_PER_BRAND = 6;
+const ARTICLES_PER_BRAND = 8;
 const INDUSTRY_ARTICLES = 8;
 const MAX_AGE_DAYS = 14; // 최근 14일 이내 기사만 수집
 
@@ -46,7 +51,12 @@ function decodeEntities(str) {
     .replace(/&#39;/g, "'");
 }
 
-function parseItems(xml) {
+function stripTags(str) {
+  return str.replace(/<[^>]*>/g, '');
+}
+
+// ── 구글 뉴스 RSS ──
+function parseGoogleItems(xml) {
   const items = [];
   const itemBlocks = xml.match(/<item>[\s\S]*?<\/item>/g) || [];
   itemBlocks.forEach(block => {
@@ -70,15 +80,7 @@ function parseItems(xml) {
   return items;
 }
 
-// 최근 MAX_AGE_DAYS 이내 기사만 남기고 최신순 정렬 (구글 검색 결과는 관련도순이라 재정렬 필요)
-function filterRecentAndSort(items) {
-  const cutoff = Date.now() - MAX_AGE_DAYS * 86400000;
-  return items
-    .filter(a => a.pubDate && new Date(a.pubDate).getTime() >= cutoff)
-    .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
-}
-
-async function fetchRss(query) {
+async function fetchGoogleNews(query) {
   // 띄어쓰기 없는 단일어는 따옴표로 감싸 정확히 일치하는 기사만 (노이즈 방지).
   // 여러 단어로 조합한 검색어는 따옴표를 걸면 그 문구 그대로 나온 기사만 찾게 되어
   // 결과가 0건에 가까워지므로 그대로 검색.
@@ -89,38 +91,97 @@ async function fetchRss(query) {
   });
   if (!res.ok) throw new Error('HTTP ' + res.status);
   const xml = await res.text();
-  return parseItems(xml);
+  return parseGoogleItems(xml);
+}
+
+// ── 네이버 뉴스 검색 API (공식, 키 필요) ──
+function sourceFromUrl(url) {
+  try {
+    return new URL(url).hostname.replace(/^www\./, '');
+  } catch (e) {
+    return '네이버뉴스';
+  }
+}
+
+async function fetchNaverNews(query) {
+  if (!NAVER_CLIENT_ID || !NAVER_CLIENT_SECRET) return [];
+  // 구글과 달리 따옴표 문구검색을 지원하지 않으므로 그대로 검색.
+  const q = query.replace(/"/g, '');
+  const url = `https://openapi.naver.com/v1/search/news.json?query=${encodeURIComponent(q)}&display=20&sort=date`;
+  const res = await fetch(url, {
+    headers: {
+      'X-Naver-Client-Id': NAVER_CLIENT_ID,
+      'X-Naver-Client-Secret': NAVER_CLIENT_SECRET,
+    },
+  });
+  if (!res.ok) throw new Error('HTTP ' + res.status);
+  const json = await res.json();
+  return (json.items || []).map(item => {
+    const link = item.originallink || item.link;
+    return {
+      title: decodeEntities(stripTags(item.title || '')).trim(),
+      link,
+      source: sourceFromUrl(link),
+      pubDate: item.pubDate ? new Date(item.pubDate).toISOString() : null,
+    };
+  });
+}
+
+async function fetchAllSources(query) {
+  const all = [];
+  try {
+    all.push(...await fetchGoogleNews(query));
+  } catch (e) {
+    console.error(`  [구글: ${query}] 수집 실패:`, e.message);
+  }
+  try {
+    all.push(...await fetchNaverNews(query));
+  } catch (e) {
+    console.error(`  [네이버: ${query}] 수집 실패:`, e.message);
+  }
+  // 같은 기사가 두 소스에 다 걸리는 경우가 있어 제목 기준으로 중복 제거
+  const seen = new Set();
+  return all.filter(a => {
+    const key = a.title.replace(/\s+/g, '');
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+// 최근 MAX_AGE_DAYS 이내 기사만 남기고 최신순 정렬 (검색 결과는 관련도순이라 재정렬 필요)
+function filterRecentAndSort(items) {
+  const cutoff = Date.now() - MAX_AGE_DAYS * 86400000;
+  return items
+    .filter(a => a.pubDate && new Date(a.pubDate).getTime() >= cutoff)
+    .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 }
 
 async function fetchBrandNews(brand) {
   const query = NEWS_QUERY_OVERRIDES[brand] || brand;
-  try {
-    const items = await fetchRss(query);
-    return filterRecentAndSort(items).slice(0, ARTICLES_PER_BRAND);
-  } catch (e) {
-    console.error(`[${brand}] 뉴스 수집 실패:`, e.message);
-    return [];
-  }
+  const items = await fetchAllSources(query);
+  return filterRecentAndSort(items).slice(0, ARTICLES_PER_BRAND);
 }
 
 async function fetchIndustryNews() {
   const seen = new Set();
   const all = [];
   for (const query of INDUSTRY_QUERIES) {
-    try {
-      const items = await fetchRss(query);
-      items.forEach(item => {
-        if (!seen.has(item.link)) { seen.add(item.link); all.push(item); }
-      });
-    } catch (e) {
-      console.error(`[업계 전체: ${query}] 뉴스 수집 실패:`, e.message);
-    }
+    const items = await fetchAllSources(query);
+    items.forEach(item => {
+      const key = item.title.replace(/\s+/g, '');
+      if (!seen.has(key)) { seen.add(key); all.push(item); }
+    });
     await sleep(400);
   }
   return filterRecentAndSort(all).slice(0, INDUSTRY_ARTICLES);
 }
 
 async function main() {
+  if (!NAVER_CLIENT_ID || !NAVER_CLIENT_SECRET) {
+    console.log('(참고: NAVER_CLIENT_ID/NAVER_CLIENT_SECRET이 없어 구글 뉴스만 수집합니다)');
+  }
+
   const data = {};
   for (const brand of BRANDS) {
     process.stdout.write(`수집 중: ${brand} ... `);

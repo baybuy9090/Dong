@@ -21,6 +21,9 @@ jobs:
           node-version: '20'
 
       - name: 뉴스 크롤러 실행
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
         run: node news-crawler.js
 
       - name: 결과 커밋 및 푸시
