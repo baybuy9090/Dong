@@ -1220,11 +1220,18 @@
             : '';
           const galleryHtml = floors.length
             ? `<div id="floorImgs-${idx}" style="display:none;padding:10px 4px 14px;">
-                ${floors.map(f => `
+                ${floors.map(f => {
+                  const ext = (f.url.match(/\.(jpg|jpeg|png|gif|webp)(?:\?.*)?$/i) || ['', 'jpg'])[1];
+                  const filename = `${e.company}_${e.store}_${f.floor || f.label}.${ext}`.replace(/[\\/:*?"<>|]/g, '');
+                  return `
                   <div style="margin-bottom:14px;">
-                    <div style="font-size:12px;font-weight:700;color:#444;margin-bottom:4px;">${f.label}</div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+                      <div style="font-size:12px;font-weight:700;color:#444;">${f.label}</div>
+                      <button class="tab-btn" style="background:#2c2c34;color:white;padding:3px 9px;font-size:10.5px;" onclick="downloadFloorImage('${f.url}', '${filename}')">⬇️ 다운로드</button>
+                    </div>
                     <img src="${f.url}" alt="${f.label}" loading="lazy" style="max-width:100%;border:1px solid #eee;border-radius:8px;">
-                  </div>`).join('')}
+                  </div>`;
+                }).join('')}
               </div>`
             : '';
           return `<div class="region-item">
@@ -2059,6 +2066,26 @@
     function toggleFloorImages(key) {
       const el = document.getElementById('floorImgs-' + key);
       if (el) el.style.display = el.style.display === 'none' ? 'block' : 'none';
+    }
+
+    // 신세계 이미지 서버는 CORS를 안 열어놔서 fetch로 바로 못 받아오는 경우가 있음.
+    // 그럴 땐 새 탭으로 열어서 길게 누르기(모바일)/우클릭(PC)으로 저장할 수 있게 함.
+    async function downloadFloorImage(url, filename) {
+      try {
+        const res = await fetch(url, { mode: 'cors' });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const blob = await res.blob();
+        const blobUrl = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = blobUrl;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(blobUrl);
+      } catch (e) {
+        window.open(url, '_blank');
+      }
     }
 
     function timeAgo(pubDate) {
