@@ -165,7 +165,7 @@
 
     .empty { padding: 40px; text-align: center; color: #999; font-size: 13px; }
 
-    #tableView, #matrixView, #floorView, #mapView, #newsView { display: none; }
+    #tableMatrixView, #floorView, #mapView, #newsView { display: none; }
     .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
     .news-card { background: white; border: 1px solid #eee; border-radius: 10px; padding: 14px 16px; }
     .news-card h4 { margin: 0 0 8px; font-size: 14px; display: flex; justify-content: space-between; align-items: center; }
@@ -248,7 +248,6 @@
     /* ── 모바일 반응형 ── */
     /* 모바일 전용 하단 탭바 / 필터 바텀시트 — PC 폭에서는 항상 숨김 */
     .mobile-tabbar, .mobile-filter-trigger, .filter-backdrop, .mobile-sheet-header { display: none; }
-    #mobileFavToggleHost:empty { display: none; }
 
     @media (max-width: 680px) {
       body { padding: 0 12px 84px; font-size: 14px; }
@@ -266,8 +265,8 @@
       .card .num { font-size: 20px; }
       .card .label { font-size: 12px; }
 
-      /* PC용 상단 탭 줄은 숨기고 하단 고정 탭바를 씀 (즐겨찾기만 버튼은
-         JS(relocateFavToggle)가 필터 시트 안으로 옮겨 보여줌) */
+      /* PC용 상단 탭 줄은 숨기고 하단 고정 탭바를 씀. "즐겨찾기만"은
+         이제 탭이 아니라 .controls(필터) 안에 항상 들어있어 따로 옮길 필요 없음 */
       .tabs { display: none; }
 
       .mobile-tabbar {
@@ -315,7 +314,7 @@
       .mobile-sheet-close {
         background: #f0f0f2; border: none; border-radius: 8px; padding: 6px 10px; font-size: 12px;
       }
-      #mobileFavToggleHost .tab-btn { width: 100%; text-align: left; }
+      .controls #favToggle { width: 100%; text-align: left; }
       .controls select, .controls input,
       #newsSearchInput { width: 100%; min-width: 0; font-size: 16px; padding: 10px 12px; min-height: 42px; border-radius: 9px; }
 
@@ -380,9 +379,7 @@
     <button class="tab-btn tabnav-btn active" data-tab="overview" id="tabOverview" onclick="switchTab('overview')">📊 한눈에 보기</button>
     <button class="tab-btn tabnav-btn" data-tab="map" id="tabMap" onclick="switchTab('map')">📍 상권 지도</button>
     <button class="tab-btn tabnav-btn" data-tab="floor" id="tabFloor" onclick="switchTab('floor')">🗺️ 층 도면 보기</button>
-    <button class="tab-btn tabnav-btn" data-tab="matrix" id="tabMatrix" onclick="switchTab('matrix')">🔲 매트릭스</button>
-    <button class="tab-btn tabnav-btn" data-tab="table" id="tabTable" onclick="switchTab('table')">📋 표로 보기</button>
-    <button class="tab-btn" id="favToggle" onclick="toggleFavOnly()">☆ 즐겨찾기만</button>
+    <button class="tab-btn tabnav-btn" data-tab="table" id="tabTable" onclick="switchTab('table')">📋 표·매트릭스</button>
     <button class="tab-btn tabnav-btn" data-tab="news" id="tabNews" onclick="switchTab('news')">📰 브랜드 뉴스</button>
   </div>
 
@@ -391,7 +388,6 @@
     <button class="mobile-tabbar-btn tabnav-btn active" data-tab="overview" onclick="switchTab('overview')"><span class="mtb-icon">📊</span><span class="mtb-label">한눈에</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="map" onclick="switchTab('map')"><span class="mtb-icon">📍</span><span class="mtb-label">지도</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="floor" onclick="switchTab('floor')"><span class="mtb-icon">🗺️</span><span class="mtb-label">도면</span></button>
-    <button class="mobile-tabbar-btn tabnav-btn" data-tab="matrix" onclick="switchTab('matrix')"><span class="mtb-icon">🔲</span><span class="mtb-label">매트릭스</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="table" onclick="switchTab('table')"><span class="mtb-icon">📋</span><span class="mtb-label">표</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="news" onclick="switchTab('news')"><span class="mtb-icon">📰</span><span class="mtb-label">뉴스</span></button>
   </nav>
@@ -407,7 +403,7 @@
       <b>필터</b>
       <button class="mobile-sheet-close" onclick="closeMobileFilterSheet()">✕ 닫기</button>
     </div>
-    <div id="mobileFavToggleHost"></div>
+    <button class="tab-btn" id="favToggle" onclick="toggleFavOnly()">☆ 즐겨찾기만</button>
     <select id="monthFilter" onchange="loadMonth(this.value)"><option value="">최신 (이번 달)</option></select>
     <select id="companyFilter"><option value="">전체 회사</option></select>
     <select id="storeFilter"><option value="">전체 지점</option></select>
@@ -464,41 +460,47 @@
     </div>
   </div>
 
-  <!-- 표 -->
-  <div id="tableView">
-    <div style="margin-bottom:10px;">
-      <button class="tab-btn" style="background:#2c2c34;color:white;" onclick="exportTableExcel()">엑셀로 내보내기</button>
+  <!-- 표 / 매트릭스 -->
+  <div id="tableMatrixView">
+    <div class="tabs" style="margin-bottom:12px;">
+      <button class="tab-btn active" id="tableSubTable" onclick="switchTableSub('table')">📋 표로 보기</button>
+      <button class="tab-btn" id="tableSubMatrix" onclick="switchTableSub('matrix')">🔲 매트릭스</button>
     </div>
-    <div style="overflow-x:auto;">
-      <table style="min-width:640px;">
-        <thead>
-          <tr>
-            <th class="sortable" onclick="setSortKey('company')">회사<span class="arrow" id="arrow-company"></span></th>
-            <th class="sortable" onclick="setSortKey('store')">지점<span class="arrow" id="arrow-store"></span></th>
-            <th class="sortable" onclick="setSortKey('region')">상권<span class="arrow" id="arrow-region"></span></th>
-            <th class="sortable" onclick="setSortKey('brand')">브랜드<span class="arrow" id="arrow-brand"></span></th>
-            <th>매출</th>
-            <th class="sortable" onclick="setSortKey('status')">상태<span class="arrow" id="arrow-status"></span></th>
-          </tr>
-        </thead>
-        <tbody id="tbody"></tbody>
-      </table>
-    </div>
-    <div id="emptyMsg" class="empty" style="display:none;">
-      데이터가 없습니다. GitHub Actions 워크플로우(월간 브랜드 크롤링)를 먼저 실행해주세요.
-    </div>
-  </div>
 
-  <!-- 매트릭스 -->
-  <div id="matrixView">
-    <div style="margin-bottom:10px;">
-      <button class="tab-btn" style="background:#2c2c34;color:white;" onclick="exportMatrixExcel()">엑셀로 내보내기</button>
+    <div id="tableView">
+      <div style="margin-bottom:10px;">
+        <button class="tab-btn" style="background:#2c2c34;color:white;" onclick="exportTableExcel()">엑셀로 내보내기</button>
+      </div>
+      <div style="overflow-x:auto;">
+        <table style="min-width:640px;">
+          <thead>
+            <tr>
+              <th class="sortable" onclick="setSortKey('company')">회사<span class="arrow" id="arrow-company"></span></th>
+              <th class="sortable" onclick="setSortKey('store')">지점<span class="arrow" id="arrow-store"></span></th>
+              <th class="sortable" onclick="setSortKey('region')">상권<span class="arrow" id="arrow-region"></span></th>
+              <th class="sortable" onclick="setSortKey('brand')">브랜드<span class="arrow" id="arrow-brand"></span></th>
+              <th>매출</th>
+              <th class="sortable" onclick="setSortKey('status')">상태<span class="arrow" id="arrow-status"></span></th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+      <div id="emptyMsg" class="empty" style="display:none;">
+        데이터가 없습니다. GitHub Actions 워크플로우(월간 브랜드 크롤링)를 먼저 실행해주세요.
+      </div>
     </div>
-    <div id="matrixWrap">
-      <table class="matrix-table">
-        <thead><tr id="matrixHeader"></tr></thead>
-        <tbody id="matrixBody"></tbody>
-      </table>
+
+    <div id="matrixView" style="display:none;">
+      <div style="margin-bottom:10px;">
+        <button class="tab-btn" style="background:#2c2c34;color:white;" onclick="exportMatrixExcel()">엑셀로 내보내기</button>
+      </div>
+      <div id="matrixWrap">
+        <table class="matrix-table">
+          <thead><tr id="matrixHeader"></tr></thead>
+          <tbody id="matrixBody"></tbody>
+        </table>
+      </div>
     </div>
   </div>
 
@@ -595,20 +597,6 @@
       document.getElementById('favToggle').textContent = favOnly ? '★ 즐겨찾기만 (켜짐)' : '☆ 즐겨찾기만';
       render();
     }
-
-    // 모바일 폭에서는 "즐겨찾기만" 버튼을 상단 탭 줄 대신 필터 바텀시트 안으로
-    // 옮겨서 보여줌 (PC 레이아웃은 원래 위치 그대로 유지). 버튼을 복제하지 않고
-    // 같은 DOM 노드를 폭에 따라 옮겨서 상태(활성 여부)가 항상 하나로 유지되게 함.
-    function relocateFavToggle() {
-      const btn = document.getElementById('favToggle');
-      const mobileHost = document.getElementById('mobileFavToggleHost');
-      const desktopHost = document.querySelector('.tabs');
-      if (!btn || !mobileHost || !desktopHost) return;
-      const isMobile = window.matchMedia('(max-width: 680px)').matches;
-      if (isMobile && btn.parentElement !== mobileHost) mobileHost.appendChild(btn);
-      if (!isMobile && btn.parentElement !== desktopHost) desktopHost.appendChild(btn);
-    }
-    window.addEventListener('resize', relocateFavToggle);
 
     function openMobileFilterSheet() {
       document.getElementById('controlsBar').classList.add('mobile-open');
@@ -1145,15 +1133,14 @@
         btn.classList.toggle('active', btn.dataset.tab === tab);
       });
       document.getElementById('overviewView').style.display = tab === 'overview' ? 'block' : 'none';
-      document.getElementById('tableView').style.display = tab === 'table' ? 'block' : 'none';
-      document.getElementById('matrixView').style.display = tab === 'matrix' ? 'block' : 'none';
+      document.getElementById('tableMatrixView').style.display = tab === 'table' ? 'block' : 'none';
       document.getElementById('floorView').style.display = tab === 'floor' ? 'block' : 'none';
       document.getElementById('mapView').style.display = tab === 'map' ? 'block' : 'none';
       document.getElementById('newsView').style.display = tab === 'news' ? 'block' : 'none';
       document.getElementById('controlsBar').style.display = (tab === 'map' || tab === 'news') ? 'none' : 'flex';
       document.getElementById('mobileFilterTrigger').style.display = (tab === 'map' || tab === 'news') ? 'none' : '';
       closeMobileFilterSheet();
-      if (tab === 'matrix') renderMatrix();
+      if (tab === 'table' && tableSub === 'matrix') renderMatrix();
       if (tab === 'overview') renderOverview();
       if (tab === 'floor') renderFloorView();
       if (tab === 'map') renderMap();
@@ -1162,6 +1149,16 @@
         const stickyHeader = document.getElementById('regionRankingStickyHeader');
         if (stickyHeader) stickyHeader.style.display = 'none';
       }
+    }
+
+    let tableSub = 'table';
+    function switchTableSub(sub) {
+      tableSub = sub;
+      document.getElementById('tableSubTable').classList.toggle('active', sub === 'table');
+      document.getElementById('tableSubMatrix').classList.toggle('active', sub === 'matrix');
+      document.getElementById('tableView').style.display = sub === 'table' ? 'block' : 'none';
+      document.getElementById('matrixView').style.display = sub === 'matrix' ? 'block' : 'none';
+      if (sub === 'matrix') renderMatrix();
     }
 
     let floorSub = 'store';
@@ -2101,7 +2098,6 @@
     populateMonthFilter();
     loadNews();
     loadFloorImages();
-    relocateFavToggle();
   </script>
 </body>
 </html>
