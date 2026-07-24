@@ -1203,7 +1203,7 @@
           if (!storeMap[key]) storeMap[key] = { company: r.company, store: r.store, brands: [] };
           storeMap[key].brands.push(r.brand);
         });
-        // 신세계는 실제 도면 이미지를 볼 수 있어 목록 맨 위로 올림
+        // 신세계·롯데는 실제 도면 이미지를 볼 수 있어 목록 맨 위로 올림
         const companyPriority = { '신세계': 0, '롯데': 1, '현대': 2 };
         const entries = Object.values(storeMap).sort((a,b) =>
           (companyPriority[a.company] ?? 9) - (companyPriority[b.company] ?? 9) || a.store.localeCompare(b.store,'ko'));
@@ -1214,7 +1214,7 @@
             ? `<a href="${url}" target="_blank" rel="noopener" style="font-size:12px;color:#004990;text-decoration:none;">🔗 도면 보기 →</a>`
             : `<span style="font-size:11px;color:#bbb;">링크 없음</span>`;
           const code = STORE_CODES[e.company] && STORE_CODES[e.company][e.store];
-          const floors = e.company === '신세계' && code ? (floorImages[code] || []) : [];
+          const floors = code ? (floorImages[code] || []) : [];
           const imgToggleHtml = floors.length
             ? `<button class="tab-btn" style="background:#004990;color:white;padding:3px 10px;font-size:11px;margin-left:8px;" onclick="toggleFloorImages('${idx}')">🖼️ 도면 이미지 (${floors.length}개층)</button>`
             : '';

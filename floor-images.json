@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-24T03:02:42.510Z",
+  "lastUpdated": "2026-07-24T05:53:31.191Z",
   "data": {
     "SC00002": [
       {
@@ -680,6 +680,1053 @@
         "floor": "B2F",
         "label": "B2 푸드마켓 안내도",
         "url": "https://www.shinsegae.com/cms12/SC00007/guide/floor/__icsFiles/afieldfile/2026/04/30/GbD73vRm0TNW.png"
+      }
+    ],
+    "0013": [
+      {
+        "floor": "08F",
+        "label": "8F 가전ㆍ가구ㅣ리빙ㅣ이벤트홀",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202606/0013/20260614152810125_4.png"
+      },
+      {
+        "floor": "07F",
+        "label": "7F 스포츠ㅣ유니클로",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202606/0013/20260615183420468_5.png"
+      },
+      {
+        "floor": "06F",
+        "label": "6F 골프ㅣ아웃도어ㅣ캐주얼ㅣ아동유아",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0013/2021121516233154_8.jpg"
+      },
+      {
+        "floor": "05F",
+        "label": "5F 남성패션ㅣ남성컨템포러리",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0013/20211202195258319_2.jpg"
+      },
+      {
+        "floor": "04F",
+        "label": "4F 여성패션ㅣ란제리",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0013/20211227144915592_1.jpg"
+      },
+      {
+        "floor": "03F",
+        "label": "3F 여성컨템포러리",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0013/20220308111433756_8.jpg"
+      },
+      {
+        "floor": "02F",
+        "label": "2F 영패션ㅣ구두ㅣ패션잡화",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0013/2021120618444593_0.jpg"
+      },
+      {
+        "floor": "01F",
+        "label": "1F 해외패션ㅣ화장품ㅣ시계ㆍ보석",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0013/20220218175544835_6.jpg"
+      },
+      {
+        "floor": "B1F",
+        "label": "B1 FOOD AVENUEㅣ식당가",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202504/0013/20250422141959390_7.jpg"
+      }
+    ],
+    "0333": [
+      {
+        "floor": "13F",
+        "label": "13F 전망대ㅣ노아스로스팅",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202165155536_5.png"
+      },
+      {
+        "floor": "12F",
+        "label": "12F 샤롯데가든",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202165212768_0.png"
+      },
+      {
+        "floor": "11F",
+        "label": "11F 샤롯데가든ㅣ샤롯데우체통",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202165233506_9.png"
+      },
+      {
+        "floor": "10F",
+        "label": "10F 식당가ㅣ고객상담실ㅣA/S상담센터",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/2022120216525790_9.png"
+      },
+      {
+        "floor": "09F",
+        "label": "9F 가전ㅣ가구ㅣ주방용품ㅣ홈패션ㅣ사은행사장",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202165316418_3.png"
+      },
+      {
+        "floor": "08F",
+        "label": "8F 아동ㅣ유아ㅣ삼성프리미엄스토어",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202165338547_7.png"
+      },
+      {
+        "floor": "07F",
+        "label": "7F 아웃도어ㅣ골프ㅣ헤어샵",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202165401944_1.png"
+      },
+      {
+        "floor": "06F",
+        "label": "6F 남성패션",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202164807934_8.png"
+      },
+      {
+        "floor": "05F",
+        "label": "5F 스포츠 전문관",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202164921344_6.png"
+      },
+      {
+        "floor": "04F",
+        "label": "4F 여성컨템포러리ㅣ유니섹스캐주얼",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202164858994_7.png"
+      },
+      {
+        "floor": "03F",
+        "label": "3F 영캐주얼ㅣ란제리ㅣ헤드스파샵",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202164836427_9.png"
+      },
+      {
+        "floor": "02F",
+        "label": "2F 여성패션ㅣ핸드백ㅣ슈즈",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202306/0333/20230628153731336_9.png"
+      },
+      {
+        "floor": "01F",
+        "label": "1F 해외패션ㅣ화장품",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202306/0333/20230628153246940_7.png"
+      },
+      {
+        "floor": "B1F",
+        "label": "B1 푸드에비뉴ㅣ점행사장",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202165101762_6.png"
+      }
+    ],
+    "0007": [
+      {
+        "floor": "11F",
+        "label": "11F 롯데문화센터",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0007/20210810180450510_8.jpg"
+      },
+      {
+        "floor": "10F",
+        "label": "10F 식당가ㅣ서비스라운지(롯데카드센터,롯데상품권)ㅣ사은품증정",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202503/0007/20250319122947751_3.png"
+      },
+      {
+        "floor": "09F",
+        "label": "9F 이케아ㅣ가전 전문관ㅣ롯데시네마",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202109/0007/20210909123056725_9.jpg"
+      },
+      {
+        "floor": "08F",
+        "label": "8F 가구ㅣ홈패션ㅣ주방식기",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202210/0007/2022101210544711_2.png"
+      },
+      {
+        "floor": "07F",
+        "label": "7F 남성패션ㅣ셔츠ㆍ타이ㅣ트레디셔널",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0007/20211029135821703_6.jpg"
+      },
+      {
+        "floor": "06F",
+        "label": "6F 아웃도어 l 골프 ㅣ 아동 · 유아",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202204/0007/20220409101231563_6.jpg"
+      },
+      {
+        "floor": "05F",
+        "label": "5F 스포츠ㅣ무인양품",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0007/20211229112113584_1.jpg"
+      },
+      {
+        "floor": "04F",
+        "label": "4F 점행사장ㅣ영패션ㅣ란제리",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0007/20211019144415898_8.jpg"
+      },
+      {
+        "floor": "03F",
+        "label": "3F 여성패션ㅣ슈즈",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0007/20211113124929393_3.jpg"
+      },
+      {
+        "floor": "02F",
+        "label": "2F 해외패션ㅣ화장품ㅣ시계ㆍ보석",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0007/20211129154128508_8.jpg"
+      },
+      {
+        "floor": "01F",
+        "label": "1F 해외패션",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202205/0007/20220513121757498_5.png"
+      },
+      {
+        "floor": "B1F",
+        "label": "B1 푸드에비뉴",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202309/0007/2023091517133081_4.JPG"
+      }
+    ],
+    "0022": [
+      {
+        "floor": "10F",
+        "label": "10F 롯데시네마",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202105/0022/20210517141042665_7.jpg"
+      },
+      {
+        "floor": "09F",
+        "label": "9F 식당가ㅣ고객상담실",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0022/20220303142129180_7.jpg"
+      },
+      {
+        "floor": "08F",
+        "label": "8F 스포츠ㅣ유스캐주얼",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0022/20211022133924651_7.jpg"
+      },
+      {
+        "floor": "07F",
+        "label": "7F 생활가전ㅣ사은ㆍ상품권",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202211/0022/20221109105527526_0.jpg"
+      },
+      {
+        "floor": "06F",
+        "label": "6F 아웃도어ㅣ아동ㆍ유아ㅣ유니클로",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0022/20211006144016847_7.jpg"
+      },
+      {
+        "floor": "05F",
+        "label": "5F 남성패션ㅣ골프",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0022/20211128183925779_1.jpg"
+      },
+      {
+        "floor": "04F",
+        "label": "4F 여성패션ㅣ란제리ㅣ구두ㅣ무인양품ㅣ핸드백",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202303/0022/20230309111426473_2.png"
+      },
+      {
+        "floor": "03F",
+        "label": "3F 영캐릭터ㅣ컨템포러리",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202208/0022/20220827183053218_0.jpg"
+      },
+      {
+        "floor": "02F",
+        "label": "2F 영디자이너ㅣZARA",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0022/20221221142824659_7.jpg"
+      },
+      {
+        "floor": "01F",
+        "label": "1F 화장품ㅣ해외패션ㅣ주얼리ㅣ쉐이크쉑",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202409/0022/20240919124927278_6.png"
+      },
+      {
+        "floor": "B1F",
+        "label": "B1 Food Avenue",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202409/0022/20240919123610780_6.png"
+      }
+    ],
+    "0023": [
+      {
+        "floor": "11F",
+        "label": "11F 샤롯데가든ㅣ풋살구장",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202107/0023/20210730172028133_5.jpg"
+      },
+      {
+        "floor": "10F",
+        "label": "10F 식당가ㅣ문화센터ㅣ사은데스크ㅣ롯데상품권ㅣ롯데카드",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0023/20220203162549685_4.jpg"
+      },
+      {
+        "floor": "09F",
+        "label": "9F K-POP아카데미ㅣ애슐리퀸즈ㅣ피트니스센터",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202310/0023/20231031143952705_9.jpg"
+      },
+      {
+        "floor": "08F",
+        "label": "8F 가전ㅣ가구ㅣ주방ㆍ식기ㅣ홈패션",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202403/0023/20240305125738940_0.jpg"
+      },
+      {
+        "floor": "07F",
+        "label": "7F 아웃도어ㅣ스포츠",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202512/0023/20251201110919843_8.jpg"
+      },
+      {
+        "floor": "06F",
+        "label": "6F 남성패션ㅣ남성컨템포러리ㅣ셔츠ㅣ타이ㅣ골프",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202106/0023/20210625114323425_6.jpg"
+      },
+      {
+        "floor": "05F",
+        "label": "5F 영캐릭터ㅣ영캐주얼ㅣ아동ㅣ메타시티",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202208/0023/20220824111510169_6.jpg"
+      },
+      {
+        "floor": "04F",
+        "label": "4F 여성패션ㅣ여성컨템포러리ㅣ슈즈",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202208/0023/20220819140612414_7.jpg"
+      },
+      {
+        "floor": "03F",
+        "label": "3F 여성패션ㅣ란제리",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202206/0023/20220620144356753_8.jpg"
+      },
+      {
+        "floor": "02F",
+        "label": "2F 진유니ㅣ탑텐ㅣABC마트ㅣ올리브영",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0023/20211115113726736_5.jpg"
+      },
+      {
+        "floor": "01F",
+        "label": "1F 해외의류ㅣ애플",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202210/0023/20221006120605297_6.jpg"
+      },
+      {
+        "floor": "B1F",
+        "label": "B1 화장품ㅣ패션잡화ㅣ보석ㅣ해외패션ㅣ핸드백",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0023/20210822124425658_8.jpg"
+      },
+      {
+        "floor": "B2F",
+        "label": "B2 푸드에비뉴ㅣ유니클로ㅣ무인양품ㅣ행사장",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202201/0023/2022012619575799_7.jpg"
+      }
+    ],
+    "0399": [
+      {
+        "floor": "07F",
+        "label": "7F LOTTE Cinema",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814175132115_2.png"
+      },
+      {
+        "floor": "06F",
+        "label": "6F 가전 | 리빙 | 서비스라운지",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202502/0399/2025022112084411_3.jpg"
+      },
+      {
+        "floor": "05F",
+        "label": "5F 스포츠 | 아웃도어 | 골프 | 진유니",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814175014306_9.png"
+      },
+      {
+        "floor": "04F",
+        "label": "4F 킨더유니버스(아동ㆍ유아) | 남성패션",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814174900635_4.png"
+      },
+      {
+        "floor": "03F",
+        "label": "3F 영패션 | 여성패션 | 슈즈",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814174837919_8.png"
+      },
+      {
+        "floor": "02F",
+        "label": "2F 글로벌패션 | 코스메틱 | 액세서리",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814174821423_5.png"
+      },
+      {
+        "floor": "01F",
+        "label": "1F 럭셔리 | 워치 | 주얼리",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814174627639_4.png"
+      },
+      {
+        "floor": "B1F",
+        "label": "B1 푸드에비뉴ㅣ다이닝",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202507/0399/20250721114339357_6.png"
+      },
+      {
+        "floor": "B2F",
+        "label": "B2 라이프스타일 | 베이커리 | 서점",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814175118821_3.png"
+      },
+      {
+        "floor": "B3F",
+        "label": "B3 주차장/SRT·GTX/여행서비스",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210810082628207_3.png"
+      },
+      {
+        "floor": "B4F",
+        "label": "B4 주차장ㅣ스팀세차장",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210810082510444_1.png"
+      },
+      {
+        "floor": "B5F",
+        "label": "B5 주차장",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210810082343686_9.png"
+      },
+      {
+        "floor": "B6F",
+        "label": "B6 주차장",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210810082222720_4.png"
+      }
+    ],
+    "0001": [
+      {
+        "floor": "14F",
+        "label": "14F 식당가",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0001/20211017175028110_5.jpg"
+      },
+      {
+        "floor": "13F",
+        "label": "13F 식당가",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202109/0001/20210906184103387_6.jpg"
+      },
+      {
+        "floor": "12F",
+        "label": "12F 롯데면세점",
+        "url": "https://minfo.lotteshopping.com/content/cstr/201905/0001/20190508154135690_8.jpg"
+      },
+      {
+        "floor": "11F",
+        "label": "11F 롯데면세점",
+        "url": "https://minfo.lotteshopping.com/content/cstr/201905/0001/20190508154113986_4.jpg"
+      },
+      {
+        "floor": "10F",
+        "label": "10F 롯데면세점",
+        "url": "https://minfo.lotteshopping.com/content/cstr/201905/0001/20190508154053561_6.jpg"
+      },
+      {
+        "floor": "09F",
+        "label": "9F 면세점 l 키네틱 그라운드(K-패션 전문관)",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0001/202111302157482_5.jpg"
+      },
+      {
+        "floor": "08F",
+        "label": "8F 가전ㆍ가구ㅣ주방식기ㅣ홈데코ㅣ홈패션",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0001/20220301112301328_5.jpg"
+      },
+      {
+        "floor": "07F",
+        "label": "7F 스포츠ㆍ아웃도어ㅣ킨더유니버스(아동ㆍ유아)",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202506/0001/20250622163411473_8.jpg"
+      },
+      {
+        "floor": "06F",
+        "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png"
+      },
+      {
+        "floor": "05F",
+        "label": "5F 남성해외패션",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0001/2021112418464416_7.jpg"
+      },
+      {
+        "floor": "04F",
+        "label": "4F 여성패션ㅣ란제리",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0001/20211213133416654_4.jpg"
+      },
+      {
+        "floor": "03F",
+        "label": "3F 해외슈즈ㅣ여성컨템포러리",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0001/20211227133748618_9.jpg"
+      },
+      {
+        "floor": "02F",
+        "label": "2F 여성해외패션",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202201/0001/20220103100521180_2.jpg"
+      },
+      {
+        "floor": "01F",
+        "label": "1F 화장품ㅣ해외패션",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0001/20211130215602271_0.jpg"
+      },
+      {
+        "floor": "B1F",
+        "label": "B1 푸드에비뉴ㅣ화장품ㅣ보석ㅣ핸드백 l 구두ㅣ문화센터",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0001/20211215181530494_2.jpg"
+      }
+    ],
+    "0005": [
+      {
+        "floor": "11F",
+        "label": "11F 문화센터ㅣ샤롯데가든",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0005/20211014152551550_8.jpg"
+      },
+      {
+        "floor": "10F",
+        "label": "10F 롯데시네마ㅣ샤롯데가든",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0005/20211014173746124_4.jpg"
+      },
+      {
+        "floor": "09F",
+        "label": "9F 식당가ㅣ삼성ㅣ애플, 투바ㅣ엘아레나ㅣ롯데카드",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202201/CNT00000000000012031/20220113153411923_2.jpg"
+      },
+      {
+        "floor": "08F",
+        "label": "8F 면세점",
+        "url": "https://minfo.lotteshopping.com/content/cstr/201905/0005/20190503161219194_0.jpg"
+      },
+      {
+        "floor": "07F",
+        "label": "7F 영스트릿ㅣ사은행사장",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202202/CNT00000000000012181/20220225123103289_5.jpg"
+      },
+      {
+        "floor": "06F",
+        "label": "6F 가정용품ㅣ가전ㅣ아동ㆍ유아",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0005/20211016165342344_6.jpg"
+      },
+      {
+        "floor": "05F",
+        "label": "5F 아웃도어ㅣ스포츠",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0005/20211017121604291_6.jpg"
+      },
+      {
+        "floor": "04F",
+        "label": "4F 남성패션ㅣ골프",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
+      },
+      {
+        "floor": "03F",
+        "label": "3F 여성패션ㅣ구두ㅣ핸드백",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202201/0005/20220112144450817_9.jpg"
+      },
+      {
+        "floor": "02F",
+        "label": "2F 여성캐주얼ㅣ란제리",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220218115956146_2.jpg"
+      },
+      {
+        "floor": "01F",
+        "label": "1F 화장품ㅣ해외패션",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202201/0005/20220124114326316_9.jpg"
+      },
+      {
+        "floor": "B1F",
+        "label": "B1 키네틱 스테이지ㅣ델리ㅣ패션잡화ㅣ점행사장",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0005/20220324185530365_3.jpg"
+      },
+      {
+        "floor": "B2F",
+        "label": "B2 식품관 푸드에비뉴",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202112/CNT00000000000011832/20211218121843122_7.jpg"
+      }
+    ],
+    "0349": [
+      {
+        "floor": "08F",
+        "label": "8F 샤롯데가든",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202003/0349/20200323130032635_8.jpg"
+      },
+      {
+        "floor": "07F",
+        "label": "7F 식당가ㅣ롯데문화센터 | 사은품증정 | 뷰티&헤어",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0349/2021100109590747_4.jpg"
+      },
+      {
+        "floor": "06F",
+        "label": "6F 아동·유아 | 영캐주얼 | 킨더스튜디오 | 란제리",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202109/0349/20210911173536154_1.jpg"
+      },
+      {
+        "floor": "05F",
+        "label": "5F 스포츠ㅣ아웃도어",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0349/20211013120526493_1.jpg"
+      },
+      {
+        "floor": "04F",
+        "label": "4F 남성패션ㅣ골프",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0349/20211006160611353_5.jpg"
+      },
+      {
+        "floor": "03F",
+        "label": "3F 여성패션",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0349/20210827165043926_9.jpg"
+      },
+      {
+        "floor": "02F",
+        "label": "2F 해외패션",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0349/20211208200306601_1.jpg"
+      },
+      {
+        "floor": "01F",
+        "label": "1F 화장품ㅣ패션 주얼리ㅣ핸드백",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0349/20211209170120543_6.jpg"
+      },
+      {
+        "floor": "B1F",
+        "label": "B1 식품ㅣ생활가전",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0349/202112021720442_8.jpg"
+      }
+    ],
+    "0010": [
+      {
+        "floor": "10F",
+        "label": "10F 식당가ㅣ롯데문화홀ㅣ헤어숍",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202504/0010/20250430140708829_5.jpg"
+      },
+      {
+        "floor": "09F",
+        "label": "9F 가전ㅣ가구ㆍ침구ㅣ주방ㆍ식기ㅣ귀금속",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202607/0010/20260708184420630_6.jpg"
+      },
+      {
+        "floor": "08F",
+        "label": "8F 아동ㆍ유아ㅣ키즈카페ㅣ한샘리하우스ㅣ롯데시네마(상영관)",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202503/0010/20250306120636179_4.jpg"
+      },
+      {
+        "floor": "07F",
+        "label": "7F 스포츠ㅣ골프ㅣ롯데시네마(매표소)",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202607/0010/20260711201351116_2.png"
+      },
+      {
+        "floor": "06F",
+        "label": "6F 남성패션ㅣ아웃도어ㅣ사은품증정ㅣ롯데상품권",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202409/0010/20240909152036312_1.jpg"
+      },
+      {
+        "floor": "05F",
+        "label": "5F 여성패션ㅣ란제리ㅣ점행사장",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202603/0010/20260325131154355_7.jpg"
+      },
+      {
+        "floor": "04F",
+        "label": "4F 여성 캐릭터ㅣ핸드백",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202607/0010/20260701165958640_5.png"
+      },
+      {
+        "floor": "03F",
+        "label": "3F 화장품ㅣ여성컨템포러리ㅣ패션잡화ㅣ롯데카드ㅣ문화센터(별관)",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0010/2022091714343620_1.jpg"
+      },
+      {
+        "floor": "02F",
+        "label": "2F 영 캐주얼ㅣ슈즈ㅣ고객상담실",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202603/0010/20260318143942786_5.png"
+      },
+      {
+        "floor": "01F",
+        "label": "1F 영 컬쳐ㅣ카페",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0010/20211029173714467_5.jpg"
+      },
+      {
+        "floor": "B1F",
+        "label": "B1 푸드에비뉴",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202508/0010/20250804171245416_1.jpg"
+      }
+    ],
+    "0015": [
+      {
+        "floor": "08F",
+        "label": "8F 서비스라운지 | 식당가ㅣ고객상담실ㅣ문화센터",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202204/0015/20220425101051486_3.jpg"
+      },
+      {
+        "floor": "07F",
+        "label": "7F 키즈ㆍ유아휴게실ㅣ영플라자 : 그랜드휠",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202207/0015/20220725100646949_3.jpg"
+      },
+      {
+        "floor": "06F",
+        "label": "6F 본관 : 남성패션 | 아웃도어",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0015/20220214143916790_6.jpg"
+      },
+      {
+        "floor": "05F",
+        "label": "5F 아웃도어ㅣ골프 | 영패션",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202208/0015/20220826170500247_2.jpg"
+      },
+      {
+        "floor": "04F",
+        "label": "4F 스포츠 | 영패션",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0015/202209081014414_3.jpg"
+      },
+      {
+        "floor": "03F",
+        "label": "3F 본관 : 여성패션ㅣ영플라자 : 롯데시네마",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0015/20220207144542989_7.jpg"
+      },
+      {
+        "floor": "02F",
+        "label": "2F 여성정장ㅣ구두, 시네마동: ABC마트",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0015/20220902152237980_6.jpg"
+      },
+      {
+        "floor": "01F",
+        "label": "1F 패션잡화ㅣ화장품ㅣ영플라자",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202207/0015/20220728140254373_6.jpg"
+      },
+      {
+        "floor": "B1F",
+        "label": "B1 식품관ㅣ생활가전",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202208/0015/20220802105339857_1.jpg"
+      }
+    ],
+    "0344": [
+      {
+        "floor": "06F",
+        "label": "6F 식당가",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202109/0344/20210909154819203_1.jpg"
+      },
+      {
+        "floor": "05F",
+        "label": "5F 리빙 | 이벤트홀ㅣ사은ㅣ카드센터ㅣ상품권데스크ㅣ문화센터",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202208/0344/20220823172033878_8.png"
+      },
+      {
+        "floor": "04F",
+        "label": "4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0344/20211020123028539_1.jpg"
+      },
+      {
+        "floor": "03F",
+        "label": "3F 아동·유아 | 여성·영패션 | 구두·핸드백 | 란제리",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202404/0344/20240425120436199_1.png"
+      },
+      {
+        "floor": "02F",
+        "label": "2F 해외패션ㅣ여성컨템포러리ㅣ여성캐릭터ㅣ나이키ㅣ코치 커피숍",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202406/0344/20240608122313780_8.png"
+      },
+      {
+        "floor": "01F",
+        "label": "1F 해외부틱ㅣ시계·보석ㅣACCㅣ안내ㅣ터미널",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0344/20220326094028877_8.jpg"
+      },
+      {
+        "floor": "B1F",
+        "label": "B1 레피세리ㅣ엘비노ㅣF&Bㅣ화장품ㅣ롯데시네마ㅣ유니클로",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202404/0344/20240427121641963_8.png"
+      }
+    ],
+    "0011": [
+      {
+        "floor": "11F",
+        "label": "11F 샤롯데가든",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202107/0011/20210706123126405_2.jpg"
+      },
+      {
+        "floor": "10F",
+        "label": "10F 식당가 Ι 리조트휘트니스",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202510/0011/20251002182653453_3.jpg"
+      },
+      {
+        "floor": "09F",
+        "label": "9F 문화센터",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202504/0011/20250422095956545_6.png"
+      },
+      {
+        "floor": "08F",
+        "label": "8F 리빙패션 Ι 가전ㆍ가구",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202509/0011/20250901133654533_8.png"
+      },
+      {
+        "floor": "07F",
+        "label": "7F 골프 Ι 아웃도어 Ι 아동ㆍ유아",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202511/0011/20251102100240618_5.png"
+      },
+      {
+        "floor": "06F",
+        "label": "6F 남성패션 Ι 셔츠ㆍ타이",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202602/0011/20260210143553475_7.png"
+      },
+      {
+        "floor": "05F",
+        "label": "5F 디자이너부틱 Ι 구두 Ι 모피 Ι 점행사장",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202512/0011/20251223152825913_0.jpg"
+      },
+      {
+        "floor": "04F",
+        "label": "4F 컨템포러리 Ι 란제리 Ι 롯데카드센터",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202505/0011/20250529112621755_2.png"
+      },
+      {
+        "floor": "03F",
+        "label": "3F 영패션 Ι 유니클로",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202509/0011/20250907142202217_3.JPG"
+      },
+      {
+        "floor": "02F",
+        "label": "2F 해외명품 Ι 화장품",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202510/0011/20251020101320824_1.jpg"
+      },
+      {
+        "floor": "01F",
+        "label": "1F 패션잡화 Ι 준보석 Ι 多樂별장",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202501/0011/20250103121322435_2.png"
+      },
+      {
+        "floor": "B1F",
+        "label": "B1 멀티캐주얼 Ι 스포츠",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202507/0011/20250724120900441_5.png"
+      },
+      {
+        "floor": "B2F",
+        "label": "B2 식품 Ι 푸드마켓",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202509/0011/20250909115948445_8.png"
+      }
+    ],
+    "0002": [
+      {
+        "floor": "12F",
+        "label": "12F 문화센터",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202008/0002/20200831155003332_4.jpg"
+      },
+      {
+        "floor": "11F",
+        "label": "11F 레스토랑ㅣ금융센터",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202309/0002/20230907102919396_5.jpg"
+      },
+      {
+        "floor": "10F",
+        "label": "10F 가전/가구",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202311/0002/20231105134906875_5.jpg"
+      },
+      {
+        "floor": "09F",
+        "label": "9F 홈패션ㅣ주방식기ㅣ가구",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202311/0002/20231105134827626_1.jpg"
+      },
+      {
+        "floor": "08F",
+        "label": "8F 아동ㆍ유아ㅣ사은품증정",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202310/0002/20231011131338705_2.jpg"
+      },
+      {
+        "floor": "07F",
+        "label": "7F 스포츠ㅣ애슬레져",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202309/0002/20230914134749573_6.jpg"
+      },
+      {
+        "floor": "06F",
+        "label": "6F 골프ㅣ아웃도어",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202311/0002/20231123150814287_1.jpg"
+      },
+      {
+        "floor": "05F",
+        "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
+      },
+      {
+        "floor": "04F",
+        "label": "4F 해외·여성의류ㅣ디자이너ㅣ란제리ㅣ잡화ㅣ모피ㅣ구두ㅣ안경",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202309/0002/20230901180145734_1.jpg"
+      },
+      {
+        "floor": "03F",
+        "label": "3F 컨템포러리ㅣ여성캐주얼ㅣ핸드백",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202311/0002/20231118152036546_8.jpg"
+      },
+      {
+        "floor": "02F",
+        "label": "2F 키네틱그라운드·무신사 | 캐릭터 | 진·영패션 | 슈즈",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202311/0002/20231121184040692_5.jpg"
+      },
+      {
+        "floor": "01F",
+        "label": "1F 명품잡화ㅣ화장품ㅣ시계&보석",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202311/0002/20231105133430628_5.jpg"
+      },
+      {
+        "floor": "B1F",
+        "label": "B1 식품",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202310/0002/20231019101433805_1.png"
+      }
+    ],
+    "0348": [],
+    "0025": [
+      {
+        "floor": "09F",
+        "label": "9F 삐삐블럭ㅣ샤롯데가든",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202104/0025/20210408120228667_8.jpg"
+      },
+      {
+        "floor": "08F",
+        "label": "8F 사은행사장ㅣ롯데상품권ㅣ고객상담실ㅣ애플공인서비스ㅣ하나투어",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202103/0025/20210303175444727_7.jpg"
+      },
+      {
+        "floor": "07F",
+        "label": "7F 롯데시네마ㅣ공차",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202012/0025/20201202144026352_4.jpg"
+      },
+      {
+        "floor": "06F",
+        "label": "6F 진유니섹스ㅣ식당가ㅣ헤어숍ㅣ패션안경",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202109/0025/20210907173447883_9.jpg"
+      },
+      {
+        "floor": "05F",
+        "label": "5F 아동ㅣ유아ㅣ골프ㅣ스포츠",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0025/20220906150438782_2.png"
+      },
+      {
+        "floor": "04F",
+        "label": "4F 정장ㅣ셔츠ㅣ넥타이ㅣ아웃도어ㅣ트래디셔널",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0025/2022090615140752_7.png"
+      },
+      {
+        "floor": "03F",
+        "label": "3F 어덜트컨템ㆍ캐릭터ㅣ엘레강스ㅣ란제리ㅣ구두ㅣ핸드백",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0025/20211001111809967_2.jpg"
+      },
+      {
+        "floor": "02F",
+        "label": "2F 캐릭터ㅣ컨템포러리ㅣ영캐릭터ㅣ영캐주얼",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202109/0025/20210907193347457_1.jpg"
+      },
+      {
+        "floor": "01F",
+        "label": "1F 화장품 | 패션잡화 l 해외명품",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202201/0025/20220107134151521_5.jpg"
+      },
+      {
+        "floor": "B1F",
+        "label": "B1 식품ㅣ가전ㅣ가구ㅣ주방식기ㅣ홈패션",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202205/0025/20220511105746657_1.png"
+      }
+    ],
+    "0017": [
+      {
+        "floor": "06F",
+        "label": "6F 식당가ㅣ점행사장ㅣ사은품증정ㅣ롯데카드",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0017/20220227160647738_8.jpg"
+      },
+      {
+        "floor": "05F",
+        "label": "5F 남성패션ㅣ트래디셔널ㅣ바버샵",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202412/0017/202412171453102_0.jpg"
+      },
+      {
+        "floor": "04F",
+        "label": "4F 아웃도어ㅣ골프ㅣ아동ㅣ유아",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202206/0017/20220628112430682_9.png"
+      },
+      {
+        "floor": "03F",
+        "label": "3F 여성컨템포러리ㅣ캐릭터ㅣ롯데시네마ㅣ고객상담실",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202509/0017/20250920125757600_6.png"
+      },
+      {
+        "floor": "02F",
+        "label": "2F 여성패션ㅣ구두ㅣ란제리",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0017/20211021160542996_3.jpg"
+      },
+      {
+        "floor": "01F",
+        "label": "1F 해외명품ㅣ화장품ㅣ패션잡화",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0017/2021100511505526_0.jpg"
+      },
+      {
+        "floor": "B1F",
+        "label": "B1 식품ㅣ가전ㅣ가구ㅣ주방식기ㅣ홈패션",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0017/20220227160555937_7.jpg"
+      }
+    ],
+    "0004": [
+      {
+        "floor": "09F",
+        "label": "9F 샤롯데가든",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202105/CNT00000000000010467/2021050117062558_8.jpg"
+      },
+      {
+        "floor": "08F",
+        "label": "8F 리빙ㅣ문화센터ㅣ롯데카드",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202409/0004/20240901143141597_7.jpg"
+      },
+      {
+        "floor": "07F",
+        "label": "7F 생활가전ㅣ식당가ㅣ테라스가든",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202408/0004/20240829173836813_7.jpg"
+      },
+      {
+        "floor": "06F",
+        "label": "6F 스포츠ㅣ골프ㅣ아동",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202412/0004/20241210172944728_2.jpg"
+      },
+      {
+        "floor": "05F",
+        "label": "5F 남성캐주얼ㅣ트래디셔널ㅣ아웃도어",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202409/0004/20240912113853462_9.png"
+      },
+      {
+        "floor": "04F",
+        "label": "4F 여성정장ㅣ구두ㅣ점행사장ㅣ사은행사장",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202310/0004/20231012185558345_1.jpg"
+      },
+      {
+        "floor": "03F",
+        "label": "3F 여성캐주얼ㅣ영캐주얼",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202406/0004/2024060820213469_6.jpg"
+      },
+      {
+        "floor": "02F",
+        "label": "2F 영캐주얼ㅣ스트리트캐주얼",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202409/0004/202409031203001_9.jpg"
+      },
+      {
+        "floor": "01F",
+        "label": "1F 화장품ㅣ패션ㆍ장신잡화",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202501/0004/2025012309221743_7.png"
+      },
+      {
+        "floor": "B1F",
+        "label": "B1 영플라자ㅣ교보문고",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202412/0004/20241204145304608_0.png"
+      },
+      {
+        "floor": "B2F",
+        "label": "B2 식품 슈퍼ㅣF&B",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202408/0004/20240821112137913_0.jpg"
+      },
+      {
+        "floor": "PF",
+        "label": "P 주차장 (8F~2F)",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202403/0004/20240305115118275_6.jpg"
+      }
+    ],
+    "0341": [
+      {
+        "floor": "10F",
+        "label": "10F 샤롯데가든ㅣ아웃백ㅣ카페",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202004/0341/20200429173758904_2.jpg"
+      },
+      {
+        "floor": "09F",
+        "label": "9F 키즈카페",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202101/0341/20210128175901164_1.jpg"
+      },
+      {
+        "floor": "08F",
+        "label": "8F 롯데시네마ㅣ식당가ㅣ카페ㅣ치과ㅣ헤어샵",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202204/0341/20220414101758475_2.jpg"
+      },
+      {
+        "floor": "07F",
+        "label": "7F 생활가전ㅣ문화센터ㅣ식당가ㅣ카페",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202205/0341/20220524101130113_5.jpg"
+      },
+      {
+        "floor": "06F",
+        "label": "6F 골프ㅣ아동ㆍ유아ㅣ교보문고 | 점행사장",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0341/20220918133016852_5.jpg"
+      },
+      {
+        "floor": "05F",
+        "label": "5F 스포츠ㅣ진 | 유니섹스ㅣ유니클로",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202211/0341/20221103174740231_5.jpg"
+      },
+      {
+        "floor": "04F",
+        "label": "4F 남성패션ㅣ아웃도어ㅣ바버샵",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0341/20220929133143899_0.jpg"
+      },
+      {
+        "floor": "03F",
+        "label": "3F 여성패션ㅣ패션잡화ㅣ핸드백ㅣ구두",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0341/20211117131823523_6.jpg"
+      },
+      {
+        "floor": "02F",
+        "label": "2F 영캐주얼ㅣ무신사 스탠다드",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0341/20210828113620192_7.jpg"
+      },
+      {
+        "floor": "01F",
+        "label": "1F 화장품ㅣ해외패션ㅣ시계",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0341/20220325112939342_2.jpg"
+      },
+      {
+        "floor": "B1F",
+        "label": "B1 푸드에비뉴 | 팝업스테이지",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0341/20220225140124966_2.jpg"
       }
     ]
   }
