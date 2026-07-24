@@ -1,8 +1,8 @@
-name: 층 도면 이미지 크롤링 (신세계·롯데)
+name: 층 도면 이미지 크롤링 (신세계·롯데, 매일)
 
 on:
   schedule:
-    - cron: '0 1 */3 * *'
+    - cron: '0 1 * * *'
   workflow_dispatch: {}
 
 permissions:
