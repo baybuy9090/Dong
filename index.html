@@ -246,60 +246,104 @@
     .region-store-line b { color: #222; }
 
     /* ── 모바일 반응형 ── */
+    /* 모바일 전용 하단 탭바 / 필터 바텀시트 — PC 폭에서는 항상 숨김 */
+    .mobile-tabbar, .mobile-filter-trigger, .filter-backdrop, .mobile-sheet-header { display: none; }
+    #mobileFavToggleHost:empty { display: none; }
+
     @media (max-width: 680px) {
-      body { padding: 0 12px 20px; font-size: 14px; }
+      body { padding: 0 12px 84px; font-size: 14px; }
       .header-bar { margin: 0 -12px 16px; padding: 18px 16px 16px; border-radius: 0 0 14px 14px; }
       .header-bar h1 { font-size: 17px; padding-right: 76px; line-height: 1.35; }
-      .subtitle { font-size: 11.5px; }
+      .subtitle { font-size: 12.5px; color: #666; line-height: 1.5; }
       .header-topright { top: 12px; right: 12px; flex-direction: column; align-items: flex-end; gap: 4px; }
       .header-topright .contact-btn { font-size: 10.5px; padding: 4px 9px; }
       .header-topright .copyright { font-size: 9.5px; }
-      .last-updated { font-size: 11px; flex-wrap: wrap; }
+      .last-updated { font-size: 11.5px; flex-wrap: wrap; }
 
       /* 핵심 지표 카드: 2열, 가독성 위해 숫자/라벨 키움 */
       .summary { gap: 8px; }
       .card { min-width: calc(50% - 4px); flex: none; padding: 12px 14px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.09); }
       .card .num { font-size: 20px; }
-      .card .label { font-size: 11.5px; }
+      .card .label { font-size: 12px; }
 
-      /* 탭: 줄바꿈 대신 한 줄 가로 스크롤로 — 버튼이 7개라 wrap하면 지저분해짐 */
-      .tabs {
-        flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch;
-        gap: 6px; margin: 0 -12px 14px; padding: 2px 12px 6px; scrollbar-width: none;
-      }
-      .tabs::-webkit-scrollbar { display: none; }
-      .tab-btn {
-        flex-shrink: 0; padding: 9px 14px; font-size: 12.5px; border-radius: 9px;
-        min-height: 38px; display: inline-flex; align-items: center;
-      }
+      /* PC용 상단 탭 줄은 숨기고 하단 고정 탭바를 씀 (즐겨찾기만 버튼은
+         JS(relocateFavToggle)가 필터 시트 안으로 옮겨 보여줌) */
+      .tabs { display: none; }
 
-      /* 필터: 세로 스택 + 터치 타깃 확대 + iOS 자동확대 방지(16px) */
-      .controls { flex-direction: column; align-items: stretch; gap: 8px; }
+      .mobile-tabbar {
+        display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 70;
+        background: white; border-top: 1px solid #eee; box-shadow: 0 -2px 14px rgba(0,0,0,0.1);
+        padding: 6px 2px calc(6px + env(safe-area-inset-bottom));
+      }
+      .mobile-tabbar-btn {
+        flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px;
+        background: none; border: none; padding: 6px 2px; border-radius: 10px;
+        font-size: 10.5px; color: #888; font-weight: 600;
+      }
+      .mobile-tabbar-btn .mtb-icon { font-size: 18px; line-height: 1; }
+      .mobile-tabbar-btn.active { color: #2c2c34; background: #f0f0f2; }
+
+      /* 필터 트리거 + 바텀시트 */
+      .mobile-filter-trigger {
+        display: flex; width: 100%; justify-content: space-between; align-items: center;
+        padding: 11px 14px; background: white; border: 1px solid #ddd; border-radius: 10px;
+        margin-bottom: 12px; font-size: 13.5px; font-weight: 700; color: #2c2c34;
+      }
+      .filter-badge {
+        background: #2c2c34; color: white; font-size: 11px; font-weight: 700;
+        border-radius: 10px; padding: 1px 8px;
+      }
+      .filter-backdrop {
+        display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 72;
+      }
+      .filter-backdrop.mobile-open { display: block; }
+
+      .controls {
+        position: fixed; left: 0; right: 0; bottom: 0; z-index: 80;
+        flex-direction: column; align-items: stretch; gap: 8px;
+        background: white; border-radius: 16px 16px 0 0;
+        padding: 16px 16px calc(16px + env(safe-area-inset-bottom));
+        box-shadow: 0 -6px 24px rgba(0,0,0,0.18);
+        max-height: 75vh; overflow-y: auto;
+        transform: translateY(100%); transition: transform 0.25s ease;
+      }
+      .controls.mobile-open { transform: translateY(0); }
+      .mobile-sheet-header {
+        display: flex; justify-content: space-between; align-items: center;
+        font-size: 15px; font-weight: 700; margin-bottom: 4px;
+      }
+      .mobile-sheet-close {
+        background: #f0f0f2; border: none; border-radius: 8px; padding: 6px 10px; font-size: 12px;
+      }
+      #mobileFavToggleHost .tab-btn { width: 100%; text-align: left; }
       .controls select, .controls input,
       #newsSearchInput { width: 100%; min-width: 0; font-size: 16px; padding: 10px 12px; min-height: 42px; border-radius: 9px; }
 
       .panel { padding: 16px; border-radius: 12px; }
-      .panel h3 { font-size: 13.5px; margin-bottom: 12px; }
-      .subtitle { line-height: 1.5; }
+      .panel h3 { font-size: 14px; margin-bottom: 12px; }
 
-      .bar-label { width: 62px; font-size: 11.5px; }
-      .bar-track { height: 18px; }
-      .bar-num { font-size: 12px; }
+      /* 브랜드 랭킹 막대: 좁은 폭에 억지로 가로스크롤 시키는 대신
+         라벨+건수 한 줄 → 막대 한 줄 → 상세 수치 한 줄로 세로 배치 */
+      #brandRanking { overflow-x: visible; }
+      .bar-row { flex-wrap: wrap; row-gap: 4px; }
+      .bar-label { order: 1; width: auto; flex: 1 1 auto; font-size: 13px; }
+      .bar-num { order: 2; }
+      .bar-track { order: 3; flex-basis: 100%; height: 22px; }
+      .bar-detail-text { order: 4; flex-basis: 100%; font-size: 12px !important; color: #555 !important; }
 
       .region-header { padding: 11px 4px; font-size: 13px; }
-      .region-store-line { font-size: 12px; }
+      .region-header .meta { font-size: 12px; }
+      .region-store-line { font-size: 12.5px; }
 
       table:not(.heatmap-table) { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-      th, td { font-size: 12.5px; padding: 10px 10px; }
-
-      #brandRanking { overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 4px; }
-      .bar-row { min-width: 480px; }
+      th, td { font-size: 13px; padding: 10px 10px; }
+      .badge { font-size: 11px; }
 
       .overview-grid { gap: 10px; }
 
       #kakaoMap { height: 420px !important; border-radius: 12px; }
       .map-filter-label { width: 32px; font-size: 10.5px; }
-      .chip { padding: 6px 12px; font-size: 12px; }
+      .chip { padding: 6px 12px; font-size: 12.5px; }
       .chip-arrow { width: 28px; height: 28px; }
 
       #storeModal > div { margin: 16px !important; max-height: 85vh !important; border-radius: 14px !important; }
@@ -333,16 +377,37 @@
   </div>
 
   <div class="tabs">
-    <button class="tab-btn active" id="tabOverview" onclick="switchTab('overview')">📊 한눈에 보기</button>
-    <button class="tab-btn" id="tabMap" onclick="switchTab('map')">📍 상권 지도</button>
-    <button class="tab-btn" id="tabMatrix" onclick="switchTab('matrix')">🔲 매트릭스</button>
-    <button class="tab-btn" id="tabFloor" onclick="switchTab('floor')">🗺️ 층 도면 보기</button>
-    <button class="tab-btn" id="tabTable" onclick="switchTab('table')">📋 표로 보기</button>
+    <button class="tab-btn tabnav-btn active" data-tab="overview" id="tabOverview" onclick="switchTab('overview')">📊 한눈에 보기</button>
+    <button class="tab-btn tabnav-btn" data-tab="map" id="tabMap" onclick="switchTab('map')">📍 상권 지도</button>
+    <button class="tab-btn tabnav-btn" data-tab="matrix" id="tabMatrix" onclick="switchTab('matrix')">🔲 매트릭스</button>
+    <button class="tab-btn tabnav-btn" data-tab="floor" id="tabFloor" onclick="switchTab('floor')">🗺️ 층 도면 보기</button>
+    <button class="tab-btn tabnav-btn" data-tab="table" id="tabTable" onclick="switchTab('table')">📋 표로 보기</button>
     <button class="tab-btn" id="favToggle" onclick="toggleFavOnly()">☆ 즐겨찾기만</button>
-    <button class="tab-btn" id="tabNews" onclick="switchTab('news')">📰 브랜드 뉴스</button>
+    <button class="tab-btn tabnav-btn" data-tab="news" id="tabNews" onclick="switchTab('news')">📰 브랜드 뉴스</button>
   </div>
 
+  <!-- 모바일 전용 하단 고정 탭바 (680px 이하에서만 표시, PC용 .tabs는 그대로 유지) -->
+  <nav class="mobile-tabbar" id="mobileTabbar">
+    <button class="mobile-tabbar-btn tabnav-btn active" data-tab="overview" onclick="switchTab('overview')"><span class="mtb-icon">📊</span><span class="mtb-label">한눈에</span></button>
+    <button class="mobile-tabbar-btn tabnav-btn" data-tab="map" onclick="switchTab('map')"><span class="mtb-icon">📍</span><span class="mtb-label">지도</span></button>
+    <button class="mobile-tabbar-btn tabnav-btn" data-tab="matrix" onclick="switchTab('matrix')"><span class="mtb-icon">🔲</span><span class="mtb-label">매트릭스</span></button>
+    <button class="mobile-tabbar-btn tabnav-btn" data-tab="floor" onclick="switchTab('floor')"><span class="mtb-icon">🗺️</span><span class="mtb-label">도면</span></button>
+    <button class="mobile-tabbar-btn tabnav-btn" data-tab="table" onclick="switchTab('table')"><span class="mtb-icon">📋</span><span class="mtb-label">표</span></button>
+    <button class="mobile-tabbar-btn tabnav-btn" data-tab="news" onclick="switchTab('news')"><span class="mtb-icon">📰</span><span class="mtb-label">뉴스</span></button>
+  </nav>
+
+  <!-- 모바일 전용 필터 트리거 (누르면 아래 .controls가 바텀시트로 올라옴) -->
+  <button class="mobile-filter-trigger" id="mobileFilterTrigger" onclick="openMobileFilterSheet()">
+    <span>🔍 필터</span><span class="filter-badge" id="mobileFilterBadge" style="display:none;"></span>
+  </button>
+  <div class="filter-backdrop" id="filterBackdrop" onclick="closeMobileFilterSheet()"></div>
+
   <div class="controls" id="controlsBar">
+    <div class="mobile-sheet-header">
+      <b>필터</b>
+      <button class="mobile-sheet-close" onclick="closeMobileFilterSheet()">✕ 닫기</button>
+    </div>
+    <div id="mobileFavToggleHost"></div>
     <select id="monthFilter" onchange="loadMonth(this.value)"><option value="">최신 (이번 달)</option></select>
     <select id="companyFilter"><option value="">전체 회사</option></select>
     <select id="storeFilter"><option value="">전체 지점</option></select>
@@ -529,6 +594,41 @@
       document.getElementById('favToggle').classList.toggle('active', favOnly);
       document.getElementById('favToggle').textContent = favOnly ? '★ 즐겨찾기만 (켜짐)' : '☆ 즐겨찾기만';
       render();
+    }
+
+    // 모바일 폭에서는 "즐겨찾기만" 버튼을 상단 탭 줄 대신 필터 바텀시트 안으로
+    // 옮겨서 보여줌 (PC 레이아웃은 원래 위치 그대로 유지). 버튼을 복제하지 않고
+    // 같은 DOM 노드를 폭에 따라 옮겨서 상태(활성 여부)가 항상 하나로 유지되게 함.
+    function relocateFavToggle() {
+      const btn = document.getElementById('favToggle');
+      const mobileHost = document.getElementById('mobileFavToggleHost');
+      const desktopHost = document.querySelector('.tabs');
+      if (!btn || !mobileHost || !desktopHost) return;
+      const isMobile = window.matchMedia('(max-width: 680px)').matches;
+      if (isMobile && btn.parentElement !== mobileHost) mobileHost.appendChild(btn);
+      if (!isMobile && btn.parentElement !== desktopHost) desktopHost.appendChild(btn);
+    }
+    window.addEventListener('resize', relocateFavToggle);
+
+    function openMobileFilterSheet() {
+      document.getElementById('controlsBar').classList.add('mobile-open');
+      document.getElementById('filterBackdrop').classList.add('mobile-open');
+    }
+    function closeMobileFilterSheet() {
+      document.getElementById('controlsBar').classList.remove('mobile-open');
+      document.getElementById('filterBackdrop').classList.remove('mobile-open');
+    }
+    function updateMobileFilterBadge() {
+      const badge = document.getElementById('mobileFilterBadge');
+      if (!badge) return;
+      let count = 0;
+      ['companyFilter','storeFilter','regionFilter'].forEach(id => {
+        if (document.getElementById(id).value) count++;
+      });
+      if (document.getElementById('brandSearch').value.trim()) count++;
+      if (favOnly) count++;
+      badge.style.display = count > 0 ? 'inline-flex' : 'none';
+      badge.textContent = count;
     }
 
     const TIER_COLORS = {
@@ -1041,8 +1141,8 @@
 
     function switchTab(tab) {
       currentTab = tab;
-      ['Overview','Table','Matrix','Floor','Map','News'].forEach(t => {
-        document.getElementById('tab'+t).classList.toggle('active', t.toLowerCase() === tab);
+      document.querySelectorAll('.tabnav-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.tab === tab);
       });
       document.getElementById('overviewView').style.display = tab === 'overview' ? 'block' : 'none';
       document.getElementById('tableView').style.display = tab === 'table' ? 'block' : 'none';
@@ -1051,6 +1151,8 @@
       document.getElementById('mapView').style.display = tab === 'map' ? 'block' : 'none';
       document.getElementById('newsView').style.display = tab === 'news' ? 'block' : 'none';
       document.getElementById('controlsBar').style.display = (tab === 'map' || tab === 'news') ? 'none' : 'flex';
+      document.getElementById('mobileFilterTrigger').style.display = (tab === 'map' || tab === 'news') ? 'none' : '';
+      closeMobileFilterSheet();
       if (tab === 'matrix') renderMatrix();
       if (tab === 'overview') renderOverview();
       if (tab === 'floor') renderFloorView();
@@ -1147,6 +1249,7 @@
     function render() {
       const filtered = currentFiltered();
       const q = document.getElementById('brandSearch').value.trim();
+      updateMobileFilterBadge();
 
       if (sortKey) {
         filtered.sort((a, b) => {
@@ -1296,7 +1399,7 @@
               <div class="bar-fill" style="width:${r.h/maxTotal*100}%;background:#1a9d4c;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="현대 ${r.h}">${segText(r.h, 'H', maxTotal)}</div>
               <div class="bar-fill" style="width:${r.sg/maxTotal*100}%;background:#004990;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="신세계 ${r.sg}">${segText(r.sg, 'S', maxTotal)}</div>
             </div>
-            <div style="width:170px;font-size:10.5px;color:#666;flex-shrink:0;">롯데 ${r.l}개 현대 ${r.h}개 신세계 ${r.sg}개</div>
+            <div class="bar-detail-text" style="width:170px;font-size:10.5px;color:#666;flex-shrink:0;">롯데 ${r.l}개 현대 ${r.h}개 신세계 ${r.sg}개</div>
             <div class="bar-num">${r.total}</div>
           </div>`;
         }).join('');
@@ -1963,6 +2066,7 @@
     loadData('data.json', 'data.json');
     populateMonthFilter();
     loadNews();
+    relocateFavToggle();
   </script>
 </body>
 </html>
