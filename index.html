@@ -188,6 +188,10 @@
     }
     .matrix-table th.brand-col { background: #2c2c34; color: white; z-index: 2; }
     .matrix-cell { text-align: center; }
+    .heatmap-region-th {
+      padding: 8px 4px; font-size: 10.5px; font-weight: 600; background: #2c2c34; color: white;
+      min-width: 58px; max-width: 70px; white-space: normal; line-height: 1.3; text-align: center; vertical-align: bottom;
+    }
 
     /* 가로 스크롤(overflow-x)이 걸린 박스 안에서는 CSS position:sticky가 페이지
        기준이 아니라 그 박스 기준이 되어버려 원하는 대로 동작하지 않음(스펙상
@@ -338,6 +342,21 @@
       th, td { font-size: 13px; padding: 10px 10px; }
       .badge { font-size: 11px; }
 
+      /* 갭 분석 등 일반 표: min-width 없이 display:block만 걸면 스크롤 대신
+         칸이 짜부라져서 "롯" "데"처럼 세로로 쪼개져 보이던 문제 수정 —
+         스크롤이 실제로 걸리도록 최소 너비 지정 */
+      .gap-table { min-width: 460px; }
+      .badge-suspect { white-space: nowrap; }
+
+      /* 히트맵: 상권 컬럼이 필요 이상으로 넓게 늘어나던 걸 줄여서 한 화면에
+         더 많은 상권이 보이게 함 (#regionRanking 자체 스크롤은 그대로 유지) */
+      .heatmap-table { border-spacing: 2px; }
+      .heatmap-region-th { min-width: 40px; max-width: 46px; font-size: 9.5px; padding: 6px 2px; }
+      .heatmap-table td.matrix-cell { padding: 6px 3px !important; font-size: 10px !important; }
+      .matrix-table th.brand-col, .matrix-table td.brand-col {
+        max-width: 84px; overflow: hidden; text-overflow: ellipsis; font-size: 12px;
+      }
+
       .overview-grid { gap: 10px; }
 
       #kakaoMap { height: 420px !important; border-radius: 12px; }
@@ -379,8 +398,8 @@
     <button class="tab-btn tabnav-btn active" data-tab="overview" id="tabOverview" onclick="switchTab('overview')">📊 한눈에 보기</button>
     <button class="tab-btn tabnav-btn" data-tab="map" id="tabMap" onclick="switchTab('map')">📍 상권 지도</button>
     <button class="tab-btn tabnav-btn" data-tab="floor" id="tabFloor" onclick="switchTab('floor')">🗺️ 층 도면 보기</button>
-    <button class="tab-btn tabnav-btn" data-tab="table" id="tabTable" onclick="switchTab('table')">📋 표·매트릭스</button>
     <button class="tab-btn tabnav-btn" data-tab="news" id="tabNews" onclick="switchTab('news')">📰 브랜드 뉴스</button>
+    <button class="tab-btn tabnav-btn" data-tab="table" id="tabTable" onclick="switchTab('table')">📋 표·매트릭스</button>
   </div>
 
   <!-- 모바일 전용 하단 고정 탭바 (680px 이하에서만 표시, PC용 .tabs는 그대로 유지) -->
@@ -388,8 +407,8 @@
     <button class="mobile-tabbar-btn tabnav-btn active" data-tab="overview" onclick="switchTab('overview')"><span class="mtb-icon">📊</span><span class="mtb-label">한눈에</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="map" onclick="switchTab('map')"><span class="mtb-icon">📍</span><span class="mtb-label">지도</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="floor" onclick="switchTab('floor')"><span class="mtb-icon">🗺️</span><span class="mtb-label">도면</span></button>
-    <button class="mobile-tabbar-btn tabnav-btn" data-tab="table" onclick="switchTab('table')"><span class="mtb-icon">📋</span><span class="mtb-label">표</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="news" onclick="switchTab('news')"><span class="mtb-icon">📰</span><span class="mtb-label">뉴스</span></button>
+    <button class="mobile-tabbar-btn tabnav-btn" data-tab="table" onclick="switchTab('table')"><span class="mtb-icon">📋</span><span class="mtb-label">표</span></button>
   </nav>
 
   <!-- 모바일 전용 필터 트리거 (누르면 아래 .controls가 바텀시트로 올라옴) -->
@@ -421,7 +440,7 @@
     <div class="panel" style="margin-bottom:14px;">
       <h3>갭 분석 — 회사별 입점 격차가 큰 브랜드 (입점 확대 후보)</h3>
       <div class="subtitle" style="margin-bottom:10px;">한 회사에는 다수 입점했지만 다른 회사에는 입점 사례가 없는 브랜드입니다. 신규 입점 제안 시 참고하세요.</div>
-      <table>
+      <table class="gap-table">
         <thead><tr><th>티어</th><th>브랜드</th><th>롯데</th><th>현대</th><th>신세계</th><th>격차</th><th>입점 공백</th></tr></thead>
         <tbody id="gapTable"></tbody>
       </table>
@@ -436,7 +455,7 @@
     <div class="panel" style="margin-bottom:14px;">
       <h3>갭 분석 — 상권 간 입점 격차가 큰 브랜드</h3>
       <div class="subtitle" style="margin-bottom:10px;">특정 상권엔 몰려있는데 다른 상권엔 없는 브랜드. 오픈 제안 시 참고용.</div>
-      <table>
+      <table class="gap-table">
         <thead><tr><th>티어</th><th>브랜드</th><th>가장 강한 상권</th><th>건수</th><th>미입점 상권 후보</th></tr></thead>
         <tbody id="regionGapTable"></tbody>
       </table>
@@ -1467,8 +1486,7 @@
         <thead><tr><th class="brand-col">브랜드 \\ 상권</th>` +
         heatmapRegions.map(rg => {
           const label = rg.replace('상권', '').split('·').join('<br>');
-          return `<th style="padding:8px 4px;font-size:10.5px;font-weight:600;background:#2c2c34;color:white;` +
-            `min-width:58px;max-width:70px;white-space:normal;line-height:1.3;text-align:center;vertical-align:bottom;" title="${rg}">${label}</th>`;
+          return `<th class="heatmap-region-th" title="${rg}">${label}</th>`;
         }).join('') +
         `</tr></thead><tbody>`;
       tierOrder.forEach(tier => {
