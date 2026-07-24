@@ -1082,7 +1082,7 @@
         '강남점':'0013','광복점':'0333','광주점':'0007','노원점':'0022','대구점':'0023',
         '동탄점':'0399','본점':'0001','부산본점':'0005','수원점':'0349','영등포':'0010',
         '울산점':'0015','인천점':'0344','일산':'0011','잠실점':'0002','잠실에비뉴엘':'0348',
-        '전주점':'0025','창원점':'0017','청량리':'0004','평촌점':'0341','월드몰':'0409',
+        '전주점':'0025','창원점':'0017','청량리':'0004','평촌점':'0341',
       },
       '현대': {
         '목동':'B00142000','무역센터':'B00122000','미아':'B00141000','본점':'B00121000',
@@ -1208,28 +1208,6 @@
         const entries = Object.values(storeMap).sort((a,b) =>
           (companyPriority[a.company] ?? 9) - (companyPriority[b.company] ?? 9) || a.store.localeCompare(b.store,'ko'));
 
-        // 롯데월드몰은 브랜드 크롤링 대상이 아니라(남성 컨템포러리 라인업이 없는
-        // 라이프스타일몰) allData에 없음 — 도면 탭에서만 잠실점/잠실에비뉴엘 옆에
-        // 붙여서 보여주기 위한 특수 항목. 평면 이미지도 없어서(전 층 확인함)
-        // 외부 인터랙티브 지도 링크만 제공.
-        const companyFilterVal = document.getElementById('companyFilter').value || '';
-        if (companyFilterVal === '' || companyFilterVal === '롯데') {
-          const jsIdx = entries.findIndex(e => e.company === '롯데' && e.store === '잠실점');
-          const jsaIdx = entries.findIndex(e => e.company === '롯데' && e.store === '잠실에비뉴엘');
-          const foundIdxs = [jsIdx, jsaIdx].filter(i => i !== -1);
-          if (foundIdxs.length > 0) {
-            const insertAt = Math.min(...foundIdxs);
-            const removed = {};
-            [jsIdx, jsaIdx].filter(i => i !== -1).sort((a,b) => b - a)
-              .forEach(i => { removed[entries[i].store] = entries.splice(i, 1)[0]; });
-            const ordered = [];
-            if (removed['잠실점']) ordered.push(removed['잠실점']);
-            if (removed['잠실에비뉴엘']) ordered.push(removed['잠실에비뉴엘']);
-            ordered.push({ company: '롯데', store: '월드몰', brands: null, noBrandData: true });
-            entries.splice(insertAt, 0, ...ordered);
-          }
-        }
-
         container.innerHTML = entries.map((e, idx) => {
           const url = floorGuideUrl(e.company, e.store);
           const linkHtml = url
@@ -1256,14 +1234,11 @@
                 }).join('')}
               </div>`
             : '';
-          const metaHtml = e.noBrandData
-            ? ''
-            : `<span style="color:#888;font-size:11px;"> · ${regionOf(e.company,e.store)} · 브랜드 ${e.brands.length}개</span>`;
           return `<div class="region-item">
             <div style="display:flex;justify-content:space-between;align-items:center;padding:9px 4px;flex-wrap:wrap;">
               <div>
                 <span class="${companyClass(e.company)}">${e.company}</span> ${e.store}
-                ${metaHtml}
+                <span style="color:#888;font-size:11px;"> · ${regionOf(e.company,e.store)} · 브랜드 ${e.brands.length}개</span>
               </div>
               <div>${linkHtml}${imgToggleHtml}</div>
             </div>
