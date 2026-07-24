@@ -358,10 +358,10 @@
     </div>
 
     <div class="panel" style="margin-bottom:14px;">
-      <h3>갭 분석 — 회사 간 입점 격차가 큰 브랜드 (경쟁 공백 후보)</h3>
+      <h3>갭 분석 — 회사 간 입점 격차가 큰 브랜드 (미입점 공략 후보)</h3>
       <div class="subtitle" style="margin-bottom:10px;">한 회사엔 많이 들어가 있는데 다른 회사엔 거의 없는 브랜드 순위. 신규 입점 제안 시 참고용.</div>
       <table>
-        <thead><tr><th>티어</th><th>브랜드</th><th>롯데</th><th>현대</th><th>신세계</th><th>격차</th><th>공백 회사</th></tr></thead>
+        <thead><tr><th>티어</th><th>브랜드</th><th>롯데</th><th>현대</th><th>신세계</th><th>격차</th><th>미입점 회사</th></tr></thead>
         <tbody id="gapTable"></tbody>
       </table>
     </div>
@@ -376,7 +376,7 @@
       <h3>갭 분석 — 상권 간 입점 격차가 큰 브랜드</h3>
       <div class="subtitle" style="margin-bottom:10px;">특정 상권엔 몰려있는데 다른 상권엔 없는 브랜드. 오픈 제안 시 참고용.</div>
       <table>
-        <thead><tr><th>티어</th><th>브랜드</th><th>가장 강한 상권</th><th>건수</th><th>공백 상권 후보</th></tr></thead>
+        <thead><tr><th>티어</th><th>브랜드</th><th>가장 강한 상권</th><th>건수</th><th>미입점 상권 후보</th></tr></thead>
         <tbody id="regionGapTable"></tbody>
       </table>
     </div>
@@ -1272,9 +1272,9 @@
       // ── 패널 1: 브랜드별 입점 수 랭킹 (티어 그룹별) ──
       const tierOrder = ['SA급','Designer','Global','Select','B급','Classic','New','New Select','Contents','미분류'];
       const maxTotal = Math.max(...brandRows.map(r => r.total), 1);
-      // 막대가 너무 좁으면(대략 1~2개 수준) 안에 텍스트가 안 들어가므로 그 구간만 생략
+      // 롯데/현대/신세계를 L/H/S로 줄여써서 막대가 좁아도(1~4개 수준) 텍스트가 들어가게 함
       function segText(val, label, max) {
-        if (val <= 0 || val / max < 0.12) return '';
+        if (val <= 0) return '';
         return `<span style="color:white;font-size:9px;font-weight:600;white-space:nowrap;">${label} ${val}개</span>`;
       }
       let rankingHtml = '';
@@ -1292,9 +1292,9 @@
               <span class="brand-link" onclick="openBrandDetail('${r.brand}')" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${r.brand}</span>
             </div>
             <div class="bar-track" style="display:flex;">
-              <div class="bar-fill" style="width:${r.l/maxTotal*100}%;background:#c8102e;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="롯데 ${r.l}">${segText(r.l, '롯데', maxTotal)}</div>
-              <div class="bar-fill" style="width:${r.h/maxTotal*100}%;background:#1a9d4c;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="현대 ${r.h}">${segText(r.h, '현대', maxTotal)}</div>
-              <div class="bar-fill" style="width:${r.sg/maxTotal*100}%;background:#004990;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="신세계 ${r.sg}">${segText(r.sg, '신세계', maxTotal)}</div>
+              <div class="bar-fill" style="width:${r.l/maxTotal*100}%;background:#c8102e;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="롯데 ${r.l}">${segText(r.l, 'L', maxTotal)}</div>
+              <div class="bar-fill" style="width:${r.h/maxTotal*100}%;background:#1a9d4c;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="현대 ${r.h}">${segText(r.h, 'H', maxTotal)}</div>
+              <div class="bar-fill" style="width:${r.sg/maxTotal*100}%;background:#004990;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="신세계 ${r.sg}">${segText(r.sg, 'S', maxTotal)}</div>
             </div>
             <div style="width:170px;font-size:10.5px;color:#666;flex-shrink:0;">롯데 ${r.l}개 현대 ${r.h}개 신세계 ${r.sg}개</div>
             <div class="bar-num">${r.total}</div>
@@ -1322,7 +1322,7 @@
           <td class="company-현대">${r.h}</td>
           <td class="company-신세계">${r.sg}</td>
           <td style="font-weight:700;">${r.gap}</td>
-          <td><span class="badge badge-suspect">${r.weakest} 공백</span></td>
+          <td><span class="badge badge-suspect">${r.weakest} 미입점</span></td>
         </tr>`).join('') || '<tr><td colspan="7" style="text-align:center;color:#999;">뚜렷한 격차가 있는 브랜드가 없습니다</td></tr>';
 
       // ── 상권별 브랜드 통계 ──
