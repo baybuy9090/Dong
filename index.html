@@ -358,10 +358,10 @@
     </div>
 
     <div class="panel" style="margin-bottom:14px;">
-      <h3>갭 분석 — 회사 간 입점 격차가 큰 브랜드 (미입점 공략 후보)</h3>
-      <div class="subtitle" style="margin-bottom:10px;">한 회사엔 많이 들어가 있는데 다른 회사엔 거의 없는 브랜드 순위. 신규 입점 제안 시 참고용.</div>
+      <h3>갭 분석 — 회사별 입점 격차가 큰 브랜드 (입점 확대 후보)</h3>
+      <div class="subtitle" style="margin-bottom:10px;">한 회사에는 다수 입점했지만 다른 회사에는 입점 사례가 없는 브랜드입니다. 신규 입점 제안 시 참고하세요.</div>
       <table>
-        <thead><tr><th>티어</th><th>브랜드</th><th>롯데</th><th>현대</th><th>신세계</th><th>격차</th><th>미입점 회사</th></tr></thead>
+        <thead><tr><th>티어</th><th>브랜드</th><th>롯데</th><th>현대</th><th>신세계</th><th>격차</th><th>입점 공백</th></tr></thead>
         <tbody id="gapTable"></tbody>
       </table>
     </div>
@@ -480,7 +480,7 @@
     <div class="panel" style="margin-bottom:14px;">
       <h3>브랜드별 뉴스</h3>
       <div class="subtitle" style="margin-bottom:8px;">
-        구글 뉴스에서 브랜드명으로 검색한 최근 기사를 매일 오전 자동으로 모아옵니다. 브랜드가 워낙 많다 보니 일부 기사는 무관할 수 있어요 — 참고용으로 봐주세요.
+        네이버/구글 뉴스에서 브랜드명으로 검색한 최근 기사를 매일 오전 자동으로 모아옵니다. 브랜드가 워낙 많다 보니 일부 기사는 무관할 수 있어요 — 참고용으로 봐주세요.
         <span id="newsUpdated" style="display:block;margin-top:4px;color:#888;font-size:11.5px;"></span>
       </div>
       <input id="newsSearchInput" placeholder="브랜드명 검색" oninput="renderNews()" style="width:220px;padding:6px 10px;border:1px solid #ddd;border-radius:6px;margin-bottom:12px;">
@@ -1322,7 +1322,7 @@
           <td class="company-현대">${r.h}</td>
           <td class="company-신세계">${r.sg}</td>
           <td style="font-weight:700;">${r.gap}</td>
-          <td><span class="badge badge-suspect">${r.weakest} 미입점</span></td>
+          <td><span class="badge badge-suspect">${r.weakest} 공백</span></td>
         </tr>`).join('') || '<tr><td colspan="7" style="text-align:center;color:#999;">뚜렷한 격차가 있는 브랜드가 없습니다</td></tr>';
 
       // ── 상권별 브랜드 통계 ──
@@ -1928,7 +1928,7 @@
 
       const updatedEl = document.getElementById('newsUpdated');
       updatedEl.textContent = newsLastUpdated
-        ? '뉴스 최종 수집: ' + new Date(newsLastUpdated).toLocaleString('ko-KR', { year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit' }) + ' · 최근 2개월 이내 기사만 표시'
+        ? '뉴스 최종 수집: ' + new Date(newsLastUpdated).toLocaleString('ko-KR', { year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit' }) + ' · 최근 3주 이내 기사만 표시'
         : '뉴스 데이터 없음 (GitHub Actions "브랜드 뉴스 크롤링" 워크플로우가 아직 실행되지 않았을 수 있습니다)';
 
       const keyword = (document.getElementById('newsSearchInput').value || '').trim().toUpperCase();
@@ -1944,7 +1944,7 @@
         : '';
 
       if (brands.length === 0 && !industryCard) {
-        container.innerHTML = '<div class="empty" style="grid-column:1/-1;">최근 2개월 이내 표시할 뉴스가 없습니다.</div>';
+        container.innerHTML = '<div class="empty" style="grid-column:1/-1;">최근 3주 이내 표시할 뉴스가 없습니다.</div>';
         return;
       }
 

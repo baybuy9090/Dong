@@ -39,7 +39,7 @@ const INDUSTRY_QUERIES = ['남성 컨템포러리', '맨즈 컨템포러리'];
 
 const ARTICLES_PER_BRAND = 8;
 const INDUSTRY_ARTICLES = 8;
-const MAX_AGE_DAYS = 14; // 최근 14일 이내 기사만 수집
+const MAX_AGE_DAYS = 21; // 최근 3주 이내 기사만 수집
 
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
@@ -124,6 +124,8 @@ async function fetchNaverNews(query) {
       link,
       source: sourceFromUrl(link),
       pubDate: item.pubDate ? new Date(item.pubDate).toISOString() : null,
+      // 관련성 필터링에만 쓰고 최종 저장 전에 제거하는 임시 필드
+      _desc: decodeEntities(stripTags(item.description || '')).trim(),
     };
   });
 }
@@ -158,21 +160,71 @@ function filterRecentAndSort(items) {
     .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 }
 
-// 네이버 검색은 본문(description)에도 매칭되는데, "OO아울렛엔 우영미, 렉토,
-// 포터리 등이 입점" 식으로 여러 브랜드명을 나열한 기사가 전혀 무관한 브랜드
-// 카드에마다 똑같이 걸리는 문제가 있었음. 또 "클럽모나코"처럼 검색어가 두
-// 단어로 쪼개져 "클럽"+"모나코"(축구) 기사가 걸리는 경우도 있어, 검색어
-// 핵심어가 실제 "제목"에 나오는 기사만 남김.
-function filterByTitleRelevance(items, query) {
-  const core = query.replace(/"/g, '').split(' ')[0].toUpperCase();
-  if (!core) return items;
-  return items.filter(a => a.title.toUpperCase().includes(core));
+// 한글 완성형 음절 또는 영문자/숫자는 "단어를 구성하는 문자"로 취급.
+// 예: "바버숍페라"에서 "바버" 뒤에 오는 "숍"은 단어 구성 문자이므로 그 자리는
+// 매칭에서 제외 → "바버"가 더 큰 단어의 일부로 쓰인 경우를 걸러냄.
+function isWordChar(ch) {
+  if (!ch) return false;
+  const code = ch.codePointAt(0);
+  return (code >= 0xAC00 && code <= 0xD7A3) || /[A-Za-z0-9]/.test(ch);
 }
 
-async function fetchBrandNews(brand) {
+// 검색어가 더 큰 단어에 파묻힌 채로만 등장하면(예: "클럽모나코" 검색인데
+// "축구 클럽"+"모나코 그랑프리"처럼 따로 등장, 또는 "바버숍페라"처럼 다른
+// 단어에 섞여 등장) 매칭으로 치지 않고, 앞뒤가 단어 경계인 "독립된 문자열"로
+// 등장할 때만 매칭으로 인정.
+function hasWordBoundaryMatch(haystack, core) {
+  const upperHaystack = haystack.toUpperCase();
+  let idx = upperHaystack.indexOf(core);
+  while (idx !== -1) {
+    if (!isWordChar(haystack[idx - 1]) && !isWordChar(haystack[idx + core.length])) return true;
+    idx = upperHaystack.indexOf(core, idx + 1);
+  }
+  return false;
+}
+
+// 네이버는 검색어를 내부적으로 형태소 단위로 쪼개 매칭하기 때문에, 예를 들어
+// "클럽모나코"를 붙여서 검색해도 "클럽"+"모나코"(축구 클럽·모나코 F1 등)처럼
+// 전혀 무관한 기사가 걸리는 경우가 있음. 검색어 핵심 단어가 실제로 제목+본문에
+// 독립된 단어로 등장하는 기사만 남겨서 이 문제를 막음 (본문 매칭은 허용).
+function filterByContentRelevance(items, query) {
+  const core = query.replace(/"/g, '').split(' ')[0].toUpperCase();
+  if (!core) return items;
+  return items.filter(a => hasWordBoundaryMatch(a.title + ' ' + (a._desc || ''), core));
+}
+
+async function fetchBrandCandidates(brand) {
   const query = NEWS_QUERY_OVERRIDES[brand] || brand;
-  const items = filterByTitleRelevance(await fetchAllSources(query), query);
-  return filterRecentAndSort(items).slice(0, ARTICLES_PER_BRAND);
+  const items = filterByContentRelevance(await fetchAllSources(query), query);
+  return filterRecentAndSort(items);
+}
+
+// "OO아울렛엔 우영미, 렉토, 포터리 등이 입점" 식으로 여러 브랜드명을 단순
+// 나열한 기사는 특정 브랜드를 다루는 기사가 아닌데도, 언급된 브랜드마다
+// 전부 걸려서 서로 다른 브랜드 카드에 똑같은 기사가 중복 노출됨. 같은
+// 기사가 우리가 추적하는 브랜드 2개 이상의 후보 목록에 동시에 걸리면
+// 이런 나열식 기사로 보고 모든 브랜드에서 제외.
+function dropCrossBrandNoise(rawByBrand) {
+  const titleCount = {};
+  Object.values(rawByBrand).forEach(items => {
+    const seen = new Set();
+    items.forEach(a => {
+      const key = a.title.replace(/\s+/g, '');
+      if (seen.has(key)) return;
+      seen.add(key);
+      titleCount[key] = (titleCount[key] || 0) + 1;
+    });
+  });
+  const result = {};
+  Object.entries(rawByBrand).forEach(([brand, items]) => {
+    result[brand] = items.filter(a => titleCount[a.title.replace(/\s+/g, '')] < 2);
+  });
+  return result;
+}
+
+function stripInternalFields(item) {
+  const { _desc, ...rest } = item;
+  return rest;
 }
 
 async function fetchIndustryNews() {
@@ -186,7 +238,7 @@ async function fetchIndustryNews() {
     });
     await sleep(400);
   }
-  return filterRecentAndSort(all).slice(0, INDUSTRY_ARTICLES);
+  return filterRecentAndSort(all).slice(0, INDUSTRY_ARTICLES).map(stripInternalFields);
 }
 
 async function main() {
@@ -194,13 +246,19 @@ async function main() {
     console.log('(참고: NAVER_CLIENT_ID/NAVER_CLIENT_SECRET이 없어 구글 뉴스만 수집합니다)');
   }
 
-  const data = {};
+  const rawByBrand = {};
   for (const brand of BRANDS) {
     process.stdout.write(`수집 중: ${brand} ... `);
-    data[brand] = await fetchBrandNews(brand);
-    console.log(`${data[brand].length}건`);
+    rawByBrand[brand] = await fetchBrandCandidates(brand);
+    console.log(`${rawByBrand[brand].length}건 (중복 브랜드 필터 전)`);
     await sleep(400);
   }
+
+  const cleanedByBrand = dropCrossBrandNoise(rawByBrand);
+  const data = {};
+  BRANDS.forEach(brand => {
+    data[brand] = cleanedByBrand[brand].slice(0, ARTICLES_PER_BRAND).map(stripInternalFields);
+  });
 
   process.stdout.write('수집 중: [업계 전체] 남성/맨즈 컨템포러리 ... ');
   const industry = await fetchIndustryNews();
