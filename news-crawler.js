@@ -15,6 +15,7 @@ const NEWS_QUERY_OVERRIDES = {
   'DKNY맨': 'DKNY',
   '띠어리맨': '띠어리 옴므',
   '이로맨': '"IRO" 패션',
+  '준지': 'JUUN.J',
   '이스트로그(프레이트)': '이스트로그 프레이트',
   '톰그레이하운드맨': '톰그레이하운드',
   'PAF': 'PAF 브랜드',
@@ -157,9 +158,20 @@ function filterRecentAndSort(items) {
     .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 }
 
+// 네이버 검색은 본문(description)에도 매칭되는데, "OO아울렛엔 우영미, 렉토,
+// 포터리 등이 입점" 식으로 여러 브랜드명을 나열한 기사가 전혀 무관한 브랜드
+// 카드에마다 똑같이 걸리는 문제가 있었음. 또 "클럽모나코"처럼 검색어가 두
+// 단어로 쪼개져 "클럽"+"모나코"(축구) 기사가 걸리는 경우도 있어, 검색어
+// 핵심어가 실제 "제목"에 나오는 기사만 남김.
+function filterByTitleRelevance(items, query) {
+  const core = query.replace(/"/g, '').split(' ')[0].toUpperCase();
+  if (!core) return items;
+  return items.filter(a => a.title.toUpperCase().includes(core));
+}
+
 async function fetchBrandNews(brand) {
   const query = NEWS_QUERY_OVERRIDES[brand] || brand;
-  const items = await fetchAllSources(query);
+  const items = filterByTitleRelevance(await fetchAllSources(query), query);
   return filterRecentAndSort(items).slice(0, ARTICLES_PER_BRAND);
 }
 
