@@ -2016,18 +2016,35 @@
         });
     }
 
-    function loadMonth(month) {
-      if (!month) { loadData('data.json', 'data.json'); return; }
-      loadData('history/' + month + '.json', 'history/' + month + '.json');
+    function loadMonth(snapshot) {
+      if (!snapshot) { loadData('data.json', 'data.json'); return; }
+      loadData('history/' + snapshot + '.json', 'history/' + snapshot + '.json');
     }
 
+    // history/index.json엔 예전 월별 스냅샷(YYYY-MM)과 새 일별 스냅샷(YYYY-MM-DD)이
+    // 섞여 있을 수 있음. 일별 스냅샷이 계속 쌓이면 드롭다운 한 줄로는 고르기 힘들어져서
+    // 월별로 묶어(optgroup) 보여줌.
     function populateMonthFilter() {
       fetch('history/index.json?_=' + Date.now())
         .then(res => { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
-        .then(months => {
+        .then(snapshots => {
           const sel = document.getElementById('monthFilter');
-          [...months].sort().reverse().forEach(m => {
-            sel.innerHTML += `<option value="${m}">${m}</option>`;
+          const sorted = [...snapshots].sort().reverse();
+          const byMonth = {};
+          sorted.forEach(s => {
+            const monthKey = s.slice(0, 7);
+            if (!byMonth[monthKey]) byMonth[monthKey] = [];
+            byMonth[monthKey].push(s);
+          });
+          Object.keys(byMonth).sort().reverse().forEach(monthKey => {
+            const entries = byMonth[monthKey];
+            // 그 달에 일별 스냅샷이 하나뿐이고 키가 월 자체(예전 형식)면 그룹 없이 바로 표시
+            if (entries.length === 1 && entries[0] === monthKey) {
+              sel.innerHTML += `<option value="${monthKey}">${monthKey}</option>`;
+              return;
+            }
+            const options = entries.map(s => `<option value="${s}">${s}</option>`).join('');
+            sel.innerHTML += `<optgroup label="${monthKey}">${options}</optgroup>`;
           });
         })
         .catch(() => { /* history/index.json이 아직 없으면 "최신"만 보여줌 (신규 저장소 첫 실행 전 정상 상태) */ });

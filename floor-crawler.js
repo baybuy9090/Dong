@@ -59,7 +59,8 @@ function extractLotteFloorItems(html) {
     const townCd = (block.match(/data-cstrTownCd="([^"]*)"/i) || [])[1];
     const townNm = (block.match(/data-cstrTownNm="([^"]*)"/i) || [])[1];
     const flrCd = (block.match(/data-flrCd="([^"]*)"/i) || [])[1];
-    if (!townCd || !flrCd || townNm !== '백화점') continue;
+    // '백화점'은 일반 지점의 본관, '본동'은 잠실에비뉴엘처럼 별관 단독 지점의 본관 명칭
+    if (!townCd || !flrCd || (townNm !== '백화점' && townNm !== '본동')) continue;
     const key = townCd + '|' + flrCd;
     if (seen.has(key)) continue;
     seen.add(key);

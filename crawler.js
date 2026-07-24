@@ -360,22 +360,25 @@ async function main() {
 
   fs.writeFileSync(path.join(__dirname, 'data.json'), JSON.stringify(output, null, 2), 'utf8');
 
-  // 월별 스냅샷 저장 (history/YYYY-MM.json + 목록 파일)
+  // 일별 스냅샷 저장 (history/YYYY-MM-DD.json + 목록 파일).
+  // 예전엔 월별(YYYY-MM) 키였지만 크롤러가 매일 도는데 같은 달엔 계속 같은
+  // 파일에 덮어써져 일별 변화가 히스토리에 안 남는 문제가 있어 일별로 변경.
+  // 기존 월별 스냅샷 파일은 그대로 두고(과거 기록 보존), 새로 쌓이는 것부터 일별로 저장.
   const historyDir = path.join(__dirname, 'history');
   if (!fs.existsSync(historyDir)) fs.mkdirSync(historyDir);
-  const monthKey = output.lastUpdated.slice(0, 7);
-  fs.writeFileSync(path.join(historyDir, `${monthKey}.json`), JSON.stringify(output, null, 2), 'utf8');
+  const dayKey = output.lastUpdated.slice(0, 10);
+  fs.writeFileSync(path.join(historyDir, `${dayKey}.json`), JSON.stringify(output, null, 2), 'utf8');
 
   const indexPath = path.join(historyDir, 'index.json');
-  let months = [];
+  let snapshots = [];
   if (fs.existsSync(indexPath)) {
-    try { months = JSON.parse(fs.readFileSync(indexPath, 'utf8')); } catch (e) { months = []; }
+    try { snapshots = JSON.parse(fs.readFileSync(indexPath, 'utf8')); } catch (e) { snapshots = []; }
   }
-  if (!months.includes(monthKey)) months.push(monthKey);
-  months.sort();
-  fs.writeFileSync(indexPath, JSON.stringify(months, null, 2), 'utf8');
+  if (!snapshots.includes(dayKey)) snapshots.push(dayKey);
+  snapshots.sort();
+  fs.writeFileSync(indexPath, JSON.stringify(snapshots, null, 2), 'utf8');
 
-  console.log(`\n완료: ${finalResults.length}건 저장 (data.json, history/${monthKey}.json)`);
+  console.log(`\n완료: ${finalResults.length}건 저장 (data.json, history/${dayKey}.json)`);
 }
 
 main().catch(e => {
