@@ -379,8 +379,8 @@
   <div class="tabs">
     <button class="tab-btn tabnav-btn active" data-tab="overview" id="tabOverview" onclick="switchTab('overview')">📊 한눈에 보기</button>
     <button class="tab-btn tabnav-btn" data-tab="map" id="tabMap" onclick="switchTab('map')">📍 상권 지도</button>
-    <button class="tab-btn tabnav-btn" data-tab="matrix" id="tabMatrix" onclick="switchTab('matrix')">🔲 매트릭스</button>
     <button class="tab-btn tabnav-btn" data-tab="floor" id="tabFloor" onclick="switchTab('floor')">🗺️ 층 도면 보기</button>
+    <button class="tab-btn tabnav-btn" data-tab="matrix" id="tabMatrix" onclick="switchTab('matrix')">🔲 매트릭스</button>
     <button class="tab-btn tabnav-btn" data-tab="table" id="tabTable" onclick="switchTab('table')">📋 표로 보기</button>
     <button class="tab-btn" id="favToggle" onclick="toggleFavOnly()">☆ 즐겨찾기만</button>
     <button class="tab-btn tabnav-btn" data-tab="news" id="tabNews" onclick="switchTab('news')">📰 브랜드 뉴스</button>
@@ -390,8 +390,8 @@
   <nav class="mobile-tabbar" id="mobileTabbar">
     <button class="mobile-tabbar-btn tabnav-btn active" data-tab="overview" onclick="switchTab('overview')"><span class="mtb-icon">📊</span><span class="mtb-label">한눈에</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="map" onclick="switchTab('map')"><span class="mtb-icon">📍</span><span class="mtb-label">지도</span></button>
-    <button class="mobile-tabbar-btn tabnav-btn" data-tab="matrix" onclick="switchTab('matrix')"><span class="mtb-icon">🔲</span><span class="mtb-label">매트릭스</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="floor" onclick="switchTab('floor')"><span class="mtb-icon">🗺️</span><span class="mtb-label">도면</span></button>
+    <button class="mobile-tabbar-btn tabnav-btn" data-tab="matrix" onclick="switchTab('matrix')"><span class="mtb-icon">🔲</span><span class="mtb-label">매트릭스</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="table" onclick="switchTab('table')"><span class="mtb-icon">📋</span><span class="mtb-label">표</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="news" onclick="switchTab('news')"><span class="mtb-icon">📰</span><span class="mtb-label">뉴스</span></button>
   </nav>
@@ -1183,22 +1183,39 @@
           if (!storeMap[key]) storeMap[key] = { company: r.company, store: r.store, brands: [] };
           storeMap[key].brands.push(r.brand);
         });
+        // 신세계는 실제 도면 이미지를 볼 수 있어 목록 맨 위로 올림
+        const companyPriority = { '신세계': 0, '롯데': 1, '현대': 2 };
         const entries = Object.values(storeMap).sort((a,b) =>
-          a.company.localeCompare(b.company,'ko') || a.store.localeCompare(b.store,'ko'));
+          (companyPriority[a.company] ?? 9) - (companyPriority[b.company] ?? 9) || a.store.localeCompare(b.store,'ko'));
 
-        container.innerHTML = entries.map(e => {
+        container.innerHTML = entries.map((e, idx) => {
           const url = floorGuideUrl(e.company, e.store);
           const linkHtml = url
             ? `<a href="${url}" target="_blank" rel="noopener" style="font-size:12px;color:#004990;text-decoration:none;">🔗 도면 보기 →</a>`
             : `<span style="font-size:11px;color:#bbb;">링크 없음</span>`;
+          const code = STORE_CODES[e.company] && STORE_CODES[e.company][e.store];
+          const floors = e.company === '신세계' && code ? (floorImages[code] || []) : [];
+          const imgToggleHtml = floors.length
+            ? `<button class="tab-btn" style="background:#004990;color:white;padding:3px 10px;font-size:11px;margin-left:8px;" onclick="toggleFloorImages('${idx}')">🖼️ 도면 이미지 (${floors.length}개층)</button>`
+            : '';
+          const galleryHtml = floors.length
+            ? `<div id="floorImgs-${idx}" style="display:none;padding:10px 4px 14px;">
+                ${floors.map(f => `
+                  <div style="margin-bottom:14px;">
+                    <div style="font-size:12px;font-weight:700;color:#444;margin-bottom:4px;">${f.label}</div>
+                    <img src="${f.url}" alt="${f.label}" loading="lazy" style="max-width:100%;border:1px solid #eee;border-radius:8px;">
+                  </div>`).join('')}
+              </div>`
+            : '';
           return `<div class="region-item">
-            <div style="display:flex;justify-content:space-between;align-items:center;padding:9px 4px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:9px 4px;flex-wrap:wrap;">
               <div>
                 <span class="${companyClass(e.company)}">${e.company}</span> ${e.store}
                 <span style="color:#888;font-size:11px;"> · ${regionOf(e.company,e.store)} · 브랜드 ${e.brands.length}개</span>
               </div>
-              ${linkHtml}
+              <div>${linkHtml}${imgToggleHtml}</div>
             </div>
+            ${galleryHtml}
           </div>`;
         }).join('') || '<div class="empty">표시할 지점이 없습니다</div>';
       } else {
@@ -2008,6 +2025,23 @@
         .catch(() => { /* news.json이 아직 없으면 (첫 자동 실행 전) 빈 상태로 보여줌 */ });
     }
 
+    // 신세계는 지점별 CMS에 실제 층 안내도 이미지가 있어 크롤링해서 인라인으로 보여줌.
+    // 롯데/현대는 서드파티 인터랙티브 지도라 평면 이미지가 없어 외부 링크만 제공.
+    let floorImages = {};
+    function loadFloorImages() {
+      fetch('floor-images.json?_=' + Date.now())
+        .then(res => { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
+        .then(payload => {
+          floorImages = payload.data || {};
+          if (currentTab === 'floor') renderFloorView();
+        })
+        .catch(() => { /* floor-images.json이 아직 없으면 (첫 자동 실행 전) 링크만 보여줌 */ });
+    }
+    function toggleFloorImages(key) {
+      const el = document.getElementById('floorImgs-' + key);
+      if (el) el.style.display = el.style.display === 'none' ? 'block' : 'none';
+    }
+
     function timeAgo(pubDate) {
       if (!pubDate) return '';
       const days = Math.floor((Date.now() - new Date(pubDate).getTime()) / 86400000);
@@ -2066,6 +2100,7 @@
     loadData('data.json', 'data.json');
     populateMonthFilter();
     loadNews();
+    loadFloorImages();
     relocateFavToggle();
   </script>
 </body>
