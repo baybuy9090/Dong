@@ -193,10 +193,39 @@ function filterByContentRelevance(items, query) {
   return items.filter(a => hasWordBoundaryMatch(a.title + ' ' + (a._desc || ''), core));
 }
 
+// 보도자료가 여러 매체에 조금씩 다른 제목으로 실리는 경우("트레몰로, 상반기
+// 남성복 성장" / "세정그룹 트레몰로, '에센셜 라인' 상반기 실적 견인" 등)가
+// 많아서 제목이 완전히 같을 때만 걸러내는 것으로는 부족함. 제목을 2글자
+// 단위로 쪼갠 뒤(자모 분리 없이 문자 그대로) 겹치는 비율(자카드 유사도)이
+// 높으면 사실상 같은 기사로 보고 먼저 나온(더 최신인) 것만 남김.
+function charBigrams(str) {
+  const s = str.replace(/[^\p{L}\p{N}]/gu, '');
+  const grams = new Set();
+  for (let i = 0; i < s.length - 1; i++) grams.add(s.slice(i, i + 2));
+  return grams;
+}
+function titleSimilarity(a, b) {
+  const setA = charBigrams(a);
+  const setB = charBigrams(b);
+  if (setA.size === 0 || setB.size === 0) return 0;
+  const intersection = [...setA].filter(g => setB.has(g)).length;
+  const union = new Set([...setA, ...setB]).size;
+  return union === 0 ? 0 : intersection / union;
+}
+const DUP_TITLE_SIMILARITY_THRESHOLD = 0.22;
+function dedupSimilarTitles(items) {
+  const kept = [];
+  items.forEach(item => {
+    const isDup = kept.some(k => titleSimilarity(k.title, item.title) >= DUP_TITLE_SIMILARITY_THRESHOLD);
+    if (!isDup) kept.push(item);
+  });
+  return kept;
+}
+
 async function fetchBrandCandidates(brand) {
   const query = NEWS_QUERY_OVERRIDES[brand] || brand;
   const items = filterByContentRelevance(await fetchAllSources(query), query);
-  return filterRecentAndSort(items);
+  return dedupSimilarTitles(filterRecentAndSort(items));
 }
 
 // "OO아울렛엔 우영미, 렉토, 포터리 등이 입점" 식으로 여러 브랜드명을 단순
@@ -238,7 +267,8 @@ async function fetchIndustryNews() {
     });
     await sleep(400);
   }
-  return filterRecentAndSort(all).slice(0, INDUSTRY_ARTICLES).map(stripInternalFields);
+  const deduped = dedupSimilarTitles(filterRecentAndSort(all));
+  return deduped.slice(0, INDUSTRY_ARTICLES).map(stripInternalFields);
 }
 
 async function main() {
