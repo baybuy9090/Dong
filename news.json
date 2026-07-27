@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-26T00:02:45.586Z",
+  "lastUpdated": "2026-07-27T00:02:06.615Z",
   "industry": [
     {
       "title": "세정그룹 트레몰로(TREMOLO), ‘에센셜 라인’ 상반기 실적 견인",
@@ -67,12 +67,6 @@
         "pubDate": "2026-07-09T10:34:11.000Z"
       },
       {
-        "title": "[포토] 솔리드옴므, 파리서 패션쇼",
-        "link": "https://www.hankyung.com/article/2026070962281",
-        "source": "hankyung.com",
-        "pubDate": "2026-07-09T08:30:00.000Z"
-      },
-      {
         "title": "보그가 주목한 우영미 \"더 나은 세상을 꿈꾸는 낙관주의\" 호평",
         "link": "https://economist.co.kr/article/view/ecn202607090050",
         "source": "economist.co.kr",
@@ -100,6 +94,12 @@
         "title": "디자이너 우영미의 브랜드 솔리드옴므, 2027 S/S 파리 컬렉션 'After Nature' 선봬",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBvTEJjTldKajlzZ1R3U0kwaHo1ckpNZEpDWDFUMGp6bnJXOHg2bFdIekIxYldwRFZEU3B2clo5eG52QlZuTUxwaElDRW5yRDllMEpPYWFoazVLLWppbWpUS28tems?oc=5",
         "source": "서울경제TV",
+        "pubDate": "2026-07-09T07:00:00.000Z"
+      },
+      {
+        "title": "[포토] 솔리드옴므, 파리서 패션쇼",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBOUzVFQkNNQUNtb3VUbXg5aUVybE5FYXlMQWowYU90eGJrSDluaEhELUF3cnU2Y3doeXg5YnNUd19QRTQ4U0NhN19IYUVkdUQzenVqcnBsekZRQQ?oc=5",
+        "source": "한국경제",
         "pubDate": "2026-07-09T07:00:00.000Z"
       }
     ],
@@ -158,12 +158,6 @@
         "link": "https://www.mk.co.kr/article/12103416",
         "source": "mk.co.kr",
         "pubDate": "2026-07-21T06:49:00.000Z"
-      },
-      {
-        "title": "아울렛도 아닌데 최대 90%할인…고물가 시대 백화점 생존법",
-        "link": "https://www.news1.kr/industry/distribution/6217349",
-        "source": "news1.kr",
-        "pubDate": "2026-07-05T21:20:00.000Z"
       }
     ],
     "CP컴퍼니": [
@@ -236,6 +230,12 @@
     "지오송지오": [],
     "바버": [
       {
+        "title": "화성시, 소규모 이용업 종사자 기술교육 마무리",
+        "link": "https://www.m-i.kr/news/articleView.html?idxno=1395205",
+        "source": "m-i.kr",
+        "pubDate": "2026-07-26T23:58:00.000Z"
+      },
+      {
         "title": "화성특례시, 소규모 이용업소 기술교육 마무리… 바버 기술·경영 역량 강화",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1JSVJrUXkxcjBXa1kzb2xDcm5JZU1GLTg5Q09MVHBkTWJiZ3RCS3FHQUlpVkdVaGRFMlhxMzA3TGVaTFVWZ1FqQ0JNOG5qZzFRZlp5NG05WmtjWW9KWFlJT2lBcG9ONUFtQnc?oc=5",
         "source": "천지일보",
@@ -248,15 +248,15 @@
         "pubDate": "2026-07-24T07:56:00.000Z"
       },
       {
-        "title": "화성특례시, '2026년 이용 기술교육 지원사업' 수료식 개최",
-        "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2452348",
-        "source": "enewstoday.co.kr",
-        "pubDate": "2026-07-24T07:50:00.000Z"
-      },
-      {
         "title": "[위클리오늘] 화성시, 소규모 이용업소 경쟁력 높인다...'기술교육 지원...",
         "link": "http://www.weeklytoday.com/news/articleView.html?idxno=787159",
         "source": "weeklytoday.com",
+        "pubDate": "2026-07-24T07:50:00.000Z"
+      },
+      {
+        "title": "화성특례시, '2026년 이용 기술교육 지원사업' 수료식 개최",
+        "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2452348",
+        "source": "enewstoday.co.kr",
         "pubDate": "2026-07-24T07:50:00.000Z"
       },
       {
@@ -276,12 +276,6 @@
         "link": "http://www.consumernews.co.kr/news/articleView.html?idxno=759873",
         "source": "consumernews.co.kr",
         "pubDate": "2026-07-23T21:10:00.000Z"
-      },
-      {
-        "title": "땀에 젖을수록 멋있어진다, 손질 쉬운 여름 남자 헤어스타일 추천",
-        "link": "https://www.gqkorea.co.kr/2026/07/21/%eb%95%80%ec%97%90-%ec%a0%96%ec%9d%84%ec%88%98%eb%a1%9d-%eb%a9%8b%ec%9e%88%ec%96%b4%ec%a7%84%eb%8b%a4-%ec%86%90%ec%a7%88-%ec%89%ac%ec%9a%b4-%ec%97%ac%eb%a6%84-%eb%82%a8%ec%9e%90-%ed%97%a4%ec%96%b4/?utm_source=naver&utm_medium=partnership",
-        "source": "gqkorea.co.kr",
-        "pubDate": "2026-07-21T06:08:00.000Z"
       }
     ],
     "산드로옴므": [],
@@ -360,22 +354,10 @@
         "pubDate": "2026-07-19T01:08:42.000Z"
       },
       {
-        "title": "신세계인터내셔날 맨온더분, '청담 빈티지 마켓' 운영",
-        "link": "https://news.google.com/rss/articles/CBMi9wNBVV95cUxPOHZ4NlpBVUVCeklBaHppRUduRkRIREdhbkdQcEg1dXBydnlOaUZmTjM2SEtXdS1LNEJfZ3NsZmFVcGlHZkIxcTRlRE5MZXM5ZVpMbzNXUXFaSldXbkhpbU05YlZJc1RXZHI0dWFJbEVhQlA2ZEdUbXpNbFRKX1pPUDlZZHdBYkhYeG11a2hKNFdiYXlRX25hX01WMEFCZGI2bjlTZTRyVEEycWFic1ZWcUJlYlotbmxqUzhPLVhaNWpsS0Z0RHNIa2hPRGpGcDNSRXdacGZDMDZkMG5pc2VETXlvRHNReUlpbEtGd1lnMWF6UXlENHJwZ1FjTzN4bDVRVk5uV3hVNi12ajVtcW43R0hYRnRyTU5TSjJDNWJ4QXlCVE15NTM1WjBXQUJMQ21CNjR5SUloV296ek03QVp3bElFX25RSEpYb0JUbTY1S2JXYUtkZGp6Z3dUcEhRWGo1Rnd0REI2UENtTFZIdU82NmFSUHBGdXg2eWc0UlJNQ2RLSVhicEJ0MXM3UF9OZ0hTNEZHUGYxWFZpRFZ0NXhScUhtdU9maWN0MjYzcGR2RmEtYmhNS1VmaGstUVp1YUV1NDdHRlpRRVhhUmhRUnR5S3VPZ08xZE1nN1BzazM2dWxTUVd5WHA2RkNMSzJLSkZLbFhucmpQMA?oc=5",
-        "source": "MSN",
-        "pubDate": "2026-07-18T19:59:23.000Z"
-      },
-      {
         "title": "빈티지에 빠진 남성 잡는다…신세계인터 맨온더분, 청담 플래그십서 빈티지 마켓 개최",
         "link": "https://news.google.com/rss/articles/CBMioAVBVV95cUxPT1g5b3BPUGpmVDN6dkM0RWItV29sZkl1UUk0aUlmck5XWkVvYmtIeEdyN0pHYVJjMWY3azlZWVBZaUZhZDJQbFVoVFRzN3dzNm9HYk9KczlMcnlBY21Nd3I2MmJpVEl6WEtuaUJSbW4tYUVSR0lEQTRhOERIN0M2R2t4d1Z0Nk9mMHVKRXY5TGQ2NkFwVmtJNEJPOUpGNTB4Tm9JUHZnYzZHMlJsVmx1ZHBJRjQ2ZzEtRTNnM3ZlSEdWaTA1LW5CcXoyTUNFSXZkeFc5Y1JkVkFiZU9LMFFZUU1wcFVmNTI2ZnV3QVFkX2VOVkpnVEhzTXhFd252TFFLaklxd1lmZGQ5QjhQSkQ1Ym9YaXBJTWZpaUYxMzdTYkY3cnd5RzNlNGZMZnVLUGFsOTB0d09qZ0xORW9ObUdPWDNseG9kNUdiYWtUb1UzNWxtc1V3VmZLS3h2YlFQbzBqUmNWSFU4MXNDNkIydjJndFZQeldIS2lRSnVnMmdzZWx6ckdsdzZSdDVsUmd6cC1ZeVpfaUVUV0RZMk9YQk1ReEgzeHF6bGhodHVoTVUxWjUtNTFoUDFmMFRRVXRpNGhEVGRHYnd2OGhKV2dyMFZpQ3I3SzhHeFBHY1pianVJdm0tNllKZXRRTklTcHFXaHFNcVNmZnhGX3VUeWtTUDlPN2p0NjNXaklEQmNZdFdENXlEWWJfUHBWYnJIR0ZWQ3I0dUZiYklTYWJiUzd2OEl6U2dHbmZmMndPSmxQX2VvZmE0QmF6QllqUFQydTh0VXI2T0FfNk1yTF9UU2NRbVAtWWxnTmxENDgxbnZaSk1BSGRLSnFzNUdPTVlVSUp3S1RWb04yOVRual9mbUpOMzdSSGxUOXhfaFRJZDc3M05uc2k?oc=5",
         "source": "MSN",
         "pubDate": "2026-07-18T16:21:36.000Z"
-      },
-      {
-        "title": "‘노스텔지아’ 담은 취향 공간… 맨온더분, 청담서 빈티지 마켓 연다",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5BaVl3alZzbXlHZWZiMFpEYnZPdXRpTmZwM1R0Q3RzRXoxLUNiZjBSalRxLVJuZW9mcVNxUjdPY3FjY0RoV0dIc3h3cW9Id0RsQkhJZkFEVDJ5d1ExTFBaT0xNc3FNaEREZ0dSeQ?oc=5",
-        "source": "이코노미톡뉴스",
-        "pubDate": "2026-07-17T00:00:00.000Z"
       },
       {
         "title": "신세계인터 맨온더분, 청담 매장서 ‘빈티지마켓’ 운영",
@@ -385,9 +367,15 @@
       },
       {
         "title": "맨온더분, 청담 플래스십 빈티지 마켓 운영…국내외 한정판 판매",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE80ZG9hdW50QjNjLVlEa3p4UXRmYnROQk56RUFIVDVnbWhIRXhZX1ZPc0ZIYjVyak5Td3gzLWdGWFotaFU5WGF0UlhvUHhnN1E?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE4yZ09HQWxEZWhORVoxcVJqcWE4UXFURkdCdFdCV1FiSXJnMkVVMU9FcVhEZG1NdVQzRVRPTDItSW9KVnlXb0E?oc=5",
         "source": "v.daum.net",
-        "pubDate": "2026-07-15T04:31:06.000Z"
+        "pubDate": "2026-07-15T07:00:00.000Z"
+      },
+      {
+        "title": "신세계인터내셔날 맨온더분, 청담 플래그십 매장서 빈티지 마켓",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9jdTZkYXg2WWVWVmhMeDd3VHhwcDFiT090RERNaHVBdVVON2FYdEhWdTdvU2Z6V0RUSXVxYWNzeXNJSG82dG1VYUhHX0J6M3dYalNnUUpfUXpQck3SAWBBVV95cUxPbjBZNFRXMTRUN0tLdEZ2OXkzeW9aM2c3aXZkOWwxOE94MHhOLXNkU0o1ZmZCZlZCdTNjMGswemY0YjdYYnpwTGVTUEROdjQ1QWdETTYzV2tvSm51Tjd6bmw?oc=5",
+        "source": "연합뉴스",
+        "pubDate": "2026-07-15T07:00:00.000Z"
       },
       {
         "title": "맨온더분 청담, 용정콜렉션·올드굿띵즈 등과 협업해 '빈티지 마켓' 연다",
@@ -396,10 +384,10 @@
         "pubDate": "2026-07-15T02:38:46.000Z"
       },
       {
-        "title": "신세계인터내셔날 맨온더분, 청담 플래그십 매장서 빈티지 마켓",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5hVVN6NlNsRnVIRk92ZVVRWUltaTFLV3hidjJiREoxUGlqcWp6dENBMi1DZHRCU0ZKRFJPVFhqZ3JnbXFnLWRDMzhCN1dpZEs0bXFXV3FWU2ZvNFVhTkxBdXFxMVhiZnlVN0UyRV82LVlPSk8y?oc=5",
-        "source": "연합뉴스 한민족센터",
-        "pubDate": "2026-07-15T02:36:13.000Z"
+        "title": "신세계인터내셔날 맨온더분, 국내외 빈티지숍 4곳과 협업 청담에 빈티지 마켓 연다",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBIVWFFZEdTNkY5dWlhLVg0MUcybWhWUEU0UVVSYTBDT1BrYk01WWVQbkw5dWgwV3BIVEFyN0QwcGNOQW9GY1JEX1JnNzd4bGtJeW95UEtyYWdFb05UUE9mMXMxTTMyczFOT3JjVlM3T1FqcGR1TzJF?oc=5",
+        "source": "패션엔",
+        "pubDate": "2026-07-15T02:29:33.000Z"
       }
     ],
     "수트서플라이": [],
@@ -448,7 +436,20 @@
         "pubDate": "2026-07-14T15:00:00.000Z"
       }
     ],
-    "캡틴선샤인": [],
+    "캡틴선샤인": [
+      {
+        "title": "‘노재팬’ 그늘 걷히자…日 맥주 웃고 패션 브랜드 몰려왔다",
+        "link": "https://www.sedaily.com/article/20072084?ref=naver",
+        "source": "sedaily.com",
+        "pubDate": "2026-07-26T22:26:00.000Z"
+      },
+      {
+        "title": "삿포로 맥주·도쿄룩…일상 파고든 日 브랜드",
+        "link": "https://www.sedaily.com/article/20071889?ref=naver",
+        "source": "sedaily.com",
+        "pubDate": "2026-07-26T02:56:00.000Z"
+      }
+    ],
     "PAF": [
       {
         "title": "디자이너 브랜드, 쇼룸의 진화 '브랜드 경험 공간' 경쟁",
