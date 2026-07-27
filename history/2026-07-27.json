@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T01:58:35.119Z",
+  "lastUpdated": "2026-07-27T02:03:06.336Z",
   "baselineAsOf": "2026-06",
   "data": [
     {
@@ -951,7 +951,7 @@
       "store": "잠실점",
       "brand": "지제로",
       "sales": "",
-      "note": "신규 입점 가능성",
+      "note": "확인",
       "baselineCheck": "⚠ 2026-06 데이터엔 없음"
     },
     {
@@ -2703,7 +2703,7 @@
       "store": "대구",
       "brand": "스톤아일랜드",
       "sales": "",
-      "note": "신규 입점 가능성",
+      "note": "확인",
       "baselineCheck": "일치"
     },
     {
