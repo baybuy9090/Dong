@@ -1,6 +1,30 @@
 {
-  "lastUpdated": "2026-07-27T02:08:57.863Z",
+  "lastUpdated": "2026-07-28T00:04:58.256Z",
   "industry": [
+    {
+      "title": "[유通하는 사람들] ⑯ 김기현 신세계백화점 여성패션팀장…\"K-헤리티지...",
+      "link": "https://www.youthdaily.co.kr/news/article.html?no=223828",
+      "source": "youthdaily.co.kr",
+      "pubDate": "2026-07-27T23:00:00.000Z"
+    },
+    {
+      "title": "구찌, 신세계 강남점 팝업 '구찌 에디트 룸' 운영",
+      "link": "http://www.hansbiz.co.kr/news/articleView.html?idxno=852608",
+      "source": "hansbiz.co.kr",
+      "pubDate": "2026-07-27T08:22:00.000Z"
+    },
+    {
+      "title": "[패션·잡화 트렌드] 올포유, KBS2 주말드라마 '사랑이 온다' 제작지원 ...",
+      "link": "https://www.ibabynews.com/news/articleView.html?idxno=153266",
+      "source": "ibabynews.com",
+      "pubDate": "2026-07-27T06:46:00.000Z"
+    },
+    {
+      "title": "구찌 신상보러 팝업 스토어 가볼까?",
+      "link": "https://www.mk.co.kr/article/12108344",
+      "source": "mk.co.kr",
+      "pubDate": "2026-07-27T05:17:00.000Z"
+    },
     {
       "title": "세정그룹 트레몰로(TREMOLO), ‘에센셜 라인’ 상반기 실적 견인",
       "link": "https://sports.khan.co.kr/article/202607250112003?pt=nv",
@@ -24,30 +48,6 @@
       "link": "https://zdnet.co.kr/view/?no=20260723153215",
       "source": "zdnet.co.kr",
       "pubDate": "2026-07-23T07:08:00.000Z"
-    },
-    {
-      "title": "[문화 트렌드] 조계원 의원, 문화예술진흥법 전부개정안 발의…K-컬처 성...",
-      "link": "https://www.ibabynews.com/news/articleView.html?idxno=153060",
-      "source": "ibabynews.com",
-      "pubDate": "2026-07-21T22:12:00.000Z"
-    },
-    {
-      "title": "클래식으로 채우는 여름…‘예술의전당 국제음악제’",
-      "link": "https://www.sedaily.com/article/20070167?ref=naver",
-      "source": "sedaily.com",
-      "pubDate": "2026-07-21T21:14:00.000Z"
-    },
-    {
-      "title": "살 빠진 옷장이 열렸다, 비만치료제 확산에 패션 시장 지각변동",
-      "link": "https://magazine.hankyung.com/job-joy/article/202607217947d",
-      "source": "magazine.hankyung.com",
-      "pubDate": "2026-07-21T14:04:00.000Z"
-    },
-    {
-      "title": "'Pack Your Summer with Classics'...예술의전당, '2026 예술의전당 국제음...",
-      "link": "https://www.cnbizm.com/news/articleView.html?idxno=309178",
-      "source": "cnbizm.com",
-      "pubDate": "2026-07-21T08:22:00.000Z"
     }
   ],
   "data": {
@@ -103,6 +103,12 @@
     ],
     "준지": [
       {
+        "title": "[Brand Insight] Samsung C&T: The Foundation of Samsung Group",
+        "link": "https://www.newscj.com/news/articleView.html?idxno=3420331",
+        "source": "newscj.com",
+        "pubDate": "2026-07-27T22:02:00.000Z"
+      },
+      {
         "title": "K-패션 신예 디자이너 찾는다…삼성물산 제22회 SFDF 모집",
         "link": "http://www.4th.kr/news/articleView.html?idxno=2114946",
         "source": "4th.kr",
@@ -140,6 +146,18 @@
     ],
     "비이커": [
       {
+        "title": "[유通하는 사람들] ⑯ 김기현 신세계백화점 여성패션팀장…\"K-헤리티지...",
+        "link": "https://www.youthdaily.co.kr/news/article.html?no=223828",
+        "source": "youthdaily.co.kr",
+        "pubDate": "2026-07-27T23:00:00.000Z"
+      },
+      {
+        "title": "삼성물산 패션부문·이랜드 스파오, 신진 디자이너·브랜드 서포터즈 모...",
+        "link": "http://www.wsobi.com/news/articleView.html?idxno=315805",
+        "source": "wsobi.com",
+        "pubDate": "2026-07-27T05:36:00.000Z"
+      },
+      {
         "title": "삼성물산 패션, ‘제22회 SFDF 참여 디자이너’ 모집",
         "link": "https://sports.donga.com/economy/article/all/20260722/134333435/1",
         "source": "sports.donga.com",
@@ -156,12 +174,6 @@
         "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5042555",
         "source": "shinailbo.co.kr",
         "pubDate": "2026-07-20T08:58:00.000Z"
-      },
-      {
-        "title": "삼성물산 패션부문, 8월7일까지 '삼성패션디자인펀드' 참여할 신진 디자...",
-        "link": "https://www.businesspost.co.kr/BP?command=article_view&num=442668",
-        "source": "businesspost.co.kr",
-        "pubDate": "2026-07-20T08:10:00.000Z"
       },
       {
         "title": "뷰티·패션 인재 키우는 기업, 교육부터 해외 진출까지 지원",
@@ -181,6 +193,12 @@
     "이로맨": [],
     "지오송지오": [],
     "바버": [
+      {
+        "title": "디노 마이어스-램프티 더 바버 숍 창립자, 런던국제광고제 2026 미디어 크리에이티비티 부문 심사위원장 선임",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4zVlQxeUt1UDctcjRfRDR3MmxORmZCLTF0X1BVTzJjQUtTejRCVjhxRHYySVROelg5OXVqcEs0aElKQ3ZkSHVMMTlERHBXeFVuYThOS1dTWDNNbHRGMnFVWDJIYkZsOHdUdGxUUQ?oc=5",
+        "source": "매드타임스",
+        "pubDate": "2026-07-27T05:35:26.000Z"
+      },
       {
         "title": "전남광주시립교향악단, 체임버 시리즈 'Brass & Beat'",
         "link": "https://www.m-i.kr/news/articleView.html?idxno=1395386",
@@ -222,12 +240,6 @@
         "link": "https://www.gqkorea.co.kr/2026/07/21/%eb%95%80%ec%97%90-%ec%a0%96%ec%9d%84%ec%88%98%eb%a1%9d-%eb%a9%8b%ec%9e%88%ec%96%b4%ec%a7%84%eb%8b%a4-%ec%86%90%ec%a7%88-%ec%89%ac%ec%9a%b4-%ec%97%ac%eb%a6%84-%eb%82%a8%ec%9e%90-%ed%97%a4%ec%96%b4/?utm_source=naver&utm_medium=partnership",
         "source": "gqkorea.co.kr",
         "pubDate": "2026-07-21T06:08:00.000Z"
-      },
-      {
-        "title": "2026 BBC프롬스 첫날밤, 건반 위를 활공했던 임윤찬",
-        "link": "https://www.hankyung.com/article/202607193074i",
-        "source": "hankyung.com",
-        "pubDate": "2026-07-21T05:21:00.000Z"
       }
     ],
     "산드로옴므": [],
@@ -277,12 +289,6 @@
         "link": "https://www.businesspost.co.kr/BP?command=article_view&num=442405",
         "source": "businesspost.co.kr",
         "pubDate": "2026-07-15T07:00:00.000Z"
-      },
-      {
-        "title": "[패션잡화 트렌드] 반스, OTW 바이 반스와 언더커버가 함께한 협업 컬렉...",
-        "link": "https://www.ibabynews.com/news/articleView.html?idxno=152664",
-        "source": "ibabynews.com",
-        "pubDate": "2026-07-06T06:44:00.000Z"
       }
     ],
     "클럽모나코": [],
@@ -294,16 +300,10 @@
         "pubDate": "2026-07-19T01:08:42.000Z"
       },
       {
-        "title": "빈티지에 빠진 남성 잡는다…신세계인터 맨온더분, 청담 플래그십서 빈티지 마켓 개최",
-        "link": "https://news.google.com/rss/articles/CBMioAVBVV95cUxPT1g5b3BPUGpmVDN6dkM0RWItV29sZkl1UUk0aUlmck5XWkVvYmtIeEdyN0pHYVJjMWY3azlZWVBZaUZhZDJQbFVoVFRzN3dzNm9HYk9KczlMcnlBY21Nd3I2MmJpVEl6WEtuaUJSbW4tYUVSR0lEQTRhOERIN0M2R2t4d1Z0Nk9mMHVKRXY5TGQ2NkFwVmtJNEJPOUpGNTB4Tm9JUHZnYzZHMlJsVmx1ZHBJRjQ2ZzEtRTNnM3ZlSEdWaTA1LW5CcXoyTUNFSXZkeFc5Y1JkVkFiZU9LMFFZUU1wcFVmNTI2ZnV3QVFkX2VOVkpnVEhzTXhFd252TFFLaklxd1lmZGQ5QjhQSkQ1Ym9YaXBJTWZpaUYxMzdTYkY3cnd5RzNlNGZMZnVLUGFsOTB0d09qZ0xORW9ObUdPWDNseG9kNUdiYWtUb1UzNWxtc1V3VmZLS3h2YlFQbzBqUmNWSFU4MXNDNkIydjJndFZQeldIS2lRSnVnMmdzZWx6ckdsdzZSdDVsUmd6cC1ZeVpfaUVUV0RZMk9YQk1ReEgzeHF6bGhodHVoTVUxWjUtNTFoUDFmMFRRVXRpNGhEVGRHYnd2OGhKV2dyMFZpQ3I3SzhHeFBHY1pianVJdm0tNllKZXRRTklTcHFXaHFNcVNmZnhGX3VUeWtTUDlPN2p0NjNXaklEQmNZdFdENXlEWWJfUHBWYnJIR0ZWQ3I0dUZiYklTYWJiUzd2OEl6U2dHbmZmMndPSmxQX2VvZmE0QmF6QllqUFQydTh0VXI2T0FfNk1yTF9UU2NRbVAtWWxnTmxENDgxbnZaSk1BSGRLSnFzNUdPTVlVSUp3S1RWb04yOVRual9mbUpOMzdSSGxUOXhfaFRJZDc3M05uc2k?oc=5",
-        "source": "MSN",
-        "pubDate": "2026-07-18T16:21:36.000Z"
-      },
-      {
-        "title": "맨온더분 청담, 용정콜렉션·올드굿띵즈 등과 협업해 '빈티지 마켓' 연다",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1jajBidFJUZjhPVlNWemtPa1F3VG9IVTJpcGpGZ1ZLMUNycjF0UTYxWW45WllkWGsyeGhiYm82bklLNkViaUZKTFBRSXBmb28x?oc=5",
-        "source": "패션비즈",
-        "pubDate": "2026-07-15T02:38:46.000Z"
+        "title": "신세계인터 맨온더분, 청담 매장서 ‘빈티지마켓’ 운영",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9aV3I2ZkE4LWN6Tk5McG9aQ21ETHRfSllfVDg2NGJYRHN3T2tsaTAxa0J0R01BQnRodXZyX3N2amo1Ni1qYkNhNmdXQkZKdHRiYXNzQTJxbE1JTkE?oc=5",
+        "source": "에너지경제신문",
+        "pubDate": "2026-07-15T07:22:41.000Z"
       }
     ],
     "수트서플라이": [],
@@ -354,12 +354,6 @@
         "link": "http://www.ktnews.com/news/articleView.html?idxno=147317",
         "source": "ktnews.com",
         "pubDate": "2026-07-22T02:22:00.000Z"
-      },
-      {
-        "title": "신흥 남성복, 해외 공략 가속화",
-        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=226219",
-        "source": "apparelnews.co.kr",
-        "pubDate": "2026-07-06T13:02:00.000Z"
       }
     ],
     "이스트로그(프레이트)": [],
