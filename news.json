@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-30T00:02:16.573Z",
+  "lastUpdated": "2026-07-31T00:04:50.861Z",
   "industry": [
+    {
+      "title": "\"한여름에 패딩 인기\" LF몰, 역시즌 남성 라이브 거래액 역대 최고",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ReFU2NEJMQ0traDNwTU5pUFFQVU5LaFNpdTRJNHpRdklrUVJuUkdnNWFwQUpMYjFQemVPSUlPODBBNWtnaDQzUHJ0a1AtbGwxRFNwV3hKVXJ3QWJrUUhwS9IBeEFVX3lxTE9DSFhrUnU5TXl0OXZ2MFFNd05abTIzODVJMEFuaEJnTEtJbW5najQ4Nk1iUFBaVEJHR1dkQU1ZU3E4M2VmNVh5OU94bms3RDRmbFZqWmdGN3NaNFM5UWI0M2JtWFdaTzR1ZkhIU0JCQ0d0Y0p5MG5yQg?oc=5",
+      "source": "뉴시스",
+      "pubDate": "2026-07-30T23:57:45.000Z"
+    },
+    {
+      "title": "LF몰, 역시즌 쇼핑 수요 잡았다…",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrR2stNXpIZnRFeFpvdUtQU2dRcDZrN1lUVUc4UXR6WkVGTlRmeVRad1FfRlBIT05IM0R5N05iVUdDdmY0VlpOYS1YWVpGVy1tYm1aVzNTdEZOUQ?oc=5",
+      "source": "한국경제",
+      "pubDate": "2026-07-30T22:32:38.000Z"
+    },
     {
       "title": "이찬원, '셀럽병사의 비밀' 본방 독려…단정한 셔츠룩 근황",
       "link": "https://www.topstarnews.net/news/articleView.html?idxno=16147989",
@@ -36,18 +48,6 @@
       "link": "https://sports.khan.co.kr/article/202607250112003?pt=nv",
       "source": "sports.khan.co.kr",
       "pubDate": "2026-07-24T16:13:00.000Z"
-    },
-    {
-      "title": "[패션·잡화 트렌드] 내셔널지오그래픽 어패럴, '듀라론' 적용 슈즈 라인...",
-      "link": "https://www.ibabynews.com/news/articleView.html?idxno=153138",
-      "source": "ibabynews.com",
-      "pubDate": "2026-07-23T12:22:00.000Z"
-    },
-    {
-      "title": "SPA 초저가 공식 깬 무신사…이번엔 '프리미엄' 이미지 입을까",
-      "link": "https://www.bloter.net/news/articleView.html?idxno=668736",
-      "source": "bloter.net",
-      "pubDate": "2026-07-23T07:40:00.000Z"
     }
   ],
   "data": {
@@ -55,28 +55,22 @@
     "띠어리맨": [],
     "솔리드옴므": [
       {
+        "title": "김재원, 프린지 재킷으로 강렬 화보 비주얼",
+        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16150452",
+        "source": "topstarnews.net",
+        "pubDate": "2026-07-30T15:18:00.000Z"
+      },
+      {
+        "title": "김재원, GQ 화보로 '레이디 두아' 이후 또 다른 매력 증명",
+        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16149997",
+        "source": "topstarnews.net",
+        "pubDate": "2026-07-30T05:34:00.000Z"
+      },
+      {
         "title": "김재원, 데님룩으로 펜디 앞 장식…연하남 대세 행보 잇는다",
         "link": "https://www.topstarnews.net/news/articleView.html?idxno=16137119",
         "source": "topstarnews.net",
         "pubDate": "2026-07-16T13:38:00.000Z"
-      },
-      {
-        "title": "보그가 주목한 우영미 \"더 나은 세상을 꿈꾸는 낙관주의\" 호평",
-        "link": "https://economist.co.kr/article/view/ecn202607090050",
-        "source": "economist.co.kr",
-        "pubDate": "2026-07-09T07:50:00.000Z"
-      },
-      {
-        "title": "솔리드옴므, 디자이너 우영미의 브랜드, 2027 S/S 파리 컬렉션 공개… 글...",
-        "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=203506",
-        "source": "thefirstmedia.net",
-        "pubDate": "2026-07-09T07:14:00.000Z"
-      },
-      {
-        "title": "[포토] 솔리드옴므, 파리서 패션쇼",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBOUzVFQkNNQUNtb3VUbXg5aUVybE5FYXlMQWowYU90eGJrSDluaEhELUF3cnU2Y3doeXg5YnNUd19QRTQ4U0NhN19IYUVkdUQzenVqcnBsekZRQQ?oc=5",
-        "source": "한국경제",
-        "pubDate": "2026-07-09T07:00:00.000Z"
       }
     ],
     "시스템옴므": [
@@ -194,6 +188,12 @@
     "지오송지오": [],
     "바버": [
       {
+        "title": "상반기 주택 압류 21% 급증… 2019년 이후 최고",
+        "link": "http://www.koreatimes.com/article/1623480",
+        "source": "koreatimes.com",
+        "pubDate": "2026-07-30T05:08:00.000Z"
+      },
+      {
         "title": "[민병두의 job史 (43)] 외과의사의 원조, 이발사",
         "link": "https://www.news2day.co.kr/article/20260725500003",
         "source": "news2day.co.kr",
@@ -222,24 +222,6 @@
         "link": "https://www.m-i.kr/news/articleView.html?idxno=1395205",
         "source": "m-i.kr",
         "pubDate": "2026-07-26T23:58:00.000Z"
-      },
-      {
-        "title": "화성특례시, '2026년 이용 기술교육 지원사업' 수료식 개최",
-        "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2452348",
-        "source": "enewstoday.co.kr",
-        "pubDate": "2026-07-24T07:50:00.000Z"
-      },
-      {
-        "title": "킨록앤더슨, 英·日·韓 유통망 넓힌다... 한국은 에든버러 라인 확장",
-        "link": "https://www.fashionbiz.co.kr/article/228123",
-        "source": "fashionbiz.co.kr",
-        "pubDate": "2026-07-24T01:24:00.000Z"
-      },
-      {
-        "title": "美 국방부, 버지니아급 원잠 적기 인도 불가…오커스 무산 위기",
-        "link": "https://www.g-enews.com/view.php?ud=202607240824218322e8b8a793f7_1",
-        "source": "g-enews.com",
-        "pubDate": "2026-07-23T23:26:00.000Z"
       }
     ],
     "산드로옴므": [],
@@ -273,12 +255,6 @@
         "link": "http://www.kdfnews.com/news/articleView.html?idxno=185297",
         "source": "kdfnews.com",
         "pubDate": "2026-07-16T05:26:00.000Z"
-      },
-      {
-        "title": "폭염에도 단정하게… LF, '라이트 포멀' 트렌드 타고 리오더 행진",
-        "link": "https://www.fashionbiz.co.kr/article/227948",
-        "source": "fashionbiz.co.kr",
-        "pubDate": "2026-07-16T00:58:00.000Z"
       }
     ],
     "아스페시": [
@@ -309,19 +285,13 @@
         "title": "맨온더분→던스트, 플래그십에 ‘취향 콘텐츠’ 강화",
         "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBRV1pjdTBvYWhRajkxNm03eE5UN0ZYZE1DNURIdGVVRkJVcF9NUllvdU5HSWdZQjR2SjlkN1VQc05LSWtPaDVqc2xFUFJveDVrbUFNRl9RU212WUpoM1ZwS25qajR5Zw?oc=5",
         "source": "싱글리스트",
-        "pubDate": "2026-07-19T01:08:42.000Z"
+        "pubDate": "2026-07-19T07:00:00.000Z"
       },
       {
         "title": "신세계인터내셔날 맨온더분, 청담 플래그십 매장서 빈티지 마켓",
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9jdTZkYXg2WWVWVmhMeDd3VHhwcDFiT090RERNaHVBdVVON2FYdEhWdTdvU2Z6V0RUSXVxYWNzeXNJSG82dG1VYUhHX0J6M3dYalNnUUpfUXpQck3SAWBBVV95cUxPbjBZNFRXMTRUN0tLdEZ2OXkzeW9aM2c3aXZkOWwxOE94MHhOLXNkU0o1ZmZCZlZCdTNjMGswemY0YjdYYnpwTGVTUEROdjQ1QWdETTYzV2tvSm51Tjd6bmw?oc=5",
         "source": "연합뉴스",
         "pubDate": "2026-07-15T07:00:00.000Z"
-      },
-      {
-        "title": "맨온더분 청담, 용정콜렉션·올드굿띵즈 등과 협업해 '빈티지 마켓' 연다",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1jajBidFJUZjhPVlNWemtPa1F3VG9IVTJpcGpGZ1ZLMUNycjF0UTYxWW45WllkWGsyeGhiYm82bklLNkViaUZKTFBRSXBmb28x?oc=5",
-        "source": "fashionbiz.co.kr",
-        "pubDate": "2026-07-15T02:38:46.000Z"
       }
     ],
     "수트서플라이": [],
@@ -348,7 +318,7 @@
       {
         "title": "[월요기획] LCDC · 포터리 등 라인 익스텐션... “리스크 줄이고, 팬덤 키운다”",
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0wSWktZTlNdHNtSlJxWEZoMVFOeU9MNWRYc0h6cklmal9aUlZUaDJsZFJGVlBoMEVZbXFZVVdxWC1RVC1lUjRSLTlFaG1GUnJ0?oc=5",
-        "source": "fashionbiz.co.kr",
+        "source": "패션비즈",
         "pubDate": "2026-07-19T07:00:00.000Z"
       },
       {
