@@ -1,6 +1,12 @@
 {
-  "lastUpdated": "2026-08-01T23:59:10.591Z",
+  "lastUpdated": "2026-08-03T00:00:37.062Z",
   "industry": [
+    {
+      "title": "형지I&C, '본·캐리스노트' 첫 복합매장 오픈…롯데프리미엄아울렛 이천...",
+      "link": "https://www.news1.kr/industry/distribution/6246791",
+      "source": "news1.kr",
+      "pubDate": "2026-08-02T23:19:00.000Z"
+    },
     {
       "title": "\"한여름 1시간 만에 1.6억 몰렸다\"…LF몰, 역대 최고 찍은 '역시즌 라이...",
       "link": "https://www.thepublic.kr/news/articleView.html?idxno=313372",
@@ -42,12 +48,6 @@
       "link": "https://www.kukinews.com/article/view/kuk202607310100",
       "source": "kukinews.com",
       "pubDate": "2026-07-31T06:26:00.000Z"
-    },
-    {
-      "title": "[유통갤러리] 아모레퍼시픽, 인도서 첫 글로벌 ‘밋유어뷰티 아카데미’...",
-      "link": "https://theviewers.co.kr/View.aspx?No=4169401",
-      "source": "theviewers.co.kr",
-      "pubDate": "2026-07-31T00:48:00.000Z"
     }
   ],
   "data": {
@@ -97,6 +97,12 @@
     ],
     "준지": [
       {
+        "title": "강휘, '오늘의 날씨는 섹시' 김연우로 활약…올블랙 비주얼 근황",
+        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16153080",
+        "source": "topstarnews.net",
+        "pubDate": "2026-08-02T13:14:00.000Z"
+      },
+      {
         "title": "[단독] 준지, 中 명품거리에 첫 매장",
         "link": "https://www.hankyung.com/article/2026072937721",
         "source": "hankyung.com",
@@ -115,7 +121,14 @@
         "pubDate": "2026-07-20T02:10:00.000Z"
       }
     ],
-    "송지오옴므": [],
+    "송지오옴므": [
+      {
+        "title": "‘송지오옴므’ 제품 차별화 속도",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1HTFpxemJ5dnhtTUFfWEpHUXlDVGV5bGRIc3NVZmwyRzJkYzlSeHZNZTlUMjdyZ1hjSUh6OEIwZDJOUXNNTWhIVWo5SlpGU3FVNHA5bGdTU1VITnBOMkZ4SXJfNXd5Z2QxYl85WjYwZ1N6UQ?oc=5",
+        "source": "어패럴뉴스",
+        "pubDate": "2026-08-01T04:24:44.000Z"
+      }
+    ],
     "스톤아일랜드": [
       {
         "title": "“정가 주고는 못 사겠어요”…득템족 몰린 오프프라이스 매장 가보니 ...",
@@ -161,12 +174,6 @@
         "link": "http://www.sisacast.kr/news/articleView.html?idxno=97951",
         "source": "sisacast.kr",
         "pubDate": "2026-07-20T07:22:00.000Z"
-      },
-      {
-        "title": "[유통레이더] CJ올리브영, 컬리, 세라젬, 삼성물산 패션부문, 요기요, 청...",
-        "link": "https://daily.hankooki.com/news/articleView.html?idxno=1387035",
-        "source": "daily.hankooki.com",
-        "pubDate": "2026-07-20T05:02:00.000Z"
       }
     ],
     "톰그레이하운드맨": [],
@@ -174,6 +181,12 @@
     "이로맨": [],
     "지오송지오": [],
     "바버": [
+      {
+        "title": "'화음의 기둥'이 '무대 주인공'으로…금관·타악의 특별한 무대",
+        "link": "https://www.namdonews.com/news/articleView.html?idxno=918772",
+        "source": "namdonews.com",
+        "pubDate": "2026-08-02T08:48:00.000Z"
+      },
       {
         "title": "엘렌 바버, 2026 커먼웰스 게임 7종 경기 100m 허들 출전",
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4wX3VaaklwMnlkWmFqRXcxTWJYUEpJNmJsMWhtZ0o5bjJtcXdQUGR3TWpzaW1DaUNoMXJjX0hmQ04wYldPNjhzeExBaUl3VHpaTmkxN3FBdXozSDh1MmhaVW9RanE5UnJBLTdsLWlR?oc=5",
@@ -189,7 +202,7 @@
       {
         "title": "화성특례시, 소규모 이용업소 기술교육 마무리… 바버 기술·경영 역량 강화",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1JSVJrUXkxcjBXa1kzb2xDcm5JZU1GLTg5Q09MVHBkTWJiZ3RCS3FHQUlpVkdVaGRFMlhxMzA3TGVaTFVWZ1FqQ0JNOG5qZzFRZlp5NG05WmtjWW9KWFlJT2lBcG9ONUFtQnc?oc=5",
-        "source": "newscj.com",
+        "source": "천지일보",
         "pubDate": "2026-07-25T11:18:00.000Z"
       }
     ],
@@ -274,7 +287,7 @@
       },
       {
         "title": "포터리, 여성복 매출 200% 성장",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE56Wk5kNHJYTzBBWk14S0ZMLWlWUTZ3MkowRWpsdncyU21GUEJ5NW9fbWNCblVRTlFNTzlpbnlEWVFzb25BU1lORjdTNG1RdFRqTWZnRUFHTXFIYjA2ZFFpaDJhajZhUQ?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5SbFNDUmNhS1ZBZjBBeld1TV9yZzl5V2JPMUdwb1N4c19JNEJFWmVBYlNFWktEczV6bjQxS2puTHp5cjlScWE5cGNyampGV240RnowaVlkNkpvZGoyaURrWTBrRWE4U2E1eEQ3RzFMRnpVS3d3?oc=5",
         "source": "어패럴뉴스",
         "pubDate": "2026-07-15T07:00:00.000Z"
       }
@@ -304,14 +317,7 @@
     "이스트로그(프레이트)": [],
     "에잇디비젼": [],
     "스컬프스토어": [],
-    "아이엠샵": [
-      {
-        "title": "순진, 상품·유통 다각화",
-        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=226326",
-        "source": "apparelnews.co.kr",
-        "pubDate": "2026-07-12T13:02:00.000Z"
-      }
-    ],
+    "아이엠샵": [],
     "맨메이드카페": []
   }
 }
