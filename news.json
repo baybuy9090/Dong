@@ -1,11 +1,17 @@
 {
-  "lastUpdated": "2026-08-03T00:00:37.062Z",
+  "lastUpdated": "2026-08-04T00:11:22.911Z",
   "industry": [
     {
-      "title": "형지I&C, '본·캐리스노트' 첫 복합매장 오픈…롯데프리미엄아울렛 이천...",
-      "link": "https://www.news1.kr/industry/distribution/6246791",
-      "source": "news1.kr",
-      "pubDate": "2026-08-02T23:19:00.000Z"
+      "title": "형지I&C, 남녀 의류 합친 '복합매장' 롯데아울렛 이천점에 첫선",
+      "link": "http://www.metroseoul.co.kr/article/20260803500325",
+      "source": "metroseoul.co.kr",
+      "pubDate": "2026-08-03T05:18:00.000Z"
+    },
+    {
+      "title": "형지아이앤씨, 남성복 '본'과 여성복 '캐리스노트' 복합매장 첫 오픈",
+      "link": "http://www.apparelnews.co.kr/news/news_view/?idx=226637",
+      "source": "apparelnews.co.kr",
+      "pubDate": "2026-08-03T02:36:00.000Z"
     },
     {
       "title": "\"한여름 1시간 만에 1.6억 몰렸다\"…LF몰, 역대 최고 찍은 '역시즌 라이...",
@@ -42,12 +48,6 @@
       "link": "http://digitalchosun.dizzo.com/site/data/html_dir/2026/07/31/2026073180130.html",
       "source": "digitalchosun.dizzo.com",
       "pubDate": "2026-07-31T06:50:00.000Z"
-    },
-    {
-      "title": "LF몰, 역시즌 쇼핑 통했다…남성 라이브 거래액 ‘역대 최고’ 外 아모...",
-      "link": "https://www.kukinews.com/article/view/kuk202607310100",
-      "source": "kukinews.com",
-      "pubDate": "2026-07-31T06:26:00.000Z"
     }
   ],
   "data": {
@@ -140,6 +140,12 @@
     "CP컴퍼니": [],
     "비이커": [
       {
+        "title": "비이커, 세계 아트페어 프리즈서울 개최에 ‘커먼웰스 앤드 카운슬’ 팝업 전시",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRGl0cFVnQzNkVU9qWUtWckxnWTB3dGFfYWhGNHZVNXVEb01MQmVETTBLbEtDRHBIX3VDenE5S3VPNkhESVRpYldyWDJGbTNKQ3E2Z0pPMFZwZUx6ak91LXlScUVBS21iNldWZEhTOFJqbXNGVl8yTmtkcHlOdFlUT2FYQkY1algzOTVOWWlZbUNVU0FvQ0VWaVY5Um5OZDMxQ2c?oc=5",
+        "source": "패션엔",
+        "pubDate": "2026-08-02T03:47:33.000Z"
+      },
+      {
         "title": "삼성물산 패션, 글로벌 신진 디자이너 육성",
         "link": "https://economist.co.kr/article/view/ecn202607290019",
         "source": "economist.co.kr",
@@ -181,6 +187,18 @@
     "이로맨": [],
     "지오송지오": [],
     "바버": [
+      {
+        "title": "미 의회서 \"투표권 달라\" 외치자…성직자·활동가 줄줄이 체포 [소셜픽...",
+        "link": "https://news.jtbc.co.kr/article/NB12311554?influxDiv=NAVER",
+        "source": "news.jtbc.co.kr",
+        "pubDate": "2026-08-03T23:27:00.000Z"
+      },
+      {
+        "title": "남자는 얼마나 자주 머리를 잘라야 할까?",
+        "link": "https://www.gqkorea.co.kr/2026/08/03/%eb%82%a8%ec%9e%90%eb%8a%94-%ec%96%bc%eb%a7%88%eb%82%98-%ec%9e%90%ec%a3%bc-%eb%a8%b8%eb%a6%ac%eb%a5%bc-%ec%9e%98%eb%9d%bc%ec%95%bc-%ed%95%a0%ea%b9%8c/?utm_source=naver&utm_medium=partnership",
+        "source": "gqkorea.co.kr",
+        "pubDate": "2026-08-03T04:50:00.000Z"
+      },
       {
         "title": "'화음의 기둥'이 '무대 주인공'으로…금관·타악의 특별한 무대",
         "link": "https://www.namdonews.com/news/articleView.html?idxno=918772",
@@ -253,7 +271,7 @@
       },
       {
         "title": "신세계인터내셔날 맨온더분, 청담 플래그십 매장서 빈티지 마켓",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9jdTZkYXg2WWVWVmhMeDd3VHhwcDFiT090RERNaHVBdVVON2FYdEhWdTdvU2Z6V0RUSXVxYWNzeXNJSG82dG1VYUhHX0J6M3dYalNnUUpfUXpQck3SAWBBVV95cUxPbjBZNFRXMTRUN0tLdEZ2OXkzeW9aM2c3aXZkOWwxOE94MHhOLXNkU0o1ZmZCZlZCdTNjMGswemY0YjdYYnpwTGVTUEROdjQ1QWdETTYzV2tvSm51Tjd6bmw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9jdTZkYXg2WWVWVmhMeDd3VHhwcDFiT090RERNaHVBdVVON2FYdEhWdTdvU2Z6V0RUSXVxYWNzeXNJSG82dG1VYUhHX0J6M3dYalNnUUpfUXpQck0?oc=5",
         "source": "연합뉴스",
         "pubDate": "2026-07-15T07:00:00.000Z"
       }
