@@ -1,6 +1,30 @@
 {
-  "lastUpdated": "2026-08-05T00:05:54.301Z",
+  "lastUpdated": "2026-08-06T00:01:56.597Z",
   "industry": [
+    {
+      "title": "캐리스노트, 쉬폰·크링클 소재 '서머 드레스' 인기",
+      "link": "http://www.apparelnews.co.kr/news/news_view/?idx=226721",
+      "source": "apparelnews.co.kr",
+      "pubDate": "2026-08-05T08:46:00.000Z"
+    },
+    {
+      "title": "핀블랙, '2026 F/W 레더자켓 컬렉션' 통해 가죽 재킷 트렌드 공개",
+      "link": "http://www.sisunnews.co.kr/news/articleView.html?idxno=243751",
+      "source": "sisunnews.co.kr",
+      "pubDate": "2026-08-05T07:46:00.000Z"
+    },
+    {
+      "title": "K-패션, 아시아 진출 교두보… '센터스테이지 2026' 프리뷰 아웃리치 성...",
+      "link": "http://www.ktnews.com/news/articleView.html?idxno=147531",
+      "source": "ktnews.com",
+      "pubDate": "2026-08-05T07:16:00.000Z"
+    },
+    {
+      "title": "디올, 조나단 앤더슨의 ‘2026-2027 가을-겨울 컬렉션’ 디올 성수 컨셉...",
+      "link": "https://www.sportsworldi.com/newsView/20260805515211",
+      "source": "sportsworldi.com",
+      "pubDate": "2026-08-05T05:33:00.000Z"
+    },
     {
       "title": "40도 폭염 속 겨울옷 불티…고물가에 계절 역주행 소비↑",
       "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1NZm13M0xDLVpqVXNmOGU2UW9VNDdsVGN3U01oWXBWWFRKOEhPN1Zmb0l0aUVWVnR0ZzFnQTlrSEVfY3VGOWptZ1F1YmQ4MzNjQnh4Z2p0ZXVpbWQ5bGNIU2NMNDF0UmtsMHlpOXFzUmxyY1V5TXQxNtIBeEFVX3lxTE1NZm13M0xDLVpqVXNmOGU2UW9VNDdsVGN3U01oWXBWWFRKOEhPN1Zmb0l0aUVWVnR0ZzFnQTlrSEVfY3VGOWptZ1F1YmQ4MzNjQnh4Z2p0ZXVpbWQ5bGNIU2NMNDF0UmtsMHlpOXFzUmxyY1V5TXQxNg?oc=5",
@@ -24,30 +48,6 @@
       "link": "http://www.mkhealth.co.kr/news/articleView.html?idxno=79491",
       "source": "mkhealth.co.kr",
       "pubDate": "2026-08-04T07:56:00.000Z"
-    },
-    {
-      "title": "형지I&C, 남녀 의류 합친 '복합매장' 롯데아울렛 이천점에 첫선",
-      "link": "http://www.metroseoul.co.kr/article/20260803500325",
-      "source": "metroseoul.co.kr",
-      "pubDate": "2026-08-03T05:18:00.000Z"
-    },
-    {
-      "title": "형지아이앤씨, 남성복 '본'과 여성복 '캐리스노트' 복합매장 첫 오픈",
-      "link": "http://www.apparelnews.co.kr/news/news_view/?idx=226637",
-      "source": "apparelnews.co.kr",
-      "pubDate": "2026-08-03T02:36:00.000Z"
-    },
-    {
-      "title": "\"한여름 1시간 만에 1.6억 몰렸다\"…LF몰, 역대 최고 찍은 '역시즌 라이...",
-      "link": "https://www.thepublic.kr/news/articleView.html?idxno=313372",
-      "source": "thepublic.kr",
-      "pubDate": "2026-08-01T00:06:00.000Z"
-    },
-    {
-      "title": "[유통레이더] 한국콜마 中무석공장, 식약처 품질검증 통과…해외 첫 사...",
-      "link": "https://www.mydaily.co.kr/page/view/2026073118384521842",
-      "source": "mydaily.co.kr",
-      "pubDate": "2026-07-31T09:41:00.000Z"
     }
   ],
   "data": {
@@ -147,6 +147,24 @@
     "CP컴퍼니": [],
     "비이커": [
       {
+        "title": "\"레이싱 감성 스니커즈 선보인다\"... 베자, 신제품 'GT' 선봬",
+        "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=205375",
+        "source": "thefirstmedia.net",
+        "pubDate": "2026-08-05T08:06:00.000Z"
+      },
+      {
+        "title": "베자, 모터스포츠 영감 신제품 'GT' 공개",
+        "link": "http://www.hansbiz.co.kr/news/articleView.html?idxno=854629",
+        "source": "hansbiz.co.kr",
+        "pubDate": "2026-08-05T01:16:00.000Z"
+      },
+      {
+        "title": "베자, 모터스포츠 감성 담은 스니커즈 'GT' 출시…성수·청담서 팝업",
+        "link": "https://www.gpkorea.com/news/articleView.html?idxno=145381",
+        "source": "gpkorea.com",
+        "pubDate": "2026-08-05T00:36:00.000Z"
+      },
+      {
         "title": "비이커, 세계 아트페어 프리즈서울 개최에 ‘커먼웰스 앤드 카운슬’ 팝업 전시",
         "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRGl0cFVnQzNkVU9qWUtWckxnWTB3dGFfYWhGNHZVNXVEb01MQmVETTBLbEtDRHBIX3VDenE5S3VPNkhESVRpYldyWDJGbTNKQ3E2Z0pPMFZwZUx6ak91LXlScUVBS21iNldWZEhTOFJqbXNGVl8yTmtkcHlOdFlUT2FYQkY1algzOTVOWWlZbUNVU0FvQ0VWaVY5Um5OZDMxQ2c?oc=5",
         "source": "패션엔",
@@ -175,18 +193,6 @@
         "link": "https://www.pointdaily.co.kr/news/articleView.html?idxno=312463",
         "source": "pointdaily.co.kr",
         "pubDate": "2026-07-20T19:00:00.000Z"
-      },
-      {
-        "title": "뷰티·패션 인재 키우는 기업, 교육부터 해외 진출까지 지원",
-        "link": "https://www.polinews.co.kr/news/articleView.html?idxno=737422",
-        "source": "polinews.co.kr",
-        "pubDate": "2026-07-20T07:49:00.000Z"
-      },
-      {
-        "title": "삼성물산 패션, 상금 10만 달러·비이커 단독 전시 '제22회 SFDF' 참여 디...",
-        "link": "http://www.sisacast.kr/news/articleView.html?idxno=97951",
-        "source": "sisacast.kr",
-        "pubDate": "2026-07-20T07:22:00.000Z"
       }
     ],
     "톰그레이하운드맨": [],
@@ -253,32 +259,19 @@
         "link": "https://woodplanet.co.kr/news/view/1065585092973478",
         "source": "woodplanet.co.kr",
         "pubDate": "2026-07-28T04:06:00.000Z"
-      },
-      {
-        "title": "한섬 M&A 우호적 환경 조성, '지분 100% 확보' 요건 완화에 선택지 넓어...",
-        "link": "https://www.businesspost.co.kr/BP?command=article_view&num=442405",
-        "source": "businesspost.co.kr",
-        "pubDate": "2026-07-15T07:00:00.000Z"
       }
     ],
     "클럽모나코": [],
-    "맨온더분": [
-      {
-        "title": "맨온더분→던스트, 플래그십에 ‘취향 콘텐츠’ 강화",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBRV1pjdTBvYWhRajkxNm03eE5UN0ZYZE1DNURIdGVVRkJVcF9NUllvdU5HSWdZQjR2SjlkN1VQc05LSWtPaDVqc2xFUFJveDVrbUFNRl9RU212WUpoM1ZwS25qajR5Zw?oc=5",
-        "source": "싱글리스트",
-        "pubDate": "2026-07-19T07:00:00.000Z"
-      },
-      {
-        "title": "신세계인터내셔날 맨온더분, 청담 플래그십 매장서 빈티지 마켓",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9jdTZkYXg2WWVWVmhMeDd3VHhwcDFiT090RERNaHVBdVVON2FYdEhWdTdvU2Z6V0RUSXVxYWNzeXNJSG82dG1VYUhHX0J6M3dYalNnUUpfUXpQck0?oc=5",
-        "source": "연합뉴스",
-        "pubDate": "2026-07-15T07:00:00.000Z"
-      }
-    ],
+    "맨온더분": [],
     "수트서플라이": [],
     "슬로웨어": [],
     "POTTERY": [
+      {
+        "title": "[VISION인터뷰] ‘팟츠 포터리 스튜디오’ 유재은 대표 \"도자기가 전하는 온기와 특별한 의미가 스며들 수 있도록\"",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBybnYwZ3FoRllYMWxOWVBXRUpZMWxwbjF6QkNhQmxpOGx4NEJrdjZLTlNON040VV84N3libDV2djlpMmthWk9iOXFDbVNQSkV1cFQyd3h6cnhwX1c5dUVrZVZqOVE5cjg4aHd2VmVzcEg4Zw?oc=5",
+        "source": "시선뉴스",
+        "pubDate": "2026-08-05T06:50:12.000Z"
+      },
       {
         "title": "신세계인터내셔날, APLB 투자 검토…K뷰티 포트폴리오 확대",
         "link": "http://www.press9.kr/news/articleView.html?idxno=80269",
@@ -302,12 +295,6 @@
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0wSWktZTlNdHNtSlJxWEZoMVFOeU9MNWRYc0h6cklmal9aUlZUaDJsZFJGVlBoMEVZbXFZVVdxWC1RVC1lUjRSLTlFaG1GUnJ0?oc=5",
         "source": "패션비즈",
         "pubDate": "2026-07-19T07:00:00.000Z"
-      },
-      {
-        "title": "포터리, 여성복 매출 200% 성장",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5SbFNDUmNhS1ZBZjBBeld1TV9yZzl5V2JPMUdwb1N4c19JNEJFWmVBYlNFWktEczV6bjQxS2puTHp5cjlScWE5cGNyampGV240RnowaVlkNkpvZGoyaURrWTBrRWE4U2E1eEQ3RzFMRnpVS3d3?oc=5",
-        "source": "어패럴뉴스",
-        "pubDate": "2026-07-15T07:00:00.000Z"
       }
     ],
     "캡틴선샤인": [
