@@ -15,6 +15,14 @@ const LOTTE_STORES = {
   '창원점': '0017', '청량리': '0004', '평촌점': '0341',
 };
 
+// 같은 cstrCd 안에 "백화점"(C00401) 말고 다른 관(town)이 별도로 있는 지점들.
+// 남성 컨템포러리 브랜드가 있는지 직접 확인해서 있는 곳만 등록함
+// (강남 더콘란샵·문화센터, 광복 아쿠아몰, 동탄 D.Avenue, 창원 영플라자,
+// 평촌 문화홀은 확인해봤으나 남성 컨템포러리 브랜드가 없어 제외).
+const LOTTE_EXTRA_TOWNS = {
+  '부산본점': [{ townCd: 'C00402', floors: ['01', '02', 'M3F', 'MF'] }],
+};
+
 const HYUNDAI_STORES = {
   '목동': 'B00142000', '무역센터': 'B00122000', '미아': 'B00141000',
   '본점': 'B00121000', '신촌': 'B00127000', '여의도': 'B00140000',
@@ -47,7 +55,7 @@ const BRAND_PATTERNS = {
   '산드로옴므': ['산드로 옴므', '산드로옴므'],
   '솔리드옴므': ['솔리드옴므', '솔리드 옴므'],
   '송지오옴므': ['송지오'],
-  '수트서플라이': ['수트서플라이', 'SUITSUPPLY'],
+  '수트서플라이': ['수트서플라이', '수트 서플라이', 'SUITSUPPLY'],
   '스컬프스토어': ['스컬프'],
   '스톤아일랜드': ['스톤아일랜드', '스톤 아일랜드'],
   '슬로웨어': ['슬로웨어'],
@@ -68,7 +76,7 @@ const BRAND_PATTERNS = {
   '타임옴므': ['타임옴므'],
   '톰그레이하운드맨': ['톰그레이하운드'],
   '플랫폼플레이스': ['플랫폼플레이스'],
-  '헤리티지플로스': ['헤리티지플로스'],
+  '헤리티지플로스': ['헤리티지플로스', '헤리티지 플로스'],
 };
 
 function matchBrands(rawText) {
@@ -180,7 +188,7 @@ async function fetchWithRetry(url, maxRetries) {
   throw lastError;
 }
 
-async function fetchLotteBrands(cstrCd) {
+async function fetchLotteBrands(cstrCd, storeName) {
   const found = new Set();
   const candidateFlrCds = ['08', '07', '06', '05', '04', '03', '02', '01', 'B1', 'B2'];
   const townCd = 'C00401'; // ⚠️ 강남점 기준값, 다른 지점은 다를 수 있음
@@ -196,6 +204,26 @@ async function fetchLotteBrands(cstrCd) {
       console.log(`롯데 ${cstrCd} ${flrCd}층 오류: ${e.message}`);
     }
   }
+
+  // "백화점" 관 외에 에비뉴엘 등 별도 관이 있는 지점은 그 층들도 추가로 확인
+  // (예: 부산본점은 cstrCd는 같고 cstrTownCd만 C00402로 다른 "에비뉴엘" 관에
+  // 스톤아일랜드 등이 입점해 있는데, 기존엔 C00401만 봐서 놓치고 있었음)
+  const extraTowns = LOTTE_EXTRA_TOWNS[storeName] || [];
+  for (const { townCd: extraTownCd, floors } of extraTowns) {
+    for (const flrCd of floors) {
+      try {
+        const url = `https://www.lotteshopping.com/store/floorDetailAjax?cstrCd=${cstrCd}&cstrTownCd=${extraTownCd}&flrCd=${flrCd}`;
+        const res = await fetchWithRetry(url, 2);
+        if (!res.ok) continue;
+        const text = await res.text();
+        matchBrands(text).forEach(b => found.add(b));
+        await sleep(300);
+      } catch (e) {
+        console.log(`롯데 ${cstrCd} ${extraTownCd} ${flrCd}층 오류: ${e.message}`);
+      }
+    }
+  }
+
   return found;
 }
 
@@ -258,7 +286,7 @@ async function main() {
       let note = '확인';
 
       if (job.type === 'lotte') {
-        brands = Array.from(await fetchLotteBrands(job.code));
+        brands = Array.from(await fetchLotteBrands(job.code, job.store));
       } else if (job.type === 'hyundai') {
         const r = await fetchHyundaiBrands(job.store, job.code);
         brands = r.found;
