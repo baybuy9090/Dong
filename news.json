@@ -1,53 +1,61 @@
 {
-  "lastUpdated": "2026-08-07T01:42:38.383Z",
+  "lastUpdated": "2026-08-07T02:32:36.104Z",
   "industry": [
     {
       "title": "본질에 충실한 미니멀리즘, '넌블랭크' 5년 연속 성장세",
       "link": "http://www.apparelnews.co.kr/news/news_view/?idx=226749",
       "source": "apparelnews.co.kr",
-      "pubDate": "2026-08-06T13:04:00.000Z"
+      "pubDate": "2026-08-06T13:04:00.000Z",
+      "sentiment": "positive"
     },
     {
       "title": "[Fashion & NOW] 미스토홀딩스 말레이시아 법인, 상반기 신규 매장 4곳 오...",
       "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1719455",
       "source": "ebn.co.kr",
-      "pubDate": "2026-08-06T07:28:00.000Z"
+      "pubDate": "2026-08-06T07:28:00.000Z",
+      "sentiment": "positive"
     },
     {
       "title": "캐리스노트, 쉬폰·크링클 소재 '서머 드레스' 인기",
       "link": "http://www.apparelnews.co.kr/news/news_view/?idx=226721",
       "source": "apparelnews.co.kr",
-      "pubDate": "2026-08-05T08:46:00.000Z"
+      "pubDate": "2026-08-05T08:46:00.000Z",
+      "sentiment": "positive"
     },
     {
       "title": "핀블랙, '2026 F/W 레더자켓 컬렉션' 통해 가죽 재킷 트렌드 공개",
       "link": "http://www.sisunnews.co.kr/news/articleView.html?idxno=243751",
       "source": "sisunnews.co.kr",
-      "pubDate": "2026-08-05T07:46:00.000Z"
+      "pubDate": "2026-08-05T07:46:00.000Z",
+      "sentiment": "neutral"
     },
     {
       "title": "K-패션, 아시아 진출 교두보… '센터스테이지 2026' 프리뷰 아웃리치 성...",
       "link": "http://www.ktnews.com/news/articleView.html?idxno=147531",
       "source": "ktnews.com",
-      "pubDate": "2026-08-05T07:16:00.000Z"
+      "pubDate": "2026-08-05T07:16:00.000Z",
+      "sentiment": "neutral"
     },
     {
       "title": "디올, 조나단 앤더슨의 ‘2026-2027 가을-겨울 컬렉션’ 디올 성수 컨셉...",
       "link": "https://www.sportsworldi.com/newsView/20260805515211",
       "source": "sportsworldi.com",
-      "pubDate": "2026-08-05T05:33:00.000Z"
+      "pubDate": "2026-08-05T05:33:00.000Z",
+      "sentiment": "neutral"
     },
     {
       "title": "40도 폭염 속 겨울옷 불티…고물가에 계절 역주행 소비↑",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1NZm13M0xDLVpqVXNmOGU2UW9VNDdsVGN3U01oWXBWWFRKOEhPN1Zmb0l0aUVWVnR0ZzFnQTlrSEVfY3VGOWptZ1F1YmQ4MzNjQnh4Z2p0ZXVpbWQ5bGNIU2NMNDF0UmtsMHlpOXFzUmxyY1V5TXQxNtIBeEFVX3lxTE1NZm13M0xDLVpqVXNmOGU2UW9VNDdsVGN3U01oWXBWWFRKOEhPN1Zmb0l0aUVWVnR0ZzFnQTlrSEVfY3VGOWptZ1F1YmQ4MzNjQnh4Z2p0ZXVpbWQ5bGNIU2NMNDF0UmtsMHlpOXFzUmxyY1V5TXQxNg?oc=5",
-      "source": "뉴시스",
-      "pubDate": "2026-08-04T20:00:00.000Z"
+      "link": "https://www.widedaily.com/news/articleView.html?idxno=298866",
+      "source": "widedaily.com",
+      "pubDate": "2026-08-05T01:24:00.000Z",
+      "sentiment": "positive"
     },
     {
       "title": "서울 클래식 축제 풍성…국제음악제부터 클래식 레볼루션까지",
       "link": "https://www.edaily.co.kr/news/newspath.asp?newsid=06182806645544040",
       "source": "edaily.co.kr",
-      "pubDate": "2026-08-04T08:48:00.000Z"
+      "pubDate": "2026-08-04T08:48:00.000Z",
+      "sentiment": "neutral"
     }
   ],
   "data": {
@@ -56,7 +64,8 @@
         "title": "iM증권, 한섬 목표가 21%↓…\" 주가, 팬데믹 저점 수준\"",
         "link": "https://www.yna.co.kr/view/AKR20260805021500008?input=1195m",
         "source": "yna.co.kr",
-        "pubDate": "2026-08-04T23:26:00.000Z"
+        "pubDate": "2026-08-04T23:26:00.000Z",
+        "sentiment": "neutral"
       }
     ],
     "띠어리맨": [],
@@ -65,13 +74,15 @@
         "title": "김재원, 프린지 재킷으로 강렬 화보 비주얼",
         "link": "https://www.topstarnews.net/news/articleView.html?idxno=16150452",
         "source": "topstarnews.net",
-        "pubDate": "2026-07-30T15:18:00.000Z"
+        "pubDate": "2026-07-30T15:18:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "김재원, GQ 화보로 '레이디 두아' 이후 또 다른 매력 증명",
         "link": "https://www.topstarnews.net/news/articleView.html?idxno=16149997",
         "source": "topstarnews.net",
-        "pubDate": "2026-07-30T05:34:00.000Z"
+        "pubDate": "2026-07-30T05:34:00.000Z",
+        "sentiment": "neutral"
       }
     ],
     "시스템옴므": [
@@ -79,13 +90,15 @@
         "title": "현대리바트 '코리아빌드위크'...한섬 시스템파리 26FW",
         "link": "https://www.slist.kr/news/articleView.html?idxno=757246",
         "source": "slist.kr",
-        "pubDate": "2026-08-07T01:16:00.000Z"
+        "pubDate": "2026-08-07T01:16:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "“해외 바이어 모셔라”... 글로벌 공략 사활 건 K패션",
         "link": "https://www.chosun.com/economy/market_trend/2026/07/23/2AEVVXHEFREGTPPB2OWALOS5YY/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
         "source": "chosun.com",
-        "pubDate": "2026-07-23T09:27:00.000Z"
+        "pubDate": "2026-07-23T09:27:00.000Z",
+        "sentiment": "neutral"
       }
     ],
     "우영미": [
@@ -93,7 +106,8 @@
         "title": "여름 스타일 '한 끗' 이렇게 연출해 보세요",
         "link": "https://www.esquirekorea.co.kr/article/1906793",
         "source": "esquirekorea.co.kr",
-        "pubDate": "2026-07-28T04:00:00.000Z"
+        "pubDate": "2026-07-28T04:00:00.000Z",
+        "sentiment": "neutral"
       }
     ],
     "준지": [
@@ -101,51 +115,66 @@
         "title": "안효섭, 동네 마실 가듯! 와이드 버뮤다 팬츠와 오버핏 집업 꾸안꾸 청...",
         "link": "http://www.fashionn.com/board/read_new.php?table=1024&number=61972",
         "source": "fashionn.com",
-        "pubDate": "2026-08-07T01:32:00.000Z"
+        "pubDate": "2026-08-07T01:32:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "안효섭X칼리드, ‘썸띵 스페셜’ MV 공개… 글로벌 행보ing",
         "link": "https://www.bntnews.co.kr/article/view/bnt202608070109",
         "source": "bntnews.co.kr",
-        "pubDate": "2026-08-07T00:30:00.000Z"
+        "pubDate": "2026-08-07T00:30:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "준지 글로벌 앰배서더 배우 안효섭, 베이징 매장 오픈 행사 참석차 출국",
+        "link": "https://www.fashionbiz.co.kr/article/228417",
+        "source": "fashionbiz.co.kr",
+        "pubDate": "2026-08-07T00:12:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "안효섭, 배우 넘어 가수로…칼리드와 'Something Special' MV 공개",
         "link": "https://www.slist.kr/news/articleView.html?idxno=757218",
         "source": "slist.kr",
-        "pubDate": "2026-08-07T00:04:00.000Z"
+        "pubDate": "2026-08-07T00:04:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "강휘, '오늘의 날씨는 섹시' 김연우로 활약…올블랙 비주얼 근황",
         "link": "https://www.topstarnews.net/news/articleView.html?idxno=16153080",
         "source": "topstarnews.net",
-        "pubDate": "2026-08-02T13:14:00.000Z"
+        "pubDate": "2026-08-02T13:14:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "[단독] 준지, 中 명품거리에 첫 매장",
         "link": "https://www.hankyung.com/article/2026072937721",
         "source": "hankyung.com",
-        "pubDate": "2026-07-29T08:34:00.000Z"
+        "pubDate": "2026-07-29T08:34:00.000Z",
+        "sentiment": "positive"
       },
       {
         "title": "[Brand Insight] Samsung C&T: The Foundation of Samsung Group",
         "link": "https://www.newscj.com/news/articleView.html?idxno=3420331",
         "source": "newscj.com",
-        "pubDate": "2026-07-27T22:02:00.000Z"
+        "pubDate": "2026-07-27T22:02:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "K-패션 신예 디자이너 찾는다…삼성물산 제22회 SFDF 모집",
         "link": "http://www.4th.kr/news/articleView.html?idxno=2114946",
         "source": "4th.kr",
-        "pubDate": "2026-07-20T02:10:00.000Z"
+        "pubDate": "2026-07-20T02:10:00.000Z",
+        "sentiment": "neutral"
       }
     ],
     "송지오옴므": [
       {
         "title": "‘송지오옴므’ 제품 차별화 속도",
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1HTFpxemJ5dnhtTUFfWEpHUXlDVGV5bGRIc3NVZmwyRzJkYzlSeHZNZTlUMjdyZ1hjSUh6OEIwZDJOUXNNTWhIVWo5SlpGU3FVNHA5bGdTU1VITnBOMkZ4SXJfNXd5Z2QxYl85WjYwZ1N6UQ?oc=5",
-        "source": "apparelnews.co.kr",
-        "pubDate": "2026-08-01T04:24:45.000Z"
+        "source": "어패럴뉴스",
+        "pubDate": "2026-08-01T04:24:45.000Z",
+        "sentiment": "neutral"
       }
     ],
     "스톤아일랜드": [
@@ -153,13 +182,15 @@
         "title": "올해 2분기 가장 핫한 브랜드 '샤넬'…여름·스포츠가 트렌드 끌었다",
         "link": "http://www.ktnews.com/news/articleView.html?idxno=147556",
         "source": "ktnews.com",
-        "pubDate": "2026-08-06T03:14:00.000Z"
+        "pubDate": "2026-08-06T03:14:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "“정가 주고는 못 사겠어요”…득템족 몰린 오프프라이스 매장 가보니 ...",
         "link": "https://www.mk.co.kr/article/12103416",
         "source": "mk.co.kr",
-        "pubDate": "2026-07-21T06:49:00.000Z"
+        "pubDate": "2026-07-21T06:49:00.000Z",
+        "sentiment": "neutral"
       }
     ],
     "CP컴퍼니": [],
@@ -168,49 +199,57 @@
         "title": "[패션·잡화 트렌드] 르무통, '손태진의 트로트 라디오'와 함께 르무통...",
         "link": "https://www.ibabynews.com/news/articleView.html?idxno=153534",
         "source": "ibabynews.com",
-        "pubDate": "2026-08-07T00:26:00.000Z"
+        "pubDate": "2026-08-07T00:26:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "\"레이싱 감성 스니커즈 선보인다\"... 베자, 신제품 'GT' 선봬",
         "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=205375",
         "source": "thefirstmedia.net",
-        "pubDate": "2026-08-05T08:06:00.000Z"
+        "pubDate": "2026-08-05T08:06:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "베자, 모터스포츠 영감 신제품 'GT' 공개",
         "link": "http://www.hansbiz.co.kr/news/articleView.html?idxno=854629",
         "source": "hansbiz.co.kr",
-        "pubDate": "2026-08-05T01:16:00.000Z"
+        "pubDate": "2026-08-05T01:16:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "베자, 모터스포츠 감성 담은 스니커즈 'GT' 출시…성수·청담서 팝업",
         "link": "https://www.gpkorea.com/news/articleView.html?idxno=145381",
         "source": "gpkorea.com",
-        "pubDate": "2026-08-05T00:36:00.000Z"
+        "pubDate": "2026-08-05T00:36:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "비이커, 세계 아트페어 프리즈서울 개최에 ‘커먼웰스 앤드 카운슬’ 팝업 전시",
         "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRGl0cFVnQzNkVU9qWUtWckxnWTB3dGFfYWhGNHZVNXVEb01MQmVETTBLbEtDRHBIX3VDenE5S3VPNkhESVRpYldyWDJGbTNKQ3E2Z0pPMFZwZUx6ak91LXlScUVBS21iNldWZEhTOFJqbXNGVl8yTmtkcHlOdFlUT2FYQkY1algzOTVOWWlZbUNVU0FvQ0VWaVY5Um5OZDMxQ2c?oc=5",
         "source": "패션엔",
-        "pubDate": "2026-08-02T03:47:33.000Z"
+        "pubDate": "2026-08-02T03:47:33.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "삼성물산 패션, 글로벌 신진 디자이너 육성",
         "link": "https://economist.co.kr/article/view/ecn202607290019",
         "source": "economist.co.kr",
-        "pubDate": "2026-07-29T00:49:00.000Z"
+        "pubDate": "2026-07-29T00:49:00.000Z",
+        "sentiment": "positive"
       },
       {
         "title": "[유通하는 사람들] ⑯ 김기현 신세계백화점 여성패션팀장…\"K-헤리티지...",
         "link": "https://www.youthdaily.co.kr/news/article.html?no=223828",
         "source": "youthdaily.co.kr",
-        "pubDate": "2026-07-27T23:00:00.000Z"
+        "pubDate": "2026-07-27T23:00:00.000Z",
+        "sentiment": "positive"
       },
       {
         "title": "제22회 SFDF, 넥스트 글로벌 패션 스타 찾는다.",
         "link": "http://www.ktnews.com/news/articleView.html?idxno=147295",
         "source": "ktnews.com",
-        "pubDate": "2026-07-21T00:22:00.000Z"
+        "pubDate": "2026-07-21T00:22:00.000Z",
+        "sentiment": "positive"
       }
     ],
     "톰그레이하운드맨": [],
@@ -221,7 +260,8 @@
         "title": "길어진 여름…7월 말까지 신상품 투입한다",
         "link": "http://www.apparelnews.co.kr/news/news_view/?idx=226745",
         "source": "apparelnews.co.kr",
-        "pubDate": "2026-08-06T13:04:00.000Z"
+        "pubDate": "2026-08-06T13:04:00.000Z",
+        "sentiment": "neutral"
       }
     ],
     "바버": [
@@ -229,49 +269,57 @@
         "title": "배당만 믿었다간 큰코 다친다···美 배당주의 배신",
         "link": "https://www.edaily.co.kr/news/newspath.asp?newsid=01420246645545024",
         "source": "edaily.co.kr",
-        "pubDate": "2026-08-06T18:07:00.000Z"
+        "pubDate": "2026-08-06T18:07:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "교방예술 생명력·공동체 정신으로 통영 부활 춤사위 [지역에 사니다]",
         "link": "https://www.idomin.com/news/articleView.html?idxno=2011856",
         "source": "idomin.com",
-        "pubDate": "2026-08-06T09:06:00.000Z"
+        "pubDate": "2026-08-06T09:06:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "[더벨][IR Briefing | 기도산업 IPO] 김상범 사장 \"고마진 제품 확대, 배...",
         "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608061403062520103075",
         "source": "thebell.co.kr",
-        "pubDate": "2026-08-06T08:08:00.000Z"
+        "pubDate": "2026-08-06T08:08:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "‘46년 기능성 의류 장인’ 기도산업 “글로벌 브랜드 제조 파트너 도약...",
         "link": "https://www.edaily.co.kr/news/newspath.asp?newsid=06737126645544696",
         "source": "edaily.co.kr",
-        "pubDate": "2026-08-06T07:51:00.000Z"
+        "pubDate": "2026-08-06T07:51:00.000Z",
+        "sentiment": "positive"
       },
       {
         "title": "[IPO] 기도산업, 이달 상장...\"글로벌 하이테크 아웃도어 전문기업 도약...",
         "link": "https://www.asiatime.co.kr/article/20260806500305",
         "source": "asiatime.co.kr",
-        "pubDate": "2026-08-06T06:38:00.000Z"
+        "pubDate": "2026-08-06T06:38:00.000Z",
+        "sentiment": "positive"
       },
       {
         "title": "[IPO 현장터치] \"바늘구멍까지 기술로 막는다\"…기도산업, 코스닥 출사표",
         "link": "https://www.news2day.co.kr/article/20260806500177",
         "source": "news2day.co.kr",
-        "pubDate": "2026-08-06T06:16:00.000Z"
+        "pubDate": "2026-08-06T06:16:00.000Z",
+        "sentiment": "positive"
       },
       {
         "title": "기도산업 \"상장 후 케파 50% 확대⋯2030년 매출 5000억\"",
         "link": "http://www.inews24.com/view/1992551",
         "source": "inews24.com",
-        "pubDate": "2026-08-06T06:02:00.000Z"
+        "pubDate": "2026-08-06T06:02:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "미 의회서 \"투표권 달라\" 외치자…성직자·활동가 줄줄이 체포 [소셜픽...",
         "link": "https://news.jtbc.co.kr/article/NB12311554?influxDiv=NAVER",
         "source": "news.jtbc.co.kr",
-        "pubDate": "2026-08-03T23:27:00.000Z"
+        "pubDate": "2026-08-03T23:27:00.000Z",
+        "sentiment": "neutral"
       }
     ],
     "산드로옴므": [],
@@ -280,49 +328,57 @@
         "title": "\"한여름 1시간 만에 1.6억 몰렸다\"…LF몰, 역대 최고 찍은 '역시즌 라이...",
         "link": "https://www.thepublic.kr/news/articleView.html?idxno=313372",
         "source": "thepublic.kr",
-        "pubDate": "2026-08-01T00:06:00.000Z"
+        "pubDate": "2026-08-01T00:06:00.000Z",
+        "sentiment": "positive"
       },
       {
         "title": "[유통레이더] 한국콜마 中무석공장, 식약처 품질검증 통과…해외 첫 사...",
         "link": "https://www.mydaily.co.kr/page/view/2026073118384521842",
         "source": "mydaily.co.kr",
-        "pubDate": "2026-07-31T09:41:00.000Z"
+        "pubDate": "2026-07-31T09:41:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "LF몰, 겨울 아우터 수요 선점…남성 컨템포러리 라이브 거래액 최대 기...",
         "link": "http://www.lawissue.co.kr/view.php?ud=202607311758427704204ead0791_12",
         "source": "lawissue.co.kr",
-        "pubDate": "2026-07-31T09:00:00.000Z"
+        "pubDate": "2026-07-31T09:00:00.000Z",
+        "sentiment": "positive"
       },
       {
         "title": "폭염에도 겨울 아우터 '불티'···LF몰, 역시즌 수요 '쑥'",
         "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2454691",
         "source": "enewstoday.co.kr",
-        "pubDate": "2026-07-31T07:35:00.000Z"
+        "pubDate": "2026-07-31T07:35:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "LF몰, 역시즌 라이브 운영…‘역시즌 특가’ 검색량 2배 증가",
         "link": "http://digitalchosun.dizzo.com/site/data/html_dir/2026/07/31/2026073180130.html",
         "source": "digitalchosun.dizzo.com",
-        "pubDate": "2026-07-31T06:50:00.000Z"
+        "pubDate": "2026-07-31T06:50:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "LF몰, 역시즌 쇼핑 통했다…남성 라이브 거래액 ‘역대 최고’ 外 아모...",
         "link": "https://www.kukinews.com/article/view/kuk202607310100",
         "source": "kukinews.com",
-        "pubDate": "2026-07-31T06:26:00.000Z"
+        "pubDate": "2026-07-31T06:26:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "[유통갤러리] 아모레퍼시픽, 인도서 첫 글로벌 ‘밋유어뷰티 아카데미’...",
         "link": "https://theviewers.co.kr/View.aspx?No=4169401",
         "source": "theviewers.co.kr",
-        "pubDate": "2026-07-31T00:48:00.000Z"
+        "pubDate": "2026-07-31T00:48:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "[오늘의 유통가] 삼양식품·문체부, '불닭' 앞세워 방한 관광 홍보 外",
         "link": "https://dealsite.co.kr/articles/166330",
         "source": "dealsite.co.kr",
-        "pubDate": "2026-07-31T00:34:00.000Z"
+        "pubDate": "2026-07-31T00:34:00.000Z",
+        "sentiment": "neutral"
       }
     ],
     "아스페시": [],
@@ -331,7 +387,8 @@
         "title": "나무 공간 <0914 도산 플래그십 스토어>... 명품의 길, 나무의 공간",
         "link": "https://woodplanet.co.kr/news/view/1065585092973478",
         "source": "woodplanet.co.kr",
-        "pubDate": "2026-07-28T04:06:00.000Z"
+        "pubDate": "2026-07-28T04:06:00.000Z",
+        "sentiment": "neutral"
       }
     ],
     "클럽모나코": [],
@@ -343,25 +400,29 @@
         "title": "[VISION인터뷰] '팟츠 포터리 스튜디오' 유재은 대표 \"도자기가 전하는 ...",
         "link": "http://www.sisunnews.co.kr/news/articleView.html?idxno=243727",
         "source": "sisunnews.co.kr",
-        "pubDate": "2026-08-05T06:12:00.000Z"
+        "pubDate": "2026-08-05T06:12:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "신세계인터내셔날, APLB 투자 검토…K뷰티 포트폴리오 확대",
         "link": "http://www.press9.kr/news/articleView.html?idxno=80269",
         "source": "press9.kr",
-        "pubDate": "2026-07-29T07:08:00.000Z"
+        "pubDate": "2026-07-29T07:08:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "할인 넘어 경험으로…아울렛 '체류형 경쟁' 본격화",
         "link": "https://www.newsway.co.kr/news/view?ud=2026072416271496107",
         "source": "newsway.co.kr",
-        "pubDate": "2026-07-24T08:00:00.000Z"
+        "pubDate": "2026-07-24T08:00:00.000Z",
+        "sentiment": "positive"
       },
       {
         "title": "[월요기획] LCDC · 포터리 등 라인 익스텐션... “리스크 줄이고, 팬덤 키운다”",
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0wSWktZTlNdHNtSlJxWEZoMVFOeU9MNWRYc0h6cklmal9aUlZUaDJsZFJGVlBoMEVZbXFZVVdxWC1RVC1lUjRSLTlFaG1GUnJ0?oc=5",
         "source": "패션비즈",
-        "pubDate": "2026-07-19T07:00:00.000Z"
+        "pubDate": "2026-07-19T07:00:00.000Z",
+        "sentiment": "negative"
       }
     ],
     "캡틴선샤인": [
@@ -369,13 +430,15 @@
         "title": "‘노재팬’ 그늘 걷히자…日 맥주 웃고 패션 브랜드 몰려왔다",
         "link": "https://www.sedaily.com/article/20072084?ref=naver",
         "source": "sedaily.com",
-        "pubDate": "2026-07-26T22:26:00.000Z"
+        "pubDate": "2026-07-26T22:26:00.000Z",
+        "sentiment": "neutral"
       },
       {
         "title": "삿포로 맥주·도쿄룩…일상 파고든 日 브랜드",
         "link": "https://www.sedaily.com/article/20071889?ref=naver",
         "source": "sedaily.com",
-        "pubDate": "2026-07-26T02:56:00.000Z"
+        "pubDate": "2026-07-26T02:56:00.000Z",
+        "sentiment": "neutral"
       }
     ],
     "PAF": [
@@ -383,7 +446,8 @@
         "title": "디자이너 브랜드, 쇼룸의 진화 '브랜드 경험 공간' 경쟁",
         "link": "http://www.ktnews.com/news/articleView.html?idxno=147317",
         "source": "ktnews.com",
-        "pubDate": "2026-07-22T02:22:00.000Z"
+        "pubDate": "2026-07-22T02:22:00.000Z",
+        "sentiment": "neutral"
       }
     ],
     "이스트로그(프레이트)": [],

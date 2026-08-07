@@ -251,9 +251,37 @@ function dropCrossBrandNoise(rawByBrand) {
   return result;
 }
 
-function stripInternalFields(item) {
+// 키워드 기반 간단 감성 분석 — 별도 API 없이 제목+본문에 긍정/부정 단어가
+// 얼마나 나오는지 세어서 판정. 보도자료 특성상 긍정 어투가 많아 애매한
+// 경우(둘 다 0개거나 동률)는 중립으로 처리. 미묘한 뉘앙스까지는 못 잡지만
+// 대략적인 톤 파악용으로 사용.
+const POSITIVE_KEYWORDS = [
+  '성장', '호조', '호평', '인기', '흥행', '수상', '선정', '확장', '완판', '화제',
+  '극찬', '1위', '베스트', '유치', '도약', '강세', '견인', '최대', '역대급',
+  '대박', '인기몰이', '신기록', '순항', '가속', '주목', '기대', '협업', '리뉴얼',
+  '신규 오픈', '단독', '수혜', '반등', '흑자',
+];
+const NEGATIVE_KEYWORDS = [
+  '철수', '폐점', '부진', '하락', '감소', '적자', '논란', '위기', '리콜', '소송',
+  '불매', '비판', '결함', '사고', '파산', '구설', '침체', '저조', '단종', '중단',
+  '취소', '해지', '갑질', '불만', '한파', '역풍', '급감', '곤두박질', '몸살',
+  '휘청', '폭락', '먹구름', '악화', '리스크',
+];
+function classifySentiment(text) {
+  let pos = 0;
+  let neg = 0;
+  POSITIVE_KEYWORDS.forEach(w => { if (text.includes(w)) pos++; });
+  NEGATIVE_KEYWORDS.forEach(w => { if (text.includes(w)) neg++; });
+  if (pos === 0 && neg === 0) return 'neutral';
+  if (pos > neg) return 'positive';
+  if (neg > pos) return 'negative';
+  return 'neutral';
+}
+
+function finalizeArticle(item) {
+  const sentiment = classifySentiment(item.title + ' ' + (item._desc || ''));
   const { _desc, ...rest } = item;
-  return rest;
+  return { ...rest, sentiment };
 }
 
 async function fetchIndustryNews() {
@@ -268,7 +296,7 @@ async function fetchIndustryNews() {
     await sleep(400);
   }
   const deduped = dedupSimilarTitles(filterRecentAndSort(all));
-  return deduped.slice(0, INDUSTRY_ARTICLES).map(stripInternalFields);
+  return deduped.slice(0, INDUSTRY_ARTICLES).map(finalizeArticle);
 }
 
 async function main() {
@@ -287,7 +315,7 @@ async function main() {
   const cleanedByBrand = dropCrossBrandNoise(rawByBrand);
   const data = {};
   BRANDS.forEach(brand => {
-    data[brand] = cleanedByBrand[brand].slice(0, ARTICLES_PER_BRAND).map(stripInternalFields);
+    data[brand] = cleanedByBrand[brand].slice(0, ARTICLES_PER_BRAND).map(finalizeArticle);
   });
 
   process.stdout.write('수집 중: [업계 전체] 남성/맨즈 컨템포러리 ... ');
