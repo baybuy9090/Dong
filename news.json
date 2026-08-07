@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-07T02:32:36.104Z",
+  "lastUpdated": "2026-08-07T23:36:15.053Z",
   "industry": [
     {
       "title": "본질에 충실한 미니멀리즘, '넌블랭크' 5년 연속 성장세",
@@ -112,6 +112,27 @@
     ],
     "준지": [
       {
+        "title": "안효섭X칼리드 ‘Something Special’ 공식 뮤비 공개",
+        "link": "https://sports.khan.co.kr/article/202608071814003?pt=nv",
+        "source": "sports.khan.co.kr",
+        "pubDate": "2026-08-07T09:15:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "준지(JUUN.J) 글로벌 앰버서더 배우 안효섭, 베이징 매장 오픈 행사 참석...",
+        "link": "http://www.sisunnews.co.kr/news/articleView.html?idxno=243905",
+        "source": "sisunnews.co.kr",
+        "pubDate": "2026-08-07T06:58:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "‘케데헌’ 대박난 안효섭. 글로벌 음악 시장서도 통했다",
+        "link": "https://www.newsen.com/news_view.php?uid=202608071543251910",
+        "source": "newsen.com",
+        "pubDate": "2026-08-07T06:55:00.000Z",
+        "sentiment": "positive"
+      },
+      {
         "title": "안효섭, 동네 마실 가듯! 와이드 버뮤다 팬츠와 오버핏 집업 꾸안꾸 청...",
         "link": "http://www.fashionn.com/board/read_new.php?table=1024&number=61972",
         "source": "fashionn.com",
@@ -123,20 +144,6 @@
         "link": "https://www.bntnews.co.kr/article/view/bnt202608070109",
         "source": "bntnews.co.kr",
         "pubDate": "2026-08-07T00:30:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "준지 글로벌 앰배서더 배우 안효섭, 베이징 매장 오픈 행사 참석차 출국",
-        "link": "https://www.fashionbiz.co.kr/article/228417",
-        "source": "fashionbiz.co.kr",
-        "pubDate": "2026-08-07T00:12:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "안효섭, 배우 넘어 가수로…칼리드와 'Something Special' MV 공개",
-        "link": "https://www.slist.kr/news/articleView.html?idxno=757218",
-        "source": "slist.kr",
-        "pubDate": "2026-08-07T00:04:00.000Z",
         "sentiment": "neutral"
       },
       {
@@ -158,13 +165,6 @@
         "link": "https://www.newscj.com/news/articleView.html?idxno=3420331",
         "source": "newscj.com",
         "pubDate": "2026-07-27T22:02:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "K-패션 신예 디자이너 찾는다…삼성물산 제22회 SFDF 모집",
-        "link": "http://www.4th.kr/news/articleView.html?idxno=2114946",
-        "source": "4th.kr",
-        "pubDate": "2026-07-20T02:10:00.000Z",
         "sentiment": "neutral"
       }
     ],
