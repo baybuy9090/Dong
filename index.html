@@ -165,7 +165,7 @@
 
     .empty { padding: 40px; text-align: center; color: #999; font-size: 13px; }
 
-    #tableMatrixView, #floorView, #mapView, #newsView, #sentimentView { display: none; }
+    #tableMatrixView, #floorView, #mapView, #newsView { display: none; }
     .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
     .news-card { background: white; border: 1px solid #eee; border-radius: 10px; padding: 14px 16px; }
     .news-card h4 { margin: 0 0 8px; font-size: 14px; display: flex; justify-content: space-between; align-items: center; }
@@ -400,7 +400,6 @@
     <button class="tab-btn tabnav-btn" data-tab="map" id="tabMap" onclick="switchTab('map')">📍 상권 지도</button>
     <button class="tab-btn tabnav-btn" data-tab="floor" id="tabFloor" onclick="switchTab('floor')">🗺️ 층 도면 보기</button>
     <button class="tab-btn tabnav-btn" data-tab="news" id="tabNews" onclick="switchTab('news')">📰 브랜드 뉴스</button>
-    <button class="tab-btn tabnav-btn" data-tab="sentiment" id="tabSentiment" onclick="switchTab('sentiment')">💬 브랜드 반응</button>
     <button class="tab-btn tabnav-btn" data-tab="table" id="tabTable" onclick="switchTab('table')">📋 표·매트릭스</button>
   </div>
 
@@ -410,7 +409,6 @@
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="map" onclick="switchTab('map')"><span class="mtb-icon">📍</span><span class="mtb-label">지도</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="floor" onclick="switchTab('floor')"><span class="mtb-icon">🗺️</span><span class="mtb-label">도면</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="news" onclick="switchTab('news')"><span class="mtb-icon">📰</span><span class="mtb-label">뉴스</span></button>
-    <button class="mobile-tabbar-btn tabnav-btn" data-tab="sentiment" onclick="switchTab('sentiment')"><span class="mtb-icon">💬</span><span class="mtb-label">반응</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="table" onclick="switchTab('table')"><span class="mtb-icon">📋</span><span class="mtb-label">표</span></button>
   </nav>
 
@@ -574,24 +572,11 @@
       <h3>브랜드별 뉴스</h3>
       <div class="subtitle" style="margin-bottom:8px;">
         네이버/구글 뉴스에서 브랜드명으로 검색한 최근 기사를 매일 오전 자동으로 모아옵니다. 브랜드가 워낙 많다 보니 일부 기사는 무관할 수 있어요 — 참고용으로 봐주세요.
+        기사마다 제목·본문의 긍정/부정 단어를 세어 톤을 자동 분류(😊/😟/😐)했어요 — 키워드 기반이라 미묘한 뉘앙스는 못 잡을 수 있습니다.
         <span id="newsUpdated" style="display:block;margin-top:4px;color:#888;font-size:11.5px;"></span>
       </div>
       <input id="newsSearchInput" placeholder="브랜드명 검색" oninput="renderNews()" style="width:220px;padding:6px 10px;border:1px solid #ddd;border-radius:6px;margin-bottom:12px;">
       <div id="newsList" class="news-grid"></div>
-    </div>
-  </div>
-
-  <!-- 브랜드 반응(감성 분석) -->
-  <div id="sentimentView">
-    <div class="panel" style="margin-bottom:14px;">
-      <h3>브랜드별 반응 (긍정·부정·중립)</h3>
-      <div class="subtitle" style="margin-bottom:8px;">
-        브랜드 뉴스 탭과 같은 기사를 대상으로, 제목·본문에 등장하는 긍정/부정 단어를 세어 기사 톤을 자동으로 분류합니다.
-        키워드 기반 판정이라 미묘한 뉘앙스는 못 잡을 수 있어요 — 참고용으로 봐주세요.
-        <span id="sentimentUpdated" style="display:block;margin-top:4px;color:#888;font-size:11.5px;"></span>
-      </div>
-      <input id="sentimentSearchInput" placeholder="브랜드명 검색" oninput="renderSentiment()" style="width:220px;padding:6px 10px;border:1px solid #ddd;border-radius:6px;margin-bottom:12px;">
-      <div id="sentimentList" class="news-grid"></div>
     </div>
   </div>
 
@@ -1177,16 +1162,14 @@
       document.getElementById('floorView').style.display = tab === 'floor' ? 'block' : 'none';
       document.getElementById('mapView').style.display = tab === 'map' ? 'block' : 'none';
       document.getElementById('newsView').style.display = tab === 'news' ? 'block' : 'none';
-      document.getElementById('sentimentView').style.display = tab === 'sentiment' ? 'block' : 'none';
-      document.getElementById('controlsBar').style.display = (tab === 'map' || tab === 'news' || tab === 'sentiment') ? 'none' : 'flex';
-      document.getElementById('mobileFilterTrigger').style.display = (tab === 'map' || tab === 'news' || tab === 'sentiment') ? 'none' : '';
+      document.getElementById('controlsBar').style.display = (tab === 'map' || tab === 'news') ? 'none' : 'flex';
+      document.getElementById('mobileFilterTrigger').style.display = (tab === 'map' || tab === 'news') ? 'none' : '';
       closeMobileFilterSheet();
       if (tab === 'table' && tableSub === 'matrix') renderMatrix();
       if (tab === 'overview') renderOverview();
       if (tab === 'floor') renderFloorView();
       if (tab === 'map') renderMap();
       if (tab === 'news') renderNews();
-      if (tab === 'sentiment') renderSentiment();
       if (tab !== 'overview') {
         const stickyHeader = document.getElementById('regionRankingStickyHeader');
         if (stickyHeader) stickyHeader.style.display = 'none';
@@ -2134,52 +2117,6 @@
       return Math.floor(days / 30) + '개월 전';
     }
 
-    function newsArticleListHtml(items, escapeHtml) {
-      return items.map(a => `
-        <li>
-          <a href="${escapeHtml(a.link)}" target="_blank" rel="noopener">${escapeHtml(a.title)}</a>
-          <div class="news-meta">${escapeHtml(a.source || '')} · ${timeAgo(a.pubDate)}</div>
-        </li>`).join('');
-    }
-
-    function renderNews() {
-      const escapeHtml = s => String(s == null ? '' : s)
-        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-
-      const updatedEl = document.getElementById('newsUpdated');
-      updatedEl.textContent = newsLastUpdated
-        ? '뉴스 최종 수집: ' + new Date(newsLastUpdated).toLocaleString('ko-KR', { year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit' }) + ' · 최근 3주 이내 기사만 표시'
-        : '뉴스 데이터 없음 (GitHub Actions "브랜드 뉴스 크롤링" 워크플로우가 아직 실행되지 않았을 수 있습니다)';
-
-      const keyword = (document.getElementById('newsSearchInput').value || '').trim().toUpperCase();
-      const brands = ALL_BRANDS_ORDERED.filter(b =>
-        !NEWS_EXCLUDED_BRANDS.has(b) && (newsData[b] || []).length > 0 && (!keyword || b.toUpperCase().includes(keyword)));
-      const container = document.getElementById('newsList');
-
-      const industryCard = (!keyword && newsIndustry.length > 0)
-        ? `<div class="news-card news-card-industry">
-            <h4><span>🏬 남성 컨템포러리 업계 전체</span></h4>
-            <ul>${newsArticleListHtml(newsIndustry, escapeHtml)}</ul>
-          </div>`
-        : '';
-
-      if (brands.length === 0 && !industryCard) {
-        container.innerHTML = '<div class="empty" style="grid-column:1/-1;">최근 3주 이내 표시할 뉴스가 없습니다.</div>';
-        return;
-      }
-
-      const brandCards = brands.map(b => {
-        const items = newsData[b] || [];
-        return `
-          <div class="news-card">
-            <h4><span>${escapeHtml(b)}</span><span class="tier-label">${escapeHtml(tierOf(b))}</span></h4>
-            <ul>${newsArticleListHtml(items, escapeHtml)}</ul>
-          </div>`;
-      }).join('');
-
-      container.innerHTML = industryCard + brandCards;
-    }
-
     const SENTIMENT_META = {
       positive: { label: '긍정', emoji: '😊', color: '#1a9d4c', bg: '#eaf7ee' },
       negative: { label: '부정', emoji: '😟', color: '#d9363e', bg: '#fdecec' },
@@ -2209,19 +2146,19 @@
         <div style="font-size:10.5px;color:#888;margin-bottom:8px;">😊 긍정 ${counts.positive} · 😟 부정 ${counts.negative} · 😐 중립 ${counts.neutral}</div>`;
     }
 
-    function renderSentiment() {
+    function renderNews() {
       const escapeHtml = s => String(s == null ? '' : s)
         .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-      const updatedEl = document.getElementById('sentimentUpdated');
+      const updatedEl = document.getElementById('newsUpdated');
       updatedEl.textContent = newsLastUpdated
         ? '최종 수집: ' + new Date(newsLastUpdated).toLocaleString('ko-KR', { year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit' }) + ' · 최근 3주 이내 기사만 표시'
         : '뉴스 데이터 없음 (GitHub Actions "브랜드 뉴스 크롤링" 워크플로우가 아직 실행되지 않았을 수 있습니다)';
 
-      const keyword = (document.getElementById('sentimentSearchInput').value || '').trim().toUpperCase();
+      const keyword = (document.getElementById('newsSearchInput').value || '').trim().toUpperCase();
       const brands = ALL_BRANDS_ORDERED.filter(b =>
         !NEWS_EXCLUDED_BRANDS.has(b) && (newsData[b] || []).length > 0 && (!keyword || b.toUpperCase().includes(keyword)));
-      const container = document.getElementById('sentimentList');
+      const container = document.getElementById('newsList');
 
       const industryCard = (!keyword && newsIndustry.length > 0)
         ? `<div class="news-card news-card-industry">
