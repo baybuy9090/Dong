@@ -1,6 +1,13 @@
 {
-  "lastUpdated": "2026-08-07T23:36:15.053Z",
+  "lastUpdated": "2026-08-08T23:31:32.947Z",
   "industry": [
+    {
+      "title": "스파오키즈, 롯데월드몰서 팝업...본·캐리스노트, 복합매장 오픈",
+      "link": "https://www.slist.kr/news/articleView.html?idxno=757547",
+      "source": "slist.kr",
+      "pubDate": "2026-08-08T23:20:00.000Z",
+      "sentiment": "neutral"
+    },
     {
       "title": "본질에 충실한 미니멀리즘, '넌블랭크' 5년 연속 성장세",
       "link": "http://www.apparelnews.co.kr/news/news_view/?idx=226749",
@@ -49,13 +56,6 @@
       "source": "widedaily.com",
       "pubDate": "2026-08-05T01:24:00.000Z",
       "sentiment": "positive"
-    },
-    {
-      "title": "서울 클래식 축제 풍성…국제음악제부터 클래식 레볼루션까지",
-      "link": "https://www.edaily.co.kr/news/newspath.asp?newsid=06182806645544040",
-      "source": "edaily.co.kr",
-      "pubDate": "2026-08-04T08:48:00.000Z",
-      "sentiment": "neutral"
     }
   ],
   "data": {
@@ -224,13 +224,6 @@
         "sentiment": "neutral"
       },
       {
-        "title": "비이커, 세계 아트페어 프리즈서울 개최에 ‘커먼웰스 앤드 카운슬’ 팝업 전시",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRGl0cFVnQzNkVU9qWUtWckxnWTB3dGFfYWhGNHZVNXVEb01MQmVETTBLbEtDRHBIX3VDenE5S3VPNkhESVRpYldyWDJGbTNKQ3E2Z0pPMFZwZUx6ak91LXlScUVBS21iNldWZEhTOFJqbXNGVl8yTmtkcHlOdFlUT2FYQkY1algzOTVOWWlZbUNVU0FvQ0VWaVY5Um5OZDMxQ2c?oc=5",
-        "source": "패션엔",
-        "pubDate": "2026-08-02T03:47:33.000Z",
-        "sentiment": "neutral"
-      },
-      {
         "title": "삼성물산 패션, 글로벌 신진 디자이너 육성",
         "link": "https://economist.co.kr/article/view/ecn202607290019",
         "source": "economist.co.kr",
@@ -249,6 +242,13 @@
         "link": "http://www.ktnews.com/news/articleView.html?idxno=147295",
         "source": "ktnews.com",
         "pubDate": "2026-07-21T00:22:00.000Z",
+        "sentiment": "positive"
+      },
+      {
+        "title": "[출근길 포인트] 靑, '초과이윤 배분' 회의 왜 미뤘나…\"증시 부담·사회...",
+        "link": "https://www.pointdaily.co.kr/news/articleView.html?idxno=312463",
+        "source": "pointdaily.co.kr",
+        "pubDate": "2026-07-20T19:00:00.000Z",
         "sentiment": "positive"
       }
     ],
@@ -325,6 +325,13 @@
     "산드로옴므": [],
     "질스튜어트뉴욕": [
       {
+        "title": "질스튜어트뉴욕 JSNY, 로호팝 주제 경쾌한 감성의 여성 컬렉션 출시",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOa2lMdkVlb25xc3FtdDVUeE5wRncwMFlCRFRXeGV6dmZmY0M3Y0h2VWdSVWFuMlZpNEoyM01BRGo1X0JHaDlwbjM4WmlqYk1ES2RXZU9rWG9vM3hKMF9VTFd4Y0VBbzY1dXpnRFBUQlJsZkkxMXgyTS1XX1VKcFJhWlFTWllHQVN4MmtmVkt3aFhyemJudGVmTGwybkliRXRrZ0E?oc=5",
+        "source": "패션엔",
+        "pubDate": "2026-08-07T17:21:50.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "\"한여름 1시간 만에 1.6억 몰렸다\"…LF몰, 역대 최고 찍은 '역시즌 라이...",
         "link": "https://www.thepublic.kr/news/articleView.html?idxno=313372",
         "source": "thepublic.kr",
@@ -371,13 +378,6 @@
         "link": "https://theviewers.co.kr/View.aspx?No=4169401",
         "source": "theviewers.co.kr",
         "pubDate": "2026-07-31T00:48:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "[오늘의 유통가] 삼양식품·문체부, '불닭' 앞세워 방한 관광 홍보 外",
-        "link": "https://dealsite.co.kr/articles/166330",
-        "source": "dealsite.co.kr",
-        "pubDate": "2026-07-31T00:34:00.000Z",
         "sentiment": "neutral"
       }
     ],
