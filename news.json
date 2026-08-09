@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-08T23:31:32.947Z",
+  "lastUpdated": "2026-08-09T23:33:45.731Z",
   "industry": [
     {
       "title": "스파오키즈, 롯데월드몰서 팝업...본·캐리스노트, 복합매장 오픈",
@@ -112,6 +112,20 @@
     ],
     "준지": [
       {
+        "title": "삼성물산 패션부문 준지, 미스토홀딩스와 손잡고 중국 럭셔리 시장 공략...",
+        "link": "http://www.popcornnews.net/news/articleView.html?idxno=129098",
+        "source": "popcornnews.net",
+        "pubDate": "2026-08-09T23:26:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "티몰·청두 이어 베이징까지…준지, 중국 럭셔리 시장 공략 속도",
+        "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=475748",
+        "source": "pinpointnews.co.kr",
+        "pubDate": "2026-08-09T23:16:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "안효섭X칼리드 ‘Something Special’ 공식 뮤비 공개",
         "link": "https://sports.khan.co.kr/article/202608071814003?pt=nv",
         "source": "sports.khan.co.kr",
@@ -151,20 +165,6 @@
         "link": "https://www.topstarnews.net/news/articleView.html?idxno=16153080",
         "source": "topstarnews.net",
         "pubDate": "2026-08-02T13:14:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "[단독] 준지, 中 명품거리에 첫 매장",
-        "link": "https://www.hankyung.com/article/2026072937721",
-        "source": "hankyung.com",
-        "pubDate": "2026-07-29T08:34:00.000Z",
-        "sentiment": "positive"
-      },
-      {
-        "title": "[Brand Insight] Samsung C&T: The Foundation of Samsung Group",
-        "link": "https://www.newscj.com/news/articleView.html?idxno=3420331",
-        "source": "newscj.com",
-        "pubDate": "2026-07-27T22:02:00.000Z",
         "sentiment": "neutral"
       }
     ],
@@ -416,13 +416,6 @@
         "source": "newsway.co.kr",
         "pubDate": "2026-07-24T08:00:00.000Z",
         "sentiment": "positive"
-      },
-      {
-        "title": "[월요기획] LCDC · 포터리 등 라인 익스텐션... “리스크 줄이고, 팬덤 키운다”",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0wSWktZTlNdHNtSlJxWEZoMVFOeU9MNWRYc0h6cklmal9aUlZUaDJsZFJGVlBoMEVZbXFZVVdxWC1RVC1lUjRSLTlFaG1GUnJ0?oc=5",
-        "source": "패션비즈",
-        "pubDate": "2026-07-19T07:00:00.000Z",
-        "sentiment": "negative"
       }
     ],
     "캡틴선샤인": [
