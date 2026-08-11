@@ -1,6 +1,27 @@
 {
-  "lastUpdated": "2026-08-10T23:37:26.435Z",
+  "lastUpdated": "2026-08-11T23:42:36.502Z",
   "industry": [
+    {
+      "title": "알레그리, 고급화 전략 이어간다",
+      "link": "http://www.apparelnews.co.kr/news/news_view/?idx=226843",
+      "source": "apparelnews.co.kr",
+      "pubDate": "2026-08-11T13:04:00.000Z",
+      "sentiment": "positive"
+    },
+    {
+      "title": "스페이스H 서울, 외국인 구매 고객 64%…올해 1~7월 매출 전년比 70% 증가",
+      "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065595584287008",
+      "source": "megaeconomy.co.kr",
+      "pubDate": "2026-08-11T06:48:00.000Z",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "LF 헤지스, 외국인 고객 늘며 명동 K-패션 쇼핑 거점 부상",
+      "link": "http://www.lawissue.co.kr/view.php?ud=20260811113038864204ead0791_12",
+      "source": "lawissue.co.kr",
+      "pubDate": "2026-08-11T02:32:00.000Z",
+      "sentiment": "neutral"
+    },
     {
       "title": "[핵심 상권 리포트] 강남역 / 압구정 / 신사 가로수길",
       "link": "http://www.apparelnews.co.kr/news/news_view/?idx=226798",
@@ -34,27 +55,6 @@
       "link": "http://www.ktnews.com/news/articleView.html?idxno=147620",
       "source": "ktnews.com",
       "pubDate": "2026-08-10T05:44:00.000Z",
-      "sentiment": "positive"
-    },
-    {
-      "title": "스파오키즈, 롯데월드몰서 팝업...본·캐리스노트, 복합매장 오픈",
-      "link": "https://www.slist.kr/news/articleView.html?idxno=757547",
-      "source": "slist.kr",
-      "pubDate": "2026-08-08T23:20:00.000Z",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "본질에 충실한 미니멀리즘, '넌블랭크' 5년 연속 성장세",
-      "link": "http://www.apparelnews.co.kr/news/news_view/?idx=226749",
-      "source": "apparelnews.co.kr",
-      "pubDate": "2026-08-06T13:04:00.000Z",
-      "sentiment": "positive"
-    },
-    {
-      "title": "[Fashion & NOW] 미스토홀딩스 말레이시아 법인, 상반기 신규 매장 4곳 오...",
-      "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1719455",
-      "source": "ebn.co.kr",
-      "pubDate": "2026-08-06T07:28:00.000Z",
       "sentiment": "positive"
     }
   ],
@@ -103,6 +103,13 @@
     ],
     "우영미": [
       {
+        "title": "K패션 중국 1호점 어디에 냈나…中 진출 공식 바뀐다",
+        "link": "http://www.ktnews.com/news/articleView.html?idxno=147660",
+        "source": "ktnews.com",
+        "pubDate": "2026-08-11T06:58:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "대전서부소방서, 승진자 임용신고식",
         "link": "http://fpn119.co.kr/255068",
         "source": "fpn119.co.kr",
@@ -126,25 +133,46 @@
     ],
     "준지": [
       {
+        "title": "K패션 ‘질적 성장’ 집중...중국 시장 공략 새판 짠다",
+        "link": "https://www.etoday.co.kr/news/view/2609940",
+        "source": "etoday.co.kr",
+        "pubDate": "2026-08-11T09:02:00.000Z",
+        "sentiment": "positive"
+      },
+      {
+        "title": "뷰티·패션 업계, 늦여름 총력전…대형 프로모션부터 해외 시장 확장까...",
+        "link": "http://www.dailypop.kr/news/articleView.html?idxno=101440",
+        "source": "dailypop.kr",
+        "pubDate": "2026-08-11T04:20:00.000Z",
+        "sentiment": "positive"
+      },
+      {
+        "title": "삼성패션 준지, 미스토와 중국 럭셔리시장 진출",
+        "link": "https://biz.heraldcorp.com/article/10837232?ref=naver",
+        "source": "biz.heraldcorp.com",
+        "pubDate": "2026-08-11T02:21:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "뷰티는 '탈중국'·패션은 '재도전'…대륙 바라보는 엇갈린 전략",
+        "link": "https://view.asiae.co.kr/article/2026081017123504648",
+        "source": "view.asiae.co.kr",
+        "pubDate": "2026-08-11T00:45:00.000Z",
+        "sentiment": "positive"
+      },
+      {
+        "title": "JUUN.J expands into Beijing to target China's luxury market",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE92R0VrT2d3MVdqS25FdG8tWWY2VzZiZUQyM2huclJzajljSmE5VzRaOGplenVady11dmF2X3ZDbXFPXzd2VlB3VURCaXQ2ZzFRYUZwOFY5ZkdOeFZ3NDc0cg?oc=5",
+        "source": "네이트",
+        "pubDate": "2026-08-11T00:12:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "미스토홀딩스, 삼성물산 글로벌 디자이너 브랜드 ‘준지(JUUN.J)’ 중국 ...",
         "link": "https://sports.khan.co.kr/article/202608110052003?pt=nv",
         "source": "sports.khan.co.kr",
         "pubDate": "2026-08-10T15:53:00.000Z",
         "sentiment": "neutral"
-      },
-      {
-        "title": "삼성패션 ‘준지’, 中 럭셔리시장 공략… 베이징 매장 열어",
-        "link": "https://www.donga.com/news/Economy/article/all/20260810/134452476/2",
-        "source": "donga.com",
-        "pubDate": "2026-08-10T15:31:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "삼성물산 패션부문 준지, 베이징에 중국 두 번째 단독 매장",
-        "link": "http://www.lawissue.co.kr/view.php?ud=202608101904285880204ead0791_12",
-        "source": "lawissue.co.kr",
-        "pubDate": "2026-08-10T10:06:00.000Z",
-        "sentiment": "positive"
       },
       {
         "title": "패션업계, 가벼워지고 넓어지고 똑똑해진다···제품·글로벌·AI 경쟁...",
@@ -158,27 +186,6 @@
         "link": "https://www.greened.kr/news/articleView.html?idxno=347287",
         "source": "greened.kr",
         "pubDate": "2026-08-10T08:02:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "[Fashion & NOW] 신원, AI 기반 운영체계 구축 등",
-        "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1719804",
-        "source": "ebn.co.kr",
-        "pubDate": "2026-08-10T07:42:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "모자 관리기 내놓고 中 럭셔리 공략…패션기업, 사업 반경 넓힌다",
-        "link": "http://www.kdfnews.com/news/articleView.html?idxno=186299",
-        "source": "kdfnews.com",
-        "pubDate": "2026-08-10T06:04:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "준지(JUUN.J) 글로벌 앰버서더 배우 안효섭, 베이징 매장 오픈 행사 참석차 출국… 감각적인 공항패션 눈길",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE13SXdaQTBxdmpGN3NWbWl1WF9ObkVnLXBQYVA1NnN4WjhXS0dQRUoxRUppVXlmZGUtdDZLVlM3Z1kwenlLSVhTUHlqUDVWSE9zTU5MaEF1eTZkTDY0VXBydDMyRFBDekVwYkZjYl9n0gFyQVVfeXFMUDdublMzRVltNm9OeW04WEZDeDFsMGczaTJyczRSLUZ4Q2llNmh5a0h0R2gzRjlmai1vZGJuUHZWRHprNlgtbmpGMS1YTlRnT2RvV1ZLZ2xKY2hFbG1LSVJsaFJ4MVVLZ1VqQ2txWk9GRlFB?oc=5",
-        "source": "시선뉴스",
-        "pubDate": "2026-08-07T06:57:22.000Z",
         "sentiment": "neutral"
       }
     ],
@@ -197,13 +204,6 @@
         "link": "http://www.ktnews.com/news/articleView.html?idxno=147556",
         "source": "ktnews.com",
         "pubDate": "2026-08-06T03:14:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "“정가 주고는 못 사겠어요”…득템족 몰린 오프프라이스 매장 가보니 ...",
-        "link": "https://www.mk.co.kr/article/12103416",
-        "source": "mk.co.kr",
-        "pubDate": "2026-07-21T06:49:00.000Z",
         "sentiment": "neutral"
       }
     ],
@@ -250,13 +250,6 @@
         "source": "youthdaily.co.kr",
         "pubDate": "2026-07-27T23:00:00.000Z",
         "sentiment": "positive"
-      },
-      {
-        "title": "제22회 SFDF, 넥스트 글로벌 패션 스타 찾는다.",
-        "link": "http://www.ktnews.com/news/articleView.html?idxno=147295",
-        "source": "ktnews.com",
-        "pubDate": "2026-07-21T00:22:00.000Z",
-        "sentiment": "positive"
       }
     ],
     "톰그레이하운드맨": [],
@@ -272,6 +265,13 @@
       }
     ],
     "바버": [
+      {
+        "title": "런던에 사는 30대 남자는 실제로 얼마나 벌까? 서른 명에게 물었다",
+        "link": "https://www.gqkorea.co.kr/2026/08/11/%eb%9f%b0%eb%8d%98%ec%97%90-%ec%82%ac%eb%8a%94-30%eb%8c%80-%eb%82%a8%ec%9e%90%eb%8a%94-%ec%8b%a4%ec%a0%9c%eb%a1%9c-%ec%96%bc%eb%a7%88%eb%82%98-%eb%b2%8c%ea%b9%8c-%ec%84%9c%eb%a5%b8-%eb%aa%85%ec%97%90/?utm_source=naver&utm_medium=partnership",
+        "source": "gqkorea.co.kr",
+        "pubDate": "2026-08-11T00:56:00.000Z",
+        "sentiment": "neutral"
+      },
       {
         "title": "그냥 명품인 줄 알았는데…'버버리 코트'에 숨겨진 비밀 [김혜경의 브랜...",
         "link": "https://www.hankyung.com/article/202608032396i",
@@ -319,13 +319,6 @@
         "link": "https://www.asiatime.co.kr/article/20260806500305",
         "source": "asiatime.co.kr",
         "pubDate": "2026-08-06T06:38:00.000Z",
-        "sentiment": "positive"
-      },
-      {
-        "title": "[IPO 현장터치] \"바늘구멍까지 기술로 막는다\"…기도산업, 코스닥 출사표",
-        "link": "https://www.news2day.co.kr/article/20260806500177",
-        "source": "news2day.co.kr",
-        "pubDate": "2026-08-06T06:16:00.000Z",
         "sentiment": "positive"
       }
     ],
