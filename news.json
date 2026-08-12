@@ -1,6 +1,13 @@
 {
-  "lastUpdated": "2026-08-11T23:42:36.502Z",
+  "lastUpdated": "2026-08-12T23:44:05.435Z",
   "industry": [
+    {
+      "title": "형지I&C, 남녀복합매장으로 고객층 확대…자사몰과 연계해 매출 시너지...",
+      "link": "https://view.asiae.co.kr/article/2026081209191204395",
+      "source": "view.asiae.co.kr",
+      "pubDate": "2026-08-12T00:19:00.000Z",
+      "sentiment": "neutral"
+    },
     {
       "title": "알레그리, 고급화 전략 이어간다",
       "link": "http://www.apparelnews.co.kr/news/news_view/?idx=226843",
@@ -49,13 +56,6 @@
       "source": "segye.com",
       "pubDate": "2026-08-10T06:28:00.000Z",
       "sentiment": "neutral"
-    },
-    {
-      "title": "캐리스노트, 롯데 강남점 리뉴얼 오픈",
-      "link": "http://www.ktnews.com/news/articleView.html?idxno=147620",
-      "source": "ktnews.com",
-      "pubDate": "2026-08-10T05:44:00.000Z",
-      "sentiment": "positive"
     }
   ],
   "data": {
@@ -86,6 +86,13 @@
       }
     ],
     "시스템옴므": [
+      {
+        "title": "백화점이 살렸다…패션업계, 잇단 호실적에 '방긋'",
+        "link": "https://news.bizwatch.co.kr/article/consumer/2026/08/12/0027",
+        "source": "news.bizwatch.co.kr",
+        "pubDate": "2026-08-12T07:41:00.000Z",
+        "sentiment": "positive"
+      },
       {
         "title": "현대리바트 '코리아빌드위크'...한섬 시스템파리 26FW",
         "link": "https://www.slist.kr/news/articleView.html?idxno=757246",
@@ -133,6 +140,20 @@
     ],
     "준지": [
       {
+        "title": "K패션, 다시 뚫는 중국 시장 \"혼자 가지 않는다\"",
+        "link": "http://www.ktnews.com/news/articleView.html?idxno=147683",
+        "source": "ktnews.com",
+        "pubDate": "2026-08-12T05:12:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "삼성물산 패션 '준지', 中 베이징 싼리툰에 첫 매장 열어",
+        "link": "https://www.cnbizm.com/news/articleView.html?idxno=311272",
+        "source": "cnbizm.com",
+        "pubDate": "2026-08-12T02:12:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "K패션 ‘질적 성장’ 집중...중국 시장 공략 새판 짠다",
         "link": "https://www.etoday.co.kr/news/view/2609940",
         "source": "etoday.co.kr",
@@ -172,20 +193,6 @@
         "link": "https://sports.khan.co.kr/article/202608110052003?pt=nv",
         "source": "sports.khan.co.kr",
         "pubDate": "2026-08-10T15:53:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "패션업계, 가벼워지고 넓어지고 똑똑해진다···제품·글로벌·AI 경쟁...",
-        "link": "https://www.smartbizn.com/news/articleView.html?idxno=150871",
-        "source": "smartbizn.com",
-        "pubDate": "2026-08-10T09:50:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "중화권 매출 21.3%↑… 실적 앞세운 미스토홀딩스, 삼성 준지까지 품었...",
-        "link": "https://www.greened.kr/news/articleView.html?idxno=347287",
-        "source": "greened.kr",
-        "pubDate": "2026-08-10T08:02:00.000Z",
         "sentiment": "neutral"
       }
     ],
@@ -266,6 +273,13 @@
     ],
     "바버": [
       {
+        "title": "경북보건대 지역 미용업체 재직자 실무교육.. '이용전문가 양성과정'",
+        "link": "https://www.veritas-a.com/news/articleView.html?idxno=622881",
+        "source": "veritas-a.com",
+        "pubDate": "2026-08-12T01:10:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "런던에 사는 30대 남자는 실제로 얼마나 벌까? 서른 명에게 물었다",
         "link": "https://www.gqkorea.co.kr/2026/08/11/%eb%9f%b0%eb%8d%98%ec%97%90-%ec%82%ac%eb%8a%94-30%eb%8c%80-%eb%82%a8%ec%9e%90%eb%8a%94-%ec%8b%a4%ec%a0%9c%eb%a1%9c-%ec%96%bc%eb%a7%88%eb%82%98-%eb%b2%8c%ea%b9%8c-%ec%84%9c%eb%a5%b8-%eb%aa%85%ec%97%90/?utm_source=naver&utm_medium=partnership",
         "source": "gqkorea.co.kr",
@@ -313,13 +327,6 @@
         "source": "edaily.co.kr",
         "pubDate": "2026-08-06T07:51:00.000Z",
         "sentiment": "positive"
-      },
-      {
-        "title": "[IPO] 기도산업, 이달 상장...\"글로벌 하이테크 아웃도어 전문기업 도약...",
-        "link": "https://www.asiatime.co.kr/article/20260806500305",
-        "source": "asiatime.co.kr",
-        "pubDate": "2026-08-06T06:38:00.000Z",
-        "sentiment": "positive"
       }
     ],
     "산드로옴므": [],
@@ -329,6 +336,13 @@
         "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOa2lMdkVlb25xc3FtdDVUeE5wRncwMFlCRFRXeGV6dmZmY0M3Y0h2VWdSVWFuMlZpNEoyM01BRGo1X0JHaDlwbjM4WmlqYk1ES2RXZU9rWG9vM3hKMF9VTFd4Y0VBbzY1dXpnRFBUQlJsZkkxMXgyTS1XX1VKcFJhWlFTWllHQVN4MmtmVkt3aFhyemJudGVmTGwybkliRXRrZ0E?oc=5",
         "source": "패션엔",
         "pubDate": "2026-08-07T17:21:50.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "폭염은 여름, 소비는 가을·겨울…패션업계 FW 선점 경쟁",
+        "link": "http://www.mkhealth.co.kr/news/articleView.html?idxno=79491",
+        "source": "mkhealth.co.kr",
+        "pubDate": "2026-08-04T07:56:00.000Z",
         "sentiment": "neutral"
       },
       {
@@ -371,13 +385,6 @@
         "link": "https://www.kukinews.com/article/view/kuk202607310100",
         "source": "kukinews.com",
         "pubDate": "2026-07-31T06:26:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "[유통갤러리] 아모레퍼시픽, 인도서 첫 글로벌 ‘밋유어뷰티 아카데미’...",
-        "link": "https://theviewers.co.kr/View.aspx?No=4169401",
-        "source": "theviewers.co.kr",
-        "pubDate": "2026-07-31T00:48:00.000Z",
         "sentiment": "neutral"
       }
     ],
@@ -434,15 +441,7 @@
         "sentiment": "neutral"
       }
     ],
-    "PAF": [
-      {
-        "title": "디자이너 브랜드, 쇼룸의 진화 '브랜드 경험 공간' 경쟁",
-        "link": "http://www.ktnews.com/news/articleView.html?idxno=147317",
-        "source": "ktnews.com",
-        "pubDate": "2026-07-22T02:22:00.000Z",
-        "sentiment": "neutral"
-      }
-    ],
+    "PAF": [],
     "이스트로그(프레이트)": [],
     "에잇디비젼": [],
     "스컬프스토어": [],
