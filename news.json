@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-12T23:44:05.435Z",
+  "lastUpdated": "2026-08-13T23:43:26.564Z",
   "industry": [
     {
       "title": "형지I&C, 남녀복합매장으로 고객층 확대…자사몰과 연계해 매출 시너지...",
@@ -87,6 +87,13 @@
     ],
     "시스템옴므": [
       {
+        "title": "[포토] 한섬, 성수동 ‘키스 서울’서 시스템 파리 팝업",
+        "link": "https://www.etoday.co.kr/news/view/2614246",
+        "source": "etoday.co.kr",
+        "pubDate": "2026-08-13T05:58:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "백화점이 살렸다…패션업계, 잇단 호실적에 '방긋'",
         "link": "https://news.bizwatch.co.kr/article/consumer/2026/08/12/0027",
         "source": "news.bizwatch.co.kr",
@@ -98,13 +105,6 @@
         "link": "https://www.slist.kr/news/articleView.html?idxno=757246",
         "source": "slist.kr",
         "pubDate": "2026-08-07T01:16:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "“해외 바이어 모셔라”... 글로벌 공략 사활 건 K패션",
-        "link": "https://www.chosun.com/economy/market_trend/2026/07/23/2AEVVXHEFREGTPPB2OWALOS5YY/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-        "source": "chosun.com",
-        "pubDate": "2026-07-23T09:27:00.000Z",
         "sentiment": "neutral"
       }
     ],
@@ -207,6 +207,13 @@
     ],
     "스톤아일랜드": [
       {
+        "title": "[충청 유통가 레이더] 무더위 날릴 할인 대전",
+        "link": "https://www.jbnews.com/news/articleView.html?idxno=1509389",
+        "source": "jbnews.com",
+        "pubDate": "2026-08-13T01:46:00.000Z",
+        "sentiment": "positive"
+      },
+      {
         "title": "올해 2분기 가장 핫한 브랜드 '샤넬'…여름·스포츠가 트렌드 끌었다",
         "link": "http://www.ktnews.com/news/articleView.html?idxno=147556",
         "source": "ktnews.com",
@@ -273,6 +280,13 @@
     ],
     "바버": [
       {
+        "title": "‘위험 감수해야 자산 축적’… 美 Z세대, 투자 밑천으로 스포츠 베팅 ...",
+        "link": "https://biz.chosun.com/international/international_economy/2026/08/13/WZHQLMCCMZBE3OOIO6XB5B7X7M/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+        "source": "biz.chosun.com",
+        "pubDate": "2026-08-13T05:46:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "경북보건대 지역 미용업체 재직자 실무교육.. '이용전문가 양성과정'",
         "link": "https://www.veritas-a.com/news/articleView.html?idxno=622881",
         "source": "veritas-a.com",
@@ -320,13 +334,6 @@
         "source": "thebell.co.kr",
         "pubDate": "2026-08-06T08:08:00.000Z",
         "sentiment": "neutral"
-      },
-      {
-        "title": "‘46년 기능성 의류 장인’ 기도산업 “글로벌 브랜드 제조 파트너 도약...",
-        "link": "https://www.edaily.co.kr/news/newspath.asp?newsid=06737126645544696",
-        "source": "edaily.co.kr",
-        "pubDate": "2026-08-06T07:51:00.000Z",
-        "sentiment": "positive"
       }
     ],
     "산드로옴므": [],
@@ -400,7 +407,15 @@
     ],
     "클럽모나코": [],
     "맨온더분": [],
-    "수트서플라이": [],
+    "수트서플라이": [
+      {
+        "title": "진짜만 모았다! 남자 '정장 브랜드' 5",
+        "link": "https://www.esquirekorea.co.kr/article/1907855",
+        "source": "esquirekorea.co.kr",
+        "pubDate": "2026-08-13T04:00:00.000Z",
+        "sentiment": "neutral"
+      }
+    ],
     "슬로웨어": [],
     "POTTERY": [
       {
