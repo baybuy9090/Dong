@@ -1,6 +1,20 @@
 {
-  "lastUpdated": "2026-08-13T23:43:26.564Z",
+  "lastUpdated": "2026-08-14T23:23:58.002Z",
   "industry": [
+    {
+      "title": "라이브바에서 펼쳐진 사랑과 욕망…음악극 ‘도어 넥스트 헤븐’ 9월 재...",
+      "link": "https://swtvnews.com/news/newsview.php?ncode=1065589471687006",
+      "source": "swtvnews.com",
+      "pubDate": "2026-08-14T05:12:00.000Z",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "'도어 넥스트 헤븐' 재연 확정...젠더프리 캐스팅으로 관계성 확장",
+      "link": "https://www.slist.kr/news/articleView.html?idxno=758773",
+      "source": "slist.kr",
+      "pubDate": "2026-08-14T00:54:00.000Z",
+      "sentiment": "positive"
+    },
     {
       "title": "형지I&C, 남녀복합매장으로 고객층 확대…자사몰과 연계해 매출 시너지...",
       "link": "https://view.asiae.co.kr/article/2026081209191204395",
@@ -42,20 +56,6 @@
       "source": "ebn.co.kr",
       "pubDate": "2026-08-10T07:42:00.000Z",
       "sentiment": "positive"
-    },
-    {
-      "title": "폭염 속 겨울옷 불티…패션업계, 역시즌 수요 잡는다",
-      "link": "https://www.mediapen.com/news/view/1115385",
-      "source": "mediapen.com",
-      "pubDate": "2026-08-10T06:32:00.000Z",
-      "sentiment": "positive"
-    },
-    {
-      "title": "한국 발레리노의 오늘과 내일을 대표하는 무용수들의 무대… 김용걸댄...",
-      "link": "https://www.segye.com/newsView/20260810515404?OutUrl=naver",
-      "source": "segye.com",
-      "pubDate": "2026-08-10T06:28:00.000Z",
-      "sentiment": "neutral"
     }
   ],
   "data": {
@@ -87,10 +87,17 @@
     ],
     "시스템옴므": [
       {
-        "title": "[포토] 한섬, 성수동 ‘키스 서울’서 시스템 파리 팝업",
-        "link": "https://www.etoday.co.kr/news/view/2614246",
-        "source": "etoday.co.kr",
-        "pubDate": "2026-08-13T05:58:00.000Z",
+        "title": "한섬 '시스템 파리', 성수 상륙…키스 서울서 팝업",
+        "link": "http://www.ktnews.com/news/articleView.html?idxno=147740",
+        "source": "ktnews.com",
+        "pubDate": "2026-08-14T07:36:00.000Z",
+        "sentiment": "positive"
+      },
+      {
+        "title": "한섬, 성수서 '시스템 파리' 팝업…FW 컬렉션 60여종 선봬",
+        "link": "https://www.hankyung.com/article/202608142007g",
+        "source": "hankyung.com",
+        "pubDate": "2026-08-14T06:13:00.000Z",
         "sentiment": "neutral"
       },
       {
@@ -140,6 +147,13 @@
     ],
     "준지": [
       {
+        "title": "미스토홀딩스, 2분기 영업익 2952억…전년比 62%↑",
+        "link": "https://www.donga.com/news/Economy/article/all/20260814/134481323/1",
+        "source": "donga.com",
+        "pubDate": "2026-08-14T09:39:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "K패션, 다시 뚫는 중국 시장 \"혼자 가지 않는다\"",
         "link": "http://www.ktnews.com/news/articleView.html?idxno=147683",
         "source": "ktnews.com",
@@ -187,13 +201,6 @@
         "source": "네이트",
         "pubDate": "2026-08-11T00:12:00.000Z",
         "sentiment": "neutral"
-      },
-      {
-        "title": "미스토홀딩스, 삼성물산 글로벌 디자이너 브랜드 ‘준지(JUUN.J)’ 중국 ...",
-        "link": "https://sports.khan.co.kr/article/202608110052003?pt=nv",
-        "source": "sports.khan.co.kr",
-        "pubDate": "2026-08-10T15:53:00.000Z",
-        "sentiment": "neutral"
       }
     ],
     "송지오옴므": [
@@ -221,8 +228,23 @@
         "sentiment": "neutral"
       }
     ],
-    "CP컴퍼니": [],
+    "CP컴퍼니": [
+      {
+        "title": "👓DD쉘 패딩? 밀레밀리아 자켓? 경량패딩 1대장 CP컴퍼니 전제품 리뷰 Ttc (IegytkgLSO)",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9lVjc2RVN1NXF5UzNsdjktU1drbFBJUVNIU0ZvSzBmNWdRZHhGUUdRMEpsZm9seDE2Y2VBZ3I4eTJLVGx0Z3FaT1NMMXQ2R2MwVWlJdEpQeVZoNE0?oc=5",
+        "source": "Mshale",
+        "pubDate": "2026-08-14T00:19:50.000Z",
+        "sentiment": "neutral"
+      }
+    ],
     "비이커": [
+      {
+        "title": "옷 보다 음식! '패션 브랜드'가 만든 카페 레스토랑",
+        "link": "https://www.esquirekorea.co.kr/article/1907813",
+        "source": "esquirekorea.co.kr",
+        "pubDate": "2026-08-14T02:30:00.000Z",
+        "sentiment": "positive"
+      },
       {
         "title": "[패션·잡화 트렌드] 르무통, '손태진의 트로트 라디오'와 함께 르무통...",
         "link": "https://www.ibabynews.com/news/articleView.html?idxno=153534",
@@ -280,6 +302,48 @@
     ],
     "바버": [
       {
+        "title": "영국의 코츠월드와 런던의 모든 것",
+        "link": "https://www.allurekorea.com/2026/08/15/%ec%98%81%ea%b5%ad%ec%9d%98-%ec%bd%94%ec%b8%a0%ec%9b%94%eb%93%9c%ec%99%80-%eb%9f%b0%eb%8d%98%ec%9d%98-%eb%aa%a8%eb%93%a0-%ea%b2%83/?utm_source=naver&utm_medium=partnership",
+        "source": "allurekorea.com",
+        "pubDate": "2026-08-14T23:02:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "헤지스·닥스에 수입 브랜드 날았다…LF, 2분기 외형 성장 이어가",
+        "link": "https://www.mk.co.kr/article/12128338",
+        "source": "mk.co.kr",
+        "pubDate": "2026-08-14T10:49:00.000Z",
+        "sentiment": "positive"
+      },
+      {
+        "title": "\"헤지스·닥스 등 주력 브랜드 입지 확대\"...LF, 올해 상반기 실적 호조",
+        "link": "https://www.edaily.co.kr/news/newspath.asp?newsid=06622326645547320",
+        "source": "edaily.co.kr",
+        "pubDate": "2026-08-14T10:09:00.000Z",
+        "sentiment": "positive"
+      },
+      {
+        "title": "LF, 2Q 영업익 441억·0.4%↓...매출은 성장",
+        "link": "http://www.fnnews.com/news/202608141703318512",
+        "source": "fnnews.com",
+        "pubDate": "2026-08-14T08:19:00.000Z",
+        "sentiment": "positive"
+      },
+      {
+        "title": "LF, 패션 업황 부진 속 외형·수익 방어",
+        "link": "https://dealsite.co.kr/articles/167298",
+        "source": "dealsite.co.kr",
+        "pubDate": "2026-08-14T07:54:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "핵심 브랜드 성장… LF, 상반기 영업익 19%↑",
+        "link": "http://www.the-biz.co.kr/news/articleView.html?idxno=726277",
+        "source": "the-biz.co.kr",
+        "pubDate": "2026-08-14T07:36:00.000Z",
+        "sentiment": "positive"
+      },
+      {
         "title": "‘위험 감수해야 자산 축적’… 美 Z세대, 투자 밑천으로 스포츠 베팅 ...",
         "link": "https://biz.chosun.com/international/international_economy/2026/08/13/WZHQLMCCMZBE3OOIO6XB5B7X7M/?utm_source=naver&utm_medium=original&utm_campaign=biz",
         "source": "biz.chosun.com",
@@ -287,64 +351,15 @@
         "sentiment": "neutral"
       },
       {
-        "title": "경북보건대 지역 미용업체 재직자 실무교육.. '이용전문가 양성과정'",
-        "link": "https://www.veritas-a.com/news/articleView.html?idxno=622881",
-        "source": "veritas-a.com",
-        "pubDate": "2026-08-12T01:10:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "런던에 사는 30대 남자는 실제로 얼마나 벌까? 서른 명에게 물었다",
-        "link": "https://www.gqkorea.co.kr/2026/08/11/%eb%9f%b0%eb%8d%98%ec%97%90-%ec%82%ac%eb%8a%94-30%eb%8c%80-%eb%82%a8%ec%9e%90%eb%8a%94-%ec%8b%a4%ec%a0%9c%eb%a1%9c-%ec%96%bc%eb%a7%88%eb%82%98-%eb%b2%8c%ea%b9%8c-%ec%84%9c%eb%a5%b8-%eb%aa%85%ec%97%90/?utm_source=naver&utm_medium=partnership",
-        "source": "gqkorea.co.kr",
-        "pubDate": "2026-08-11T00:56:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "그냥 명품인 줄 알았는데…'버버리 코트'에 숨겨진 비밀 [김혜경의 브랜...",
-        "link": "https://www.hankyung.com/article/202608032396i",
-        "source": "hankyung.com",
-        "pubDate": "2026-08-10T06:22:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "레인템→사계절, 기능으로 승부하는 시즈널 브랜드 떴다",
-        "link": "https://www.fashionbiz.co.kr/article/228455",
-        "source": "fashionbiz.co.kr",
-        "pubDate": "2026-08-10T00:28:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "배당만 믿었다간 큰코 다친다···美 배당주의 배신",
-        "link": "https://www.edaily.co.kr/news/newspath.asp?newsid=01420246645545024",
-        "source": "edaily.co.kr",
-        "pubDate": "2026-08-06T18:07:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "교방예술 생명력·공동체 정신으로 통영 부활 춤사위 [지역에 사니다]",
-        "link": "https://www.idomin.com/news/articleView.html?idxno=2011856",
-        "source": "idomin.com",
-        "pubDate": "2026-08-06T09:06:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "[더벨][IR Briefing | 기도산업 IPO] 김상범 사장 \"고마진 제품 확대, 배...",
-        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608061403062520103075",
-        "source": "thebell.co.kr",
-        "pubDate": "2026-08-06T08:08:00.000Z",
+        "title": "경북보건대, 지역 미용인 ‘바버 전문가’로 키운다",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE0wcGJmLWtsNktJYjNNaXVkUW1zdG5BLWdIdlpMQTVGT0pHT1pYdjk4alNLbjFzWEV6ZVVFQzF5S3JqOG9BOGdwMHZlMHFKbUJUaHZiVWV4Uk5Wcm4wYjFvX3BBWmQ4eDZzMDNWbC00cG90QkM1eHFz?oc=5",
+        "source": "김천인터넷뉴스",
+        "pubDate": "2026-08-12T00:38:00.000Z",
         "sentiment": "neutral"
       }
     ],
     "산드로옴므": [],
     "질스튜어트뉴욕": [
-      {
-        "title": "질스튜어트뉴욕 JSNY, 로호팝 주제 경쾌한 감성의 여성 컬렉션 출시",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOa2lMdkVlb25xc3FtdDVUeE5wRncwMFlCRFRXeGV6dmZmY0M3Y0h2VWdSVWFuMlZpNEoyM01BRGo1X0JHaDlwbjM4WmlqYk1ES2RXZU9rWG9vM3hKMF9VTFd4Y0VBbzY1dXpnRFBUQlJsZkkxMXgyTS1XX1VKcFJhWlFTWllHQVN4MmtmVkt3aFhyemJudGVmTGwybkliRXRrZ0E?oc=5",
-        "source": "패션엔",
-        "pubDate": "2026-08-07T17:21:50.000Z",
-        "sentiment": "neutral"
-      },
       {
         "title": "폭염은 여름, 소비는 가을·겨울…패션업계 FW 선점 경쟁",
         "link": "http://www.mkhealth.co.kr/news/articleView.html?idxno=79491",
@@ -393,6 +408,13 @@
         "source": "kukinews.com",
         "pubDate": "2026-07-31T06:26:00.000Z",
         "sentiment": "neutral"
+      },
+      {
+        "title": "[유통갤러리] 아모레퍼시픽, 인도서 첫 글로벌 ‘밋유어뷰티 아카데미’...",
+        "link": "https://theviewers.co.kr/View.aspx?No=4169401",
+        "source": "theviewers.co.kr",
+        "pubDate": "2026-07-31T00:48:00.000Z",
+        "sentiment": "neutral"
       }
     ],
     "아스페시": [],
@@ -431,13 +453,6 @@
         "source": "press9.kr",
         "pubDate": "2026-07-29T07:08:00.000Z",
         "sentiment": "neutral"
-      },
-      {
-        "title": "할인 넘어 경험으로…아울렛 '체류형 경쟁' 본격화",
-        "link": "https://www.newsway.co.kr/news/view?ud=2026072416271496107",
-        "source": "newsway.co.kr",
-        "pubDate": "2026-07-24T08:00:00.000Z",
-        "sentiment": "positive"
       }
     ],
     "캡틴선샤인": [
