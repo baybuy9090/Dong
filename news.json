@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-14T23:23:58.002Z",
+  "lastUpdated": "2026-08-15T23:22:32.576Z",
   "industry": [
     {
       "title": "라이브바에서 펼쳐진 사랑과 욕망…음악극 ‘도어 넥스트 헤븐’ 9월 재...",
@@ -147,6 +147,13 @@
     ],
     "준지": [
       {
+        "title": "안효섭, 준지와 중국 럭셔리 패시장 본격 진출",
+        "link": "https://www.slist.kr/news/articleView.html?idxno=758960",
+        "source": "slist.kr",
+        "pubDate": "2026-08-14T23:32:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "미스토홀딩스, 2분기 영업익 2952억…전년比 62%↑",
         "link": "https://www.donga.com/news/Economy/article/all/20260814/134481323/1",
         "source": "donga.com",
@@ -182,13 +189,6 @@
         "sentiment": "positive"
       },
       {
-        "title": "삼성패션 준지, 미스토와 중국 럭셔리시장 진출",
-        "link": "https://biz.heraldcorp.com/article/10837232?ref=naver",
-        "source": "biz.heraldcorp.com",
-        "pubDate": "2026-08-11T02:21:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
         "title": "뷰티는 '탈중국'·패션은 '재도전'…대륙 바라보는 엇갈린 전략",
         "link": "https://view.asiae.co.kr/article/2026081017123504648",
         "source": "view.asiae.co.kr",
@@ -197,7 +197,7 @@
       },
       {
         "title": "JUUN.J expands into Beijing to target China's luxury market",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE92R0VrT2d3MVdqS25FdG8tWWY2VzZiZUQyM2huclJzajljSmE5VzRaOGplenVady11dmF2X3ZDbXFPXzd2VlB3VURCaXQ2ZzFRYUZwOFY5ZkdOeFZ3NDc0cg?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9STTV4MUJ2cFlvV3l5WHdjLW80anAtbE84WDhkd09qLS1MTURtYjBpNV9jQmVEeWhjVWpvcFJ4dE9XblVYQm1PVmg5eEhTbXJWQW1R?oc=5",
         "source": "네이트",
         "pubDate": "2026-08-11T00:12:00.000Z",
         "sentiment": "neutral"
@@ -302,6 +302,13 @@
     ],
     "바버": [
       {
+        "title": "[IPO챗] 인제니아·기도산업, 다음주 코스닥 입성",
+        "link": "https://www.yna.co.kr/view/AKR20260814117900008?input=1195m",
+        "source": "yna.co.kr",
+        "pubDate": "2026-08-15T00:00:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "영국의 코츠월드와 런던의 모든 것",
         "link": "https://www.allurekorea.com/2026/08/15/%ec%98%81%ea%b5%ad%ec%9d%98-%ec%bd%94%ec%b8%a0%ec%9b%94%eb%93%9c%ec%99%80-%eb%9f%b0%eb%8d%98%ec%9d%98-%eb%aa%a8%eb%93%a0-%ea%b2%83/?utm_source=naver&utm_medium=partnership",
         "source": "allurekorea.com",
@@ -348,13 +355,6 @@
         "link": "https://biz.chosun.com/international/international_economy/2026/08/13/WZHQLMCCMZBE3OOIO6XB5B7X7M/?utm_source=naver&utm_medium=original&utm_campaign=biz",
         "source": "biz.chosun.com",
         "pubDate": "2026-08-13T05:46:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "경북보건대, 지역 미용인 ‘바버 전문가’로 키운다",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE0wcGJmLWtsNktJYjNNaXVkUW1zdG5BLWdIdlpMQTVGT0pHT1pYdjk4alNLbjFzWEV6ZVVFQzF5S3JqOG9BOGdwMHZlMHFKbUJUaHZiVWV4Uk5Wcm4wYjFvX3BBWmQ4eDZzMDNWbC00cG90QkM1eHFz?oc=5",
-        "source": "김천인터넷뉴스",
-        "pubDate": "2026-08-12T00:38:00.000Z",
         "sentiment": "neutral"
       }
     ],
