@@ -1,6 +1,20 @@
 {
-  "lastUpdated": "2026-08-15T23:22:32.576Z",
+  "lastUpdated": "2026-08-16T23:21:58.597Z",
   "industry": [
+    {
+      "title": "헤지스, 'K패션 쇼핑명소' 우뚝...오방색 '아이코닉' 최고 인기",
+      "link": "https://www.slist.kr/news/articleView.html?idxno=759128",
+      "source": "slist.kr",
+      "pubDate": "2026-08-16T06:20:00.000Z",
+      "sentiment": "positive"
+    },
+    {
+      "title": "쇼팽 콩쿠르 2위 케빈 첸·男소프라노 마리뇨…예술의전당 국제음악제 ...",
+      "link": "https://view.asiae.co.kr/article/2026081612584288434",
+      "source": "view.asiae.co.kr",
+      "pubDate": "2026-08-16T03:58:00.000Z",
+      "sentiment": "neutral"
+    },
     {
       "title": "라이브바에서 펼쳐진 사랑과 욕망…음악극 ‘도어 넥스트 헤븐’ 9월 재...",
       "link": "https://swtvnews.com/news/newsview.php?ncode=1065589471687006",
@@ -42,20 +56,6 @@
       "source": "lawissue.co.kr",
       "pubDate": "2026-08-11T02:32:00.000Z",
       "sentiment": "neutral"
-    },
-    {
-      "title": "[핵심 상권 리포트] 강남역 / 압구정 / 신사 가로수길",
-      "link": "http://www.apparelnews.co.kr/news/news_view/?idx=226798",
-      "source": "apparelnews.co.kr",
-      "pubDate": "2026-08-10T13:04:00.000Z",
-      "sentiment": "positive"
-    },
-    {
-      "title": "[Fashion & NOW] 신원, AI 기반 운영체계 구축 등",
-      "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1719804",
-      "source": "ebn.co.kr",
-      "pubDate": "2026-08-10T07:42:00.000Z",
-      "sentiment": "positive"
     }
   ],
   "data": {
@@ -232,12 +232,19 @@
       {
         "title": "👓DD쉘 패딩? 밀레밀리아 자켓? 경량패딩 1대장 CP컴퍼니 전제품 리뷰 Ttc (IegytkgLSO)",
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9lVjc2RVN1NXF5UzNsdjktU1drbFBJUVNIU0ZvSzBmNWdRZHhGUUdRMEpsZm9seDE2Y2VBZ3I4eTJLVGx0Z3FaT1NMMXQ2R2MwVWlJdEpQeVZoNE0?oc=5",
-        "source": "Mshale",
+        "source": "mshale.com",
         "pubDate": "2026-08-14T00:19:50.000Z",
         "sentiment": "neutral"
       }
     ],
     "비이커": [
+      {
+        "title": "\"금요일 오전에 가라\" 신세계사이먼이 공개한 아웃렛 '득템공식'",
+        "link": "https://www.newsis.com/view/NISX20260814_0003749040",
+        "source": "newsis.com",
+        "pubDate": "2026-08-16T22:00:00.000Z",
+        "sentiment": "positive"
+      },
       {
         "title": "옷 보다 음식! '패션 브랜드'가 만든 카페 레스토랑",
         "link": "https://www.esquirekorea.co.kr/article/1907813",
@@ -302,6 +309,13 @@
     ],
     "바버": [
       {
+        "title": "[프라임피플] 부산이 만든 첼리스트 양욱진…'말 너머의 노래' 독주회",
+        "link": "http://www.newsprime.co.kr/news/article.html?no=744059",
+        "source": "newsprime.co.kr",
+        "pubDate": "2026-08-16T07:50:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "[IPO챗] 인제니아·기도산업, 다음주 코스닥 입성",
         "link": "https://www.yna.co.kr/view/AKR20260814117900008?input=1195m",
         "source": "yna.co.kr",
@@ -349,17 +363,17 @@
         "source": "the-biz.co.kr",
         "pubDate": "2026-08-14T07:36:00.000Z",
         "sentiment": "positive"
-      },
-      {
-        "title": "‘위험 감수해야 자산 축적’… 美 Z세대, 투자 밑천으로 스포츠 베팅 ...",
-        "link": "https://biz.chosun.com/international/international_economy/2026/08/13/WZHQLMCCMZBE3OOIO6XB5B7X7M/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-        "source": "biz.chosun.com",
-        "pubDate": "2026-08-13T05:46:00.000Z",
-        "sentiment": "neutral"
       }
     ],
     "산드로옴므": [],
     "질스튜어트뉴욕": [
+      {
+        "title": "질스튜어트뉴욕 JSNY, 로호팝 주제 경쾌한 감성의 여성 컬렉션 출시",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOa2lMdkVlb25xc3FtdDVUeE5wRncwMFlCRFRXeGV6dmZmY0M3Y0h2VWdSVWFuMlZpNEoyM01BRGo1X0JHaDlwbjM4WmlqYk1ES2RXZU9rWG9vM3hKMF9VTFd4Y0VBbzY1dXpnRFBUQlJsZkkxMXgyTS1XX1VKcFJhWlFTWllHQVN4MmtmVkt3aFhyemJudGVmTGwybkliRXRrZ0E?oc=5",
+        "source": "패션엔",
+        "pubDate": "2026-08-07T17:21:50.000Z",
+        "sentiment": "neutral"
+      },
       {
         "title": "폭염은 여름, 소비는 가을·겨울…패션업계 FW 선점 경쟁",
         "link": "http://www.mkhealth.co.kr/news/articleView.html?idxno=79491",
@@ -408,13 +422,6 @@
         "source": "kukinews.com",
         "pubDate": "2026-07-31T06:26:00.000Z",
         "sentiment": "neutral"
-      },
-      {
-        "title": "[유통갤러리] 아모레퍼시픽, 인도서 첫 글로벌 ‘밋유어뷰티 아카데미’...",
-        "link": "https://theviewers.co.kr/View.aspx?No=4169401",
-        "source": "theviewers.co.kr",
-        "pubDate": "2026-07-31T00:48:00.000Z",
-        "sentiment": "neutral"
       }
     ],
     "아스페시": [],
@@ -455,22 +462,7 @@
         "sentiment": "neutral"
       }
     ],
-    "캡틴선샤인": [
-      {
-        "title": "‘노재팬’ 그늘 걷히자…日 맥주 웃고 패션 브랜드 몰려왔다",
-        "link": "https://www.sedaily.com/article/20072084?ref=naver",
-        "source": "sedaily.com",
-        "pubDate": "2026-07-26T22:26:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "삿포로 맥주·도쿄룩…일상 파고든 日 브랜드",
-        "link": "https://www.sedaily.com/article/20071889?ref=naver",
-        "source": "sedaily.com",
-        "pubDate": "2026-07-26T02:56:00.000Z",
-        "sentiment": "neutral"
-      }
-    ],
+    "캡틴선샤인": [],
     "PAF": [],
     "이스트로그(프레이트)": [],
     "에잇디비젼": [],
