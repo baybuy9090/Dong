@@ -1,6 +1,13 @@
 {
-  "lastUpdated": "2026-08-16T23:21:58.597Z",
+  "lastUpdated": "2026-08-17T23:25:18.467Z",
   "industry": [
+    {
+      "title": "사랑과 욕망 사이, 다시 시작되는 선택… 음악극 '도어 넥스트 헤븐' 재...",
+      "link": "http://www.ikoreanspirit.com/news/articleView.html?idxno=86837",
+      "source": "ikoreanspirit.com",
+      "pubDate": "2026-08-17T12:34:00.000Z",
+      "sentiment": "neutral"
+    },
     {
       "title": "헤지스, 'K패션 쇼핑명소' 우뚝...오방색 '아이코닉' 최고 인기",
       "link": "https://www.slist.kr/news/articleView.html?idxno=759128",
@@ -13,13 +20,6 @@
       "link": "https://view.asiae.co.kr/article/2026081612584288434",
       "source": "view.asiae.co.kr",
       "pubDate": "2026-08-16T03:58:00.000Z",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "라이브바에서 펼쳐진 사랑과 욕망…음악극 ‘도어 넥스트 헤븐’ 9월 재...",
-      "link": "https://swtvnews.com/news/newsview.php?ncode=1065589471687006",
-      "source": "swtvnews.com",
-      "pubDate": "2026-08-14T05:12:00.000Z",
       "sentiment": "neutral"
     },
     {
@@ -232,7 +232,7 @@
       {
         "title": "👓DD쉘 패딩? 밀레밀리아 자켓? 경량패딩 1대장 CP컴퍼니 전제품 리뷰 Ttc (IegytkgLSO)",
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9lVjc2RVN1NXF5UzNsdjktU1drbFBJUVNIU0ZvSzBmNWdRZHhGUUdRMEpsZm9seDE2Y2VBZ3I4eTJLVGx0Z3FaT1NMMXQ2R2MwVWlJdEpQeVZoNE0?oc=5",
-        "source": "mshale.com",
+        "source": "Mshale",
         "pubDate": "2026-08-14T00:19:50.000Z",
         "sentiment": "neutral"
       }
@@ -286,13 +286,6 @@
         "source": "economist.co.kr",
         "pubDate": "2026-07-29T00:49:00.000Z",
         "sentiment": "positive"
-      },
-      {
-        "title": "[유通하는 사람들] ⑯ 김기현 신세계백화점 여성패션팀장…\"K-헤리티지...",
-        "link": "https://www.youthdaily.co.kr/news/article.html?no=223828",
-        "source": "youthdaily.co.kr",
-        "pubDate": "2026-07-27T23:00:00.000Z",
-        "sentiment": "positive"
       }
     ],
     "톰그레이하운드맨": [],
@@ -308,6 +301,13 @@
       }
     ],
     "바버": [
+      {
+        "title": "“금관과 타악 빚어내는 강렬한 앙상블”",
+        "link": "http://www.kjdaily.com/article.php?aid=1786958422684618006",
+        "source": "kjdaily.com",
+        "pubDate": "2026-08-17T09:40:00.000Z",
+        "sentiment": "neutral"
+      },
       {
         "title": "[프라임피플] 부산이 만든 첼리스트 양욱진…'말 너머의 노래' 독주회",
         "link": "http://www.newsprime.co.kr/news/article.html?no=744059",
@@ -356,21 +356,28 @@
         "source": "dealsite.co.kr",
         "pubDate": "2026-08-14T07:54:00.000Z",
         "sentiment": "neutral"
-      },
-      {
-        "title": "핵심 브랜드 성장… LF, 상반기 영업익 19%↑",
-        "link": "http://www.the-biz.co.kr/news/articleView.html?idxno=726277",
-        "source": "the-biz.co.kr",
-        "pubDate": "2026-08-14T07:36:00.000Z",
-        "sentiment": "positive"
       }
     ],
     "산드로옴므": [],
     "질스튜어트뉴욕": [
       {
+        "title": "\"출근부터 여행까지 가방 하나로\" 질스튜어트뉴욕 '파세트' 출시",
+        "link": "https://www.newsis.com/view/NISX20260818_0003751824",
+        "source": "newsis.com",
+        "pubDate": "2026-08-17T23:17:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "숨기던 발가락 드러낸다…‘발꾸’가 바꾼 여름 패션 [트렌드]",
+        "link": "https://www.segye.com/newsView/20260817509179?OutUrl=naver",
+        "source": "segye.com",
+        "pubDate": "2026-08-17T05:51:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "질스튜어트뉴욕 JSNY, 로호팝 주제 경쾌한 감성의 여성 컬렉션 출시",
         "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOa2lMdkVlb25xc3FtdDVUeE5wRncwMFlCRFRXeGV6dmZmY0M3Y0h2VWdSVWFuMlZpNEoyM01BRGo1X0JHaDlwbjM4WmlqYk1ES2RXZU9rWG9vM3hKMF9VTFd4Y0VBbzY1dXpnRFBUQlJsZkkxMXgyTS1XX1VKcFJhWlFTWllHQVN4MmtmVkt3aFhyemJudGVmTGwybkliRXRrZ0E?oc=5",
-        "source": "패션엔",
+        "source": "fashionn.com",
         "pubDate": "2026-08-07T17:21:50.000Z",
         "sentiment": "neutral"
       },
@@ -407,20 +414,6 @@
         "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2454691",
         "source": "enewstoday.co.kr",
         "pubDate": "2026-07-31T07:35:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "LF몰, 역시즌 라이브 운영…‘역시즌 특가’ 검색량 2배 증가",
-        "link": "http://digitalchosun.dizzo.com/site/data/html_dir/2026/07/31/2026073180130.html",
-        "source": "digitalchosun.dizzo.com",
-        "pubDate": "2026-07-31T06:50:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "LF몰, 역시즌 쇼핑 통했다…남성 라이브 거래액 ‘역대 최고’ 外 아모...",
-        "link": "https://www.kukinews.com/article/view/kuk202607310100",
-        "source": "kukinews.com",
-        "pubDate": "2026-07-31T06:26:00.000Z",
         "sentiment": "neutral"
       }
     ],
