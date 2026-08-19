@@ -1,6 +1,27 @@
 {
-  "lastUpdated": "2026-08-18T23:24:02.388Z",
+  "lastUpdated": "2026-08-19T23:28:59.248Z",
   "industry": [
+    {
+      "title": "의류쇼핑 줄었는데…6개 패션기업 일제히 반등, 왜?",
+      "link": "https://view.asiae.co.kr/article/2026081816582224800",
+      "source": "view.asiae.co.kr",
+      "pubDate": "2026-08-19T22:10:00.000Z",
+      "sentiment": "positive"
+    },
+    {
+      "title": "[패션·잡화 트렌드] 크록스, 엔시티 위시와 함께한 새로운 'Do Your Thing'...",
+      "link": "https://www.ibabynews.com/news/articleView.html?idxno=153806",
+      "source": "ibabynews.com",
+      "pubDate": "2026-08-19T10:10:00.000Z",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "발레 대중화 이끌 6색 레퍼토리…가을밤 수놓을 아름다운 도약",
+      "link": "https://www.nc.press/news/articleView.html?idxno=624141",
+      "source": "nc.press",
+      "pubDate": "2026-08-19T08:52:00.000Z",
+      "sentiment": "positive"
+    },
     {
       "title": "천국과 지옥 경계에 선 두 청년…음악극 '도어 넥스트 헤븐'",
       "link": "https://www.newsis.com/view/NISX20260818_0003752268",
@@ -35,27 +56,6 @@
       "source": "slist.kr",
       "pubDate": "2026-08-14T00:54:00.000Z",
       "sentiment": "positive"
-    },
-    {
-      "title": "형지I&C, 남녀복합매장으로 고객층 확대…자사몰과 연계해 매출 시너지...",
-      "link": "https://view.asiae.co.kr/article/2026081209191204395",
-      "source": "view.asiae.co.kr",
-      "pubDate": "2026-08-12T00:19:00.000Z",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "알레그리, 고급화 전략 이어간다",
-      "link": "http://www.apparelnews.co.kr/news/news_view/?idx=226843",
-      "source": "apparelnews.co.kr",
-      "pubDate": "2026-08-11T13:04:00.000Z",
-      "sentiment": "positive"
-    },
-    {
-      "title": "스페이스H 서울, 외국인 구매 고객 64%…올해 1~7월 매출 전년比 70% 증가",
-      "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065595584287008",
-      "source": "megaeconomy.co.kr",
-      "pubDate": "2026-08-11T06:48:00.000Z",
-      "sentiment": "neutral"
     }
   ],
   "data": {
@@ -117,6 +117,13 @@
     ],
     "우영미": [
       {
+        "title": "[단독] 박경훈의 트렌비, 80%가 기만할인…공정위 지적에도 다크패턴 특...",
+        "link": "http://www.lawissue.co.kr/view.php?ud=2026081822281415139817d053b9_12",
+        "source": "lawissue.co.kr",
+        "pubDate": "2026-08-19T00:36:00.000Z",
+        "sentiment": "positive"
+      },
+      {
         "title": "K패션 중국 1호점 어디에 냈나…中 진출 공식 바뀐다",
         "link": "http://www.ktnews.com/news/articleView.html?idxno=147660",
         "source": "ktnews.com",
@@ -139,6 +146,13 @@
       }
     ],
     "준지": [
+      {
+        "title": "[뉴스줌인] 중국과 한 배 타는 패션, 떠나는 뷰티…차이는 '유통구조'였...",
+        "link": "http://www.dailypop.kr/news/articleView.html?idxno=101670",
+        "source": "dailypop.kr",
+        "pubDate": "2026-08-19T06:00:00.000Z",
+        "sentiment": "neutral"
+      },
       {
         "title": "미스토홀딩스, 2분기 영업익 62% 급증…아쿠쉬네트가 실적 견인",
         "link": "http://www.ktnews.com/news/articleView.html?idxno=147758",
@@ -180,31 +194,9 @@
         "source": "dailypop.kr",
         "pubDate": "2026-08-11T04:20:00.000Z",
         "sentiment": "positive"
-      },
-      {
-        "title": "JUUN.J expands into Beijing to target China's luxury market",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9STTV4MUJ2cFlvV3l5WHdjLW80anAtbE84WDhkd09qLS1MTURtYjBpNV9jQmVEeWhjVWpvcFJ4dE9XblVYQm1PVmg5eEhTbXJWQW1R?oc=5",
-        "source": "네이트",
-        "pubDate": "2026-08-11T00:12:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "미스토홀딩스, 삼성물산 글로벌 디자이너 브랜드 ‘준지(JUUN.J)’ 중국 전개",
-        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5Td2dRUFJiQVFLajUwTTE1TGg2OEhsVHgzUkg4OEFnMWVZQW1fMFd3bFg1aWtOeVpKQ2l2ODFzcXVDbkJYRnFyM01mNUsweTh5NlhrSFU1Ykl4ZkhQTmfSAWNBVV95cUxObW1tQTdsYl83NW02YVZhY1V2cTZaLWJ3aWRTck9lbHMtN1JSb0MxcmJXY0puXzVmNHJVQmZEamNENmt3MDcwb3JOclpsOVFRLVhyeTNKMVhfWm5OV3FWM1lacEE?oc=5",
-        "source": "스포츠경향",
-        "pubDate": "2026-08-10T15:52:00.000Z",
-        "sentiment": "neutral"
       }
     ],
-    "송지오옴므": [
-      {
-        "title": "‘송지오옴므’ 제품 차별화 속도",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1HTFpxemJ5dnhtTUFfWEpHUXlDVGV5bGRIc3NVZmwyRzJkYzlSeHZNZTlUMjdyZ1hjSUh6OEIwZDJOUXNNTWhIVWo5SlpGU3FVNHA5bGdTU1VITnBOMkZ4SXJfNXd5Z2QxYl85WjYwZ1N6UQ?oc=5",
-        "source": "어패럴뉴스",
-        "pubDate": "2026-08-01T04:24:45.000Z",
-        "sentiment": "neutral"
-      }
-    ],
+    "송지오옴므": [],
     "스톤아일랜드": [
       {
         "title": "[충청 유통가 레이더] 무더위 날릴 할인 대전",
@@ -221,16 +213,15 @@
         "sentiment": "neutral"
       }
     ],
-    "CP컴퍼니": [
-      {
-        "title": "👓DD쉘 패딩? 밀레밀리아 자켓? 경량패딩 1대장 CP컴퍼니 전제품 리뷰 Ttc (IegytkgLSO)",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9lVjc2RVN1NXF5UzNsdjktU1drbFBJUVNIU0ZvSzBmNWdRZHhGUUdRMEpsZm9seDE2Y2VBZ3I4eTJLVGx0Z3FaT1NMMXQ2R2MwVWlJdEpQeVZoNE0?oc=5",
-        "source": "Mshale",
-        "pubDate": "2026-08-14T00:19:50.000Z",
-        "sentiment": "neutral"
-      }
-    ],
+    "CP컴퍼니": [],
     "비이커": [
+      {
+        "title": "삼성물산 가니, '강인함과 부드러움' 담은 가을·겨울 컬렉션 선봬",
+        "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=478843",
+        "source": "pinpointnews.co.kr",
+        "pubDate": "2026-08-19T23:16:00.000Z",
+        "sentiment": "positive"
+      },
       {
         "title": "\"금요일 오전에 가라\" 신세계사이먼이 공개한 아웃렛 '득템공식'",
         "link": "https://www.newsis.com/view/NISX20260814_0003749040",
@@ -272,13 +263,6 @@
         "source": "gpkorea.com",
         "pubDate": "2026-08-05T00:36:00.000Z",
         "sentiment": "neutral"
-      },
-      {
-        "title": "삼성물산 패션, 글로벌 신진 디자이너 육성",
-        "link": "https://economist.co.kr/article/view/ecn202607290019",
-        "source": "economist.co.kr",
-        "pubDate": "2026-07-29T00:49:00.000Z",
-        "sentiment": "positive"
       }
     ],
     "톰그레이하운드맨": [],
@@ -294,6 +278,20 @@
       }
     ],
     "바버": [
+      {
+        "title": "킹크로치 바버샵 권혁주 헤드 바버, '2026 월드 바버 클래식' 출전",
+        "link": "https://www.maxmovie.com/news/articleView.html?idxno=501268",
+        "source": "maxmovie.com",
+        "pubDate": "2026-08-19T06:18:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "LF, 2분기 영업익 441억원 \"해외 사업 확대한다\"",
+        "link": "https://www.smartbizn.com/news/articleView.html?idxno=151536",
+        "source": "smartbizn.com",
+        "pubDate": "2026-08-19T02:04:00.000Z",
+        "sentiment": "positive"
+      },
       {
         "title": "패션업계 매출 주춤했지만 수익성은 '쑥'…코오롱FnC 영업익 3배 급증",
         "link": "http://www.consumernews.co.kr/news/articleView.html?idxno=761691",
@@ -335,29 +333,22 @@
         "source": "allurekorea.com",
         "pubDate": "2026-08-14T23:02:00.000Z",
         "sentiment": "neutral"
-      },
-      {
-        "title": "헤지스·닥스에 수입 브랜드 날았다…LF, 2분기 외형 성장 이어가",
-        "link": "https://www.mk.co.kr/article/12128338",
-        "source": "mk.co.kr",
-        "pubDate": "2026-08-14T10:49:00.000Z",
-        "sentiment": "positive"
-      },
-      {
-        "title": "\"헤지스·닥스 등 주력 브랜드 입지 확대\"...LF, 올해 상반기 실적 호조",
-        "link": "https://www.edaily.co.kr/news/newspath.asp?newsid=06622326645547320",
-        "source": "edaily.co.kr",
-        "pubDate": "2026-08-14T10:09:00.000Z",
-        "sentiment": "positive"
       }
     ],
     "산드로옴므": [],
     "질스튜어트뉴욕": [
       {
-        "title": "LF 질스튜어트뉴욕 액세서리, 26FW 레더백 ‘파세트’ 선봬",
-        "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065597692146951",
-        "source": "megaeconomy.co.kr",
-        "pubDate": "2026-08-18T07:32:00.000Z",
+        "title": "LF, 질스튜어트뉴욕 '파세트' 가방라인 출시···폴딩 구조 눈길",
+        "link": "https://www.smartbizn.com/news/articleView.html?idxno=151533",
+        "source": "smartbizn.com",
+        "pubDate": "2026-08-19T01:54:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "LF 질스튜어트뉴욕 액세서리, 접고 펼치는 구조로 레더백 활용도 넓혀",
+        "link": "http://www.lawissue.co.kr/view.php?ud=202608181621341581204ead0791_12",
+        "source": "lawissue.co.kr",
+        "pubDate": "2026-08-18T07:24:00.000Z",
         "sentiment": "neutral"
       },
       {
@@ -375,10 +366,10 @@
         "sentiment": "neutral"
       },
       {
-        "title": "출근·여행가방을 하나로...LF 질스튜어트뉴욕, 상품군 강화",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1JblVhUDN6dkR1b25LTlVzR0NucUFpWFJpS2JCWU9tZl9wMFQ0MFJSeDNyWWRGZEI3NHR5RmRST2xOZTloM3F5MWFsNzJKMW84WnJRTDY3QzRNdw?oc=5",
-        "source": "파이낸셜뉴스",
-        "pubDate": "2026-08-18T01:00:14.000Z",
+        "title": "출근부터 여행까지 가방 하나로…질스튜어트뉴욕 '원백' 공략",
+        "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=478072",
+        "source": "pinpointnews.co.kr",
+        "pubDate": "2026-08-17T23:14:00.000Z",
         "sentiment": "neutral"
       },
       {
@@ -386,13 +377,6 @@
         "link": "https://www.segye.com/newsView/20260817509179?OutUrl=naver",
         "source": "segye.com",
         "pubDate": "2026-08-17T05:51:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "질스튜어트뉴욕 JSNY, 로호팝 주제 경쾌한 감성의 여성 컬렉션 출시",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOa2lMdkVlb25xc3FtdDVUeE5wRncwMFlCRFRXeGV6dmZmY0M3Y0h2VWdSVWFuMlZpNEoyM01BRGo1X0JHaDlwbjM4WmlqYk1ES2RXZU9rWG9vM3hKMF9VTFd4Y0VBbzY1dXpnRFBUQlJsZkkxMXgyTS1XX1VKcFJhWlFTWllHQVN4MmtmVkt3aFhyemJudGVmTGwybkliRXRrZ0E?oc=5",
-        "source": "패션엔",
-        "pubDate": "2026-08-07T17:21:50.000Z",
         "sentiment": "neutral"
       },
       {
@@ -411,7 +395,15 @@
       }
     ],
     "아스페시": [],
-    "DKNY맨": [],
+    "DKNY맨": [
+      {
+        "title": "For Sale: Baby Clothes, Definitely Worn",
+        "link": "https://www.nytimes.com/2026/08/19/style/vintage-baby-clothes-cosmo-darling.html?partner=naver",
+        "source": "nytimes.com",
+        "pubDate": "2026-08-19T09:03:00.000Z",
+        "sentiment": "neutral"
+      }
+    ],
     "클럽모나코": [],
     "맨온더분": [],
     "수트서플라이": [
@@ -430,13 +422,6 @@
         "link": "http://www.sisunnews.co.kr/news/articleView.html?idxno=243727",
         "source": "sisunnews.co.kr",
         "pubDate": "2026-08-05T06:12:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "신세계인터내셔날, APLB 투자 검토…K뷰티 포트폴리오 확대",
-        "link": "http://www.press9.kr/news/articleView.html?idxno=80269",
-        "source": "press9.kr",
-        "pubDate": "2026-07-29T07:08:00.000Z",
         "sentiment": "neutral"
       }
     ],
