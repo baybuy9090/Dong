@@ -1,6 +1,20 @@
 {
-  "lastUpdated": "2026-08-19T23:28:59.248Z",
+  "lastUpdated": "2026-08-20T23:27:28.261Z",
   "industry": [
+    {
+      "title": "소재 차별화로 '밸류업'…'일꼬르소'의 승부수",
+      "link": "http://www.apparelnews.co.kr/news/news_view/?idx=227066",
+      "source": "apparelnews.co.kr",
+      "pubDate": "2026-08-20T13:06:00.000Z",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "김용걸의 두 남자…11년 만에 돌아온 '뮤즈' 안재용, '볼레로' 꿈 이룬 ...",
+      "link": "https://www.newsis.com/view/NISX20260820_0003756436",
+      "source": "newsis.com",
+      "pubDate": "2026-08-20T08:47:00.000Z",
+      "sentiment": "neutral"
+    },
     {
       "title": "의류쇼핑 줄었는데…6개 패션기업 일제히 반등, 왜?",
       "link": "https://view.asiae.co.kr/article/2026081816582224800",
@@ -42,20 +56,6 @@
       "source": "slist.kr",
       "pubDate": "2026-08-16T06:20:00.000Z",
       "sentiment": "positive"
-    },
-    {
-      "title": "쇼팽 콩쿠르 2위 케빈 첸·男소프라노 마리뇨…예술의전당 국제음악제 ...",
-      "link": "https://view.asiae.co.kr/article/2026081612584288434",
-      "source": "view.asiae.co.kr",
-      "pubDate": "2026-08-16T03:58:00.000Z",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "'도어 넥스트 헤븐' 재연 확정...젠더프리 캐스팅으로 관계성 확장",
-      "link": "https://www.slist.kr/news/articleView.html?idxno=758773",
-      "source": "slist.kr",
-      "pubDate": "2026-08-14T00:54:00.000Z",
-      "sentiment": "positive"
     }
   ],
   "data": {
@@ -69,22 +69,7 @@
       }
     ],
     "띠어리맨": [],
-    "솔리드옴므": [
-      {
-        "title": "김재원, 프린지 재킷으로 강렬 화보 비주얼",
-        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16150452",
-        "source": "topstarnews.net",
-        "pubDate": "2026-07-30T15:18:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "김재원, GQ 화보로 '레이디 두아' 이후 또 다른 매력 증명",
-        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16149997",
-        "source": "topstarnews.net",
-        "pubDate": "2026-07-30T05:34:00.000Z",
-        "sentiment": "neutral"
-      }
-    ],
+    "솔리드옴므": [],
     "시스템옴므": [
       {
         "title": "한섬 '시스템 파리', 성수 상륙…키스 서울서 팝업",
@@ -116,6 +101,13 @@
       }
     ],
     "우영미": [
+      {
+        "title": "\"단독 두 글자에 눈길이 가네\" 고객 지갑 사로잡는 비결...패션업계, 단...",
+        "link": "https://www.greened.kr/news/articleView.html?idxno=348073",
+        "source": "greened.kr",
+        "pubDate": "2026-08-20T04:57:00.000Z",
+        "sentiment": "positive"
+      },
       {
         "title": "[단독] 박경훈의 트렌비, 80%가 기만할인…공정위 지적에도 다크패턴 특...",
         "link": "http://www.lawissue.co.kr/view.php?ud=2026081822281415139817d053b9_12",
@@ -189,6 +181,13 @@
         "sentiment": "positive"
       },
       {
+        "title": "미스토홀딩스, 삼성물산 글로벌 디자이너 브랜드 ‘준지(JUUN.J)’ 중국 전개",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5Td2dRUFJiQVFLajUwTTE1TGg2OEhsVHgzUkg4OEFnMWVZQW1fMFd3bFg1aWtOeVpKQ2l2ODFzcXVDbkJYRnFyM01mNUsweTh5NlhrSFU1Ykl4ZkhQTmfSAWNBVV95cUxObW1tQTdsYl83NW02YVZhY1V2cTZaLWJ3aWRTck9lbHMtN1JSb0MxcmJXY0puXzVmNHJVQmZEamNENmt3MDcwb3JOclpsOVFRLVhyeTNKMVhfWm5OV3FWM1lacEE?oc=5",
+        "source": "스포츠경향",
+        "pubDate": "2026-08-11T07:00:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "뷰티·패션 업계, 늦여름 총력전…대형 프로모션부터 해외 시장 확장까...",
         "link": "http://www.dailypop.kr/news/articleView.html?idxno=101440",
         "source": "dailypop.kr",
@@ -213,56 +212,64 @@
         "sentiment": "neutral"
       }
     ],
-    "CP컴퍼니": [],
+    "CP컴퍼니": [
+      {
+        "title": "👓DD쉘 패딩? 밀레밀리아 자켓? 경량패딩 1대장 CP컴퍼니 전제품 리뷰 Ttc (PIegytkgLS)",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9lVjc2RVN1NXF5UzNsdjktU1drbFBJUVNIU0ZvSzBmNWdRZHhGUUdRMEpsZm9seDE2Y2VBZ3I4eTJLVGx0Z3FaT1NMMXQ2R2MwVWlJdEpQeVZoNE0?oc=5",
+        "source": "Mshale",
+        "pubDate": "2026-08-14T00:19:51.000Z",
+        "sentiment": "neutral"
+      }
+    ],
     "비이커": [
       {
-        "title": "삼성물산 가니, '강인함과 부드러움' 담은 가을·겨울 컬렉션 선봬",
-        "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=478843",
-        "source": "pinpointnews.co.kr",
-        "pubDate": "2026-08-19T23:16:00.000Z",
+        "title": "삼성물산 패션 '가니', 2026 FW 컬렉션 출시…국내 컨템포러리 시장 공략...",
+        "link": "http://www.biztribune.co.kr/news/articleView.html?idxno=357694",
+        "source": "biztribune.co.kr",
+        "pubDate": "2026-08-20T13:54:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "삼성물산 패션이 키운 ‘가니’…상반기 매출 15% 뛰며 ‘신명품’ 입지...",
+        "link": "https://wemakenews.co.kr/news/view.php?no=26082",
+        "source": "wemakenews.co.kr",
+        "pubDate": "2026-08-20T11:32:00.000Z",
         "sentiment": "positive"
       },
       {
-        "title": "\"금요일 오전에 가라\" 신세계사이먼이 공개한 아웃렛 '득템공식'",
-        "link": "https://www.newsis.com/view/NISX20260814_0003749040",
-        "source": "newsis.com",
-        "pubDate": "2026-08-16T22:00:00.000Z",
+        "title": "'신명품' 가니가 그린 가을···\"강인함에 부드러움 한 스푼\"",
+        "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2461079",
+        "source": "enewstoday.co.kr",
+        "pubDate": "2026-08-20T02:05:00.000Z",
         "sentiment": "positive"
       },
       {
-        "title": "옷 보다 음식! '패션 브랜드'가 만든 카페 레스토랑",
-        "link": "https://www.esquirekorea.co.kr/article/1907813",
-        "source": "esquirekorea.co.kr",
-        "pubDate": "2026-08-14T02:30:00.000Z",
+        "title": "가니, 덴마크 감성 담은 FW 선봬…韓 매장 확대하며 성장세",
+        "link": "https://www.m-i.kr/news/articleView.html?idxno=1404018",
+        "source": "m-i.kr",
+        "pubDate": "2026-08-20T01:38:00.000Z",
         "sentiment": "positive"
       },
       {
-        "title": "[패션·잡화 트렌드] 르무통, '손태진의 트로트 라디오'와 함께 르무통...",
-        "link": "https://www.ibabynews.com/news/articleView.html?idxno=153534",
-        "source": "ibabynews.com",
-        "pubDate": "2026-08-07T00:26:00.000Z",
+        "title": "삼성물산 가니, 덴마크 대자연의 강인함과 부드러움 담은 2026년 F/W 컬렉...",
+        "link": "http://www.fashionn.com/board/read_new.php?table=1006&number=62099",
+        "source": "fashionn.com",
+        "pubDate": "2026-08-20T01:30:00.000Z",
+        "sentiment": "positive"
+      },
+      {
+        "title": "\"덴마크 북부 대자연 감성\"…가니, 2026 가을·겨울 컬렉션 출시",
+        "link": "https://www.news1.kr/industry/distribution/6263857",
+        "source": "news1.kr",
+        "pubDate": "2026-08-20T00:23:00.000Z",
         "sentiment": "neutral"
       },
       {
-        "title": "\"레이싱 감성 스니커즈 선보인다\"... 베자, 신제품 'GT' 선봬",
-        "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=205375",
-        "source": "thefirstmedia.net",
-        "pubDate": "2026-08-05T08:06:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "베자, 모터스포츠 영감 신제품 'GT' 공개",
-        "link": "http://www.hansbiz.co.kr/news/articleView.html?idxno=854629",
-        "source": "hansbiz.co.kr",
-        "pubDate": "2026-08-05T01:16:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "베자, 모터스포츠 감성 담은 스니커즈 'GT' 출시…성수·청담서 팝업",
-        "link": "https://www.gpkorea.com/news/articleView.html?idxno=145381",
-        "source": "gpkorea.com",
-        "pubDate": "2026-08-05T00:36:00.000Z",
-        "sentiment": "neutral"
+        "title": "가니, 올 가을·겨울 컬렉션 선보여… 국내 단독 매장 확대",
+        "link": "https://www.cnbizm.com/news/articleView.html?idxno=312060",
+        "source": "cnbizm.com",
+        "pubDate": "2026-08-20T00:12:00.000Z",
+        "sentiment": "positive"
       }
     ],
     "톰그레이하운드맨": [],
@@ -279,10 +286,52 @@
     ],
     "바버": [
       {
+        "title": "팀버랜드, 이태원 'District 82'서 커스텀 부츠부터 각인 체험",
+        "link": "https://www.slist.kr/news/articleView.html?idxno=760173",
+        "source": "slist.kr",
+        "pubDate": "2026-08-20T14:30:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "대전 유통업계, '가을 신상품·추석 선물 수요' 공략",
+        "link": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=905049",
+        "source": "chungnamilbo.co.kr",
+        "pubDate": "2026-08-20T08:10:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "[지역유통업계소식] 대전 유통가 '가을 채비' 분주…쇼핑객 잡기 시동",
+        "link": "https://www.cctoday.co.kr/news/articleView.html?idxno=2235182",
+        "source": "cctoday.co.kr",
+        "pubDate": "2026-08-20T07:10:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "대전신세계, 신규 매장 오픈·팝업 등 준비",
+        "link": "http://www.cctimes.kr/news/articleView.html?idxno=922694",
+        "source": "cctimes.kr",
+        "pubDate": "2026-08-20T06:42:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "[쇼핑정보] 대전신세계, 가을맞이 단장…뷰티·패션 신규 입점 등",
+        "link": "http://www.ccnnews.co.kr/news/articleView.html?idxno=413670",
+        "source": "ccnnews.co.kr",
+        "pubDate": "2026-08-20T06:16:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "킹크로치 ‘WORLD BARBER CLASSIC’ 우승 펜던트 공개",
+        "link": "https://www.fashionbiz.co.kr/article/228715",
+        "source": "fashionbiz.co.kr",
+        "pubDate": "2026-08-20T00:00:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "킹크로치 바버샵 권혁주 헤드 바버, '2026 월드 바버 클래식' 출전",
-        "link": "https://www.maxmovie.com/news/articleView.html?idxno=501268",
-        "source": "maxmovie.com",
-        "pubDate": "2026-08-19T06:18:00.000Z",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9Oem10SVI4aWdPSlR0ZkpGTEdXOEtHZzlETEp0eFhrLWZjWWotOTVENXp2cGhRaUJpU1Z6WGJsbng5SjNNQUZ0czl5MU5tR0lBc3BXZTluNHZtbTZEYjdwSHd2cVlMU0RPNUYw?oc=5",
+        "source": "맥스무비",
+        "pubDate": "2026-08-19T06:17:42.000Z",
         "sentiment": "neutral"
       },
       {
@@ -291,64 +340,29 @@
         "source": "smartbizn.com",
         "pubDate": "2026-08-19T02:04:00.000Z",
         "sentiment": "positive"
-      },
-      {
-        "title": "패션업계 매출 주춤했지만 수익성은 '쑥'…코오롱FnC 영업익 3배 급증",
-        "link": "http://www.consumernews.co.kr/news/articleView.html?idxno=761691",
-        "source": "consumernews.co.kr",
-        "pubDate": "2026-08-18T21:10:00.000Z",
-        "sentiment": "positive"
-      },
-      {
-        "title": "백화점 몰리더니 옷에도 지갑 열었다…외국인까지 가세한 K패션 '활짝'",
-        "link": "https://www.mt.co.kr/living/2026/08/18/2026081814272948969",
-        "source": "mt.co.kr",
-        "pubDate": "2026-08-18T07:29:00.000Z",
-        "sentiment": "positive"
-      },
-      {
-        "title": "“금관과 타악 빚어내는 강렬한 앙상블”",
-        "link": "http://www.kjdaily.com/article.php?aid=1786958422684618006",
-        "source": "kjdaily.com",
-        "pubDate": "2026-08-17T09:40:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "[프라임피플] 부산이 만든 첼리스트 양욱진…'말 너머의 노래' 독주회",
-        "link": "http://www.newsprime.co.kr/news/article.html?no=744059",
-        "source": "newsprime.co.kr",
-        "pubDate": "2026-08-16T07:50:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "[IPO챗] 인제니아·기도산업, 다음주 코스닥 입성",
-        "link": "https://www.yna.co.kr/view/AKR20260814117900008?input=1195m",
-        "source": "yna.co.kr",
-        "pubDate": "2026-08-15T00:00:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "영국의 코츠월드와 런던의 모든 것",
-        "link": "https://www.allurekorea.com/2026/08/15/%ec%98%81%ea%b5%ad%ec%9d%98-%ec%bd%94%ec%b8%a0%ec%9b%94%eb%93%9c%ec%99%80-%eb%9f%b0%eb%8d%98%ec%9d%98-%eb%aa%a8%eb%93%a0-%ea%b2%83/?utm_source=naver&utm_medium=partnership",
-        "source": "allurekorea.com",
-        "pubDate": "2026-08-14T23:02:00.000Z",
-        "sentiment": "neutral"
       }
     ],
     "산드로옴므": [],
     "질스튜어트뉴욕": [
       {
+        "title": "올 가을 패션 트렌드는 ‘라이트 포멀!’ 단정함 속에 풍부한 질감과 깊...",
+        "link": "http://www.fashionn.com/board/read_new.php?table=1006&number=62104",
+        "source": "fashionn.com",
+        "pubDate": "2026-08-20T03:22:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "LF, 질스튜어트뉴욕 '파세트' 가방라인 출시···폴딩 구조 눈길",
-        "link": "https://www.smartbizn.com/news/articleView.html?idxno=151533",
-        "source": "smartbizn.com",
-        "pubDate": "2026-08-19T01:54:00.000Z",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBqbnB6MU5YSXZYNU83azE5bmFBaUxrcXdYc0h2T2pma1kzbkVsQml3R0k4ck1qdXlJU1JNTV9LSzh0Qm1HZ3pkel9NOEJQS2ZJdnNfTFRXNXNLZTZJSXN5M2F3UDY0cTNVbnFyVg?oc=5",
+        "source": "스마트비즈",
+        "pubDate": "2026-08-19T01:53:34.000Z",
         "sentiment": "neutral"
       },
       {
         "title": "LF 질스튜어트뉴욕 액세서리, 접고 펼치는 구조로 레더백 활용도 넓혀",
-        "link": "http://www.lawissue.co.kr/view.php?ud=202608181621341581204ead0791_12",
-        "source": "lawissue.co.kr",
-        "pubDate": "2026-08-18T07:24:00.000Z",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5vSUhaVU1tM0tlaTBiNGlfT0tpYnh0OTVwVmtZUjdzVmZjMU1tOGdnSDJTaWZNX1FzTzRobTZ1c3Y3cTRRZ1BwLWNwejkwc01TbG1rS2xlVXUxbXUxeDBOVS1CLUxCSkVkTzM4N3dtOUlmYTdGRWdiUDNR?oc=5",
+        "source": "로이슈",
+        "pubDate": "2026-08-18T07:22:45.000Z",
         "sentiment": "neutral"
       },
       {
@@ -364,34 +378,6 @@
         "source": "fashionn.com",
         "pubDate": "2026-08-18T02:22:00.000Z",
         "sentiment": "neutral"
-      },
-      {
-        "title": "출근부터 여행까지 가방 하나로…질스튜어트뉴욕 '원백' 공략",
-        "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=478072",
-        "source": "pinpointnews.co.kr",
-        "pubDate": "2026-08-17T23:14:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "숨기던 발가락 드러낸다…‘발꾸’가 바꾼 여름 패션 [트렌드]",
-        "link": "https://www.segye.com/newsView/20260817509179?OutUrl=naver",
-        "source": "segye.com",
-        "pubDate": "2026-08-17T05:51:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "폭염은 여름, 소비는 가을·겨울…패션업계 FW 선점 경쟁",
-        "link": "http://www.mkhealth.co.kr/news/articleView.html?idxno=79491",
-        "source": "mkhealth.co.kr",
-        "pubDate": "2026-08-04T07:56:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "\"한여름 1시간 만에 1.6억 몰렸다\"…LF몰, 역대 최고 찍은 '역시즌 라이...",
-        "link": "https://www.thepublic.kr/news/articleView.html?idxno=313372",
-        "source": "thepublic.kr",
-        "pubDate": "2026-08-01T00:06:00.000Z",
-        "sentiment": "positive"
       }
     ],
     "아스페시": [],
@@ -425,7 +411,15 @@
         "sentiment": "neutral"
       }
     ],
-    "캡틴선샤인": [],
+    "캡틴선샤인": [
+      {
+        "title": "\"소재 좋고 차별화된 미학\"…국내 유통가, 'J 패션' 모시기 열풍",
+        "link": "https://www.news1.kr/industry/distribution/6246471",
+        "source": "news1.kr",
+        "pubDate": "2026-08-02T04:52:00.000Z",
+        "sentiment": "neutral"
+      }
+    ],
     "PAF": [],
     "이스트로그(프레이트)": [],
     "에잇디비젼": [],
