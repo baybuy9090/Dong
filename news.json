@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-21T23:26:37.914Z",
+  "lastUpdated": "2026-08-22T23:23:30.647Z",
   "industry": [
     {
       "title": "격정과 해학…두 가지 몸짓으로 풀어낸 슈베르트 선율",
@@ -237,6 +237,13 @@
         "sentiment": "positive"
       },
       {
+        "title": "비이커, 한남 플래그십 스토어에 팝업 오픈",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9lNFJOTmZKdG1tcXFKVU1NMHFtYWtjQnR5NzlycVllLWM3aW54NEdOTEg1bE1kaGhJWncyQXVWWVVXN1hvLVNYWjNXV1Ntb0cxWVgwOEZNUHRxSWgwUS1zTi1ZN0pOdnl6eWRJZnlQWFRBc1RNdXFYNDB3?oc=5",
+        "source": "패션포스트",
+        "pubDate": "2026-08-20T12:36:20.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "삼성물산 패션이 키운 ‘가니’…상반기 매출 15% 뛰며 ‘신명품’ 입지...",
         "link": "https://wemakenews.co.kr/news/view.php?no=26082",
         "source": "wemakenews.co.kr",
@@ -269,13 +276,6 @@
         "link": "https://www.cnbizm.com/news/articleView.html?idxno=312060",
         "source": "cnbizm.com",
         "pubDate": "2026-08-20T00:12:00.000Z",
-        "sentiment": "positive"
-      },
-      {
-        "title": "삼성 패션, 2026 F/W '가니' 컬렉션 공개…\"강인함과 부드러움 공존\"",
-        "link": "https://news.tf.co.kr/read/economy/2355781.htm",
-        "source": "news.tf.co.kr",
-        "pubDate": "2026-08-19T23:59:00.000Z",
         "sentiment": "positive"
       }
     ],
@@ -359,10 +359,17 @@
         "sentiment": "neutral"
       },
       {
-        "title": "디올, 가을-겨울 여성 컬렉션...질스튜어트뉴욕 액세서리, 신규 가방 라...",
-        "link": "https://www.slist.kr/news/articleView.html?idxno=760457",
-        "source": "slist.kr",
-        "pubDate": "2026-08-21T15:06:00.000Z",
+        "title": "LF, 질스튜어트뉴욕 가방 출시",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPX0RiUTdNaDN0X0V6SkFCQ3hoc092QkhSTkdkT2JIZnFFVUJrS2xndl9lQXp4M1J2ckM0d2R2N0kwTnROX0U5YXRrdWNKbUQ0UlM2dU5lVDVjNlNlamd5b1V2bk9jSTZlWEd1eFJkTWFoYnhuWGdiTGhxeWtXNU5ielVPQ1VYWGZjZ1pqN1BpV2FzUFpNU0E?oc=5",
+        "source": "데일리바이트(DAILY BYTE)",
+        "pubDate": "2026-08-21T22:00:02.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "디올, 가을-겨울 여성 컬렉션...질스튜어트뉴욕 액세서리, 신규 가방 라인 ‘파세트’",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9JWlN5aTdPVWhtdXBMX2s3cEhvMHpXN2lJY3BkcUNiVXpaUG1YdFlzRXk0NmlZRXVsdmVtTmxhd2dHTWVtSGZCdXJkVUJUMnNBMkprNDJYRGRRaVZONEhaTlZIWHd6Zw?oc=5",
+        "source": "싱글리스트",
+        "pubDate": "2026-08-21T15:05:40.000Z",
         "sentiment": "neutral"
       },
       {
@@ -373,24 +380,10 @@
         "sentiment": "neutral"
       },
       {
-        "title": "LF 질스튜어트뉴욕 액세서리, ‘멀티유즈 레더백’ 강화…26FW ‘파세트’ 공개",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5TTnQ1LU1mQ2ZXRDViR1pTcFJyNTB6dmZjNElkOVFINTZxRE41bXpyQ3lzS3c2bUZRMmprRWE4cGtXM2hqSjlWVjdydUxGeVJfaDg1RkFxejVtWGV2RzZTY2N5bVVtTG8?oc=5",
-        "source": "dhns.co.kr",
-        "pubDate": "2026-08-18T03:17:42.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "“접어두면 납작, 들면 입체로”…LF 질스튜어트뉴욕, 폴딩백 ‘파세트’ 출시",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1sYnJ2aVZaQVEtQXQtMm9COFZCUThyNGdRNEZIdERPQzF5NlBjYzRGX29velR4VWkzX1RTd0xJdEdRN1IxMlpyM0lDRXcxdGdsX0ZCc2FpNkgxYVhQWWY3SDE0STliSXh3Z0x5MdIBbEFVX3lxTE1sYnJ2aVZaQVEtQXQtMm9COFZCUThyNGdRNEZIdERPQzF5NlBjYzRGX29velR4VWkzX1RTd0xJdEdRN1IxMlpyM0lDRXcxdGdsX0ZCc2FpNkgxYVhQWWY3SDE0STliSXh3Z0x5MQ?oc=5",
-        "source": "더게이트",
-        "pubDate": "2026-08-18T02:05:19.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "출근·여행가방을 하나로...LF 질스튜어트뉴욕, 상품군 강화",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1JblVhUDN6dkR1b25LTlVzR0NucUFpWFJpS2JCWU9tZl9wMFQ0MFJSeDNyWWRGZEI3NHR5RmRST2xOZTloM3F5MWFsNzJKMW84WnJRTDY3QzRNdw?oc=5",
-        "source": "파이낸셜뉴스",
-        "pubDate": "2026-08-18T01:00:14.000Z",
+        "title": "질스튜어트뉴욕 액세러리, 원백으로 일상과 여행을 함께! 멀티유즈 레더백 ‘파세트’ 출시",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4wQy1EQnVjZV9yZnAwVXB2RzB1b1c0YXdlckxNTEU5NVpMQnZFZGg4RnB0SU9EZHU1R2pDOU1IV0xDRlJxTFBFeFFWYmlYUmpNbXJKcnBMTlk1QkJYenJGcnZodFZLSmxtT2pRYnBJemluMjh3bFlj?oc=5",
+        "source": "패션엔",
+        "pubDate": "2026-08-18T02:23:44.000Z",
         "sentiment": "neutral"
       }
     ],
@@ -418,24 +411,17 @@
     "슬로웨어": [],
     "POTTERY": [
       {
+        "title": "JW 메리어트 깜란 베이, 추석 맞춤 가족 프로그램 운영…프라이빗 빌라...",
+        "link": "https://www.gukjenews.com/news/articleView.html?idxno=3671560",
+        "source": "gukjenews.com",
+        "pubDate": "2026-08-22T11:20:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "추석 가족여행, 나트랑 말고 깜란에서 休…공항 10분·풀빌라에서 '리조...",
         "link": "https://www.tournews21.com/news/articleView.html?idxno=141524",
         "source": "tournews21.com",
         "pubDate": "2026-08-21T02:42:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "“숲과 바다가 만나는 곳에서 누리는 쉼”…JW 메리어트 깜란 베이, 프라...",
-        "link": "https://www.sportsseoul.com/news/read/1629866?ref=naver",
-        "source": "sportsseoul.com",
-        "pubDate": "2026-08-21T00:09:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "JW 메리어트 깜란, 추석 맞아 가족 여행 프로그램 운영",
-        "link": "http://www.beyondpost.co.kr/view.php?ud=20260821082525935046a9e4dd7f_30",
-        "source": "beyondpost.co.kr",
-        "pubDate": "2026-08-20T23:30:00.000Z",
         "sentiment": "neutral"
       },
       {
