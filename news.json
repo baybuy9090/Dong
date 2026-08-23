@@ -1,6 +1,13 @@
 {
-  "lastUpdated": "2026-08-22T23:23:30.647Z",
+  "lastUpdated": "2026-08-23T23:23:17.420Z",
   "industry": [
+    {
+      "title": "컨템포러리 주얼리 ‘넘버링’ 남성라인 ‘A13 컬렉션’ 론칭",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQmFGVTN0ckVkcjBNY1pZM3NxaW1pc2NmUDlCdjRRa2VzUmFmY2ZGVExJZGtKSlJPWUltUGQ3cE9Mc2VQVUhpZm5FYk9mV3hSM0dUY0ZZbVAxWFlZUWV6c0ZmNlVqeWtOc2I4VGFtWHFrU3pHWDJTYUNMb0xkd1VucUNRN1p4QQ?oc=5",
+      "source": "패션포스트",
+      "pubDate": "2026-08-22T15:38:29.000Z",
+      "sentiment": "neutral"
+    },
     {
       "title": "격정과 해학…두 가지 몸짓으로 풀어낸 슈베르트 선율",
       "link": "https://www.joongang.co.kr/article/25455230",
@@ -49,13 +56,6 @@
       "source": "view.asiae.co.kr",
       "pubDate": "2026-08-19T22:10:00.000Z",
       "sentiment": "positive"
-    },
-    {
-      "title": "[패션·잡화 트렌드] 크록스, 엔시티 위시와 함께한 새로운 'Do Your Thing'...",
-      "link": "https://www.ibabynews.com/news/articleView.html?idxno=153806",
-      "source": "ibabynews.com",
-      "pubDate": "2026-08-19T10:10:00.000Z",
-      "sentiment": "neutral"
     }
   ],
   "data": {
@@ -293,6 +293,13 @@
     ],
     "바버": [
       {
+        "title": "5大 패션 기업, 3년 부진 털고 '터닝포인트'",
+        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=227087",
+        "source": "apparelnews.co.kr",
+        "pubDate": "2026-08-23T13:04:00.000Z",
+        "sentiment": "negative"
+      },
+      {
         "title": "'맨유가 1,134억 쐈다!' 캐릭이 찍은 21세 MF 발레바 영입 총력전...브라...",
         "link": "https://www.fourfourtwo.co.kr/news/articleView.html?idxno=96728",
         "source": "fourfourtwo.co.kr",
@@ -318,34 +325,6 @@
         "link": "http://www.gocj.net/news/articleView.html?idxno=151491",
         "source": "gocj.net",
         "pubDate": "2026-08-21T05:48:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "대전 백화점가, 가을·추석 특수 선점...할인·팝업·신규 매장 풍성",
-        "link": "http://www.dtnews24.com/news/articleView.html?idxno=814458",
-        "source": "dtnews24.com",
-        "pubDate": "2026-08-21T03:44:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "[특징주] 기도산업, 코스닥 상장 첫날 6%대 하락…공모가 밑돌기도",
-        "link": "https://www.ajunews.com/view/20260821100102606",
-        "source": "ajunews.com",
-        "pubDate": "2026-08-21T01:06:00.000Z",
-        "sentiment": "negative"
-      },
-      {
-        "title": "킹크로치 바버샵 권혁주 헤드 바버, '2026 월드 바버 클래식' 출전",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9Oem10SVI4aWdPSlR0ZkpGTEdXOEtHZzlETEp0eFhrLWZjWWotOTVENXp2cGhRaUJpU1Z6WGJsbng5SjNNQUZ0czl5MU5tR0lBc3BXZTluNHZtbTZEYjdwSHd2cVlMU0RPNUYw?oc=5",
-        "source": "맥스무비",
-        "pubDate": "2026-08-19T06:17:42.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "경북보건대, 지역 미용인 ‘바버 전문가’로 키운다",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE0wcGJmLWtsNktJYjNNaXVkUW1zdG5BLWdIdlpMQTVGT0pHT1pYdjk4alNLbjFzWEV6ZVVFQzF5S3JqOG9BOGdwMHZlMHFKbUJUaHZiVWV4Uk5Wcm4wYjFvX3BBWmQ4eDZzMDNWbC00cG90QkM1eHFz?oc=5",
-        "source": "김천인터넷뉴스",
-        "pubDate": "2026-08-12T00:38:00.000Z",
         "sentiment": "neutral"
       }
     ],
@@ -390,6 +369,20 @@
     "아스페시": [],
     "DKNY맨": [
       {
+        "title": "전세계 명품핸드백 만드는 이 회사…K문학 토탈패키지 만든 이유",
+        "link": "https://www.mk.co.kr/article/12134317",
+        "source": "mk.co.kr",
+        "pubDate": "2026-08-23T21:25:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "K문학 30년 후원, 명품백王의 진심",
+        "link": "https://www.mk.co.kr/article/12134109",
+        "source": "mk.co.kr",
+        "pubDate": "2026-08-23T08:07:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "For Sale: Baby Clothes, Definitely Worn",
         "link": "https://www.nytimes.com/2026/08/19/style/vintage-baby-clothes-cosmo-darling.html?partner=naver",
         "source": "nytimes.com",
@@ -411,10 +404,10 @@
     "슬로웨어": [],
     "POTTERY": [
       {
-        "title": "JW 메리어트 깜란 베이, 추석 맞춤 가족 프로그램 운영…프라이빗 빌라...",
-        "link": "https://www.gukjenews.com/news/articleView.html?idxno=3671560",
-        "source": "gukjenews.com",
-        "pubDate": "2026-08-22T11:20:00.000Z",
+        "title": "JW 메리어트 깜란 베이, 추석 제안...태피스트리 바이 힐튼, 베트남 첫 ...",
+        "link": "https://www.slist.kr/news/articleView.html?idxno=760609",
+        "source": "slist.kr",
+        "pubDate": "2026-08-22T23:46:00.000Z",
         "sentiment": "neutral"
       },
       {
@@ -425,6 +418,20 @@
         "sentiment": "neutral"
       },
       {
+        "title": "“숲과 바다가 만나는 곳에서 누리는 쉼”…JW 메리어트 깜란 베이, 프라...",
+        "link": "https://www.sportsseoul.com/news/read/1629866?ref=naver",
+        "source": "sportsseoul.com",
+        "pubDate": "2026-08-21T00:09:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "JW 메리어트 깜란, 추석 맞아 가족 여행 프로그램 운영",
+        "link": "http://www.beyondpost.co.kr/view.php?ud=20260821082525935046a9e4dd7f_30",
+        "source": "beyondpost.co.kr",
+        "pubDate": "2026-08-20T23:30:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "[VISION인터뷰] '팟츠 포터리 스튜디오' 유재은 대표 \"도자기가 전하는 ...",
         "link": "http://www.sisunnews.co.kr/news/articleView.html?idxno=243727",
         "source": "sisunnews.co.kr",
@@ -432,16 +439,16 @@
         "sentiment": "neutral"
       }
     ],
-    "캡틴선샤인": [
+    "캡틴선샤인": [],
+    "PAF": [
       {
-        "title": "\"소재 좋고 차별화된 미학\"…국내 유통가, 'J 패션' 모시기 열풍",
-        "link": "https://www.news1.kr/industry/distribution/6246471",
-        "source": "news1.kr",
-        "pubDate": "2026-08-02T04:52:00.000Z",
+        "title": "[AI핫이슈] '자체 모델' AI 앱 기업 확산...독파모 개편 어떻게?",
+        "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=694833",
+        "source": "digitaltoday.co.kr",
+        "pubDate": "2026-08-23T22:30:00.000Z",
         "sentiment": "neutral"
       }
     ],
-    "PAF": [],
     "이스트로그(프레이트)": [],
     "에잇디비젼": [],
     "스컬프스토어": [],
