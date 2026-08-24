@@ -1,6 +1,13 @@
 {
-  "lastUpdated": "2026-08-23T23:23:17.420Z",
+  "lastUpdated": "2026-08-24T23:24:48.344Z",
   "industry": [
+    {
+      "title": "상품만 팔지 않는다…패션∙라이프스타일, '브랜드 경험' 넓힌다",
+      "link": "http://www.kdfnews.com/news/articleView.html?idxno=186978",
+      "source": "kdfnews.com",
+      "pubDate": "2026-08-24T05:16:00.000Z",
+      "sentiment": "neutral"
+    },
     {
       "title": "컨템포러리 주얼리 ‘넘버링’ 남성라인 ‘A13 컬렉션’ 론칭",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQmFGVTN0ckVkcjBNY1pZM3NxaW1pc2NmUDlCdjRRa2VzUmFmY2ZGVExJZGtKSlJPWUltUGQ3cE9Mc2VQVUhpZm5FYk9mV3hSM0dUY0ZZbVAxWFlZUWV6c0ZmNlVqeWtOc2I4VGFtWHFrU3pHWDJTYUNMb0xkd1VucUNRN1p4QQ?oc=5",
@@ -49,13 +56,6 @@
       "source": "newsis.com",
       "pubDate": "2026-08-20T08:47:00.000Z",
       "sentiment": "neutral"
-    },
-    {
-      "title": "의류쇼핑 줄었는데…6개 패션기업 일제히 반등, 왜?",
-      "link": "https://view.asiae.co.kr/article/2026081816582224800",
-      "source": "view.asiae.co.kr",
-      "pubDate": "2026-08-19T22:10:00.000Z",
-      "sentiment": "positive"
     }
   ],
   "data": {
@@ -284,6 +284,13 @@
     "이로맨": [],
     "지오송지오": [
       {
+        "title": "남성복, 온라인 투자 '재시동'",
+        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=227122",
+        "source": "apparelnews.co.kr",
+        "pubDate": "2026-08-24T13:04:00.000Z",
+        "sentiment": "positive"
+      },
+      {
         "title": "길어진 여름…7월 말까지 신상품 투입한다",
         "link": "http://www.apparelnews.co.kr/news/news_view/?idx=226745",
         "source": "apparelnews.co.kr",
@@ -293,6 +300,20 @@
     ],
     "바버": [
       {
+        "title": "지보 이사 제임스 바버, 7만 7천 달러 상당 주식 매입",
+        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5hN2dEb0ZIWk9VVnlvcmFxQVFUbGtMWVZ2SUlXeF9ZV0lJc0NRVHdxdjZWNUNYcVBHMDdNM2RoN2RfYU10aC1FckhmNmRfX19oaU9PcUo2bURRSlRkSHlJdVlJcWpfam9MSW5YU3JXcEw0aTZ6Ykh6UllfVQ?oc=5",
+        "source": "Investing.com 한국어",
+        "pubDate": "2026-08-24T23:16:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "[공식발표] '4-0 대승에도 슬픔에 휩싸였다…' 브라이튼 팬, 경기 종료 ...",
+        "link": "https://www.fourfourtwo.co.kr/news/articleView.html?idxno=96844",
+        "source": "fourfourtwo.co.kr",
+        "pubDate": "2026-08-24T02:24:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "5大 패션 기업, 3년 부진 털고 '터닝포인트'",
         "link": "http://www.apparelnews.co.kr/news/news_view/?idx=227087",
         "source": "apparelnews.co.kr",
@@ -300,31 +321,17 @@
         "sentiment": "negative"
       },
       {
-        "title": "'맨유가 1,134억 쐈다!' 캐릭이 찍은 21세 MF 발레바 영입 총력전...브라...",
-        "link": "https://www.fourfourtwo.co.kr/news/articleView.html?idxno=96728",
-        "source": "fourfourtwo.co.kr",
-        "pubDate": "2026-08-21T18:40:00.000Z",
+        "title": "킹크로치, ‘2026 월드 바버 클래식’ 챔피언 펜던트 제작",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5BNFBqQVI5S05NMUcwUmZkNGhkV2F0OVRaMmlyUkRIYnZVYXZUcEloUFl1bEh2YkMtN3pxRWxJZjQyTFRVNUJDODZ2QWhLa3RETWhpQllqMXhrV0FUYkZ6dG5ielJSb2s4a1dSOWFiZEVKMlk?oc=5",
+        "source": "어패럴뉴스",
+        "pubDate": "2026-08-19T09:51:46.000Z",
         "sentiment": "neutral"
       },
       {
-        "title": "[포토] 기도산업, 코스닥시장 상장…글로벌 고기능성 의류 시장 공략",
-        "link": "https://www.viva100.com/article/20260821500815",
-        "source": "viva100.com",
-        "pubDate": "2026-08-21T08:34:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "기도산업, 오버행 우려...상장 첫날 30%대 급락",
-        "link": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202608210643&t=NN",
-        "source": "wowtv.co.kr",
-        "pubDate": "2026-08-21T08:03:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "대전 신세계 가을 앞두고 차별화된 쇼핑 콘텐츠 선보여",
-        "link": "http://www.gocj.net/news/articleView.html?idxno=151491",
-        "source": "gocj.net",
-        "pubDate": "2026-08-21T05:48:00.000Z",
+        "title": "경북보건대, 지역 미용인 ‘바버 전문가’로 키운다",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE0wcGJmLWtsNktJYjNNaXVkUW1zdG5BLWdIdlpMQTVGT0pHT1pYdjk4alNLbjFzWEV6ZVVFQzF5S3JqOG9BOGdwMHZlMHFKbUJUaHZiVWV4Uk5Wcm4wYjFvX3BBWmQ4eDZzMDNWbC00cG90QkM1eHFz?oc=5",
+        "source": "김천인터넷뉴스",
+        "pubDate": "2026-08-12T00:38:00.000Z",
         "sentiment": "neutral"
       }
     ],
@@ -332,23 +339,16 @@
     "질스튜어트뉴욕": [
       {
         "title": "[금주핫템] 질스튜어트뉴욕 '파세트'·유한킴벌리 '캡슐세제'",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9iWGVqMVozZWg0SEJYek1LeXdlWHk0bEwzQnBvR01INFBidzJObmQzVWowSjMtbWg3d2JwRGNfbmZQNFNiM3czUHRCVmtJV2Nsc2dONUNiYkkyQ2JFcDVYa9IBYEFVX3lxTE9iWGVqMVozZWg0SEJYek1LeXdlWHk0bEwzQnBvR01INFBidzJObmQzVWowSjMtbWg3d2JwRGNfbmZQNFNiM3czUHRCVmtJV2Nsc2dONUNiYkkyQ2JFcDVYaw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Ib1g2WDRqREtfaTQzSVVuclNrd0hTcGdieVEyazBOdVFmTUdWN1pzT21JRFhkQWQ0dk13UnpVeUVNZmN4UWZJNjJYNHZYUUhIbnZ1OXRjNGlxbEnSAWBBVV95cUxPYlhlajFaM2VoNEhCWHpNS3l3ZVh5NGxMM0Jwb0dNSDRQYncyTm5kM1VqMEozLW1oN3dicERjX25mUDRTYjN3M1B0QlZrSVdjbHNnTjVDYmJJMkNiRXA1WGs?oc=5",
         "source": "연합뉴스",
         "pubDate": "2026-08-21T22:00:02.000Z",
         "sentiment": "neutral"
       },
       {
-        "title": "LF, 질스튜어트뉴욕 가방 출시",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPX0RiUTdNaDN0X0V6SkFCQ3hoc092QkhSTkdkT2JIZnFFVUJrS2xndl9lQXp4M1J2ckM0d2R2N0kwTnROX0U5YXRrdWNKbUQ0UlM2dU5lVDVjNlNlamd5b1V2bk9jSTZlWEd1eFJkTWFoYnhuWGdiTGhxeWtXNU5ielVPQ1VYWGZjZ1pqN1BpV2FzUFpNU0E?oc=5",
-        "source": "데일리바이트(DAILY BYTE)",
-        "pubDate": "2026-08-21T22:00:02.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "디올, 가을-겨울 여성 컬렉션...질스튜어트뉴욕 액세서리, 신규 가방 라인 ‘파세트’",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9JWlN5aTdPVWhtdXBMX2s3cEhvMHpXN2lJY3BkcUNiVXpaUG1YdFlzRXk0NmlZRXVsdmVtTmxhd2dHTWVtSGZCdXJkVUJUMnNBMkprNDJYRGRRaVZONEhaTlZIWHd6Zw?oc=5",
-        "source": "싱글리스트",
-        "pubDate": "2026-08-21T15:05:40.000Z",
+        "title": "디올, 가을-겨울 여성 컬렉션...질스튜어트뉴욕 액세서리, 신규 가방 라...",
+        "link": "https://www.slist.kr/news/articleView.html?idxno=760457",
+        "source": "slist.kr",
+        "pubDate": "2026-08-21T15:06:00.000Z",
         "sentiment": "neutral"
       },
       {
@@ -359,10 +359,24 @@
         "sentiment": "neutral"
       },
       {
-        "title": "질스튜어트뉴욕 액세러리, 원백으로 일상과 여행을 함께! 멀티유즈 레더백 ‘파세트’ 출시",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4wQy1EQnVjZV9yZnAwVXB2RzB1b1c0YXdlckxNTEU5NVpMQnZFZGg4RnB0SU9EZHU1R2pDOU1IV0xDRlJxTFBFeFFWYmlYUmpNbXJKcnBMTlk1QkJYenJGcnZodFZLSmxtT2pRYnBJemluMjh3bFlj?oc=5",
-        "source": "패션엔",
-        "pubDate": "2026-08-18T02:23:44.000Z",
+        "title": "LF 질스튜어트뉴욕 액세서리, ‘멀티유즈 레더백’ 강화…26FW ‘파세트’ 공개",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5TTnQ1LU1mQ2ZXRDViR1pTcFJyNTB6dmZjNElkOVFINTZxRE41bXpyQ3lzS3c2bUZRMmprRWE4cGtXM2hqSjlWVjdydUxGeVJfaDg1RkFxejVtWGV2RzZTY2N5bVVtTG8?oc=5",
+        "source": "dhns.co.kr",
+        "pubDate": "2026-08-18T03:17:42.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "출근·여행가방을 하나로...LF 질스튜어트뉴욕, 상품군 강화",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1JblVhUDN6dkR1b25LTlVzR0NucUFpWFJpS2JCWU9tZl9wMFQ0MFJSeDNyWWRGZEI3NHR5RmRST2xOZTloM3F5MWFsNzJKMW84WnJRTDY3QzRNdw?oc=5",
+        "source": "파이낸셜뉴스",
+        "pubDate": "2026-08-18T01:00:14.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "“접어두면 납작, 들면 입체로”…LF 질스튜어트뉴욕, 폴딩백 ‘파세트’ 출시",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE40OE1TekkwUF9BajUtMlBaUjktbndObTRTTlNQblFUYV8yYmkxVlRwRVpuWXZ5V0d0RFRJYmlGd3BSUzhXMDNyY01CTmgwOWhkcDkzZThTdVpmY0swS0Yzd1d3MGJmN2N40gFsQVVfeXFMTWxicnZpVlpBUS1BdC0yb0I4VkJROHI0Z1E0Rkh0RE9DMXk2UGNjNEZfb296VHhVaTNfVFN3TEl0R1E3UjEyWnIzSUNFdzF0Z2xfRkJzYWk2SDFhWFBZZjdIMTRJOWJJeHdnTHkx?oc=5",
+        "source": "더게이트",
+        "pubDate": "2026-08-18T00:55:22.000Z",
         "sentiment": "neutral"
       }
     ],
@@ -403,6 +417,20 @@
     ],
     "슬로웨어": [],
     "POTTERY": [
+      {
+        "title": "[핵심 상권 리포트] 홍대 / 이태원 / 성수",
+        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=227126",
+        "source": "apparelnews.co.kr",
+        "pubDate": "2026-08-24T13:04:00.000Z",
+        "sentiment": "positive"
+      },
+      {
+        "title": "[호텔·리조트 트렌드] \"아이는 뽀로로 풀장, 어른은 워터파크로\" 한화...",
+        "link": "https://www.ibabynews.com/news/articleView.html?idxno=153926",
+        "source": "ibabynews.com",
+        "pubDate": "2026-08-24T06:18:00.000Z",
+        "sentiment": "neutral"
+      },
       {
         "title": "JW 메리어트 깜란 베이, 추석 제안...태피스트리 바이 힐튼, 베트남 첫 ...",
         "link": "https://www.slist.kr/news/articleView.html?idxno=760609",
