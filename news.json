@@ -1,18 +1,39 @@
 {
-  "lastUpdated": "2026-08-24T23:24:48.344Z",
+  "lastUpdated": "2026-08-25T23:26:53.854Z",
   "industry": [
+    {
+      "title": "컨템포러리 주얼리 ‘넘버링’ 남성라인 ‘A13 컬렉션’ 론칭",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNYWpUenJzMmRTNGRTREpOS3UxbXRWYS1BSy1Ga1d3VDl5M01KM2V1c3VPMDYxLWJQa0FrUlZZZFFWNHVjNjF4WkRlRjFjSlA5SFlobnZ5eU5mTjRFOEY3Nm5ENW13eGZzc0RBV0hCSE9vQlR3TXRKSUFJM3BBNHB4T004WFRaQQ?oc=5",
+      "source": "패션포스트",
+      "pubDate": "2026-08-25T10:07:58.000Z",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\"K-패션 하면 마뗑킴 생각나요\"…외국인들 인증샷 쏟아진 하고하우스",
+      "link": "https://www.news1.kr/industry/distribution/6269315",
+      "source": "news1.kr",
+      "pubDate": "2026-08-25T10:04:00.000Z",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "핀블랙, ‘2026 레더자켓 컬렉션’ 가죽재킷 및 점퍼 선공개",
+      "link": "https://www.socialvalue.kr/news/view/1065588722085110",
+      "source": "socialvalue.kr",
+      "pubDate": "2026-08-25T08:08:00.000Z",
+      "sentiment": "negative"
+    },
+    {
+      "title": "무신사 4만원 미만 '서핑 팔찌' 4",
+      "link": "https://www.esquirekorea.co.kr/article/1906861",
+      "source": "esquirekorea.co.kr",
+      "pubDate": "2026-08-25T04:00:00.000Z",
+      "sentiment": "negative"
+    },
     {
       "title": "상품만 팔지 않는다…패션∙라이프스타일, '브랜드 경험' 넓힌다",
       "link": "http://www.kdfnews.com/news/articleView.html?idxno=186978",
       "source": "kdfnews.com",
       "pubDate": "2026-08-24T05:16:00.000Z",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "컨템포러리 주얼리 ‘넘버링’ 남성라인 ‘A13 컬렉션’ 론칭",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQmFGVTN0ckVkcjBNY1pZM3NxaW1pc2NmUDlCdjRRa2VzUmFmY2ZGVExJZGtKSlJPWUltUGQ3cE9Mc2VQVUhpZm5FYk9mV3hSM0dUY0ZZbVAxWFlZUWV6c0ZmNlVqeWtOc2I4VGFtWHFrU3pHWDJTYUNMb0xkd1VucUNRN1p4QQ?oc=5",
-      "source": "패션포스트",
-      "pubDate": "2026-08-22T15:38:29.000Z",
       "sentiment": "neutral"
     },
     {
@@ -35,39 +56,10 @@
       "source": "ekn.kr",
       "pubDate": "2026-08-21T02:30:00.000Z",
       "sentiment": "positive"
-    },
-    {
-      "title": "발레의 매력 발견하는 '2025 경기발레페스타' 26~27일 경기아트센터서 열...",
-      "link": "https://www.joongboo.com/news/articleView.html?idxno=363734401",
-      "source": "joongboo.com",
-      "pubDate": "2026-08-21T01:58:00.000Z",
-      "sentiment": "positive"
-    },
-    {
-      "title": "소재 차별화로 '밸류업'…'일꼬르소'의 승부수",
-      "link": "http://www.apparelnews.co.kr/news/news_view/?idx=227066",
-      "source": "apparelnews.co.kr",
-      "pubDate": "2026-08-20T13:06:00.000Z",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "김용걸의 두 남자…11년 만에 돌아온 '뮤즈' 안재용, '볼레로' 꿈 이룬 ...",
-      "link": "https://www.newsis.com/view/NISX20260820_0003756436",
-      "source": "newsis.com",
-      "pubDate": "2026-08-20T08:47:00.000Z",
-      "sentiment": "neutral"
     }
   ],
   "data": {
-    "타임옴므": [
-      {
-        "title": "iM증권, 한섬 목표가 21%↓…\" 주가, 팬데믹 저점 수준\"",
-        "link": "https://www.yna.co.kr/view/AKR20260805021500008?input=1195m",
-        "source": "yna.co.kr",
-        "pubDate": "2026-08-04T23:26:00.000Z",
-        "sentiment": "neutral"
-      }
-    ],
+    "타임옴므": [],
     "띠어리맨": [],
     "솔리드옴므": [],
     "시스템옴므": [
@@ -195,8 +187,23 @@
         "sentiment": "neutral"
       }
     ],
-    "송지오옴므": [],
+    "송지오옴므": [
+      {
+        "title": "“‘꺼먹살이’ 등에 업고 귀환, 그 친구 잘될 줄 알았죠”",
+        "link": "https://woman.donga.com/3/all/12/6360832/1",
+        "source": "woman.donga.com",
+        "pubDate": "2026-08-25T22:02:00.000Z",
+        "sentiment": "neutral"
+      }
+    ],
     "스톤아일랜드": [
+      {
+        "title": "슈프림 x 스톤아일랜드 협업 컬렉션 발매",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNR05LX2FtUWRiNVR0WWVOZjNlV25GdVJYeFI2bFdUVzIybmJaS0M1QXlKZExUc0lRSFJIZjFTM2F0Q3ZVNnl5cEpzRWFuazNfbXd0Q0dEbWRTbUQxbFoxNlZJUlRGNDF1eVVRTTlHZ1B4WFktZkh6Ul9EUWlGNml5QzBBQk8?oc=5",
+        "source": "패션포스트",
+        "pubDate": "2026-08-24T03:14:16.000Z",
+        "sentiment": "positive"
+      },
       {
         "title": "[충청 유통가 레이더] 무더위 날릴 할인 대전",
         "link": "https://www.jbnews.com/news/articleView.html?idxno=1509389",
@@ -284,13 +291,6 @@
     "이로맨": [],
     "지오송지오": [
       {
-        "title": "남성복, 온라인 투자 '재시동'",
-        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=227122",
-        "source": "apparelnews.co.kr",
-        "pubDate": "2026-08-24T13:04:00.000Z",
-        "sentiment": "positive"
-      },
-      {
         "title": "길어진 여름…7월 말까지 신상품 투입한다",
         "link": "http://www.apparelnews.co.kr/news/news_view/?idx=226745",
         "source": "apparelnews.co.kr",
@@ -299,6 +299,13 @@
       }
     ],
     "바버": [
+      {
+        "title": "‘헤지스·닥스’ 브랜드 파워 입증한 LF…수입·뷰티·AI로 성장판 넓힌...",
+        "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065577275691119",
+        "source": "megaeconomy.co.kr",
+        "pubDate": "2026-08-25T02:16:00.000Z",
+        "sentiment": "positive"
+      },
       {
         "title": "지보 이사 제임스 바버, 7만 7천 달러 상당 주식 매입",
         "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5hN2dEb0ZIWk9VVnlvcmFxQVFUbGtMWVZ2SUlXeF9ZV0lJc0NRVHdxdjZWNUNYcVBHMDdNM2RoN2RfYU10aC1FckhmNmRfX19oaU9PcUo2bURRSlRkSHlJdVlJcWpfam9MSW5YU3JXcEw0aTZ6Ykh6UllfVQ?oc=5",
@@ -312,13 +319,6 @@
         "source": "fourfourtwo.co.kr",
         "pubDate": "2026-08-24T02:24:00.000Z",
         "sentiment": "neutral"
-      },
-      {
-        "title": "5大 패션 기업, 3년 부진 털고 '터닝포인트'",
-        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=227087",
-        "source": "apparelnews.co.kr",
-        "pubDate": "2026-08-23T13:04:00.000Z",
-        "sentiment": "negative"
       },
       {
         "title": "킹크로치, ‘2026 월드 바버 클래식’ 챔피언 펜던트 제작",
@@ -404,7 +404,15 @@
         "sentiment": "neutral"
       }
     ],
-    "클럽모나코": [],
+    "클럽모나코": [
+      {
+        "title": "이동호 전 현대百그룹 부회장, 소탈·온화한 에세이 ‘긴 여정의 첫걸음...",
+        "link": "https://www.joongang.co.kr/article/25456202",
+        "source": "joongang.co.kr",
+        "pubDate": "2026-08-25T20:00:00.000Z",
+        "sentiment": "neutral"
+      }
+    ],
     "맨온더분": [],
     "수트서플라이": [
       {
