@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-27T11:06:11.655Z",
+  "lastUpdated": "2026-08-28T12:39:23.285Z",
   "data": {
     "SC00002": [
       {
@@ -35,7 +35,7 @@
       {
         "floor": "5F",
         "label": "5F 여성 클래식/뉴 컨템포러리/핸드백 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00002/guide/floor/__icsFiles/afieldfile/2026/08/26/sXrkBa6KAAwo.png"
+        "url": "https://www.shinsegae.com/cms12/SC00002/guide/floor/__icsFiles/afieldfile/2026/08/28/5F_260828-20260828032209-20260828032219.png"
       },
       {
         "floor": "4F",
@@ -50,7 +50,7 @@
       {
         "floor": "2F",
         "label": "2F 해외유명브랜드 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00002/guide/floor/__icsFiles/afieldfile/2026/08/27/9oau6MjCg9Ew.png"
+        "url": "https://www.shinsegae.com/cms12/SC00002/guide/floor/__icsFiles/afieldfile/2026/08/28/2F_260828(260901)-20260828042009-20260828042019.png"
       },
       {
         "floor": "1F",
@@ -481,7 +481,7 @@
       {
         "floor": "4F",
         "label": "4F 여성/구두/란제리 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00010/guide/floor/__icsFiles/afieldfile/2026/08/24/sLzzDmbLfSX0.png"
+        "url": "https://www.shinsegae.com/cms12/SC00010/guide/floor/__icsFiles/afieldfile/2026/08/28/Oyk0AWLGtDNz.png"
       },
       {
         "floor": "3F",
@@ -528,7 +528,7 @@
       {
         "floor": "1F",
         "label": "1F 화장품/해외유명브랜드/잡화 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/08/17/A-1-20260817023947-20260817023950.jpg"
+        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/08/28/A-1-20260817023947-20260817023950.jpg"
       },
       {
         "floor": "B1F",
@@ -580,7 +580,7 @@
       {
         "floor": "2F",
         "label": "2F 해외패션 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00003/guide/floor/__icsFiles/afieldfile/2026/02/20/4HdtKc038Mso.jpg"
+        "url": "https://www.shinsegae.com/cms12/SC00003/guide/floor/__icsFiles/afieldfile/2026/08/28/K7EFoy1P4euu.png"
       },
       {
         "floor": "1F",
@@ -802,6 +802,11 @@
       }
     ],
     "0007": [
+      {
+        "floor": "11F",
+        "label": "11F 롯데문화센터",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0007/20210810180450510_8.jpg"
+      },
       {
         "floor": "10F",
         "label": "10F 식당가ㅣ서비스라운지(롯데카드센터,롯데상품권)ㅣ사은품증정",
@@ -1050,6 +1055,11 @@
       }
     ],
     "0001": [
+      {
+        "floor": "14F",
+        "label": "14F 식당가",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0001/20211017175028110_5.jpg"
+      },
       {
         "floor": "13F",
         "label": "13F 식당가",
@@ -1378,6 +1388,11 @@
     ],
     "0011": [
       {
+        "floor": "11F",
+        "label": "11F 샤롯데가든",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202107/0011/20210706123126405_2.jpg"
+      },
+      {
         "floor": "10F",
         "label": "10F 식당가 Ι 리조트휘트니스",
         "url": "https://minfo.lotteshopping.com/content/cstr/202510/0011/20251002182653453_3.jpg"
@@ -1595,6 +1610,11 @@
       }
     ],
     "0017": [
+      {
+        "floor": "06F",
+        "label": "6F 식당가ㅣ점행사장ㅣ사은품증정ㅣ롯데카드",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0017/20220227160647738_8.jpg"
+      },
       {
         "floor": "05F",
         "label": "5F 남성패션ㅣ트래디셔널ㅣ바버샵",
