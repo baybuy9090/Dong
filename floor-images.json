@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02T05:37:57.160Z",
+  "lastUpdated": "2026-09-03T05:37:33.133Z",
   "data": {
     "SC00002": [
       {
@@ -25,7 +25,7 @@
       {
         "floor": "7F",
         "label": "7F 골프/남성 캐주얼/남성 컨템포러리/정장 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00002/guide/floor/__icsFiles/afieldfile/2026/09/01/YDDd03AogCot.png"
+        "url": "https://www.shinsegae.com/cms12/SC00002/guide/floor/__icsFiles/afieldfile/2026/09/02/okxBivtQlvxE.png"
       },
       {
         "floor": "6F",
@@ -233,17 +233,17 @@
       {
         "floor": "5F",
         "label": "5F 베로나 스트리트｜식당가｜한밭대식당 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00060/guide/floor/__icsFiles/afieldfile/2026/08/21/5F_260825-20260821081119-20260821081124.png"
+        "url": "https://www.shinsegae.com/cms12/SC00060/guide/floor/__icsFiles/afieldfile/2026/09/03/5F_260902-20260903095520-20260903095525.png"
       },
       {
         "floor": "4F",
         "label": "4F 스포츠/아웃도어 ｜골프｜리틀신세계(아동/유아)｜란제리 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00060/guide/floor/__icsFiles/afieldfile/2026/08/26/4F_260825_2-20260826095715-20260826095719.png"
+        "url": "https://www.shinsegae.com/cms12/SC00060/guide/floor/__icsFiles/afieldfile/2026/09/03/4F_2609022-20260903110257-20260903110303.png"
       },
       {
         "floor": "3F",
         "label": "3F 여성｜남성｜슈즈｜핸드백 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00060/guide/floor/__icsFiles/afieldfile/2026/08/21/3F_260825-20260821081027-20260821081031.jpg"
+        "url": "https://www.shinsegae.com/cms12/SC00060/guide/floor/__icsFiles/afieldfile/2026/09/03/3F_260902-20260903095311-20260903095319.png"
       },
       {
         "floor": "2F",
@@ -258,7 +258,7 @@
       {
         "floor": "B1F",
         "label": "B1 푸드마켓｜푸드홀｜델리｜생활 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00060/guide/floor/__icsFiles/afieldfile/2026/08/21/B1_260825-20260821080813-20260821080819.png"
+        "url": "https://www.shinsegae.com/cms12/SC00060/guide/floor/__icsFiles/afieldfile/2026/09/03/B1_260902-20260903095240-20260903095248.png"
       }
     ],
     "SC00005": [
@@ -439,7 +439,7 @@
       {
         "floor": "1F",
         "label": "1F 해외유명브랜드/화장품/스파랜드 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00008/guide/floor/__icsFiles/afieldfile/2026/09/01/1F-260901-20260901095218-20260901095220.jpg"
+        "url": "https://www.shinsegae.com/cms12/SC00008/guide/floor/__icsFiles/afieldfile/2026/09/03/1F-260901-20260903022312-20260903022314.jpg"
       },
       {
         "floor": "B1F",
@@ -456,7 +456,7 @@
       {
         "floor": "9F",
         "label": "9F 전문식당가/아카데미/고객서비스센터/신세계상품권/S가든 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00010/guide/floor/__icsFiles/afieldfile/2026/05/19/5.19_9F-20260519094019-20260519094021.jpg"
+        "url": "https://www.shinsegae.com/cms12/SC00010/guide/floor/__icsFiles/afieldfile/2026/09/03/0903_9f-20260903110134-20260903110136.png"
       },
       {
         "floor": "8F",
@@ -803,6 +803,11 @@
     ],
     "0007": [
       {
+        "floor": "11F",
+        "label": "11F 롯데문화센터",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0007/20210810180450510_8.jpg"
+      },
+      {
         "floor": "10F",
         "label": "10F 식당가ㅣ서비스라운지(롯데카드센터,롯데상품권)ㅣ사은품증정",
         "url": "https://minfo.lotteshopping.com/content/cstr/202503/0007/20250319122947751_3.png"
@@ -916,6 +921,11 @@
       }
     ],
     "0023": [
+      {
+        "floor": "11F",
+        "label": "11F 샤롯데가든ㅣ풋살구장",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202107/0023/20210730172028133_5.jpg"
+      },
       {
         "floor": "10F",
         "label": "10F 식당가ㅣ롯데문화센터ㅣ롯데상품권ㅣ사은품증정",
@@ -1294,6 +1304,11 @@
     ],
     "0015": [
       {
+        "floor": "08F",
+        "label": "8F 서비스라운지 | 식당가ㅣ고객상담실ㅣ문화센터",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202204/0015/20220425101051486_3.jpg"
+      },
+      {
         "floor": "07F",
         "label": "7F 키즈ㆍ유아휴게실ㅣ영플라자 : 그랜드휠",
         "url": "https://minfo.lotteshopping.com/content/cstr/202207/0015/20220725100646949_3.jpg"
@@ -1439,6 +1454,11 @@
       }
     ],
     "0002": [
+      {
+        "floor": "12F",
+        "label": "12F 문화센터",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202008/0002/20200831155003332_4.jpg"
+      },
       {
         "floor": "11F",
         "label": "11F 레스토랑ㅣ금융센터",
