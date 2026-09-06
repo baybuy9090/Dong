@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-05T05:30:45.689Z",
+  "lastUpdated": "2026-09-06T05:45:07.093Z",
   "data": {
     "SC00002": [
       {
@@ -865,11 +865,6 @@
     ],
     "0022": [
       {
-        "floor": "10F",
-        "label": "10F 롯데시네마",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202105/0022/20210517141042665_7.jpg"
-      },
-      {
         "floor": "09F",
         "label": "9F 식당가ㅣ고객상담실",
         "url": "https://minfo.lotteshopping.com/content/cstr/202203/0022/20220303142129180_7.jpg"
@@ -1200,11 +1195,6 @@
     ],
     "0349": [
       {
-        "floor": "08F",
-        "label": "8F 샤롯데가든",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202003/0349/20200323130032635_8.jpg"
-      },
-      {
         "floor": "07F",
         "label": "7F 식당가ㅣ롯데문화센터 | 사은품증정 | 뷰티&헤어",
         "url": "https://minfo.lotteshopping.com/content/cstr/202110/0349/2021100109590747_4.jpg"
@@ -1387,6 +1377,11 @@
       }
     ],
     "0011": [
+      {
+        "floor": "11F",
+        "label": "11F 샤롯데가든",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202107/0011/20210706123126405_2.jpg"
+      },
       {
         "floor": "10F",
         "label": "10F 식당가 Ι 리조트휘트니스",
@@ -1605,11 +1600,6 @@
       }
     ],
     "0017": [
-      {
-        "floor": "06F",
-        "label": "6F 식당가ㅣ점행사장ㅣ사은품증정ㅣ롯데카드",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0017/20220227160647738_8.jpg"
-      },
       {
         "floor": "05F",
         "label": "5F 남성패션ㅣ트래디셔널ㅣ바버샵",
