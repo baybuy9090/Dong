@@ -1,6 +1,13 @@
 {
-  "lastUpdated": "2026-09-05T00:42:18.389Z",
+  "lastUpdated": "2026-09-06T00:42:03.575Z",
   "industry": [
+    {
+      "title": "[유통체크업] 다가오는 간절기, '패션시계' 빨라진다",
+      "link": "http://www.the-biz.co.kr/news/articleView.html?idxno=727350",
+      "source": "the-biz.co.kr",
+      "pubDate": "2026-09-05T05:00:00.000Z",
+      "sentiment": "neutral"
+    },
     {
       "title": "[패션가 NOW] LF 마에스트로, 무신사, 탑텐키즈, 시야쥬, 폴햄, 디디에 ...",
       "link": "https://www.ekn.kr/web/view.php?key=20260904020340828",
@@ -46,15 +53,8 @@
     {
       "title": "컨템포러리 주얼리 ‘넘버링’ 남성라인 ‘A13 컬렉션’ 론칭",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdUY5ck1wMWo4emRPMWQ2Zkk4d2Q3c19jN2tmM1JFSEVoUEcwNzRZUFRxSUZZQWNpZ0JRSTF4TDRrSkpON1pnS2V2ejR5enExbGVEVXp4RmNfa0taaTQyZnhvV2UyV09IcHhBdm9UZkt1dlYta2ktZ3QySElVRjI1QTJYbzFtQQ?oc=5",
-      "source": "fpost.co.kr",
+      "source": "패션포스트",
       "pubDate": "2026-09-02T20:05:53.000Z",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "남성 컨템포러리 브랜드 '예아' 21FW 컬렉션 선보여",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYnlhcDFxNWpja0Z4bEVkaVlrZ1kxRGQwbmY0RmRmOEFVWlFGNmw4b0ZBWmRuWXFfS1VFOE5zUkliWHotdU9CMUhEOFJEYWtGa1RSQVFnWnNrcFJ3NDRjZGlscUlqVXZWQVlnSEV3b1pzbG90a0lqQ016S0stMkpEUU1WNTRfRHR5Qk4zQi1zUkVzSWR0c3FxUUVNb2pWY1lkWGU0?oc=5",
-      "source": "fpost.co.kr",
-      "pubDate": "2026-08-27T19:05:44.000Z",
       "sentiment": "neutral"
     }
   ],
@@ -99,6 +99,13 @@
         "source": "newsclaim.co.kr",
         "pubDate": "2026-09-02T06:54:00.000Z",
         "sentiment": "neutral"
+      },
+      {
+        "title": "우영미, 여성복 단독 팝업스토어 오픈",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5ZMllDc29mSVhfaFZxUDdLNjUwUWNuSDRtMkZLakU3cVluLUxLMmI3TWltTzc2STh1OWxLVE9DR01LMDZuTVBxQ3JRTXh3ckN2R0FPREZUb2h2U01kZ2QtNmdwaUEya2pKOWVoMTY4V3p4OVhZMmdkTlE3WWM2dw?oc=5",
+        "source": "패션포스트",
+        "pubDate": "2026-09-01T05:28:01.000Z",
+        "sentiment": "positive"
       },
       {
         "title": "국내 색사 생산기반 붕괴…목련, 고가·고품질 시장 다크호스로 부상",
@@ -163,25 +170,11 @@
     ],
     "스톤아일랜드": [
       {
-        "title": "스톤아일랜드, 22 SPRING/SUMMER 컬렉션 출시",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUDI4bk5feTFLZHpLRmktS2x5a0otMEN3Mi1CdTNteFo2VW5FWjVNTlJWUTR6dDNGQmlNYWJXUmNMb0F1WUtCV3pwZFBpMkhxQ3A0Q3lKTTJ0TkE1ZWpYek1SSEMzLWdjNVc5RVZxME9JV2IzeWhFQ1R6a2xSYXRtdFRaNGZqYTN6RS1pRFlraTh0ZTFSc3BvV1dIUHRSbGFPd0pUQw?oc=5",
-        "source": "fpost.co.kr",
-        "pubDate": "2026-09-02T23:56:34.000Z",
+        "title": "스톤아일랜드, 춘하 컬렉션 공개",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYzJzejRKb0RWcHotTmFWemwxR18xWEREV05OZFpxeWN5SHNRX3NlWVJtRzBUT1FUbW8xZ2Y3NnA5NzFjdWxoNHo4dUxWUmw3ZkpRQW5IRGtFc2o2Ym9oa29pbklOZjg5RWxVWl9NdG1GNmdNd2ZWT0JQc2RidzFKaXZJMlk?oc=5",
+        "source": "패션포스트",
+        "pubDate": "2026-09-03T20:45:39.000Z",
         "sentiment": "neutral"
-      },
-      {
-        "title": "스톤아일랜드, 나일론 메탈 제품 출시",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPY0ZRM3VTRWp4Y1BJX1hYRDRkU1lNRjdSbWRaNjZ3UHlKY3pBUUxVWUNkOU4zT21YanZZZHBLYnpxOWlXYjVHeVNSSDFJNTBNM0prX05tX3otLU5LSVNuMjBOaV9BeGJsckZhNlM2Z1pydllXM1JFdEtCelhlZFBHb1JCUm9Mdw?oc=5",
-        "source": "fpost.co.kr",
-        "pubDate": "2026-09-02T17:44:37.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "스톤아일랜드, 슈프림 협업 컬렉션 공개",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBYcGV1S2FaNnh5TTlnSkRwU0J2a3M4eWRScWdmYXJmNUFKNERmaGk4NkNuVWppcGY3aS1pNXZNYzNRQi1OY3J5SHRHWUt4OFltVTVlUU50bUxqcGIwcUptVkZvVVNpam9JYU1fbnVMQUkzZDQzeVlBSzF0V1RLQQ?oc=5",
-        "source": "fpost.co.kr",
-        "pubDate": "2026-08-31T12:48:05.000Z",
-        "sentiment": "positive"
       },
       {
         "title": "신세계사이먼, 가을 쇼핑객 잡는다…명품·패딩·코트 '할인 풍성'",
@@ -222,6 +215,13 @@
     "CP컴퍼니": [],
     "비이커": [
       {
+        "title": "‘비이커×레오네’ 밸런타인데이 선물 제안",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB4dWttQVYtS1M3ZjdfRFItNHJNblV3c1VjaU8wekRqa1FXVGQwc2U2dm04QTVrZEY3OXNUTElUUnd3VnBNSE1GdjBKX2J4SHhxOTRQaFozc2VRU05GTHJVZWhWXzJfT3l3SVRERi1Md0NCQkE1aHZMNkswZDhfZw?oc=5",
+        "source": "패션포스트",
+        "pubDate": "2026-09-04T11:14:11.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "과년차 재고의 새 출구…패션 아울렛 신흥강자 ‘더팩토리아울렛’",
         "link": "http://www.apparelnews.co.kr/news/news_view/?idx=227363",
         "source": "apparelnews.co.kr",
@@ -231,14 +231,14 @@
       {
         "title": "구호플러스, 비이커 청담에 팝업 매장 열어",
         "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1FMHE4R0pUeUFPSThwTVdLWW15OGlTdHN2Umt3dlRSdlZjZ1NuVXktNWlXSzEtYXZ0bWg1OUpWOTVhTjV4UTJTSDU2VVRvUTdpZk9KX0xlM2VOWU9YS2w5czlMXzlRUDlnZm9FbndiYmI1VVNuLXZFa1dIdWhfdzg?oc=5",
-        "source": "fpost.co.kr",
+        "source": "패션포스트",
         "pubDate": "2026-09-01T08:45:19.000Z",
         "sentiment": "neutral"
       },
       {
         "title": "비이커, 인디밴드 실리카겔과 캡슐 컬렉션 발매",
         "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUk5HQW1hZUdYUndrdzF3cDRTcnJuWFdQc1I0NmNYWTdDb01PX3VMYjJSczhRQ1lFb0p1dWVVV3dveW15WFgzRHFhbmFLU0cySm1pTng0ank1aDNLR3BzVGF6RF9kLVJwbXFwRFZ6OC1FbWZBeWZqalA3TURERHhHVmtlYjY?oc=5",
-        "source": "fpost.co.kr",
+        "source": "패션포스트",
         "pubDate": "2026-08-30T10:46:58.000Z",
         "sentiment": "neutral"
       },
@@ -269,20 +269,13 @@
         "source": "businesspost.co.kr",
         "pubDate": "2026-08-20T02:20:00.000Z",
         "sentiment": "neutral"
-      },
-      {
-        "title": "'신명품' 가니가 그린 가을···\"강인함에 부드러움 한 스푼\"",
-        "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2461079",
-        "source": "enewstoday.co.kr",
-        "pubDate": "2026-08-20T02:05:00.000Z",
-        "sentiment": "positive"
       }
     ],
     "톰그레이하운드맨": [
       {
         "title": "톰그레이하운드, 현대百 캐릭터 흰디와 협업 컬렉션",
         "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE52UGxsYlJXQXJJMTlBYThqMklyNUsybG80bWZhLTcyaVZfTkR4X0tLSnJrbE1kb1E0TWp6U0l0eFYzVXZwS1FKdDNQeGcwa01TODZEc0o4UENPVWtrZzFUZDNtaWhWbVhvc2NmU1RfZHhBUUliXzJKb2JGbXRzdw?oc=5",
-        "source": "fpost.co.kr",
+        "source": "패션포스트",
         "pubDate": "2026-09-02T09:56:36.000Z",
         "sentiment": "positive"
       }
@@ -372,6 +365,20 @@
     ],
     "바버": [
       {
+        "title": "하나에 7600만원인데 \"꼭 갖고 싶다\"…손 떨리는 '카펫' 정체 [안혜원의...",
+        "link": "https://www.hankyung.com/article/202609055880i",
+        "source": "hankyung.com",
+        "pubDate": "2026-09-05T07:01:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
+        "title": "USC 캠퍼스의 명물 ‘스쿨버스 이발소’ 화제",
+        "link": "https://www.koreadaily.com/article/20260904180708723",
+        "source": "koreadaily.com",
+        "pubDate": "2026-09-05T01:08:00.000Z",
+        "sentiment": "positive"
+      },
+      {
         "title": "2만원 주식으로 ‘150억 잭팟’ 누구 [한경 프리미엄9 TODAY]",
         "link": "https://www.hankyung.com/article/2026090329531",
         "source": "hankyung.com",
@@ -381,7 +388,7 @@
       {
         "title": "바버, 가니와 업사이클링 컬렉션 공개",
         "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTG5NQWZ3djlEeWxFdWtvTzRUVC15VXVERVRKcUxkNjBEZUk3TGVabGtvUFNFc0Z0Q2hzRUFOU3U1T3ZoNUF5Zl9WSVRHMFZWVE40cTU2bVNGYjJ4alNkdnRLaDdPYnNxeDBPRXEycThBN2hKZWY4LVctRmwtUDFlbG9Qc0JKUQ?oc=5",
-        "source": "fpost.co.kr",
+        "source": "패션포스트",
         "pubDate": "2026-09-02T08:47:25.000Z",
         "sentiment": "neutral"
       },
@@ -407,24 +414,10 @@
         "sentiment": "neutral"
       },
       {
-        "title": "LF 이자벨마랑, 아이코닉 스니커즈 '베켓 리에디션' 3종 재출시",
-        "link": "http://www.biztribune.co.kr/news/articleView.html?idxno=358225",
-        "source": "biztribune.co.kr",
-        "pubDate": "2026-08-31T22:54:00.000Z",
-        "sentiment": "positive"
-      },
-      {
         "title": "VirTra Inc. 이사 그랜트 바버, 회사 주식 10,136달러 매입",
         "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5QMXNXS3kxX2xTWktOSHF3bHIyZUY2QkUtSWtOWFk5RlZycTIzMTJ2bHQyYmRFczhUU1dxbzYwTWQzaUt0djdlNVRaTlY1RkpxRkRKakNDMG56UXFGU2pZQmFoS1ZjUEdYOHNGVVM4VXdSbWJlQ2ZoQk5aNA?oc=5",
         "source": "Investing.com 한국어",
         "pubDate": "2026-08-29T02:47:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "바버 아다지오, 현악이 흘리는 밤",
-        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE85WlJwZjdnbllLdldwWG43a1k0ZWRSZnlCblhHUENGbFZzVUg0S3p4dThwS0JlSmFnLWdWNzNOb05Ha0NtNlk1OGF2RQ?oc=5",
-        "source": "브런치",
-        "pubDate": "2026-08-25T07:00:00.000Z",
         "sentiment": "neutral"
       }
     ],
@@ -481,8 +474,8 @@
       },
       {
         "title": "[금주핫템] 질스튜어트뉴욕 '파세트'·유한킴벌리 '캡슐세제'",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Ib1g2WDRqREtfaTQzSVVuclNrd0hTcGdieVEyazBOdVFmTUdWN1pzT21JRFhkQWQ0dk13UnpVeUVNZmN4UWZJNjJYNHZYUUhIbnZ1OXRjNGlxbEnSAWBBVV95cUxPYlhlajFaM2VoNEhCWHpNS3l3ZVh5NGxMM0Jwb0dNSDRQYncyTm5kM1VqMEozLW1oN3dicERjX25mUDRTYjN3M1B0QlZrSVdjbHNnTjVDYmJJMkNiRXA1WGs?oc=5",
-        "source": "연합뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9KbDFMMHE0VnlMcUxPSHV3UVZybG90ZTZVZzhiOHNyck9RN2pHM3VLWkNwcDhHLWFoUTZfUG9sakFqRWFYV0w1ckdkUkFDeGNHd0E?oc=5",
+        "source": "매일경제 마켓",
         "pubDate": "2026-08-22T07:00:00.000Z",
         "sentiment": "neutral"
       }
@@ -545,7 +538,7 @@
       {
         "title": "맨온더분, 이번 시즌 ‘캘리포니아 무드’ 띄운다",
         "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1FeGJlRjNFUkk2YjVRRUZsb2czOWV2RTlqRk9wdG9GS1hFNWtGS1c3SFYwamFra2JXQ3R0emkxam5CSU9HRFQyalhCX2phazJ6Tkhsd2pnemJNdE1BMXhBd3ltWnBYaFozU0hxYnNyb25FRFRIZ1JkWVB5eGZwZw?oc=5",
-        "source": "fpost.co.kr",
+        "source": "패션포스트",
         "pubDate": "2026-09-01T06:55:24.000Z",
         "sentiment": "neutral"
       }
@@ -554,7 +547,7 @@
       {
         "title": "한여름에도 멋과 격식을 갖춘 '수트서플라이'",
         "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBLdkM4X1Zla3ZLT2ptMzEtU0g0NkxYNjFMdnV2czFjSWtIRy15a0tGWmxVRVlqUmJVdkNaSWdjeWRIX2hheDFxamZhNjJXY2YxX19jbXVWaFdNRy04VFNXaEdSbmhqeElSTmdyMVk5ZW5kdUpnd2p4dHhTQlJqUmc?oc=5",
-        "source": "fpost.co.kr",
+        "source": "패션포스트",
         "pubDate": "2026-09-03T06:20:46.000Z",
         "sentiment": "neutral"
       }
@@ -623,7 +616,7 @@
       {
         "title": "온·PAF, 새 컬렉션 나왔다…이번엔 '트레일 러닝화'",
         "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5FSDhITHp5U1o5eGEySWlMOVZTbVVHRzlJYjM2UHpzVFlmaGZrTDJwZzhJekVfSnE2XzRhb3lYZERRYjVYV1NPZWg5ZEIzZHoxUnU0?oc=5",
-        "source": "네이트",
+        "source": "Nate News",
         "pubDate": "2026-09-03T07:07:00.000Z",
         "sentiment": "neutral"
       },
@@ -673,9 +666,9 @@
       },
       {
         "title": "머렐·이스트로그, 2차 협업 신발 ‘HUT MOC 2 LEISURE’ 3일 발매",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE43V3ByVTdLRFUzMk11WDRlMy0xREx1SWcxamVtYWFNRHB2NU9oR29aVmRrZ3FZMlR0REpuMl8taW4tdVZycFkwc2NIeU9vTDFr?oc=5",
-        "source": "패션비즈",
-        "pubDate": "2026-09-03T00:09:22.000Z",
+        "link": "https://www.fashionbiz.co.kr/article/229140",
+        "source": "fashionbiz.co.kr",
+        "pubDate": "2026-09-03T00:00:00.000Z",
         "sentiment": "positive"
       },
       {
@@ -692,7 +685,7 @@
       {
         "title": "아이엠샵 X 아모프레 팝업스토어 성료",
         "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQT3UzT3dxaC1xVEJmWmtoM2ZFSzJQRUpQdHZ3OW1mNUxaMlFFbE15QWpUb3lWRTVreFk0c0djNFZ1b1JnUTFrbUgxclFlRTVYXzVUTGVoeGpybzhpZklLLXRTeGdDSjQzM1FCbkFMZ3p3cEEtaDh0MDBZeVRFVlc1RzZ1bWFrdw?oc=5",
-        "source": "fpost.co.kr",
+        "source": "패션포스트",
         "pubDate": "2026-09-03T12:22:08.000Z",
         "sentiment": "neutral"
       }
