@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-07T05:54:35.717Z",
+  "lastUpdated": "2026-09-08T05:47:48.591Z",
   "data": {
     "SC00002": [
       {
@@ -1133,11 +1133,6 @@
     ],
     "0005": [
       {
-        "floor": "11F",
-        "label": "11F 문화센터ㅣ샤롯데가든",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0005/20211014152551550_8.jpg"
-      },
-      {
         "floor": "10F",
         "label": "10F 롯데시네마ㅣ샤롯데가든",
         "url": "https://minfo.lotteshopping.com/content/cstr/202110/0005/20211014173746124_4.jpg"
@@ -1387,11 +1382,6 @@
       }
     ],
     "0011": [
-      {
-        "floor": "11F",
-        "label": "11F 샤롯데가든",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202107/0011/20210706123126405_2.jpg"
-      },
       {
         "floor": "10F",
         "label": "10F 식당가 Ι 리조트휘트니스",
@@ -1648,11 +1638,6 @@
     ],
     "0004": [
       {
-        "floor": "09F",
-        "label": "9F 샤롯데가든",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202105/CNT00000000000010467/2021050117062558_8.jpg"
-      },
-      {
         "floor": "08F",
         "label": "8F 리빙ㅣ문화센터ㅣ롯데카드",
         "url": "https://minfo.lotteshopping.com/content/cstr/202409/0004/20240901143141597_7.jpg"
@@ -1709,11 +1694,6 @@
       }
     ],
     "0341": [
-      {
-        "floor": "10F",
-        "label": "10F 샤롯데가든ㅣ아웃백ㅣ카페",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202004/0341/20200429173758904_2.jpg"
-      },
       {
         "floor": "09F",
         "label": "9F 키즈카페",
