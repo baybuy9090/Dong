@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-11T05:46:55.621Z",
+  "lastUpdated": "2026-09-12T05:33:16.690Z",
   "data": {
     "SC00002": [
       {
@@ -612,7 +612,7 @@
       {
         "floor": "1F",
         "label": "1F 여성패션 I 여성캐주얼 I 아동·유아 (리틀신세계) 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00012/guide/floor/__icsFiles/afieldfile/2026/09/08/v3Dk9cMzCZrJ.png"
+        "url": "https://www.shinsegae.com/cms12/SC00012/guide/floor/__icsFiles/afieldfile/2026/09/11/iX3Q9neYXwC5.png"
       },
       {
         "floor": "B1F",
@@ -1133,6 +1133,11 @@
     ],
     "0005": [
       {
+        "floor": "11F",
+        "label": "11F 문화센터ㅣ샤롯데가든",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0005/20211014152551550_8.jpg"
+      },
+      {
         "floor": "10F",
         "label": "10F 롯데시네마ㅣ샤롯데가든",
         "url": "https://minfo.lotteshopping.com/content/cstr/202110/0005/20211014173746124_4.jpg"
@@ -1194,6 +1199,11 @@
       }
     ],
     "0349": [
+      {
+        "floor": "08F",
+        "label": "8F 샤롯데가든",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202003/0349/20200323130032635_8.jpg"
+      },
       {
         "floor": "07F",
         "label": "7F 식당가ㅣ롯데문화센터 | 사은품증정 | 뷰티&헤어",
