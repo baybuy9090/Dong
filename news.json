@@ -1,6 +1,13 @@
 {
-  "lastUpdated": "2026-09-12T00:57:16.399Z",
+  "lastUpdated": "2026-09-13T00:40:35.870Z",
   "industry": [
+    {
+      "title": "랙앤본, 성수에 뉴욕 소호 옮겼다",
+      "link": "http://www.ktnews.com/news/articleView.html?idxno=148521",
+      "source": "ktnews.com",
+      "pubDate": "2026-09-12T15:54:00.000Z",
+      "sentiment": "positive"
+    },
     {
       "title": "\"가볍게 더 강하게... '경량 패딩' 경쟁 본격화 [최기자의 패션 털기]",
       "link": "https://www.meconomynews.com/news/articleView.html?idxno=201552",
@@ -34,13 +41,6 @@
       "link": "https://www.donga.com/news/Economy/article/all/20260911/134650781/1",
       "source": "donga.com",
       "pubDate": "2026-09-11T06:09:00.000Z",
-      "sentiment": "positive"
-    },
-    {
-      "title": "“뉴욕 소호가 성수에 착륙했다”… 랙앤본, 데님으로 채운 ‘첫 단독 ...",
-      "link": "https://wemakenews.co.kr/news/view.php?no=26287",
-      "source": "wemakenews.co.kr",
-      "pubDate": "2026-09-11T04:56:00.000Z",
       "sentiment": "positive"
     },
     {
@@ -354,9 +354,9 @@
         "sentiment": "neutral"
       },
       {
-        "title": "신세계백화점, FW 패션 매출 SS보다 22% 많아…9월 할인전",
-        "link": "https://www.seoultimes.news/news/article.html?no=2000099300",
-        "source": "seoultimes.news",
+        "title": "\"가을 쇼핑 수요 잡는다\" 신세계百, 패션·스포츠·잡화 프로모션",
+        "link": "https://www.newsis.com/view/NISX20260830_0003768485",
+        "source": "newsis.com",
         "pubDate": "2026-08-30T21:00:00.000Z",
         "sentiment": "neutral"
       },
@@ -501,13 +501,6 @@
         "source": "dealsite.co.kr",
         "pubDate": "2026-09-03T00:32:00.000Z",
         "sentiment": "neutral"
-      },
-      {
-        "title": "[금주핫템] 질스튜어트뉴욕 '파세트'·유한킴벌리 '캡슐세제'",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9KbDFMMHE0VnlMcUxPSHV3UVZybG90ZTZVZzhiOHNyck9RN2pHM3VLWkNwcDhHLWFoUTZfUG9sakFqRWFYV0w1ckdkUkFDeGNHd0E?oc=5",
-        "source": "매일경제 마켓",
-        "pubDate": "2026-08-22T07:00:00.000Z",
-        "sentiment": "neutral"
       }
     ],
     "아스페시": [
@@ -560,18 +553,18 @@
     ],
     "맨온더분": [
       {
+        "title": "SI, “맨온더분 팝업스테이지 인기”",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORmN5NEMzSjVib193RjVrdkE1WDZnOUVpb3kzS2hZUUFpb1c4TjdadUlrR3Z6Wl9wbGtnSDhiUDZiMWR1ZzQ2ME9rV1kzanlkSnZ5TVRuVWdKZTNfalVxRVJVaE8xb1BSNzRkV3A4SVVOYjVwQUM1c0ZvT0xKaG5XQURKLWFudw?oc=5",
+        "source": "패션포스트",
+        "pubDate": "2026-09-10T18:48:20.000Z",
+        "sentiment": "positive"
+      },
+      {
         "title": "맨온더분, 26 가을·겨울 컬렉션 공개",
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBVX090YVA1RU5CVUJGMFVyN21FQ2x0Um5lZ1BjN3JoLWUzSlZ3a2RFQWlSaXNaZUJNcVBwUmdRSHBmb3FSS0lnZV82bE5nR3lLeWFwVU1xbUU2T0dsb0FNVUg4T2h1VmZYTUFfQTVzTDhGUQ?oc=5",
         "source": "어패럴뉴스",
         "pubDate": "2026-09-08T01:41:27.000Z",
         "sentiment": "neutral"
-      },
-      {
-        "title": "SI, “맨온더분 팝업스테이지 인기”",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORmN5NEMzSjVib193RjVrdkE1WDZnOUVpb3kzS2hZUUFpb1c4TjdadUlrR3Z6Wl9wbGtnSDhiUDZiMWR1ZzQ2ME9rV1kzanlkSnZ5TVRuVWdKZTNfalVxRVJVaE8xb1BSNzRkV3A4SVVOYjVwQUM1c0ZvT0xKaG5XQURKLWFudw?oc=5",
-        "source": "패션포스트",
-        "pubDate": "2026-09-04T19:38:50.000Z",
-        "sentiment": "positive"
       }
     ],
     "수트서플라이": [],
@@ -614,7 +607,7 @@
       },
       {
         "title": "포터리, 시장 지배력 키운다",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBIY0hXaXB1RGpIRkIzdWZmRFVKYXZURHIzb0xzNXkya3VmYklkcTlEOHRMUHFMY3M4SkttU050TzRhMnlpa1J2eUpUOFVHVXF1RHc5aF9OWkplaU9hQTRjLXF0SWlVcHFHaFVOS3lyRExUQUlU?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5mb1JYWkprSlMwbjdlTm5ZYndBNHJJREFWaFkxaUhXWTkwaHhmVE5FODFhWW9zNHA3ZVBVN25DaEFkZjdnUEZrSTNEbFEyVG85UktCN2RQTGdOMGV6YkNzTGVJWGlfUGM?oc=5",
         "source": "어패럴뉴스",
         "pubDate": "2026-08-26T15:00:00.000Z",
         "sentiment": "neutral"
