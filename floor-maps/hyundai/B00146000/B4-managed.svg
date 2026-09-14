@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="436.557983398438 279.55773925781205 1110.771606445312 1438.295532226568" width="1200" height="1200" role="img" aria-labelledby="title desc">
+  <title id="title">대구 B4 층 안내도</title>
+  <desc id="desc">현대백화점 공식 층별 안내 벡터 데이터를 정적 도면으로 변환했습니다.</desc>
+  <rect x="436.557983398438" y="279.55773925781205" width="1110.771606445312" height="1438.295532226568" fill="#e7e8e6"/>
+  <g><polygon points="493.06,337.28 493.06,1581.39 795.64,1581.75 795.64,1660.24 1490.83,1661.35 1489.69,450.61 788.60,450.61 788.60,336.06" fill="#ffffff" fill-opacity="1" stroke="#ffffff" stroke-width="1.5"/></g>
+  <g><polygon points="493.06,337.28 493.06,1581.39 795.64,1581.75 795.64,1660.24 1490.83,1661.35 1489.69,450.61 788.60,450.61 788.60,336.06" fill="#ffffff" fill-opacity="1" stroke="#ffffff" stroke-width="1.5"/><polygon points="1491.19,449.11 790.10,449.11 790.10,334.56 491.56,335.79 491.56,1582.89 493.06,1581.39 491.56,1582.89 794.14,1583.25 794.14,1661.74 795.64,1660.24 795.64,1581.75 493.06,1581.39 493.06,337.28 788.60,336.06 788.60,450.61 1489.69,450.61 1490.83,1661.35 795.64,1660.24 794.14,1661.74 1492.33,1662.85" fill="#a1a1a1" fill-opacity="1" stroke="#a1a1a1" stroke-width="1.5"/></g>
+  <g font-family="Arial, 'Noto Sans KR', sans-serif" font-size="12" font-weight="600" fill="#303633" stroke="#fff" stroke-width="3" paint-order="stroke" stroke-linejoin="round"><text x="991.3758234443595" y="998.151578483705" text-anchor="middle" dominant-baseline="central">주차장</text></g>
+  <style>.managed-brand { fill:#9a5300; font-size:15px; font-weight:800; stroke:#fff7df; stroke-width:5; }</style>
+  <text x="491.557983398438" y="316.55773925781205" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="20" font-weight="700" fill="#1a1f1d">대구 · B4</text>
+
+</svg>

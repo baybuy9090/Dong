@@ -7,6 +7,15 @@ test('남성 브랜드는 찾고 명시된 여성 브랜드는 제외한다', ()
   assert.deepEqual(matchBrands('DKNY(여성)'), []);
 });
 
+test('줄바꿈된 유사 브랜드와 여성 송지오 라인은 관리 브랜드로 잡지 않는다', () => {
+  assert.deepEqual(matchBrands('우치\n포터리'), []);
+  assert.deepEqual(matchBrands('포터리 하우스'), []);
+  assert.deepEqual(matchBrands('송지오파리'), []);
+  assert.deepEqual(matchBrands('송지오 파리'), []);
+  assert.deepEqual(matchBrands('마제스티 (바버숍)'), []);
+  assert.deepEqual(matchBrands('송지오옴므 / 남성캐주얼'), ['송지오옴므']);
+});
+
 test('수집 지연 행은 변화 확정에는 쓰지 않지만 현재 점포 존재는 유지한다', () => {
   const row = normalizeRow({ company: '롯데', store: '수원점', brand: '타임옴므', note: '수집 지연 - 직전 정상값 유지', dataQuality: 'stale' });
   assert.equal(observedSet([row]).size, 0);

@@ -592,6 +592,9 @@
       <button class="tab-btn active" id="floorSubStore" onclick="switchFloorSub('store')">지점별</button>
       <button class="tab-btn" id="floorSubBrand" onclick="switchFloorSub('brand')">브랜드별</button>
     </div>
+    <div style="display:flex;justify-content:flex-end;margin-bottom:10px;">
+      <button class="btn btn-floor" id="floorHighlightToggle" aria-pressed="true" onclick="toggleFloorHighlights()">★ 관리 브랜드 강조 켜짐</button>
+    </div>
     <details class="panel floor-history" style="margin-bottom:12px;">
       <summary id="floorHistorySummary">최근 도면 변경 이력</summary>
       <div id="floorHistoryList" style="margin-top:9px;"></div>
@@ -1201,6 +1204,7 @@
     }
 
     let floorSub = 'store';
+    let floorHighlightsOn = true;
     function switchFloorSub(sub) {
       floorSub = sub;
       document.getElementById('floorSubStore').classList.toggle('active', sub === 'store');
@@ -1252,6 +1256,21 @@
       }
     }
 
+    function toggleFloorHighlights() {
+      floorHighlightsOn = !floorHighlightsOn;
+      const button = document.getElementById('floorHighlightToggle');
+      button.setAttribute('aria-pressed', String(floorHighlightsOn));
+      button.textContent = floorHighlightsOn ? '★ 관리 브랜드 강조 켜짐' : '☆ 관리 브랜드 강조 꺼짐';
+      button.classList.toggle('btn-floor', floorHighlightsOn);
+      button.classList.toggle('btn-secondary', !floorHighlightsOn);
+      document.querySelectorAll('.floor-map-image').forEach(img => {
+        img.src = floorHighlightsOn && img.dataset.highlightUrl ? img.dataset.highlightUrl : img.dataset.normalUrl;
+      });
+      document.querySelectorAll('.managed-brand-list').forEach(list => {
+        list.style.display = floorHighlightsOn ? 'flex' : 'none';
+      });
+    }
+
     function renderFloorView() {
       const filtered = currentFiltered().filter(r => !['removed','exitPending'].includes(statusOf(r)));
       const container = document.getElementById('floorList');
@@ -1284,14 +1303,15 @@
                   const ext = (f.url.match(/\.(jpg|jpeg|png|gif|webp)(?:\?.*)?$/i) || ['', 'jpg'])[1];
                   const filename = `${e.company}_${e.store}_${f.floor || f.label}.${ext}`.replace(/[\\/:*?"<>|]/g, '');
                   const brandChips = (f.brands || []).map(brand => `<span class="managed-brand-chip">★ ${brand}</span>`).join('');
+                  const imageUrl = floorHighlightsOn && f.highlightUrl ? f.highlightUrl : f.url;
                   return `
                   <div class="floor-item" id="floorItem-${code}-${floorDomId(`${f.floor}|${f.label}`)}">
                     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
                       <div style="font-size:12px;font-weight:700;color:#444;">${f.label}</div>
                       <button class="btn btn-primary btn-sm" onclick="downloadFloorImage('${f.url}', '${filename}')">다운로드</button>
                     </div>
-                    ${brandChips ? `<div class="managed-brand-list" aria-label="이 층의 관리 브랜드">${brandChips}</div>` : ''}
-                    <img src="${f.url}" alt="${f.label}" loading="lazy" style="max-width:100%;border:1px solid #eee;border-radius:8px;">
+                    ${brandChips ? `<div class="managed-brand-list" aria-label="이 층의 관리 브랜드" style="display:${floorHighlightsOn ? 'flex' : 'none'};">${brandChips}</div>` : ''}
+                    <img class="floor-map-image" src="${imageUrl}" data-normal-url="${f.url}" data-highlight-url="${f.highlightUrl || ''}" alt="${f.label}" loading="lazy" style="max-width:100%;border:1px solid #eee;border-radius:8px;">
                   </div>`;
                 }).join('')}
               </div>`

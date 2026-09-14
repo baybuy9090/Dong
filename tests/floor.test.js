@@ -5,6 +5,7 @@ const path = require('node:path');
 const CONFIG = require('../config');
 const {
   htmlValue, languageText, safeFloorFileName, renderHyundaiFloorSvg,
+  isManagedFloor, activeBrandsByStore, verifyFloorEntries,
   buildBrandFloorIndex, detectFloorChanges,
 } = require('../floor-crawler');
 
@@ -46,6 +47,27 @@ test('현대 도면에서 관리 브랜드 라벨과 구획을 강조한다', ()
   assert.match(svg, /data-managed-brands="타임옴므"/);
   assert.match(svg, /class="managed-brand"/);
   assert.match(svg, /★ 타임옴므/);
+  const normalSvg = renderHyundaiFloorSvg(mapData, floor, '본점', { showHighlights:false });
+  assert.doesNotMatch(normalSvg, /managed-brand|★ 타임옴므|data-managed-brands/);
+});
+
+test('공식 남성층과 현재 입점 브랜드를 교차 검증한다', () => {
+  const hyundai = CONFIG.getStore('현대', '목동');
+  assert.equal(isManagedFloor(hyundai, { floor:'4F', label:'4F 층 안내도' }), false);
+  assert.equal(isManagedFloor(hyundai, { floor:'B1', label:'B1 층 안내도' }), true);
+  const lotte = CONFIG.getStore('롯데', '잠실점');
+  assert.equal(isManagedFloor(lotte, { floor:'08F', label:'8F 아동ㆍ유아' }), false);
+  const active = activeBrandsByStore([
+    { company:'현대', store:'목동', brand:'띠어리맨', note:'' },
+    { company:'롯데', store:'울산점', brand:'(확인된 브랜드 없음)', note:'확인' },
+  ]);
+  assert.equal(active.get('롯데-0015').size, 0);
+  const floors = verifyFloorEntries(hyundai, [
+    { floor:'4F', label:'4F 층 안내도', brands:['띠어리맨'] },
+    { floor:'B1', label:'B1 층 안내도', brands:['띠어리맨','POTTERY'] },
+  ], active.get(hyundai.id));
+  assert.deepEqual(floors[0].brands, []);
+  assert.deepEqual(floors[1].brands, ['띠어리맨']);
 });
 
 test('브랜드별 정확한 층 인덱스와 도면 변경 이력을 만든다', () => {

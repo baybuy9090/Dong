@@ -65,6 +65,51 @@ async function fetchShinsegaeFloors(storeCode) {
 const LOTTE_STORES = Object.fromEntries(CONFIG.storeRows.filter(s => s.company === '롯데').map(s => [s.name, s.code]));
 const HYUNDAI_STORES = Object.fromEntries(CONFIG.storeRows.filter(s => s.company === '현대').map(s => [s.name, s.code]));
 
+// 현대 공식 층별 안내의 현재 남성 카테고리 층. 지도 POI에는 성별 정보가 없어서
+// 여성층의 띠어리/DKNY/클럽모나코가 남성 브랜드로 오인될 수 있으므로 공식 층
+// 카테고리를 지점별로 명시한다. 층 변경 시 auditFloorBrands가 미배치 건을 드러낸다.
+const HYUNDAI_MANAGED_FLOORS = {
+  B00142000: ['B1'], B00122000: ['7F'], B00141000: ['5F'], B00121000: ['4F'],
+  B00127000: ['6F'], B00140000: ['2F', '3F'], B00129000: ['8F'], B00143000: ['5F'],
+  B00126000: ['6F'], B00147000: ['4F'], B00145000: ['6F'], B00148000: ['6F', '7F'],
+  B00146000: ['5F'],
+};
+
+const EXCLUDED_MANAGED_FLOORS = new Set([
+  '신세계-SC00005|1F', // 마산 1F 여성 띠어리
+  '신세계-SC00008|3F', // 센텀 3F 여성 컨템포러리/란제리
+]);
+
+function isManagedFloor(store, floor) {
+  if (store.company === '현대') return (HYUNDAI_MANAGED_FLOORS[store.code] || []).includes(floor.floor);
+  if (EXCLUDED_MANAGED_FLOORS.has(`${store.id}|${floor.floor}`)) return false;
+  const label = String(floor.label || '').replace(/\s+/g, ' ');
+  const hasMens = /(남성|맨즈|MEN'S|MENSWEAR)/i.test(label);
+  const hasNonMens = /(여성|우먼|란제리|아동|유아)/i.test(label);
+  return !hasNonMens || hasMens;
+}
+
+function activeBrandsByStore(rows) {
+  const result = new Map();
+  (rows || []).forEach(row => {
+    if (!row) return;
+    const storeId = row.storeId || CONFIG.storeId(row.company, row.store);
+    if (!result.has(storeId)) result.set(storeId, new Set());
+    if (!row.brand || row.brand.startsWith('(') || /(퇴점|누락)/.test(row.note || '')) return;
+    result.get(storeId).add(row.brand);
+  });
+  return result;
+}
+
+function verifyFloorEntries(store, floors, activeBrands) {
+  return (floors || []).map(floor => ({
+    ...floor,
+    brands: isManagedFloor(store, floor)
+      ? (floor.brands || []).filter(brand => !activeBrands || activeBrands.has(brand))
+      : [],
+  }));
+}
+
 function extractLotteFloorItems(html) {
   const items = [];
   const seen = new Set();
@@ -166,8 +211,11 @@ function uniqueBrands(values) {
     .sort((a, b) => a.localeCompare(b, 'ko'));
 }
 
-function trackedPois(floor) {
-  return (floor.pois || []).map(poi => ({ poi, brands: uniqueBrands([poiTitle(poi)]) }))
+function trackedPois(floor, allowedBrands = null) {
+  return (floor.pois || []).map(poi => ({
+    poi,
+    brands: uniqueBrands([poiTitle(poi)]).filter(brand => !allowedBrands || allowedBrands.has(brand)),
+  }))
     .filter(item => item.brands.length > 0);
 }
 
@@ -189,7 +237,7 @@ function poiTitle(poi) {
     .replace(/\s+/g, ' ').trim();
 }
 
-function renderHyundaiFloorSvg(mapData, floor, storeName) {
+function renderHyundaiFloorSvg(mapData, floor, storeName, options = {}) {
   const theme = (mapData.themes || []).find(item => item.defaultYn) || (mapData.themes || [])[0] || {};
   const sectionStyles = styleMap(theme.sectionStyles);
   const objectStyles = styleMap(theme.objectStyles);
@@ -205,7 +253,8 @@ function renderHyundaiFloorSvg(mapData, floor, storeName) {
   const maxY = coordinates.length ? Math.max(...coordinates.map(point => point.y)) : height;
   const padding = 55;
   const floorLabel = languageText(floor.name) || floor.id;
-  const managedPois = trackedPois(floor);
+  const showHighlights = options.showHighlights !== false;
+  const managedPois = trackedPois(floor, options.allowedBrands || null);
   const managedBrands = uniqueBrands(managedPois.flatMap(item => item.brands));
   const managedLegend = managedBrands.length
     ? `<text x="${maxX}" y="${minY - 18}" text-anchor="end" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="13" font-weight="700" fill="#9a5300">★ 관리 브랜드 ${managedBrands.length}개 강조</text>`
@@ -216,7 +265,7 @@ function renderHyundaiFloorSvg(mapData, floor, storeName) {
     const position = poi.position || {};
     if (!title || !Number.isFinite(position.x) || !Number.isFinite(position.y)) return '';
     const compact = title.length > 18 ? `${title.slice(0, 17)}…` : title;
-    const isManaged = uniqueBrands([title]).length > 0;
+    const isManaged = showHighlights && managedPois.some(item => item.poi === poi);
     return `<text x="${position.x}" y="${position.y}" text-anchor="middle" dominant-baseline="central"${isManaged ? ' class="managed-brand"' : ''}>${xmlEscape(isManaged ? `★ ${compact}` : compact)}</text>`;
   }).join('');
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -225,11 +274,11 @@ function renderHyundaiFloorSvg(mapData, floor, storeName) {
   <desc id="desc">현대백화점 공식 층별 안내 벡터 데이터를 정적 도면으로 변환했습니다.</desc>
   <rect x="${minX - padding}" y="${minY - padding}" width="${maxX - minX + padding * 2}" height="${maxY - minY + padding * 2}" fill="${xmlEscape(theme.canvasColor || '#f7f8f7')}"/>
   <g>${(floor.sections || []).map(shape => svgPolygon(shape, sectionStyles, sectionFallback)).join('')}</g>
-  <g>${(floor.objects || []).map(shape => svgPolygon(shape, objectStyles, objectFallback, managedPois)).join('')}</g>
+  <g>${(floor.objects || []).map(shape => svgPolygon(shape, objectStyles, objectFallback, showHighlights ? managedPois : [])).join('')}</g>
   <g font-family="Arial, 'Noto Sans KR', sans-serif" font-size="12" font-weight="600" fill="#303633" stroke="#fff" stroke-width="3" paint-order="stroke" stroke-linejoin="round">${labels}</g>
-  <style>.managed-brand { fill:#9a5300; font-size:15px; font-weight:800; stroke:#fff7df; stroke-width:5; }</style>
+${showHighlights ? `  <style>.managed-brand { fill:#9a5300; font-size:15px; font-weight:800; stroke:#fff7df; stroke-width:5; }</style>` : ''}
   <text x="${minX}" y="${minY - 18}" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="20" font-weight="700" fill="#1a1f1d">${xmlEscape(storeName)} · ${xmlEscape(floorLabel)}</text>
-${managedLegend}
+${showHighlights ? managedLegend : ''}
 </svg>\n`;
 }
 
@@ -262,16 +311,23 @@ async function fetchHyundaiMap(branchCd) {
   return mapPayload.payload;
 }
 
-async function fetchHyundaiFloors(storeName, branchCd, rootDir = __dirname) {
+async function fetchHyundaiFloors(storeName, branchCd, rootDir = __dirname, activeBrands = null) {
   const mapData = await fetchHyundaiMap(branchCd);
   const outputDir = path.join(rootDir, 'floor-maps', 'hyundai', branchCd);
   fs.mkdirSync(outputDir, { recursive: true });
   return (mapData.floors || []).map(floor => {
     const label = languageText(floor.name) || floor.id;
-    const brands = uniqueBrands((floor.pois || []).map(poiTitle));
+    const store = CONFIG.getStore('현대', storeName);
+    const allowedBrands = isManagedFloor(store, { floor:label, label }) ? activeBrands : new Set();
+    const brands = uniqueBrands((floor.pois || []).map(poiTitle)).filter(brand => !allowedBrands || allowedBrands.has(brand));
     const fileName = `${safeFloorFileName(label)}.svg`;
-    fs.writeFileSync(path.join(outputDir, fileName), renderHyundaiFloorSvg(mapData, floor, storeName), 'utf8');
-    return { floor: label, label: `${label} 층 안내도`, url: `floor-maps/hyundai/${branchCd}/${fileName}`, source: 'hyundai-dabeeo', brands };
+    const managedFileName = `${safeFloorFileName(label)}-managed.svg`;
+    fs.writeFileSync(path.join(outputDir, fileName), renderHyundaiFloorSvg(mapData, floor, storeName, { showHighlights:false, allowedBrands }), 'utf8');
+    fs.writeFileSync(path.join(outputDir, managedFileName), renderHyundaiFloorSvg(mapData, floor, storeName, { showHighlights:true, allowedBrands }), 'utf8');
+    return {
+      floor: label, label: `${label} 층 안내도`, url: `floor-maps/hyundai/${branchCd}/${fileName}`,
+      highlightUrl: `floor-maps/hyundai/${branchCd}/${managedFileName}`, source: 'hyundai-dabeeo', brands,
+    };
   });
 }
 
@@ -370,12 +426,19 @@ async function main() {
   try { previous = JSON.parse(fs.readFileSync(path.join(__dirname, 'floor-images.json'), 'utf8')).data || {}; } catch (e) { previous = {}; }
   let previousHistory = {};
   try { previousHistory = JSON.parse(fs.readFileSync(path.join(__dirname, 'floor-history.json'), 'utf8')); } catch (e) { previousHistory = {}; }
+  let currentRows = [];
+  try {
+    const currentPayload = JSON.parse(fs.readFileSync(path.join(__dirname, 'data.json'), 'utf8'));
+    currentRows = currentPayload.data || currentPayload;
+  } catch (e) { currentRows = []; }
+  const activeBrandMap = activeBrandsByStore(currentRows);
   const diagnostics = [];
 
   for (const [store, code] of Object.entries(SHINSEGAE_STORES)) {
     process.stdout.write(`수집 중: 신세계 ${store} ... `);
     try {
-      data[code] = await fetchShinsegaeFloors(code);
+      const storeConfig = CONFIG.getStore('신세계', store);
+      data[code] = verifyFloorEntries(storeConfig, await fetchShinsegaeFloors(code), activeBrandMap.get(storeConfig.id) || new Set());
       if (data[code].length === 0 && (previous[code] || []).length) throw new Error('0개 층 응답');
       diagnostics.push({ storeId: `신세계-${code}`, store, status: 'ok', floors: data[code].length });
       console.log(`${data[code].length}개 층`);
@@ -391,7 +454,8 @@ async function main() {
     process.stdout.write(`수집 중: 롯데 ${store} ... `);
     try {
       const result = await fetchLotteFloors(code);
-      data[code] = result.floors;
+      const storeConfig = CONFIG.getStore('롯데', store);
+      data[code] = verifyFloorEntries(storeConfig, result.floors, activeBrandMap.get(storeConfig.id) || new Set());
       if (result.failedPages > 0 && (previous[code] || []).length) throw new Error(`${result.failedPages}/${result.expectedPages}개 층 호출 실패`);
       if (data[code].length === 0 && (previous[code] || []).length) throw new Error('0개 층 응답');
       diagnostics.push({ storeId: `롯데-${code}`, store, status: 'ok', floors: data[code].length });
@@ -407,7 +471,8 @@ async function main() {
   for (const [store, code] of Object.entries(HYUNDAI_STORES)) {
     process.stdout.write(`수집 중: 현대 ${store} ... `);
     try {
-      data[code] = await fetchHyundaiFloors(store, code);
+      const storeConfig = CONFIG.getStore('현대', store);
+      data[code] = await fetchHyundaiFloors(store, code, __dirname, activeBrandMap.get(storeConfig.id) || new Set());
       if (data[code].length === 0 && (previous[code] || []).length) throw new Error('0개 층 응답');
       diagnostics.push({ storeId: `현대-${code}`, store, status: 'ok', floors: data[code].length, format: 'svg' });
       console.log(`${data[code].length}개 층`);
@@ -448,6 +513,7 @@ if (require.main === module) {
 
 module.exports = {
   extractFloorNum, extractLotteFloorItems, htmlValue, languageText, safeFloorFileName,
-  pointInPolygon, uniqueBrands, renderHyundaiFloorSvg, fetchHyundaiMap, fetchHyundaiFloors,
+  pointInPolygon, uniqueBrands, isManagedFloor, activeBrandsByStore, verifyFloorEntries,
+  renderHyundaiFloorSvg, fetchHyundaiMap, fetchHyundaiFloors,
   buildBrandFloorIndex, buildFloorManifest, detectFloorChanges,
 };

@@ -28,3 +28,10 @@ test('브랜드 상세는 해당 층 도면 버튼과 공통 디자인 토큰을
   assert.match(html, /--status-new:/);
   assert.match(html, /\.btn-floor/);
 });
+
+test('도면의 관리 브랜드 강조를 켜고 끌 수 있다', () => {
+  assert.match(html, /id="floorHighlightToggle"[^>]*aria-pressed="true"/);
+  assert.match(html, /function toggleFloorHighlights/);
+  assert.match(html, /data-normal-url=/);
+  assert.match(html, /data-highlight-url=/);
+});

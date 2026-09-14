@@ -58,12 +58,15 @@ const BRAND_PATTERNS = {
 };
 
 function matchBrands(rawText) {
-  const upperText = rawText.toUpperCase();
+  // 공식 페이지가 브랜드명을 줄바꿈해서 내려주는 경우가 많다. 먼저 공백을
+  // 정규화해야 "우치 포터리" 같은 제외 문구가 "포터리"로 잘못 잡히지 않는다.
+  const upperText = String(rawText || '').replace(/\s+/g, ' ').toUpperCase();
   const MEN_MARKERS = ['남성', '맨즈', '옴므', "MEN'S", 'MENSWEAR', 'MENS', 'MEN'];
   const WOMEN_MARKERS = ['여성', '우먼즈', '팜므', "WOMEN'S", 'WOMENSWEAR', 'WOMENS', 'WOMEN', 'LADIES', '레이디스'];
   const EXCLUDE_PATTERNS = {
-    '바버': ['바버샵', '마제스티바버샵', '마제스티 바버샵'],
-    'POTTERY': ['우치포터리', '포터리하우스'],
+    '바버': ['바버샵', '바버숍', '마제스티바버샵', '마제스티 바버샵', '마제스티 바버숍'],
+    'POTTERY': ['우치포터리', '우치 포터리', '포터리하우스', '포터리 하우스', 'POTTERY BARN'],
+    '송지오옴므': ['송지오파리', '송지오 파리'],
     '아페쎄맨': [
       'A.P.C. 골프', 'A.P.C.골프', 'A.P.C골프', 'A.P.C 골프', '아페쎄골프', '아페쎄 골프',
       'CAFE A.P.C.', 'CAFE A.P.C',
