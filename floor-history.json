@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "lastUpdated": "2026-09-14T22:26:41.613Z",
+  "lastUpdated": "2026-09-14T22:30:47.581Z",
   "events": [
     {
       "detectedAt": "2026-09-14T22:26:41.613Z",
@@ -492,11 +492,8 @@
       "floor": "03F",
       "label": "3F 영캐릭터ㅣ컨템포러리",
       "url": "floor-maps/lotte/0022/03F.svg",
-      "brands": [
-        "띠어리맨",
-        "클럽모나코"
-      ],
-      "signature": "bee21772b76ca18bffa0096bbc61ccc495c4699855c3e4a8689865363a20a9bf"
+      "brands": [],
+      "signature": "18dc59e7b54d491ff41afe755b35c591a6270237191feebf719fafe17ba9a5cb"
     },
     "롯데-0022|02F|2F 영디자이너ㅣZARA": {
       "company": "롯데",
@@ -2408,10 +2405,8 @@
       "floor": "02F",
       "label": "2F 영캐주얼ㅣ무신사 스탠다드",
       "url": "floor-maps/lotte/0341/02F.svg",
-      "brands": [
-        "클럽모나코"
-      ],
-      "signature": "c3a90ed6e0a21f8a83bbfdfe7cb98f01253387e18f5a92fa637caed358e93ee8"
+      "brands": [],
+      "signature": "31ef3edff08477249cd6284cf08c94cc9d7e74a5c988aadb081fd995af5a907a"
     },
     "롯데-0341|01F|1F 화장품ㅣ해외패션ㅣ시계": {
       "company": "롯데",

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T22:26:41.613Z",
+  "lastUpdated": "2026-09-14T22:30:47.581Z",
   "diagnostics": [
     {
       "storeId": "신세계-SC00002",
@@ -1708,10 +1708,7 @@
         "highlightUrl": "floor-maps/lotte/0022/03F-managed.svg",
         "source": "lotte-dabeeo",
         "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/be0f7419-39f7-47ac-860a-663357db0a80/1788512626041kIZhg.svg",
-        "brands": [
-          "띠어리맨",
-          "클럽모나코"
-        ]
+        "brands": []
       },
       {
         "floor": "02F",
@@ -3475,9 +3472,7 @@
         "highlightUrl": "floor-maps/lotte/0341/02F-managed.svg",
         "source": "lotte-dabeeo",
         "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/17828703185926J76F.svg",
-        "brands": [
-          "클럽모나코"
-        ]
+        "brands": []
       },
       {
         "floor": "01F",

@@ -120,6 +120,11 @@ test('공식 남성층과 현재 입점 브랜드를 교차 검증한다', () =>
   assert.equal(isExcludedManagedBrand(dongtan, { floor:'04F' }, '띠어리맨'), false);
   assert.equal(isExcludedManagedBrand(jeonju, { floor:'02F' }, '띠어리맨'), true);
   assert.equal(isExcludedManagedBrand(jeonju, { floor:'04F' }, '띠어리맨'), false);
+  const nowon = CONFIG.getStore('롯데', '노원점');
+  const pyeongchon = CONFIG.getStore('롯데', '평촌점');
+  assert.equal(isExcludedManagedBrand(nowon, { floor:'03F' }, '띠어리맨'), true);
+  assert.equal(isExcludedManagedBrand(nowon, { floor:'03F' }, '클럽모나코'), true);
+  assert.equal(isExcludedManagedBrand(pyeongchon, { floor:'02F' }, '클럽모나코'), true);
   const active = activeBrandsByStore([
     { company:'현대', store:'목동', brand:'띠어리맨', note:'' },
     { company:'롯데', store:'울산점', brand:'(확인된 브랜드 없음)', note:'확인' },
@@ -155,6 +160,14 @@ test('동탄점과 전주점 띠어리는 여성 2F를 제외하고 남성 4F만
     assert.deepEqual(theoryFloors, ['04F'], `${store} 도면의 띠어리 층이 잘못됨`);
     assert.deepEqual((index[`롯데-${code}|띠어리맨`] || []).map(item => item.floor), ['04F']);
   });
+});
+
+test('관리 브랜드는 같은 점포에서 남성층 한 곳에만 연결한다', () => {
+  const index = require('../brand-floor-index.json').data;
+  const duplicates = Object.entries(index)
+    .filter(([, locations]) => new Set(locations.map(item => item.floor)).size > 1)
+    .map(([key, locations]) => ({ key, floors:locations.map(item => item.floor) }));
+  assert.deepEqual(duplicates, []);
 });
 
 test('현대 13개 지점의 생성된 SVG 도면이 데이터 파일과 연결된다', () => {

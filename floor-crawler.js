@@ -83,6 +83,9 @@ const EXCLUDED_MANAGED_FLOORS = new Set([
 const EXCLUDED_MANAGED_BRAND_LOCATIONS = new Set([
   '롯데-0399|02F|띠어리맨', // 동탄점 2F 여성 띠어리
   '롯데-0025|02F|띠어리맨', // 전주점 2F 여성 띠어리
+  '롯데-0022|03F|띠어리맨', // 노원점 3F 여성 띠어리
+  '롯데-0022|03F|클럽모나코', // 노원점 3F 여성 클럽모나코
+  '롯데-0341|02F|클럽모나코', // 평촌점 2F 여성 클럽모나코
 ]);
 
 function isExcludedManagedBrand(store, floor, brand) {
