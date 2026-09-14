@@ -27,6 +27,9 @@ test('랭킹은 상위 10개만 먼저 보여주고 전체 보기로 확장한�
 
 test('브랜드 상세는 해당 층 도면 버튼과 공통 디자인 토큰을 사용한다', () => {
   assert.match(html, /해당 층 도면 보기/);
+  assert.match(html, /function compactFloorLabel\(floor\)/);
+  assert.match(html, /replace\(\/\^0\+\(\?=\\d\)\//);
+  assert.match(html, /btn-floor-link/);
   assert.match(html, /function openFloorAt/);
   assert.match(html, /--company-lotte:/);
   assert.match(html, /--status-new:/);
@@ -43,6 +46,8 @@ test('도면의 관리 브랜드 강조를 켜고 끌 수 있다', () => {
   assert.match(html, /hasHighlightableFloor = floorSub === 'store'/);
   assert.match(html, /floorHighlightControls'\)\.style\.display = hasHighlightableFloor/);
   assert.match(html, /도면 웹페이지로 이동/);
+  assert.match(html, /남성 컨템포러리 브랜드 강조 켜짐/);
+  assert.match(html, /남성 컨템포러리 브랜드 강조 꺼짐/);
 });
 
 test('현대 공식 도면 링크는 휴대폰에서 모바일 층별 안내로 연결한다', () => {

@@ -5,7 +5,7 @@ const path = require('node:path');
 const CONFIG = require('../config');
 const {
   htmlValue, languageText, safeFloorFileName, renderHyundaiFloorSvg,
-  isManagedFloor, activeBrandsByStore, verifyFloorEntries,
+  isManagedFloor, isExcludedManagedBrand, activeBrandsByStore, verifyFloorEntries,
   sanitizeOfficialSvg, addSvgClassById, renderLotteFloorSvg,
   lottePoiMetadata, lotteFloorViewBox, scopeLotteFloorData,
   buildBrandFloorIndex, detectFloorChanges,
@@ -114,6 +114,12 @@ test('공식 남성층과 현재 입점 브랜드를 교차 검증한다', () =>
   assert.equal(isManagedFloor(hyundai, { floor:'B1', label:'B1 층 안내도' }), true);
   const lotte = CONFIG.getStore('롯데', '잠실점');
   assert.equal(isManagedFloor(lotte, { floor:'08F', label:'8F 아동ㆍ유아' }), false);
+  const dongtan = CONFIG.getStore('롯데', '동탄점');
+  const jeonju = CONFIG.getStore('롯데', '전주점');
+  assert.equal(isExcludedManagedBrand(dongtan, { floor:'02F' }, '띠어리맨'), true);
+  assert.equal(isExcludedManagedBrand(dongtan, { floor:'04F' }, '띠어리맨'), false);
+  assert.equal(isExcludedManagedBrand(jeonju, { floor:'02F' }, '띠어리맨'), true);
+  assert.equal(isExcludedManagedBrand(jeonju, { floor:'04F' }, '띠어리맨'), false);
   const active = activeBrandsByStore([
     { company:'현대', store:'목동', brand:'띠어리맨', note:'' },
     { company:'롯데', store:'울산점', brand:'(확인된 브랜드 없음)', note:'확인' },
@@ -137,6 +143,18 @@ test('브랜드별 정확한 층 인덱스와 도면 변경 이력을 만든다'
   const moved = { [`${store.id}|5F`]: { company:store.company, store:store.name, storeId:store.id, floor:'5F', brands:['타임옴므'], signature:'b' } };
   const changes = detectFloorChanges(base, moved, '2026-09-14T00:00:00.000Z');
   assert.ok(changes.some(change => change.type === '층 이동' && change.before[0] === '4F' && change.after[0] === '5F'));
+});
+
+test('동탄점과 전주점 띠어리는 여성 2F를 제외하고 남성 4F만 연결한다', () => {
+  const images = require('../floor-images.json').data;
+  const index = require('../brand-floor-index.json').data;
+  [['0399', '동탄점'], ['0025', '전주점']].forEach(([code, store]) => {
+    const theoryFloors = (images[code] || [])
+      .filter(floor => (floor.brands || []).includes('띠어리맨'))
+      .map(floor => floor.floor);
+    assert.deepEqual(theoryFloors, ['04F'], `${store} 도면의 띠어리 층이 잘못됨`);
+    assert.deepEqual((index[`롯데-${code}|띠어리맨`] || []).map(item => item.floor), ['04F']);
+  });
 });
 
 test('현대 13개 지점의 생성된 SVG 도면이 데이터 파일과 연결된다', () => {

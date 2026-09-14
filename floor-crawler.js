@@ -80,6 +80,14 @@ const EXCLUDED_MANAGED_FLOORS = new Set([
   '신세계-SC00005|1F', // 마산 1F 여성 띠어리
   '신세계-SC00008|3F', // 센텀 3F 여성 컨템포러리/란제리
 ]);
+const EXCLUDED_MANAGED_BRAND_LOCATIONS = new Set([
+  '롯데-0399|02F|띠어리맨', // 동탄점 2F 여성 띠어리
+  '롯데-0025|02F|띠어리맨', // 전주점 2F 여성 띠어리
+]);
+
+function isExcludedManagedBrand(store, floor, brand) {
+  return EXCLUDED_MANAGED_BRAND_LOCATIONS.has(`${store.id}|${floor.floor}|${brand}`);
+}
 
 function isManagedFloor(store, floor) {
   if (store.company === '현대') return (HYUNDAI_MANAGED_FLOORS[store.code] || []).includes(floor.floor);
@@ -106,7 +114,8 @@ function verifyFloorEntries(store, floors, activeBrands) {
   return (floors || []).map(floor => ({
     ...floor,
     brands: isManagedFloor(store, floor)
-      ? (floor.brands || []).filter(brand => !activeBrands || activeBrands.has(brand))
+      ? (floor.brands || []).filter(brand => (!activeBrands || activeBrands.has(brand))
+        && !isExcludedManagedBrand(store, floor, brand))
       : [],
   }));
 }
@@ -251,7 +260,9 @@ async function fetchLotteFloors(storeName, cstrCd, rootDir = __dirname, activeBr
       const rawSvg = await svgRes.text();
       const floor = `${floorCode}F`;
       const label = `${info.cstrFlrCdNm || floorCode} ${info.cstrFlrCtegryNm || ''}`.trim();
-      const allowedBrands = isManagedFloor(store, { floor, label }) ? activeBrands : new Set();
+      const allowedBrands = isManagedFloor(store, { floor, label })
+        ? new Set([...activeBrands].filter(brand => !isExcludedManagedBrand(store, { floor }, brand)))
+        : new Set();
       const scopedFloorData = scopeLotteFloorData(floorData, cstrCd, floorCode, info.cstrTownCd, info);
       const managedPois = trackedPois(scopedFloorData, allowedBrands);
       const brands = uniqueBrands(managedPois.flatMap(item => item.brands));
@@ -485,7 +496,9 @@ async function fetchHyundaiFloors(storeName, branchCd, rootDir = __dirname, acti
   return (mapData.floors || []).map(floor => {
     const label = languageText(floor.name) || floor.id;
     const store = CONFIG.getStore('현대', storeName);
-    const allowedBrands = isManagedFloor(store, { floor:label, label }) ? activeBrands : new Set();
+    const allowedBrands = isManagedFloor(store, { floor:label, label })
+      ? new Set([...activeBrands].filter(brand => !isExcludedManagedBrand(store, { floor:label }, brand)))
+      : new Set();
     const brands = uniqueBrands((floor.pois || []).map(poiTitle)).filter(brand => !allowedBrands || allowedBrands.has(brand));
     const fileName = `${safeFloorFileName(label)}.svg`;
     const managedFileName = `${safeFloorFileName(label)}-managed.svg`;
@@ -681,7 +694,7 @@ if (require.main === module) {
 
 module.exports = {
   extractFloorNum, htmlValue, languageText, safeFloorFileName,
-  pointInPolygon, uniqueBrands, isManagedFloor, activeBrandsByStore, verifyFloorEntries,
+  pointInPolygon, uniqueBrands, isManagedFloor, isExcludedManagedBrand, activeBrandsByStore, verifyFloorEntries,
   sanitizeOfficialSvg, addSvgClassById, renderLotteFloorSvg, fetchLotteFloors,
   dabeeoMetadataValue, lottePoiMetadata, lotteFloorViewBox, scopeLotteFloorData,
   renderHyundaiFloorSvg, fetchHyundaiMap, fetchHyundaiFloors,

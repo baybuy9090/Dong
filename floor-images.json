@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T14:03:32.230Z",
+  "lastUpdated": "2026-09-14T22:26:41.613Z",
   "diagnostics": [
     {
       "storeId": "신세계-SC00002",
@@ -975,7 +975,7 @@
       {
         "floor": "8F",
         "label": "8F 아동/생활 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00010/guide/floor/__icsFiles/afieldfile/2026/09/11/2mpecrq9S3Iw.png",
+        "url": "https://www.shinsegae.com/cms12/SC00010/guide/floor/__icsFiles/afieldfile/2026/09/14/Ac9PJu9Lrs2s.png",
         "brands": []
       },
       {
@@ -1931,9 +1931,7 @@
         "highlightUrl": "floor-maps/lotte/0399/02F-managed.svg",
         "source": "lotte-dabeeo",
         "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1787738149913HUpn0.svg",
-        "brands": [
-          "띠어리맨"
-        ]
+        "brands": []
       },
       {
         "floor": "01F",
@@ -3191,9 +3189,7 @@
         "highlightUrl": "floor-maps/lotte/0025/02F-managed.svg",
         "source": "lotte-dabeeo",
         "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/36fd26a1-26fd-451a-a2c3-4b234ac6e013/1788355277004tTynz.svg",
-        "brands": [
-          "띠어리맨"
-        ]
+        "brands": []
       },
       {
         "floor": "01F",

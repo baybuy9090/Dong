@@ -116,6 +116,7 @@
     .btn-secondary { background: var(--action-secondary); color: #444; border-color: var(--border-muted); }
     .btn-secondary:hover { background: var(--action-secondary-hover); }
     .btn-floor { background: var(--action-floor); color: white; }
+    .btn-floor-link { min-height:24px; padding:3px 7px; font-size:10.5px; white-space:nowrap; flex-shrink:0; }
     .btn-success { background: var(--status-new); color: white; }
     .btn-danger { background: var(--status-removed); color: white; }
     .btn-sm { min-height: 25px; padding: 3px 9px; font-size: 10.5px; }
@@ -392,6 +393,7 @@
       table:not(.heatmap-table) { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
       th, td { font-size: 13px; padding: 10px 10px; }
       .badge { font-size: 11px; }
+      .btn-floor-link { min-height:22px; padding:2px 6px; font-size:9.5px; }
 
       /* 갭 분석 등 일반 표: min-width 없이 display:block만 걸면 스크롤 대신
          칸이 짜부라져서 "롯" "데"처럼 세로로 쪼개져 보이던 문제 수정 —
@@ -597,7 +599,7 @@
       <button class="tab-btn" id="floorSubBrand" onclick="switchFloorSub('brand')">브랜드별</button>
     </div>
     <div id="floorHighlightControls" style="display:flex;justify-content:flex-end;margin-bottom:10px;">
-      <button class="btn btn-floor" id="floorHighlightToggle" aria-pressed="true" onclick="toggleFloorHighlights()">★ 관리 브랜드 강조 켜짐</button>
+      <button class="btn btn-floor" id="floorHighlightToggle" aria-pressed="true" onclick="toggleFloorHighlights()">★ 남성 컨템포러리 브랜드 강조 켜짐</button>
     </div>
     <details class="panel floor-history" style="margin-bottom:12px;">
       <summary id="floorHistorySummary">최근 도면 변경 이력</summary>
@@ -1232,12 +1234,17 @@
       return floorBrandIndex[`${storeId}|${row.brand}`] || [];
     }
 
+    function compactFloorLabel(floor) {
+      return String(floor || '').replace(/^0+(?=\d)/, '');
+    }
+
     function floorButtonHtml(row, compact = false) {
       const refs = floorRefsFor(row);
       if (refs.length) {
         const first = refs[0];
-        const suffix = refs.length > 1 ? `${first.floor} 외 ${refs.length - 1}개 층` : first.floor;
-        return `<button class="btn btn-floor ${compact ? 'btn-sm' : ''}" onclick="openFloorAt('${encodeURIComponent(first.storeId)}','${encodeURIComponent(row.brand)}','${encodeURIComponent(first.floorKey || `${first.floor}|${first.label}`)}')">해당 층 도면 보기 · ${suffix}</button>`;
+        const floorLabel = compactFloorLabel(first.floor);
+        const suffix = refs.length > 1 ? `${floorLabel} 외 ${refs.length - 1}개 층` : floorLabel;
+        return `<button class="btn btn-floor btn-floor-link ${compact ? 'btn-sm' : ''}" onclick="openFloorAt('${encodeURIComponent(first.storeId)}','${encodeURIComponent(row.brand)}','${encodeURIComponent(first.floorKey || `${first.floor}|${first.label}`)}')">해당 층 도면 보기 · ${suffix}</button>`;
       }
       const url = floorGuideUrl(row.company, row.store);
       return url
@@ -1271,7 +1278,7 @@
       floorHighlightsOn = !floorHighlightsOn;
       const button = document.getElementById('floorHighlightToggle');
       button.setAttribute('aria-pressed', String(floorHighlightsOn));
-      button.textContent = floorHighlightsOn ? '★ 관리 브랜드 강조 켜짐' : '☆ 관리 브랜드 강조 꺼짐';
+      button.textContent = floorHighlightsOn ? '★ 남성 컨템포러리 브랜드 강조 켜짐' : '☆ 남성 컨템포러리 브랜드 강조 꺼짐';
       button.classList.toggle('btn-floor', floorHighlightsOn);
       button.classList.toggle('btn-secondary', !floorHighlightsOn);
       document.querySelectorAll('.floor-map-image').forEach(img => {
