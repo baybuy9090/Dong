@@ -23,7 +23,9 @@ test('바버 인명과 알레그리 축구 감독 기사를 제외한다', () =>
   assert.deepEqual(filterByBrandRelevance([
     { title:'폴 스미스와 바버, 패션 협업 컬렉션' },
     { title:'엘렌 바버, 100m 허들 출전' },
-  ], '바버').map(item => item.title), ['폴 스미스와 바버, 패션 협업 컬렉션']);
+    { title:'환율 하락에 수입 패션 전망 개선', _desc:'바버 등 해외 브랜드 수익성 개선' },
+    { title:'트레이딩은 개인투자자의 부에 해롭다', _desc:'경제학자 바버 연구 결과' },
+  ], '바버').map(item => item.title), ['폴 스미스와 바버, 패션 협업 컬렉션', '환율 하락에 수입 패션 전망 개선']);
   assert.deepEqual(filterByBrandRelevance([
     { title:'알레그리, 신규 시즌 남성복 공개' },
     { title:'알레그리 감독의 나폴리가 승리' },

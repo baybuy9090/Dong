@@ -63,6 +63,9 @@ const BRAND_NOISE_TERMS = {
   '\uBC14\uBC84': ['\uBC14\uBC84 \uC544\uB2E4\uC9C0\uC624', '\uC5D8\uB80C \uBC14\uBC84', '\uC721\uC0C1', '\uD5C8\uB4E4', '\uCF54\uCE58'],
   '\uC54C\uB808\uADF8\uB9AC': ['\uAC10\uB3C5', '\uB098\uD3F4\uB9AC', '\uC138\uB9AC\uC5D0', '\uCD95\uAD6C', '\uC720\uBCA4\uD22C\uC2A4', 'AC\uBC00\uB780'],
 };
+const AMBIGUOUS_BRAND_TITLE_CONTEXT = {
+  '\uBC14\uBC84': ['\uD328\uC158', '\uBE0C\uB79C\uB4DC', '\uCEEC\uB809\uC158', '\uD611\uC5C5', '\uC218\uC785', 'FW', '\uB9E4\uC7A5', '\uC720\uD1B5', '\uBC31\uD654\uC810'],
+};
 
 const BRANDS = CONFIG.brands;
 
@@ -261,9 +264,14 @@ function filterByBrandRelevance(items, brand) {
     const text = `${item.title} ${item._desc || ''}`;
     if (!aliases.some(alias => hasBrandMention(text, alias))) return false;
     const upper = text.toUpperCase();
+    const titleUpper = String(item.title || '').toUpperCase();
+    const titleMentionsBrand = aliases.some(alias => hasBrandMention(item.title, alias));
     if ((BRAND_NOISE_TERMS[brand] || []).some(term => upper.includes(term.toUpperCase()))) return false;
+    const titleContext = AMBIGUOUS_BRAND_TITLE_CONTEXT[brand];
+    if (titleContext && !titleMentionsBrand
+      && !titleContext.some(term => titleUpper.includes(term.toUpperCase()))) return false;
     if (brand === 'POTTERY') {
-      if (!aliases.some(alias => hasBrandMention(item.title, alias))) return false;
+      if (!titleMentionsBrand) return false;
       if (POTTERY_NOISE.some(term => upper.includes(term.toUpperCase()))) return false;
     }
     return true;
