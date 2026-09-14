@@ -12,7 +12,7 @@
 화
 충
 전
-기 
+기
 대
 …</text><text x="1019.7193993082685" y="1514.4589767420725" text-anchor="middle" dominant-baseline="central">에스컬레이터</text><text x="1680.061957702144" y="1514.888598214894" text-anchor="middle" dominant-baseline="central">에스컬레이터</text><text x="2226.884385586433" y="1515.4800292597336" text-anchor="middle" dominant-baseline="central">에스컬레이터</text><text x="1676.1443630825042" y="1665.1678261349891" text-anchor="middle" dominant-baseline="central">장애인화장실</text><text x="1676.2935133696244" y="1615.1678261349891" text-anchor="middle" dominant-baseline="central">화장실</text><text x="2208.711733409015" y="1932.6926302664601" text-anchor="middle" dominant-baseline="central">엘리베이터</text><text x="1127.33403178944" y="1932.5535693436086" text-anchor="middle" dominant-baseline="central">엘리베이터</text><text x="1343.852908338273" y="1508.8889680376817" text-anchor="middle" dominant-baseline="central">주차장</text><text x="2208.69686208409" y="1185.3747199763352" text-anchor="middle" dominant-baseline="central">엘리베이터</text><text x="1093.0651916471752" y="1187.5404367864148" text-anchor="middle" dominant-baseline="central">엘리베이터</text><text x="1442.8121805386004" y="1925.4588726890886" text-anchor="middle" dominant-baseline="central">엘리베이터</text><text x="1868.220943338672" y="1925.7364106888083" text-anchor="middle" dominant-baseline="central">엘리베이터</text><text x="1633.9373263998832" y="1509.5524001860097" text-anchor="middle" dominant-baseline="central">물
 품
@@ -27,5 +27,7 @@
 보
 관
 함</text></g>
+  <style>.managed-brand { fill:#9a5300; font-size:15px; font-weight:800; stroke:#fff7df; stroke-width:5; }</style>
   <text x="7.2353515625" y="778.673034667969" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="20" font-weight="700" fill="#1a1f1d">여의도 · B3</text>
+
 </svg>

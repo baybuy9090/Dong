@@ -20,6 +20,24 @@
   <meta name="twitter:description" content="롯데·현대·신세계 남성 컨템포러리 브랜드 입점 현황 자동 데이터 수집 대시보드">
   <meta name="twitter:image" content="https://baybuy9090.github.io/Dong/og-image.jpg">
   <style>
+    :root {
+      --company-lotte: #c8102e;
+      --company-hyundai: #1a9d4c;
+      --company-shinsegae: #004990;
+      --status-new: #1a9d4c;
+      --status-removed: #d9363e;
+      --status-warning: #d97e0e;
+      --status-review: #8b2fc9;
+      --status-neutral: #777;
+      --action-primary: #2c2c34;
+      --action-primary-hover: #3d3d47;
+      --action-secondary: #e8e8ec;
+      --action-secondary-hover: #dcdce2;
+      --action-floor: #004990;
+      --surface-muted: #f5f6f8;
+      --border-muted: #e4e4e8;
+      --focus-ring: rgba(0, 73, 144, 0.24);
+    }
     * { box-sizing: border-box; }
     body {
       font-family: 'Malgun Gothic', -apple-system, sans-serif;
@@ -60,14 +78,14 @@
     }
     .card .num { font-size: 22px; font-weight: 700; line-height: 1.2; }
     .card .label { font-size: 11px; color: #888; margin-top: 2px; }
-    .card.new { border-left-color: #1a9d4c; }
-    .card.new .num { color: #1a9d4c; }
-    .card.removed { border-left-color: #d9363e; }
-    .card.removed .num { color: #d9363e; }
-    .card.warn { border-left-color: #d97e0e; }
-    .card.warn .num { color: #d97e0e; }
-    .card.suspect { border-left-color: #8b2fc9; }
-    .card.suspect .num { color: #8b2fc9; }
+    .card.new { border-left-color: var(--status-new); }
+    .card.new .num { color: var(--status-new); }
+    .card.removed { border-left-color: var(--status-removed); }
+    .card.removed .num { color: var(--status-removed); }
+    .card.warn { border-left-color: var(--status-warning); }
+    .card.warn .num { color: var(--status-warning); }
+    .card.suspect { border-left-color: var(--status-review); }
+    .card.suspect .num { color: var(--status-review); }
     .card.clickable { cursor: pointer; transition: box-shadow 0.15s; }
     .card.clickable:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
 
@@ -80,11 +98,27 @@
 
     .tabs { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; }
     .tab-btn {
-      padding: 7px 14px; border: none; background: #e8e8ec; border-radius: 8px;
+      padding: 7px 14px; border: none; background: var(--action-secondary); border-radius: 8px;
       cursor: pointer; font-size: 13px; color: #444; transition: background 0.15s;
     }
-    .tab-btn:hover { background: #dcdce2; }
-    .tab-btn.active { background: #2c2c34; color: white; }
+    .tab-btn:hover { background: var(--action-secondary-hover); }
+    .tab-btn.active { background: var(--action-primary); color: white; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 4px;
+      min-height: 30px; padding: 6px 11px; border: 1px solid transparent; border-radius: 8px;
+      cursor: pointer; font: inherit; font-size: 12px; font-weight: 650; text-decoration: none;
+      transition: background 0.15s, box-shadow 0.15s, transform 0.15s;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn:focus-visible { outline: none; box-shadow: 0 0 0 3px var(--focus-ring); }
+    .btn-primary { background: var(--action-primary); color: white; }
+    .btn-primary:hover { background: var(--action-primary-hover); }
+    .btn-secondary { background: var(--action-secondary); color: #444; border-color: var(--border-muted); }
+    .btn-secondary:hover { background: var(--action-secondary-hover); }
+    .btn-floor { background: var(--action-floor); color: white; }
+    .btn-success { background: var(--status-new); color: white; }
+    .btn-danger { background: var(--status-removed); color: white; }
+    .btn-sm { min-height: 25px; padding: 3px 9px; font-size: 10.5px; }
 
     .chip {
       display: inline-block; padding: 4px 10px; margin: 2px 3px 2px 0; border-radius: 12px;
@@ -147,16 +181,16 @@
       display: inline-block; padding: 2px 7px; border-radius: 6px; font-size: 10.5px;
       font-weight: 600; margin-right: 3px;
     }
-    .badge-new { background: #1a9d4c; color: white; }
-    .badge-removed { background: #d9363e; color: white; }
-    .badge-warn { background: #d97e0e; color: white; }
-    .badge-suspect { background: #8b2fc9; color: white; }
+    .badge-new { background: var(--status-new); color: white; }
+    .badge-removed { background: var(--status-removed); color: white; }
+    .badge-warn { background: var(--status-warning); color: white; }
+    .badge-suspect { background: var(--status-review); color: white; }
     .badge-none { background: #eee; color: #999; }
     .badge-ok { background: #dff3e4; color: #1a9d4c; }
 
-    .company-롯데 { color: #c8102e; font-weight: 700; }
-    .company-현대 { color: #1a9d4c; font-weight: 700; }
-    .company-신세계 { color: #004990; font-weight: 700; }
+    .company-롯데 { color: var(--company-lotte); font-weight: 700; }
+    .company-현대 { color: var(--company-hyundai); font-weight: 700; }
+    .company-신세계 { color: var(--company-shinsegae); font-weight: 700; }
 
     .tier-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 5px; flex-shrink: 0; }
     .brand-link { cursor: pointer; text-decoration: underline dotted; }
@@ -249,6 +283,15 @@
     .region-company-block .cname { font-weight: 700; font-size: 12px; margin-bottom: 3px; }
     .region-store-line { font-size: 11.5px; color: #444; margin-bottom: 2px; padding-left: 6px; }
     .region-store-line b { color: #222; }
+    .managed-brand-list { display:flex; flex-wrap:wrap; gap:4px; margin:5px 0 7px; }
+    .managed-brand-chip {
+      display:inline-flex; align-items:center; border-radius:10px; padding:2px 7px;
+      background:#fff7df; color:#8a4b00; border:1px solid #f6c15c; font-size:10.5px; font-weight:700;
+    }
+    .floor-item { margin-bottom:14px; padding:7px; border-radius:10px; transition:background 0.2s, box-shadow 0.2s; }
+    .floor-item.floor-target { background:#fff7df; box-shadow:0 0 0 2px #f59e0b inset; }
+    .floor-history summary { cursor:pointer; font-size:12.5px; font-weight:700; color:#444; }
+    .floor-history-row { padding:7px 0; border-bottom:1px solid #f2f2f2; font-size:11.5px; }
 
     /* ── 모바일 반응형 ── */
     /* 모바일 전용 하단 탭바 / 필터 바텀시트 — PC 폭에서는 항상 숨김 */
@@ -508,7 +551,7 @@
 
     <div id="tableView">
       <div style="margin-bottom:10px;">
-        <button class="tab-btn" style="background:#2c2c34;color:white;" onclick="exportTableExcel()">엑셀로 내보내기</button>
+        <button class="btn btn-primary" onclick="exportTableExcel()">엑셀로 내보내기</button>
       </div>
       <div style="overflow-x:auto;">
         <table style="min-width:640px;">
@@ -532,7 +575,7 @@
 
     <div id="matrixView" style="display:none;">
       <div style="margin-bottom:10px;">
-        <button class="tab-btn" style="background:#2c2c34;color:white;" onclick="exportMatrixExcel()">엑셀로 내보내기</button>
+        <button class="btn btn-primary" onclick="exportMatrixExcel()">엑셀로 내보내기</button>
       </div>
       <div id="matrixWrap">
         <table class="matrix-table">
@@ -549,6 +592,10 @@
       <button class="tab-btn active" id="floorSubStore" onclick="switchFloorSub('store')">지점별</button>
       <button class="tab-btn" id="floorSubBrand" onclick="switchFloorSub('brand')">브랜드별</button>
     </div>
+    <details class="panel floor-history" style="margin-bottom:12px;">
+      <summary id="floorHistorySummary">최근 도면 변경 이력</summary>
+      <div id="floorHistoryList" style="margin-top:9px;"></div>
+    </details>
     <div class="panel">
       <div id="floorList"></div>
     </div>
@@ -617,6 +664,7 @@
     let currentTab = 'overview';
     let sortKey = null, sortDir = 1;
     let favOnly = false;
+    let rankingExpanded = false;
     const favorites = new Set((() => { try { return JSON.parse(localStorage.getItem('dongDdaengFavBrands') || '[]'); } catch (e) { return []; } })());
 
     // 입·퇴점/확인필요 항목에 대해 사람이 내린 결정 ("confirm"=정상 처리, "reject"=삭제 확정).
@@ -678,6 +726,10 @@
       'SA급':'#c8102e','Designer':'#004990','Global':'#1a9d4c','Select':'#d97e0e',
       'B급':'#8b2fc9','Classic':'#0aa','New':'#a52a2a','New Select':'#795548',
       'Contents':'#607d8b','미분류':'#999',
+    };
+    const DESIGN_COLORS = {
+      company: { '롯데':'#c8102e', '현대':'#1a9d4c', '신세계':'#004990' },
+      status: { new:'#1a9d4c', removed:'#d9363e', warning:'#d97e0e', review:'#8b2fc9' },
     };
     function tierColor(brand) { return TIER_COLORS[tierOf(brand)] || '#999'; }
 
@@ -1109,7 +1161,7 @@
     }
     function companyClass(c) { return 'company-' + c; }
     function companyColor(c) {
-      return c === '롯데' ? '#c8102e' : c === '현대' ? '#1a9d4c' : '#004990';
+      return DESIGN_COLORS.company[c] || DESIGN_COLORS.company.신세계;
     }
 
     function switchTab(tab) {
@@ -1155,6 +1207,50 @@
       renderFloorView();
     }
 
+    function floorDomId(value) {
+      return encodeURIComponent(String(value || '')).replace(/%/g, '_');
+    }
+
+    function floorRefsFor(row) {
+      const storeId = row.storeId || DONG_CONFIG.storeId(row.company, row.store);
+      return floorBrandIndex[`${storeId}|${row.brand}`] || [];
+    }
+
+    function floorButtonHtml(row, compact = false) {
+      const refs = floorRefsFor(row);
+      if (refs.length) {
+        const first = refs[0];
+        const suffix = refs.length > 1 ? `${first.floor} 외 ${refs.length - 1}개 층` : first.floor;
+        return `<button class="btn btn-floor ${compact ? 'btn-sm' : ''}" onclick="openFloorAt('${encodeURIComponent(first.storeId)}','${encodeURIComponent(row.brand)}','${encodeURIComponent(first.floorKey || `${first.floor}|${first.label}`)}')">해당 층 도면 보기 · ${suffix}</button>`;
+      }
+      const url = floorGuideUrl(row.company, row.store);
+      return url
+        ? `<a class="btn btn-secondary ${compact ? 'btn-sm' : ''}" href="${url}" target="_blank" rel="noopener">공식 도면 보기</a>`
+        : '<span style="font-size:11px;color:#aaa;">도면 정보 없음</span>';
+    }
+
+    function openFloorAt(encodedStoreId, encodedBrand, encodedFloor) {
+      const storeId = decodeURIComponent(encodedStoreId);
+      const brand = decodeURIComponent(encodedBrand);
+      const floorKey = decodeURIComponent(encodedFloor);
+      const store = DONG_CONFIG.storeRows.find(item => item.id === storeId);
+      if (!store) return;
+      closeStoreDetail();
+      floorSub = 'store';
+      switchTab('floor');
+      const gallery = document.getElementById(`floorImgs-${store.code}`);
+      if (gallery) gallery.style.display = 'block';
+      const target = document.getElementById(`floorItem-${store.code}-${floorDomId(floorKey)}`);
+      if (target) {
+        target.classList.add('floor-target');
+        target.querySelectorAll('.managed-brand-chip').forEach(chip => {
+          if (chip.textContent.replace('★ ', '') === brand) chip.style.boxShadow = '0 0 0 2px #f59e0b';
+        });
+        setTimeout(() => target.scrollIntoView({ behavior:'smooth', block:'center' }), 30);
+        setTimeout(() => target.classList.remove('floor-target'), 3500);
+      }
+    }
+
     function renderFloorView() {
       const filtered = currentFiltered().filter(r => !['removed','exitPending'].includes(statusOf(r)));
       const container = document.getElementById('floorList');
@@ -1171,33 +1267,35 @@
         const entries = Object.values(storeMap).sort((a,b) =>
           (companyPriority[a.company] ?? 9) - (companyPriority[b.company] ?? 9) || a.store.localeCompare(b.store,'ko'));
 
-        container.innerHTML = entries.map((e, idx) => {
+        container.innerHTML = entries.map(e => {
           const url = floorGuideUrl(e.company, e.store);
           const linkHtml = url
-            ? `<a href="${url}" target="_blank" rel="noopener" style="font-size:12px;color:#004990;text-decoration:none;">🔗 도면 보기 →</a>`
+            ? `<a class="btn btn-secondary btn-sm" href="${url}" target="_blank" rel="noopener">공식 도면</a>`
             : `<span style="font-size:11px;color:#bbb;">링크 없음</span>`;
           const code = STORE_CODES[e.company] && STORE_CODES[e.company][e.store];
           const floors = code ? (floorImages[code] || []) : [];
           const imgToggleHtml = floors.length
-            ? `<button class="tab-btn" style="background:#004990;color:white;padding:3px 10px;font-size:11px;margin-left:8px;" onclick="toggleFloorImages('${idx}')">🖼️ 도면 이미지 (${floors.length}개층)</button>`
+            ? `<button class="btn btn-floor btn-sm" style="margin-left:6px;" onclick="toggleFloorImages('${code}')">도면 이미지 (${floors.length}개층)</button>`
             : '';
           const galleryHtml = floors.length
-            ? `<div id="floorImgs-${idx}" style="display:none;padding:10px 4px 14px;">
+            ? `<div id="floorImgs-${code}" style="display:none;padding:10px 4px 14px;">
                 ${floors.map(f => {
                   const ext = (f.url.match(/\.(jpg|jpeg|png|gif|webp)(?:\?.*)?$/i) || ['', 'jpg'])[1];
                   const filename = `${e.company}_${e.store}_${f.floor || f.label}.${ext}`.replace(/[\\/:*?"<>|]/g, '');
+                  const brandChips = (f.brands || []).map(brand => `<span class="managed-brand-chip">★ ${brand}</span>`).join('');
                   return `
-                  <div style="margin-bottom:14px;">
+                  <div class="floor-item" id="floorItem-${code}-${floorDomId(`${f.floor}|${f.label}`)}">
                     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
                       <div style="font-size:12px;font-weight:700;color:#444;">${f.label}</div>
-                      <button class="tab-btn" style="background:#2c2c34;color:white;padding:3px 9px;font-size:10.5px;" onclick="downloadFloorImage('${f.url}', '${filename}')">⬇️ 다운로드</button>
+                      <button class="btn btn-primary btn-sm" onclick="downloadFloorImage('${f.url}', '${filename}')">다운로드</button>
                     </div>
+                    ${brandChips ? `<div class="managed-brand-list" aria-label="이 층의 관리 브랜드">${brandChips}</div>` : ''}
                     <img src="${f.url}" alt="${f.label}" loading="lazy" style="max-width:100%;border:1px solid #eee;border-radius:8px;">
                   </div>`;
                 }).join('')}
               </div>`
             : '';
-          return `<div class="region-item">
+          return `<div class="region-item" id="floorStore-${code}">
             <div style="display:flex;justify-content:space-between;align-items:center;padding:9px 4px;flex-wrap:wrap;">
               <div>
                 <span class="${companyClass(e.company)}">${e.company}</span> ${e.store}
@@ -1219,9 +1317,7 @@
         container.innerHTML = brands.map(brand => {
           const rows = brandMap[brand].sort((a,b) => a.company.localeCompare(b.company,'ko') || a.store.localeCompare(b.store,'ko'));
           const links = rows.map(r => {
-            const url = floorGuideUrl(r.company, r.store);
-            if (!url) return `<span style="font-size:11px;color:#bbb;">${r.store}(링크없음)</span>`;
-            return `<a href="${url}" target="_blank" rel="noopener" style="font-size:11.5px;color:#004990;text-decoration:none;margin-right:10px;white-space:nowrap;">🔗 ${r.company} ${r.store}</a>`;
+            return `<span style="display:inline-flex;align-items:center;gap:5px;margin:2px 8px 2px 0;"><span class="${companyClass(r.company)}" style="font-size:11.5px;">${r.company} ${r.store}</span>${floorButtonHtml(r, true)}</span>`;
           }).join(' ');
           return `<div class="region-item">
             <div style="padding:9px 4px;">
@@ -1453,8 +1549,7 @@
         return { brand, l, h, sg, total: l + h + sg };
       });
 
-      // ── 패널 1: 브랜드별 입점 수 랭킹 (티어 그룹별) ──
-      const tierOrder = ['SA급','Designer','Global','Select','B급','Classic','New','New Select','Contents','미분류'];
+      // ── 패널 1: 브랜드별 입점 수 랭킹 ──
       // 막대 전체 길이를 브랜드 총합끼리 비교하는 대신, 브랜드마다 막대를 항상
       // 100% 꽉 채우고 그 안에서 롯데/현대/신세계 비율만 나눠서 보여줌 — 총합이
       // 작은 브랜드도 막대가 안 짜부러들어서 L/H/S 텍스트가 항상 들어갈 자리가 있음.
@@ -1462,30 +1557,30 @@
         if (val <= 0) return '';
         return `<span style="color:white;font-size:9px;font-weight:600;white-space:nowrap;">${label} ${val}</span>`;
       }
-      let rankingHtml = '';
-      tierOrder.forEach(tier => {
-        const rowsInTier = brandRows.filter(r => tierOf(r.brand) === tier)
-          .sort((a,b) => (favorites.has(b.brand) - favorites.has(a.brand)) || (b.total - a.total));
-        if (rowsInTier.length === 0) return;
-        rankingHtml += `<div style="font-size:11.5px;font-weight:700;color:#888;margin:10px 0 4px;text-transform:uppercase;">${tier}</div>`;
-        rankingHtml += rowsInTier.map(r => {
+      const rankedRows = brandRows.sort((a,b) =>
+        (b.total - a.total) || (favorites.has(b.brand) - favorites.has(a.brand)) || a.brand.localeCompare(b.brand, 'ko'));
+      const visibleRankingRows = rankingExpanded ? rankedRows : rankedRows.slice(0, 10);
+      let rankingHtml = visibleRankingRows.map((r, index) => {
           const isFav = favorites.has(r.brand);
           return `
           <div class="bar-row">
             <div class="bar-label" style="width:120px;" title="${r.brand}">
+              <span style="width:20px;color:#999;font-size:10.5px;flex-shrink:0;">${index + 1}</span>
               <span class="star-btn ${isFav?'active':''}" onclick="toggleFavorite('${r.brand}', event)">${isFav?'★':'☆'}</span>
               <span class="brand-link" onclick="openBrandDetail('${r.brand}')" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${r.brand}</span>
             </div>
             <div class="bar-track" style="display:flex;">
-              <div class="bar-fill" style="width:${r.l/r.total*100}%;background:#c8102e;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="롯데 ${r.l}">${segText(r.l, 'L')}</div>
-              <div class="bar-fill" style="width:${r.h/r.total*100}%;background:#1a9d4c;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="현대 ${r.h}">${segText(r.h, 'H')}</div>
-              <div class="bar-fill" style="width:${r.sg/r.total*100}%;background:#004990;display:flex;align-items:center;justify-content:center;overflow:hidden;" title="신세계 ${r.sg}">${segText(r.sg, 'S')}</div>
+              <div class="bar-fill" style="width:${r.l/r.total*100}%;background:var(--company-lotte);display:flex;align-items:center;justify-content:center;overflow:hidden;" title="롯데 ${r.l}">${segText(r.l, 'L')}</div>
+              <div class="bar-fill" style="width:${r.h/r.total*100}%;background:var(--company-hyundai);display:flex;align-items:center;justify-content:center;overflow:hidden;" title="현대 ${r.h}">${segText(r.h, 'H')}</div>
+              <div class="bar-fill" style="width:${r.sg/r.total*100}%;background:var(--company-shinsegae);display:flex;align-items:center;justify-content:center;overflow:hidden;" title="신세계 ${r.sg}">${segText(r.sg, 'S')}</div>
             </div>
-            <div class="bar-detail-text" style="width:170px;font-size:10.5px;color:#666;flex-shrink:0;">롯데 ${r.l}개 현대 ${r.h}개 신세계 ${r.sg}개</div>
+            <div class="bar-detail-text" style="width:170px;font-size:10.5px;color:#666;flex-shrink:0;">${tierOf(r.brand)} · 롯데 ${r.l}개 현대 ${r.h}개 신세계 ${r.sg}개</div>
             <div class="bar-num">${r.total}</div>
           </div>`;
         }).join('');
-      });
+      if (rankedRows.length > 10) {
+        rankingHtml += `<div style="text-align:center;margin-top:12px;"><button class="btn btn-secondary" onclick="toggleRankingExpanded()">${rankingExpanded ? '상위 10개만 보기' : `전체 ${rankedRows.length}개 보기`}</button></div>`;
+      }
       document.getElementById('brandRanking').innerHTML = rankingHtml;
 
       // ── 패널 2: 갭 분석 ──
@@ -1602,8 +1697,8 @@
         </div>`).join('');
 
       const statusDefs = [
-        ['new','이번 달 신규 입점','#1a9d4c'], ['removed','이번 달 퇴점','#d9363e'],
-        ['verify','재확인·수집 지연','#8b2fc9'],
+        ['new','이번 달 신규 입점',DESIGN_COLORS.status.new], ['removed','이번 달 퇴점',DESIGN_COLORS.status.removed],
+        ['verify','재확인·수집 지연',DESIGN_COLORS.status.review],
       ];
       const statusCounts = statusDefs.map(([key]) => filtered.filter(r => statusGroup(r) === key).length);
       const maxS = Math.max(...statusCounts, 1);
@@ -1613,6 +1708,12 @@
           <div class="bar-track"><div class="bar-fill" style="width:${statusCounts[i]/maxS*100}%;background:${color};"></div></div>
           <div class="bar-num">${statusCounts[i]}</div>
         </div>`).join('');
+    }
+
+    function toggleRankingExpanded() {
+      rankingExpanded = !rankingExpanded;
+      renderOverview();
+      document.getElementById('brandRanking').scrollIntoView({ behavior:'smooth', block:'nearest' });
     }
 
     const openRegions = new Set();
@@ -1787,13 +1888,9 @@
         html += `<div style="font-size:11px;font-weight:700;color:${companyColor(comp)};margin:8px 0 4px;">${comp} (${byCompany[comp].length})</div>`;
         html += byCompany[comp].map(r => {
           const status = statusOf(r);
-          const url = floorGuideUrl(r.company, r.store);
-          const linkIcon = url
-            ? `<a href="${url}" target="_blank" rel="noopener" title="층별 안내(도면) 바로 보기" style="margin-left:5px;text-decoration:none;">🔗</a>`
-            : '';
-          return `<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #f2f2f2;font-size:12.5px;">
-            <span><a href="#" onclick="closeStoreDetail();openStoreDetail('${r.company}','${r.store}');return false;" style="color:inherit;text-decoration:underline;">${r.store}</a>${linkIcon} <span style="color:#888;font-size:10.5px;">(${regionOf(r.company,r.store)})</span></span>
-            ${statusBadge(status)}</div>`;
+          return `<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #f2f2f2;font-size:12.5px;flex-wrap:wrap;">
+            <span><a href="#" onclick="closeStoreDetail();openStoreDetail('${r.company}','${r.store}');return false;" style="color:inherit;text-decoration:underline;">${r.store}</a> <span style="color:#888;font-size:10.5px;">(${regionOf(r.company,r.store)})</span> ${statusBadge(status)}</span>
+            ${floorButtonHtml(r)}</div>`;
         }).join('');
       });
       document.getElementById('modalBody').innerHTML = html || '<div class="empty">입점 지점이 없습니다</div>';
@@ -1857,9 +1954,9 @@
       const key = decisionKey(r);
       const esc = s => s.replace(/'/g, "\\'");
       return `<div style="margin-top:4px;">
-        <button class="tab-btn" style="background:#1a9d4c;color:white;padding:3px 9px;font-size:11px;margin-right:5px;"
+        <button class="btn btn-success btn-sm" style="margin-right:5px;"
           onclick="decideItem('${esc(r.company)}','${esc(r.store)}','${esc(r.brand)}','confirm')">✅ 정상으로 이동</button>
-        <button class="tab-btn" style="background:#d9363e;color:white;padding:3px 9px;font-size:11px;"
+        <button class="btn btn-danger btn-sm"
           onclick="decideItem('${esc(r.company)}','${esc(r.store)}','${esc(r.brand)}','reject')">🗑 삭제 확정</button>
       </div>`;
     }
@@ -1887,7 +1984,7 @@
       document.getElementById('modalSubtitle').innerHTML =
         `이 브라우저에서 "정상으로 이동/삭제 확정"으로 처리한 항목 — 총 ${entries.length}건. ` +
         `전체 기기에 영구 반영하려면 아래 파일을 받아 저장소에 커밋해주세요.<br>` +
-        `<button class="tab-btn" style="background:#2c2c34;color:white;margin-top:6px;" onclick="downloadReviewDecisions()">📥 review-decisions.json 다운로드</button>`;
+        `<button class="btn btn-primary" style="margin-top:6px;" onclick="downloadReviewDecisions()">📥 review-decisions.json 다운로드</button>`;
       document.getElementById('modalBody').innerHTML = entries.length ? entries.map(([key, decision]) => {
         const row = allData.find(r => decisionKey(r) === key) || committedReviewDecisions.find(r => (r.key || decisionKey(r)) === key);
         if (!row) return '';
@@ -1895,7 +1992,7 @@
         const label = decision === 'confirm' ? '✅ 정상 처리' : '🗑 삭제 확정';
         return `<div style="display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid #f2f2f2;font-size:12.5px;">
           <span><span class="${companyClass(company)}">${company}</span> ${store} · ${brand} <span style="color:#888;font-size:11px;">${label}</span></span>
-          <button class="tab-btn" style="padding:3px 8px;font-size:11px;" onclick="undoDecision('${company}','${store}','${brand}')">되돌리기</button>
+          <button class="btn btn-secondary btn-sm" onclick="undoDecision('${company}','${store}','${brand}')">되돌리기</button>
         </div>`;
       }).join('') : '<div class="empty">처리한 항목이 없습니다.</div>';
       document.getElementById('storeModal').style.display = 'block';
@@ -2141,6 +2238,8 @@
 
     // 신세계·롯데는 공식 이미지, 현대는 공식 다비오 벡터 데이터를 변환한 SVG를 보여준다.
     let floorImages = {};
+    let floorBrandIndex = {};
+    let floorHistory = [];
     function loadFloorImages() {
       fetch('floor-images.json?_=' + Date.now())
         .then(res => { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
@@ -2149,6 +2248,37 @@
           if (currentTab === 'floor') renderFloorView();
         })
         .catch(() => { /* floor-images.json이 아직 없으면 (첫 자동 실행 전) 링크만 보여줌 */ });
+    }
+    function loadFloorIndex() {
+      fetch('brand-floor-index.json?_=' + Date.now())
+        .then(res => { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
+        .then(payload => { floorBrandIndex = payload.data || {}; })
+        .catch(() => { floorBrandIndex = {}; });
+    }
+    function loadFloorHistory() {
+      fetch('floor-history.json?_=' + Date.now())
+        .then(res => { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
+        .then(payload => {
+          floorHistory = payload.events || [];
+          renderFloorHistory();
+        })
+        .catch(() => { floorHistory = []; renderFloorHistory(); });
+    }
+    function renderFloorHistory() {
+      const summary = document.getElementById('floorHistorySummary');
+      const list = document.getElementById('floorHistoryList');
+      if (!summary || !list) return;
+      summary.textContent = floorHistory.length ? `최근 도면 변경 이력 · ${floorHistory.length}건` : '최근 도면 변경 이력 · 변경 없음';
+      if (!floorHistory.length) {
+        list.innerHTML = '<div class="empty" style="padding:12px;">최초 수집 상태가 기준으로 저장됐으며 이후 변경부터 기록됩니다.</div>';
+        return;
+      }
+      list.innerHTML = floorHistory.slice(0, 30).map(event => {
+        const movement = event.type === '층 이동' ? ` · ${(event.before || []).join(', ')} → ${(event.after || []).join(', ')}` : '';
+        const brand = event.brand ? ` · <b>${event.brand}</b>` : '';
+        const date = new Date(event.detectedAt).toLocaleDateString('ko-KR');
+        return `<div class="floor-history-row"><span class="badge badge-${event.type.includes('삭제') ? 'removed' : event.type.includes('추가') ? 'new' : 'warn'}">${event.type}</span><span class="${companyClass(event.company)}">${event.company}</span> ${event.store} · ${event.floor || ''}${brand}${movement}<span style="float:right;color:#999;">${date}</span></div>`;
+      }).join('');
     }
     function toggleFloorImages(key) {
       const el = document.getElementById('floorImgs-' + key);
@@ -2275,6 +2405,8 @@
     loadMonthlyArchive();
     loadNews();
     loadFloorImages();
+    loadFloorIndex();
+    loadFloorHistory();
   </script>
 </body>
 </html>

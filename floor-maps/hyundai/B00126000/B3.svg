@@ -5,7 +5,9 @@
   <rect x="200.732543945312" y="307.614013671875" width="997.7514767182997" height="833.072021484375" fill="#e7e8e6"/>
   <g><polygon points="1143.48,1085.69 255.73,1085.69 255.73,362.61 1142.71,362.61" fill="#ffffff" fill-opacity="1" stroke="#ffffff" stroke-width="1.5"/></g>
   <g><polygon points="1141.21,1084.19 257.23,1084.19 257.23,364.11 1141.21,364.11" fill="#ffffff" fill-opacity="1" stroke="#ffffff" stroke-width="1.5"/><polygon points="333.66,994.44 257.23,994.44 257.23,1084.18 333.66,1084.18" fill="#e7d3e7" fill-opacity="1" stroke="#ffffff" stroke-width="1.5"/><polygon points="1141.21,394.30 1141.21,1084.19 257.23,1084.19 257.23,364.11 1141.21,364.11 1141.21,394.30 1142.71,394.30 1142.71,362.61 255.73,362.61 255.73,1085.69 1142.71,1085.69 1142.71,394.30" fill="#a1a1a1" fill-opacity="1" stroke="#a1a1a1" stroke-width="1.5"/></g>
-  <g font-family="Arial, 'Noto Sans KR', sans-serif" font-size="12" font-weight="600" fill="#303633" stroke="#fff" stroke-width="3" paint-order="stroke" stroke-linejoin="round"><text x="293.57332311227213" y="1043.1544215785311" text-anchor="middle" dominant-baseline="central">발레 
+  <g font-family="Arial, 'Noto Sans KR', sans-serif" font-size="12" font-weight="600" fill="#303633" stroke="#fff" stroke-width="3" paint-order="stroke" stroke-linejoin="round"><text x="293.57332311227213" y="1043.1544215785311" text-anchor="middle" dominant-baseline="central">발레
 라운지</text><text x="700.2360902939049" y="707.8741604543777" text-anchor="middle" dominant-baseline="central">주차장</text></g>
+  <style>.managed-brand { fill:#9a5300; font-size:15px; font-weight:800; stroke:#fff7df; stroke-width:5; }</style>
   <text x="255.732543945312" y="344.614013671875" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="20" font-weight="700" fill="#1a1f1d">천호 · B3</text>
+
 </svg>

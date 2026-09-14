@@ -12,7 +12,9 @@
 - `monthly-archive.json` — 직전 월 마지막 정상 데이터와 비교한 월별 신규 입점·퇴점 아카이브
 - `baseline.json` — 과거 2026-06 수기 스냅샷 보관용. 현재 변화 판정에는 사용하지 않음
 - `review-decisions.json` — 신규·퇴점·오탐에 대한 사람의 영구 검토 결과
-- `floor-crawler.js`, `floor-images.json` — 3사 층 도면 수집 결과. 현대는 공식 다비오 벡터 데이터를 `floor-maps/hyundai/`의 정적 SVG로 변환
+- `floor-crawler.js`, `floor-images.json` — 3사 층 도면과 층별 관리 브랜드 수집 결과. 현대는 공식 다비오 벡터 데이터를 `floor-maps/hyundai/`의 정적 SVG로 변환하고 관리 브랜드의 라벨과 매장 구획을 강조
+- `brand-floor-index.json` — 브랜드 상세에서 정확한 지점·층 도면으로 이동하기 위한 인덱스
+- `floor-history.json` — 층 추가·삭제, 브랜드 추가·삭제·층 이동, 도면 변경 이력과 현재 비교 서명
 - `news-crawler.js`, `news.json` — 브랜드 뉴스와 사업 이벤트 분류 결과
 - `index.html` — 대시보드 화면
 - `tests/` — 점포 별칭, 브랜드 매칭, 수집 지연, 뉴스 이벤트 회귀 테스트

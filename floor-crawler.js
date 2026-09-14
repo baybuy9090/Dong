@@ -3,7 +3,9 @@
 // 결과는 floor-images.json에 지점 코드 기준으로 병합한다.
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const CONFIG = require('./config');
+const { matchBrands } = require('./crawler');
 
 const UA = { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' };
 
@@ -31,7 +33,28 @@ async function fetchShinsegaeFloors(storeCode) {
     if (seen.has(imgUrl)) continue;
     seen.add(imgUrl);
     const label = m[2].trim();
-    floors.push({ floor: extractFloorNum(label), label, url: imgUrl });
+    floors.push({ floor: extractFloorNum(label), label, url: imgUrl, brands: [] });
+  }
+  const marker = 'var arrFloor = ';
+  const jsonStart = html.indexOf(marker);
+  if (jsonStart >= 0) {
+    const valueStart = jsonStart + marker.length;
+    const valueEnd = html.indexOf(';', valueStart);
+    try {
+      const payload = JSON.parse(html.slice(valueStart, valueEnd));
+      (payload.floor || []).forEach(item => {
+        if (!item.fa00019) return;
+        const itemUrl = 'https://www.shinsegae.com' + item.fa00019;
+        const floor = floors.find(entry => entry.url === itemUrl);
+        if (!floor) return;
+        const brandText = (item.category || []).flatMap(category => category.brand || []).flatMap(brand => [
+          brand.shop_nm, brand.intg_bran_nm, brand.md_nm, brand.sh00002, brand.sh00025,
+        ]).filter(Boolean).join(' ');
+        floor.brands = matchBrands(brandText).sort((a,b) => a.localeCompare(b, 'ko'));
+      });
+    } catch (e) {
+      console.error(`  [신세계 ${storeCode}] 층별 브랜드 JSON 파싱 실패:`, e.message);
+    }
   }
   return floors;
 }
@@ -72,7 +95,10 @@ async function fetchLotteFloorDetail(cstrCd, townCd, flrCd) {
   const floorTitleM = html.match(/<b class="s-title6-b">([^<]*)<\/b>\s*<span[^>]*>([^<]*)<\/span>/);
   const label = floorTitleM ? `${floorTitleM[1].trim()} ${floorTitleM[2].trim()}` : flrCd;
   if (!imgPath || !imgNm) return null;
-  return { floor: flrCd + 'F', label, url: `https://minfo.lotteshopping.com${imgPath}${imgNm}` };
+  return {
+    floor: flrCd + 'F', label, url: `https://minfo.lotteshopping.com${imgPath}${imgNm}`,
+    brands: matchBrands(html).sort((a,b) => a.localeCompare(b, 'ko')),
+  };
 }
 
 async function fetchLotteFloors(cstrCd) {
@@ -122,18 +148,45 @@ function styleMap(styles) {
   return new Map((styles || []).map(style => [style.groupCode, style]));
 }
 
-function svgPolygon(shape, styles, fallback) {
+function pointInPolygon(point, coordinates) {
+  if (!point || !Array.isArray(coordinates) || coordinates.length < 3) return false;
+  let inside = false;
+  for (let i = 0, j = coordinates.length - 1; i < coordinates.length; j = i++) {
+    const xi = Number(coordinates[i].x), yi = Number(coordinates[i].y);
+    const xj = Number(coordinates[j].x), yj = Number(coordinates[j].y);
+    const crosses = ((yi > point.y) !== (yj > point.y))
+      && (point.x < (xj - xi) * (point.y - yi) / ((yj - yi) || Number.EPSILON) + xi);
+    if (crosses) inside = !inside;
+  }
+  return inside;
+}
+
+function uniqueBrands(values) {
+  return [...new Set(values.flatMap(value => matchBrands(String(value || ''))))]
+    .sort((a, b) => a.localeCompare(b, 'ko'));
+}
+
+function trackedPois(floor) {
+  return (floor.pois || []).map(poi => ({ poi, brands: uniqueBrands([poiTitle(poi)]) }))
+    .filter(item => item.brands.length > 0);
+}
+
+function svgPolygon(shape, styles, fallback, tracked = []) {
   const points = (shape.coordinates || []).map(point => `${Number(point.x).toFixed(2)},${Number(point.y).toFixed(2)}`).join(' ');
   if (!points) return '';
   const style = styles.get((shape.style || {}).groupCode) || styles.get(shape.attributeCode) || fallback;
   const fill = style.color || fallback.color;
-  const stroke = style.lineColor || fallback.lineColor;
+  const matched = uniqueBrands(tracked.filter(item => pointInPolygon(item.poi.position, shape.coordinates)).flatMap(item => item.brands));
+  const highlighted = matched.length > 0;
+  const stroke = highlighted ? '#f59e0b' : (style.lineColor || fallback.lineColor);
   const opacity = Number.isFinite(style.opacity) ? style.opacity / 100 : 1;
-  return `<polygon points="${points}" fill="${xmlEscape(fill)}" fill-opacity="${opacity}" stroke="${xmlEscape(stroke)}" stroke-width="1.5"/>`;
+  const metadata = highlighted ? ` data-managed-brands="${xmlEscape(matched.join(', '))}"` : '';
+  return `<polygon points="${points}" fill="${xmlEscape(fill)}" fill-opacity="${opacity}" stroke="${xmlEscape(stroke)}" stroke-width="${highlighted ? 6 : 1.5}"${metadata}/>`;
 }
 
 function poiTitle(poi) {
-  return languageText(poi.titleByLanguages) || languageText(poi.title) || String(poi.title || '');
+  return (languageText(poi.titleByLanguages) || languageText(poi.title) || String(poi.title || ''))
+    .replace(/\s+/g, ' ').trim();
 }
 
 function renderHyundaiFloorSvg(mapData, floor, storeName) {
@@ -152,13 +205,19 @@ function renderHyundaiFloorSvg(mapData, floor, storeName) {
   const maxY = coordinates.length ? Math.max(...coordinates.map(point => point.y)) : height;
   const padding = 55;
   const floorLabel = languageText(floor.name) || floor.id;
+  const managedPois = trackedPois(floor);
+  const managedBrands = uniqueBrands(managedPois.flatMap(item => item.brands));
+  const managedLegend = managedBrands.length
+    ? `<text x="${maxX}" y="${minY - 18}" text-anchor="end" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="13" font-weight="700" fill="#9a5300">★ 관리 브랜드 ${managedBrands.length}개 강조</text>`
+    : '';
   const viewBox = `${minX - padding} ${minY - padding} ${Math.max(1, maxX - minX + padding * 2)} ${Math.max(1, maxY - minY + padding * 2)}`;
   const labels = (floor.pois || []).map(poi => {
     const title = poiTitle(poi).trim();
     const position = poi.position || {};
     if (!title || !Number.isFinite(position.x) || !Number.isFinite(position.y)) return '';
     const compact = title.length > 18 ? `${title.slice(0, 17)}…` : title;
-    return `<text x="${position.x}" y="${position.y}" text-anchor="middle" dominant-baseline="central">${xmlEscape(compact)}</text>`;
+    const isManaged = uniqueBrands([title]).length > 0;
+    return `<text x="${position.x}" y="${position.y}" text-anchor="middle" dominant-baseline="central"${isManaged ? ' class="managed-brand"' : ''}>${xmlEscape(isManaged ? `★ ${compact}` : compact)}</text>`;
   }).join('');
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}" width="1200" height="1200" role="img" aria-labelledby="title desc">
@@ -166,9 +225,11 @@ function renderHyundaiFloorSvg(mapData, floor, storeName) {
   <desc id="desc">현대백화점 공식 층별 안내 벡터 데이터를 정적 도면으로 변환했습니다.</desc>
   <rect x="${minX - padding}" y="${minY - padding}" width="${maxX - minX + padding * 2}" height="${maxY - minY + padding * 2}" fill="${xmlEscape(theme.canvasColor || '#f7f8f7')}"/>
   <g>${(floor.sections || []).map(shape => svgPolygon(shape, sectionStyles, sectionFallback)).join('')}</g>
-  <g>${(floor.objects || []).map(shape => svgPolygon(shape, objectStyles, objectFallback)).join('')}</g>
+  <g>${(floor.objects || []).map(shape => svgPolygon(shape, objectStyles, objectFallback, managedPois)).join('')}</g>
   <g font-family="Arial, 'Noto Sans KR', sans-serif" font-size="12" font-weight="600" fill="#303633" stroke="#fff" stroke-width="3" paint-order="stroke" stroke-linejoin="round">${labels}</g>
+  <style>.managed-brand { fill:#9a5300; font-size:15px; font-weight:800; stroke:#fff7df; stroke-width:5; }</style>
   <text x="${minX}" y="${minY - 18}" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="20" font-weight="700" fill="#1a1f1d">${xmlEscape(storeName)} · ${xmlEscape(floorLabel)}</text>
+${managedLegend}
 </svg>\n`;
 }
 
@@ -207,16 +268,108 @@ async function fetchHyundaiFloors(storeName, branchCd, rootDir = __dirname) {
   fs.mkdirSync(outputDir, { recursive: true });
   return (mapData.floors || []).map(floor => {
     const label = languageText(floor.name) || floor.id;
+    const brands = uniqueBrands((floor.pois || []).map(poiTitle));
     const fileName = `${safeFloorFileName(label)}.svg`;
     fs.writeFileSync(path.join(outputDir, fileName), renderHyundaiFloorSvg(mapData, floor, storeName), 'utf8');
-    return { floor: label, label: `${label} 층 안내도`, url: `floor-maps/hyundai/${branchCd}/${fileName}`, source: 'hyundai-dabeeo' };
+    return { floor: label, label: `${label} 층 안내도`, url: `floor-maps/hyundai/${branchCd}/${fileName}`, source: 'hyundai-dabeeo', brands };
   });
+}
+
+function sha256(value) {
+  return crypto.createHash('sha256').update(String(value)).digest('hex');
+}
+
+function buildBrandFloorIndex(data) {
+  const index = {};
+  CONFIG.storeRows.forEach(store => {
+    (data[store.code] || []).forEach(floor => {
+      (floor.brands || []).forEach(brand => {
+        const key = `${store.id}|${brand}`;
+        (index[key] ||= []).push({
+          company: store.company, store: store.name, storeId: store.id,
+          floor: floor.floor, label: floor.label, floorKey: `${floor.floor}|${floor.label}`, url: floor.url,
+        });
+      });
+    });
+  });
+  Object.values(index).forEach(items => items.sort((a, b) => String(a.floor).localeCompare(String(b.floor), 'ko')));
+  return index;
+}
+
+function buildFloorManifest(data, rootDir = __dirname) {
+  const manifest = {};
+  CONFIG.storeRows.forEach(store => {
+    (data[store.code] || []).forEach(floor => {
+      const brands = [...new Set(floor.brands || [])].sort((a, b) => a.localeCompare(b, 'ko'));
+      let sourceValue = floor.url || '';
+      if (floor.source === 'hyundai-dabeeo') {
+        try { sourceValue = fs.readFileSync(path.join(rootDir, floor.url), 'utf8'); } catch (e) { /* URL 서명으로 대체 */ }
+      }
+      const key = `${store.id}|${floor.floor}|${floor.label}`;
+      manifest[key] = {
+        company: store.company, store: store.name, storeId: store.id,
+        floor: floor.floor, label: floor.label, url: floor.url, brands,
+        signature: sha256(`${sourceValue}\n${brands.join('|')}`),
+      };
+    });
+  });
+  return manifest;
+}
+
+function brandLocations(manifest) {
+  const result = {};
+  Object.values(manifest || {}).forEach(floor => {
+    (floor.brands || []).forEach(brand => {
+      const key = `${floor.storeId}|${brand}`;
+      const entry = result[key] ||= { company: floor.company, store: floor.store, storeId: floor.storeId, brand, floors: [] };
+      entry.floors.push(floor.floor);
+    });
+  });
+  Object.values(result).forEach(entry => entry.floors.sort((a, b) => String(a).localeCompare(String(b), 'ko')));
+  return result;
+}
+
+function detectFloorChanges(previous, current, detectedAt = new Date().toISOString()) {
+  const changes = [];
+  const add = event => changes.push({ detectedAt, ...event });
+  const previousKeys = new Set(Object.keys(previous || {}));
+  const currentKeys = new Set(Object.keys(current || {}));
+  currentKeys.forEach(key => {
+    const item = current[key];
+    if (!previousKeys.has(key)) add({ type:'층 추가', company:item.company, store:item.store, storeId:item.storeId, floor:item.floor });
+    else if (previous[key].signature !== item.signature
+      && JSON.stringify(previous[key].brands || []) === JSON.stringify(item.brands || [])) {
+      add({ type:'도면 변경', company:item.company, store:item.store, storeId:item.storeId, floor:item.floor });
+    }
+  });
+  previousKeys.forEach(key => {
+    if (!currentKeys.has(key)) {
+      const item = previous[key];
+      add({ type:'층 삭제', company:item.company, store:item.store, storeId:item.storeId, floor:item.floor });
+    }
+  });
+
+  const oldLocations = brandLocations(previous);
+  const newLocations = brandLocations(current);
+  new Set([...Object.keys(oldLocations), ...Object.keys(newLocations)]).forEach(key => {
+    const before = oldLocations[key];
+    const after = newLocations[key];
+    const meta = after || before;
+    if (!before) add({ type:'브랜드 추가', ...meta, before:[], after:after.floors });
+    else if (!after) add({ type:'브랜드 삭제', ...meta, before:before.floors, after:[] });
+    else if (before.floors.join('|') !== after.floors.join('|')) {
+      add({ type:'층 이동', ...meta, before:before.floors, after:after.floors });
+    }
+  });
+  return changes;
 }
 
 async function main() {
   const data = {};
   let previous = {};
   try { previous = JSON.parse(fs.readFileSync(path.join(__dirname, 'floor-images.json'), 'utf8')).data || {}; } catch (e) { previous = {}; }
+  let previousHistory = {};
+  try { previousHistory = JSON.parse(fs.readFileSync(path.join(__dirname, 'floor-history.json'), 'utf8')); } catch (e) { previousHistory = {}; }
   const diagnostics = [];
 
   for (const [store, code] of Object.entries(SHINSEGAE_STORES)) {
@@ -266,9 +419,24 @@ async function main() {
     await sleep(400);
   }
 
-  const output = { lastUpdated: new Date().toISOString(), diagnostics, data };
+  const lastUpdated = new Date().toISOString();
+  const output = { lastUpdated, diagnostics, data };
   fs.writeFileSync(path.join(__dirname, 'floor-images.json'), JSON.stringify(output, null, 2), 'utf8');
-  console.log('\n완료: floor-images.json 저장');
+  const brandIndex = buildBrandFloorIndex(data);
+  fs.writeFileSync(path.join(__dirname, 'brand-floor-index.json'), JSON.stringify({ lastUpdated, data: brandIndex }, null, 2), 'utf8');
+  const currentManifest = buildFloorManifest(data);
+  const historySchemaVersion = 2;
+  const newEvents = previousHistory.current && previousHistory.schemaVersion === historySchemaVersion
+    ? detectFloorChanges(previousHistory.current, currentManifest, lastUpdated)
+    : [];
+  const floorHistory = {
+    schemaVersion: historySchemaVersion,
+    lastUpdated,
+    events: [...newEvents, ...(previousHistory.events || [])].slice(0, 500),
+    current: currentManifest,
+  };
+  fs.writeFileSync(path.join(__dirname, 'floor-history.json'), JSON.stringify(floorHistory, null, 2), 'utf8');
+  console.log(`\n완료: floor-images.json, brand-floor-index.json, floor-history.json 저장 (변경 ${newEvents.length}건)`);
 }
 
 if (require.main === module) {
@@ -280,5 +448,6 @@ if (require.main === module) {
 
 module.exports = {
   extractFloorNum, extractLotteFloorItems, htmlValue, languageText, safeFloorFileName,
-  renderHyundaiFloorSvg, fetchHyundaiMap, fetchHyundaiFloors,
+  pointInPolygon, uniqueBrands, renderHyundaiFloorSvg, fetchHyundaiMap, fetchHyundaiFloors,
+  buildBrandFloorIndex, buildFloorManifest, detectFloorChanges,
 };

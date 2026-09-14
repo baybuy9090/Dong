@@ -63,5 +63,7 @@ STUDIO</text><text x="1745.790957593551" y="1599.3518585601569" text-anchor="mid
 (오픈 준비중)</text><text x="1180.7058721330504" y="1278.3846540798784" text-anchor="middle" dominant-baseline="central">기조커피
 (오픈
 준비중)</text><text x="1366.5082049846878" y="1206.4653033596219" text-anchor="middle" dominant-baseline="central">식물원 김밥</text><text x="1367.3658055313747" y="1219.2445014943673" text-anchor="middle" dominant-baseline="central">서울닭방</text><text x="1366.6481412427472" y="1236.5197889276158" text-anchor="middle" dominant-baseline="central">고관명물꽈배기방</text></g>
+  <style>.managed-brand { fill:#9a5300; font-size:15px; font-weight:800; stroke:#fff7df; stroke-width:5; }</style>
   <text x="562.129028320312" y="913.930969238281" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="20" font-weight="700" fill="#1a1f1d">여의도 · B1</text>
+
 </svg>
