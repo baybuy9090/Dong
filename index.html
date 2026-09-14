@@ -440,14 +440,9 @@
       <div id="monthlyChangeList"></div>
     </div>
     <div class="panel" style="margin-bottom:14px;">
-      <h3>영업 액션 큐</h3>
-      <div class="subtitle" style="margin-bottom:10px;">타사 입점 수·브랜드 티어·최근 사업 이벤트를 합친 참고용 우선순위입니다. 점수와 근거를 함께 확인하세요.</div>
-      <div style="overflow-x:auto;">
-        <table class="gap-table">
-          <thead><tr><th>순위</th><th>브랜드</th><th>제안 대상</th><th>기회 점수</th><th>근거</th></tr></thead>
-          <tbody id="actionQueue"></tbody>
-        </table>
-      </div>
+      <h3>월별 입·퇴점 아카이브</h3>
+      <div class="subtitle" style="margin-bottom:10px;">각 월의 마지막 정상 데이터와 직전 월 데이터를 비교합니다. 월을 누르면 상세 내역이 열립니다.</div>
+      <div id="monthlyArchiveList"></div>
     </div>
     <div class="panel" style="margin-bottom:14px;">
       <h3>브랜드별 입점 수 랭킹 (전체 지점 기준, 롯데/현대/신세계 구간 표시)</h3>
@@ -610,10 +605,11 @@
   <script src="config.js"></script>
   <script>
     let allData = [];
-    let baselineAsOf = ''; // baseline.json이 "정답"이 아니라 어느 시점 스냅샷인지 (예: '2026-06')
+    let comparisonAsOf = '';
     let currentMonthKey = '';
     let monthStartSnapshot = '';
     let crawlDiagnostics = [];
+    let monthlyArchive = [];
     let currentTab = 'overview';
     let sortKey = null, sortDir = 1;
     let favOnly = false;
@@ -1081,21 +1077,18 @@
       // 사람이 "정상 처리" 또는 "삭제 확정"으로 결정한 항목은 더 이상 신규/누락/확인필요로 잡지 않음
       if (baselineOverrides[decisionKey(r)]) return 'none';
       const note = r.note || '';
-      const baseline = r.baselineCheck || '';
       if (r.dataQuality === 'stale' || note.includes('캐시 의심') || note.includes('수집 오류') || note.includes('수집 지연')) return 'stale';
       if (note.includes('신규 입점 재확인')) return 'newPending';
       if (note.includes('퇴점 재확인')) return 'exitPending';
-      // 신규/누락 후보는 baseline 일치 여부와 무관하게 그대로 신규/누락으로 표시.
-      // (baseline 불일치까지 "확인 필요"로 다시 겹쳐 잡으면 같은 건이 두 번 카운트됨)
+      // 신규/누락 후보는 직전 월 스냅샷과 비교해 한 가지 상태로만 표시한다.
       if (note.includes('퇴점') || note.includes('누락')) return 'removed';
       if (note.includes('신규 입점')) return 'new';
-      if (baseline.startsWith('⚠')) return 'suspect';
       return 'none';
     }
-    // 요약 카드/필터용: '캐시 의심'과 'baseline과 다름'은 둘 다 "사람이 확인해야 하는 것"으로 묶음
+    // 요약 카드/필터용: 첫 변화 감지와 수집 지연을 "사람이 확인해야 하는 것"으로 묶음
     function statusGroup(r) {
       const s = statusOf(r);
-      if (s === 'stale' || s === 'suspect' || s === 'newPending' || s === 'exitPending') return 'verify';
+      if (s === 'stale' || s === 'newPending' || s === 'exitPending') return 'verify';
       return s;
     }
     function statusBadge(status) {
@@ -1105,7 +1098,6 @@
         newPending: ['badge-warn', '신규 재확인 중'],
         exitPending: ['badge-warn', '퇴점 재확인 중'],
         stale: ['badge-warn', '수집 지연'],
-        suspect: ['badge-suspect', '이전 데이터와 다름'],
         none: ['badge-none', '확인됨'],
       };
       const [cls, label] = map[status];
@@ -1373,29 +1365,69 @@
     }
 
     function renderMonthlyChanges() {
-      const rows = currentFiltered().filter(r => statusOf(r) !== 'none' && statusOf(r) !== 'suspect');
+      const rows = currentFiltered().filter(r => statusOf(r) !== 'none');
       const monthLabel = currentMonthKey || '선택한 달';
       document.getElementById('monthlyChangeTitle').textContent = `${monthLabel} 입·퇴점 변화`;
       document.getElementById('monthlyChangeSubtitle').textContent = monthStartSnapshot
         ? `비교 기준: ${monthStartSnapshot} · 정상 수집에서 2회 연속 확인된 변화만 확정 표시합니다.`
         : '월 시작 기준 스냅샷과 비교한 변화입니다.';
-      const groups = [
+      const definitions = [
         ['new','이번 달 신규 입점','#1a9d4c'], ['removed','이번 달 퇴점','#d9363e'],
         ['newPending','신규 재확인 중','#d97e0e'], ['exitPending','퇴점 재확인 중','#d97e0e'],
         ['stale','수집 지연','#8b2fc9'],
       ];
-      const html = groups.map(([status, label, color]) => {
-        const items = rows.filter(r => statusOf(r) === status);
-        if (!items.length) return '';
-        return `<div style="margin-bottom:10px;"><div style="font-size:12px;font-weight:700;color:${color};margin-bottom:4px;">${label} ${items.length}건</div>` +
-          items.map(r => `<div style="padding:4px 0;border-bottom:1px solid #f2f2f2;font-size:12.5px;"><span class="${companyClass(r.company)}">${r.company}</span> ${r.store} · <b>${r.brand}</b></div>`).join('') +
-          '</div>';
+      const lines = definitions.flatMap(([status, label, color]) => rows.filter(r => statusOf(r) === status).map(r =>
+        `<div style="padding:7px 0;border-bottom:1px solid #f2f2f2;font-size:12.5px;"><span style="font-size:10.5px;font-weight:700;color:${color};margin-right:7px;">${label}</span><span class="${companyClass(r.company)}">${r.company}</span> ${r.store} · <b>${r.brand}</b></div>`
+      ));
+      if (!lines.length) {
+        document.getElementById('monthlyChangeList').innerHTML = '<div class="empty" style="padding:20px;">이 달에 확정되거나 재확인 중인 입·퇴점 변화가 없습니다.</div>';
+        return;
+      }
+      document.getElementById('monthlyChangeList').innerHTML = lines[0] +
+        (lines.length > 1 ? `<div id="monthlyChangeMore" hidden>${lines.slice(1).join('')}</div><button type="button" class="tab-btn" id="monthlyChangeToggle" style="margin-top:8px;" onclick="toggleMonthlyChanges()">나머지 ${lines.length - 1}건 보기</button>` : '');
+    }
+
+    function toggleMonthlyChanges() {
+      const more = document.getElementById('monthlyChangeMore');
+      const button = document.getElementById('monthlyChangeToggle');
+      if (!more || !button) return;
+      more.hidden = !more.hidden;
+      button.textContent = more.hidden ? `나머지 ${more.children.length}건 보기` : '접기';
+    }
+
+    function renderMonthlyArchive() {
+      const container = document.getElementById('monthlyArchiveList');
+      const months = monthlyArchive.filter(item => item.month !== currentMonthKey).sort((a,b) => b.month.localeCompare(a.month));
+      if (!months.length) {
+        container.innerHTML = '<div class="empty" style="padding:20px;">아카이브할 이전 월 데이터가 없습니다.</div>';
+        return;
+      }
+      container.innerHTML = months.map(item => {
+        const safeId = item.month.replace('-', '');
+        const details = [
+          ...(item.new || []).map(r => ({ ...r, label:'신규 입점', color:'#1a9d4c' })),
+          ...(item.exit || []).map(r => ({ ...r, label:'퇴점', color:'#d9363e' })),
+        ];
+        return `<div style="border-bottom:1px solid #eee;padding:7px 0;">
+          <button type="button" class="tab-btn" style="width:100%;display:flex;justify-content:space-between;background:#f5f6f8;" onclick="toggleArchiveMonth('${safeId}')">
+            <b>${item.month}</b><span>신규 ${(item.new || []).length} · 퇴점 ${(item.exit || []).length} ▾</span>
+          </button>
+          <div id="archive-${safeId}" hidden style="padding:6px 8px;">
+            <div style="font-size:10.5px;color:#999;margin-bottom:4px;">${item.baselineSnapshot} → ${item.endSnapshot}</div>
+            ${details.map(r => `<div style="padding:5px 0;border-bottom:1px solid #f4f4f4;font-size:12px;"><span style="color:${r.color};font-weight:700;margin-right:6px;">${r.label}</span><span class="${companyClass(r.company)}">${r.company}</span> ${r.store} · <b>${r.brand}</b></div>`).join('') || '<div class="empty" style="padding:12px;">변화 없음</div>'}
+          </div>
+        </div>`;
       }).join('');
-      document.getElementById('monthlyChangeList').innerHTML = html || '<div class="empty" style="padding:20px;">이 달에 확정되거나 재확인 중인 입·퇴점 변화가 없습니다.</div>';
+    }
+
+    function toggleArchiveMonth(id) {
+      const element = document.getElementById('archive-' + id);
+      if (element) element.hidden = !element.hidden;
     }
 
     function renderOverview() {
       renderMonthlyChanges();
+      renderMonthlyArchive();
       const filtered = currentFiltered().filter(r => !['removed','exitPending'].includes(statusOf(r)));
 
       // ── 브랜드별 회사별 지점 수 집계 (공통 사용) ──
@@ -1408,24 +1440,6 @@
         const l = s.롯데.size, h = s.현대.size, sg = s.신세계.size;
         return { brand, l, h, sg, total: l + h + sg };
       });
-
-      const tierWeights = { 'SA급':10, Designer:9, Global:8, Select:7, 'B급':6, Classic:5, New:4, 'New Select':3, Contents:2 };
-      const actionRows = brandRows.flatMap(row => {
-        const counts = { '롯데': row.l, '현대': row.h, '신세계': row.sg };
-        const targets = Object.entries(counts).filter(([,count]) => count === 0).map(([company]) => company);
-        if (!targets.length || row.total < 2) return [];
-        const articles = newsData[row.brand] || [];
-        const businessEvents = articles.flatMap(article => article.events || []).filter(event =>
-          ['신규 매장·팝업','입점·유통','리뉴얼·확장','실적·성장'].includes(event)
-        );
-        const score = row.total * 2 + (tierWeights[tierOf(row.brand)] || 0) + Math.min(6, businessEvents.length * 2);
-        const evidence = `타사 ${row.total}개점 · ${tierOf(row.brand)}${businessEvents.length ? ` · 최근 사업 이벤트 ${businessEvents.length}건` : ''}`;
-        return [{ brand: row.brand, targets, score, evidence }];
-      }).sort((a,b) => b.score - a.score || b.targets.length - a.targets.length).slice(0, 10);
-      document.getElementById('actionQueue').innerHTML = actionRows.map((row, index) => `<tr>
-        <td>${index + 1}</td><td><span class="brand-link" onclick="openBrandDetail('${row.brand}')">${row.brand}</span></td>
-        <td>${row.targets.join(', ')}</td><td><b>${row.score}</b></td><td style="font-size:11.5px;color:#666;">${row.evidence}</td>
-      </tr>`).join('') || '<tr><td colspan="5" style="text-align:center;color:#999;">현재 조건에 맞는 제안 후보가 없습니다</td></tr>';
 
       // ── 패널 1: 브랜드별 입점 수 랭킹 (티어 그룹별) ──
       const tierOrder = ['SA급','Designer','Global','Select','B급','Classic','New','New Select','Contents','미분류'];
@@ -1683,7 +1697,6 @@
           let dot = '';
           if (status === 'new') dot = '<span class="dot dot-new" title="신규 입점 의심"></span>';
           else if (status === 'removed') dot = '<span class="dot dot-removed" title="이번 달 퇴점"></span>';
-          else if (status === 'suspect') dot = '<span class="dot dot-suspect" title="이전 데이터와 다름"></span>';
           else if (status) dot = '<span class="dot dot-yes"></span>';
           return `<td class="matrix-cell">${dot}</td>`;
         }).join('');
@@ -1738,7 +1751,7 @@
     }
 
     function statusBadgeText(status) {
-      return { new:'이번달신규입점', removed:'이번달퇴점', newPending:'신규재확인', exitPending:'퇴점재확인', stale:'수집지연', suspect:'기준데이터와다름', none:'확인됨' }[status];
+      return { new:'이번달신규입점', removed:'이번달퇴점', newPending:'신규재확인', exitPending:'퇴점재확인', stale:'수집지연', none:'확인됨' }[status];
     }
 
     function openBrandDetail(brand) {
@@ -1823,8 +1836,7 @@
       if (s === 'stale') return '외부 사이트 응답이 비정상이라 직전 정상 데이터를 유지했습니다. 이번 결과는 입·퇴점 판정에 사용하지 않습니다.';
       if (s === 'newPending') return '이번 달 기준 데이터에는 없고 이번 수집에서 처음 발견됐습니다. 다음 정상 수집에서도 확인되면 이번 달 신규 입점으로 확정됩니다.';
       if (s === 'exitPending') return '이번 달 기준 데이터에는 있었지만 이번 수집에서 처음 누락됐습니다. 다음 정상 수집에서도 없으면 이번 달 퇴점으로 확정됩니다.';
-      const asOf = baselineAsOf ? `${baselineAsOf} 시점` : '이전';
-      return `⚠ 사이트 페이지 텍스트에서 브랜드명은 발견됐지만, ${asOf}에 수기로 확인해둔 데이터(baseline.json)엔 없던 조합입니다. baseline.json은 "정답"이 아니라 그 시점의 스냅샷일 뿐이라, 그 이후 생긴 신규 입점이거나 골프/키즈 등 다른 라인·무관한 영역의 텍스트를 잘못 잡은 오탐일 수 있습니다.`;
+      return `직전 월 마지막 정상 데이터(${comparisonAsOf || '기준 스냅샷'})와 비교해 재확인이 필요한 항목입니다.`;
     }
 
     let currentSummaryType = null;
@@ -1941,7 +1953,7 @@
       } else if (type === 'verify') {
         const rows = allData.filter(r => statusGroup(r) === 'verify');
         title = '재확인·수집 지연';
-        subtitle = `첫 변화 감지, 기준 데이터 불일치 또는 외부 페이지 응답 이상으로 재확인이 필요한 조합 — 총 ${rows.length}건` +
+        subtitle = `첫 변화 감지 또는 외부 페이지 응답 이상으로 재확인이 필요한 조합 — 총 ${rows.length}건` +
           ` · <a href="#" onclick="openDecisionLog();return false;" style="color:#004990;">처리 내역 보기</a>`;
         bodyHtml = rows.length ? rows.map(r => {
           const url = floorGuideUrl(r.company, r.store);
@@ -2012,7 +2024,7 @@
             const store = DONG_CONFIG.normalizeStoreName(r.company, r.store);
             return { ...r, store, storeId: r.storeId || DONG_CONFIG.storeId(r.company, store) };
           });
-          baselineAsOf = payload.baselineAsOf || '';
+          comparisonAsOf = payload.comparisonAsOf || payload.monthStartSnapshot || '';
           currentMonthKey = payload.monthKey || (payload.lastUpdated || '').slice(0, 7);
           monthStartSnapshot = payload.monthStartSnapshot || '';
           crawlDiagnostics = payload.diagnostics || [];
@@ -2081,6 +2093,16 @@
     let newsLastUpdated = '';
     // 뉴스 크롤링에서 제외된 브랜드 (검색 결과가 부실하거나 관련성이 낮아 제외 요청됨)
     const NEWS_EXCLUDED_BRANDS = new Set(DONG_CONFIG.newsExcludedBrands);
+
+    function loadMonthlyArchive() {
+      fetch('monthly-archive.json?_=' + Date.now())
+        .then(res => { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
+        .then(payload => {
+          monthlyArchive = payload.months || [];
+          if (currentTab === 'overview') renderMonthlyArchive();
+        })
+        .catch(() => { monthlyArchive = []; });
+    }
 
     function loadReviewDecisions() {
       fetch('review-decisions.json?_=' + Date.now())
@@ -2236,6 +2258,7 @@
     loadData('data.json', 'data.json');
     populateMonthFilter();
     loadReviewDecisions();
+    loadMonthlyArchive();
     loadNews();
     loadFloorImages();
   </script>

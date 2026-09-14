@@ -10,3 +10,20 @@ test('현재 데이터는 월간 변화 스키마와 수원점 고유 ID를 사�
   assert.ok(suwon.every(row => row.store === '수원점'));
   assert.ok(suwon.every(row => !/(신규|퇴점|누락)/.test(row.note || '')));
 });
+
+test('현재 비교 기준은 직전 월이고 6월 baseline 경고가 없다', () => {
+  const [year, month] = data.monthKey.split('-').map(Number);
+  const previousMonth = new Date(Date.UTC(year, month - 2, 1)).toISOString().slice(0, 7);
+  assert.equal(data.comparisonAsOf, data.monthStartSnapshot);
+  assert.equal(data.comparisonAsOf.slice(0, 7), previousMonth);
+  assert.equal('baselineAsOf' in data, false);
+  assert.ok(data.data.every(row => !('baselineCheck' in row)));
+});
+
+test('사용자가 입점을 확인한 3개 조합은 재확인이나 수집 지연으로 표시되지 않는다', () => {
+  const confirmed = new Set(['롯데-0001|POTTERY', '롯데-0002|지제로', '현대-B00143000|지오송지오']);
+  const rows = data.data.filter(row => confirmed.has(`${row.storeId}|${row.brand}`));
+  assert.equal(rows.length, 3);
+  assert.ok(rows.every(row => row.note === '확인됨(검토)'));
+  assert.ok(rows.every(row => row.dataQuality === 'manual'));
+});

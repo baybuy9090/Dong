@@ -1,0 +1,118 @@
+{
+  "generatedAt": "2026-09-14T05:57:59.334Z",
+  "months": [
+    {
+      "month": "2026-08",
+      "baselineSnapshot": "2026-07-31",
+      "endSnapshot": "2026-08-31",
+      "new": [
+        {
+          "company": "롯데",
+          "store": "본점",
+          "storeId": "롯데-0001",
+          "brand": "POTTERY"
+        },
+        {
+          "company": "롯데",
+          "store": "부산본점",
+          "storeId": "롯데-0005",
+          "brand": "스톤아일랜드"
+        },
+        {
+          "company": "신세계",
+          "store": "강남",
+          "storeId": "신세계-SC00002",
+          "brand": "수트서플라이"
+        },
+        {
+          "company": "신세계",
+          "store": "강남",
+          "storeId": "신세계-SC00002",
+          "brand": "헤리티지플로스"
+        },
+        {
+          "company": "신세계",
+          "store": "센텀",
+          "storeId": "신세계-SC00008",
+          "brand": "수트서플라이"
+        },
+        {
+          "company": "현대",
+          "store": "중동",
+          "storeId": "현대-B00143000",
+          "brand": "지오송지오"
+        }
+      ],
+      "exit": [
+        {
+          "company": "롯데",
+          "store": "창원점",
+          "storeId": "롯데-0017",
+          "brand": "맨온더분"
+        },
+        {
+          "company": "신세계",
+          "store": "센텀",
+          "storeId": "신세계-SC00008",
+          "brand": "스컬프스토어"
+        },
+        {
+          "company": "신세계",
+          "store": "센텀",
+          "storeId": "신세계-SC00008",
+          "brand": "이스트로그(프레이트)"
+        },
+        {
+          "company": "신세계",
+          "store": "센텀",
+          "storeId": "신세계-SC00008",
+          "brand": "클럽모나코"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "baselineSnapshot": "2026-08-31",
+      "endSnapshot": "2026-09-14",
+      "new": [
+        {
+          "company": "롯데",
+          "store": "창원점",
+          "storeId": "롯데-0017",
+          "brand": "바버"
+        },
+        {
+          "company": "롯데",
+          "store": "창원점",
+          "storeId": "롯데-0017",
+          "brand": "클럽모나코"
+        },
+        {
+          "company": "신세계",
+          "store": "김해",
+          "storeId": "신세계-SC00011",
+          "brand": "지오송지오"
+        },
+        {
+          "company": "신세계",
+          "store": "대전",
+          "storeId": "신세계-SC00060",
+          "brand": "TEN-C"
+        },
+        {
+          "company": "신세계",
+          "store": "센텀",
+          "storeId": "신세계-SC00008",
+          "brand": "산드로옴므"
+        },
+        {
+          "company": "신세계",
+          "store": "센텀",
+          "storeId": "신세계-SC00008",
+          "brand": "알레그리"
+        }
+      ],
+      "exit": []
+    }
+  ]
+}

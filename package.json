@@ -3,6 +3,6 @@
   "private": true,
   "scripts": {
     "test": "node --test tests/*.test.js",
-    "check": "node --check crawler.js && node --check floor-crawler.js && node --check news-crawler.js"
+    "check": "node --check crawler.js && node --check floor-crawler.js && node --check news-crawler.js && node --check monthly-archive.js"
   }
 }

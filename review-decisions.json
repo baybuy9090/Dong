@@ -1,4 +1,35 @@
 {
   "updatedAt": "2026-09-14",
-  "decisions": []
+  "decisions": [
+    {
+      "key": "롯데-0001|POTTERY",
+      "company": "롯데",
+      "store": "본점",
+      "storeId": "롯데-0001",
+      "brand": "POTTERY",
+      "decision": "confirm",
+      "reviewedAt": "2026-09-14",
+      "note": "입점 확인"
+    },
+    {
+      "key": "롯데-0002|지제로",
+      "company": "롯데",
+      "store": "잠실점",
+      "storeId": "롯데-0002",
+      "brand": "지제로",
+      "decision": "confirm",
+      "reviewedAt": "2026-09-14",
+      "note": "입점 확인"
+    },
+    {
+      "key": "현대-B00143000|지오송지오",
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "brand": "지오송지오",
+      "decision": "confirm",
+      "reviewedAt": "2026-09-14",
+      "note": "입점 확인"
+    }
+  ]
 }

@@ -2,14 +2,25 @@ const fs = require('fs');
 const path = require('path');
 const CONFIG = require('../config');
 const { classifyEvents } = require('../news-crawler');
+const { isReliable, previousMonthKey } = require('../monthly-archive');
 
 const root = path.join(__dirname, '..');
 const dataPath = path.join(root, 'data.json');
 const current = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 const monthKey = (current.lastUpdated || new Date().toISOString()).slice(0, 7);
 const historyIndex = JSON.parse(fs.readFileSync(path.join(root, 'history/index.json'), 'utf8'));
-const monthStartSnapshot = historyIndex.filter(key => key < monthKey).sort().at(-1);
+const comparisonMonth = previousMonthKey(monthKey);
+const monthStartSnapshot = historyIndex
+  .filter(key => key.slice(0, 7) === comparisonMonth)
+  .sort()
+  .reverse()
+  .find(key => isReliable(JSON.parse(fs.readFileSync(path.join(root, `history/${key}.json`), 'utf8'))));
+if (!monthStartSnapshot) throw new Error(`${comparisonMonth}의 정상 비교 스냅샷이 없습니다.`);
 const monthStart = JSON.parse(fs.readFileSync(path.join(root, `history/${monthStartSnapshot}.json`), 'utf8'));
+const reviewPayload = JSON.parse(fs.readFileSync(path.join(root, 'review-decisions.json'), 'utf8'));
+const confirmed = new Map((reviewPayload.decisions || [])
+  .filter(item => item.decision === 'confirm')
+  .map(item => [item.key, item]));
 
 function normalize(row) {
   const store = CONFIG.normalizeStoreName(row.company, row.store);
@@ -26,14 +37,19 @@ const rows = [];
   const key = CONFIG.rowKey(row);
   if (seen.has(key)) return;
   seen.add(key);
-  if (active(row) && !startSet.has(key)) row = { ...row, note: '이번 달 신규 입점', changeMonth: monthKey };
+  const review = confirmed.get(key);
+  if (active(row) && review) row = { ...row, note: '확인됨(검토)', dataQuality: 'manual', reviewedAt: review.reviewedAt || '' };
+  else if (active(row) && !startSet.has(key)) row = { ...row, note: '이번 달 신규 입점', changeMonth: monthKey };
   else if (active(row) && /(신규|누락|퇴점)/.test(row.note || '')) row = { ...row, note: '확인' };
-  rows.push(row);
+  const { baselineCheck, ...clean } = row;
+  rows.push(['(확인된 브랜드 없음)', '(오류)'].includes(row.brand)
+    ? clean
+    : { ...clean, comparisonCheck: startSet.has(key) ? `${monthStartSnapshot} 입점` : `${monthStartSnapshot} 미입점` });
 });
 
 const migrated = {
   lastUpdated: current.lastUpdated,
-  baselineAsOf: current.baselineAsOf || '',
+  comparisonAsOf: monthStartSnapshot,
   monthKey,
   monthStartSnapshot,
   monthlySummary: {

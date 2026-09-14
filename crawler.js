@@ -7,6 +7,7 @@
 const fs = require('fs');
 const path = require('path');
 const CONFIG = require('./config');
+const { writeMonthlyArchive, isReliable, previousMonthKey } = require('./monthly-archive');
 
 // 같은 cstrCd 안에 "백화점"(C00401) 말고 다른 관(town)이 별도로 있는 지점들.
 // 남성 컨템포러리 브랜드가 있는지 직접 확인해서 있는 곳만 등록함
@@ -290,14 +291,17 @@ function koreaDateKey(date) {
 
 function loadMonthStartRows(now, fallbackRows) {
   const monthKey = koreaDateKey(now).slice(0, 7);
+  const comparisonMonth = previousMonthKey(monthKey);
   const historyDir = path.join(__dirname, 'history');
   const snapshots = readJson(path.join(historyDir, 'index.json'), [])
-    .filter(key => key < monthKey && /^\d{4}-\d{2}(-\d{2})?$/.test(key))
-    .sort();
-  const lastKey = snapshots.at(-1);
-  if (!lastKey) return { source: 'baseline fallback', rows: fallbackRows };
-  const payload = readJson(path.join(historyDir, `${lastKey}.json`), null);
-  return payload ? { source: lastKey, rows: (payload.data || []).map(normalizeRow) } : { source: 'baseline fallback', rows: fallbackRows };
+    .filter(key => key.slice(0, 7) === comparisonMonth && /^\d{4}-\d{2}(-\d{2})?$/.test(key))
+    .sort()
+    .reverse();
+  for (const snapshot of snapshots) {
+    const payload = readJson(path.join(historyDir, `${snapshot}.json`), null);
+    if (isReliable(payload)) return { source: snapshot, rows: (payload.data || []).map(normalizeRow) };
+  }
+  return { source: `${comparisonMonth} 비교자료 없음`, rows: fallbackRows };
 }
 
 function loadReviewDecisions() {
@@ -402,10 +406,14 @@ async function main() {
   const currentSet = presenceSet(results);
 
   results = results.map(row => {
-    if (!isObserved(row)) return row;
     const key = CONFIG.rowKey(row);
     const review = reviews.get(key);
-    if (review && review.decision === 'confirm') return { ...row, note: '확인됨(검토)', reviewedAt: review.reviewedAt || '' };
+    // 사용자가 실제 입점을 확인한 조합은 외부 사이트가 일시적으로 지연돼도
+    // 다시 수집 지연/재확인 대상으로 되돌리지 않는다.
+    if (review && review.decision === 'confirm' && isPresent(row)) {
+      return { ...row, note: '확인됨(검토)', dataQuality: 'manual', reviewedAt: review.reviewedAt || '' };
+    }
+    if (!isObserved(row)) return row;
     if (!monthStartSet.has(key)) {
       return { ...row, note: additionNote(key, monthStartSet, previousObserved), changeMonth: monthKey };
     }
@@ -427,34 +435,18 @@ async function main() {
     });
   });
 
-  // baseline.json 대비 비교. baseline.json은 "정답"이 아니라 특정 시점(asOf)에
-  // 수기로 확인해둔 스냅샷일 뿐이며, 시간이 지날수록 실제 현황과 자연히 벌어질 수 있음.
-  const baselinePath = path.join(__dirname, 'baseline.json');
-  let baselineSet = null;
-  let baselineAsOf = '';
-  if (fs.existsSync(baselinePath)) {
-    const baseline = JSON.parse(fs.readFileSync(baselinePath, 'utf8'));
-    baselineAsOf = baseline.asOf || '';
-    const baselineRows = (baseline.data || []).map(normalizeRow);
-    baselineSet = baselineRows.length ? new Set(baselineRows.map(t => `${t.company}|${t.store}|${t.brand}`)) : null;
-  }
-
   const finalResults = results.map(r => {
-    let baselineCheck = '';
-    if (baselineSet) {
-      const key = `${r.company}|${r.store}|${r.brand}`;
-      if (r.brand !== '(확인된 브랜드 없음)' && r.brand !== '(오류)') {
-        baselineCheck = baselineSet.has(key) ? '일치' : `⚠ ${baselineAsOf} 데이터엔 없음`;
-      }
-    } else {
-      baselineCheck = '비교불가(baseline.json 없음)';
-    }
-    return { ...r, baselineCheck };
+    if (['(확인된 브랜드 없음)', '(오류)'].includes(r.brand)) return r;
+    const comparisonCheck = monthStartSet.has(CONFIG.rowKey(r))
+      ? `${monthStart.source} 입점`
+      : `${monthStart.source} 미입점`;
+    const { baselineCheck, ...clean } = r;
+    return { ...clean, comparisonCheck };
   });
 
   const output = {
     lastUpdated: now.toISOString(),
-    baselineAsOf,
+    comparisonAsOf: monthStart.source,
     monthKey,
     monthStartSnapshot: monthStart.source,
     monthlySummary: {
@@ -487,8 +479,9 @@ async function main() {
   if (!snapshots.includes(dayKey)) snapshots.push(dayKey);
   snapshots.sort();
   fs.writeFileSync(indexPath, JSON.stringify(snapshots, null, 2), 'utf8');
+  writeMonthlyArchive(historyDir, path.join(__dirname, 'monthly-archive.json'));
 
-  console.log(`\n완료: ${finalResults.length}건 저장 (data.json, history/${dayKey}.json)`);
+  console.log(`\n완료: ${finalResults.length}건 저장 (data.json, history/${dayKey}.json, monthly-archive.json)`);
 }
 
 if (require.main === module) {
