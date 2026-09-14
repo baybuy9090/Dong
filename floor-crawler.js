@@ -3,17 +3,14 @@
 // 현대는 다비오(Dabeeo) 서드파티 SDK로만 지도를 렌더링하고 평면 이미지가 없어 제외.
 const fs = require('fs');
 const path = require('path');
+const CONFIG = require('./config');
 
 const UA = { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' };
 
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
 // ── 신세계: floor.do 페이지에 CMS로 올라온 층별 안내도 이미지가 그대로 있음 ──
-const SHINSEGAE_STORES = {
-  '강남': 'SC00002', '광주': 'SC00006', '김해': 'SC00011', '대구': 'SC00013', '대전': 'SC00060',
-  '마산': 'SC00005', '본점': 'SC00001', '센텀': 'SC00008', '의정부': 'SC00010',
-  '천안아산': 'SC00009', '타임스퀘어': 'SC00003', '하남': 'SC00012', '경기': 'SC00007',
-};
+const SHINSEGAE_STORES = Object.fromEntries(CONFIG.storeRows.filter(s => s.company === '신세계').map(s => [s.name, s.code]));
 
 function extractFloorNum(label) {
   const m = label.match(/^\s*(B\d+|\d+)\s*F?/i);
@@ -42,12 +39,7 @@ async function fetchShinsegaeFloors(storeCode) {
 // ── 롯데: 기본은 인터랙티브 쇼핑맵이지만, 그와 별개로 "층별안내도"라는 평면
 // 이미지 기능이 병행 제공됨 (data-flrImgPathWeb/data-flrImgNmWeb). 지점 페이지에서
 // 층 목록(town/floor 코드)을 얻은 뒤, 층마다 floorDetailAjax를 호출해 이미지 경로를 얻음. ──
-const LOTTE_STORES = {
-  '강남점': '0013', '광복점': '0333', '광주점': '0007', '노원점': '0022', '대구점': '0023',
-  '동탄점': '0399', '본점': '0001', '부산본점': '0005', '타임빌라스 수원': '0349', '영등포': '0010',
-  '울산점': '0015', '인천점': '0344', '일산': '0011', '잠실점': '0002', '잠실에비뉴엘': '0348',
-  '전주점': '0025', '창원점': '0017', '청량리': '0004', '평촌점': '0341',
-};
+const LOTTE_STORES = Object.fromEntries(CONFIG.storeRows.filter(s => s.company === '롯데').map(s => [s.name, s.code]));
 
 function extractLotteFloorItems(html) {
   const items = [];
@@ -89,29 +81,37 @@ async function fetchLotteFloors(cstrCd) {
   const html = await res.text();
   const floorItems = extractLotteFloorItems(html);
   const floors = [];
+  let failedPages = 0;
   for (const { townCd, flrCd } of floorItems) {
     try {
       const detail = await fetchLotteFloorDetail(cstrCd, townCd, flrCd);
       if (detail) floors.push(detail);
     } catch (e) {
+      failedPages++;
       console.error(`  [롯데 ${cstrCd} ${flrCd}F] 실패:`, e.message);
     }
     await sleep(250);
   }
-  return floors;
+  return { floors, failedPages, expectedPages: floorItems.length };
 }
 
 async function main() {
   const data = {};
+  let previous = {};
+  try { previous = JSON.parse(fs.readFileSync(path.join(__dirname, 'floor-images.json'), 'utf8')).data || {}; } catch (e) { previous = {}; }
+  const diagnostics = [];
 
   for (const [store, code] of Object.entries(SHINSEGAE_STORES)) {
     process.stdout.write(`수집 중: 신세계 ${store} ... `);
     try {
       data[code] = await fetchShinsegaeFloors(code);
+      if (data[code].length === 0 && (previous[code] || []).length) throw new Error('0개 층 응답');
+      diagnostics.push({ storeId: `신세계-${code}`, store, status: 'ok', floors: data[code].length });
       console.log(`${data[code].length}개 층`);
     } catch (e) {
       console.error('실패:', e.message);
-      data[code] = [];
+      data[code] = previous[code] || [];
+      diagnostics.push({ storeId: `신세계-${code}`, store, status: 'stale', error: e.message, floors: data[code].length });
     }
     await sleep(400);
   }
@@ -119,16 +119,21 @@ async function main() {
   for (const [store, code] of Object.entries(LOTTE_STORES)) {
     process.stdout.write(`수집 중: 롯데 ${store} ... `);
     try {
-      data[code] = await fetchLotteFloors(code);
+      const result = await fetchLotteFloors(code);
+      data[code] = result.floors;
+      if (result.failedPages > 0 && (previous[code] || []).length) throw new Error(`${result.failedPages}/${result.expectedPages}개 층 호출 실패`);
+      if (data[code].length === 0 && (previous[code] || []).length) throw new Error('0개 층 응답');
+      diagnostics.push({ storeId: `롯데-${code}`, store, status: 'ok', floors: data[code].length });
       console.log(`${data[code].length}개 층`);
     } catch (e) {
       console.error('실패:', e.message);
-      data[code] = [];
+      data[code] = previous[code] || [];
+      diagnostics.push({ storeId: `롯데-${code}`, store, status: 'stale', error: e.message, floors: data[code].length });
     }
     await sleep(400);
   }
 
-  const output = { lastUpdated: new Date().toISOString(), data };
+  const output = { lastUpdated: new Date().toISOString(), diagnostics, data };
   fs.writeFileSync(path.join(__dirname, 'floor-images.json'), JSON.stringify(output, null, 2), 'utf8');
   console.log('\n완료: floor-images.json 저장');
 }

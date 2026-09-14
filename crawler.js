@@ -6,14 +6,7 @@
 
 const fs = require('fs');
 const path = require('path');
-
-const LOTTE_STORES = {
-  '강남점': '0013', '광복점': '0333', '광주점': '0007', '노원점': '0022',
-  '대구점': '0023', '동탄점': '0399', '본점': '0001', '부산본점': '0005',
-  '타임빌라스 수원': '0349', '영등포': '0010', '울산점': '0015', '인천점': '0344',
-  '일산': '0011', '잠실점': '0002', '잠실에비뉴엘': '0348', '전주점': '0025',
-  '창원점': '0017', '청량리': '0004', '평촌점': '0341',
-};
+const CONFIG = require('./config');
 
 // 같은 cstrCd 안에 "백화점"(C00401) 말고 다른 관(town)이 별도로 있는 지점들.
 // 남성 컨템포러리 브랜드가 있는지 직접 확인해서 있는 곳만 등록함
@@ -21,22 +14,6 @@ const LOTTE_STORES = {
 // 평촌 문화홀은 확인해봤으나 남성 컨템포러리 브랜드가 없어 제외).
 const LOTTE_EXTRA_TOWNS = {
   '부산본점': [{ townCd: 'C00402', floors: ['01', '02', 'M3F', 'MF'] }],
-};
-
-const HYUNDAI_STORES = {
-  '목동': 'B00142000', '무역센터': 'B00122000', '미아': 'B00141000',
-  '본점': 'B00121000', '신촌': 'B00127000', '여의도': 'B00140000',
-  '울산': 'B00129000', '중동': 'B00143000', '천호': 'B00126000',
-  '충청': 'B00147000', '킨텍스': 'B00145000', '판교': 'B00148000',
-  '대구': 'B00146000',
-};
-
-const SHINSEGAE_STORES = {
-  '강남': 'SC00002', '광주': 'SC00006', '김해': 'SC00011',
-  '대구': 'SC00013', '대전': 'SC00060', '마산': 'SC00005',
-  '본점': 'SC00001', '센텀': 'SC00008', '의정부': 'SC00010',
-  '천안아산': 'SC00009', '타임스퀘어': 'SC00003', '하남': 'SC00012',
-  '경기': 'SC00007',
 };
 
 const BRAND_PATTERNS = {
@@ -178,6 +155,7 @@ async function fetchWithRetry(url, maxRetries) {
       const res = await fetch(url, {
         headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' }
       });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
       return res;
     } catch (e) {
       lastError = e;
@@ -192,15 +170,18 @@ async function fetchLotteBrands(cstrCd, storeName) {
   const found = new Set();
   const candidateFlrCds = ['08', '07', '06', '05', '04', '03', '02', '01', 'B1', 'B2'];
   const townCd = 'C00401'; // ⚠️ 강남점 기준값, 다른 지점은 다를 수 있음
+  let successfulPages = 0;
+  let failedPages = 0;
   for (const flrCd of candidateFlrCds) {
     try {
       const url = `https://www.lotteshopping.com/store/floorDetailAjax?cstrCd=${cstrCd}&cstrTownCd=${townCd}&flrCd=${flrCd}`;
       const res = await fetchWithRetry(url, 2);
-      if (!res.ok) continue;
       const text = await res.text();
+      successfulPages++;
       matchBrands(text).forEach(b => found.add(b));
       await sleep(300);
     } catch (e) {
+      failedPages++;
       console.log(`롯데 ${cstrCd} ${flrCd}층 오류: ${e.message}`);
     }
   }
@@ -214,17 +195,20 @@ async function fetchLotteBrands(cstrCd, storeName) {
       try {
         const url = `https://www.lotteshopping.com/store/floorDetailAjax?cstrCd=${cstrCd}&cstrTownCd=${extraTownCd}&flrCd=${flrCd}`;
         const res = await fetchWithRetry(url, 2);
-        if (!res.ok) continue;
         const text = await res.text();
+        successfulPages++;
         matchBrands(text).forEach(b => found.add(b));
         await sleep(300);
       } catch (e) {
+        failedPages++;
         console.log(`롯데 ${cstrCd} ${extraTownCd} ${flrCd}층 오류: ${e.message}`);
       }
     }
   }
 
-  return found;
+  const expectedPages = candidateFlrCds.length + extraTowns.reduce((sum, town) => sum + town.floors.length, 0);
+  if (successfulPages === 0) throw new Error(`모든 층 호출 실패 (${failedPages}/${expectedPages})`);
+  return { found: Array.from(found), successfulPages, failedPages, expectedPages };
 }
 
 let lastHyundaiText = null;
@@ -241,119 +225,206 @@ async function fetchHyundaiBrands(storeName, branchCd) {
   }
   lastHyundaiText = text;
   lastHyundaiStore = storeName;
-  return { found: matchBrands(text), suspiciousDuplicate };
+  return { found: matchBrands(text), suspiciousDuplicate, successfulPages: 1, failedPages: 0, expectedPages: 1 };
 }
 
 async function fetchShinsegaeBrands(storeCd) {
   const url = `https://www.shinsegae.com/store/floor.do?storeCd=${storeCd}`;
   const res = await fetchWithRetry(url, 3);
   const text = await res.text();
-  return matchBrands(text);
+  return { found: matchBrands(text), successfulPages: 1, failedPages: 0, expectedPages: 1 };
 }
 
 function buildJobList() {
-  const jobs = [];
-  Object.entries(LOTTE_STORES).forEach(([name, code]) => jobs.push({ type: 'lotte', company: '롯데', store: name, code }));
-  Object.entries(HYUNDAI_STORES).forEach(([name, code]) => jobs.push({ type: 'hyundai', company: '현대', store: name, code }));
-  Object.entries(SHINSEGAE_STORES).forEach(([name, code]) => jobs.push({ type: 'shinsegae', company: '신세계', store: name, code }));
-  return jobs;
+  return CONFIG.storeRows.map(store => ({
+    type: store.company === '롯데' ? 'lotte' : store.company === '현대' ? 'hyundai' : 'shinsegae',
+    company: store.company, store: store.name, storeId: store.id, code: store.code,
+  }));
+}
+
+function readJson(filePath, fallback) {
+  try { return JSON.parse(fs.readFileSync(filePath, 'utf8')); } catch (e) { return fallback; }
+}
+
+function normalizeRow(row) {
+  const store = CONFIG.normalizeStoreName(row.company, row.store);
+  return { ...row, store, storeId: row.storeId || CONFIG.storeId(row.company, store) };
+}
+
+function isObserved(row) {
+  return !['(확인된 브랜드 없음)', '(오류)'].includes(row.brand) &&
+    !/(퇴점|누락)/.test(row.note || '') && row.dataQuality !== 'stale';
+}
+
+function observedSet(rows) {
+  return new Set(rows.filter(isObserved).map(CONFIG.rowKey));
+}
+
+function isPresent(row) {
+  return !['(확인된 브랜드 없음)', '(오류)'].includes(row.brand) && !/(퇴점|누락)/.test(row.note || '');
+}
+
+function presenceSet(rows) {
+  return new Set(rows.filter(isPresent).map(CONFIG.rowKey));
+}
+
+function additionNote(key, monthStartSet, previousObserved) {
+  if (monthStartSet.has(key)) return '확인';
+  return previousObserved.has(key) ? '이번 달 신규 입점' : '신규 입점 재확인 중';
+}
+
+function exitNote(key, previousObserved) {
+  return previousObserved.has(key) ? '퇴점 재확인 중' : '이번 달 퇴점';
+}
+
+function companyQualityIssue(company, prevCount, freshCount, staleStores, companyStores) {
+  if (prevCount > 0 && freshCount < prevCount * 0.7 && staleStores >= 2) {
+    return `${company} 수집 품질 게이트 실패: 정상 ${freshCount}/${prevCount}, 이상 지점 ${staleStores}/${companyStores}`;
+  }
+  return '';
+}
+
+function koreaDateKey(date) {
+  return new Date(date.getTime() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10);
+}
+
+function loadMonthStartRows(now, fallbackRows) {
+  const monthKey = koreaDateKey(now).slice(0, 7);
+  const historyDir = path.join(__dirname, 'history');
+  const snapshots = readJson(path.join(historyDir, 'index.json'), [])
+    .filter(key => key < monthKey && /^\d{4}-\d{2}(-\d{2})?$/.test(key))
+    .sort();
+  const lastKey = snapshots.at(-1);
+  if (!lastKey) return { source: 'baseline fallback', rows: fallbackRows };
+  const payload = readJson(path.join(historyDir, `${lastKey}.json`), null);
+  return payload ? { source: lastKey, rows: (payload.data || []).map(normalizeRow) } : { source: 'baseline fallback', rows: fallbackRows };
+}
+
+function loadReviewDecisions() {
+  const payload = readJson(path.join(__dirname, 'review-decisions.json'), { decisions: [] });
+  const decisions = new Map();
+  (payload.decisions || []).forEach(item => {
+    const normalized = normalizeRow(item);
+    decisions.set(item.key || CONFIG.rowKey(normalized), { ...item, ...normalized });
+  });
+  return decisions;
 }
 
 async function main() {
   const jobs = buildJobList();
-  let results = [];
-
-  // 직전 크롤링 결과 (신규 입점 / 누락·철수 후보 판정용)
+  const now = new Date();
+  const monthKey = koreaDateKey(now).slice(0, 7);
   const dataPath = path.join(__dirname, 'data.json');
-  const prevSet = new Set();
-  if (fs.existsSync(dataPath)) {
-    try {
-      const prev = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
-      (prev.data || []).forEach(r => {
-        if (r.brand !== '(확인된 브랜드 없음)' && r.brand !== '(오류)') {
-          prevSet.add(`${r.company}|${r.store}|${r.brand}`);
-        }
-      });
-    } catch (e) {
-      console.log(`이전 data.json 읽기 실패 (신규/누락 비교 생략): ${e.message}`);
-    }
-  }
+  const previousPayload = readJson(dataPath, { data: [] });
+  const previousRows = (previousPayload.data || []).map(normalizeRow);
+  const previousObserved = observedSet(previousRows);
+  const reviews = loadReviewDecisions();
+  const diagnostics = [];
+  let results = [];
 
   for (let i = 0; i < jobs.length; i++) {
     const job = jobs[i];
+    const previousStoreRows = previousRows.filter(r => r.storeId === job.storeId && isPresent(r));
     try {
-      let brands = [];
-      let note = '확인';
+      let crawlResult;
+      if (job.type === 'lotte') crawlResult = await fetchLotteBrands(job.code, job.store);
+      else if (job.type === 'hyundai') crawlResult = await fetchHyundaiBrands(job.store, job.code);
+      else crawlResult = await fetchShinsegaeBrands(job.code);
 
-      if (job.type === 'lotte') {
-        brands = Array.from(await fetchLotteBrands(job.code, job.store));
-      } else if (job.type === 'hyundai') {
-        const r = await fetchHyundaiBrands(job.store, job.code);
-        brands = r.found;
-        if (r.suspiciousDuplicate) note = '캐시 의심 - 수동 재확인 필요';
-      } else if (job.type === 'shinsegae') {
-        brands = await fetchShinsegaeBrands(job.code);
-      }
+      const note = crawlResult.suspiciousDuplicate ? '캐시 의심 - 수동 재확인 필요' : '확인';
+      const suspiciousEmpty = crawlResult.found.length === 0 && previousStoreRows.length > 0;
+      const partialFailure = crawlResult.failedPages > 0;
+      const preservePrevious = previousStoreRows.length > 0 && (suspiciousEmpty || partialFailure || crawlResult.suspiciousDuplicate);
+      diagnostics.push({
+        storeId: job.storeId, company: job.company, store: job.store,
+        status: preservePrevious ? 'stale' : partialFailure ? 'partial' : 'ok', brands: crawlResult.found.length,
+        successfulPages: crawlResult.successfulPages, failedPages: crawlResult.failedPages,
+        expectedPages: crawlResult.expectedPages,
+      });
 
-      if (brands.length === 0) {
-        results.push({ company: job.company, store: job.store, brand: '(확인된 브랜드 없음)', sales: '', note });
+      if (preservePrevious) {
+        previousStoreRows.forEach(r => results.push({
+          ...r, store: job.store, storeId: job.storeId,
+          note: '수집 지연 - 직전 정상값 유지', dataQuality: 'stale',
+        }));
+      } else if (crawlResult.found.length === 0) {
+        results.push({ company: job.company, store: job.store, storeId: job.storeId, brand: '(확인된 브랜드 없음)', sales: '', note });
       } else {
-        brands.forEach(b => {
-          let brandNote = note;
-          if (brandNote === '확인' && !prevSet.has(`${job.company}|${job.store}|${b}`)) {
-            brandNote = '신규 입점 가능성';
-          }
-          results.push({ company: job.company, store: job.store, brand: b, sales: '', note: brandNote });
-        });
+        crawlResult.found.forEach(brand => results.push({ company: job.company, store: job.store, storeId: job.storeId, brand, sales: '', note }));
       }
-      console.log(`[${i + 1}/${jobs.length}] ${job.company} ${job.store}: ${brands.length}개 브랜드 확인`);
+      console.log(`[${i + 1}/${jobs.length}] ${job.company} ${job.store}: ${crawlResult.found.length}개 브랜드 확인`);
     } catch (e) {
-      results.push({ company: job.company, store: job.store, brand: '(오류)', sales: '', note: String(e.message) });
+      diagnostics.push({ storeId: job.storeId, company: job.company, store: job.store, status: 'error', error: String(e.message) });
+      if (previousStoreRows.length) {
+        previousStoreRows.forEach(r => results.push({ ...r, store: job.store, storeId: job.storeId, note: '수집 오류 - 직전 정상값 유지', dataQuality: 'stale' }));
+      } else {
+        results.push({ company: job.company, store: job.store, storeId: job.storeId, brand: '(오류)', sales: '', note: String(e.message) });
+      }
       console.log(`[${i + 1}/${jobs.length}] ${job.company} ${job.store} 오류: ${e.message}`);
     }
     await sleep(500);
   }
 
-  // 수동 예외: 특정 회사/지점/브랜드는 크롤링 매칭 로직상 구조적으로 놓치기 쉬워서
-  // (예: 롯데 본점 바버는 같은 층 페이지 훨씬 앞쪽에 무관한 "OO 여성" 브랜드가 있고 그
-  // 뒤로 "남성" 마커가 안 나와서 여성 구역으로 오판됨) 사람이 확인한 건 항상 정상 처리.
+  // 사이트 구조상 자동 매칭이 어려운, 사람이 직접 확인한 상시 예외.
   const MANUAL_CONFIRMED = [
     { company: '롯데', store: '본점', brand: '바버' },
-    // 신세계 강남 POTTERY: 실제 태그는 정상(shop_nm:"포터리")인데, 그보다 3천자+
-    // 앞에 있는 완전히 무관한 매장의 "여성캐주얼" 카테고리 표시 때문에 오판됨
     { company: '신세계', store: '강남', brand: 'POTTERY' },
-  ];
-  MANUAL_CONFIRMED.forEach(({ company, store, brand }) => {
-    const already = results.some(r => r.company === company && r.store === store && r.brand === brand);
-    if (!already) results.push({ company, store, brand, sales: '', note: '확인' });
+  ].map(normalizeRow);
+  MANUAL_CONFIRMED.forEach(row => {
+    if (!results.some(r => CONFIG.rowKey(r) === CONFIG.rowKey(row))) results.push({ ...row, sales: '', note: '확인' });
   });
 
-  // 사람이 "삭제 확정"한 조합은 완전히 제외. 크롤링에서 다시 활성 감지되거나
-  // (아직 원인 못 찾은 오탐), prevSet에 남아있어서 누락/철수 후보로 계속 되살아나는
-  // 것(→ data.json → 다음 달 prevSet으로 영원히 이어짐) 둘 다 막아줌.
-  const MANUAL_REJECTED = new Set([
-    '신세계|대전|이로맨',
-    '현대|천호|POTTERY', '현대|목동|POTTERY', '현대|울산|POTTERY',
-    '신세계|대구|아스페시', '신세계|강남|아스페시', '신세계|본점|아스페시', '현대|목동|아스페시',
-    '신세계|하남|우영미',
-    '롯데|동탄점|아페쎄맨', '롯데|잠실점|아페쎄맨', '신세계|광주|아페쎄맨',
-    '현대|본점|아페쎄맨', '신세계|대전|아페쎄맨', '현대|여의도|아페쎄맨',
-    '현대|미아|DKNY맨',
-    '롯데|잠실점|CP컴퍼니',
-  ]);
-  results = results.filter(r => !MANUAL_REJECTED.has(`${r.company}|${r.store}|${r.brand}`));
+  const legacyRejected = [
+    ['신세계','대전','이로맨'], ['현대','천호','POTTERY'], ['현대','목동','POTTERY'], ['현대','울산','POTTERY'],
+    ['신세계','대구','아스페시'], ['신세계','강남','아스페시'], ['신세계','본점','아스페시'], ['현대','목동','아스페시'],
+    ['신세계','하남','우영미'], ['롯데','동탄점','아페쎄맨'], ['롯데','잠실점','아페쎄맨'], ['신세계','광주','아페쎄맨'],
+    ['현대','본점','아페쎄맨'], ['신세계','대전','아페쎄맨'], ['현대','여의도','아페쎄맨'], ['현대','미아','DKNY맨'],
+    ['롯데','잠실점','CP컴퍼니'],
+  ].map(([company, store, brand]) => CONFIG.rowKey(normalizeRow({ company, store, brand })));
+  const rejected = new Set(legacyRejected);
+  reviews.forEach((decision, key) => { if (decision.decision === 'reject') rejected.add(key); });
+  results = results.map(normalizeRow).filter(row => !rejected.has(CONFIG.rowKey(row)));
 
-  // 직전엔 있었는데 이번엔 발견되지 않은 조합 → 누락/철수 후보로 추가
-  const newSet = new Set(
-    results
-      .filter(r => r.brand !== '(확인된 브랜드 없음)' && r.brand !== '(오류)')
-      .map(r => `${r.company}|${r.store}|${r.brand}`)
-  );
-  prevSet.forEach(key => {
-    if (!newSet.has(key) && !MANUAL_REJECTED.has(key)) {
-      const [company, store, brand] = key.split('|');
-      results.push({ company, store, brand, sales: '', note: '누락/철수 가능성' });
+  // 한 회사가 통째로 비거나 급락한 날은 직전 정상값을 유지하고 저하 상태로 게시한다.
+  const qualityIssues = [];
+  for (const company of ['롯데', '현대', '신세계']) {
+    const prevCount = previousRows.filter(r => r.company === company && isObserved(r)).length;
+    const freshCount = results.filter(r => r.company === company && isObserved(r)).length;
+    const staleStores = diagnostics.filter(d => d.company === company && d.status !== 'ok').length;
+    const companyStores = jobs.filter(j => j.company === company).length;
+    const issue = companyQualityIssue(company, prevCount, freshCount, staleStores, companyStores);
+    if (issue) qualityIssues.push(issue);
+  }
+
+  const monthStart = loadMonthStartRows(now, previousRows);
+  const monthStartRows = monthStart.rows.map(normalizeRow);
+  const monthStartSet = observedSet(monthStartRows);
+  const currentSet = presenceSet(results);
+
+  results = results.map(row => {
+    if (!isObserved(row)) return row;
+    const key = CONFIG.rowKey(row);
+    const review = reviews.get(key);
+    if (review && review.decision === 'confirm') return { ...row, note: '확인됨(검토)', reviewedAt: review.reviewedAt || '' };
+    if (!monthStartSet.has(key)) {
+      return { ...row, note: additionNote(key, monthStartSet, previousObserved), changeMonth: monthKey };
     }
+    return row;
+  });
+
+  monthStartSet.forEach(key => {
+    if (currentSet.has(key) || rejected.has(key)) return;
+    const source = monthStartRows.find(row => CONFIG.rowKey(row) === key);
+    if (!source) return;
+    const review = reviews.get(key);
+    if (review && review.decision === 'confirm') {
+      results.push({ ...source, sales: '', note: '확인됨(검토)', dataQuality: 'manual', reviewedAt: review.reviewedAt || '' });
+      return;
+    }
+    results.push({
+      company: source.company, store: source.store, storeId: source.storeId, brand: source.brand, sales: '',
+      note: exitNote(key, previousObserved), changeMonth: monthKey,
+    });
   });
 
   // baseline.json 대비 비교. baseline.json은 "정답"이 아니라 특정 시점(asOf)에
@@ -364,7 +435,8 @@ async function main() {
   if (fs.existsSync(baselinePath)) {
     const baseline = JSON.parse(fs.readFileSync(baselinePath, 'utf8'));
     baselineAsOf = baseline.asOf || '';
-    baselineSet = new Set((baseline.data || []).map(t => `${t.company}|${t.store}|${t.brand}`));
+    const baselineRows = (baseline.data || []).map(normalizeRow);
+    baselineSet = baselineRows.length ? new Set(baselineRows.map(t => `${t.company}|${t.store}|${t.brand}`)) : null;
   }
 
   const finalResults = results.map(r => {
@@ -381,8 +453,18 @@ async function main() {
   });
 
   const output = {
-    lastUpdated: new Date().toISOString(),
+    lastUpdated: now.toISOString(),
     baselineAsOf,
+    monthKey,
+    monthStartSnapshot: monthStart.source,
+    monthlySummary: {
+      new: finalResults.filter(r => r.note === '이번 달 신규 입점').length,
+      exit: finalResults.filter(r => r.note === '이번 달 퇴점').length,
+      pending: finalResults.filter(r => (r.note || '').includes('재확인 중')).length,
+      stale: finalResults.filter(r => r.dataQuality === 'stale').length,
+    },
+    health: { status: qualityIssues.length ? 'degraded' : 'ok', issues: qualityIssues },
+    diagnostics,
     data: finalResults,
   };
 
@@ -394,7 +476,7 @@ async function main() {
   // 기존 월별 스냅샷 파일은 그대로 두고(과거 기록 보존), 새로 쌓이는 것부터 일별로 저장.
   const historyDir = path.join(__dirname, 'history');
   if (!fs.existsSync(historyDir)) fs.mkdirSync(historyDir);
-  const dayKey = output.lastUpdated.slice(0, 10);
+  const dayKey = koreaDateKey(now);
   fs.writeFileSync(path.join(historyDir, `${dayKey}.json`), JSON.stringify(output, null, 2), 'utf8');
 
   const indexPath = path.join(historyDir, 'index.json');
@@ -409,7 +491,11 @@ async function main() {
   console.log(`\n완료: ${finalResults.length}건 저장 (data.json, history/${dayKey}.json)`);
 }
 
-main().catch(e => {
-  console.error('크롤러 실행 중 오류:', e);
-  process.exit(1);
-});
+if (require.main === module) {
+  main().catch(e => {
+    console.error('크롤러 실행 중 오류:', e);
+    process.exit(1);
+  });
+}
+
+module.exports = { matchBrands, normalizeRow, isObserved, isPresent, observedSet, presenceSet, additionNote, exitNote, companyQualityIssue, koreaDateKey, loadMonthStartRows, buildJobList };

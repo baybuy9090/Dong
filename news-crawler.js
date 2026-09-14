@@ -4,6 +4,7 @@
 // 환경변수(GitHub Secrets)가 설정된 경우에만 수집하고, 없으면 구글만 사용.
 const fs = require('fs');
 const path = require('path');
+const CONFIG = require('./config');
 
 const NAVER_CLIENT_ID = process.env.NAVER_CLIENT_ID || '';
 const NAVER_CLIENT_SECRET = process.env.NAVER_CLIENT_SECRET || '';
@@ -22,17 +23,7 @@ const NEWS_QUERY_OVERRIDES = {
   'POTTERY': '포터리',
 };
 
-const BRANDS = [
-  '타임옴므', '띠어리맨', '솔리드옴므', '시스템옴므',
-  '우영미', '준지', '송지오옴므',
-  '스톤아일랜드', 'CP컴퍼니',
-  '비이커', '톰그레이하운드맨',
-  '아페쎄맨', '이로맨', '지오송지오', '바버', '산드로옴므', '질스튜어트뉴욕', '아스페시', 'DKNY맨',
-  '클럽모나코', '맨온더분', '수트서플라이', '슬로웨어',
-  'POTTERY', '캡틴선샤인', 'PAF', '이스트로그(프레이트)',
-  '에잇디비젼', '스컬프스토어', '아이엠샵',
-  '맨메이드카페',
-];
+const BRANDS = CONFIG.brands.filter(brand => !CONFIG.newsExcludedBrands.includes(brand));
 
 // 업계 전체 동향 카드 (특정 브랜드가 아닌 일반 검색어)
 const INDUSTRY_QUERIES = ['남성 컨템포러리', '맨즈 컨템포러리'];
@@ -132,24 +123,28 @@ async function fetchNaverNews(query) {
 
 async function fetchAllSources(query) {
   const all = [];
+  const sources = { google: false, naver: NAVER_CLIENT_ID && NAVER_CLIENT_SECRET ? false : null };
   try {
     all.push(...await fetchGoogleNews(query));
+    sources.google = true;
   } catch (e) {
     console.error(`  [구글: ${query}] 수집 실패:`, e.message);
   }
   try {
     all.push(...await fetchNaverNews(query));
+    if (sources.naver !== null) sources.naver = true;
   } catch (e) {
     console.error(`  [네이버: ${query}] 수집 실패:`, e.message);
   }
   // 같은 기사가 두 소스에 다 걸리는 경우가 있어 제목 기준으로 중복 제거
   const seen = new Set();
-  return all.filter(a => {
+  const items = all.filter(a => {
     const key = a.title.replace(/\s+/g, '');
     if (!key || seen.has(key)) return false;
     seen.add(key);
     return true;
   });
+  return { items, sources, succeeded: Object.values(sources).some(value => value === true) };
 }
 
 // 최근 MAX_AGE_DAYS 이내 기사만 남기고 최신순 정렬 (검색 결과는 관련도순이라 재정렬 필요)
@@ -224,8 +219,9 @@ function dedupSimilarTitles(items) {
 
 async function fetchBrandCandidates(brand) {
   const query = NEWS_QUERY_OVERRIDES[brand] || brand;
-  const items = filterByContentRelevance(await fetchAllSources(query), query);
-  return dedupSimilarTitles(filterRecentAndSort(items));
+  const batch = await fetchAllSources(query);
+  const items = filterByContentRelevance(batch.items, query);
+  return { items: dedupSimilarTitles(filterRecentAndSort(items)), sources: batch.sources, succeeded: batch.succeeded };
 }
 
 // "OO아울렛엔 우영미, 렉토, 포터리 등이 입점" 식으로 여러 브랜드명을 단순
@@ -287,25 +283,44 @@ function classifySentiment(text) {
   return 'neutral';
 }
 
+const EVENT_KEYWORDS = {
+  '신규 매장·팝업': ['신규 매장','신규점','오픈','개점','팝업','플래그십'],
+  '입점·유통': ['입점','유통 계약','독점 유통','라이선스','론칭'],
+  '철수·중단': ['철수','폐점','사업 중단','영업 종료','라이선스 종료'],
+  '리뉴얼·확장': ['리뉴얼','확장','증축','이전 오픈'],
+  '협업·신제품': ['협업','콜라보','신제품','신상품','컬렉션'],
+  '실적·성장': ['실적','매출','성장','흑자','적자','호조','부진'],
+  '경영·계약 변경': ['인수','매각','경영권','계약 해지','대표 선임'],
+};
+function classifyEvents(text) {
+  return Object.entries(EVENT_KEYWORDS)
+    .filter(([, keywords]) => keywords.some(keyword => text.includes(keyword)))
+    .map(([event]) => event);
+}
+
 function finalizeArticle(item) {
-  const sentiment = classifySentiment(item.title + ' ' + (item._desc || ''));
+  const text = item.title + ' ' + (item._desc || '');
+  const sentiment = classifySentiment(text);
+  const events = classifyEvents(text);
   const { _desc, ...rest } = item;
-  return { ...rest, sentiment };
+  return { ...rest, sentiment, events };
 }
 
 async function fetchIndustryNews() {
   const seen = new Set();
   const all = [];
+  let succeeded = false;
   for (const query of INDUSTRY_QUERIES) {
-    const items = await fetchAllSources(query);
-    items.forEach(item => {
+    const batch = await fetchAllSources(query);
+    succeeded ||= batch.succeeded;
+    batch.items.forEach(item => {
       const key = item.title.replace(/\s+/g, '');
       if (!seen.has(key)) { seen.add(key); all.push(item); }
     });
     await sleep(400);
   }
   const deduped = dedupSimilarTitles(filterRecentAndSort(all));
-  return deduped.slice(0, INDUSTRY_ARTICLES).map(finalizeArticle);
+  return { items: deduped.slice(0, INDUSTRY_ARTICLES).map(finalizeArticle), succeeded };
 }
 
 async function main() {
@@ -313,10 +328,15 @@ async function main() {
     console.log('(참고: NAVER_CLIENT_ID/NAVER_CLIENT_SECRET이 없어 구글 뉴스만 수집합니다)');
   }
 
+  let previous = { data: {}, industry: [] };
+  try { previous = JSON.parse(fs.readFileSync(path.join(__dirname, 'news.json'), 'utf8')); } catch (e) { /* 최초 실행 */ }
   const rawByBrand = {};
+  const diagnostics = [];
   for (const brand of BRANDS) {
     process.stdout.write(`수집 중: ${brand} ... `);
-    rawByBrand[brand] = await fetchBrandCandidates(brand);
+    const batch = await fetchBrandCandidates(brand);
+    rawByBrand[brand] = batch.succeeded ? batch.items : (previous.data[brand] || []);
+    diagnostics.push({ brand, sources: batch.sources, status: batch.succeeded ? 'ok' : 'stale' });
     console.log(`${rawByBrand[brand].length}건 (중복 브랜드 필터 전)`);
     await sleep(400);
   }
@@ -328,11 +348,13 @@ async function main() {
   });
 
   process.stdout.write('수집 중: [업계 전체] 남성/맨즈 컨템포러리 ... ');
-  const industry = await fetchIndustryNews();
+  const industryBatch = await fetchIndustryNews();
+  const industry = industryBatch.succeeded ? industryBatch.items : (previous.industry || []);
   console.log(`${industry.length}건`);
 
   const output = {
     lastUpdated: new Date().toISOString(),
+    diagnostics,
     industry,
     data,
   };
@@ -340,7 +362,11 @@ async function main() {
   console.log(`\n완료: news.json 저장 (브랜드 ${BRANDS.length}개 + 업계 전체)`);
 }
 
-main().catch(e => {
-  console.error('뉴스 크롤러 실행 중 오류:', e);
-  process.exit(1);
-});
+if (require.main === module) {
+  main().catch(e => {
+    console.error('뉴스 크롤러 실행 중 오류:', e);
+    process.exit(1);
+  });
+}
+
+module.exports = { classifySentiment, classifyEvents, titleSimilarity, dedupSimilarTitles, filterByContentRelevance };
