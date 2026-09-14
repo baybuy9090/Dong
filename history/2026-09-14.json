@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T03:15:38.374Z",
+  "lastUpdated": "2026-09-14T05:09:59.832Z",
   "baselineAsOf": "2026-06",
   "data": [
     {
@@ -612,58 +612,58 @@
     },
     {
       "company": "롯데",
-      "store": "수원점",
+      "store": "타임빌라스 수원",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "확인",
+      "note": "신규 입점 가능성",
       "baselineCheck": "일치"
     },
     {
       "company": "롯데",
-      "store": "수원점",
+      "store": "타임빌라스 수원",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "확인",
+      "note": "신규 입점 가능성",
       "baselineCheck": "일치"
     },
     {
       "company": "롯데",
-      "store": "수원점",
+      "store": "타임빌라스 수원",
       "brand": "타임옴므",
       "sales": "",
-      "note": "확인",
+      "note": "신규 입점 가능성",
       "baselineCheck": "일치"
     },
     {
       "company": "롯데",
-      "store": "수원점",
+      "store": "타임빌라스 수원",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "확인",
+      "note": "신규 입점 가능성",
       "baselineCheck": "일치"
     },
     {
       "company": "롯데",
-      "store": "수원점",
+      "store": "타임빌라스 수원",
       "brand": "송지오옴므",
       "sales": "",
-      "note": "확인",
+      "note": "신규 입점 가능성",
       "baselineCheck": "일치"
     },
     {
       "company": "롯데",
-      "store": "수원점",
+      "store": "타임빌라스 수원",
       "brand": "이로맨",
       "sales": "",
-      "note": "확인",
+      "note": "신규 입점 가능성",
       "baselineCheck": "일치"
     },
     {
       "company": "롯데",
-      "store": "수원점",
+      "store": "타임빌라스 수원",
       "brand": "스톤아일랜드",
       "sales": "",
-      "note": "확인",
+      "note": "신규 입점 가능성",
       "baselineCheck": "일치"
     },
     {
@@ -3729,6 +3729,62 @@
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"
+    },
+    {
+      "company": "롯데",
+      "store": "수원점",
+      "brand": "시스템옴므",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
+    },
+    {
+      "company": "롯데",
+      "store": "수원점",
+      "brand": "클럽모나코",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
+    },
+    {
+      "company": "롯데",
+      "store": "수원점",
+      "brand": "타임옴므",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
+    },
+    {
+      "company": "롯데",
+      "store": "수원점",
+      "brand": "띠어리맨",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
+    },
+    {
+      "company": "롯데",
+      "store": "수원점",
+      "brand": "송지오옴므",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
+    },
+    {
+      "company": "롯데",
+      "store": "수원점",
+      "brand": "이로맨",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
+    },
+    {
+      "company": "롯데",
+      "store": "수원점",
+      "brand": "스톤아일랜드",
+      "sales": "",
+      "note": "누락/철수 가능성",
+      "baselineCheck": "⚠ 2026-06 데이터엔 없음"
     },
     {
       "company": "롯데",

@@ -39,7 +39,7 @@ const INDUSTRY_QUERIES = ['남성 컨템포러리', '맨즈 컨템포러리'];
 
 const ARTICLES_PER_BRAND = 8;
 const INDUSTRY_ARTICLES = 8;
-const MAX_AGE_DAYS = 21; // 최근 3주 이내 기사만 수집
+const MAX_AGE_DAYS = 14; // 최근 2주 이내 기사만 수집 (너무 오래된 기사가 뜬다는 피드백으로 3주→2주로 단축)
 
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
@@ -262,16 +262,25 @@ const POSITIVE_KEYWORDS = [
   '신규 오픈', '단독', '수혜', '반등', '흑자',
 ];
 const NEGATIVE_KEYWORDS = [
+  // '사고'는 뺌 — "~하고 싶은"의 '사고'(사다) 활용형과 겹쳐서 상품 구매 후기류
+  // 기사("사고 싶은 재킷")가 죄다 부정으로 잘못 잡히는 오탐이 너무 잦았음.
   '철수', '폐점', '부진', '하락', '감소', '적자', '논란', '위기', '리콜', '소송',
-  '불매', '비판', '결함', '사고', '파산', '구설', '침체', '저조', '단종', '중단',
+  '불매', '비판', '결함', '파산', '구설', '침체', '저조', '단종', '중단',
   '취소', '해지', '갑질', '불만', '한파', '역풍', '급감', '곤두박질', '몸살',
   '휘청', '폭락', '먹구름', '악화', '리스크',
 ];
+// "내수 부진을 극복/메운다" 같이 부정적 단어가 있어도 전체 맥락은 "이겨내는 중"이라는
+// 긍정적 서사인 기사가 많음. 이런 반전 표현이 있으면 부정 판정을 취소함.
+const REVERSAL_KEYWORDS = ['극복', '메운다', '메워', '메꿔', '이겨내', '벗어나', '탈출', '만회', '회복', '뛰어넘'];
 function classifySentiment(text) {
   let pos = 0;
   let neg = 0;
   POSITIVE_KEYWORDS.forEach(w => { if (text.includes(w)) pos++; });
   NEGATIVE_KEYWORDS.forEach(w => { if (text.includes(w)) neg++; });
+  if (neg > 0 && REVERSAL_KEYWORDS.some(w => text.includes(w))) {
+    neg = 0;
+    pos += 1;
+  }
   if (pos === 0 && neg === 0) return 'neutral';
   if (pos > neg) return 'positive';
   if (neg > pos) return 'negative';
