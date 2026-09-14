@@ -750,6 +750,7 @@
 
     // 맨즈 컨템 현황 시트 기준 티어 분류 (2026-07 스크린샷 기준)
     const BRAND_TIERS = DONG_CONFIG.brandTiers;
+    const TIER_ORDER = ['SA급','Designer','Global','Select','B급','Classic','New','New Select','Contents','미분류'];
     const BRAND_TO_TIER = {};
     Object.entries(BRAND_TIERS).forEach(([tier, brands]) => {
       brands.forEach(b => { BRAND_TO_TIER[b] = tier; });
@@ -1633,7 +1634,7 @@
           return `<th class="heatmap-region-th" title="${rg}">${label}</th>`;
         }).join('') +
         `</tr></thead><tbody>`;
-      tierOrder.forEach(tier => {
+      TIER_ORDER.forEach(tier => {
         const rowsInTier = brandRows.filter(r => tierOf(r.brand) === tier).sort((a,b) => b.total - a.total);
         if (rowsInTier.length === 0) return;
         heatmapHtml += `<tr class="tier-group-row"><td colspan="${heatmapRegions.length + 1}">${tier}</td></tr>`;

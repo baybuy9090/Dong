@@ -16,6 +16,9 @@ test('랭킹은 상위 10개만 먼저 보여주고 전체 보기로 확장한�
   assert.match(html, /let rankingExpanded = false/);
   assert.match(html, /rankedRows\.slice\(0, 10\)/);
   assert.match(html, /전체 \$\{rankedRows\.length\}개 보기/);
+  assert.match(html, /const TIER_ORDER = \[/);
+  assert.match(html, /TIER_ORDER\.forEach\(tier =>/);
+  assert.doesNotMatch(html, /(?<![A-Z_])tierOrder\.forEach/);
 });
 
 test('브랜드 상세는 해당 층 도면 버튼과 공통 디자인 토큰을 사용한다', () => {
