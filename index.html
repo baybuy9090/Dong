@@ -434,15 +434,19 @@
 
   <!-- 한눈에 보기 -->
   <div id="overviewView">
-    <div class="panel" style="margin-bottom:14px;">
-      <h3 id="monthlyChangeTitle">이번 달 입·퇴점 변화</h3>
-      <div class="subtitle" id="monthlyChangeSubtitle" style="margin-bottom:10px;"></div>
-      <div id="monthlyChangeList"></div>
-    </div>
-    <div class="panel" style="margin-bottom:14px;">
-      <h3>월별 입·퇴점 아카이브</h3>
-      <div class="subtitle" style="margin-bottom:10px;">각 월의 마지막 정상 데이터와 직전 월 데이터를 비교합니다. 월을 누르면 상세 내역이 열립니다.</div>
-      <div id="monthlyArchiveList"></div>
+    <div class="panel" style="margin-bottom:14px;padding:10px 14px;">
+      <button type="button" id="monthlyOverviewToggle" aria-expanded="false" onclick="toggleMonthlyOverview()" style="width:100%;border:0;background:transparent;padding:0;display:flex;align-items:center;justify-content:space-between;gap:10px;cursor:pointer;text-align:left;">
+        <span id="monthlyOverviewSummary" style="font-size:13px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">입·퇴점 변화 불러오는 중</span>
+        <span id="monthlyOverviewToggleLabel" style="font-size:11px;color:#777;white-space:nowrap;">펼치기 ▾</span>
+      </button>
+      <div id="monthlyOverviewDetails" hidden style="padding-top:12px;margin-top:10px;border-top:1px solid #eee;">
+        <h3 id="monthlyChangeTitle">이번 달 입·퇴점 변화</h3>
+        <div class="subtitle" id="monthlyChangeSubtitle" style="margin-bottom:8px;"></div>
+        <div id="monthlyChangeList"></div>
+        <h3 style="margin-top:16px;">월별 입·퇴점 아카이브</h3>
+        <div class="subtitle" style="margin-bottom:8px;">각 월의 마지막 정상 데이터와 직전 월 데이터를 비교합니다. 월을 누르면 상세 내역이 열립니다.</div>
+        <div id="monthlyArchiveList"></div>
+      </div>
     </div>
     <div class="panel" style="margin-bottom:14px;">
       <h3>브랜드별 입점 수 랭킹 (전체 지점 기준, 롯데/현대/신세계 구간 표시)</h3>
@@ -1162,8 +1166,8 @@
           if (!storeMap[key]) storeMap[key] = { company: r.company, store: r.store, brands: [] };
           storeMap[key].brands.push(r.brand);
         });
-        // 신세계·롯데는 실제 도면 이미지를 볼 수 있어 목록 맨 위로 올림
-        const companyPriority = { '신세계': 0, '롯데': 1, '현대': 2 };
+        // 3사 모두 도면 이미지가 있으므로 대시보드의 기본 회사 순서로 정렬한다.
+        const companyPriority = { '롯데': 0, '현대': 1, '신세계': 2 };
         const entries = Object.values(storeMap).sort((a,b) =>
           (companyPriority[a.company] ?? 9) - (companyPriority[b.company] ?? 9) || a.store.localeCompare(b.store,'ko'));
 
@@ -1367,6 +1371,14 @@
     function renderMonthlyChanges() {
       const rows = currentFiltered().filter(r => statusOf(r) !== 'none');
       const monthLabel = currentMonthKey || '선택한 달';
+      const statusCounts = rows.reduce((counts, row) => {
+        const status = statusOf(row);
+        counts[status] = (counts[status] || 0) + 1;
+        return counts;
+      }, {});
+      const archiveCount = monthlyArchive.filter(item => item.month !== currentMonthKey).length;
+      document.getElementById('monthlyOverviewSummary').textContent =
+        `${monthLabel} 입·퇴점 · 신규 ${(statusCounts.new || 0) + (statusCounts.newPending || 0)} · 퇴점 ${(statusCounts.removed || 0) + (statusCounts.exitPending || 0)}${statusCounts.stale ? ` · 수집 지연 ${statusCounts.stale}` : ''} · 과거 ${archiveCount}개월`;
       document.getElementById('monthlyChangeTitle').textContent = `${monthLabel} 입·퇴점 변화`;
       document.getElementById('monthlyChangeSubtitle').textContent = monthStartSnapshot
         ? `비교 기준: ${monthStartSnapshot} · 정상 수집에서 2회 연속 확인된 변화만 확정 표시합니다.`
@@ -1380,19 +1392,19 @@
         `<div style="padding:7px 0;border-bottom:1px solid #f2f2f2;font-size:12.5px;"><span style="font-size:10.5px;font-weight:700;color:${color};margin-right:7px;">${label}</span><span class="${companyClass(r.company)}">${r.company}</span> ${r.store} · <b>${r.brand}</b></div>`
       ));
       if (!lines.length) {
-        document.getElementById('monthlyChangeList').innerHTML = '<div class="empty" style="padding:20px;">이 달에 확정되거나 재확인 중인 입·퇴점 변화가 없습니다.</div>';
+        document.getElementById('monthlyChangeList').innerHTML = '<div class="empty" style="padding:12px;">이 달에 확정되거나 재확인 중인 입·퇴점 변화가 없습니다.</div>';
         return;
       }
-      document.getElementById('monthlyChangeList').innerHTML = lines[0] +
-        (lines.length > 1 ? `<div id="monthlyChangeMore" hidden>${lines.slice(1).join('')}</div><button type="button" class="tab-btn" id="monthlyChangeToggle" style="margin-top:8px;" onclick="toggleMonthlyChanges()">나머지 ${lines.length - 1}건 보기</button>` : '');
+      document.getElementById('monthlyChangeList').innerHTML = lines.join('');
     }
 
-    function toggleMonthlyChanges() {
-      const more = document.getElementById('monthlyChangeMore');
-      const button = document.getElementById('monthlyChangeToggle');
-      if (!more || !button) return;
-      more.hidden = !more.hidden;
-      button.textContent = more.hidden ? `나머지 ${more.children.length}건 보기` : '접기';
+    function toggleMonthlyOverview() {
+      const details = document.getElementById('monthlyOverviewDetails');
+      const button = document.getElementById('monthlyOverviewToggle');
+      const label = document.getElementById('monthlyOverviewToggleLabel');
+      details.hidden = !details.hidden;
+      button.setAttribute('aria-expanded', String(!details.hidden));
+      label.textContent = details.hidden ? '펼치기 ▾' : '접기 ▴';
     }
 
     function renderMonthlyArchive() {
@@ -2099,7 +2111,10 @@
         .then(res => { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
         .then(payload => {
           monthlyArchive = payload.months || [];
-          if (currentTab === 'overview') renderMonthlyArchive();
+          if (currentTab === 'overview') {
+            renderMonthlyChanges();
+            renderMonthlyArchive();
+          }
         })
         .catch(() => { monthlyArchive = []; });
     }
@@ -2124,8 +2139,7 @@
         .catch(() => { /* news.json이 아직 없으면 (첫 자동 실행 전) 빈 상태로 보여줌 */ });
     }
 
-    // 신세계와 롯데는 지점별 층 안내도 이미지를 수집해 인라인으로 보여줌.
-    // 현대는 서드파티 인터랙티브 지도라 외부 링크만 제공.
+    // 신세계·롯데는 공식 이미지, 현대는 공식 다비오 벡터 데이터를 변환한 SVG를 보여준다.
     let floorImages = {};
     function loadFloorImages() {
       fetch('floor-images.json?_=' + Date.now())

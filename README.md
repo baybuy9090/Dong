@@ -12,7 +12,7 @@
 - `monthly-archive.json` — 직전 월 마지막 정상 데이터와 비교한 월별 신규 입점·퇴점 아카이브
 - `baseline.json` — 과거 2026-06 수기 스냅샷 보관용. 현재 변화 판정에는 사용하지 않음
 - `review-decisions.json` — 신규·퇴점·오탐에 대한 사람의 영구 검토 결과
-- `floor-crawler.js`, `floor-images.json` — 롯데·신세계 층 도면 이미지 수집 결과
+- `floor-crawler.js`, `floor-images.json` — 3사 층 도면 수집 결과. 현대는 공식 다비오 벡터 데이터를 `floor-maps/hyundai/`의 정적 SVG로 변환
 - `news-crawler.js`, `news.json` — 브랜드 뉴스와 사업 이벤트 분류 결과
 - `index.html` — 대시보드 화면
 - `tests/` — 점포 별칭, 브랜드 매칭, 수집 지연, 뉴스 이벤트 회귀 테스트

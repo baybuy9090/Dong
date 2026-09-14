@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="361.013793945312 -55 1070.4080802307149 1710" width="1200" height="1200" role="img" aria-labelledby="title desc">
+  <title id="title">본점 B4 층 안내도</title>
+  <desc id="desc">현대백화점 공식 층별 안내 벡터 데이터를 정적 도면으로 변환했습니다.</desc>
+  <rect x="361.013793945312" y="-55" width="1070.4080802307149" height="1710" fill="#e7e8e6"/>
+  <g><polygon points="1206.42,0.00 1206.42,1600.00 1376.42,1600.00 1376.42,0.00" fill="#f8f8f8" fill-opacity="1" stroke="#f8f8f8" stroke-width="1.5"/><polygon points="416.26,516.82 416.26,1261.20 1160.13,1261.20 1160.13,517.31" fill="#ffffff" fill-opacity="1" stroke="#ffffff" stroke-width="1.5"/></g>
+  <g><polygon points="416.26,516.82 416.26,1261.20 1160.13,1261.20 1160.13,517.31" fill="#ffffff" fill-opacity="1" stroke="#ffffff" stroke-width="1.5"/><polygon points="982.95,1169.96 982.97,1261.20 1160.13,1261.20 1160.13,1169.99" fill="#e7d3e7" fill-opacity="1" stroke="#ffffff" stroke-width="1.5"/><polygon points="1160.13,517.06 416.26,516.57 416.01,516.57 416.01,516.82 416.01,1261.20 416.01,1261.45 416.26,1261.45 977.54,1261.45 977.54,1261.20 416.26,1261.20 416.26,516.82 1160.13,517.31 1160.13,1261.20 977.54,1261.20 977.54,1261.45 1160.13,1261.45 1160.38,1261.45 1160.38,1261.20 1160.38,517.31 1160.38,517.06" fill="#a1a1a1" fill-opacity="1" stroke="#a1a1a1" stroke-width="1.5"/></g>
+  <g font-family="Arial, 'Noto Sans KR', sans-serif" font-size="12" font-weight="600" fill="#303633" stroke="#fff" stroke-width="3" paint-order="stroke" stroke-linejoin="round"><text x="1076.157073461383" y="1218.3617895728398" text-anchor="middle" dominant-baseline="central">세차장</text><text x="1295.695364238417" y="889.5592382521636" text-anchor="middle" dominant-baseline="central">압구정로</text><text x="788.1991729736355" y="889.0132202963475" text-anchor="middle" dominant-baseline="central">주차장</text></g>
+  <text x="416.013793945312" y="-18" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="20" font-weight="700" fill="#1a1f1d">본점 · B4</text>
+</svg>

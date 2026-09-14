@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="282.7916259765599 277.1672363281199 1134.4167480468782 1071.813842773442" width="1200" height="1200" role="img" aria-labelledby="title desc">
+  <title id="title">미아 B5 층 안내도</title>
+  <desc id="desc">현대백화점 공식 층별 안내 벡터 데이터를 정적 도면으로 변환했습니다.</desc>
+  <rect x="282.7916259765599" y="277.1672363281199" width="1134.4167480468782" height="1071.813842773442" fill="#e7e8e6"/>
+  <g><polygon points="339.29,333.67 339.29,1292.48 1360.71,1292.48 1360.71,333.67" fill="#ffffff" fill-opacity="1" stroke="#ffffff" stroke-width="1.5"/></g>
+  <g><polygon points="339.29,1257.60 339.29,333.67 1360.71,333.67 1360.71,1292.48 339.29,1292.48 339.29,1257.60 337.79,1257.60 337.79,1292.48 337.79,1293.98 339.29,1293.98 1360.71,1293.98 1362.21,1293.98 1362.21,1292.48 1362.21,333.67 1362.21,332.17 1360.71,332.17 339.29,332.17 337.79,332.17 337.79,333.67 337.79,1257.60" fill="#a1a1a1" fill-opacity="1" stroke="#a1a1a1" stroke-width="1.5"/><polygon points="1360.71,333.67 339.29,333.67 339.29,1292.48 1360.71,1292.48" fill="#ffffff" fill-opacity="1" stroke="#ffffff" stroke-width="1.5"/></g>
+  <g font-family="Arial, 'Noto Sans KR', sans-serif" font-size="12" font-weight="600" fill="#303633" stroke="#fff" stroke-width="3" paint-order="stroke" stroke-linejoin="round"><text x="849.9999999999989" y="813.074157714841" text-anchor="middle" dominant-baseline="central">주차장</text></g>
+  <text x="337.7916259765599" y="314.1672363281199" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="20" font-weight="700" fill="#1a1f1d">미아 · B5</text>
+</svg>

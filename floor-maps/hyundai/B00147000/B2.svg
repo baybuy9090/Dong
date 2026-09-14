@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="189.8162841796875 269.7918090820308 1501.6307373046925 2902.581481933589" width="1200" height="1200" role="img" aria-labelledby="title desc">
+  <title id="title">충청 B2 층 안내도</title>
+  <desc id="desc">현대백화점 공식 층별 안내 벡터 데이터를 정적 도면으로 변환했습니다.</desc>
+  <rect x="189.8162841796875" y="269.7918090820308" width="1501.6307373046925" height="2902.581481933589" fill="#e7e8e6"/>
+  <g><polygon points="244.82,324.79 244.82,3117.37 1636.45,3117.37 1636.45,324.79" fill="#ffffff" fill-opacity="1" stroke="#ffffff" stroke-width="1.5"/></g>
+  <g><polygon points="244.82,324.79 244.82,434.77 246.32,434.77 246.32,326.29 1634.95,326.29 1634.95,3115.87 246.32,3115.87 246.32,434.77 244.82,434.77 244.82,3117.37 1636.45,3117.37 1636.45,324.79" fill="#a1a1a1" fill-opacity="1" stroke="#a1a1a1" stroke-width="1.5"/><polygon points="1634.95,326.29 246.32,326.29 246.32,3115.87 1634.95,3115.87" fill="#ffffff" fill-opacity="1" stroke="#ffffff" stroke-width="1.5"/></g>
+  <g font-family="Arial, 'Noto Sans KR', sans-serif" font-size="12" font-weight="600" fill="#303633" stroke="#fff" stroke-width="3" paint-order="stroke" stroke-linejoin="round"><text x="940.631652832034" y="1721.0825500488254" text-anchor="middle" dominant-baseline="central">주차장</text></g>
+  <text x="244.8162841796875" y="306.7918090820308" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="20" font-weight="700" fill="#1a1f1d">충청 · B2</text>
+</svg>

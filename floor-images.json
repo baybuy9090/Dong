@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T06:00:22.051Z",
+  "lastUpdated": "2026-09-14T06:13:57.702Z",
   "diagnostics": [
     {
       "storeId": "신세계-SC00002",
@@ -192,6 +192,97 @@
       "store": "평촌점",
       "status": "ok",
       "floors": 11
+    },
+    {
+      "storeId": "현대-B00142000",
+      "store": "목동",
+      "status": "ok",
+      "floors": 14,
+      "format": "svg"
+    },
+    {
+      "storeId": "현대-B00122000",
+      "store": "무역센터",
+      "status": "ok",
+      "floors": 15,
+      "format": "svg"
+    },
+    {
+      "storeId": "현대-B00141000",
+      "store": "미아",
+      "status": "ok",
+      "floors": 16,
+      "format": "svg"
+    },
+    {
+      "storeId": "현대-B00121000",
+      "store": "본점",
+      "status": "ok",
+      "floors": 10,
+      "format": "svg"
+    },
+    {
+      "storeId": "현대-B00127000",
+      "store": "신촌",
+      "status": "ok",
+      "floors": 18,
+      "format": "svg"
+    },
+    {
+      "storeId": "현대-B00140000",
+      "store": "여의도",
+      "status": "ok",
+      "floors": 12,
+      "format": "svg"
+    },
+    {
+      "storeId": "현대-B00129000",
+      "store": "울산",
+      "status": "ok",
+      "floors": 20,
+      "format": "svg"
+    },
+    {
+      "storeId": "현대-B00143000",
+      "store": "중동",
+      "status": "ok",
+      "floors": 16,
+      "format": "svg"
+    },
+    {
+      "storeId": "현대-B00126000",
+      "store": "천호",
+      "status": "ok",
+      "floors": 18,
+      "format": "svg"
+    },
+    {
+      "storeId": "현대-B00147000",
+      "store": "충청",
+      "status": "ok",
+      "floors": 10,
+      "format": "svg"
+    },
+    {
+      "storeId": "현대-B00145000",
+      "store": "킨텍스",
+      "status": "ok",
+      "floors": 15,
+      "format": "svg"
+    },
+    {
+      "storeId": "현대-B00148000",
+      "store": "판교",
+      "status": "ok",
+      "floors": 16,
+      "format": "svg"
+    },
+    {
+      "storeId": "현대-B00146000",
+      "store": "대구",
+      "status": "ok",
+      "floors": 15,
+      "format": "svg"
     }
   ],
   "data": {
@@ -1957,6 +2048,1202 @@
         "floor": "B1F",
         "label": "B1 푸드에비뉴 | 팝업스테이지",
         "url": "https://minfo.lotteshopping.com/content/cstr/202202/0341/20220225140124966_2.jpg"
+      }
+    ],
+    "B00142000": [
+      {
+        "floor": "8F",
+        "label": "8F 층 안내도",
+        "url": "floor-maps/hyundai/B00142000/8F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "7F",
+        "label": "7F 층 안내도",
+        "url": "floor-maps/hyundai/B00142000/7F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "6F",
+        "label": "6F 층 안내도",
+        "url": "floor-maps/hyundai/B00142000/6F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "5F",
+        "label": "5F 층 안내도",
+        "url": "floor-maps/hyundai/B00142000/5F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "4F",
+        "label": "4F 층 안내도",
+        "url": "floor-maps/hyundai/B00142000/4F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "3F",
+        "label": "3F 층 안내도",
+        "url": "floor-maps/hyundai/B00142000/3F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "2F",
+        "label": "2F 층 안내도",
+        "url": "floor-maps/hyundai/B00142000/2F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "1F",
+        "label": "1F 층 안내도",
+        "url": "floor-maps/hyundai/B00142000/1F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B1",
+        "label": "B1 층 안내도",
+        "url": "floor-maps/hyundai/B00142000/B1.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B2",
+        "label": "B2 층 안내도",
+        "url": "floor-maps/hyundai/B00142000/B2.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B3",
+        "label": "B3 층 안내도",
+        "url": "floor-maps/hyundai/B00142000/B3.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B4",
+        "label": "B4 층 안내도",
+        "url": "floor-maps/hyundai/B00142000/B4.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B5",
+        "label": "B5 층 안내도",
+        "url": "floor-maps/hyundai/B00142000/B5.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B6",
+        "label": "B6 층 안내도",
+        "url": "floor-maps/hyundai/B00142000/B6.svg",
+        "source": "hyundai-dabeeo"
+      }
+    ],
+    "B00122000": [
+      {
+        "floor": "11F",
+        "label": "11F 층 안내도",
+        "url": "floor-maps/hyundai/B00122000/11F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "10F",
+        "label": "10F 층 안내도",
+        "url": "floor-maps/hyundai/B00122000/10F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "9F",
+        "label": "9F 층 안내도",
+        "url": "floor-maps/hyundai/B00122000/9F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "8F",
+        "label": "8F 층 안내도",
+        "url": "floor-maps/hyundai/B00122000/8F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "7F",
+        "label": "7F 층 안내도",
+        "url": "floor-maps/hyundai/B00122000/7F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "6F",
+        "label": "6F 층 안내도",
+        "url": "floor-maps/hyundai/B00122000/6F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "5F",
+        "label": "5F 층 안내도",
+        "url": "floor-maps/hyundai/B00122000/5F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "4F",
+        "label": "4F 층 안내도",
+        "url": "floor-maps/hyundai/B00122000/4F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "3F",
+        "label": "3F 층 안내도",
+        "url": "floor-maps/hyundai/B00122000/3F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "2F",
+        "label": "2F 층 안내도",
+        "url": "floor-maps/hyundai/B00122000/2F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "1F",
+        "label": "1F 층 안내도",
+        "url": "floor-maps/hyundai/B00122000/1F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B1",
+        "label": "B1 층 안내도",
+        "url": "floor-maps/hyundai/B00122000/B1.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B2",
+        "label": "B2 층 안내도",
+        "url": "floor-maps/hyundai/B00122000/B2.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B3",
+        "label": "B3 층 안내도",
+        "url": "floor-maps/hyundai/B00122000/B3.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B4",
+        "label": "B4 층 안내도",
+        "url": "floor-maps/hyundai/B00122000/B4.svg",
+        "source": "hyundai-dabeeo"
+      }
+    ],
+    "B00141000": [
+      {
+        "floor": "11F",
+        "label": "11F 층 안내도",
+        "url": "floor-maps/hyundai/B00141000/11F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "10F",
+        "label": "10F 층 안내도",
+        "url": "floor-maps/hyundai/B00141000/10F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "9F",
+        "label": "9F 층 안내도",
+        "url": "floor-maps/hyundai/B00141000/9F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "8F",
+        "label": "8F 층 안내도",
+        "url": "floor-maps/hyundai/B00141000/8F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "7F",
+        "label": "7F 층 안내도",
+        "url": "floor-maps/hyundai/B00141000/7F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "6F",
+        "label": "6F 층 안내도",
+        "url": "floor-maps/hyundai/B00141000/6F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "5F",
+        "label": "5F 층 안내도",
+        "url": "floor-maps/hyundai/B00141000/5F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "4F",
+        "label": "4F 층 안내도",
+        "url": "floor-maps/hyundai/B00141000/4F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "3F",
+        "label": "3F 층 안내도",
+        "url": "floor-maps/hyundai/B00141000/3F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "2F",
+        "label": "2F 층 안내도",
+        "url": "floor-maps/hyundai/B00141000/2F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "1F",
+        "label": "1F 층 안내도",
+        "url": "floor-maps/hyundai/B00141000/1F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B1",
+        "label": "B1 층 안내도",
+        "url": "floor-maps/hyundai/B00141000/B1.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B2",
+        "label": "B2 층 안내도",
+        "url": "floor-maps/hyundai/B00141000/B2.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B3",
+        "label": "B3 층 안내도",
+        "url": "floor-maps/hyundai/B00141000/B3.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B4",
+        "label": "B4 층 안내도",
+        "url": "floor-maps/hyundai/B00141000/B4.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B5",
+        "label": "B5 층 안내도",
+        "url": "floor-maps/hyundai/B00141000/B5.svg",
+        "source": "hyundai-dabeeo"
+      }
+    ],
+    "B00121000": [
+      {
+        "floor": "6F",
+        "label": "6F 층 안내도",
+        "url": "floor-maps/hyundai/B00121000/6F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "5F",
+        "label": "5F 층 안내도",
+        "url": "floor-maps/hyundai/B00121000/5F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "4F",
+        "label": "4F 층 안내도",
+        "url": "floor-maps/hyundai/B00121000/4F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "3F",
+        "label": "3F 층 안내도",
+        "url": "floor-maps/hyundai/B00121000/3F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "2F",
+        "label": "2F 층 안내도",
+        "url": "floor-maps/hyundai/B00121000/2F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "1F",
+        "label": "1F 층 안내도",
+        "url": "floor-maps/hyundai/B00121000/1F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B1",
+        "label": "B1 층 안내도",
+        "url": "floor-maps/hyundai/B00121000/B1.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B2",
+        "label": "B2 층 안내도",
+        "url": "floor-maps/hyundai/B00121000/B2.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B3",
+        "label": "B3 층 안내도",
+        "url": "floor-maps/hyundai/B00121000/B3.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B4",
+        "label": "B4 층 안내도",
+        "url": "floor-maps/hyundai/B00121000/B4.svg",
+        "source": "hyundai-dabeeo"
+      }
+    ],
+    "B00127000": [
+      {
+        "floor": "13F",
+        "label": "13F 층 안내도",
+        "url": "floor-maps/hyundai/B00127000/13F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "12F",
+        "label": "12F 층 안내도",
+        "url": "floor-maps/hyundai/B00127000/12F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "11F",
+        "label": "11F 층 안내도",
+        "url": "floor-maps/hyundai/B00127000/11F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "10F",
+        "label": "10F 층 안내도",
+        "url": "floor-maps/hyundai/B00127000/10F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "9F",
+        "label": "9F 층 안내도",
+        "url": "floor-maps/hyundai/B00127000/9F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "8F",
+        "label": "8F 층 안내도",
+        "url": "floor-maps/hyundai/B00127000/8F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "7F",
+        "label": "7F 층 안내도",
+        "url": "floor-maps/hyundai/B00127000/7F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "6F",
+        "label": "6F 층 안내도",
+        "url": "floor-maps/hyundai/B00127000/6F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "5F",
+        "label": "5F 층 안내도",
+        "url": "floor-maps/hyundai/B00127000/5F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "4F",
+        "label": "4F 층 안내도",
+        "url": "floor-maps/hyundai/B00127000/4F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "3F",
+        "label": "3F 층 안내도",
+        "url": "floor-maps/hyundai/B00127000/3F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "2F",
+        "label": "2F 층 안내도",
+        "url": "floor-maps/hyundai/B00127000/2F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "1F",
+        "label": "1F 층 안내도",
+        "url": "floor-maps/hyundai/B00127000/1F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B1",
+        "label": "B1 층 안내도",
+        "url": "floor-maps/hyundai/B00127000/B1.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B2",
+        "label": "B2 층 안내도",
+        "url": "floor-maps/hyundai/B00127000/B2.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B3",
+        "label": "B3 층 안내도",
+        "url": "floor-maps/hyundai/B00127000/B3.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B4",
+        "label": "B4 층 안내도",
+        "url": "floor-maps/hyundai/B00127000/B4.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B5",
+        "label": "B5 층 안내도",
+        "url": "floor-maps/hyundai/B00127000/B5.svg",
+        "source": "hyundai-dabeeo"
+      }
+    ],
+    "B00140000": [
+      {
+        "floor": "6F",
+        "label": "6F 층 안내도",
+        "url": "floor-maps/hyundai/B00140000/6F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "5F",
+        "label": "5F 층 안내도",
+        "url": "floor-maps/hyundai/B00140000/5F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "4F",
+        "label": "4F 층 안내도",
+        "url": "floor-maps/hyundai/B00140000/4F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "3F",
+        "label": "3F 층 안내도",
+        "url": "floor-maps/hyundai/B00140000/3F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "2F",
+        "label": "2F 층 안내도",
+        "url": "floor-maps/hyundai/B00140000/2F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "1F",
+        "label": "1F 층 안내도",
+        "url": "floor-maps/hyundai/B00140000/1F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B1",
+        "label": "B1 층 안내도",
+        "url": "floor-maps/hyundai/B00140000/B1.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B2",
+        "label": "B2 층 안내도",
+        "url": "floor-maps/hyundai/B00140000/B2.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B3",
+        "label": "B3 층 안내도",
+        "url": "floor-maps/hyundai/B00140000/B3.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B4",
+        "label": "B4 층 안내도",
+        "url": "floor-maps/hyundai/B00140000/B4.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B5",
+        "label": "B5 층 안내도",
+        "url": "floor-maps/hyundai/B00140000/B5.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B6",
+        "label": "B6 층 안내도",
+        "url": "floor-maps/hyundai/B00140000/B6.svg",
+        "source": "hyundai-dabeeo"
+      }
+    ],
+    "B00129000": [
+      {
+        "floor": "13F",
+        "label": "13F 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/13F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "12F",
+        "label": "12F 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/12F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "11F",
+        "label": "11F 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/11F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "10F",
+        "label": "10F 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/10F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "9F",
+        "label": "9F 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/9F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "8F",
+        "label": "8F 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/8F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "7F",
+        "label": "7F 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/7F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "6F",
+        "label": "6F 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/6F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "5F",
+        "label": "5F 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/5F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "4F",
+        "label": "4F 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/4F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "3F",
+        "label": "3F 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/3F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "2F",
+        "label": "2F 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/2F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "1F",
+        "label": "1F 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/1F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B1",
+        "label": "B1 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/B1.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B2",
+        "label": "B2 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/B2.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B3",
+        "label": "B3 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/B3.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B4",
+        "label": "B4 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/B4.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B5",
+        "label": "B5 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/B5.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B6",
+        "label": "B6 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/B6.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B7",
+        "label": "B7 층 안내도",
+        "url": "floor-maps/hyundai/B00129000/B7.svg",
+        "source": "hyundai-dabeeo"
+      }
+    ],
+    "B00143000": [
+      {
+        "floor": "10F",
+        "label": "10F 층 안내도",
+        "url": "floor-maps/hyundai/B00143000/10F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "9F",
+        "label": "9F 층 안내도",
+        "url": "floor-maps/hyundai/B00143000/9F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "8F",
+        "label": "8F 층 안내도",
+        "url": "floor-maps/hyundai/B00143000/8F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "7F",
+        "label": "7F 층 안내도",
+        "url": "floor-maps/hyundai/B00143000/7F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "6F",
+        "label": "6F 층 안내도",
+        "url": "floor-maps/hyundai/B00143000/6F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "5F",
+        "label": "5F 층 안내도",
+        "url": "floor-maps/hyundai/B00143000/5F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "4F",
+        "label": "4F 층 안내도",
+        "url": "floor-maps/hyundai/B00143000/4F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "3F",
+        "label": "3F 층 안내도",
+        "url": "floor-maps/hyundai/B00143000/3F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "2F",
+        "label": "2F 층 안내도",
+        "url": "floor-maps/hyundai/B00143000/2F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "1F",
+        "label": "1F 층 안내도",
+        "url": "floor-maps/hyundai/B00143000/1F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B1",
+        "label": "B1 층 안내도",
+        "url": "floor-maps/hyundai/B00143000/B1.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B2",
+        "label": "B2 층 안내도",
+        "url": "floor-maps/hyundai/B00143000/B2.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B3",
+        "label": "B3 층 안내도",
+        "url": "floor-maps/hyundai/B00143000/B3.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B4",
+        "label": "B4 층 안내도",
+        "url": "floor-maps/hyundai/B00143000/B4.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B5",
+        "label": "B5 층 안내도",
+        "url": "floor-maps/hyundai/B00143000/B5.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B6",
+        "label": "B6 층 안내도",
+        "url": "floor-maps/hyundai/B00143000/B6.svg",
+        "source": "hyundai-dabeeo"
+      }
+    ],
+    "B00126000": [
+      {
+        "floor": "13F",
+        "label": "13F 층 안내도",
+        "url": "floor-maps/hyundai/B00126000/13F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "12F",
+        "label": "12F 층 안내도",
+        "url": "floor-maps/hyundai/B00126000/12F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "11F",
+        "label": "11F 층 안내도",
+        "url": "floor-maps/hyundai/B00126000/11F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "10F",
+        "label": "10F 층 안내도",
+        "url": "floor-maps/hyundai/B00126000/10F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "9F",
+        "label": "9F 층 안내도",
+        "url": "floor-maps/hyundai/B00126000/9F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "8F",
+        "label": "8F 층 안내도",
+        "url": "floor-maps/hyundai/B00126000/8F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "7F",
+        "label": "7F 층 안내도",
+        "url": "floor-maps/hyundai/B00126000/7F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "6F",
+        "label": "6F 층 안내도",
+        "url": "floor-maps/hyundai/B00126000/6F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "5F",
+        "label": "5F 층 안내도",
+        "url": "floor-maps/hyundai/B00126000/5F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "4F",
+        "label": "4F 층 안내도",
+        "url": "floor-maps/hyundai/B00126000/4F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "3F",
+        "label": "3F 층 안내도",
+        "url": "floor-maps/hyundai/B00126000/3F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "2F",
+        "label": "2F 층 안내도",
+        "url": "floor-maps/hyundai/B00126000/2F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "1F",
+        "label": "1F 층 안내도",
+        "url": "floor-maps/hyundai/B00126000/1F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B1",
+        "label": "B1 층 안내도",
+        "url": "floor-maps/hyundai/B00126000/B1.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B2",
+        "label": "B2 층 안내도",
+        "url": "floor-maps/hyundai/B00126000/B2.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B3",
+        "label": "B3 층 안내도",
+        "url": "floor-maps/hyundai/B00126000/B3.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B4",
+        "label": "B4 층 안내도",
+        "url": "floor-maps/hyundai/B00126000/B4.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B5",
+        "label": "B5 층 안내도",
+        "url": "floor-maps/hyundai/B00126000/B5.svg",
+        "source": "hyundai-dabeeo"
+      }
+    ],
+    "B00147000": [
+      {
+        "floor": "7F",
+        "label": "7F 층 안내도",
+        "url": "floor-maps/hyundai/B00147000/7F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "6F",
+        "label": "6F 층 안내도",
+        "url": "floor-maps/hyundai/B00147000/6F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "5F",
+        "label": "5F 층 안내도",
+        "url": "floor-maps/hyundai/B00147000/5F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "4F",
+        "label": "4F 층 안내도",
+        "url": "floor-maps/hyundai/B00147000/4F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "3F",
+        "label": "3F 층 안내도",
+        "url": "floor-maps/hyundai/B00147000/3F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "2F",
+        "label": "2F 층 안내도",
+        "url": "floor-maps/hyundai/B00147000/2F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "1F",
+        "label": "1F 층 안내도",
+        "url": "floor-maps/hyundai/B00147000/1F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B1",
+        "label": "B1 층 안내도",
+        "url": "floor-maps/hyundai/B00147000/B1.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B2",
+        "label": "B2 층 안내도",
+        "url": "floor-maps/hyundai/B00147000/B2.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B3",
+        "label": "B3 층 안내도",
+        "url": "floor-maps/hyundai/B00147000/B3.svg",
+        "source": "hyundai-dabeeo"
+      }
+    ],
+    "B00145000": [
+      {
+        "floor": "10F",
+        "label": "10F 층 안내도",
+        "url": "floor-maps/hyundai/B00145000/10F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "9F",
+        "label": "9F 층 안내도",
+        "url": "floor-maps/hyundai/B00145000/9F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "8F",
+        "label": "8F 층 안내도",
+        "url": "floor-maps/hyundai/B00145000/8F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "7F",
+        "label": "7F 층 안내도",
+        "url": "floor-maps/hyundai/B00145000/7F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "6F",
+        "label": "6F 층 안내도",
+        "url": "floor-maps/hyundai/B00145000/6F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "5F",
+        "label": "5F 층 안내도",
+        "url": "floor-maps/hyundai/B00145000/5F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "4F",
+        "label": "4F 층 안내도",
+        "url": "floor-maps/hyundai/B00145000/4F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "3F",
+        "label": "3F 층 안내도",
+        "url": "floor-maps/hyundai/B00145000/3F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "2F",
+        "label": "2F 층 안내도",
+        "url": "floor-maps/hyundai/B00145000/2F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "1F",
+        "label": "1F 층 안내도",
+        "url": "floor-maps/hyundai/B00145000/1F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B1",
+        "label": "B1 층 안내도",
+        "url": "floor-maps/hyundai/B00145000/B1.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B2",
+        "label": "B2 층 안내도",
+        "url": "floor-maps/hyundai/B00145000/B2.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B3",
+        "label": "B3 층 안내도",
+        "url": "floor-maps/hyundai/B00145000/B3.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B4",
+        "label": "B4 층 안내도",
+        "url": "floor-maps/hyundai/B00145000/B4.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B5",
+        "label": "B5 층 안내도",
+        "url": "floor-maps/hyundai/B00145000/B5.svg",
+        "source": "hyundai-dabeeo"
+      }
+    ],
+    "B00148000": [
+      {
+        "floor": "10F",
+        "label": "10F 층 안내도",
+        "url": "floor-maps/hyundai/B00148000/10F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "9F",
+        "label": "9F 층 안내도",
+        "url": "floor-maps/hyundai/B00148000/9F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "8F",
+        "label": "8F 층 안내도",
+        "url": "floor-maps/hyundai/B00148000/8F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "7F",
+        "label": "7F 층 안내도",
+        "url": "floor-maps/hyundai/B00148000/7F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "6F",
+        "label": "6F 층 안내도",
+        "url": "floor-maps/hyundai/B00148000/6F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "5F",
+        "label": "5F 층 안내도",
+        "url": "floor-maps/hyundai/B00148000/5F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "4F",
+        "label": "4F 층 안내도",
+        "url": "floor-maps/hyundai/B00148000/4F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "3F",
+        "label": "3F 층 안내도",
+        "url": "floor-maps/hyundai/B00148000/3F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "2F",
+        "label": "2F 층 안내도",
+        "url": "floor-maps/hyundai/B00148000/2F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "1F",
+        "label": "1F 층 안내도",
+        "url": "floor-maps/hyundai/B00148000/1F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B1",
+        "label": "B1 층 안내도",
+        "url": "floor-maps/hyundai/B00148000/B1.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B2",
+        "label": "B2 층 안내도",
+        "url": "floor-maps/hyundai/B00148000/B2.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B3",
+        "label": "B3 층 안내도",
+        "url": "floor-maps/hyundai/B00148000/B3.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B4",
+        "label": "B4 층 안내도",
+        "url": "floor-maps/hyundai/B00148000/B4.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B5",
+        "label": "B5 층 안내도",
+        "url": "floor-maps/hyundai/B00148000/B5.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B6",
+        "label": "B6 층 안내도",
+        "url": "floor-maps/hyundai/B00148000/B6.svg",
+        "source": "hyundai-dabeeo"
+      }
+    ],
+    "B00146000": [
+      {
+        "floor": "9F",
+        "label": "9F 층 안내도",
+        "url": "floor-maps/hyundai/B00146000/9F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "8F",
+        "label": "8F 층 안내도",
+        "url": "floor-maps/hyundai/B00146000/8F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "7F",
+        "label": "7F 층 안내도",
+        "url": "floor-maps/hyundai/B00146000/7F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "6F",
+        "label": "6F 층 안내도",
+        "url": "floor-maps/hyundai/B00146000/6F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "5F",
+        "label": "5F 층 안내도",
+        "url": "floor-maps/hyundai/B00146000/5F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "4F",
+        "label": "4F 층 안내도",
+        "url": "floor-maps/hyundai/B00146000/4F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "3F",
+        "label": "3F 층 안내도",
+        "url": "floor-maps/hyundai/B00146000/3F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "2F",
+        "label": "2F 층 안내도",
+        "url": "floor-maps/hyundai/B00146000/2F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "1F",
+        "label": "1F 층 안내도",
+        "url": "floor-maps/hyundai/B00146000/1F.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B1",
+        "label": "B1 층 안내도",
+        "url": "floor-maps/hyundai/B00146000/B1.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B2",
+        "label": "B2 층 안내도",
+        "url": "floor-maps/hyundai/B00146000/B2.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B3",
+        "label": "B3 층 안내도",
+        "url": "floor-maps/hyundai/B00146000/B3.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B4",
+        "label": "B4 층 안내도",
+        "url": "floor-maps/hyundai/B00146000/B4.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B5",
+        "label": "B5 층 안내도",
+        "url": "floor-maps/hyundai/B00146000/B5.svg",
+        "source": "hyundai-dabeeo"
+      },
+      {
+        "floor": "B6",
+        "label": "B6 층 안내도",
+        "url": "floor-maps/hyundai/B00146000/B6.svg",
+        "source": "hyundai-dabeeo"
       }
     ]
   }
