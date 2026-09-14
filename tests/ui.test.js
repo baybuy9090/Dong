@@ -45,6 +45,14 @@ test('도면의 관리 브랜드 강조를 켜고 끌 수 있다', () => {
   assert.match(html, /도면 웹페이지로 이동/);
 });
 
+test('현대 공식 도면 링크는 휴대폰에서 모바일 층별 안내로 연결한다', () => {
+  assert.match(html, /function isMobileDevice\(\)/);
+  assert.match(html, /Android\|iPhone\|iPad\|iPod\|Mobile/);
+  assert.match(html, /https:\/\/m\.ehyundai\.com\/mobile\/branch\/DP\/branch\.do\?branchCd=/);
+  assert.match(html, /menuType=floorList/);
+  assert.match(html, /https:\/\/home\.ehyundai\.com\/newPortal\/DP\/FG\/FG000000_V\.do\?branchCd=/);
+});
+
 test('뉴스 화면에 전체 브랜드 수집 범위와 미수집 브랜드를 투명하게 표시한다', () => {
   assert.match(html, /기사 있는 브랜드 \$\{newsCoverage\}\/\$\{ALL_BRANDS_ORDERED\.length\}/);
   assert.match(html, /news-card news-card-coverage/);

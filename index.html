@@ -1118,6 +1118,11 @@
       (STORE_CODES[s.company] ||= {})[s.name] = s.code;
     });
 
+    function isMobileDevice() {
+      if (navigator.userAgentData && navigator.userAgentData.mobile === true) return true;
+      return /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent || '');
+    }
+
     function floorGuideUrl(company, store) {
       const code = STORE_CODES[company] && STORE_CODES[company][store];
       if (!code) {
@@ -1128,7 +1133,9 @@
         url = 'https://www.lotteshopping.com/store/floor?cstrCd=' + code;
       }
       if (company === '현대') {
-        url = 'https://www.ehyundai.com/newPortal/DP/FG/FG000000_V.do?branchCd=' + code;
+        url = isMobileDevice()
+          ? 'https://m.ehyundai.com/mobile/branch/DP/branch.do?branchCd=' + code + '&branchType=&menuType=floorList'
+          : 'https://home.ehyundai.com/newPortal/DP/FG/FG000000_V.do?branchCd=' + code;
       }
       if (company === '신세계') {
         url = 'https://www.shinsegae.com/store/floor.do?storeCd=' + code;
