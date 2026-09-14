@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T07:06:45.055Z",
+  "lastUpdated": "2026-09-14T07:48:01.391Z",
   "data": {
     "롯데-0013|띠어리맨": [
       {
@@ -9,7 +9,7 @@
         "floor": "05F",
         "label": "5F 남성패션ㅣ남성컨템포러리",
         "floorKey": "05F|5F 남성패션ㅣ남성컨템포러리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0013/20211202195258319_2.jpg"
+        "url": "floor-maps/lotte/0013/05F.svg"
       }
     ],
     "롯데-0013|시스템옴므": [
@@ -20,7 +20,7 @@
         "floor": "05F",
         "label": "5F 남성패션ㅣ남성컨템포러리",
         "floorKey": "05F|5F 남성패션ㅣ남성컨템포러리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0013/20211202195258319_2.jpg"
+        "url": "floor-maps/lotte/0013/05F.svg"
       }
     ],
     "롯데-0013|이로맨": [
@@ -31,7 +31,7 @@
         "floor": "05F",
         "label": "5F 남성패션ㅣ남성컨템포러리",
         "floorKey": "05F|5F 남성패션ㅣ남성컨템포러리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0013/20211202195258319_2.jpg"
+        "url": "floor-maps/lotte/0013/05F.svg"
       }
     ],
     "롯데-0013|클럽모나코": [
@@ -42,7 +42,7 @@
         "floor": "05F",
         "label": "5F 남성패션ㅣ남성컨템포러리",
         "floorKey": "05F|5F 남성패션ㅣ남성컨템포러리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0013/20211202195258319_2.jpg"
+        "url": "floor-maps/lotte/0013/05F.svg"
       }
     ],
     "롯데-0013|DKNY맨": [
@@ -53,7 +53,7 @@
         "floor": "05F",
         "label": "5F 남성패션ㅣ남성컨템포러리",
         "floorKey": "05F|5F 남성패션ㅣ남성컨템포러리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0013/20211202195258319_2.jpg"
+        "url": "floor-maps/lotte/0013/05F.svg"
       }
     ],
     "롯데-0333|시스템옴므": [
@@ -64,7 +64,7 @@
         "floor": "06F",
         "label": "6F 남성패션",
         "floorKey": "06F|6F 남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202164807934_8.png"
+        "url": "floor-maps/lotte/0333/06F.svg"
       }
     ],
     "롯데-0007|띠어리맨": [
@@ -75,7 +75,7 @@
         "floor": "07F",
         "label": "7F 남성패션ㅣ셔츠ㆍ타이ㅣ트레디셔널",
         "floorKey": "07F|7F 남성패션ㅣ셔츠ㆍ타이ㅣ트레디셔널",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0007/20211029135821703_6.jpg"
+        "url": "floor-maps/lotte/0007/07F.svg"
       }
     ],
     "롯데-0007|시스템옴므": [
@@ -86,7 +86,7 @@
         "floor": "07F",
         "label": "7F 남성패션ㅣ셔츠ㆍ타이ㅣ트레디셔널",
         "floorKey": "07F|7F 남성패션ㅣ셔츠ㆍ타이ㅣ트레디셔널",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0007/20211029135821703_6.jpg"
+        "url": "floor-maps/lotte/0007/07F.svg"
       }
     ],
     "롯데-0007|지오송지오": [
@@ -97,7 +97,7 @@
         "floor": "07F",
         "label": "7F 남성패션ㅣ셔츠ㆍ타이ㅣ트레디셔널",
         "floorKey": "07F|7F 남성패션ㅣ셔츠ㆍ타이ㅣ트레디셔널",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0007/20211029135821703_6.jpg"
+        "url": "floor-maps/lotte/0007/07F.svg"
       }
     ],
     "롯데-0007|클럽모나코": [
@@ -108,7 +108,7 @@
         "floor": "07F",
         "label": "7F 남성패션ㅣ셔츠ㆍ타이ㅣ트레디셔널",
         "floorKey": "07F|7F 남성패션ㅣ셔츠ㆍ타이ㅣ트레디셔널",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0007/20211029135821703_6.jpg"
+        "url": "floor-maps/lotte/0007/07F.svg"
       }
     ],
     "롯데-0007|타임옴므": [
@@ -119,7 +119,7 @@
         "floor": "07F",
         "label": "7F 남성패션ㅣ셔츠ㆍ타이ㅣ트레디셔널",
         "floorKey": "07F|7F 남성패션ㅣ셔츠ㆍ타이ㅣ트레디셔널",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0007/20211029135821703_6.jpg"
+        "url": "floor-maps/lotte/0007/07F.svg"
       }
     ],
     "롯데-0007|DKNY맨": [
@@ -130,7 +130,7 @@
         "floor": "07F",
         "label": "7F 남성패션ㅣ셔츠ㆍ타이ㅣ트레디셔널",
         "floorKey": "07F|7F 남성패션ㅣ셔츠ㆍ타이ㅣ트레디셔널",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0007/20211029135821703_6.jpg"
+        "url": "floor-maps/lotte/0007/07F.svg"
       }
     ],
     "롯데-0022|띠어리맨": [
@@ -138,10 +138,19 @@
         "company": "롯데",
         "store": "노원점",
         "storeId": "롯데-0022",
+        "floor": "03F",
+        "label": "3F 영캐릭터ㅣ컨템포러리",
+        "floorKey": "03F|3F 영캐릭터ㅣ컨템포러리",
+        "url": "floor-maps/lotte/0022/03F.svg"
+      },
+      {
+        "company": "롯데",
+        "store": "노원점",
+        "storeId": "롯데-0022",
         "floor": "05F",
         "label": "5F 남성패션ㅣ골프",
         "floorKey": "05F|5F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0022/20211128183925779_1.jpg"
+        "url": "floor-maps/lotte/0022/05F.svg"
       }
     ],
     "롯데-0022|솔리드옴므": [
@@ -152,7 +161,7 @@
         "floor": "05F",
         "label": "5F 남성패션ㅣ골프",
         "floorKey": "05F|5F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0022/20211128183925779_1.jpg"
+        "url": "floor-maps/lotte/0022/05F.svg"
       }
     ],
     "롯데-0022|시스템옴므": [
@@ -163,18 +172,7 @@
         "floor": "05F",
         "label": "5F 남성패션ㅣ골프",
         "floorKey": "05F|5F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0022/20211128183925779_1.jpg"
-      }
-    ],
-    "롯데-0022|질스튜어트뉴욕": [
-      {
-        "company": "롯데",
-        "store": "노원점",
-        "storeId": "롯데-0022",
-        "floor": "05F",
-        "label": "5F 남성패션ㅣ골프",
-        "floorKey": "05F|5F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0022/20211128183925779_1.jpg"
+        "url": "floor-maps/lotte/0022/05F.svg"
       }
     ],
     "롯데-0022|클럽모나코": [
@@ -182,10 +180,19 @@
         "company": "롯데",
         "store": "노원점",
         "storeId": "롯데-0022",
+        "floor": "03F",
+        "label": "3F 영캐릭터ㅣ컨템포러리",
+        "floorKey": "03F|3F 영캐릭터ㅣ컨템포러리",
+        "url": "floor-maps/lotte/0022/03F.svg"
+      },
+      {
+        "company": "롯데",
+        "store": "노원점",
+        "storeId": "롯데-0022",
         "floor": "05F",
         "label": "5F 남성패션ㅣ골프",
         "floorKey": "05F|5F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0022/20211128183925779_1.jpg"
+        "url": "floor-maps/lotte/0022/05F.svg"
       }
     ],
     "롯데-0022|타임옴므": [
@@ -196,7 +203,7 @@
         "floor": "05F",
         "label": "5F 남성패션ㅣ골프",
         "floorKey": "05F|5F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0022/20211128183925779_1.jpg"
+        "url": "floor-maps/lotte/0022/05F.svg"
       }
     ],
     "롯데-0023|띠어리맨": [
@@ -207,7 +214,7 @@
         "floor": "06F",
         "label": "6F 남성패션ㅣ남성컨템포러리ㅣ골프ㅣGDR아카데미",
         "floorKey": "06F|6F 남성패션ㅣ남성컨템포러리ㅣ골프ㅣGDR아카데미",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202106/0023/20210625114323425_6.jpg"
+        "url": "floor-maps/lotte/0023/06F.svg"
       }
     ],
     "롯데-0023|솔리드옴므": [
@@ -218,7 +225,7 @@
         "floor": "06F",
         "label": "6F 남성패션ㅣ남성컨템포러리ㅣ골프ㅣGDR아카데미",
         "floorKey": "06F|6F 남성패션ㅣ남성컨템포러리ㅣ골프ㅣGDR아카데미",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202106/0023/20210625114323425_6.jpg"
+        "url": "floor-maps/lotte/0023/06F.svg"
       }
     ],
     "롯데-0023|송지오옴므": [
@@ -229,7 +236,7 @@
         "floor": "06F",
         "label": "6F 남성패션ㅣ남성컨템포러리ㅣ골프ㅣGDR아카데미",
         "floorKey": "06F|6F 남성패션ㅣ남성컨템포러리ㅣ골프ㅣGDR아카데미",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202106/0023/20210625114323425_6.jpg"
+        "url": "floor-maps/lotte/0023/06F.svg"
       }
     ],
     "롯데-0023|스톤아일랜드": [
@@ -240,7 +247,7 @@
         "floor": "06F",
         "label": "6F 남성패션ㅣ남성컨템포러리ㅣ골프ㅣGDR아카데미",
         "floorKey": "06F|6F 남성패션ㅣ남성컨템포러리ㅣ골프ㅣGDR아카데미",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202106/0023/20210625114323425_6.jpg"
+        "url": "floor-maps/lotte/0023/06F.svg"
       }
     ],
     "롯데-0023|시스템옴므": [
@@ -251,7 +258,7 @@
         "floor": "06F",
         "label": "6F 남성패션ㅣ남성컨템포러리ㅣ골프ㅣGDR아카데미",
         "floorKey": "06F|6F 남성패션ㅣ남성컨템포러리ㅣ골프ㅣGDR아카데미",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202106/0023/20210625114323425_6.jpg"
+        "url": "floor-maps/lotte/0023/06F.svg"
       }
     ],
     "롯데-0023|클럽모나코": [
@@ -262,7 +269,7 @@
         "floor": "06F",
         "label": "6F 남성패션ㅣ남성컨템포러리ㅣ골프ㅣGDR아카데미",
         "floorKey": "06F|6F 남성패션ㅣ남성컨템포러리ㅣ골프ㅣGDR아카데미",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202106/0023/20210625114323425_6.jpg"
+        "url": "floor-maps/lotte/0023/06F.svg"
       }
     ],
     "롯데-0023|타임옴므": [
@@ -273,7 +280,7 @@
         "floor": "06F",
         "label": "6F 남성패션ㅣ남성컨템포러리ㅣ골프ㅣGDR아카데미",
         "floorKey": "06F|6F 남성패션ㅣ남성컨템포러리ㅣ골프ㅣGDR아카데미",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202106/0023/20210625114323425_6.jpg"
+        "url": "floor-maps/lotte/0023/06F.svg"
       }
     ],
     "롯데-0023|CP컴퍼니": [
@@ -284,7 +291,7 @@
         "floor": "06F",
         "label": "6F 남성패션ㅣ남성컨템포러리ㅣ골프ㅣGDR아카데미",
         "floorKey": "06F|6F 남성패션ㅣ남성컨템포러리ㅣ골프ㅣGDR아카데미",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202106/0023/20210625114323425_6.jpg"
+        "url": "floor-maps/lotte/0023/06F.svg"
       }
     ],
     "롯데-0399|띠어리맨": [
@@ -292,10 +299,19 @@
         "company": "롯데",
         "store": "동탄점",
         "storeId": "롯데-0399",
+        "floor": "02F",
+        "label": "2F 글로벌패션 | 코스메틱 | 액세서리",
+        "floorKey": "02F|2F 글로벌패션 | 코스메틱 | 액세서리",
+        "url": "floor-maps/lotte/0399/02F.svg"
+      },
+      {
+        "company": "롯데",
+        "store": "동탄점",
+        "storeId": "롯데-0399",
         "floor": "04F",
         "label": "4F 킨더유니버스(아동ㆍ유아) | 남성패션",
         "floorKey": "04F|4F 킨더유니버스(아동ㆍ유아) | 남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814174900635_4.png"
+        "url": "floor-maps/lotte/0399/04F.svg"
       }
     ],
     "롯데-0399|바버": [
@@ -306,7 +322,7 @@
         "floor": "04F",
         "label": "4F 킨더유니버스(아동ㆍ유아) | 남성패션",
         "floorKey": "04F|4F 킨더유니버스(아동ㆍ유아) | 남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814174900635_4.png"
+        "url": "floor-maps/lotte/0399/04F.svg"
       }
     ],
     "롯데-0399|솔리드옴므": [
@@ -317,7 +333,7 @@
         "floor": "04F",
         "label": "4F 킨더유니버스(아동ㆍ유아) | 남성패션",
         "floorKey": "04F|4F 킨더유니버스(아동ㆍ유아) | 남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814174900635_4.png"
+        "url": "floor-maps/lotte/0399/04F.svg"
       }
     ],
     "롯데-0399|송지오옴므": [
@@ -328,7 +344,7 @@
         "floor": "04F",
         "label": "4F 킨더유니버스(아동ㆍ유아) | 남성패션",
         "floorKey": "04F|4F 킨더유니버스(아동ㆍ유아) | 남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814174900635_4.png"
+        "url": "floor-maps/lotte/0399/04F.svg"
       }
     ],
     "롯데-0399|시스템옴므": [
@@ -339,7 +355,7 @@
         "floor": "04F",
         "label": "4F 킨더유니버스(아동ㆍ유아) | 남성패션",
         "floorKey": "04F|4F 킨더유니버스(아동ㆍ유아) | 남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814174900635_4.png"
+        "url": "floor-maps/lotte/0399/04F.svg"
       }
     ],
     "롯데-0399|준지": [
@@ -350,18 +366,7 @@
         "floor": "04F",
         "label": "4F 킨더유니버스(아동ㆍ유아) | 남성패션",
         "floorKey": "04F|4F 킨더유니버스(아동ㆍ유아) | 남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814174900635_4.png"
-      }
-    ],
-    "롯데-0399|질스튜어트뉴욕": [
-      {
-        "company": "롯데",
-        "store": "동탄점",
-        "storeId": "롯데-0399",
-        "floor": "04F",
-        "label": "4F 킨더유니버스(아동ㆍ유아) | 남성패션",
-        "floorKey": "04F|4F 킨더유니버스(아동ㆍ유아) | 남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814174900635_4.png"
+        "url": "floor-maps/lotte/0399/04F.svg"
       }
     ],
     "롯데-0399|타임옴므": [
@@ -372,7 +377,7 @@
         "floor": "04F",
         "label": "4F 킨더유니버스(아동ㆍ유아) | 남성패션",
         "floorKey": "04F|4F 킨더유니버스(아동ㆍ유아) | 남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814174900635_4.png"
+        "url": "floor-maps/lotte/0399/04F.svg"
       }
     ],
     "롯데-0399|CP컴퍼니": [
@@ -383,7 +388,7 @@
         "floor": "04F",
         "label": "4F 킨더유니버스(아동ㆍ유아) | 남성패션",
         "floorKey": "04F|4F 킨더유니버스(아동ㆍ유아) | 남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814174900635_4.png"
+        "url": "floor-maps/lotte/0399/04F.svg"
       }
     ],
     "롯데-0399|우영미": [
@@ -394,7 +399,7 @@
         "floor": "01F",
         "label": "1F 럭셔리 | 워치 | 주얼리",
         "floorKey": "01F|1F 럭셔리 | 워치 | 주얼리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814174627639_4.png"
+        "url": "floor-maps/lotte/0399/01F.svg"
       }
     ],
     "롯데-0001|띠어리맨": [
@@ -405,7 +410,7 @@
         "floor": "06F",
         "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
         "floorKey": "06F|6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png"
+        "url": "floor-maps/lotte/0001/06F.svg"
       }
     ],
     "롯데-0001|맨메이드카페": [
@@ -416,7 +421,7 @@
         "floor": "06F",
         "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
         "floorKey": "06F|6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png"
+        "url": "floor-maps/lotte/0001/06F.svg"
       }
     ],
     "롯데-0001|비이커": [
@@ -427,7 +432,7 @@
         "floor": "06F",
         "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
         "floorKey": "06F|6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png"
+        "url": "floor-maps/lotte/0001/06F.svg"
       }
     ],
     "롯데-0001|산드로옴므": [
@@ -438,7 +443,7 @@
         "floor": "06F",
         "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
         "floorKey": "06F|6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png"
+        "url": "floor-maps/lotte/0001/06F.svg"
       }
     ],
     "롯데-0001|솔리드옴므": [
@@ -449,7 +454,7 @@
         "floor": "06F",
         "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
         "floorKey": "06F|6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png"
+        "url": "floor-maps/lotte/0001/06F.svg"
       }
     ],
     "롯데-0001|송지오옴므": [
@@ -460,7 +465,7 @@
         "floor": "06F",
         "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
         "floorKey": "06F|6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png"
+        "url": "floor-maps/lotte/0001/06F.svg"
       }
     ],
     "롯데-0001|수트서플라이": [
@@ -471,7 +476,7 @@
         "floor": "06F",
         "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
         "floorKey": "06F|6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png"
+        "url": "floor-maps/lotte/0001/06F.svg"
       }
     ],
     "롯데-0001|슬로웨어": [
@@ -482,7 +487,7 @@
         "floor": "06F",
         "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
         "floorKey": "06F|6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png"
+        "url": "floor-maps/lotte/0001/06F.svg"
       }
     ],
     "롯데-0001|시스템옴므": [
@@ -493,7 +498,7 @@
         "floor": "06F",
         "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
         "floorKey": "06F|6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png"
+        "url": "floor-maps/lotte/0001/06F.svg"
       }
     ],
     "롯데-0001|아스페시": [
@@ -504,7 +509,7 @@
         "floor": "06F",
         "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
         "floorKey": "06F|6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png"
+        "url": "floor-maps/lotte/0001/06F.svg"
       }
     ],
     "롯데-0001|아페쎄맨": [
@@ -515,7 +520,7 @@
         "floor": "06F",
         "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
         "floorKey": "06F|6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png"
+        "url": "floor-maps/lotte/0001/06F.svg"
       }
     ],
     "롯데-0001|준지": [
@@ -526,29 +531,7 @@
         "floor": "06F",
         "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
         "floorKey": "06F|6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png"
-      }
-    ],
-    "롯데-0001|질스튜어트뉴욕": [
-      {
-        "company": "롯데",
-        "store": "본점",
-        "storeId": "롯데-0001",
-        "floor": "06F",
-        "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "floorKey": "06F|6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png"
-      }
-    ],
-    "롯데-0001|클럽모나코": [
-      {
-        "company": "롯데",
-        "store": "본점",
-        "storeId": "롯데-0001",
-        "floor": "06F",
-        "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "floorKey": "06F|6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png"
+        "url": "floor-maps/lotte/0001/06F.svg"
       }
     ],
     "롯데-0001|타임옴므": [
@@ -559,18 +542,7 @@
         "floor": "06F",
         "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
         "floorKey": "06F|6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png"
-      }
-    ],
-    "롯데-0001|CP컴퍼니": [
-      {
-        "company": "롯데",
-        "store": "본점",
-        "storeId": "롯데-0001",
-        "floor": "06F",
-        "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "floorKey": "06F|6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png"
+        "url": "floor-maps/lotte/0001/06F.svg"
       }
     ],
     "롯데-0001|DKNY맨": [
@@ -581,7 +553,7 @@
         "floor": "06F",
         "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
         "floorKey": "06F|6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png"
+        "url": "floor-maps/lotte/0001/06F.svg"
       }
     ],
     "롯데-0001|POTTERY": [
@@ -592,7 +564,7 @@
         "floor": "06F",
         "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
         "floorKey": "06F|6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png"
+        "url": "floor-maps/lotte/0001/06F.svg"
       }
     ],
     "롯데-0001|스톤아일랜드": [
@@ -603,7 +575,7 @@
         "floor": "05F",
         "label": "5F 남성해외패션",
         "floorKey": "05F|5F 남성해외패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0001/2021112418464416_7.jpg"
+        "url": "floor-maps/lotte/0001/05F.svg"
       }
     ],
     "롯데-0001|우영미": [
@@ -614,7 +586,7 @@
         "floor": "05F",
         "label": "5F 남성해외패션",
         "floorKey": "05F|5F 남성해외패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0001/2021112418464416_7.jpg"
+        "url": "floor-maps/lotte/0001/05F.svg"
       }
     ],
     "롯데-0005|띠어리맨": [
@@ -625,7 +597,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
+        "url": "floor-maps/lotte/0005/04F.svg"
       }
     ],
     "롯데-0005|바버": [
@@ -636,7 +608,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
+        "url": "floor-maps/lotte/0005/04F.svg"
       }
     ],
     "롯데-0005|비이커": [
@@ -647,7 +619,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
+        "url": "floor-maps/lotte/0005/04F.svg"
       }
     ],
     "롯데-0005|솔리드옴므": [
@@ -658,7 +630,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
+        "url": "floor-maps/lotte/0005/04F.svg"
       }
     ],
     "롯데-0005|송지오옴므": [
@@ -669,7 +641,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
+        "url": "floor-maps/lotte/0005/04F.svg"
       }
     ],
     "롯데-0005|수트서플라이": [
@@ -680,7 +652,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
+        "url": "floor-maps/lotte/0005/04F.svg"
       }
     ],
     "롯데-0005|슬로웨어": [
@@ -691,7 +663,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
+        "url": "floor-maps/lotte/0005/04F.svg"
       }
     ],
     "롯데-0005|시스템옴므": [
@@ -702,7 +674,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
+        "url": "floor-maps/lotte/0005/04F.svg"
       }
     ],
     "롯데-0005|이로맨": [
@@ -713,7 +685,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
+        "url": "floor-maps/lotte/0005/04F.svg"
       }
     ],
     "롯데-0005|준지": [
@@ -724,7 +696,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
+        "url": "floor-maps/lotte/0005/04F.svg"
       }
     ],
     "롯데-0005|지오송지오": [
@@ -735,7 +707,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
+        "url": "floor-maps/lotte/0005/04F.svg"
       }
     ],
     "롯데-0005|지제로": [
@@ -746,29 +718,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
-      }
-    ],
-    "롯데-0005|질스튜어트뉴욕": [
-      {
-        "company": "롯데",
-        "store": "부산본점",
-        "storeId": "롯데-0005",
-        "floor": "04F",
-        "label": "4F 남성패션ㅣ골프",
-        "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
-      }
-    ],
-    "롯데-0005|클럽모나코": [
-      {
-        "company": "롯데",
-        "store": "부산본점",
-        "storeId": "롯데-0005",
-        "floor": "04F",
-        "label": "4F 남성패션ㅣ골프",
-        "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
+        "url": "floor-maps/lotte/0005/04F.svg"
       }
     ],
     "롯데-0005|타임옴므": [
@@ -779,29 +729,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
-      }
-    ],
-    "롯데-0005|톰그레이하운드맨": [
-      {
-        "company": "롯데",
-        "store": "부산본점",
-        "storeId": "롯데-0005",
-        "floor": "04F",
-        "label": "4F 남성패션ㅣ골프",
-        "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
-      }
-    ],
-    "롯데-0005|플랫폼플레이스": [
-      {
-        "company": "롯데",
-        "store": "부산본점",
-        "storeId": "롯데-0005",
-        "floor": "04F",
-        "label": "4F 남성패션ㅣ골프",
-        "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
+        "url": "floor-maps/lotte/0005/04F.svg"
       }
     ],
     "롯데-0005|CP컴퍼니": [
@@ -812,7 +740,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
+        "url": "floor-maps/lotte/0005/04F.svg"
       }
     ],
     "롯데-0005|DKNY맨": [
@@ -823,7 +751,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg"
+        "url": "floor-maps/lotte/0005/04F.svg"
       }
     ],
     "롯데-0349|띠어리맨": [
@@ -834,18 +762,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0349/20211006160611353_5.jpg"
-      }
-    ],
-    "롯데-0349|송지오옴므": [
-      {
-        "company": "롯데",
-        "store": "수원점",
-        "storeId": "롯데-0349",
-        "floor": "04F",
-        "label": "4F 남성패션ㅣ골프",
-        "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0349/20211006160611353_5.jpg"
+        "url": "floor-maps/lotte/0349/04F.svg"
       }
     ],
     "롯데-0349|시스템옴므": [
@@ -856,29 +773,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0349/20211006160611353_5.jpg"
-      }
-    ],
-    "롯데-0349|이로맨": [
-      {
-        "company": "롯데",
-        "store": "수원점",
-        "storeId": "롯데-0349",
-        "floor": "04F",
-        "label": "4F 남성패션ㅣ골프",
-        "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0349/20211006160611353_5.jpg"
-      }
-    ],
-    "롯데-0349|클럽모나코": [
-      {
-        "company": "롯데",
-        "store": "수원점",
-        "storeId": "롯데-0349",
-        "floor": "04F",
-        "label": "4F 남성패션ㅣ골프",
-        "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0349/20211006160611353_5.jpg"
+        "url": "floor-maps/lotte/0349/04F.svg"
       }
     ],
     "롯데-0349|타임옴므": [
@@ -889,7 +784,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0349/20211006160611353_5.jpg"
+        "url": "floor-maps/lotte/0349/04F.svg"
       }
     ],
     "롯데-0349|스톤아일랜드": [
@@ -900,7 +795,7 @@
         "floor": "02F",
         "label": "2F 해외패션",
         "floorKey": "02F|2F 해외패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0349/20211208200306601_1.jpg"
+        "url": "floor-maps/lotte/0349/02F.svg"
       }
     ],
     "롯데-0010|시스템옴므": [
@@ -911,18 +806,7 @@
         "floor": "06F",
         "label": "6F 남성패션ㅣ아웃도어ㅣ사은품증정ㅣ롯데상품권",
         "floorKey": "06F|6F 남성패션ㅣ아웃도어ㅣ사은품증정ㅣ롯데상품권",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202409/0010/20240909152036312_1.jpg"
-      }
-    ],
-    "롯데-0010|클럽모나코": [
-      {
-        "company": "롯데",
-        "store": "영등포",
-        "storeId": "롯데-0010",
-        "floor": "06F",
-        "label": "6F 남성패션ㅣ아웃도어ㅣ사은품증정ㅣ롯데상품권",
-        "floorKey": "06F|6F 남성패션ㅣ아웃도어ㅣ사은품증정ㅣ롯데상품권",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202409/0010/20240909152036312_1.jpg"
+        "url": "floor-maps/lotte/0010/06F.svg"
       }
     ],
     "롯데-0344|띠어리맨": [
@@ -933,7 +817,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0344/20211020123028539_1.jpg"
+        "url": "floor-maps/lotte/0344/04F.svg"
       }
     ],
     "롯데-0344|바버": [
@@ -944,18 +828,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0344/20211020123028539_1.jpg"
-      }
-    ],
-    "롯데-0344|비이커": [
-      {
-        "company": "롯데",
-        "store": "인천점",
-        "storeId": "롯데-0344",
-        "floor": "04F",
-        "label": "4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
-        "floorKey": "04F|4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0344/20211020123028539_1.jpg"
+        "url": "floor-maps/lotte/0344/04F.svg"
       }
     ],
     "롯데-0344|솔리드옴므": [
@@ -966,7 +839,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0344/20211020123028539_1.jpg"
+        "url": "floor-maps/lotte/0344/04F.svg"
       }
     ],
     "롯데-0344|송지오옴므": [
@@ -977,7 +850,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0344/20211020123028539_1.jpg"
+        "url": "floor-maps/lotte/0344/04F.svg"
       }
     ],
     "롯데-0344|수트서플라이": [
@@ -988,7 +861,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0344/20211020123028539_1.jpg"
+        "url": "floor-maps/lotte/0344/04F.svg"
       }
     ],
     "롯데-0344|시스템옴므": [
@@ -999,7 +872,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0344/20211020123028539_1.jpg"
+        "url": "floor-maps/lotte/0344/04F.svg"
       }
     ],
     "롯데-0344|아페쎄맨": [
@@ -1010,7 +883,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0344/20211020123028539_1.jpg"
+        "url": "floor-maps/lotte/0344/04F.svg"
       }
     ],
     "롯데-0344|준지": [
@@ -1021,18 +894,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0344/20211020123028539_1.jpg"
-      }
-    ],
-    "롯데-0344|클럽모나코": [
-      {
-        "company": "롯데",
-        "store": "인천점",
-        "storeId": "롯데-0344",
-        "floor": "04F",
-        "label": "4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
-        "floorKey": "04F|4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0344/20211020123028539_1.jpg"
+        "url": "floor-maps/lotte/0344/04F.svg"
       }
     ],
     "롯데-0344|타임옴므": [
@@ -1043,18 +905,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0344/20211020123028539_1.jpg"
-      }
-    ],
-    "롯데-0344|톰그레이하운드맨": [
-      {
-        "company": "롯데",
-        "store": "인천점",
-        "storeId": "롯데-0344",
-        "floor": "04F",
-        "label": "4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
-        "floorKey": "04F|4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0344/20211020123028539_1.jpg"
+        "url": "floor-maps/lotte/0344/04F.svg"
       }
     ],
     "롯데-0344|DKNY맨": [
@@ -1065,7 +916,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0344/20211020123028539_1.jpg"
+        "url": "floor-maps/lotte/0344/04F.svg"
       }
     ],
     "롯데-0011|띠어리맨": [
@@ -1076,7 +927,7 @@
         "floor": "06F",
         "label": "6F 남성패션 Ι 셔츠ㆍ타이",
         "floorKey": "06F|6F 남성패션 Ι 셔츠ㆍ타이",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202602/0011/20260210143553475_7.png"
+        "url": "floor-maps/lotte/0011/06F.svg"
       }
     ],
     "롯데-0011|DKNY맨": [
@@ -1087,7 +938,7 @@
         "floor": "06F",
         "label": "6F 남성패션 Ι 셔츠ㆍ타이",
         "floorKey": "06F|6F 남성패션 Ι 셔츠ㆍ타이",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202602/0011/20260210143553475_7.png"
+        "url": "floor-maps/lotte/0011/06F.svg"
       }
     ],
     "롯데-0002|띠어리맨": [
@@ -1098,7 +949,7 @@
         "floor": "05F",
         "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
         "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
+        "url": "floor-maps/lotte/0002/05F.svg"
       }
     ],
     "롯데-0002|맨온더분": [
@@ -1109,7 +960,7 @@
         "floor": "05F",
         "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
         "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
+        "url": "floor-maps/lotte/0002/05F.svg"
       }
     ],
     "롯데-0002|바버": [
@@ -1120,7 +971,7 @@
         "floor": "05F",
         "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
         "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
+        "url": "floor-maps/lotte/0002/05F.svg"
       }
     ],
     "롯데-0002|비이커": [
@@ -1131,7 +982,7 @@
         "floor": "05F",
         "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
         "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
+        "url": "floor-maps/lotte/0002/05F.svg"
       }
     ],
     "롯데-0002|솔리드옴므": [
@@ -1142,7 +993,7 @@
         "floor": "05F",
         "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
         "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
+        "url": "floor-maps/lotte/0002/05F.svg"
       }
     ],
     "롯데-0002|송지오옴므": [
@@ -1153,7 +1004,7 @@
         "floor": "05F",
         "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
         "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
+        "url": "floor-maps/lotte/0002/05F.svg"
       }
     ],
     "롯데-0002|수트서플라이": [
@@ -1164,7 +1015,7 @@
         "floor": "05F",
         "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
         "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
+        "url": "floor-maps/lotte/0002/05F.svg"
       }
     ],
     "롯데-0002|슬로웨어": [
@@ -1175,7 +1026,7 @@
         "floor": "05F",
         "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
         "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
+        "url": "floor-maps/lotte/0002/05F.svg"
       }
     ],
     "롯데-0002|시스템옴므": [
@@ -1186,7 +1037,7 @@
         "floor": "05F",
         "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
         "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
+        "url": "floor-maps/lotte/0002/05F.svg"
       }
     ],
     "롯데-0002|알레그리": [
@@ -1197,7 +1048,7 @@
         "floor": "05F",
         "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
         "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
+        "url": "floor-maps/lotte/0002/05F.svg"
       }
     ],
     "롯데-0002|이로맨": [
@@ -1208,73 +1059,7 @@
         "floor": "05F",
         "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
         "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
-      }
-    ],
-    "롯데-0002|준지": [
-      {
-        "company": "롯데",
-        "store": "잠실점",
-        "storeId": "롯데-0002",
-        "floor": "05F",
-        "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
-      }
-    ],
-    "롯데-0002|지오송지오": [
-      {
-        "company": "롯데",
-        "store": "잠실점",
-        "storeId": "롯데-0002",
-        "floor": "05F",
-        "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
-      }
-    ],
-    "롯데-0002|지제로": [
-      {
-        "company": "롯데",
-        "store": "잠실점",
-        "storeId": "롯데-0002",
-        "floor": "05F",
-        "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
-      }
-    ],
-    "롯데-0002|질스튜어트뉴욕": [
-      {
-        "company": "롯데",
-        "store": "잠실점",
-        "storeId": "롯데-0002",
-        "floor": "05F",
-        "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
-      }
-    ],
-    "롯데-0002|클럽모나코": [
-      {
-        "company": "롯데",
-        "store": "잠실점",
-        "storeId": "롯데-0002",
-        "floor": "05F",
-        "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
-      }
-    ],
-    "롯데-0002|타임옴므": [
-      {
-        "company": "롯데",
-        "store": "잠실점",
-        "storeId": "롯데-0002",
-        "floor": "05F",
-        "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
+        "url": "floor-maps/lotte/0002/05F.svg"
       }
     ],
     "롯데-0002|톰그레이하운드맨": [
@@ -1285,7 +1070,7 @@
         "floor": "05F",
         "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
         "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
+        "url": "floor-maps/lotte/0002/05F.svg"
       }
     ],
     "롯데-0002|DKNY맨": [
@@ -1296,7 +1081,7 @@
         "floor": "05F",
         "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
         "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg"
+        "url": "floor-maps/lotte/0002/05F.svg"
       }
     ],
     "롯데-0348|띠어리맨": [
@@ -1307,7 +1092,7 @@
         "floor": "04F",
         "label": "4F 럭셔리 맨즈",
         "floorKey": "04F|4F 럭셔리 맨즈",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202309/0348/20230914140926558_5.jpg"
+        "url": "floor-maps/lotte/0348/04F.svg"
       }
     ],
     "롯데-0348|스톤아일랜드": [
@@ -1318,7 +1103,7 @@
         "floor": "04F",
         "label": "4F 럭셔리 맨즈",
         "floorKey": "04F|4F 럭셔리 맨즈",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202309/0348/20230914140926558_5.jpg"
+        "url": "floor-maps/lotte/0348/04F.svg"
       }
     ],
     "롯데-0348|우영미": [
@@ -1329,7 +1114,7 @@
         "floor": "04F",
         "label": "4F 럭셔리 맨즈",
         "floorKey": "04F|4F 럭셔리 맨즈",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202309/0348/20230914140926558_5.jpg"
+        "url": "floor-maps/lotte/0348/04F.svg"
       }
     ],
     "롯데-0348|준지": [
@@ -1340,7 +1125,7 @@
         "floor": "04F",
         "label": "4F 럭셔리 맨즈",
         "floorKey": "04F|4F 럭셔리 맨즈",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202309/0348/20230914140926558_5.jpg"
+        "url": "floor-maps/lotte/0348/04F.svg"
       }
     ],
     "롯데-0348|CP컴퍼니": [
@@ -1351,7 +1136,7 @@
         "floor": "04F",
         "label": "4F 럭셔리 맨즈",
         "floorKey": "04F|4F 럭셔리 맨즈",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202309/0348/20230914140926558_5.jpg"
+        "url": "floor-maps/lotte/0348/04F.svg"
       }
     ],
     "롯데-0025|띠어리맨": [
@@ -1359,10 +1144,19 @@
         "company": "롯데",
         "store": "전주점",
         "storeId": "롯데-0025",
+        "floor": "02F",
+        "label": "2F 캐릭터ㅣ컨템포러리ㅣ영캐릭터ㅣ영캐주얼",
+        "floorKey": "02F|2F 캐릭터ㅣ컨템포러리ㅣ영캐릭터ㅣ영캐주얼",
+        "url": "floor-maps/lotte/0025/02F.svg"
+      },
+      {
+        "company": "롯데",
+        "store": "전주점",
+        "storeId": "롯데-0025",
         "floor": "04F",
         "label": "4F 정장ㅣ셔츠ㅣ넥타이ㅣ아웃도어ㅣ트래디셔널",
         "floorKey": "04F|4F 정장ㅣ셔츠ㅣ넥타이ㅣ아웃도어ㅣ트래디셔널",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0025/2022090615140752_7.png"
+        "url": "floor-maps/lotte/0025/04F.svg"
       }
     ],
     "롯데-0025|바버": [
@@ -1373,7 +1167,7 @@
         "floor": "04F",
         "label": "4F 정장ㅣ셔츠ㅣ넥타이ㅣ아웃도어ㅣ트래디셔널",
         "floorKey": "04F|4F 정장ㅣ셔츠ㅣ넥타이ㅣ아웃도어ㅣ트래디셔널",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0025/2022090615140752_7.png"
+        "url": "floor-maps/lotte/0025/04F.svg"
       }
     ],
     "롯데-0025|시스템옴므": [
@@ -1384,7 +1178,7 @@
         "floor": "04F",
         "label": "4F 정장ㅣ셔츠ㅣ넥타이ㅣ아웃도어ㅣ트래디셔널",
         "floorKey": "04F|4F 정장ㅣ셔츠ㅣ넥타이ㅣ아웃도어ㅣ트래디셔널",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0025/2022090615140752_7.png"
+        "url": "floor-maps/lotte/0025/04F.svg"
       }
     ],
     "롯데-0025|준지": [
@@ -1395,7 +1189,7 @@
         "floor": "04F",
         "label": "4F 정장ㅣ셔츠ㅣ넥타이ㅣ아웃도어ㅣ트래디셔널",
         "floorKey": "04F|4F 정장ㅣ셔츠ㅣ넥타이ㅣ아웃도어ㅣ트래디셔널",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0025/2022090615140752_7.png"
+        "url": "floor-maps/lotte/0025/04F.svg"
       }
     ],
     "롯데-0025|지오송지오": [
@@ -1406,7 +1200,7 @@
         "floor": "04F",
         "label": "4F 정장ㅣ셔츠ㅣ넥타이ㅣ아웃도어ㅣ트래디셔널",
         "floorKey": "04F|4F 정장ㅣ셔츠ㅣ넥타이ㅣ아웃도어ㅣ트래디셔널",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0025/2022090615140752_7.png"
+        "url": "floor-maps/lotte/0025/04F.svg"
       }
     ],
     "롯데-0025|타임옴므": [
@@ -1417,7 +1211,7 @@
         "floor": "04F",
         "label": "4F 정장ㅣ셔츠ㅣ넥타이ㅣ아웃도어ㅣ트래디셔널",
         "floorKey": "04F|4F 정장ㅣ셔츠ㅣ넥타이ㅣ아웃도어ㅣ트래디셔널",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0025/2022090615140752_7.png"
+        "url": "floor-maps/lotte/0025/04F.svg"
       }
     ],
     "롯데-0017|띠어리맨": [
@@ -1428,7 +1222,7 @@
         "floor": "05F",
         "label": "5F 남성패션ㅣ트래디셔널ㅣ바버샵",
         "floorKey": "05F|5F 남성패션ㅣ트래디셔널ㅣ바버샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202412/0017/202412171453102_0.jpg"
+        "url": "floor-maps/lotte/0017/05F.svg"
       }
     ],
     "롯데-0017|바버": [
@@ -1439,7 +1233,7 @@
         "floor": "05F",
         "label": "5F 남성패션ㅣ트래디셔널ㅣ바버샵",
         "floorKey": "05F|5F 남성패션ㅣ트래디셔널ㅣ바버샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202412/0017/202412171453102_0.jpg"
+        "url": "floor-maps/lotte/0017/05F.svg"
       }
     ],
     "롯데-0017|솔리드옴므": [
@@ -1450,7 +1244,7 @@
         "floor": "05F",
         "label": "5F 남성패션ㅣ트래디셔널ㅣ바버샵",
         "floorKey": "05F|5F 남성패션ㅣ트래디셔널ㅣ바버샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202412/0017/202412171453102_0.jpg"
+        "url": "floor-maps/lotte/0017/05F.svg"
       }
     ],
     "롯데-0017|송지오옴므": [
@@ -1461,7 +1255,7 @@
         "floor": "05F",
         "label": "5F 남성패션ㅣ트래디셔널ㅣ바버샵",
         "floorKey": "05F|5F 남성패션ㅣ트래디셔널ㅣ바버샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202412/0017/202412171453102_0.jpg"
+        "url": "floor-maps/lotte/0017/05F.svg"
       }
     ],
     "롯데-0017|시스템옴므": [
@@ -1472,7 +1266,7 @@
         "floor": "05F",
         "label": "5F 남성패션ㅣ트래디셔널ㅣ바버샵",
         "floorKey": "05F|5F 남성패션ㅣ트래디셔널ㅣ바버샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202412/0017/202412171453102_0.jpg"
+        "url": "floor-maps/lotte/0017/05F.svg"
       }
     ],
     "롯데-0017|지오송지오": [
@@ -1483,18 +1277,7 @@
         "floor": "05F",
         "label": "5F 남성패션ㅣ트래디셔널ㅣ바버샵",
         "floorKey": "05F|5F 남성패션ㅣ트래디셔널ㅣ바버샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202412/0017/202412171453102_0.jpg"
-      }
-    ],
-    "롯데-0017|질스튜어트뉴욕": [
-      {
-        "company": "롯데",
-        "store": "창원점",
-        "storeId": "롯데-0017",
-        "floor": "05F",
-        "label": "5F 남성패션ㅣ트래디셔널ㅣ바버샵",
-        "floorKey": "05F|5F 남성패션ㅣ트래디셔널ㅣ바버샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202412/0017/202412171453102_0.jpg"
+        "url": "floor-maps/lotte/0017/05F.svg"
       }
     ],
     "롯데-0017|클럽모나코": [
@@ -1505,7 +1288,7 @@
         "floor": "05F",
         "label": "5F 남성패션ㅣ트래디셔널ㅣ바버샵",
         "floorKey": "05F|5F 남성패션ㅣ트래디셔널ㅣ바버샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202412/0017/202412171453102_0.jpg"
+        "url": "floor-maps/lotte/0017/05F.svg"
       }
     ],
     "롯데-0017|타임옴므": [
@@ -1516,7 +1299,7 @@
         "floor": "05F",
         "label": "5F 남성패션ㅣ트래디셔널ㅣ바버샵",
         "floorKey": "05F|5F 남성패션ㅣ트래디셔널ㅣ바버샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202412/0017/202412171453102_0.jpg"
+        "url": "floor-maps/lotte/0017/05F.svg"
       }
     ],
     "롯데-0004|시스템옴므": [
@@ -1527,7 +1310,7 @@
         "floor": "05F",
         "label": "5F 남성캐주얼ㅣ트래디셔널ㅣ아웃도어",
         "floorKey": "05F|5F 남성캐주얼ㅣ트래디셔널ㅣ아웃도어",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202409/0004/20240912113853462_9.png"
+        "url": "floor-maps/lotte/0004/05F.svg"
       }
     ],
     "롯데-0341|띠어리맨": [
@@ -1538,7 +1321,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ아웃도어ㅣ바버샵",
         "floorKey": "04F|4F 남성패션ㅣ아웃도어ㅣ바버샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0341/20220929133143899_0.jpg"
+        "url": "floor-maps/lotte/0341/04F.svg"
       }
     ],
     "롯데-0341|솔리드옴므": [
@@ -1549,7 +1332,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ아웃도어ㅣ바버샵",
         "floorKey": "04F|4F 남성패션ㅣ아웃도어ㅣ바버샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0341/20220929133143899_0.jpg"
+        "url": "floor-maps/lotte/0341/04F.svg"
       }
     ],
     "롯데-0341|시스템옴므": [
@@ -1560,18 +1343,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ아웃도어ㅣ바버샵",
         "floorKey": "04F|4F 남성패션ㅣ아웃도어ㅣ바버샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0341/20220929133143899_0.jpg"
-      }
-    ],
-    "롯데-0341|이로맨": [
-      {
-        "company": "롯데",
-        "store": "평촌점",
-        "storeId": "롯데-0341",
-        "floor": "04F",
-        "label": "4F 남성패션ㅣ아웃도어ㅣ바버샵",
-        "floorKey": "04F|4F 남성패션ㅣ아웃도어ㅣ바버샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0341/20220929133143899_0.jpg"
+        "url": "floor-maps/lotte/0341/04F.svg"
       }
     ],
     "롯데-0341|지오송지오": [
@@ -1582,7 +1354,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ아웃도어ㅣ바버샵",
         "floorKey": "04F|4F 남성패션ㅣ아웃도어ㅣ바버샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0341/20220929133143899_0.jpg"
+        "url": "floor-maps/lotte/0341/04F.svg"
       }
     ],
     "롯데-0341|클럽모나코": [
@@ -1590,10 +1362,19 @@
         "company": "롯데",
         "store": "평촌점",
         "storeId": "롯데-0341",
+        "floor": "02F",
+        "label": "2F 영캐주얼ㅣ무신사 스탠다드",
+        "floorKey": "02F|2F 영캐주얼ㅣ무신사 스탠다드",
+        "url": "floor-maps/lotte/0341/02F.svg"
+      },
+      {
+        "company": "롯데",
+        "store": "평촌점",
+        "storeId": "롯데-0341",
         "floor": "04F",
         "label": "4F 남성패션ㅣ아웃도어ㅣ바버샵",
         "floorKey": "04F|4F 남성패션ㅣ아웃도어ㅣ바버샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0341/20220929133143899_0.jpg"
+        "url": "floor-maps/lotte/0341/04F.svg"
       }
     ],
     "롯데-0341|타임옴므": [
@@ -1604,7 +1385,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ아웃도어ㅣ바버샵",
         "floorKey": "04F|4F 남성패션ㅣ아웃도어ㅣ바버샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0341/20220929133143899_0.jpg"
+        "url": "floor-maps/lotte/0341/04F.svg"
       }
     ],
     "롯데-0341|DKNY맨": [
@@ -1615,7 +1396,7 @@
         "floor": "04F",
         "label": "4F 남성패션ㅣ아웃도어ㅣ바버샵",
         "floorKey": "04F|4F 남성패션ㅣ아웃도어ㅣ바버샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0341/20220929133143899_0.jpg"
+        "url": "floor-maps/lotte/0341/04F.svg"
       }
     ],
     "현대-B00142000|띠어리맨": [

@@ -6,6 +6,8 @@ const CONFIG = require('../config');
 const {
   htmlValue, languageText, safeFloorFileName, renderHyundaiFloorSvg,
   isManagedFloor, activeBrandsByStore, verifyFloorEntries,
+  sanitizeOfficialSvg, addSvgClassById, renderLotteFloorSvg,
+  lottePoiMetadata, lotteFloorViewBox, scopeLotteFloorData,
   buildBrandFloorIndex, detectFloorChanges,
 } = require('../floor-crawler');
 
@@ -51,6 +53,51 @@ test('현대 도면에서 관리 브랜드 라벨과 구획을 강조한다', ()
   assert.doesNotMatch(normalSvg, /managed-brand|★ 타임옴므|data-managed-brands/);
 });
 
+test('롯데 최신 SVG는 매장 구획과 POI 위치를 강조하고 일반판에는 남기지 않는다', () => {
+  const rawSvg = '<svg xmlns="http://www.w3.org/2000/svg"><path id="object-1" class="" onload="bad()"/><g id="poi-1" class=""><text>타임옴므</text></g><script>bad()</script></svg>';
+  const poi = { id:'poi-1', objectId:'object-1', title:'타임옴므', position:{ x:500, y:400 } };
+  const floor = { size:{ width:1000, height:800 } };
+  const tracked = [{ poi, brands:['타임옴므'] }];
+  const normal = renderLotteFloorSvg(rawSvg, floor, '잠실점', '05F', tracked, false);
+  const highlighted = renderLotteFloorSvg(rawSvg, floor, '잠실점', '05F', tracked, true);
+  assert.doesNotMatch(normal, /tracked-|★|<script|onload=/);
+  assert.match(highlighted, /class="tracked-object"/);
+  assert.match(highlighted, /class="tracked-poi"/);
+  assert.match(highlighted, /class="tracked-star"/);
+  assert.match(highlighted, />★<\/text>/);
+  assert.equal(addSvgClassById('<svg><path id="x"/></svg>', 'x', 'marked'), '<svg><path id="x" class="marked"/></svg>');
+  assert.equal(sanitizeOfficialSvg('<svg onclick="x()"><script>x()</script></svg>'), '<svg></svg>');
+});
+
+test('롯데 복합점 도면은 해당 점포와 층의 POI만 선별해 크롭한다', () => {
+  const definitions = [
+    { fieldKey:'cstrCd' }, { fieldKey:'cstrTownCd' }, { fieldKey:'cstrFlrCd' },
+  ];
+  const poi = (id, x, store, floor) => ({
+    id, objectId:`object-${id}`, title:id, position:{ x, y:500 },
+    metadatas:[
+      { fieldRef:0, valueSingle:store },
+      { fieldRef:1, valueSingle:'TOWN' },
+      { fieldRef:2, valueSingle:floor },
+    ],
+  });
+  const floorData = {
+    size:{ width:10000, height:5000 }, metadataFieldDefs:definitions,
+    pois:[poi('target', 2000, '0002', '05'), poi('other', 8000, '0348', '05')],
+    objects:[
+      { id:'object-target', position:{ x:2000, y:500 }, size:{ width:200, height:100 } },
+      { id:'object-other', position:{ x:8000, y:500 }, size:{ width:200, height:100 } },
+    ],
+  };
+  assert.equal(lottePoiMetadata(floorData.pois[0], floorData).cstrCd, '0002');
+  const scoped = scopeLotteFloorData(floorData, '0002', '05', 'TOWN');
+  assert.deepEqual(scoped.pois.map(item => item.id), ['target']);
+  assert.ok(scoped.viewBox.x < 2000 && scoped.viewBox.x + scoped.viewBox.width < 8000);
+  assert.deepEqual(lotteFloorViewBox(floorData, [], { pcXcnts:7000, pcYcnts:2000 }), {
+    x:4900, y:500, width:4200, height:3000,
+  });
+});
+
 test('공식 남성층과 현재 입점 브랜드를 교차 검증한다', () => {
   const hyundai = CONFIG.getStore('현대', '목동');
   assert.equal(isManagedFloor(hyundai, { floor:'4F', label:'4F 층 안내도' }), false);
@@ -93,6 +140,23 @@ test('현대 13개 지점의 생성된 SVG 도면이 데이터 파일과 연결�
       assert.equal(floor.source, 'hyundai-dabeeo');
       assert.ok(floor.url.startsWith(`floor-maps/hyundai/${store.code}/`));
       assert.ok(fs.existsSync(path.join(__dirname, '..', floor.url)), `${floor.url} 파일 없음`);
+    });
+  });
+});
+
+test('롯데 19개 지점의 최신 일반·강조 SVG가 모두 연결된다', () => {
+  const payload = require('../floor-images.json');
+  const stores = CONFIG.storeRows.filter(store => store.company === '롯데');
+  assert.equal(stores.length, 19);
+  stores.forEach(store => {
+    const floors = payload.data[store.code];
+    assert.ok(Array.isArray(floors) && floors.length > 0, `${store.name} 도면 없음`);
+    floors.forEach(floor => {
+      assert.equal(floor.source, 'lotte-dabeeo');
+      assert.ok(floor.url.startsWith(`floor-maps/lotte/${store.code}/`));
+      assert.ok(floor.highlightUrl.startsWith(`floor-maps/lotte/${store.code}/`));
+      assert.ok(fs.existsSync(path.join(__dirname, '..', floor.url)), `${floor.url} 파일 없음`);
+      assert.ok(fs.existsSync(path.join(__dirname, '..', floor.highlightUrl)), `${floor.highlightUrl} 파일 없음`);
     });
   });
 });

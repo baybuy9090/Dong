@@ -290,6 +290,14 @@
     }
     .floor-item { margin-bottom:14px; padding:7px; border-radius:10px; transition:background 0.2s, box-shadow 0.2s; }
     .floor-item.floor-target { background:#fff7df; box-shadow:0 0 0 2px #f59e0b inset; }
+    .floor-map-frame { position:relative; overflow:hidden; border:1px solid #eee; border-radius:8px; background:#f7f8f7; }
+    .floor-map-image { display:block; width:100%; max-width:100%; }
+    .floor-map-overlay {
+      position:absolute; top:9px; right:9px; z-index:2; max-width:min(54%, 360px); max-height:60%; overflow:auto;
+      padding:8px 10px; border:1px solid #f6c15c; border-radius:9px; background:rgba(255,247,223,0.94);
+      color:#7a4300; font-size:10.5px; font-weight:700; line-height:1.55; box-shadow:0 3px 12px rgba(88,55,5,0.18);
+    }
+    .floor-map-overlay strong { display:block; margin-bottom:2px; font-size:11px; }
     .floor-history summary { cursor:pointer; font-size:12.5px; font-weight:700; color:#444; }
     .floor-history-row { padding:7px 0; border-bottom:1px solid #f2f2f2; font-size:11.5px; }
 
@@ -1269,6 +1277,9 @@
       document.querySelectorAll('.managed-brand-list').forEach(list => {
         list.style.display = floorHighlightsOn ? 'flex' : 'none';
       });
+      document.querySelectorAll('.floor-map-overlay').forEach(overlay => {
+        overlay.style.display = floorHighlightsOn ? 'block' : 'none';
+      });
     }
 
     function renderFloorView() {
@@ -1300,10 +1311,13 @@
           const galleryHtml = floors.length
             ? `<div id="floorImgs-${code}" style="display:none;padding:10px 4px 14px;">
                 ${floors.map(f => {
-                  const ext = (f.url.match(/\.(jpg|jpeg|png|gif|webp)(?:\?.*)?$/i) || ['', 'jpg'])[1];
+                  const ext = (f.url.match(/\.(svg|jpg|jpeg|png|gif|webp)(?:\?.*)?$/i) || ['', 'jpg'])[1];
                   const filename = `${e.company}_${e.store}_${f.floor || f.label}.${ext}`.replace(/[\\/:*?"<>|]/g, '');
                   const brandChips = (f.brands || []).map(brand => `<span class="managed-brand-chip">★ ${brand}</span>`).join('');
                   const imageUrl = floorHighlightsOn && f.highlightUrl ? f.highlightUrl : f.url;
+                  const fallbackOverlay = brandChips && !f.highlightUrl
+                    ? `<div class="floor-map-overlay" style="display:${floorHighlightsOn ? 'block' : 'none'};"><strong>★ 관리 브랜드 ${(f.brands || []).length}개</strong>${(f.brands || []).join(' · ')}</div>`
+                    : '';
                   return `
                   <div class="floor-item" id="floorItem-${code}-${floorDomId(`${f.floor}|${f.label}`)}">
                     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
@@ -1311,7 +1325,10 @@
                       <button class="btn btn-primary btn-sm" onclick="downloadFloorImage('${f.url}', '${filename}')">다운로드</button>
                     </div>
                     ${brandChips ? `<div class="managed-brand-list" aria-label="이 층의 관리 브랜드" style="display:${floorHighlightsOn ? 'flex' : 'none'};">${brandChips}</div>` : ''}
-                    <img class="floor-map-image" src="${imageUrl}" data-normal-url="${f.url}" data-highlight-url="${f.highlightUrl || ''}" alt="${f.label}" loading="lazy" style="max-width:100%;border:1px solid #eee;border-radius:8px;">
+                    <div class="floor-map-frame">
+                      <img class="floor-map-image" src="${imageUrl}" data-normal-url="${f.url}" data-highlight-url="${f.highlightUrl || ''}" alt="${f.label}" loading="lazy">
+                      ${fallbackOverlay}
+                    </div>
                   </div>`;
                 }).join('')}
               </div>`

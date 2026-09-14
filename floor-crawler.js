@@ -1,5 +1,5 @@
-// 지점별 층 안내도 크롤러 — 신세계/롯데는 공식 이미지 URL을 수집하고,
-// 현대는 공식 페이지가 사용하는 다비오 벡터 데이터를 정적 SVG로 변환한다.
+// 지점별 층 안내도 크롤러 — 신세계는 공식 CMS 이미지와 층별 브랜드를 수집하고,
+// 롯데/현대는 공식 페이지가 사용하는 다비오 벡터 데이터를 정적 SVG로 변환한다.
 // 결과는 floor-images.json에 지점 코드 기준으로 병합한다.
 const fs = require('fs');
 const path = require('path');
@@ -59,11 +59,12 @@ async function fetchShinsegaeFloors(storeCode) {
   return floors;
 }
 
-// ── 롯데: 기본은 인터랙티브 쇼핑맵이지만, 그와 별개로 "층별안내도"라는 평면
-// 이미지 기능이 병행 제공됨 (data-flrImgPathWeb/data-flrImgNmWeb). 지점 페이지에서
-// 층 목록(town/floor 코드)을 얻은 뒤, 층마다 floorDetailAjax를 호출해 이미지 경로를 얻음. ──
+// ── 롯데: 공식 페이지의 "층별안내도" JPG는 최신 쇼핑맵과 별도로 관리되는
+// 구형 이미지일 수 있다. 실제 화면이 사용하는 shoppingMapAjax + Dabeeo API 4의
+// 최신 층 SVG/POI/구획 데이터를 받아 일반·강조 SVG를 각각 만든다. ──
 const LOTTE_STORES = Object.fromEntries(CONFIG.storeRows.filter(s => s.company === '롯데').map(s => [s.name, s.code]));
 const HYUNDAI_STORES = Object.fromEntries(CONFIG.storeRows.filter(s => s.company === '현대').map(s => [s.name, s.code]));
+const DABEEO4_DATA_BASE = 'https://data.maps.dabeeo.com/api';
 
 // 현대 공식 층별 안내의 현재 남성 카테고리 층. 지도 POI에는 성별 정보가 없어서
 // 여성층의 띠어리/DKNY/클럽모나코가 남성 브랜드로 오인될 수 있으므로 공식 층
@@ -110,61 +111,166 @@ function verifyFloorEntries(store, floors, activeBrands) {
   }));
 }
 
-function extractLotteFloorItems(html) {
-  const items = [];
-  const seen = new Set();
-  const blockRe = /<div floor-index="([^"]*)"[^>]*class="floor-item"[\s\S]{0,400}?>/g;
-  let m;
-  while ((m = blockRe.exec(html)) !== null) {
-    const block = m[0];
-    const townCd = (block.match(/data-cstrTownCd="([^"]*)"/i) || [])[1];
-    const townNm = (block.match(/data-cstrTownNm="([^"]*)"/i) || [])[1];
-    const flrCd = (block.match(/data-flrCd="([^"]*)"/i) || [])[1];
-    // '백화점'은 일반 지점의 본관, '본동'은 잠실에비뉴엘처럼 별관 단독 지점의 본관 명칭
-    if (!townCd || !flrCd || (townNm !== '백화점' && townNm !== '본동')) continue;
-    const key = townCd + '|' + flrCd;
-    if (seen.has(key)) continue;
-    seen.add(key);
-    items.push({ townCd, flrCd });
+async function fetchLotteShoppingMapConfig(cstrCd) {
+  const url = `https://www.lotteshopping.com/service/shoppingMapAjax?cstrCd=${cstrCd}`;
+  const res = await fetch(url, {
+    headers: { ...UA, 'X-Requested-With':'XMLHttpRequest', Referer:`https://www.lotteshopping.com/store/floor?cstrCd=${cstrCd}` },
+    signal: AbortSignal.timeout(30000),
+  });
+  if (!res.ok) throw new Error(`쇼핑맵 설정 HTTP ${res.status}`);
+  const payload = await res.json();
+  if (payload.resultCode !== '0000' || !payload.shpgMap?.clientId || !payload.shpgMap?.secret) {
+    throw new Error(payload.resultMsg || '쇼핑맵 인증값 없음');
   }
-  return items;
+  return payload;
 }
 
-async function fetchLotteFloorDetail(cstrCd, townCd, flrCd) {
-  const url = `https://www.lotteshopping.com/store/floorDetailAjax?cstrCd=${cstrCd}&cstrTownCd=${townCd}&flrCd=${flrCd}`;
-  const res = await fetch(url, { headers: { ...UA, 'X-Requested-With': 'XMLHttpRequest' } });
-  if (!res.ok) throw new Error('HTTP ' + res.status);
-  const html = await res.text();
-  const imgPath = (html.match(/data-flrImgPathWeb="([^"]*)"/i) || [])[1];
-  const imgNm = (html.match(/data-flrImgNmWeb="([^"]*)"/i) || [])[1];
-  const floorTitleM = html.match(/<b class="s-title6-b">([^<]*)<\/b>\s*<span[^>]*>([^<]*)<\/span>/);
-  const label = floorTitleM ? `${floorTitleM[1].trim()} ${floorTitleM[2].trim()}` : flrCd;
-  if (!imgPath || !imgNm) return null;
+async function fetchDabeeo4Token(clientId, clientSecret) {
+  const basic = Buffer.from(`${clientId}:${clientSecret}`).toString('base64');
+  const res = await fetch('https://oauth.dabeeomaps.com/oauth/token?studioVersion=4', {
+    method:'POST',
+    headers: { Authorization:`Basic ${basic}`, 'Content-Type':'application/x-www-form-urlencoded' },
+    body:'grant_type=client_credentials',
+    signal: AbortSignal.timeout(30000),
+  });
+  const payload = await res.json();
+  if (!res.ok || !payload.access_token) throw new Error(`쇼핑맵 인증 HTTP ${res.status}`);
+  return payload.access_token;
+}
+
+async function fetchDabeeo4Floor(floorId, token) {
+  const res = await fetch(`${DABEEO4_DATA_BASE}/v2/map/floors?floors=${encodeURIComponent(floorId)}`, {
+    headers: { 'X-Authorization':`Bearer ${token}` },
+    signal: AbortSignal.timeout(30000),
+  });
+  const payload = await res.json();
+  if (!res.ok || !Array.isArray(payload.payload) || !payload.payload[0]) throw new Error(`층 지도 HTTP ${res.status}`);
+  return payload.payload[0];
+}
+
+async function mapWithConcurrency(items, limit, worker) {
+  const results = new Array(items.length);
+  let cursor = 0;
+  async function run() {
+    while (cursor < items.length) {
+      const index = cursor++;
+      results[index] = await worker(items[index], index);
+    }
+  }
+  await Promise.all(Array.from({ length:Math.min(limit, items.length) }, run));
+  return results;
+}
+
+function dabeeoMetadataValue(metadata) {
+  if (metadata?.valueSingle != null) return String(metadata.valueSingle);
+  const values = Array.isArray(metadata?.value) ? metadata.value : [];
+  return String((values.find(item => item.lang === 'ko') || values.find(item => !item.lang) || values[0] || {}).value || '');
+}
+
+function lottePoiMetadata(poi, floorData) {
+  const definitions = floorData.metadataFieldDefs || [];
+  return Object.fromEntries((poi.metadatas || []).flatMap(metadata => {
+    const key = definitions[metadata.fieldRef]?.fieldKey;
+    return key ? [[key, dabeeoMetadataValue(metadata)]] : [];
+  }));
+}
+
+function lotteFloorViewBox(floorData, pois, info = {}) {
+  const canvasWidth = Number((floorData.size || {}).width) || 1200;
+  const canvasHeight = Number((floorData.size || {}).height) || 900;
+  const objectMap = new Map((floorData.objects || []).map(object => [object.id, object]));
+  const bounds = [];
+  (pois || []).forEach(poi => {
+    const position = poi.position || {};
+    if (Number.isFinite(position.x) && Number.isFinite(position.y)) bounds.push([position.x, position.y, position.x, position.y]);
+    const object = objectMap.get(poi.objectId);
+    if (!object) return;
+    const center = object.position || {};
+    const size = object.size || {};
+    if (![center.x, center.y, size.width, size.height].every(Number.isFinite)) return;
+    bounds.push([
+      center.x - size.width / 2, center.y - size.height / 2,
+      center.x + size.width / 2, center.y + size.height / 2,
+    ]);
+  });
+  if (bounds.length === 0) {
+    const cropWidth = Math.min(canvasWidth, 4200);
+    const cropHeight = Math.min(canvasHeight, 3000);
+    const centerX = Number(info.pcXcnts) || canvasWidth / 2;
+    const centerY = Number(info.pcYcnts) || canvasHeight / 2;
+    return {
+      x:Math.max(0, Math.min(canvasWidth - cropWidth, centerX - cropWidth / 2)),
+      y:Math.max(0, Math.min(canvasHeight - cropHeight, centerY - cropHeight / 2)),
+      width:cropWidth, height:cropHeight,
+    };
+  }
+  const minX = Math.min(...bounds.map(value => value[0]));
+  const minY = Math.min(...bounds.map(value => value[1]));
+  const maxX = Math.max(...bounds.map(value => value[2]));
+  const maxY = Math.max(...bounds.map(value => value[3]));
+  const padding = Math.max(320, Math.min(620, Math.max(maxX - minX, maxY - minY) * 0.12));
+  const x = Math.max(0, minX - padding);
+  const y = Math.max(0, minY - padding);
   return {
-    floor: flrCd + 'F', label, url: `https://minfo.lotteshopping.com${imgPath}${imgNm}`,
-    brands: matchBrands(html).sort((a,b) => a.localeCompare(b, 'ko')),
+    x, y,
+    width:Math.max(1, Math.min(canvasWidth, maxX + padding) - x),
+    height:Math.max(1, Math.min(canvasHeight, maxY + padding) - y),
   };
 }
 
-async function fetchLotteFloors(cstrCd) {
-  const listUrl = `https://www.lotteshopping.com/store/floor?cstrCd=${cstrCd}`;
-  const res = await fetch(listUrl, { headers: UA });
-  if (!res.ok) throw new Error('HTTP ' + res.status);
-  const html = await res.text();
-  const floorItems = extractLotteFloorItems(html);
-  const floors = [];
+function scopeLotteFloorData(floorData, cstrCd, floorCode, townCode, info = {}) {
+  const annotated = (floorData.pois || []).map(poi => ({ poi, metadata:lottePoiMetadata(poi, floorData) }));
+  const exact = annotated.filter(({ metadata }) => metadata.cstrCd === cstrCd
+    && (!townCode || metadata.cstrTownCd === townCode)
+    && (!floorCode || metadata.cstrFlrCd === floorCode));
+  const storeOnly = annotated.filter(({ metadata }) => metadata.cstrCd === cstrCd
+    && (!townCode || metadata.cstrTownCd === townCode));
+  const scopedPois = (exact.length ? exact : storeOnly.length ? storeOnly : annotated).map(item => item.poi);
+  return { ...floorData, pois:scopedPois, viewBox:lotteFloorViewBox(floorData, scopedPois, info) };
+}
+
+async function fetchLotteFloors(storeName, cstrCd, rootDir = __dirname, activeBrands = new Set()) {
+  const config = await fetchLotteShoppingMapConfig(cstrCd);
+  const townKey = Object.keys(config.townFloorInfo || {}).find(key => key.startsWith(`${cstrCd}_`)) || config.locationInfo?.town;
+  const townFloors = config.townFloorInfo?.[townKey] || {};
+  const floorCodes = config.floorSelect?.[townKey] || Object.keys(townFloors);
+  if (!townKey || floorCodes.length === 0) throw new Error('쇼핑맵 층 정보 없음');
+  const token = await fetchDabeeo4Token(config.shpgMap.clientId, config.shpgMap.secret);
+  const store = CONFIG.getStore('롯데', storeName);
+  const outputDir = path.join(rootDir, 'floor-maps', 'lotte', cstrCd);
+  fs.mkdirSync(outputDir, { recursive:true });
   let failedPages = 0;
-  for (const { townCd, flrCd } of floorItems) {
+  const floors = await mapWithConcurrency(floorCodes, 4, async floorCode => {
+    const info = townFloors[floorCode];
+    if (!info?.flrId) return null;
     try {
-      const detail = await fetchLotteFloorDetail(cstrCd, townCd, flrCd);
-      if (detail) floors.push(detail);
-    } catch (e) {
+      const floorData = await fetchDabeeo4Floor(info.flrId, token);
+      if (!floorData.svgUrl) throw new Error('최신 SVG 주소 없음');
+      const svgRes = await fetch(floorData.svgUrl, { signal:AbortSignal.timeout(30000) });
+      if (!svgRes.ok) throw new Error(`최신 SVG HTTP ${svgRes.status}`);
+      const rawSvg = await svgRes.text();
+      const floor = `${floorCode}F`;
+      const label = `${info.cstrFlrCdNm || floorCode} ${info.cstrFlrCtegryNm || ''}`.trim();
+      const allowedBrands = isManagedFloor(store, { floor, label }) ? activeBrands : new Set();
+      const scopedFloorData = scopeLotteFloorData(floorData, cstrCd, floorCode, info.cstrTownCd, info);
+      const managedPois = trackedPois(scopedFloorData, allowedBrands);
+      const brands = uniqueBrands(managedPois.flatMap(item => item.brands));
+      const fileName = `${safeFloorFileName(floor)}.svg`;
+      const managedFileName = `${safeFloorFileName(floor)}-managed.svg`;
+      fs.writeFileSync(path.join(outputDir, fileName), renderLotteFloorSvg(rawSvg, scopedFloorData, storeName, floor, managedPois, false), 'utf8');
+      fs.writeFileSync(path.join(outputDir, managedFileName), renderLotteFloorSvg(rawSvg, scopedFloorData, storeName, floor, managedPois, true), 'utf8');
+      return {
+        floor, label, url:`floor-maps/lotte/${cstrCd}/${fileName}`,
+        highlightUrl:`floor-maps/lotte/${cstrCd}/${managedFileName}`,
+        source:'lotte-dabeeo', sourceUrl:floorData.svgUrl, brands,
+      };
+    } catch (error) {
       failedPages++;
-      console.error(`  [롯데 ${cstrCd} ${flrCd}F] 실패:`, e.message);
+      console.error(`  [롯데 ${cstrCd} ${floorCode}F] 실패:`, error.message);
+      return null;
     }
-    await sleep(250);
-  }
-  return { floors, failedPages, expectedPages: floorItems.length };
+  });
+  return { floors:floors.filter(Boolean), failedPages, expectedPages:floorCodes.length };
 }
 
 // ── 현대: 공식 페이지에 평면 이미지 파일은 없지만, 공개된 다비오 Web SDK가
@@ -235,6 +341,63 @@ function svgPolygon(shape, styles, fallback, tracked = []) {
 function poiTitle(poi) {
   return (languageText(poi.titleByLanguages) || languageText(poi.title) || String(poi.title || ''))
     .replace(/\s+/g, ' ').trim();
+}
+
+function sanitizeOfficialSvg(rawSvg) {
+  return String(rawSvg || '')
+    .replace(/<script\b[\s\S]*?<\/script>/gi, '')
+    .replace(/<foreignObject\b[\s\S]*?<\/foreignObject>/gi, '')
+    .replace(/\s+on[a-z]+\s*=\s*("[^"]*"|'[^']*')/gi, '');
+}
+
+function addSvgClassById(svg, id, className) {
+  const token = `id="${id}"`;
+  const idIndex = svg.indexOf(token);
+  if (idIndex < 0) return svg;
+  const tagStart = svg.lastIndexOf('<', idIndex);
+  const tagEnd = svg.indexOf('>', idIndex);
+  if (tagStart < 0 || tagEnd < 0) return svg;
+  let tag = svg.slice(tagStart, tagEnd + 1);
+  if (/\sclass="[^"]*"/.test(tag)) {
+    tag = tag.replace(/\sclass="([^"]*)"/, (_, classes) => ` class="${`${classes} ${className}`.trim()}"`);
+  } else {
+    tag = tag.replace(/\s*\/?\>$/, match => ` class="${className}"${match}`);
+  }
+  return svg.slice(0, tagStart) + tag + svg.slice(tagEnd + 1);
+}
+
+function renderLotteFloorSvg(rawSvg, floorData, storeName, floorLabel, managedPois = [], showHighlights = true) {
+  const canvasWidth = Number((floorData.size || {}).width) || Number(floorData.canvasWidth) || 1200;
+  const canvasHeight = Number((floorData.size || {}).height) || Number(floorData.canvasHeight) || 900;
+  const viewBox = floorData.viewBox || { x:0, y:0, width:canvasWidth, height:canvasHeight };
+  const outputHeight = Math.max(1, Math.round(1200 * viewBox.height / viewBox.width));
+  let svg = sanitizeOfficialSvg(rawSvg);
+  svg = svg.replace(/<svg\b([^>]*)>/i, (_, rawAttributes) => {
+    const attributes = rawAttributes.replace(/\s(?:viewBox|width|height|role|aria-labelledby)="[^"]*"/gi, '');
+    return `<svg${attributes} viewBox="${viewBox.x} ${viewBox.y} ${viewBox.width} ${viewBox.height}" width="1200" height="${outputHeight}" role="img" aria-labelledby="title desc">`;
+  });
+  const description = `<title id="title">${xmlEscape(storeName)} ${xmlEscape(floorLabel)} 최신 쇼핑맵</title><desc id="desc">롯데백화점 공식 다비오 쇼핑맵의 최신 벡터 데이터입니다.</desc>`;
+  svg = svg.replace(/(<svg\b[^>]*>)/i, `$1${description}`);
+  if (!showHighlights || managedPois.length === 0) return svg.replace(/\s*<\/svg>\s*$/, '</svg>\n');
+
+  managedPois.forEach(item => {
+    if (item.poi.objectId) svg = addSvgClassById(svg, item.poi.objectId, 'tracked-object');
+    if (item.poi.id) svg = addSvgClassById(svg, item.poi.id, 'tracked-poi');
+  });
+  const stars = managedPois.map(item => {
+    const position = item.poi.position || {};
+    if (!Number.isFinite(position.x) || !Number.isFinite(position.y)) return '';
+    const brandLabel = item.brands.join(', ');
+    return `<g class="tracked-star" aria-label="${xmlEscape(brandLabel)}"><circle cx="${position.x}" cy="${position.y - 58}" r="42"/><text x="${position.x}" y="${position.y - 58}">★</text></g>`;
+  }).join('');
+  const highlightMarkup = `<style>
+.tracked-object { stroke:#f59e0b !important; stroke-width:18 !important; filter:drop-shadow(0 0 12px #f59e0b); }
+.tracked-poi text { fill:#9a5300 !important; font-size:48px !important; font-weight:800 !important; stroke:#fff7df !important; stroke-opacity:1 !important; stroke-width:8 !important; }
+.tracked-star { pointer-events:none; }
+.tracked-star circle { fill:#fff7df; stroke:#f59e0b; stroke-width:8; }
+.tracked-star text { fill:#9a5300; font-family:Arial,'Noto Sans KR',sans-serif; font-size:54px; font-weight:800; text-anchor:middle; dominant-baseline:central; }
+</style>${stars}`;
+  return svg.replace(/\s*<\/svg>\s*$/, `${highlightMarkup}</svg>\n`);
 }
 
 function renderHyundaiFloorSvg(mapData, floor, storeName, options = {}) {
@@ -358,7 +521,7 @@ function buildFloorManifest(data, rootDir = __dirname) {
     (data[store.code] || []).forEach(floor => {
       const brands = [...new Set(floor.brands || [])].sort((a, b) => a.localeCompare(b, 'ko'));
       let sourceValue = floor.url || '';
-      if (floor.source === 'hyundai-dabeeo') {
+      if (String(floor.source || '').endsWith('-dabeeo')) {
         try { sourceValue = fs.readFileSync(path.join(rootDir, floor.url), 'utf8'); } catch (e) { /* URL 서명으로 대체 */ }
       }
       const key = `${store.id}|${floor.floor}|${floor.label}`;
@@ -453,12 +616,12 @@ async function main() {
   for (const [store, code] of Object.entries(LOTTE_STORES)) {
     process.stdout.write(`수집 중: 롯데 ${store} ... `);
     try {
-      const result = await fetchLotteFloors(code);
       const storeConfig = CONFIG.getStore('롯데', store);
-      data[code] = verifyFloorEntries(storeConfig, result.floors, activeBrandMap.get(storeConfig.id) || new Set());
+      const result = await fetchLotteFloors(store, code, __dirname, activeBrandMap.get(storeConfig.id) || new Set());
+      data[code] = result.floors;
       if (result.failedPages > 0 && (previous[code] || []).length) throw new Error(`${result.failedPages}/${result.expectedPages}개 층 호출 실패`);
       if (data[code].length === 0 && (previous[code] || []).length) throw new Error('0개 층 응답');
-      diagnostics.push({ storeId: `롯데-${code}`, store, status: 'ok', floors: data[code].length });
+      diagnostics.push({ storeId: `롯데-${code}`, store, status: 'ok', floors: data[code].length, format:'svg' });
       console.log(`${data[code].length}개 층`);
     } catch (e) {
       console.error('실패:', e.message);
@@ -490,14 +653,15 @@ async function main() {
   const brandIndex = buildBrandFloorIndex(data);
   fs.writeFileSync(path.join(__dirname, 'brand-floor-index.json'), JSON.stringify({ lastUpdated, data: brandIndex }, null, 2), 'utf8');
   const currentManifest = buildFloorManifest(data);
-  const historySchemaVersion = 2;
-  const newEvents = previousHistory.current && previousHistory.schemaVersion === historySchemaVersion
+  const historySchemaVersion = 4;
+  const sameHistorySchema = previousHistory.schemaVersion === historySchemaVersion;
+  const newEvents = previousHistory.current && sameHistorySchema
     ? detectFloorChanges(previousHistory.current, currentManifest, lastUpdated)
     : [];
   const floorHistory = {
     schemaVersion: historySchemaVersion,
     lastUpdated,
-    events: [...newEvents, ...(previousHistory.events || [])].slice(0, 500),
+    events: sameHistorySchema ? [...newEvents, ...(previousHistory.events || [])].slice(0, 500) : [],
     current: currentManifest,
   };
   fs.writeFileSync(path.join(__dirname, 'floor-history.json'), JSON.stringify(floorHistory, null, 2), 'utf8');
@@ -512,8 +676,10 @@ if (require.main === module) {
 }
 
 module.exports = {
-  extractFloorNum, extractLotteFloorItems, htmlValue, languageText, safeFloorFileName,
+  extractFloorNum, htmlValue, languageText, safeFloorFileName,
   pointInPolygon, uniqueBrands, isManagedFloor, activeBrandsByStore, verifyFloorEntries,
+  sanitizeOfficialSvg, addSvgClassById, renderLotteFloorSvg, fetchLotteFloors,
+  dabeeoMetadataValue, lottePoiMetadata, lotteFloorViewBox, scopeLotteFloorData,
   renderHyundaiFloorSvg, fetchHyundaiMap, fetchHyundaiFloors,
   buildBrandFloorIndex, buildFloorManifest, detectFloorChanges,
 };

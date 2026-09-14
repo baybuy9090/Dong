@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T07:06:45.055Z",
+  "lastUpdated": "2026-09-14T07:48:01.391Z",
   "diagnostics": [
     {
       "storeId": "신세계-SC00002",
@@ -83,115 +83,134 @@
       "storeId": "롯데-0013",
       "store": "강남점",
       "status": "ok",
-      "floors": 9
+      "floors": 9,
+      "format": "svg"
     },
     {
       "storeId": "롯데-0333",
       "store": "광복점",
       "status": "ok",
-      "floors": 14
+      "floors": 14,
+      "format": "svg"
     },
     {
       "storeId": "롯데-0007",
       "store": "광주점",
       "status": "ok",
-      "floors": 12
+      "floors": 12,
+      "format": "svg"
     },
     {
       "storeId": "롯데-0022",
       "store": "노원점",
       "status": "ok",
-      "floors": 11
+      "floors": 11,
+      "format": "svg"
     },
     {
       "storeId": "롯데-0023",
       "store": "대구점",
       "status": "ok",
-      "floors": 13
+      "floors": 13,
+      "format": "svg"
     },
     {
       "storeId": "롯데-0399",
       "store": "동탄점",
       "status": "ok",
-      "floors": 13
+      "floors": 13,
+      "format": "svg"
     },
     {
       "storeId": "롯데-0001",
       "store": "본점",
       "status": "ok",
-      "floors": 15
+      "floors": 21,
+      "format": "svg"
     },
     {
       "storeId": "롯데-0005",
       "store": "부산본점",
       "status": "ok",
-      "floors": 13
+      "floors": 16,
+      "format": "svg"
     },
     {
       "storeId": "롯데-0349",
       "store": "수원점",
       "status": "ok",
-      "floors": 9
+      "floors": 10,
+      "format": "svg"
     },
     {
       "storeId": "롯데-0010",
       "store": "영등포",
       "status": "ok",
-      "floors": 11
+      "floors": 12,
+      "format": "svg"
     },
     {
       "storeId": "롯데-0015",
       "store": "울산점",
       "status": "ok",
-      "floors": 9
+      "floors": 9,
+      "format": "svg"
     },
     {
       "storeId": "롯데-0344",
       "store": "인천점",
       "status": "ok",
-      "floors": 7
+      "floors": 9,
+      "format": "svg"
     },
     {
       "storeId": "롯데-0011",
       "store": "일산",
       "status": "ok",
-      "floors": 13
+      "floors": 13,
+      "format": "svg"
     },
     {
       "storeId": "롯데-0002",
       "store": "잠실점",
       "status": "ok",
-      "floors": 13
+      "floors": 16,
+      "format": "svg"
     },
     {
       "storeId": "롯데-0348",
       "store": "잠실에비뉴엘",
       "status": "ok",
-      "floors": 7
+      "floors": 7,
+      "format": "svg"
     },
     {
       "storeId": "롯데-0025",
       "store": "전주점",
       "status": "ok",
-      "floors": 10
+      "floors": 10,
+      "format": "svg"
     },
     {
       "storeId": "롯데-0017",
       "store": "창원점",
       "status": "ok",
-      "floors": 7
+      "floors": 7,
+      "format": "svg"
     },
     {
       "storeId": "롯데-0004",
       "store": "청량리",
       "status": "ok",
-      "floors": 12
+      "floors": 11,
+      "format": "svg"
     },
     {
       "storeId": "롯데-0341",
       "store": "평촌점",
       "status": "ok",
-      "floors": 11
+      "floors": 18,
+      "format": "svg"
     },
     {
       "storeId": "현대-B00142000",
@@ -1280,25 +1299,37 @@
       {
         "floor": "08F",
         "label": "8F 가전ㆍ가구ㅣ리빙",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202606/0013/20260614152810125_4.png",
+        "url": "floor-maps/lotte/0013/08F.svg",
+        "highlightUrl": "floor-maps/lotte/0013/08F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e007fa2b-6558-4534-a147-6628496a6af6/1788230045144ack7d.svg",
         "brands": []
       },
       {
         "floor": "07F",
         "label": "7F 스포츠ㅣ유니클로",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202606/0013/20260615183420468_5.png",
+        "url": "floor-maps/lotte/0013/07F.svg",
+        "highlightUrl": "floor-maps/lotte/0013/07F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e007fa2b-6558-4534-a147-6628496a6af6/1788229902479RzMk9.svg",
         "brands": []
       },
       {
         "floor": "06F",
         "label": "6F 골프ㅣ아웃도어ㅣ아동유아",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0013/2021121516233154_8.jpg",
+        "url": "floor-maps/lotte/0013/06F.svg",
+        "highlightUrl": "floor-maps/lotte/0013/06F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e007fa2b-6558-4534-a147-6628496a6af6/1788229773243B5Grs.svg",
         "brands": []
       },
       {
         "floor": "05F",
         "label": "5F 남성패션ㅣ남성컨템포러리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0013/20211202195258319_2.jpg",
+        "url": "floor-maps/lotte/0013/05F.svg",
+        "highlightUrl": "floor-maps/lotte/0013/05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e007fa2b-6558-4534-a147-6628496a6af6/1788229676535xTGDG.svg",
         "brands": [
           "띠어리맨",
           "시스템옴므",
@@ -1310,31 +1341,46 @@
       {
         "floor": "04F",
         "label": "4F 여성패션ㅣ란제리│구두ㅣ패션잡화",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0013/20211227144915592_1.jpg",
+        "url": "floor-maps/lotte/0013/04F.svg",
+        "highlightUrl": "floor-maps/lotte/0013/04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e007fa2b-6558-4534-a147-6628496a6af6/1788138760415n8MXe.svg",
         "brands": []
       },
       {
         "floor": "03F",
         "label": "3F 여성컨템포러리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0013/20220308111433756_8.jpg",
+        "url": "floor-maps/lotte/0013/03F.svg",
+        "highlightUrl": "floor-maps/lotte/0013/03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e007fa2b-6558-4534-a147-6628496a6af6/1788865701477AxdLN.svg",
         "brands": []
       },
       {
         "floor": "02F",
         "label": "2F 영패션ㅣ유스캐주얼",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0013/2021120618444593_0.jpg",
+        "url": "floor-maps/lotte/0013/02F.svg",
+        "highlightUrl": "floor-maps/lotte/0013/02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e007fa2b-6558-4534-a147-6628496a6af6/1787898854544vJT8S.svg",
         "brands": []
       },
       {
         "floor": "01F",
         "label": "1F 해외패션ㅣ화장품ㅣ시계ㆍ보석",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0013/20220218175544835_6.jpg",
+        "url": "floor-maps/lotte/0013/01F.svg",
+        "highlightUrl": "floor-maps/lotte/0013/01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e007fa2b-6558-4534-a147-6628496a6af6/1789280934937hcpVw.svg",
         "brands": []
       },
       {
         "floor": "B1F",
         "label": "B1 FOOD AVENUEㅣ식당가",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202504/0013/20250422141959390_7.jpg",
+        "url": "floor-maps/lotte/0013/B1F.svg",
+        "highlightUrl": "floor-maps/lotte/0013/B1F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e007fa2b-6558-4534-a147-6628496a6af6/1788589359313J7eef.svg",
         "brands": []
       }
     ],
@@ -1342,49 +1388,73 @@
       {
         "floor": "13F",
         "label": "13F 전망대ㅣ노아스로스팅",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202165155536_5.png",
+        "url": "floor-maps/lotte/0333/13F.svg",
+        "highlightUrl": "floor-maps/lotte/0333/13F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/1785820980761MSI51.svg",
         "brands": []
       },
       {
         "floor": "12F",
         "label": "12F 샤롯데가든",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202165212768_0.png",
+        "url": "floor-maps/lotte/0333/12F.svg",
+        "highlightUrl": "floor-maps/lotte/0333/12F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/1785820931432mFu3R.svg",
         "brands": []
       },
       {
         "floor": "11F",
         "label": "11F 샤롯데가든",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202165233506_9.png",
+        "url": "floor-maps/lotte/0333/11F.svg",
+        "highlightUrl": "floor-maps/lotte/0333/11F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/1787733111799wW43R.svg",
         "brands": []
       },
       {
         "floor": "10F",
         "label": "10F 식당가ㅣ고객상담실ㅣA/S상담센터",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/2022120216525790_9.png",
+        "url": "floor-maps/lotte/0333/10F.svg",
+        "highlightUrl": "floor-maps/lotte/0333/10F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/1787475947673KrRiB.svg",
         "brands": []
       },
       {
         "floor": "09F",
         "label": "9F 가전ㅣ가구ㅣ주방용품ㅣ홈패션ㅣ사은행사장",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202165316418_3.png",
+        "url": "floor-maps/lotte/0333/09F.svg",
+        "highlightUrl": "floor-maps/lotte/0333/09F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/1789118915395Catpr.svg",
         "brands": []
       },
       {
         "floor": "08F",
         "label": "8F 아동ㅣ유아ㅣ삼성프리미엄스토어",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202165338547_7.png",
+        "url": "floor-maps/lotte/0333/08F.svg",
+        "highlightUrl": "floor-maps/lotte/0333/08F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/17890321589851OZhF.svg",
         "brands": []
       },
       {
         "floor": "07F",
         "label": "7F 아웃도어ㅣ골프ㅣ헤어샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202165401944_1.png",
+        "url": "floor-maps/lotte/0333/07F.svg",
+        "highlightUrl": "floor-maps/lotte/0333/07F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/1788341399997lqJGq.svg",
         "brands": []
       },
       {
         "floor": "06F",
         "label": "6F 남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202164807934_8.png",
+        "url": "floor-maps/lotte/0333/06F.svg",
+        "highlightUrl": "floor-maps/lotte/0333/06F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/1788159139242bhg1e.svg",
         "brands": [
           "시스템옴므"
         ]
@@ -1392,37 +1462,55 @@
       {
         "floor": "05F",
         "label": "5F 스포츠 전문관",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202164921344_6.png",
+        "url": "floor-maps/lotte/0333/05F.svg",
+        "highlightUrl": "floor-maps/lotte/0333/05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/17858183353718JSpf.svg",
         "brands": []
       },
       {
         "floor": "04F",
         "label": "4F 여성컨템포러리ㅣ유니섹스캐주얼",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202164858994_7.png",
+        "url": "floor-maps/lotte/0333/04F.svg",
+        "highlightUrl": "floor-maps/lotte/0333/04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/17858221396340nXba.svg",
         "brands": []
       },
       {
         "floor": "03F",
         "label": "3F 영캐주얼ㅣ란제리ㅣ헤드스파샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202164836427_9.png",
+        "url": "floor-maps/lotte/0333/03F.svg",
+        "highlightUrl": "floor-maps/lotte/0333/03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/17890324306462Fi8k.svg",
         "brands": []
       },
       {
         "floor": "02F",
         "label": "2F 여성패션ㅣ핸드백ㅣ슈즈",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202306/0333/20230628153731336_9.png",
+        "url": "floor-maps/lotte/0333/02F.svg",
+        "highlightUrl": "floor-maps/lotte/0333/02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/17890320713230WD2S.svg",
         "brands": []
       },
       {
         "floor": "01F",
         "label": "1F 해외패션ㅣ화장품",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202306/0333/20230628153246940_7.png",
+        "url": "floor-maps/lotte/0333/01F.svg",
+        "highlightUrl": "floor-maps/lotte/0333/01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/1785817643645tT3G2.svg",
         "brands": []
       },
       {
         "floor": "B1F",
         "label": "B1 푸드에비뉴ㅣ점행사장",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0333/20221202165101762_6.png",
+        "url": "floor-maps/lotte/0333/B1F.svg",
+        "highlightUrl": "floor-maps/lotte/0333/B1F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/1789032561244lMUZ9.svg",
         "brands": []
       }
     ],
@@ -1430,31 +1518,46 @@
       {
         "floor": "11F",
         "label": "11F 롯데문화센터",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0007/20210810180450510_8.jpg",
+        "url": "floor-maps/lotte/0007/11F.svg",
+        "highlightUrl": "floor-maps/lotte/0007/11F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/70f01be8-9d5d-4913-852d-e4cc6bb3953f/1775809840968AvOUj.svg",
         "brands": []
       },
       {
         "floor": "10F",
         "label": "10F 식당가ㅣ서비스라운지(롯데카드센터,롯데상품권)ㅣ사은품증정",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202503/0007/20250319122947751_3.png",
+        "url": "floor-maps/lotte/0007/10F.svg",
+        "highlightUrl": "floor-maps/lotte/0007/10F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/70f01be8-9d5d-4913-852d-e4cc6bb3953f/1776906597839WItez.svg",
         "brands": []
       },
       {
         "floor": "09F",
         "label": "9F 이케아ㅣ가전 전문관ㅣ롯데시네마",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202109/0007/20210909123056725_9.jpg",
+        "url": "floor-maps/lotte/0007/09F.svg",
+        "highlightUrl": "floor-maps/lotte/0007/09F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/70f01be8-9d5d-4913-852d-e4cc6bb3953f/17882390465912eJn1.svg",
         "brands": []
       },
       {
         "floor": "08F",
         "label": "8F 가구ㅣ홈패션ㅣ주방식기",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202210/0007/2022101210544711_2.png",
+        "url": "floor-maps/lotte/0007/08F.svg",
+        "highlightUrl": "floor-maps/lotte/0007/08F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/70f01be8-9d5d-4913-852d-e4cc6bb3953f/1787705701876IDRED.svg",
         "brands": []
       },
       {
         "floor": "07F",
         "label": "7F 남성패션ㅣ셔츠ㆍ타이ㅣ트레디셔널",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0007/20211029135821703_6.jpg",
+        "url": "floor-maps/lotte/0007/07F.svg",
+        "highlightUrl": "floor-maps/lotte/0007/07F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/70f01be8-9d5d-4913-852d-e4cc6bb3953f/1775809820160IrGou.svg",
         "brands": [
           "띠어리맨",
           "시스템옴므",
@@ -1467,43 +1570,64 @@
       {
         "floor": "06F",
         "label": "6F 아웃도어 l 골프 ㅣ 아동 · 유아",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202204/0007/20220409101231563_6.jpg",
+        "url": "floor-maps/lotte/0007/06F.svg",
+        "highlightUrl": "floor-maps/lotte/0007/06F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/70f01be8-9d5d-4913-852d-e4cc6bb3953f/1785478358886Mllnj.svg",
         "brands": []
       },
       {
         "floor": "05F",
         "label": "5F 스포츠ㅣ무인양품",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0007/20211229112113584_1.jpg",
+        "url": "floor-maps/lotte/0007/05F.svg",
+        "highlightUrl": "floor-maps/lotte/0007/05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/70f01be8-9d5d-4913-852d-e4cc6bb3953f/1775811445080YdIgK.svg",
         "brands": []
       },
       {
         "floor": "04F",
         "label": "4F 점행사장ㅣ영패션ㅣ란제리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0007/20211019144415898_8.jpg",
+        "url": "floor-maps/lotte/0007/04F.svg",
+        "highlightUrl": "floor-maps/lotte/0007/04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/70f01be8-9d5d-4913-852d-e4cc6bb3953f/1785306746471swY9Y.svg",
         "brands": []
       },
       {
         "floor": "03F",
         "label": "3F 여성패션ㅣ슈즈",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0007/20211113124929393_3.jpg",
+        "url": "floor-maps/lotte/0007/03F.svg",
+        "highlightUrl": "floor-maps/lotte/0007/03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/70f01be8-9d5d-4913-852d-e4cc6bb3953f/1775809797138pO0SQ.svg",
         "brands": []
       },
       {
         "floor": "02F",
         "label": "2F 해외패션ㅣ화장품ㅣ시계ㆍ보석",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0007/20211129154128508_8.jpg",
+        "url": "floor-maps/lotte/0007/02F.svg",
+        "highlightUrl": "floor-maps/lotte/0007/02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/70f01be8-9d5d-4913-852d-e4cc6bb3953f/1789001900003oqgLc.svg",
         "brands": []
       },
       {
         "floor": "01F",
         "label": "1F 해외패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202205/0007/20220513121757498_5.png",
+        "url": "floor-maps/lotte/0007/01F.svg",
+        "highlightUrl": "floor-maps/lotte/0007/01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/70f01be8-9d5d-4913-852d-e4cc6bb3953f/1780374708574DGUX3.svg",
         "brands": []
       },
       {
         "floor": "B1F",
         "label": "B1 푸드에비뉴",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202309/0007/2023091517133081_4.JPG",
+        "url": "floor-maps/lotte/0007/B1F.svg",
+        "highlightUrl": "floor-maps/lotte/0007/B1F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/70f01be8-9d5d-4913-852d-e4cc6bb3953f/17853066632548aW6A.svg",
         "brands": []
       }
     ],
@@ -1511,42 +1635,59 @@
       {
         "floor": "10F",
         "label": "10F 롯데시네마",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202105/0022/20210517141042665_7.jpg",
+        "url": "floor-maps/lotte/0022/10F.svg",
+        "highlightUrl": "floor-maps/lotte/0022/10F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/be0f7419-39f7-47ac-860a-663357db0a80/1774171374213yAkWW.svg",
         "brands": []
       },
       {
         "floor": "09F",
         "label": "9F 식당가ㅣ고객상담실",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0022/20220303142129180_7.jpg",
+        "url": "floor-maps/lotte/0022/09F.svg",
+        "highlightUrl": "floor-maps/lotte/0022/09F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/be0f7419-39f7-47ac-860a-663357db0a80/1788856205035BRXFv.svg",
         "brands": []
       },
       {
         "floor": "08F",
         "label": "8F 스포츠ㅣ유스캐주얼",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0022/20211022133924651_7.jpg",
+        "url": "floor-maps/lotte/0022/08F.svg",
+        "highlightUrl": "floor-maps/lotte/0022/08F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/be0f7419-39f7-47ac-860a-663357db0a80/1787896563488qazBM.svg",
         "brands": []
       },
       {
         "floor": "07F",
         "label": "7F 생활가전ㅣ사은ㆍ상품권",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202211/0022/20221109105527526_0.jpg",
+        "url": "floor-maps/lotte/0022/07F.svg",
+        "highlightUrl": "floor-maps/lotte/0022/07F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/be0f7419-39f7-47ac-860a-663357db0a80/1788919509983mMcgx.svg",
         "brands": []
       },
       {
         "floor": "06F",
         "label": "6F 아웃도어ㅣ아동ㆍ유아ㅣ유니클로",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0022/20211006144016847_7.jpg",
+        "url": "floor-maps/lotte/0022/06F.svg",
+        "highlightUrl": "floor-maps/lotte/0022/06F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/be0f7419-39f7-47ac-860a-663357db0a80/1774171349087Qee6x.svg",
         "brands": []
       },
       {
         "floor": "05F",
         "label": "5F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0022/20211128183925779_1.jpg",
+        "url": "floor-maps/lotte/0022/05F.svg",
+        "highlightUrl": "floor-maps/lotte/0022/05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/be0f7419-39f7-47ac-860a-663357db0a80/1774171341777s1X5V.svg",
         "brands": [
           "띠어리맨",
           "솔리드옴므",
           "시스템옴므",
-          "질스튜어트뉴욕",
           "클럽모나코",
           "타임옴므"
         ]
@@ -1554,31 +1695,49 @@
       {
         "floor": "04F",
         "label": "4F 여성패션ㅣ란제리ㅣ구두ㅣ무인양품ㅣ핸드백",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202303/0022/20230309111426473_2.png",
+        "url": "floor-maps/lotte/0022/04F.svg",
+        "highlightUrl": "floor-maps/lotte/0022/04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/be0f7419-39f7-47ac-860a-663357db0a80/1782114043347ASzKJ.svg",
         "brands": []
       },
       {
         "floor": "03F",
         "label": "3F 영캐릭터ㅣ컨템포러리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202208/0022/20220827183053218_0.jpg",
-        "brands": []
+        "url": "floor-maps/lotte/0022/03F.svg",
+        "highlightUrl": "floor-maps/lotte/0022/03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/be0f7419-39f7-47ac-860a-663357db0a80/1788512626041kIZhg.svg",
+        "brands": [
+          "띠어리맨",
+          "클럽모나코"
+        ]
       },
       {
         "floor": "02F",
         "label": "2F 영디자이너ㅣZARA",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202212/0022/20221221142824659_7.jpg",
+        "url": "floor-maps/lotte/0022/02F.svg",
+        "highlightUrl": "floor-maps/lotte/0022/02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/be0f7419-39f7-47ac-860a-663357db0a80/1788399621429lr0BD.svg",
         "brands": []
       },
       {
         "floor": "01F",
         "label": "1F 화장품ㅣ해외패션ㅣ주얼리ㅣ쉐이크쉑",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202409/0022/20240919124927278_6.png",
+        "url": "floor-maps/lotte/0022/01F.svg",
+        "highlightUrl": "floor-maps/lotte/0022/01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/be0f7419-39f7-47ac-860a-663357db0a80/1788419951773XojNr.svg",
         "brands": []
       },
       {
         "floor": "B1F",
         "label": "B1 Food Avenue",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202409/0022/20240919123610780_6.png",
+        "url": "floor-maps/lotte/0022/B1F.svg",
+        "highlightUrl": "floor-maps/lotte/0022/B1F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/be0f7419-39f7-47ac-860a-663357db0a80/17889192754566bzDc.svg",
         "brands": []
       }
     ],
@@ -1586,37 +1745,55 @@
       {
         "floor": "11F",
         "label": "11F 샤롯데가든ㅣ풋살구장",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202107/0023/20210730172028133_5.jpg",
+        "url": "floor-maps/lotte/0023/11F.svg",
+        "highlightUrl": "floor-maps/lotte/0023/11F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/b0a99aec-cb47-4a99-9981-2f034d451767/1774171269231lnYzr.svg",
         "brands": []
       },
       {
         "floor": "10F",
         "label": "10F 식당가ㅣ롯데문화센터ㅣ롯데상품권ㅣ사은품증정",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0023/20220203162549685_4.jpg",
+        "url": "floor-maps/lotte/0023/10F.svg",
+        "highlightUrl": "floor-maps/lotte/0023/10F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/b0a99aec-cb47-4a99-9981-2f034d451767/1786611613573pHaJS.svg",
         "brands": []
       },
       {
         "floor": "09F",
         "label": "9F 애슐리퀸즈ㅣ헬스보이짐ㅣ헤어샵ㅣ스킨케어",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202310/0023/20231031143952705_9.jpg",
+        "url": "floor-maps/lotte/0023/09F.svg",
+        "highlightUrl": "floor-maps/lotte/0023/09F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/b0a99aec-cb47-4a99-9981-2f034d451767/17783877094270et1m.svg",
         "brands": []
       },
       {
         "floor": "08F",
         "label": "8F 가전ㅣ가구ㅣ주방ㅣ식기ㅣ홈패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202403/0023/20240305125738940_0.jpg",
+        "url": "floor-maps/lotte/0023/08F.svg",
+        "highlightUrl": "floor-maps/lotte/0023/08F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/b0a99aec-cb47-4a99-9981-2f034d451767/1787707382150dY10Y.svg",
         "brands": []
       },
       {
         "floor": "07F",
         "label": "7F 아웃도어ㅣ스포츠ㅣKIDS PARK(하이마운틴어드벤처)",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202512/0023/20251201110919843_8.jpg",
+        "url": "floor-maps/lotte/0023/07F.svg",
+        "highlightUrl": "floor-maps/lotte/0023/07F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/b0a99aec-cb47-4a99-9981-2f034d451767/1789021628458OxCqG.svg",
         "brands": []
       },
       {
         "floor": "06F",
         "label": "6F 남성패션ㅣ남성컨템포러리ㅣ골프ㅣGDR아카데미",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202106/0023/20210625114323425_6.jpg",
+        "url": "floor-maps/lotte/0023/06F.svg",
+        "highlightUrl": "floor-maps/lotte/0023/06F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/b0a99aec-cb47-4a99-9981-2f034d451767/1774171231332jLNbU.svg",
         "brands": [
           "띠어리맨",
           "솔리드옴므",
@@ -1631,43 +1808,64 @@
       {
         "floor": "05F",
         "label": "5F 영캐릭터ㅣ영캐주얼ㅣ아동ㅣKIDS CAFE(메타시티)",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202208/0023/20220824111510169_6.jpg",
+        "url": "floor-maps/lotte/0023/05F.svg",
+        "highlightUrl": "floor-maps/lotte/0023/05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/b0a99aec-cb47-4a99-9981-2f034d451767/1788935830723anWAL.svg",
         "brands": []
       },
       {
         "floor": "04F",
         "label": "4F 여성컨템포러리ㅣ여성캐릭터ㅣ슈즈ㅣ헤드스파K",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202208/0023/20220819140612414_7.jpg",
+        "url": "floor-maps/lotte/0023/04F.svg",
+        "highlightUrl": "floor-maps/lotte/0023/04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/b0a99aec-cb47-4a99-9981-2f034d451767/177417120895717Nx4.svg",
         "brands": []
       },
       {
         "floor": "03F",
         "label": "3F 여성패션ㅣ란제리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202206/0023/20220620144356753_8.jpg",
+        "url": "floor-maps/lotte/0023/03F.svg",
+        "highlightUrl": "floor-maps/lotte/0023/03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/b0a99aec-cb47-4a99-9981-2f034d451767/17773690111626nMdr.svg",
         "brands": []
       },
       {
         "floor": "02F",
         "label": "2F 올리브영ㅣ탑텐ㅣABC마트ㅣ진유니",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0023/20211115113726736_5.jpg",
+        "url": "floor-maps/lotte/0023/02F.svg",
+        "highlightUrl": "floor-maps/lotte/0023/02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/b0a99aec-cb47-4a99-9981-2f034d451767/1774171191295cfaEm.svg",
         "brands": []
       },
       {
         "floor": "01F",
         "label": "1F 애플(프리스비)ㅣ해외패션ㅣ시계",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202210/0023/20221006120605297_6.jpg",
+        "url": "floor-maps/lotte/0023/01F.svg",
+        "highlightUrl": "floor-maps/lotte/0023/01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/b0a99aec-cb47-4a99-9981-2f034d451767/1782799678927Nwmij.svg",
         "brands": []
       },
       {
         "floor": "B1F",
         "label": "B1 화장품ㅣ패션잡화ㅣ보석ㅣ핸드백",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0023/20210822124425658_8.jpg",
+        "url": "floor-maps/lotte/0023/B1F.svg",
+        "highlightUrl": "floor-maps/lotte/0023/B1F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/b0a99aec-cb47-4a99-9981-2f034d451767/1785552425690saofl.svg",
         "brands": []
       },
       {
         "floor": "B2F",
         "label": "B2 푸드에비뉴ㅣ유니클로ㅣ무인양품ㅣ스파오",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202201/0023/2022012619575799_7.jpg",
+        "url": "floor-maps/lotte/0023/B2F.svg",
+        "highlightUrl": "floor-maps/lotte/0023/B2F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/b0a99aec-cb47-4a99-9981-2f034d451767/1786612185546DPVPB.svg",
         "brands": []
       }
     ],
@@ -1675,25 +1873,37 @@
       {
         "floor": "07F",
         "label": "7F LOTTE Cinema",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814175132115_2.png",
+        "url": "floor-maps/lotte/0399/07F.svg",
+        "highlightUrl": "floor-maps/lotte/0399/07F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1774175258258LpXlc.svg",
         "brands": []
       },
       {
         "floor": "06F",
         "label": "6F 가전 | 리빙 | 서비스라운지",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202502/0399/2025022112084411_3.jpg",
+        "url": "floor-maps/lotte/0399/06F.svg",
+        "highlightUrl": "floor-maps/lotte/0399/06F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1789031353173ePgz6.svg",
         "brands": []
       },
       {
         "floor": "05F",
         "label": "5F 스포츠 | 아웃도어 | 골프 | 진유니",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814175014306_9.png",
+        "url": "floor-maps/lotte/0399/05F.svg",
+        "highlightUrl": "floor-maps/lotte/0399/05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1788239268618ThtNu.svg",
         "brands": []
       },
       {
         "floor": "04F",
         "label": "4F 킨더유니버스(아동ㆍ유아) | 남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814174900635_4.png",
+        "url": "floor-maps/lotte/0399/04F.svg",
+        "highlightUrl": "floor-maps/lotte/0399/04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1789112938905Xt8D7.svg",
         "brands": [
           "띠어리맨",
           "바버",
@@ -1701,7 +1911,6 @@
           "송지오옴므",
           "시스템옴므",
           "준지",
-          "질스튜어트뉴욕",
           "타임옴므",
           "CP컴퍼니"
         ]
@@ -1709,19 +1918,30 @@
       {
         "floor": "03F",
         "label": "3F 영패션 | 여성패션 | 슈즈",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814174837919_8.png",
+        "url": "floor-maps/lotte/0399/03F.svg",
+        "highlightUrl": "floor-maps/lotte/0399/03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1789276819245FMzNg.svg",
         "brands": []
       },
       {
         "floor": "02F",
         "label": "2F 글로벌패션 | 코스메틱 | 액세서리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814174821423_5.png",
-        "brands": []
+        "url": "floor-maps/lotte/0399/02F.svg",
+        "highlightUrl": "floor-maps/lotte/0399/02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1787738149913HUpn0.svg",
+        "brands": [
+          "띠어리맨"
+        ]
       },
       {
         "floor": "01F",
         "label": "1F 럭셔리 | 워치 | 주얼리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814174627639_4.png",
+        "url": "floor-maps/lotte/0399/01F.svg",
+        "highlightUrl": "floor-maps/lotte/0399/01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/17890962620766FQYB.svg",
         "brands": [
           "우영미"
         ]
@@ -1729,37 +1949,55 @@
       {
         "floor": "B1F",
         "label": "B1 푸드에비뉴ㅣ다이닝",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202507/0399/20250721114339357_6.png",
+        "url": "floor-maps/lotte/0399/B1F.svg",
+        "highlightUrl": "floor-maps/lotte/0399/B1F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1788934393889nFh9x.svg",
         "brands": []
       },
       {
         "floor": "B2F",
         "label": "B2 라이프스타일 | 베이커리 | 서점",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210814175118821_3.png",
+        "url": "floor-maps/lotte/0399/B2F.svg",
+        "highlightUrl": "floor-maps/lotte/0399/B2F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1789274793079jIEko.svg",
         "brands": []
       },
       {
         "floor": "B3F",
         "label": "B3 주차장/KTX·GTX/여행서비스",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210810082628207_3.png",
+        "url": "floor-maps/lotte/0399/B3F.svg",
+        "highlightUrl": "floor-maps/lotte/0399/B3F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1788240369221oaGBH.svg",
         "brands": []
       },
       {
         "floor": "B4F",
         "label": "B4 주차장ㅣ스팀세차장",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210810082510444_1.png",
+        "url": "floor-maps/lotte/0399/B4F.svg",
+        "highlightUrl": "floor-maps/lotte/0399/B4F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1774175167522uVKCQ.svg",
         "brands": []
       },
       {
         "floor": "B5F",
         "label": "B5 주차장",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210810082343686_9.png",
+        "url": "floor-maps/lotte/0399/B5F.svg",
+        "highlightUrl": "floor-maps/lotte/0399/B5F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1774175118692Y30Jr.svg",
         "brands": []
       },
       {
         "floor": "B6F",
         "label": "B6 주차장",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0399/20210810082222720_4.png",
+        "url": "floor-maps/lotte/0399/B6F.svg",
+        "highlightUrl": "floor-maps/lotte/0399/B6F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1774175109483JHzGy.svg",
         "brands": []
       }
     ],
@@ -1767,55 +2005,82 @@
       {
         "floor": "14F",
         "label": "14F 식당가",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0001/20211017175028110_5.jpg",
+        "url": "floor-maps/lotte/0001/14F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/14F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/17893152685072Cqfo.svg",
         "brands": []
       },
       {
         "floor": "13F",
         "label": "13F 식당가",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202109/0001/20210906184103387_6.jpg",
+        "url": "floor-maps/lotte/0001/13F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/13F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1788171755607CaYdj.svg",
         "brands": []
       },
       {
         "floor": "12F",
         "label": "12F 롯데면세점",
-        "url": "https://minfo.lotteshopping.com/content/cstr/201905/0001/20190508154135690_8.jpg",
+        "url": "floor-maps/lotte/0001/12F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/12F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1787193383101kCgH0.svg",
         "brands": []
       },
       {
         "floor": "11F",
         "label": "11F 롯데면세점",
-        "url": "https://minfo.lotteshopping.com/content/cstr/201905/0001/20190508154113986_4.jpg",
+        "url": "floor-maps/lotte/0001/11F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/11F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1787045483505Q0etx.svg",
         "brands": []
       },
       {
         "floor": "10F",
         "label": "10F 롯데면세점",
-        "url": "https://minfo.lotteshopping.com/content/cstr/201905/0001/20190508154053561_6.jpg",
+        "url": "floor-maps/lotte/0001/10F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/10F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1787045304245VW8YL.svg",
         "brands": []
       },
       {
         "floor": "09F",
         "label": "9F 면세점 l 키네틱 그라운드(K-패션 전문관)",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0001/202111302157482_5.jpg",
+        "url": "floor-maps/lotte/0001/09F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/09F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1789315266271IqZii.svg",
         "brands": []
       },
       {
         "floor": "08F",
         "label": "8F 가전ㆍ가구ㅣ주방식기ㅣ홈데코ㅣ홈패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0001/20220301112301328_5.jpg",
+        "url": "floor-maps/lotte/0001/08F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/08F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1788943470771Vx3U7.svg",
         "brands": []
       },
       {
         "floor": "07F",
         "label": "7F 스포츠ㆍ아웃도어ㅣ킨더유니버스(아동ㆍ유아)",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202506/0001/20250622163411473_8.jpg",
+        "url": "floor-maps/lotte/0001/07F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/07F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1788694588857e737j.svg",
         "brands": []
       },
       {
         "floor": "06F",
         "label": "6F 골프ㅣ남성컨템포러리ㅣ남성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0001/20220901090338712_6.png",
+        "url": "floor-maps/lotte/0001/06F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/06F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1787301684944IhXjj.svg",
         "brands": [
           "띠어리맨",
           "맨메이드카페",
@@ -1829,10 +2094,7 @@
           "아스페시",
           "아페쎄맨",
           "준지",
-          "질스튜어트뉴욕",
-          "클럽모나코",
           "타임옴므",
-          "CP컴퍼니",
           "DKNY맨",
           "POTTERY"
         ]
@@ -1840,7 +2102,10 @@
       {
         "floor": "05F",
         "label": "5F 남성해외패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0001/2021112418464416_7.jpg",
+        "url": "floor-maps/lotte/0001/05F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1787301655622Qts1x.svg",
         "brands": [
           "스톤아일랜드",
           "우영미"
@@ -1849,31 +2114,100 @@
       {
         "floor": "04F",
         "label": "4F 여성패션ㅣ란제리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0001/20211213133416654_4.jpg",
+        "url": "floor-maps/lotte/0001/04F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1788916552667iwc6h.svg",
         "brands": []
       },
       {
         "floor": "03F",
         "label": "3F 해외슈즈ㅣ여성컨템포러리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0001/20211227133748618_9.jpg",
+        "url": "floor-maps/lotte/0001/03F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1788929556462jQqaP.svg",
         "brands": []
       },
       {
         "floor": "02F",
         "label": "2F 여성해외패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202201/0001/20220103100521180_2.jpg",
+        "url": "floor-maps/lotte/0001/02F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1787301881905l281x.svg",
         "brands": []
       },
       {
         "floor": "01F",
         "label": "1F 화장품ㅣ해외패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202608/0001/20260810110526458_1.png",
+        "url": "floor-maps/lotte/0001/01F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1789344613310W9Y4A.svg",
         "brands": []
       },
       {
         "floor": "B1F",
         "label": "B1 푸드에비뉴ㅣ화장품ㅣ보석ㅣ핸드백 l 구두ㅣ문화센터",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0001/20211215181530494_2.jpg",
+        "url": "floor-maps/lotte/0001/B1F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/B1F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1789018740646n2RlQ.svg",
+        "brands": []
+      },
+      {
+        "floor": "B2F",
+        "label": "B2 주차장",
+        "url": "floor-maps/lotte/0001/B2F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/B2F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/17750344775753G9b7.svg",
+        "brands": []
+      },
+      {
+        "floor": "B3F",
+        "label": "B3 주차장",
+        "url": "floor-maps/lotte/0001/B3F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/B3F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1775034516802iCAHk.svg",
+        "brands": []
+      },
+      {
+        "floor": "B4F",
+        "label": "B4 주차장",
+        "url": "floor-maps/lotte/0001/B4F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/B4F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1775034541435uPC5k.svg",
+        "brands": []
+      },
+      {
+        "floor": "B5F",
+        "label": "B5 주차장",
+        "url": "floor-maps/lotte/0001/B5F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/B5F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1775034733317pCQDp.svg",
+        "brands": []
+      },
+      {
+        "floor": "B6F",
+        "label": "B6 주차장",
+        "url": "floor-maps/lotte/0001/B6F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/B6F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1775034800825yJuFP.svg",
+        "brands": []
+      },
+      {
+        "floor": "B7F",
+        "label": "B7 주차장",
+        "url": "floor-maps/lotte/0001/B7F.svg",
+        "highlightUrl": "floor-maps/lotte/0001/B7F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1775541506601NdLep.svg",
         "brands": []
       }
     ],
@@ -1881,49 +2215,73 @@
       {
         "floor": "11F",
         "label": "11F 문화센터ㅣ샤롯데가든",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0005/20211014152551550_8.jpg",
+        "url": "floor-maps/lotte/0005/11F.svg",
+        "highlightUrl": "floor-maps/lotte/0005/11F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/1786619101644cAr4h.svg",
         "brands": []
       },
       {
         "floor": "10F",
         "label": "10F 롯데시네마ㅣ샤롯데가든",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0005/20211014173746124_4.jpg",
+        "url": "floor-maps/lotte/0005/10F.svg",
+        "highlightUrl": "floor-maps/lotte/0005/10F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/17741994288739srwf.svg",
         "brands": []
       },
       {
         "floor": "09F",
         "label": "9F 식당가ㅣ삼성ㅣ애플, 투바ㅣ엘아레나ㅣ롯데카드",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202201/CNT00000000000012031/20220113153411923_2.jpg",
+        "url": "floor-maps/lotte/0005/09F.svg",
+        "highlightUrl": "floor-maps/lotte/0005/09F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/1788397952492iJ1Ka.svg",
         "brands": []
       },
       {
         "floor": "08F",
         "label": "8F 면세점",
-        "url": "https://minfo.lotteshopping.com/content/cstr/201905/0005/20190503161219194_0.jpg",
+        "url": "floor-maps/lotte/0005/08F.svg",
+        "highlightUrl": "floor-maps/lotte/0005/08F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/1786619720395D5fGx.svg",
         "brands": []
       },
       {
         "floor": "07F",
         "label": "7F 영스트리트ㅣ사은행사장",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/CNT00000000000012181/20220225123103289_5.jpg",
+        "url": "floor-maps/lotte/0005/07F.svg",
+        "highlightUrl": "floor-maps/lotte/0005/07F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/17890053859300MLCq.svg",
         "brands": []
       },
       {
         "floor": "06F",
         "label": "6F 가정용품ㅣ가전ㅣ아동ㆍ유아",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0005/20211016165342344_6.jpg",
+        "url": "floor-maps/lotte/0005/06F.svg",
+        "highlightUrl": "floor-maps/lotte/0005/06F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/1789302220586CLFaM.svg",
         "brands": []
       },
       {
         "floor": "05F",
         "label": "5F 아웃도어ㅣ스포츠",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0005/20211017121604291_6.jpg",
+        "url": "floor-maps/lotte/0005/05F.svg",
+        "highlightUrl": "floor-maps/lotte/0005/05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/1789302865386xsPb5.svg",
         "brands": []
       },
       {
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220210191056923_1.jpg",
+        "url": "floor-maps/lotte/0005/04F.svg",
+        "highlightUrl": "floor-maps/lotte/0005/04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/17878300771312gPxK.svg",
         "brands": [
           "띠어리맨",
           "바버",
@@ -1937,11 +2295,7 @@
           "준지",
           "지오송지오",
           "지제로",
-          "질스튜어트뉴욕",
-          "클럽모나코",
           "타임옴므",
-          "톰그레이하운드맨",
-          "플랫폼플레이스",
           "CP컴퍼니",
           "DKNY맨"
         ]
@@ -1949,31 +2303,73 @@
       {
         "floor": "03F",
         "label": "3F 여성패션ㅣ구두ㅣ핸드백",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202201/0005/20220112144450817_9.jpg",
+        "url": "floor-maps/lotte/0005/03F.svg",
+        "highlightUrl": "floor-maps/lotte/0005/03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/17893024493712KNoH.svg",
         "brands": []
       },
       {
         "floor": "02F",
         "label": "2F 여성캐주얼ㅣ주얼리·워치ㅣ란제리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0005/20220218115956146_2.jpg",
+        "url": "floor-maps/lotte/0005/02F.svg",
+        "highlightUrl": "floor-maps/lotte/0005/02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/1789085808313jmqW0.svg",
         "brands": []
       },
       {
         "floor": "01F",
         "label": "1F 화장품ㅣ해외패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202201/0005/20220124114326316_9.jpg",
+        "url": "floor-maps/lotte/0005/01F.svg",
+        "highlightUrl": "floor-maps/lotte/0005/01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/17893615765225jK41.svg",
         "brands": []
       },
       {
         "floor": "B1F",
         "label": "B1 키네틱 스테이지ㅣ델리ㅣ패션잡화ㅣ점행사장",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0005/20220324185530365_3.jpg",
+        "url": "floor-maps/lotte/0005/B1F.svg",
+        "highlightUrl": "floor-maps/lotte/0005/B1F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/17893632864965zy5D.svg",
         "brands": []
       },
       {
         "floor": "B2F",
         "label": "B2 식품관 푸드에비뉴",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202112/CNT00000000000011832/20211218121843122_7.jpg",
+        "url": "floor-maps/lotte/0005/B2F.svg",
+        "highlightUrl": "floor-maps/lotte/0005/B2F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/1789302806539UNenE.svg",
+        "brands": []
+      },
+      {
+        "floor": "B3F",
+        "label": "B3 주차장",
+        "url": "floor-maps/lotte/0005/B3F.svg",
+        "highlightUrl": "floor-maps/lotte/0005/B3F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/1774199103575XZKoo.svg",
+        "brands": []
+      },
+      {
+        "floor": "B4F",
+        "label": "B4 주차장",
+        "url": "floor-maps/lotte/0005/B4F.svg",
+        "highlightUrl": "floor-maps/lotte/0005/B4F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/1774199096644qfPlJ.svg",
+        "brands": []
+      },
+      {
+        "floor": "B5F",
+        "label": "B5 주차장",
+        "url": "floor-maps/lotte/0005/B5F.svg",
+        "highlightUrl": "floor-maps/lotte/0005/B5F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/1774199089763j3NO0.svg",
         "brands": []
       }
     ],
@@ -1981,50 +2377,68 @@
       {
         "floor": "08F",
         "label": "8F 샤롯데가든",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202003/0349/20200323130032635_8.jpg",
+        "url": "floor-maps/lotte/0349/08F.svg",
+        "highlightUrl": "floor-maps/lotte/0349/08F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/bc7d1826-44a6-4e17-9016-416c07a1c0c2/1774200473140bLpO6.svg",
         "brands": []
       },
       {
         "floor": "07F",
         "label": "7F 식당가ㅣ롯데문화센터 | 사은품증정 | 뷰티&헤어",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0349/2021100109590747_4.jpg",
+        "url": "floor-maps/lotte/0349/07F.svg",
+        "highlightUrl": "floor-maps/lotte/0349/07F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/bc7d1826-44a6-4e17-9016-416c07a1c0c2/178823181491041mZs.svg",
         "brands": []
       },
       {
         "floor": "06F",
         "label": "6F 아동·유아 | 영캐주얼 | 킨더스튜디오 | 란제리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202109/0349/20210911173536154_1.jpg",
+        "url": "floor-maps/lotte/0349/06F.svg",
+        "highlightUrl": "floor-maps/lotte/0349/06F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/bc7d1826-44a6-4e17-9016-416c07a1c0c2/1785459781761tB0Vv.svg",
         "brands": []
       },
       {
         "floor": "05F",
         "label": "5F 스포츠ㅣ아웃도어",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0349/20211013120526493_1.jpg",
+        "url": "floor-maps/lotte/0349/05F.svg",
+        "highlightUrl": "floor-maps/lotte/0349/05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/bc7d1826-44a6-4e17-9016-416c07a1c0c2/1774200450945Kv475.svg",
         "brands": []
       },
       {
         "floor": "04F",
         "label": "4F 남성패션ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0349/20211006160611353_5.jpg",
+        "url": "floor-maps/lotte/0349/04F.svg",
+        "highlightUrl": "floor-maps/lotte/0349/04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/bc7d1826-44a6-4e17-9016-416c07a1c0c2/1782800612529ZnkIJ.svg",
         "brands": [
           "띠어리맨",
-          "송지오옴므",
           "시스템옴므",
-          "이로맨",
-          "클럽모나코",
           "타임옴므"
         ]
       },
       {
         "floor": "03F",
         "label": "3F 여성패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0349/20210827165043926_9.jpg",
+        "url": "floor-maps/lotte/0349/03F.svg",
+        "highlightUrl": "floor-maps/lotte/0349/03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/bc7d1826-44a6-4e17-9016-416c07a1c0c2/1789369840204husDS.svg",
         "brands": []
       },
       {
         "floor": "02F",
         "label": "2F 해외패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0349/20211208200306601_1.jpg",
+        "url": "floor-maps/lotte/0349/02F.svg",
+        "highlightUrl": "floor-maps/lotte/0349/02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/bc7d1826-44a6-4e17-9016-416c07a1c0c2/1776757061769VMh6H.svg",
         "brands": [
           "스톤아일랜드"
         ]
@@ -2032,84 +2446,140 @@
       {
         "floor": "01F",
         "label": "1F 화장품ㅣ패션 주얼리ㅣ핸드백",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0349/20211209170120543_6.jpg",
+        "url": "floor-maps/lotte/0349/01F.svg",
+        "highlightUrl": "floor-maps/lotte/0349/01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/bc7d1826-44a6-4e17-9016-416c07a1c0c2/1787392173441220lZ.svg",
         "brands": []
       },
       {
         "floor": "B1F",
         "label": "B1 식품ㅣ생활가전",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202112/0349/202112021720442_8.jpg",
+        "url": "floor-maps/lotte/0349/B1F.svg",
+        "highlightUrl": "floor-maps/lotte/0349/B1F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/bc7d1826-44a6-4e17-9016-416c07a1c0c2/1780290747275y5njr.svg",
+        "brands": []
+      },
+      {
+        "floor": "B2F",
+        "label": "B2 주차장",
+        "url": "floor-maps/lotte/0349/B2F.svg",
+        "highlightUrl": "floor-maps/lotte/0349/B2F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/bc7d1826-44a6-4e17-9016-416c07a1c0c2/177420030932556oTF.svg",
         "brands": []
       }
     ],
     "0010": [
       {
+        "floor": "11F",
+        "label": "11F 샤롯데가든ㅣ전망대ㅣ카페",
+        "url": "floor-maps/lotte/0010/11F.svg",
+        "highlightUrl": "floor-maps/lotte/0010/11F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/09710d3a-1c61-4c3f-8336-0e11dfbabd9a/1775481010680dstMv.svg",
+        "brands": []
+      },
+      {
         "floor": "10F",
         "label": "10F 식당가ㅣ롯데문화홀ㅣ헤어숍",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202504/0010/20250430140708829_5.jpg",
+        "url": "floor-maps/lotte/0010/10F.svg",
+        "highlightUrl": "floor-maps/lotte/0010/10F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/09710d3a-1c61-4c3f-8336-0e11dfbabd9a/1775481005082VwtJa.svg",
         "brands": []
       },
       {
         "floor": "09F",
         "label": "9F 가전ㅣ가구ㆍ침구ㅣ주방ㆍ식기ㅣ귀금속",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202609/0010/20260901153950331_9.jpg",
+        "url": "floor-maps/lotte/0010/09F.svg",
+        "highlightUrl": "floor-maps/lotte/0010/09F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/09710d3a-1c61-4c3f-8336-0e11dfbabd9a/1788255634732dFran.svg",
         "brands": []
       },
       {
         "floor": "08F",
         "label": "8F 아동ㆍ유아ㅣ키즈카페ㅣ한샘리하우스ㅣ롯데시네마(상영관)",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202503/0010/20250306120636179_4.jpg",
+        "url": "floor-maps/lotte/0010/08F.svg",
+        "highlightUrl": "floor-maps/lotte/0010/08F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/09710d3a-1c61-4c3f-8336-0e11dfbabd9a/1782899172273EhoJl.svg",
         "brands": []
       },
       {
         "floor": "07F",
         "label": "7F 스포츠ㅣ골프ㅣ롯데시네마(매표소)",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202607/0010/20260711201351116_2.png",
+        "url": "floor-maps/lotte/0010/07F.svg",
+        "highlightUrl": "floor-maps/lotte/0010/07F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/09710d3a-1c61-4c3f-8336-0e11dfbabd9a/1784279729830veYDw.svg",
         "brands": []
       },
       {
         "floor": "06F",
         "label": "6F 남성패션ㅣ아웃도어ㅣ사은품증정ㅣ롯데상품권",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202409/0010/20240909152036312_1.jpg",
+        "url": "floor-maps/lotte/0010/06F.svg",
+        "highlightUrl": "floor-maps/lotte/0010/06F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/09710d3a-1c61-4c3f-8336-0e11dfbabd9a/1788231009302ekZY7.svg",
         "brands": [
-          "시스템옴므",
-          "클럽모나코"
+          "시스템옴므"
         ]
       },
       {
         "floor": "05F",
         "label": "5F 여성패션ㅣ란제리ㅣ점행사장",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202603/0010/20260325131154355_7.jpg",
+        "url": "floor-maps/lotte/0010/05F.svg",
+        "highlightUrl": "floor-maps/lotte/0010/05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/09710d3a-1c61-4c3f-8336-0e11dfbabd9a/1775480968960WsBA4.svg",
         "brands": []
       },
       {
         "floor": "04F",
         "label": "4F 여성 캐릭터ㅣ핸드백",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202608/0010/20260814134612342_6.png",
+        "url": "floor-maps/lotte/0010/04F.svg",
+        "highlightUrl": "floor-maps/lotte/0010/04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/09710d3a-1c61-4c3f-8336-0e11dfbabd9a/1786684144033AS7TG.svg",
         "brands": []
       },
       {
         "floor": "03F",
         "label": "3F 화장품ㅣ여성컨템포러리ㅣ패션잡화ㅣ롯데카드ㅣ문화센터(별관)",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0010/2022091714343620_1.jpg",
+        "url": "floor-maps/lotte/0010/03F.svg",
+        "highlightUrl": "floor-maps/lotte/0010/03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/09710d3a-1c61-4c3f-8336-0e11dfbabd9a/1787636950204IKMOV.svg",
         "brands": []
       },
       {
         "floor": "02F",
         "label": "2F 영 캐주얼ㅣ슈즈ㅣ고객상담실",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202603/0010/20260318143942786_5.png",
+        "url": "floor-maps/lotte/0010/02F.svg",
+        "highlightUrl": "floor-maps/lotte/0010/02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/09710d3a-1c61-4c3f-8336-0e11dfbabd9a/178832415307803TI8.svg",
         "brands": []
       },
       {
         "floor": "01F",
         "label": "1F 영 컬쳐ㅣ카페",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0010/20211029173714467_5.jpg",
+        "url": "floor-maps/lotte/0010/01F.svg",
+        "highlightUrl": "floor-maps/lotte/0010/01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/09710d3a-1c61-4c3f-8336-0e11dfbabd9a/1787648995326K3UCG.svg",
         "brands": []
       },
       {
         "floor": "B1F",
         "label": "B1 푸드에비뉴",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202508/0010/20250804171245416_1.jpg",
+        "url": "floor-maps/lotte/0010/B1F.svg",
+        "highlightUrl": "floor-maps/lotte/0010/B1F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/09710d3a-1c61-4c3f-8336-0e11dfbabd9a/1775480932492MJSXo.svg",
         "brands": []
       }
     ],
@@ -2117,113 +2587,176 @@
       {
         "floor": "08F",
         "label": "8F 서비스라운지 | 식당가ㅣ고객상담실ㅣ문화센터",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202204/0015/20220425101051486_3.jpg",
+        "url": "floor-maps/lotte/0015/08F.svg",
+        "highlightUrl": "floor-maps/lotte/0015/08F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/4285abc8-2c27-4f42-891d-35adb4c4a1ec/1782875305960Ndt0c.svg",
         "brands": []
       },
       {
         "floor": "07F",
         "label": "7F 키즈ㆍ유아휴게실ㅣ영플라자 : 그랜드휠",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202207/0015/20220725100646949_3.jpg",
+        "url": "floor-maps/lotte/0015/07F.svg",
+        "highlightUrl": "floor-maps/lotte/0015/07F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/4285abc8-2c27-4f42-891d-35adb4c4a1ec/1787384731434eHhsM.svg",
         "brands": []
       },
       {
         "floor": "06F",
         "label": "6F 본관 : 남성패션 | 아웃도어",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0015/20220214143916790_6.jpg",
+        "url": "floor-maps/lotte/0015/06F.svg",
+        "highlightUrl": "floor-maps/lotte/0015/06F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/4285abc8-2c27-4f42-891d-35adb4c4a1ec/1787113561959HHipP.svg",
         "brands": []
       },
       {
         "floor": "05F",
         "label": "5F 아웃도어ㅣ골프 | 영패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202208/0015/20220826170500247_2.jpg",
+        "url": "floor-maps/lotte/0015/05F.svg",
+        "highlightUrl": "floor-maps/lotte/0015/05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/4285abc8-2c27-4f42-891d-35adb4c4a1ec/17873809980915c6KX.svg",
         "brands": []
       },
       {
         "floor": "04F",
         "label": "4F 스포츠 | 영패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0015/202209081014414_3.jpg",
+        "url": "floor-maps/lotte/0015/04F.svg",
+        "highlightUrl": "floor-maps/lotte/0015/04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/4285abc8-2c27-4f42-891d-35adb4c4a1ec/1786859520421IrVuf.svg",
         "brands": []
       },
       {
         "floor": "03F",
         "label": "3F 본관 : 여성패션ㅣ영플라자 : 롯데시네마",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0015/20220207144542989_7.jpg",
+        "url": "floor-maps/lotte/0015/03F.svg",
+        "highlightUrl": "floor-maps/lotte/0015/03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/4285abc8-2c27-4f42-891d-35adb4c4a1ec/1774768213176Pr3jK.svg",
         "brands": []
       },
       {
         "floor": "02F",
         "label": "2F 여성정장ㅣ구두, 시네마동: ABC마트",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0015/20220902152237980_6.jpg",
+        "url": "floor-maps/lotte/0015/02F.svg",
+        "highlightUrl": "floor-maps/lotte/0015/02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/4285abc8-2c27-4f42-891d-35adb4c4a1ec/1782267489856RT0Lg.svg",
         "brands": []
       },
       {
         "floor": "01F",
         "label": "1F 패션잡화ㅣ화장품ㅣ영플라자",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202207/0015/20220728140254373_6.jpg",
+        "url": "floor-maps/lotte/0015/01F.svg",
+        "highlightUrl": "floor-maps/lotte/0015/01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/4285abc8-2c27-4f42-891d-35adb4c4a1ec/17885035753608p6dc.svg",
         "brands": []
       },
       {
         "floor": "B1F",
         "label": "B1 식품관ㅣ생활가전",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202208/0015/20220802105339857_1.jpg",
+        "url": "floor-maps/lotte/0015/B1F.svg",
+        "highlightUrl": "floor-maps/lotte/0015/B1F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/4285abc8-2c27-4f42-891d-35adb4c4a1ec/1789008322552a7K4z.svg",
         "brands": []
       }
     ],
     "0344": [
       {
+        "floor": "07F",
+        "label": "7F 주차장",
+        "url": "floor-maps/lotte/0344/07F.svg",
+        "highlightUrl": "floor-maps/lotte/0344/07F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/1ec800a4-52ae-4a72-a0ce-935018f4c8a8/1774169705691flny4.svg",
+        "brands": []
+      },
+      {
         "floor": "06F",
         "label": "6F 식당가",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202109/0344/20210909154819203_1.jpg",
+        "url": "floor-maps/lotte/0344/06F.svg",
+        "highlightUrl": "floor-maps/lotte/0344/06F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/1ec800a4-52ae-4a72-a0ce-935018f4c8a8/1788571216798W4F2X.svg",
         "brands": []
       },
       {
         "floor": "05F",
         "label": "5F 리빙 | 이벤트홀ㅣ사은ㅣ카드센터ㅣ상품권데스크ㅣ문화센터",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202208/0344/20220823172033878_8.png",
+        "url": "floor-maps/lotte/0344/05F.svg",
+        "highlightUrl": "floor-maps/lotte/0344/05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/1ec800a4-52ae-4a72-a0ce-935018f4c8a8/1788928390191lCLHS.svg",
         "brands": []
       },
       {
         "floor": "04F",
         "label": "4F 남성패션ㅣ스포츠ㅣ아웃도어ㅣ골프",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0344/20211020123028539_1.jpg",
+        "url": "floor-maps/lotte/0344/04F.svg",
+        "highlightUrl": "floor-maps/lotte/0344/04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/1ec800a4-52ae-4a72-a0ce-935018f4c8a8/1788431455544MFTGx.svg",
         "brands": [
           "띠어리맨",
           "바버",
-          "비이커",
           "솔리드옴므",
           "송지오옴므",
           "수트서플라이",
           "시스템옴므",
           "아페쎄맨",
           "준지",
-          "클럽모나코",
           "타임옴므",
-          "톰그레이하운드맨",
           "DKNY맨"
         ]
       },
       {
         "floor": "03F",
         "label": "3F 아동·유아 | 여성·영패션 | 구두·핸드백 | 란제리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202404/0344/20240425120436199_1.png",
+        "url": "floor-maps/lotte/0344/03F.svg",
+        "highlightUrl": "floor-maps/lotte/0344/03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/1ec800a4-52ae-4a72-a0ce-935018f4c8a8/1787728163658yR0cA.svg",
         "brands": []
       },
       {
         "floor": "02F",
         "label": "2F 해외패션ㅣ여성컨템포러리ㅣ여성캐릭터ㅣ나이키ㅣ코치 커피숍",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202406/0344/20240608122313780_8.png",
+        "url": "floor-maps/lotte/0344/02F.svg",
+        "highlightUrl": "floor-maps/lotte/0344/02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/1ec800a4-52ae-4a72-a0ce-935018f4c8a8/17893550087411HAjm.svg",
         "brands": []
       },
       {
         "floor": "01F",
         "label": "1F 해외부틱ㅣ시계·보석ㅣACCㅣ안내ㅣ터미널",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0344/20220326094028877_8.jpg",
+        "url": "floor-maps/lotte/0344/01F.svg",
+        "highlightUrl": "floor-maps/lotte/0344/01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/1ec800a4-52ae-4a72-a0ce-935018f4c8a8/1789354933938ogsAF.svg",
         "brands": []
       },
       {
         "floor": "B1F",
         "label": "B1 레피세리ㅣ엘비노ㅣF&Bㅣ화장품ㅣ롯데시네마ㅣ유니클로",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202404/0344/20240427121641963_8.png",
+        "url": "floor-maps/lotte/0344/B1F.svg",
+        "highlightUrl": "floor-maps/lotte/0344/B1F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/1ec800a4-52ae-4a72-a0ce-935018f4c8a8/17893548768470q951.svg",
+        "brands": []
+      },
+      {
+        "floor": "B2F",
+        "label": "B2 주차장",
+        "url": "floor-maps/lotte/0344/B2F.svg",
+        "highlightUrl": "floor-maps/lotte/0344/B2F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/1ec800a4-52ae-4a72-a0ce-935018f4c8a8/1774169895075Tc0n2.svg",
         "brands": []
       }
     ],
@@ -2231,37 +2764,55 @@
       {
         "floor": "11F",
         "label": "11F 샤롯데가든",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202107/0011/20210706123126405_2.jpg",
+        "url": "floor-maps/lotte/0011/11F.svg",
+        "highlightUrl": "floor-maps/lotte/0011/11F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/67d82918-3262-4917-8d97-76b17519e93f/1774200591095FrulW.svg",
         "brands": []
       },
       {
         "floor": "10F",
         "label": "10F 식당가 Ι 리조트휘트니스",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202510/0011/20251002182653453_3.jpg",
+        "url": "floor-maps/lotte/0011/10F.svg",
+        "highlightUrl": "floor-maps/lotte/0011/10F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/67d82918-3262-4917-8d97-76b17519e93f/1774200586120Hwy2G.svg",
         "brands": []
       },
       {
         "floor": "09F",
         "label": "9F 문화센터",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202504/0011/20250422095956545_6.png",
+        "url": "floor-maps/lotte/0011/09F.svg",
+        "highlightUrl": "floor-maps/lotte/0011/09F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/67d82918-3262-4917-8d97-76b17519e93f/1774200580878ZUP0q.svg",
         "brands": []
       },
       {
         "floor": "08F",
         "label": "8F 리빙패션 Ι 가전ㆍ가구",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202509/0011/20250901133654533_8.png",
+        "url": "floor-maps/lotte/0011/08F.svg",
+        "highlightUrl": "floor-maps/lotte/0011/08F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/67d82918-3262-4917-8d97-76b17519e93f/1786787706998kIH1X.svg",
         "brands": []
       },
       {
         "floor": "07F",
         "label": "7F 골프 Ι 아웃도어 Ι 아동ㆍ유아",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202609/0011/20260901151555627_8.png",
+        "url": "floor-maps/lotte/0011/07F.svg",
+        "highlightUrl": "floor-maps/lotte/0011/07F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/67d82918-3262-4917-8d97-76b17519e93f/1788311417795pI7uL.svg",
         "brands": []
       },
       {
         "floor": "06F",
         "label": "6F 남성패션 Ι 셔츠ㆍ타이",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202602/0011/20260210143553475_7.png",
+        "url": "floor-maps/lotte/0011/06F.svg",
+        "highlightUrl": "floor-maps/lotte/0011/06F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/67d82918-3262-4917-8d97-76b17519e93f/1780982699539HvmHG.svg",
         "brands": [
           "띠어리맨",
           "DKNY맨"
@@ -2270,43 +2821,64 @@
       {
         "floor": "05F",
         "label": "5F 디자이너부틱 Ι 구두 Ι 모피 Ι 점행사장",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202512/0011/20251223152825913_0.jpg",
+        "url": "floor-maps/lotte/0011/05F.svg",
+        "highlightUrl": "floor-maps/lotte/0011/05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/67d82918-3262-4917-8d97-76b17519e93f/1787705237634PxI4G.svg",
         "brands": []
       },
       {
         "floor": "04F",
         "label": "4F 컨템포러리 Ι 란제리 Ι 롯데카드센터",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202608/0011/20260822141210528_1.jpg",
+        "url": "floor-maps/lotte/0011/04F.svg",
+        "highlightUrl": "floor-maps/lotte/0011/04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/67d82918-3262-4917-8d97-76b17519e93f/17875607239171e8vw.svg",
         "brands": []
       },
       {
         "floor": "03F",
         "label": "3F 영패션 Ι 유니클로",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202509/0011/20250907142202217_3.JPG",
+        "url": "floor-maps/lotte/0011/03F.svg",
+        "highlightUrl": "floor-maps/lotte/0011/03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/67d82918-3262-4917-8d97-76b17519e93f/1778047361208rxw07.svg",
         "brands": []
       },
       {
         "floor": "02F",
         "label": "2F 해외명품 Ι 화장품",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202510/0011/20251020101320824_1.jpg",
+        "url": "floor-maps/lotte/0011/02F.svg",
+        "highlightUrl": "floor-maps/lotte/0011/02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/67d82918-3262-4917-8d97-76b17519e93f/1787560632551UpBiI.svg",
         "brands": []
       },
       {
         "floor": "01F",
         "label": "1F 패션잡화 Ι 준보석 Ι 多樂별장",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202501/0011/20250103121322435_2.png",
+        "url": "floor-maps/lotte/0011/01F.svg",
+        "highlightUrl": "floor-maps/lotte/0011/01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/67d82918-3262-4917-8d97-76b17519e93f/17870139008302sB3a.svg",
         "brands": []
       },
       {
         "floor": "B1F",
         "label": "B1 멀티캐주얼 Ι 스포츠",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202507/0011/20250724120900441_5.png",
+        "url": "floor-maps/lotte/0011/B1F.svg",
+        "highlightUrl": "floor-maps/lotte/0011/B1F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/67d82918-3262-4917-8d97-76b17519e93f/1774200503518L8mNw.svg",
         "brands": []
       },
       {
         "floor": "B2F",
         "label": "B2 식품 Ι 푸드마켓",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202509/0011/20250909115948445_8.png",
+        "url": "floor-maps/lotte/0011/B2F.svg",
+        "highlightUrl": "floor-maps/lotte/0011/B2F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/67d82918-3262-4917-8d97-76b17519e93f/1788151903219WYxKI.svg",
         "brands": []
       }
     ],
@@ -2314,49 +2886,73 @@
       {
         "floor": "12F",
         "label": "12F 문화센터",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202008/0002/20200831155003332_4.jpg",
+        "url": "floor-maps/lotte/0002/12F.svg",
+        "highlightUrl": "floor-maps/lotte/0002/12F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1776318170590HeBHm.svg",
         "brands": []
       },
       {
         "floor": "11F",
         "label": "11F 레스토랑ㅣ금융센터",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202309/0002/20230907102919396_5.jpg",
+        "url": "floor-maps/lotte/0002/11F.svg",
+        "highlightUrl": "floor-maps/lotte/0002/11F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789368097625ylJfT.svg",
         "brands": []
       },
       {
         "floor": "10F",
         "label": "10F 가전/가구",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202311/0002/20231105134906875_5.jpg",
+        "url": "floor-maps/lotte/0002/10F.svg",
+        "highlightUrl": "floor-maps/lotte/0002/10F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789368068581iAWtv.svg",
         "brands": []
       },
       {
         "floor": "09F",
         "label": "9F 홈패션ㅣ주방식기ㅣ가구",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202311/0002/20231105134827626_1.jpg",
+        "url": "floor-maps/lotte/0002/09F.svg",
+        "highlightUrl": "floor-maps/lotte/0002/09F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789367957224bk5W7.svg",
         "brands": []
       },
       {
         "floor": "08F",
         "label": "8F 아동ㆍ유아ㅣ사은품증정",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202310/0002/20231011131338705_2.jpg",
+        "url": "floor-maps/lotte/0002/08F.svg",
+        "highlightUrl": "floor-maps/lotte/0002/08F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/17893678332952VY21.svg",
         "brands": []
       },
       {
         "floor": "07F",
         "label": "7F 스포츠ㅣ애슬레져",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202309/0002/20230914134749573_6.jpg",
+        "url": "floor-maps/lotte/0002/07F.svg",
+        "highlightUrl": "floor-maps/lotte/0002/07F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789367757921XbLdS.svg",
         "brands": []
       },
       {
         "floor": "06F",
         "label": "6F 골프ㅣ아웃도어",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202311/0002/20231123150814287_1.jpg",
+        "url": "floor-maps/lotte/0002/06F.svg",
+        "highlightUrl": "floor-maps/lotte/0002/06F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789367725414OpxPC.svg",
         "brands": []
       },
       {
         "floor": "05F",
         "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0002/20220310123943929_7.jpg",
+        "url": "floor-maps/lotte/0002/05F.svg",
+        "highlightUrl": "floor-maps/lotte/0002/05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/17893676224796Bt3N.svg",
         "brands": [
           "띠어리맨",
           "맨온더분",
@@ -2369,12 +2965,6 @@
           "시스템옴므",
           "알레그리",
           "이로맨",
-          "준지",
-          "지오송지오",
-          "지제로",
-          "질스튜어트뉴욕",
-          "클럽모나코",
-          "타임옴므",
           "톰그레이하운드맨",
           "DKNY맨"
         ]
@@ -2382,31 +2972,73 @@
       {
         "floor": "04F",
         "label": "4F 해외·여성의류ㅣ디자이너ㅣ란제리ㅣ잡화ㅣ모피ㅣ구두ㅣ안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202309/0002/20230901180145734_1.jpg",
+        "url": "floor-maps/lotte/0002/04F.svg",
+        "highlightUrl": "floor-maps/lotte/0002/04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789367489104uJcqy.svg",
         "brands": []
       },
       {
         "floor": "03F",
         "label": "3F 컨템포러리ㅣ여성캐주얼ㅣ핸드백",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202311/0002/20231118152036546_8.jpg",
+        "url": "floor-maps/lotte/0002/03F.svg",
+        "highlightUrl": "floor-maps/lotte/0002/03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789367572516uuHqU.svg",
         "brands": []
       },
       {
         "floor": "02F",
         "label": "2F 키네틱그라운드·무신사 | 캐릭터 | 진·영패션 | 슈즈",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202311/0002/20231121184040692_5.jpg",
+        "url": "floor-maps/lotte/0002/02F.svg",
+        "highlightUrl": "floor-maps/lotte/0002/02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789025144392mFHxE.svg",
         "brands": []
       },
       {
         "floor": "01F",
         "label": "1F 명품잡화ㅣ화장품ㅣ시계&보석",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202311/0002/20231105133430628_5.jpg",
+        "url": "floor-maps/lotte/0002/01F.svg",
+        "highlightUrl": "floor-maps/lotte/0002/01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789367368254n06k8.svg",
         "brands": []
       },
       {
         "floor": "B1F",
         "label": "B1 식품",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202310/0002/20231019101433805_1.png",
+        "url": "floor-maps/lotte/0002/B1F.svg",
+        "highlightUrl": "floor-maps/lotte/0002/B1F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789368257456ipkQE.svg",
+        "brands": []
+      },
+      {
+        "floor": "B2F",
+        "label": "B2 Parking Lot",
+        "url": "floor-maps/lotte/0002/B2F.svg",
+        "highlightUrl": "floor-maps/lotte/0002/B2F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1774201354495mZsNo.svg",
+        "brands": []
+      },
+      {
+        "floor": "B3F",
+        "label": "B3 Parking Lot",
+        "url": "floor-maps/lotte/0002/B3F.svg",
+        "highlightUrl": "floor-maps/lotte/0002/B3F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1774201338837XFpfM.svg",
+        "brands": []
+      },
+      {
+        "floor": "B4F",
+        "label": "B4 Parking Lot",
+        "url": "floor-maps/lotte/0002/B4F.svg",
+        "highlightUrl": "floor-maps/lotte/0002/B4F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1774201325503c6LFg.svg",
         "brands": []
       }
     ],
@@ -2414,19 +3046,28 @@
       {
         "floor": "06F",
         "label": "6F 프리미엄 F&B ㅣ와인",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202311/0348/2023111011473488_5.jpg",
+        "url": "floor-maps/lotte/0348/06F.svg",
+        "highlightUrl": "floor-maps/lotte/0348/06F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789267214810JgTTB.svg",
         "brands": []
       },
       {
         "floor": "05F",
         "label": "5F 여성 컨템포러리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202311/0348/20231114185456140_7.jpg",
+        "url": "floor-maps/lotte/0348/05F.svg",
+        "highlightUrl": "floor-maps/lotte/0348/05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1788854324285B14Jr.svg",
         "brands": []
       },
       {
         "floor": "04F",
         "label": "4F 럭셔리 맨즈",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202309/0348/20230914140926558_5.jpg",
+        "url": "floor-maps/lotte/0348/04F.svg",
+        "highlightUrl": "floor-maps/lotte/0348/04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1788854123632Ps5Od.svg",
         "brands": [
           "띠어리맨",
           "스톤아일랜드",
@@ -2438,25 +3079,37 @@
       {
         "floor": "03F",
         "label": "3F 럭셔리 디자이너",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202311/0348/20231110114916378_2.jpg",
+        "url": "floor-maps/lotte/0348/03F.svg",
+        "highlightUrl": "floor-maps/lotte/0348/03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1788309931949Oxeaf.svg",
         "brands": []
       },
       {
         "floor": "02F",
         "label": "2F 워치&주얼리ㅣ럭셔리 디자이너",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202311/0348/20231104153103862_4.jpg",
+        "url": "floor-maps/lotte/0348/02F.svg",
+        "highlightUrl": "floor-maps/lotte/0348/02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789008185875nPNgB.svg",
         "brands": []
       },
       {
         "floor": "01F",
         "label": "1F 럭셔리 부티크",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202310/0348/20231011130248427_7.jpg",
+        "url": "floor-maps/lotte/0348/01F.svg",
+        "highlightUrl": "floor-maps/lotte/0348/01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1788853271092JQ8ox.svg",
         "brands": []
       },
       {
         "floor": "B1F",
         "label": "B1 화장품",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202311/0348/20231130175602965_7.jpg",
+        "url": "floor-maps/lotte/0348/B1F.svg",
+        "highlightUrl": "floor-maps/lotte/0348/B1F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789001836897C7EGP.svg",
         "brands": []
       }
     ],
@@ -2464,37 +3117,55 @@
       {
         "floor": "09F",
         "label": "9F 삐삐블럭ㅣ샤롯데가든",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202104/0025/20210408120228667_8.jpg",
+        "url": "floor-maps/lotte/0025/09F.svg",
+        "highlightUrl": "floor-maps/lotte/0025/09F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/36fd26a1-26fd-451a-a2c3-4b234ac6e013/1776671000512DH0g5.svg",
         "brands": []
       },
       {
         "floor": "08F",
         "label": "8F 사은행사장ㅣ롯데상품권ㅣ고객상담실ㅣ애플공인서비스ㅣ하나투어",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202103/0025/20210303175444727_7.jpg",
+        "url": "floor-maps/lotte/0025/08F.svg",
+        "highlightUrl": "floor-maps/lotte/0025/08F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/36fd26a1-26fd-451a-a2c3-4b234ac6e013/17766709953161i0p8.svg",
         "brands": []
       },
       {
         "floor": "07F",
         "label": "7F 롯데시네마ㅣ공차",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202012/0025/20201202144026352_4.jpg",
+        "url": "floor-maps/lotte/0025/07F.svg",
+        "highlightUrl": "floor-maps/lotte/0025/07F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/36fd26a1-26fd-451a-a2c3-4b234ac6e013/177667098937024wkn.svg",
         "brands": []
       },
       {
         "floor": "06F",
         "label": "6F 진유니섹스ㅣ식당가ㅣ헤어숍ㅣ패션안경",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202109/0025/20210907173447883_9.jpg",
+        "url": "floor-maps/lotte/0025/06F.svg",
+        "highlightUrl": "floor-maps/lotte/0025/06F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/36fd26a1-26fd-451a-a2c3-4b234ac6e013/1788850000756hV3mM.svg",
         "brands": []
       },
       {
         "floor": "05F",
         "label": "5F 아동ㅣ유아ㅣ골프ㅣ스포츠",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0025/20220906150438782_2.png",
+        "url": "floor-maps/lotte/0025/05F.svg",
+        "highlightUrl": "floor-maps/lotte/0025/05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/36fd26a1-26fd-451a-a2c3-4b234ac6e013/1788422462221DkpD0.svg",
         "brands": []
       },
       {
         "floor": "04F",
         "label": "4F 정장ㅣ셔츠ㅣ넥타이ㅣ아웃도어ㅣ트래디셔널",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0025/2022090615140752_7.png",
+        "url": "floor-maps/lotte/0025/04F.svg",
+        "highlightUrl": "floor-maps/lotte/0025/04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/36fd26a1-26fd-451a-a2c3-4b234ac6e013/1780279919782J4NwS.svg",
         "brands": [
           "띠어리맨",
           "바버",
@@ -2507,25 +3178,39 @@
       {
         "floor": "03F",
         "label": "3F 어덜트컨템ㆍ캐릭터ㅣ엘레강스ㅣ란제리ㅣ구두ㅣ핸드백",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0025/20211001111809967_2.jpg",
+        "url": "floor-maps/lotte/0025/03F.svg",
+        "highlightUrl": "floor-maps/lotte/0025/03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/36fd26a1-26fd-451a-a2c3-4b234ac6e013/1788748489284AFXBb.svg",
         "brands": []
       },
       {
         "floor": "02F",
         "label": "2F 캐릭터ㅣ컨템포러리ㅣ영캐릭터ㅣ영캐주얼",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202109/0025/20210907193347457_1.jpg",
-        "brands": []
+        "url": "floor-maps/lotte/0025/02F.svg",
+        "highlightUrl": "floor-maps/lotte/0025/02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/36fd26a1-26fd-451a-a2c3-4b234ac6e013/1788355277004tTynz.svg",
+        "brands": [
+          "띠어리맨"
+        ]
       },
       {
         "floor": "01F",
         "label": "1F 화장품 | 패션잡화 l 해외명품",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202201/0025/20220107134151521_5.jpg",
+        "url": "floor-maps/lotte/0025/01F.svg",
+        "highlightUrl": "floor-maps/lotte/0025/01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/36fd26a1-26fd-451a-a2c3-4b234ac6e013/1781502167480SBRm5.svg",
         "brands": []
       },
       {
         "floor": "B1F",
         "label": "B1 식품ㅣ가전ㅣ가구ㅣ주방식기ㅣ홈패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202205/0025/20220511105746657_1.png",
+        "url": "floor-maps/lotte/0025/B1F.svg",
+        "highlightUrl": "floor-maps/lotte/0025/B1F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/36fd26a1-26fd-451a-a2c3-4b234ac6e013/1780454156583rsAAN.svg",
         "brands": []
       }
     ],
@@ -2533,13 +3218,19 @@
       {
         "floor": "06F",
         "label": "6F 식당가ㅣ점행사장ㅣ사은품증정ㅣ롯데카드",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0017/20220227160647738_8.jpg",
+        "url": "floor-maps/lotte/0017/06F.svg",
+        "highlightUrl": "floor-maps/lotte/0017/06F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/2b4bb9ed-9da5-42c2-b290-a2aae8d16e42/17858988020354k22T.svg",
         "brands": []
       },
       {
         "floor": "05F",
         "label": "5F 남성패션ㅣ트래디셔널ㅣ바버샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202412/0017/202412171453102_0.jpg",
+        "url": "floor-maps/lotte/0017/05F.svg",
+        "highlightUrl": "floor-maps/lotte/0017/05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/2b4bb9ed-9da5-42c2-b290-a2aae8d16e42/1788310563568KKWOe.svg",
         "brands": [
           "띠어리맨",
           "바버",
@@ -2547,7 +3238,6 @@
           "송지오옴므",
           "시스템옴므",
           "지오송지오",
-          "질스튜어트뉴욕",
           "클럽모나코",
           "타임옴므"
         ]
@@ -2555,31 +3245,46 @@
       {
         "floor": "04F",
         "label": "4F 아웃도어ㅣ골프ㅣ아동ㅣ유아",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202206/0017/20220628112430682_9.png",
+        "url": "floor-maps/lotte/0017/04F.svg",
+        "highlightUrl": "floor-maps/lotte/0017/04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/2b4bb9ed-9da5-42c2-b290-a2aae8d16e42/1780389789023Rvb0M.svg",
         "brands": []
       },
       {
         "floor": "03F",
         "label": "3F 여성컨템포러리ㅣ캐릭터ㅣ롯데시네마ㅣ고객상담실",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202509/0017/20250920125757600_6.png",
+        "url": "floor-maps/lotte/0017/03F.svg",
+        "highlightUrl": "floor-maps/lotte/0017/03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/2b4bb9ed-9da5-42c2-b290-a2aae8d16e42/1787623948974gh2K3.svg",
         "brands": []
       },
       {
         "floor": "02F",
         "label": "2F 여성패션ㅣ구두ㅣ란제리",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0017/20211021160542996_3.jpg",
+        "url": "floor-maps/lotte/0017/02F.svg",
+        "highlightUrl": "floor-maps/lotte/0017/02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/2b4bb9ed-9da5-42c2-b290-a2aae8d16e42/1787623903315tYwUt.svg",
         "brands": []
       },
       {
         "floor": "01F",
         "label": "1F 해외명품ㅣ화장품ㅣ패션잡화",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0017/2021100511505526_0.jpg",
+        "url": "floor-maps/lotte/0017/01F.svg",
+        "highlightUrl": "floor-maps/lotte/0017/01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/2b4bb9ed-9da5-42c2-b290-a2aae8d16e42/1787623804654QLsye.svg",
         "brands": []
       },
       {
         "floor": "B1F",
         "label": "B1 식품ㅣ가전ㅣ가구ㅣ주방식기ㅣ홈패션",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0017/20220227160555937_7.jpg",
+        "url": "floor-maps/lotte/0017/B1F.svg",
+        "highlightUrl": "floor-maps/lotte/0017/B1F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/2b4bb9ed-9da5-42c2-b290-a2aae8d16e42/17885738576247CLvh.svg",
         "brands": []
       }
     ],
@@ -2587,31 +3292,46 @@
       {
         "floor": "09F",
         "label": "9F 샤롯데가든",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202105/CNT00000000000010467/2021050117062558_8.jpg",
+        "url": "floor-maps/lotte/0004/09F.svg",
+        "highlightUrl": "floor-maps/lotte/0004/09F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1774200695191qf9Un.svg",
         "brands": []
       },
       {
         "floor": "08F",
         "label": "8F 리빙ㅣ문화센터ㅣ롯데카드",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202409/0004/20240901143141597_7.jpg",
+        "url": "floor-maps/lotte/0004/08F.svg",
+        "highlightUrl": "floor-maps/lotte/0004/08F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1787134803629yOboU.svg",
         "brands": []
       },
       {
         "floor": "07F",
         "label": "7F 생활가전ㅣ식당가ㅣ테라스가든",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202408/0004/20240829173836813_7.jpg",
+        "url": "floor-maps/lotte/0004/07F.svg",
+        "highlightUrl": "floor-maps/lotte/0004/07F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1788686001831wGsuZ.svg",
         "brands": []
       },
       {
         "floor": "06F",
         "label": "6F 스포츠ㅣ골프ㅣ아동",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202412/0004/20241210172944728_2.jpg",
+        "url": "floor-maps/lotte/0004/06F.svg",
+        "highlightUrl": "floor-maps/lotte/0004/06F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1788496840377guGNl.svg",
         "brands": []
       },
       {
         "floor": "05F",
         "label": "5F 남성캐주얼ㅣ트래디셔널ㅣ아웃도어",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202409/0004/20240912113853462_9.png",
+        "url": "floor-maps/lotte/0004/05F.svg",
+        "highlightUrl": "floor-maps/lotte/0004/05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1787382722216jL0Vm.svg",
         "brands": [
           "시스템옴므"
         ]
@@ -2619,43 +3339,55 @@
       {
         "floor": "04F",
         "label": "4F 여성정장ㅣ구두ㅣ점행사장ㅣ사은행사장",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202310/0004/20231012185558345_1.jpg",
+        "url": "floor-maps/lotte/0004/04F.svg",
+        "highlightUrl": "floor-maps/lotte/0004/04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1786504006956EBWQT.svg",
         "brands": []
       },
       {
         "floor": "03F",
         "label": "3F 여성캐주얼ㅣ영캐주얼",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202406/0004/2024060820213469_6.jpg",
+        "url": "floor-maps/lotte/0004/03F.svg",
+        "highlightUrl": "floor-maps/lotte/0004/03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1788143481897l02Nh.svg",
         "brands": []
       },
       {
         "floor": "02F",
         "label": "2F 영캐주얼ㅣ스트리트캐주얼",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202409/0004/202409031203001_9.jpg",
+        "url": "floor-maps/lotte/0004/02F.svg",
+        "highlightUrl": "floor-maps/lotte/0004/02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1789003973261AQ20M.svg",
         "brands": []
       },
       {
         "floor": "01F",
         "label": "1F 화장품ㅣ패션ㆍ장신잡화",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202501/0004/2025012309221743_7.png",
+        "url": "floor-maps/lotte/0004/01F.svg",
+        "highlightUrl": "floor-maps/lotte/0004/01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1788745137539m8yxa.svg",
         "brands": []
       },
       {
         "floor": "B1F",
         "label": "B1 영플라자ㅣ교보문고",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202412/0004/20241204145304608_0.png",
+        "url": "floor-maps/lotte/0004/B1F.svg",
+        "highlightUrl": "floor-maps/lotte/0004/B1F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1788495970228Ac18D.svg",
         "brands": []
       },
       {
         "floor": "B2F",
         "label": "B2 식품 슈퍼ㅣF&B",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202408/0004/20240821112137913_0.jpg",
-        "brands": []
-      },
-      {
-        "floor": "PF",
-        "label": "P 주차장 (8F~2F)",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202403/0004/20240305115118275_6.jpg",
+        "url": "floor-maps/lotte/0004/B2F.svg",
+        "highlightUrl": "floor-maps/lotte/0004/B2F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1788329361473h0GHg.svg",
         "brands": []
       }
     ],
@@ -2663,48 +3395,68 @@
       {
         "floor": "10F",
         "label": "10F 샤롯데가든ㅣ아웃백ㅣ카페",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202004/0341/20200429173758904_2.jpg",
+        "url": "floor-maps/lotte/0341/10F.svg",
+        "highlightUrl": "floor-maps/lotte/0341/10F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/17829586206545B6hv.svg",
         "brands": []
       },
       {
         "floor": "09F",
         "label": "9F 키즈카페",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202101/0341/20210128175901164_1.jpg",
+        "url": "floor-maps/lotte/0341/09F.svg",
+        "highlightUrl": "floor-maps/lotte/0341/09F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/1774171876588gawfT.svg",
         "brands": []
       },
       {
         "floor": "08F",
         "label": "8F 롯데시네마ㅣ식당가ㅣ카페ㅣ치과ㅣ헤어샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202204/0341/20220414101758475_2.jpg",
+        "url": "floor-maps/lotte/0341/08F.svg",
+        "highlightUrl": "floor-maps/lotte/0341/08F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/1783131958079WrgHs.svg",
         "brands": []
       },
       {
         "floor": "07F",
         "label": "7F 생활가전ㅣ문화센터ㅣ식당가ㅣ카페",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202205/0341/20220524101130113_5.jpg",
+        "url": "floor-maps/lotte/0341/07F.svg",
+        "highlightUrl": "floor-maps/lotte/0341/07F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/17877064917393OCRt.svg",
         "brands": []
       },
       {
         "floor": "06F",
         "label": "6F 골프ㅣ아동ㆍ유아ㅣ교보문고 | 점행사장",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0341/20220918133016852_5.jpg",
+        "url": "floor-maps/lotte/0341/06F.svg",
+        "highlightUrl": "floor-maps/lotte/0341/06F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/1787285777192ruk8i.svg",
         "brands": []
       },
       {
         "floor": "05F",
         "label": "5F 스포츠ㅣ진 | 유니섹스ㅣ유니클로",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202211/0341/20221103174740231_5.jpg",
+        "url": "floor-maps/lotte/0341/05F.svg",
+        "highlightUrl": "floor-maps/lotte/0341/05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/1787885885991g6j6R.svg",
         "brands": []
       },
       {
         "floor": "04F",
         "label": "4F 남성패션ㅣ아웃도어ㅣ바버샵",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202209/0341/20220929133143899_0.jpg",
+        "url": "floor-maps/lotte/0341/04F.svg",
+        "highlightUrl": "floor-maps/lotte/0341/04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/1788225570594j5VvV.svg",
         "brands": [
           "띠어리맨",
           "솔리드옴므",
           "시스템옴므",
-          "이로맨",
           "지오송지오",
           "클럽모나코",
           "타임옴므",
@@ -2714,25 +3466,102 @@
       {
         "floor": "03F",
         "label": "3F 여성패션ㅣ패션잡화ㅣ핸드백ㅣ구두",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202111/0341/20211117131823523_6.jpg",
+        "url": "floor-maps/lotte/0341/03F.svg",
+        "highlightUrl": "floor-maps/lotte/0341/03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/1787619760333xfmMt.svg",
         "brands": []
       },
       {
         "floor": "02F",
         "label": "2F 영캐주얼ㅣ무신사 스탠다드",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202108/0341/20210828113620192_7.jpg",
-        "brands": []
+        "url": "floor-maps/lotte/0341/02F.svg",
+        "highlightUrl": "floor-maps/lotte/0341/02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/17828703185926J76F.svg",
+        "brands": [
+          "클럽모나코"
+        ]
       },
       {
         "floor": "01F",
         "label": "1F 화장품ㅣ해외패션ㅣ시계",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202203/0341/20220325112939342_2.jpg",
+        "url": "floor-maps/lotte/0341/01F.svg",
+        "highlightUrl": "floor-maps/lotte/0341/01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/1787706758360pts0X.svg",
         "brands": []
       },
       {
         "floor": "B1F",
         "label": "B1 푸드에비뉴 | 팝업스테이지",
-        "url": "https://minfo.lotteshopping.com/content/cstr/202202/0341/20220225140124966_2.jpg",
+        "url": "floor-maps/lotte/0341/B1F.svg",
+        "highlightUrl": "floor-maps/lotte/0341/B1F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/1787706804068Ns0rw.svg",
+        "brands": []
+      },
+      {
+        "floor": "B2F",
+        "label": "B2 주차장",
+        "url": "floor-maps/lotte/0341/B2F.svg",
+        "highlightUrl": "floor-maps/lotte/0341/B2F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/1774171958070SqPDp.svg",
+        "brands": []
+      },
+      {
+        "floor": "B3F",
+        "label": "B3 영캐주얼ㅣ주차장",
+        "url": "floor-maps/lotte/0341/B3F.svg",
+        "highlightUrl": "floor-maps/lotte/0341/B3F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/1774171965809tDSgc.svg",
+        "brands": []
+      },
+      {
+        "floor": "B4F",
+        "label": "B4 주차장",
+        "url": "floor-maps/lotte/0341/B4F.svg",
+        "highlightUrl": "floor-maps/lotte/0341/B4F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/1774171974579Y6bNN.svg",
+        "brands": []
+      },
+      {
+        "floor": "B5F",
+        "label": "B5 주차장",
+        "url": "floor-maps/lotte/0341/B5F.svg",
+        "highlightUrl": "floor-maps/lotte/0341/B5F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/1774171981758863kG.svg",
+        "brands": []
+      },
+      {
+        "floor": "B6F",
+        "label": "B6 주차장",
+        "url": "floor-maps/lotte/0341/B6F.svg",
+        "highlightUrl": "floor-maps/lotte/0341/B6F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/1774171993798kkWW9.svg",
+        "brands": []
+      },
+      {
+        "floor": "B7F",
+        "label": "B7 주차장",
+        "url": "floor-maps/lotte/0341/B7F.svg",
+        "highlightUrl": "floor-maps/lotte/0341/B7F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/1774172001622KgBZp.svg",
+        "brands": []
+      },
+      {
+        "floor": "B8F",
+        "label": "B8 주차장",
+        "url": "floor-maps/lotte/0341/B8F.svg",
+        "highlightUrl": "floor-maps/lotte/0341/B8F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/1774172007785IRhMw.svg",
         "brands": []
       }
     ],
