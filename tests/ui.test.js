@@ -40,6 +40,8 @@ test('도면의 관리 브랜드 강조를 켜고 끌 수 있다', () => {
   assert.match(html, /data-highlight-url=/);
   assert.doesNotMatch(html, /floor-map-overlay/);
   assert.match(html, /f\.highlightUrl \? \(f\.brands \|\| \[\]\)/);
+  assert.match(html, /hasHighlightableFloor = floorSub === 'store'/);
+  assert.match(html, /floorHighlightControls'\)\.style\.display = hasHighlightableFloor/);
   assert.match(html, /도면 웹페이지로 이동/);
 });
 

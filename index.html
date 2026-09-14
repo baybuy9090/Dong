@@ -596,7 +596,7 @@
       <button class="tab-btn active" id="floorSubStore" onclick="switchFloorSub('store')">지점별</button>
       <button class="tab-btn" id="floorSubBrand" onclick="switchFloorSub('brand')">브랜드별</button>
     </div>
-    <div style="display:flex;justify-content:flex-end;margin-bottom:10px;">
+    <div id="floorHighlightControls" style="display:flex;justify-content:flex-end;margin-bottom:10px;">
       <button class="btn btn-floor" id="floorHighlightToggle" aria-pressed="true" onclick="toggleFloorHighlights()">★ 관리 브랜드 강조 켜짐</button>
     </div>
     <details class="panel floor-history" style="margin-bottom:12px;">
@@ -1278,6 +1278,11 @@
     function renderFloorView() {
       const filtered = currentFiltered().filter(r => !['removed','exitPending'].includes(statusOf(r)));
       const container = document.getElementById('floorList');
+      const hasHighlightableFloor = floorSub === 'store' && filtered.some(row => {
+        const code = STORE_CODES[row.company] && STORE_CODES[row.company][row.store];
+        return code && (floorImages[code] || []).some(floor => floor.highlightUrl);
+      });
+      document.getElementById('floorHighlightControls').style.display = hasHighlightableFloor ? 'flex' : 'none';
 
       if (floorSub === 'store') {
         const storeMap = {};
