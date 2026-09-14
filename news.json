@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-13T00:40:35.870Z",
+  "lastUpdated": "2026-09-14T00:49:21.961Z",
   "industry": [
     {
       "title": "랙앤본, 성수에 뉴욕 소호 옮겼다",
@@ -82,13 +82,6 @@
         "link": "https://www.gukjenews.com/news/articleView.html?idxno=3686449",
         "source": "gukjenews.com",
         "pubDate": "2026-09-06T22:46:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "솔리드옴므, 2019 AUTUMN/WINTER 컬렉션 공개",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4xVEVHT0hWVy1lRXF5ZEp0ZTJjZzNycU1BZGtXYlM0SEQwZ2RsSFcxS2wxUlJDVkNCc3lYbHNaWkdqNTFfUVM5UjQ1U3A4M01MbldUYTB2c3BaRVRqNDg0WXpZXzM3SGhhVHE4ZmNxejlxMU44aDlxTThUS2ZYSG8?oc=5",
-        "source": "패션포스트",
-        "pubDate": "2026-09-03T09:40:18.000Z",
         "sentiment": "neutral"
       }
     ],
@@ -273,6 +266,13 @@
     "CP컴퍼니": [],
     "비이커": [
       {
+        "title": "‘김무열♥’ 윤승아, 48kg인데 더 빠졌나…“집에 있는 옷 허리가 커”...",
+        "link": "https://sports.donga.com/ent/article/all/20260913/134660877/1",
+        "source": "sports.donga.com",
+        "pubDate": "2026-09-13T14:23:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "‘가니’, 2026 FW 컬렉션 출시",
         "link": "http://www.apparelnews.co.kr/news/news_view/?idx=227546",
         "source": "apparelnews.co.kr",
@@ -287,13 +287,6 @@
         "sentiment": "positive"
       },
       {
-        "title": "‘비이커×레오네’ 밸런타인데이 선물 제안",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB4dWttQVYtS1M3ZjdfRFItNHJNblV3c1VjaU8wekRqa1FXVGQwc2U2dm04QTVrZEY3OXNUTElUUnd3VnBNSE1GdjBKX2J4SHhxOTRQaFozc2VRU05GTHJVZWhWXzJfT3l3SVRERi1Md0NCQkE1aHZMNkswZDhfZw?oc=5",
-        "source": "패션포스트",
-        "pubDate": "2026-09-04T11:14:11.000Z",
-        "sentiment": "neutral"
-      },
-      {
         "title": "과년차 재고의 새 출구…패션 아울렛 신흥강자 ‘더팩토리아울렛’",
         "link": "http://www.apparelnews.co.kr/news/news_view/?idx=227363",
         "source": "apparelnews.co.kr",
@@ -301,15 +294,7 @@
         "sentiment": "positive"
       }
     ],
-    "톰그레이하운드맨": [
-      {
-        "title": "톰그레이하운드, 현대百 캐릭터 흰디와 협업 컬렉션",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsUWszZ19yd3hRMlZTTmdkZXp2M3BCSDNMR0dzeVFQaHpCMkU2X3pvNUp0QlAta2VucGE3UkZHNE5fLWNieUtyZXhxTy1zLWl4dHUyX3hDMThZcmhQNEppT2pFOFFMUnZVMzNyeTcyeGJzMkRzZzlROGw5U3JkbjQ?oc=5",
-        "source": "패션포스트",
-        "pubDate": "2026-09-04T22:31:17.000Z",
-        "sentiment": "positive"
-      }
-    ],
+    "톰그레이하운드맨": [],
     "아페쎄맨": [
       {
         "title": "신세계百, 추석엔 ‘장인의 손길’…가을엔 패션으로 고객 잡는다",
@@ -395,6 +380,13 @@
     ],
     "바버": [
       {
+        "title": "환율 하락에 수입 패션 하반기 전망 '활짝'…FW시즌 수익성 정조준",
+        "link": "https://www.etnews.com/20260911000260",
+        "source": "etnews.com",
+        "pubDate": "2026-09-13T05:01:00.000Z",
+        "sentiment": "neutral"
+      },
+      {
         "title": "바버, '가니'와 두 번째 협업 컬렉션 출시",
         "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQYTZsYy1XZExjbndwQk9jSjROeWhBaElWbmFGYmFteDJCUzFES1RpcWd5REZHUS1mNXNIcHlFMXB0SFpzV1MzeF94d1d5cVo5d2RJWUsya3JSMG9UVjVGVkdsRElPbTl2Vk85b09FYlpaTEs1VEpxUWRTeU9mYk5XUFZ0V0diQQ?oc=5",
         "source": "패션포스트",
@@ -441,13 +433,6 @@
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5mS0M2MzN2SEtwQXBiV2M2Wnk0bWNkeDhhdDF0OFRXek9Wd2RQQmFxZmYyX0djTVl0eWdaalRxZjRLYXV5NnFoc2Nrc3Rva2lhR09HUldWRVkzREtQbUZyTTNsS3RJZkQySFJ0Q2Q3cUFpQQ?oc=5",
         "source": "중앙이코노미뉴스",
         "pubDate": "2026-09-07T06:00:00.000Z",
-        "sentiment": "positive"
-      },
-      {
-        "title": "LF 바버, 130년 ‘타탄’에 폴 스미스 색 입혔다... 세 번째 협업",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE01ZGIyMWtnSVNfWkFRaEtVaF83alNJZkZFRE5Ba3Nnems2cGVfSDJmdzVDeWgwTUh6VmJnZ0oyTFh1T19HME52b2VickZiUU5pX2NwRnpiMWhhV1pVekpsS0lldHBOVVlVd3JKbkFOdUrSAXRBVV95cUxNZ1pENVgydk41RGs5OEhSblBDN3pwRGlFb0NwMTlEVlp2RVRReWNveXNoN3MtWHVWTFhNTVItclFkT3Q2MmFmLVp2Xzl2WGlrMGdWTVdWYjU4SEg3RjVQY1ZEOU9EZ1pyYzNQMU1RWk4xa3JqZQ?oc=5",
-        "source": "더퍼스트미디어",
-        "pubDate": "2026-09-07T04:26:06.000Z",
         "sentiment": "positive"
       }
     ],
@@ -521,24 +506,10 @@
         "sentiment": "neutral"
       },
       {
-        "title": "한섬 DKNY, 아이리스 로와 아멜리아 그레이가 함께한 2026 F/W 캠페인 공개",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0yOXk3NnZPWng3WFU2ajg1NFByMWZJZXZhaFBuWi1ZWTl1QXcybDBydXBVN2E5cjNuRE9oZVBBWUx3Q0dLM2Z5R2UzMGo5QzFGd1pmSldaZTRDNmFYaGUtTGIzdw?oc=5",
-        "source": "rnx.kr",
-        "pubDate": "2026-09-03T07:08:39.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "전세계 명품핸드백 만드는 이 회사…K문학 토탈패키지 만든 이유",
-        "link": "https://www.mk.co.kr/article/12134317",
-        "source": "mk.co.kr",
-        "pubDate": "2026-08-23T21:25:00.000Z",
-        "sentiment": "neutral"
-      },
-      {
-        "title": "K문학 30년 후원, 명품백王의 진심",
-        "link": "https://www.mk.co.kr/article/12134109",
-        "source": "mk.co.kr",
-        "pubDate": "2026-08-23T08:07:00.000Z",
+        "title": "\"주드 로 딸과 리사 리나 딸의 만남\"…DKNY, 아이리스 로X아멜리아 그레이 26FW 캠페인",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1SVjYteXhIS2NUdTBMWU1ESDJBRlU5aHdZZmNSd0pIc1VseTBjdDg0YTJESlBETHJXd3pjdkdFVDBCQWNBMWhUTjlpakliQ2p6WEtvalo0RmhWNnVKMmhr?oc=5",
+        "source": "스타패션",
+        "pubDate": "2026-09-03T02:41:00.000Z",
         "sentiment": "neutral"
       }
     ],
@@ -554,9 +525,9 @@
     "맨온더분": [
       {
         "title": "SI, “맨온더분 팝업스테이지 인기”",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORmN5NEMzSjVib193RjVrdkE1WDZnOUVpb3kzS2hZUUFpb1c4TjdadUlrR3Z6Wl9wbGtnSDhiUDZiMWR1ZzQ2ME9rV1kzanlkSnZ5TVRuVWdKZTNfalVxRVJVaE8xb1BSNzRkV3A4SVVOYjVwQUM1c0ZvT0xKaG5XQURKLWFudw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNU1dOd3F6UmlLZ1ZnUWo5UUw1UjJ3Qnh2THNFMTc1NHp1el9vMWdoUm5LT0JWcC1uQ1pjZ09IaFNiNkhCMWRmSExYQ3VLLU1VLWdLMzJnR2pENm5zcjYxck5VbWxRUjdoQmkwMjV2RkV0WVB1SExVektVNEhaa0VYSlcwUF9GUQ?oc=5",
         "source": "패션포스트",
-        "pubDate": "2026-09-10T18:48:20.000Z",
+        "pubDate": "2026-09-10T16:45:39.000Z",
         "sentiment": "positive"
       },
       {
@@ -570,6 +541,13 @@
     "수트서플라이": [],
     "슬로웨어": [],
     "POTTERY": [
+      {
+        "title": "‘숲과 바다, 베트남 전통’ 어우러진 풍성한 휴식…JW 메리어트 깜란 ...",
+        "link": "https://www.donga.com/news/Culture/article/all/20260913/134660847/1",
+        "source": "donga.com",
+        "pubDate": "2026-09-13T14:02:00.000Z",
+        "sentiment": "neutral"
+      },
       {
         "title": "런던 포터리(London Pottery)의 니트 토트백, 2026년 영국 테마의 새로운 디자인 2종 출시",
         "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQ28wZXlWVmFnUmdZNVFlWkE4TnRSLWUzQ2pKZ2xFTTBwdnVWUGRKcmV4SVBNb1Utc2NjRFpJYmNMMVBUdzZ1WWVkUHZpNEZsWWJaSVVzNGRaM3FCcU5qbGVfU2lsNEN2RmJhNm9qcWZSUnRFZFQxbXVQNDYzZnBadThUUV90cThhejJySGY5bw?oc=5",
@@ -649,13 +627,6 @@
         "source": "Hypebeast.KR",
         "pubDate": "2026-09-01T07:00:00.000Z",
         "sentiment": "positive"
-      },
-      {
-        "title": "[AI핫이슈] '자체 모델' AI 앱 기업 확산...독파모 개편 어떻게?",
-        "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=694833",
-        "source": "digitaltoday.co.kr",
-        "pubDate": "2026-08-23T22:30:00.000Z",
-        "sentiment": "neutral"
       }
     ],
     "이스트로그(프레이트)": [
@@ -683,15 +654,7 @@
     ],
     "에잇디비젼": [],
     "스컬프스토어": [],
-    "아이엠샵": [
-      {
-        "title": "아이엠샵 X 아모프레 팝업스토어 성료",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQT3UzT3dxaC1xVEJmWmtoM2ZFSzJQRUpQdHZ3OW1mNUxaMlFFbE15QWpUb3lWRTVreFk0c0djNFZ1b1JnUTFrbUgxclFlRTVYXzVUTGVoeGpybzhpZklLLXRTeGdDSjQzM1FCbkFMZ3p3cEEtaDh0MDBZeVRFVlc1RzZ1bWFrdw?oc=5",
-        "source": "패션포스트",
-        "pubDate": "2026-09-03T12:22:08.000Z",
-        "sentiment": "neutral"
-      }
-    ],
+    "아이엠샵": [],
     "맨메이드카페": []
   }
 }
