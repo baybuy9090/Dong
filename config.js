@@ -63,7 +63,7 @@
 
   return {
     stores, storeRows, brandTiers, brands: Object.values(brandTiers).flat(),
-    newsExcludedBrands: ['지제로','TEN-C','모드맨','헤리티지플로스','플랫폼플레이스','알레그리'],
+    newsExcludedBrands: [],
     getStore, normalizeStoreName, storeId, rowKey,
   };
 }));

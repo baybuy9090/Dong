@@ -340,6 +340,8 @@ function svgPolygon(shape, styles, fallback, tracked = []) {
 
 function poiTitle(poi) {
   return (languageText(poi.titleByLanguages) || languageText(poi.title) || String(poi.title || ''))
+    .replace(/多樂/g, '다락')
+    .replace(/外/g, '외')
     .replace(/\s+/g, ' ').trim();
 }
 
@@ -378,26 +380,28 @@ function renderLotteFloorSvg(rawSvg, floorData, storeName, floorLabel, managedPo
   });
   const description = `<title id="title">${xmlEscape(storeName)} ${xmlEscape(floorLabel)} 최신 쇼핑맵</title><desc id="desc">롯데백화점 공식 다비오 쇼핑맵의 최신 벡터 데이터입니다.</desc>`;
   svg = svg.replace(/(<svg\b[^>]*>)/i, `$1${description}`);
-  if (!showHighlights || managedPois.length === 0) return svg.replace(/\s*<\/svg>\s*$/, '</svg>\n');
-
-  managedPois.forEach(item => {
+  const managedIds = new Set(showHighlights ? managedPois.map(item => item.poi.id) : []);
+  if (showHighlights) managedPois.forEach(item => {
     if (item.poi.objectId) svg = addSvgClassById(svg, item.poi.objectId, 'tracked-object');
-    if (item.poi.id) svg = addSvgClassById(svg, item.poi.id, 'tracked-poi');
   });
-  const stars = managedPois.map(item => {
-    const position = item.poi.position || {};
-    if (!Number.isFinite(position.x) || !Number.isFinite(position.y)) return '';
-    const brandLabel = item.brands.join(', ');
-    return `<g class="tracked-star" aria-label="${xmlEscape(brandLabel)}"><circle cx="${position.x}" cy="${position.y - 58}" r="42"/><text x="${position.x}" y="${position.y - 58}">★</text></g>`;
+  // The official SVG can contain labels saved in English or Chinese. Hide its
+  // POI layer and redraw compact labels from titleByLanguages.ko, matching the
+  // density and highlight treatment used by the Hyundai renderer.
+  const labels = (floorData.pois || []).map(poi => {
+    const position = poi.position || {};
+    const title = poiTitle(poi).replace(/\s+/g, ' ').trim();
+    if (!title || !Number.isFinite(position.x) || !Number.isFinite(position.y)) return '';
+    const compact = title.length > 18 ? `${title.slice(0, 17)}…` : title;
+    const managed = managedIds.has(poi.id);
+    return `<text class="lotte-poi-label${managed ? ' managed-brand' : ''}" x="${position.x}" y="${position.y}" text-anchor="middle" dominant-baseline="central">${xmlEscape(managed ? `★ ${compact}` : compact)}</text>`;
   }).join('');
-  const highlightMarkup = `<style>
-.tracked-object { stroke:#f59e0b !important; stroke-width:18 !important; filter:drop-shadow(0 0 12px #f59e0b); }
-.tracked-poi text { fill:#9a5300 !important; font-size:48px !important; font-weight:800 !important; stroke:#fff7df !important; stroke-opacity:1 !important; stroke-width:8 !important; }
-.tracked-star { pointer-events:none; }
-.tracked-star circle { fill:#fff7df; stroke:#f59e0b; stroke-width:8; }
-.tracked-star text { fill:#9a5300; font-family:Arial,'Noto Sans KR',sans-serif; font-size:54px; font-weight:800; text-anchor:middle; dominant-baseline:central; }
-</style>${stars}`;
-  return svg.replace(/\s*<\/svg>\s*$/, `${highlightMarkup}</svg>\n`);
+  const mapMarkup = `<style>
+[ds-type="poi"], [group-type="POI_GROUP"] { display:none !important; }
+.lotte-poi-label { fill:#303633; font-family:Arial,'Noto Sans KR',sans-serif; font-size:20px; font-weight:600; stroke:#fff; stroke-width:3; paint-order:stroke; stroke-linejoin:round; }
+.tracked-object { stroke:#f59e0b !important; stroke-width:8 !important; filter:drop-shadow(0 0 6px #f59e0b); }
+.lotte-poi-label.managed-brand { fill:#9a5300; font-size:24px; font-weight:800; stroke:#fff7df; stroke-width:5; }
+</style><g class="lotte-poi-labels">${labels}</g>`;
+  return svg.replace(/\s*<\/svg>\s*$/, `${mapMarkup}</svg>\n`);
 }
 
 function renderHyundaiFloorSvg(mapData, floor, storeName, options = {}) {
@@ -653,7 +657,7 @@ async function main() {
   const brandIndex = buildBrandFloorIndex(data);
   fs.writeFileSync(path.join(__dirname, 'brand-floor-index.json'), JSON.stringify({ lastUpdated, data: brandIndex }, null, 2), 'utf8');
   const currentManifest = buildFloorManifest(data);
-  const historySchemaVersion = 4;
+  const historySchemaVersion = 5;
   const sameHistorySchema = previousHistory.schemaVersion === historySchemaVersion;
   const newEvents = previousHistory.current && sameHistorySchema
     ? detectFloorChanges(previousHistory.current, currentManifest, lastUpdated)

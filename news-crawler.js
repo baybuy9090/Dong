@@ -23,14 +23,55 @@ const NEWS_QUERY_OVERRIDES = {
   'POTTERY': '포터리',
 };
 
-const BRANDS = CONFIG.brands.filter(brand => !CONFIG.newsExcludedBrands.includes(brand));
+const EXPANDED_NEWS_QUERIES = {
+  '\uC544\uD398\uC138\uB9E8': ['\uC544\uD398\uC138 \uC634\uBBF4 \uD328\uC158', 'A.P.C. \uB0A8\uC131 \uD328\uC158'],
+  'DKNY\uB9E8': ['DKNY \uD328\uC158 \uBE0C\uB79C\uB4DC'],
+  '\uB760\uC5B4\uB9AC\uB9E8': ['\uB760\uC5B4\uB9AC \uC634\uBBF4 \uD328\uC158', 'Theory \uB0A8\uC131 \uD328\uC158'],
+  '\uC774\uB85C\uB9E8': ['IRO \uD328\uC158 \uBE0C\uB79C\uB4DC'],
+  '\uC900\uC9C0': ['JUUN.J \uD328\uC158', '\uC900\uC9C0 \uD328\uC158'],
+  '\uC774\uC2A4\uD2B8\uB85C\uADF8(\uD504\uB808\uC774\uD2B8)': ['\uC774\uC2A4\uD2B8\uB85C\uADF8 \uD328\uC158', '\uD504\uB808\uC774\uD2B8 \uD328\uC158'],
+  '\uD1B0\uADF8\uB808\uC774\uD558\uC6B4\uB4DC\uB9E8': ['\uD1B0\uADF8\uB808\uC774\uD558\uC6B4\uB4DC \uD328\uC158'],
+  'CP\uCEF4\uD37C\uB2C8': ['C.P. \uCEF4\uD37C\uB2C8 \uD328\uC158', 'CP\uCEF4\uD37C\uB2C8 \uD328\uC158'],
+  'PAF': ['PAF \uD328\uC158 \uBE0C\uB79C\uB4DC', '\uD3EC\uC2A4\uD2B8\uC544\uCE74\uC774\uBE0C\uD329\uC158'],
+  'POTTERY': ['POTTERY \uD328\uC158 \uBE0C\uB79C\uB4DC', '\uD3EC\uD130\uB9AC \uC758\uB958 \uBE0C\uB79C\uB4DC'],
+  'TEN-C': ['TEN-C \uD328\uC158 \uBE0C\uB79C\uB4DC'],
+  '\uD50C\uB7AB\uD3FC\uD50C\uB808\uC774\uC2A4': ['\uD50C\uB7AB\uD3FC\uD50C\uB808\uC774\uC2A4 \uD328\uC158'],
+  '\uC5D0\uC787\uB514\uBE44\uC83C': ['\uC5D0\uC787\uB514\uBE44\uC83C \uD328\uC158', '8DIVISION \uD328\uC158'],
+  '\uBAA8\uB4DC\uB9E8': ['\uBAA8\uB4DC\uB9E8 \uD3B8\uC9D1\uC20D'],
+  '\uC2A4\uCEEC\uD504\uC2A4\uD1A0\uC5B4': ['\uC2A4\uCEEC\uD504\uC2A4\uD1A0\uC5B4 \uD328\uC158'],
+  '\uC544\uC774\uC5E0\uC0F5': ['\uC544\uC774\uC5E0\uC0F5 \uD328\uC158 \uD3B8\uC9D1\uC20D'],
+  '\uB9E8\uBA54\uC774\uB4DC\uCE74\uD398': ['\uB9E8\uBA54\uC774\uB4DC \uB3C4\uC0B0 \uD328\uC158'],
+};
+
+const NEWS_BRAND_ALIASES = {
+  '\uC544\uD398\uC138\uB9E8': ['\uC544\uD398\uC138', 'A.P.C.'],
+  'DKNY\uB9E8': ['DKNY'],
+  '\uB760\uC5B4\uB9AC\uB9E8': ['\uB760\uC5B4\uB9AC', 'THEORY'],
+  '\uC774\uB85C\uB9E8': ['IRO'],
+  '\uC900\uC9C0': ['\uC900\uC9C0', 'JUUN.J'],
+  '\uC774\uC2A4\uD2B8\uB85C\uADF8(\uD504\uB808\uC774\uD2B8)': ['\uC774\uC2A4\uD2B8\uB85C\uADF8', '\uD504\uB808\uC774\uD2B8'],
+  '\uD1B0\uADF8\uB808\uC774\uD558\uC6B4\uB4DC\uB9E8': ['\uD1B0\uADF8\uB808\uC774\uD558\uC6B4\uB4DC'],
+  'CP\uCEF4\uD37C\uB2C8': ['CP\uCEF4\uD37C\uB2C8', 'C.P. \uCEF4\uD37C\uB2C8'],
+  'PAF': ['PAF', '\uD3EC\uC2A4\uD2B8\uC544\uCE74\uC774\uBE0C\uD329\uC158'],
+  'POTTERY': ['POTTERY', '\uD3EC\uD130\uB9AC'],
+  '\uC5D0\uC787\uB514\uBE44\uC83C': ['\uC5D0\uC787\uB514\uBE44\uC83C', '8DIVISION'],
+  '\uB9E8\uBA54\uC774\uB4DC\uCE74\uD398': ['\uB9E8\uBA54\uC774\uB4DC'],
+};
+
+const POTTERY_NOISE = ['\uC18D\uCD08', '\uB9DB\uC9D1', '\uB3C4\uC790\uAE30', '\uB3C4\uC608', '\uC694\uC7A5', '\uADF8\uB987', '\uC138\uB77C\uBBF9', '\uC5EC\uC8FC \uC5EC\uD589', '\uC5EC\uC8FC\uC2DC', '\uB7F0\uB358 \uD3EC\uD130\uB9AC', 'LONDON POTTERY', 'POTTERY BARN', '\uBA54\uB9AC\uC5B4\uD2B8', '\uD638\uD154', '\uBCA0\uD2B8\uB0A8 \uC804\uD1B5'];
+const BRAND_NOISE_TERMS = {
+  '\uBC14\uBC84': ['\uBC14\uBC84 \uC544\uB2E4\uC9C0\uC624', '\uC5D8\uB80C \uBC14\uBC84', '\uC721\uC0C1', '\uD5C8\uB4E4', '\uCF54\uCE58'],
+  '\uC54C\uB808\uADF8\uB9AC': ['\uAC10\uB3C5', '\uB098\uD3F4\uB9AC', '\uC138\uB9AC\uC5D0', '\uCD95\uAD6C', '\uC720\uBCA4\uD22C\uC2A4', 'AC\uBC00\uB780'],
+};
+
+const BRANDS = CONFIG.brands;
 
 // 업계 전체 동향 카드 (특정 브랜드가 아닌 일반 검색어)
 const INDUSTRY_QUERIES = ['남성 컨템포러리', '맨즈 컨템포러리'];
 
 const ARTICLES_PER_BRAND = 8;
 const INDUSTRY_ARTICLES = 8;
-const MAX_AGE_DAYS = 14; // 최근 2주 이내 기사만 수집 (너무 오래된 기사가 뜬다는 피드백으로 3주→2주로 단축)
+const NEWS_WINDOW_DAYS = 60;
 
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
@@ -56,6 +97,7 @@ function parseGoogleItems(xml) {
     const linkMatch = block.match(/<link>([\s\S]*?)<\/link>/);
     const pubDateMatch = block.match(/<pubDate>([\s\S]*?)<\/pubDate>/);
     const sourceMatch = block.match(/<source[^>]*>([\s\S]*?)<\/source>/);
+    const descriptionMatch = block.match(/<description>([\s\S]*?)<\/description>/);
     if (!titleMatch || !linkMatch) return;
     let title = decodeEntities(titleMatch[1]).trim();
     const source = sourceMatch ? decodeEntities(sourceMatch[1]).trim() : '';
@@ -67,6 +109,7 @@ function parseGoogleItems(xml) {
       link: linkMatch[1].trim(),
       source,
       pubDate: pubDateMatch ? new Date(pubDateMatch[1].trim()).toISOString() : null,
+      _desc: descriptionMatch ? decodeEntities(stripTags(descriptionMatch[1])).trim() : '',
     });
   });
   return items;
@@ -147,9 +190,9 @@ async function fetchAllSources(query) {
   return { items, sources, succeeded: Object.values(sources).some(value => value === true) };
 }
 
-// 최근 MAX_AGE_DAYS 이내 기사만 남기고 최신순 정렬 (검색 결과는 관련도순이라 재정렬 필요)
+// 최근 수집 기간 이내 기사만 남기고 최신순 정렬한다.
 function filterRecentAndSort(items) {
-  const cutoff = Date.now() - MAX_AGE_DAYS * 86400000;
+  const cutoff = Date.now() - NEWS_WINDOW_DAYS * 86400000;
   return items
     .filter(a => a.pubDate && new Date(a.pubDate).getTime() >= cutoff)
     .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
@@ -188,6 +231,45 @@ function filterByContentRelevance(items, query) {
   return items.filter(a => hasWordBoundaryMatch(a.title + ' ' + (a._desc || ''), core));
 }
 
+function newsQueriesForBrand(brand) {
+  const configured = EXPANDED_NEWS_QUERIES[brand] || NEWS_QUERY_OVERRIDES[brand] || brand;
+  const queries = Array.isArray(configured) ? configured : [configured];
+  if (!EXPANDED_NEWS_QUERIES[brand]) queries.push(`${brand} 패션 브랜드`);
+  return [...new Set(queries)];
+}
+
+function hasBrandMention(text, alias) {
+  const haystack = String(text || '').toUpperCase();
+  const core = String(alias || '').toUpperCase();
+  if (!core) return false;
+  let index = haystack.indexOf(core);
+  const koreanParticle = /^[가-힣]/.test(core) ? /[가이은는을를과와의에로도만]/ : null;
+  while (index !== -1) {
+    const before = haystack[index - 1];
+    const after = haystack[index + core.length];
+    const validBefore = !isWordChar(before);
+    const validAfter = !isWordChar(after) || (koreanParticle && koreanParticle.test(after));
+    if (validBefore && validAfter) return true;
+    index = haystack.indexOf(core, index + 1);
+  }
+  return false;
+}
+
+function filterByBrandRelevance(items, brand) {
+  const aliases = NEWS_BRAND_ALIASES[brand] || [brand];
+  return items.filter(item => {
+    const text = `${item.title} ${item._desc || ''}`;
+    if (!aliases.some(alias => hasBrandMention(text, alias))) return false;
+    const upper = text.toUpperCase();
+    if ((BRAND_NOISE_TERMS[brand] || []).some(term => upper.includes(term.toUpperCase()))) return false;
+    if (brand === 'POTTERY') {
+      if (!aliases.some(alias => hasBrandMention(item.title, alias))) return false;
+      if (POTTERY_NOISE.some(term => upper.includes(term.toUpperCase()))) return false;
+    }
+    return true;
+  });
+}
+
 // 보도자료가 여러 매체에 조금씩 다른 제목으로 실리는 경우("트레몰로, 상반기
 // 남성복 성장" / "세정그룹 트레몰로, '에센셜 라인' 상반기 실적 견인" 등)가
 // 많아서 제목이 완전히 같을 때만 걸러내는 것으로는 부족함. 제목을 2글자
@@ -218,10 +300,26 @@ function dedupSimilarTitles(items) {
 }
 
 async function fetchBrandCandidates(brand) {
-  const query = NEWS_QUERY_OVERRIDES[brand] || brand;
-  const batch = await fetchAllSources(query);
-  const items = filterByContentRelevance(batch.items, query);
-  return { items: dedupSimilarTitles(filterRecentAndSort(items)), sources: batch.sources, succeeded: batch.succeeded };
+  const queries = newsQueriesForBrand(brand);
+  const combined = [];
+  const sources = { google:false, naver:NAVER_CLIENT_ID && NAVER_CLIENT_SECRET ? false : null };
+  let succeeded = false;
+  for (const query of queries) {
+    const batch = await fetchAllSources(query);
+    combined.push(...batch.items);
+    succeeded ||= batch.succeeded;
+    sources.google ||= batch.sources.google === true;
+    if (sources.naver !== null) sources.naver ||= batch.sources.naver === true;
+  }
+  const seen = new Set();
+  const unique = combined.filter(item => {
+    const key = item.title.replace(/\s+/g, '');
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+  const items = filterByBrandRelevance(unique, brand);
+  return { items: dedupSimilarTitles(filterRecentAndSort(items)), sources, succeeded, queries };
 }
 
 // "OO아울렛엔 우영미, 렉토, 포터리 등이 입점" 식으로 여러 브랜드명을 단순
@@ -242,7 +340,7 @@ function dropCrossBrandNoise(rawByBrand) {
   });
   const result = {};
   Object.entries(rawByBrand).forEach(([brand, items]) => {
-    result[brand] = items.filter(a => titleCount[a.title.replace(/\s+/g, '')] < 2);
+    result[brand] = items.filter(a => titleCount[a.title.replace(/\s+/g, '')] < 3);
   });
   return result;
 }
@@ -336,7 +434,7 @@ async function main() {
     process.stdout.write(`수집 중: ${brand} ... `);
     const batch = await fetchBrandCandidates(brand);
     rawByBrand[brand] = batch.succeeded ? batch.items : (previous.data[brand] || []);
-    diagnostics.push({ brand, sources: batch.sources, status: batch.succeeded ? 'ok' : 'stale' });
+    diagnostics.push({ brand, queries:batch.queries, candidates:batch.items.length, sources: batch.sources, status: batch.succeeded ? 'ok' : 'stale' });
     console.log(`${rawByBrand[brand].length}건 (중복 브랜드 필터 전)`);
     await sleep(400);
   }
@@ -354,6 +452,8 @@ async function main() {
 
   const output = {
     lastUpdated: new Date().toISOString(),
+    windowDays: NEWS_WINDOW_DAYS,
+    coverage: { total:BRANDS.length, withNews:BRANDS.filter(brand => data[brand].length > 0).length },
     diagnostics,
     industry,
     data,
@@ -369,4 +469,7 @@ if (require.main === module) {
   });
 }
 
-module.exports = { classifySentiment, classifyEvents, titleSimilarity, dedupSimilarTitles, filterByContentRelevance };
+module.exports = {
+  classifySentiment, classifyEvents, titleSimilarity, dedupSimilarTitles,
+  filterByContentRelevance, hasBrandMention, filterByBrandRelevance, newsQueriesForBrand,
+};

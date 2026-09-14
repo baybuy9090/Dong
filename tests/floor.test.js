@@ -56,17 +56,27 @@ test('현대 도면에서 관리 브랜드 라벨과 구획을 강조한다', ()
 test('롯데 최신 SVG는 매장 구획과 POI 위치를 강조하고 일반판에는 남기지 않는다', () => {
   const rawSvg = '<svg xmlns="http://www.w3.org/2000/svg"><path id="object-1" class="" onload="bad()"/><g id="poi-1" class=""><text>타임옴므</text></g><script>bad()</script></svg>';
   const poi = { id:'poi-1', objectId:'object-1', title:'타임옴므', position:{ x:500, y:400 } };
-  const floor = { size:{ width:1000, height:800 } };
+  const floor = { size:{ width:1000, height:800 }, pois:[poi] };
   const tracked = [{ poi, brands:['타임옴므'] }];
   const normal = renderLotteFloorSvg(rawSvg, floor, '잠실점', '05F', tracked, false);
   const highlighted = renderLotteFloorSvg(rawSvg, floor, '잠실점', '05F', tracked, true);
-  assert.doesNotMatch(normal, /tracked-|★|<script|onload=/);
+  assert.doesNotMatch(normal, /class="tracked-object"|★|<script|onload=/);
   assert.match(highlighted, /class="tracked-object"/);
-  assert.match(highlighted, /class="tracked-poi"/);
-  assert.match(highlighted, /class="tracked-star"/);
-  assert.match(highlighted, />★<\/text>/);
+  assert.match(highlighted, /class="lotte-poi-label managed-brand"/);
+  assert.match(highlighted, />★ /);
   assert.equal(addSvgClassById('<svg><path id="x"/></svg>', 'x', 'marked'), '<svg><path id="x" class="marked"/></svg>');
   assert.equal(sanitizeOfficialSvg('<svg onclick="x()"><script>x()</script></svg>'), '<svg></svg>');
+});
+
+test('Lotte labels use the Korean API translation instead of the raw SVG locale', () => {
+  const rawSvg = '<svg><g ds-type="poi"><text>TIME HOMME</text></g></svg>';
+  const poi = {
+    id:'poi-ko', title:'TIME HOMME', position:{ x:100, y:100 },
+    titleByLanguages:[{ lang:'en', text:'TIME HOMME' }, { lang:'ko', text:'\uD0C0\uC784\uC634\uBBC0' }],
+  };
+  const svg = renderLotteFloorSvg(rawSvg, { size:{ width:200, height:200 }, pois:[poi] }, 'store', '5F', [], false);
+  assert.match(svg, />\uD0C0\uC784\uC634\uBBC0<\/text>/);
+  assert.match(svg, /\[ds-type="poi"\].*display:none/);
 });
 
 test('롯데 복합점 도면은 해당 점포와 층의 POI만 선별해 크롭한다', () => {
