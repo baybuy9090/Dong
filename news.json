@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-09-14T14:08:15.957Z",
+  "lastUpdated": "2026-09-14T14:12:06.190Z",
   "windowDays": 60,
   "coverage": {
     "total": 37,
-    "withNews": 25
+    "withNews": 26
   },
   "diagnostics": [
     {
@@ -64,7 +64,7 @@
         "우영미",
         "우영미 패션 브랜드"
       ],
-      "candidates": 21,
+      "candidates": 20,
       "sources": {
         "google": true,
         "naver": true
@@ -103,7 +103,7 @@
         "스톤아일랜드",
         "스톤아일랜드 패션 브랜드"
       ],
-      "candidates": 10,
+      "candidates": 11,
       "sources": {
         "google": true,
         "naver": true
@@ -204,7 +204,7 @@
         "바버",
         "바버 패션 브랜드"
       ],
-      "candidates": 24,
+      "candidates": 18,
       "sources": {
         "google": true,
         "naver": true
@@ -243,7 +243,7 @@
         "질스튜어트뉴욕",
         "질스튜어트뉴욕 패션 브랜드"
       ],
-      "candidates": 12,
+      "candidates": 13,
       "sources": {
         "google": true,
         "naver": true
@@ -281,7 +281,7 @@
         "클럽모나코",
         "클럽모나코 패션 브랜드"
       ],
-      "candidates": 0,
+      "candidates": 1,
       "sources": {
         "google": true,
         "naver": true
@@ -797,16 +797,6 @@
         ]
       },
       {
-        "title": "우영미(WOOYOUNGMI), 하우스노웨어 (HAUS NOWHERE) 중국 선전에 매장 오픈",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBkbE42ajY3QU5iRVNieXNleVVPRTZLazRiN2FKZWhxbS1ncGFjM1Brbkl5eEZHQWJwcFFtWXFxXy1ab1B5LTZNZHd5V1VZcFlHc0FYNEFYdzZLYzh2c3d2bVJia29qTEtu?oc=5",
-        "source": "더쎈뉴스",
-        "pubDate": "2026-09-05T07:00:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "신규 매장·팝업"
-        ]
-      },
-      {
         "title": "한섬 '시스템 파리' 英 해러즈에 팝업 연다",
         "link": "https://www.hankyung.com/article/2026090329691",
         "source": "hankyung.com",
@@ -836,6 +826,14 @@
         "events": [
           "협업·신제품"
         ]
+      },
+      {
+        "title": "코오롱 4세 이규호, 부회장 직함 자격은?(재계하우스)",
+        "link": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3073962",
+        "source": "newsclaim.co.kr",
+        "pubDate": "2026-09-02T06:54:00.000Z",
+        "sentiment": "neutral",
+        "events": []
       }
     ],
     "준지": [
@@ -1013,6 +1011,16 @@
         "events": []
       },
       {
+        "title": "슈프림 x 스톤아일랜드 협업 컬렉션 발매",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNd2FpWEx0Q3Zqa01FXzAyRmhfWFBMZ3JrS3BIdTVfdDA3V2ctTXRtb1ZQX2laSlFvUG83NnE0VjQwZDJZOHU3c1BlbDBCX0VMejVZVVNMN19nRmxrNU9vSUEzZWt1eTdzMGVLellYc2xLbW1MbkdqSmV2MFluSzA4VVk2cEk?oc=5",
+        "source": "패션포스트",
+        "pubDate": "2026-09-05T20:13:39.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품"
+        ]
+      },
+      {
         "title": "서울 곳곳에 숨은 1만6천 개 동전…〈프리즈 서울 2026〉, 코엑스 밖으로",
         "link": "https://www.sctoday.co.kr/news/articleView.html?idxno=48497",
         "source": "sctoday.co.kr",
@@ -1054,14 +1062,6 @@
         "source": "4th.kr",
         "pubDate": "2026-08-26T21:00:00.000Z",
         "sentiment": "positive",
-        "events": []
-      },
-      {
-        "title": "효성티앤씨, 18개 파트너사와 K섬유 글로벌 판로 넓힌다",
-        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=227192",
-        "source": "apparelnews.co.kr",
-        "pubDate": "2026-08-26T13:04:00.000Z",
-        "sentiment": "neutral",
         "events": []
       }
     ],
@@ -1246,14 +1246,6 @@
         ]
       },
       {
-        "title": "초변동성 장세 고액자산가들이 자산을 지키는 법[증권맨Talk]",
-        "link": "https://www.edaily.co.kr/News/Read?newsId=01567846645579464&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-        "source": "edaily.co.kr",
-        "pubDate": "2026-09-11T21:02:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
         "title": "패션 협업, 이제 '만남' 넘어 브랜드 경쟁력으로... [최기자의 패션 털기...",
         "link": "https://www.meconomynews.com/news/articleView.html?idxno=201549",
         "source": "meconomynews.com",
@@ -1264,44 +1256,58 @@
         ]
       },
       {
-        "title": "바버, '가니'와 두 번째 협업 컬렉션 출시",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQYTZsYy1XZExjbndwQk9jSjROeWhBaElWbmFGYmFteDJCUzFES1RpcWd5REZHUS1mNXNIcHlFMXB0SFpzV1MzeF94d1d5cVo5d2RJWUsya3JSMG9UVjVGVkdsRElPbTl2Vk85b09FYlpaTEs1VEpxUWRTeU9mYk5XUFZ0V0diQQ?oc=5",
-        "source": "패션포스트",
-        "pubDate": "2026-09-10T10:50:33.000Z",
+        "title": "헌터, 2026 가을 캠페인 공개...바버, 폴 스미스와 세번째 협업",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5UUFZTUUI3MEE3c0hhOS14a2QyWUdHR3N0aVU4czhSMmVlQmRWWmswN2FxaE0xVzlGQ0V3cHJoQ0JYaVkzMkJHbk4wd1BscFhHTnNuYzBfcVVzdC10c0dXN3hhNENHZw?oc=5",
+        "source": "싱글리스트",
+        "pubDate": "2026-09-08T14:36:26.000Z",
         "sentiment": "positive",
         "events": [
           "협업·신제품"
         ]
       },
       {
-        "title": "피오로 vs. 그라소, '거리'와 '압박'의 싸움이 시작된다",
-        "link": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003266230&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news",
-        "source": "ohmynews.com",
-        "pubDate": "2026-09-10T08:41:00.000Z",
+        "title": "올가을 꼭 한벌 사고 싶은, 폴 스미스 맛 바버 재킷 실물 후기",
+        "link": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxNLTN1OWtkbFIxYlMwQmJ1OGE5anJacHhMQ0R0NDNaU05paWI0aTYyRzhUcEYydW1YRnk3RmM0NFlzSUVMVUcwUGFGVXBLdW9TUWpGdWZFLU81bFh6UENJY2szdVhodnhwOEdWWW5CeDUtaTJCbWEzUGRMVzhISDFUS245NzlqdGIyMjVLLUUyYURYQjVnSVpPcFUxSnBPNlNuaEo1cTA5ZWs5SGxWQnhvd2JEY08teDJGd2VPRFNZRzBMMGRjZzRlci1nSmlQeUQ2MTF6bHE1d2RKb1IwbEhsb2h6NnA1b2NmbTNmOGxkbVZ6TEk3OHZlOXVYM3F4REtBX3lfdFNJQXRVbXpTSklfeXRUUjQ3Vl8wa0lhbEthdWctdHBOQnEzdG1za1EteWlva0hROTdzN2UyYkRCZU1TYlpVb0RLekFwbTBNM3h6V19XZ3Bqc3lYdg?oc=5",
+        "source": "GQ Korea",
+        "pubDate": "2026-09-07T09:30:16.000Z",
         "sentiment": "neutral",
         "events": []
       },
       {
-        "title": "\"트레이딩은 당신의 부(富)에 해롭다'…개인투자자 26년째 같은 결론 [마...",
-        "link": "http://www.joseilbo.com/news/news_read.php?uid=575446&class=53&grp=",
-        "source": "joseilbo.com",
-        "pubDate": "2026-09-10T06:44:00.000Z",
-        "sentiment": "neutral",
-        "events": []
+        "title": "폴 스미스·바버, 세 번째 만남…‘영국 감성’ 입은 가을 아우터 선보...",
+        "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065600614906765",
+        "source": "megaeconomy.co.kr",
+        "pubDate": "2026-09-07T08:14:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품"
+        ]
       },
       {
-        "title": "시대와 언어 횡단하는 성악 문헌… 박서연 학구적 큐레이션",
-        "link": "https://www.nc.press/news/articleView.html?idxno=626120",
-        "source": "nc.press",
-        "pubDate": "2026-09-10T00:40:00.000Z",
+        "title": "신세계인터내셔날 폴 스미스, 英 ‘폴 스미스 러브즈 바버’ 컬렉션 출시",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBwOG43Z2tzUERwWndPRFMtUDEyVW9mcUZlNkdfSWNFSmlkZzRxRzl6MVlWck5Sa0RwMDZhS29nQmphLUdNTW9sWVFtRXA4dmZaSVNjQzdaUW0ybFRXU3N4bWtNUG96WGg0NGMwdi0tYnbSAXRBVV95cUxOcW0xa2lrTHhjNEdLR3Axd1RmT21LQVBxZ0prNm9CczNkYWFsZ0YyZ05oTUVyanFEaWd2YW5NbVFsZ3ozTGpGS1E3b2RhQkYwLXpJR0IyZEZPQlB2dk5VSElFN0J2ckQydGtsSDFMbVRJNHN0dA?oc=5",
+        "source": "주간한국",
+        "pubDate": "2026-09-07T08:11:12.000Z",
         "sentiment": "neutral",
-        "events": []
+        "events": [
+          "협업·신제품"
+        ]
       },
       {
-        "title": "헌터, 2026 가을 캠페인 공개...바버, 폴 스미스와 세번째 협업",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5UUFZTUUI3MEE3c0hhOS14a2QyWUdHR3N0aVU4czhSMmVlQmRWWmswN2FxaE0xVzlGQ0V3cHJoQ0JYaVkzMkJHbk4wd1BscFhHTnNuYzBfcVVzdC10c0dXN3hhNENHZw?oc=5",
-        "source": "싱글리스트",
-        "pubDate": "2026-09-08T14:36:26.000Z",
+        "title": "LF 바버, 130년 ‘타탄’에 폴 스미스 색 입혔다... 세 번째 협업",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE01ZGIyMWtnSVNfWkFRaEtVaF83alNJZkZFRE5Ba3Nnems2cGVfSDJmdzVDeWgwTUh6VmJnZ0oyTFh1T19HME52b2VickZiUU5pX2NwRnpiMWhhV1pVekpsS0lldHBOVVlVd3JKbkFOdUrSAXRBVV95cUxNZ1pENVgydk41RGs5OEhSblBDN3pwRGlFb0NwMTlEVlp2RVRReWNveXNoN3MtWHVWTFhNTVItclFkT3Q2MmFmLVp2Xzl2WGlrMGdWTVdWYjU4SEg3RjVQY1ZEOU9EZ1pyYzNQMU1RWk4xa3JqZQ?oc=5",
+        "source": "더퍼스트미디어",
+        "pubDate": "2026-09-07T04:26:06.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품"
+        ]
+      },
+      {
+        "title": "헤리티지∙기능성∙소재로 승부…패션업계, 26FW 차별화 본격화",
+        "link": "http://www.kdfnews.com/news/articleView.html?idxno=187626",
+        "source": "kdfnews.com",
+        "pubDate": "2026-09-07T03:00:00.000Z",
         "sentiment": "positive",
         "events": [
           "협업·신제품"
@@ -1317,6 +1323,16 @@
         "pubDate": "2026-09-07T02:27:00.000Z",
         "sentiment": "neutral",
         "events": []
+      },
+      {
+        "title": "하프클럽, '얼리 가을 쇼핑' 공략→신세계百, 가을 쇼핑 혜택 강화",
+        "link": "https://www.slist.kr/news/articleView.html?idxno=764054",
+        "source": "slist.kr",
+        "pubDate": "2026-09-06T14:42:00.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "협업·신제품"
+        ]
       },
       {
         "title": "정장 넘어 캐주얼로..마에스트로, 레더 아우터 확대",
@@ -1375,16 +1391,6 @@
         "events": [
           "협업·신제품"
         ]
-      },
-      {
-        "title": "“가을 지갑 열어라”…신세계百, 패션부터 추석선물까지 수요 선점",
-        "link": "https://www.viva100.com/article/20260831500064",
-        "source": "viva100.com",
-        "pubDate": "2026-08-30T23:42:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "협업·신제품"
-        ]
       }
     ],
     "질스튜어트뉴욕": [
@@ -1393,6 +1399,14 @@
         "link": "https://www.sisaon.co.kr/news/articleView.html?idxno=204278",
         "source": "sisaon.co.kr",
         "pubDate": "2026-09-09T07:08:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "하프클럽, '얼리 가을 쇼핑' 공략→신세계百, 가을 쇼핑 혜택 강화",
+        "link": "https://www.slist.kr/news/articleView.html?idxno=764054",
+        "source": "slist.kr",
+        "pubDate": "2026-09-06T14:42:00.000Z",
         "sentiment": "neutral",
         "events": []
       },
@@ -1443,16 +1457,6 @@
         "pubDate": "2026-09-03T02:10:00.000Z",
         "sentiment": "neutral",
         "events": []
-      },
-      {
-        "title": "[오늘의 유통가] 한섬 ‘시스템 파리’, 英 백화점에 팝업스토어 오픈 ...",
-        "link": "https://dealsite.co.kr/articles/168361",
-        "source": "dealsite.co.kr",
-        "pubDate": "2026-09-03T00:32:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "신규 매장·팝업"
-        ]
       }
     ],
     "아스페시": [
@@ -1487,7 +1491,18 @@
         ]
       }
     ],
-    "클럽모나코": [],
+    "클럽모나코": [
+      {
+        "title": "랄프로렌, ‘클럽모나코’ 매각",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPbUZzZUpZVVMzX1BFSExPMnhQajF5SUZOTDgyRzktUVdreTFIVktkNnp4ZklsUFVzVGJwbnBNNDB2RXIwLVBsUkNVWTRlX3VfTm1pZWU0dThLbVBSdUZNbUF0aUtEbzBFUkY3ZFJObjB4eUk4dlo5bnJBLTlIN09SQzQ2MmV1Zw?oc=5",
+        "source": "패션포스트",
+        "pubDate": "2026-09-04T02:04:05.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "경영·계약 변경"
+        ]
+      }
+    ],
     "맨온더분": [
       {
         "title": "SI, “맨온더분 팝업스테이지 인기”",
@@ -1502,7 +1517,7 @@
       {
         "title": "\"에이징 레더부터 드라고·VBC 헤리티지 원단까지\"…맨온더분의 프리미엄 겨울 스타일링",
         "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBvMGpRdHpXZEJKZ1dYT1kzY2dpR2luQzJMZGU2amMtS3ZObzZZbEthZDMxXzBwaTBxY3FrU21QNFNlTFBkTnJxX0VnQUdtQkg0dFRLZnluRDV0UlFRV2Rr?oc=5",
-        "source": "스타패션",
+        "source": "kstarfashion.com",
         "pubDate": "2026-09-09T02:49:00.000Z",
         "sentiment": "neutral",
         "events": []
@@ -1666,7 +1681,7 @@
       {
         "title": "머렐·이스트로그, 2차 협업 신발 ‘HUT MOC 2 LEISURE’ 3일 발매",
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE43V3ByVTdLRFUzMk11WDRlMy0xREx1SWcxamVtYWFNRHB2NU9oR29aVmRrZ3FZMlR0REpuMl8taW4tdVZycFkwc2NIeU9vTDFr?oc=5",
-        "source": "패션비즈",
+        "source": "fashionbiz.co.kr",
         "pubDate": "2026-09-02T07:00:00.000Z",
         "sentiment": "positive",
         "events": [
