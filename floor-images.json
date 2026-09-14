@@ -1,5 +1,199 @@
 {
-  "lastUpdated": "2026-09-13T05:52:41.791Z",
+  "lastUpdated": "2026-09-14T06:00:22.051Z",
+  "diagnostics": [
+    {
+      "storeId": "신세계-SC00002",
+      "store": "강남",
+      "status": "ok",
+      "floors": 13
+    },
+    {
+      "storeId": "신세계-SC00006",
+      "store": "광주",
+      "status": "ok",
+      "floors": 11
+    },
+    {
+      "storeId": "신세계-SC00011",
+      "store": "김해",
+      "status": "ok",
+      "floors": 6
+    },
+    {
+      "storeId": "신세계-SC00013",
+      "store": "대구",
+      "status": "ok",
+      "floors": 11
+    },
+    {
+      "storeId": "신세계-SC00060",
+      "store": "대전",
+      "status": "ok",
+      "floors": 9
+    },
+    {
+      "storeId": "신세계-SC00005",
+      "store": "마산",
+      "status": "ok",
+      "floors": 9
+    },
+    {
+      "storeId": "신세계-SC00001",
+      "store": "본점",
+      "status": "ok",
+      "floors": 15
+    },
+    {
+      "storeId": "신세계-SC00008",
+      "store": "센텀",
+      "status": "ok",
+      "floors": 13
+    },
+    {
+      "storeId": "신세계-SC00010",
+      "store": "의정부",
+      "status": "ok",
+      "floors": 9
+    },
+    {
+      "storeId": "신세계-SC00009",
+      "store": "천안아산",
+      "status": "ok",
+      "floors": 7
+    },
+    {
+      "storeId": "신세계-SC00003",
+      "store": "타임스퀘어",
+      "status": "ok",
+      "floors": 12
+    },
+    {
+      "storeId": "신세계-SC00012",
+      "store": "하남",
+      "status": "ok",
+      "floors": 4
+    },
+    {
+      "storeId": "신세계-SC00007",
+      "store": "경기",
+      "status": "ok",
+      "floors": 12
+    },
+    {
+      "storeId": "롯데-0013",
+      "store": "강남점",
+      "status": "ok",
+      "floors": 9
+    },
+    {
+      "storeId": "롯데-0333",
+      "store": "광복점",
+      "status": "ok",
+      "floors": 14
+    },
+    {
+      "storeId": "롯데-0007",
+      "store": "광주점",
+      "status": "ok",
+      "floors": 12
+    },
+    {
+      "storeId": "롯데-0022",
+      "store": "노원점",
+      "status": "ok",
+      "floors": 11
+    },
+    {
+      "storeId": "롯데-0023",
+      "store": "대구점",
+      "status": "ok",
+      "floors": 13
+    },
+    {
+      "storeId": "롯데-0399",
+      "store": "동탄점",
+      "status": "ok",
+      "floors": 13
+    },
+    {
+      "storeId": "롯데-0001",
+      "store": "본점",
+      "status": "ok",
+      "floors": 15
+    },
+    {
+      "storeId": "롯데-0005",
+      "store": "부산본점",
+      "status": "ok",
+      "floors": 13
+    },
+    {
+      "storeId": "롯데-0349",
+      "store": "수원점",
+      "status": "ok",
+      "floors": 9
+    },
+    {
+      "storeId": "롯데-0010",
+      "store": "영등포",
+      "status": "ok",
+      "floors": 11
+    },
+    {
+      "storeId": "롯데-0015",
+      "store": "울산점",
+      "status": "ok",
+      "floors": 9
+    },
+    {
+      "storeId": "롯데-0344",
+      "store": "인천점",
+      "status": "ok",
+      "floors": 7
+    },
+    {
+      "storeId": "롯데-0011",
+      "store": "일산",
+      "status": "ok",
+      "floors": 13
+    },
+    {
+      "storeId": "롯데-0002",
+      "store": "잠실점",
+      "status": "ok",
+      "floors": 13
+    },
+    {
+      "storeId": "롯데-0348",
+      "store": "잠실에비뉴엘",
+      "status": "ok",
+      "floors": 7
+    },
+    {
+      "storeId": "롯데-0025",
+      "store": "전주점",
+      "status": "ok",
+      "floors": 10
+    },
+    {
+      "storeId": "롯데-0017",
+      "store": "창원점",
+      "status": "ok",
+      "floors": 7
+    },
+    {
+      "storeId": "롯데-0004",
+      "store": "청량리",
+      "status": "ok",
+      "floors": 12
+    },
+    {
+      "storeId": "롯데-0341",
+      "store": "평촌점",
+      "status": "ok",
+      "floors": 11
+    }
+  ],
   "data": {
     "SC00002": [
       {
@@ -40,7 +234,7 @@
       {
         "floor": "4F",
         "label": "4F 해외 컨템포러리/슈즈 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00002/guide/floor/__icsFiles/afieldfile/2026/09/10/92zokSwXmcVr.png"
+        "url": "https://www.shinsegae.com/cms12/SC00002/guide/floor/__icsFiles/afieldfile/2026/09/14/NDFTzbAbRShW.png"
       },
       {
         "floor": "3F",
@@ -139,7 +333,7 @@
       {
         "floor": "3F",
         "label": "3F 남성/스포츠/캐주얼 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00011/guide/floor/__icsFiles/afieldfile/2026/09/03/V3C4zGsBZA4b.jpg"
+        "url": "https://www.shinsegae.com/cms12/SC00011/guide/floor/__icsFiles/afieldfile/2026/09/14/poi08A6E3kHx.jpg"
       },
       {
         "floor": "2F",
@@ -649,7 +843,7 @@
       {
         "floor": "5F",
         "label": "5F 남성패션 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00007/guide/floor/__icsFiles/afieldfile/2026/09/07/5F_260903(260907)-20260907095325-20260907095327.png"
+        "url": "https://www.shinsegae.com/cms12/SC00007/guide/floor/__icsFiles/afieldfile/2026/09/14/5F_260914(260913)-20260914115718-20260914115724.png"
       },
       {
         "floor": "4F",
@@ -1056,6 +1250,11 @@
     ],
     "0001": [
       {
+        "floor": "14F",
+        "label": "14F 식당가",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0001/20211017175028110_5.jpg"
+      },
+      {
         "floor": "13F",
         "label": "13F 식당가",
         "url": "https://minfo.lotteshopping.com/content/cstr/202109/0001/20210906184103387_6.jpg"
@@ -1127,6 +1326,11 @@
       }
     ],
     "0005": [
+      {
+        "floor": "11F",
+        "label": "11F 문화센터ㅣ샤롯데가든",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202110/0005/20211014152551550_8.jpg"
+      },
       {
         "floor": "10F",
         "label": "10F 롯데시네마ㅣ샤롯데가든",
@@ -1512,6 +1716,11 @@
     ],
     "0348": [
       {
+        "floor": "06F",
+        "label": "6F 프리미엄 F&B ㅣ와인",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202311/0348/2023111011473488_5.jpg"
+      },
+      {
         "floor": "05F",
         "label": "5F 여성 컨템포러리",
         "url": "https://minfo.lotteshopping.com/content/cstr/202311/0348/20231114185456140_7.jpg"
@@ -1633,6 +1842,11 @@
     ],
     "0004": [
       {
+        "floor": "09F",
+        "label": "9F 샤롯데가든",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202105/CNT00000000000010467/2021050117062558_8.jpg"
+      },
+      {
         "floor": "08F",
         "label": "8F 리빙ㅣ문화센터ㅣ롯데카드",
         "url": "https://minfo.lotteshopping.com/content/cstr/202409/0004/20240901143141597_7.jpg"
@@ -1689,6 +1903,11 @@
       }
     ],
     "0341": [
+      {
+        "floor": "10F",
+        "label": "10F 샤롯데가든ㅣ아웃백ㅣ카페",
+        "url": "https://minfo.lotteshopping.com/content/cstr/202004/0341/20200429173758904_2.jpg"
+      },
       {
         "floor": "09F",
         "label": "9F 키즈카페",
