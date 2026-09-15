@@ -1,7 +1,15 @@
 {
   "schemaVersion": 5,
-  "lastUpdated": "2026-09-15T05:27:23.409Z",
+  "lastUpdated": "2026-09-15T06:00:31.576Z",
   "events": [
+    {
+      "detectedAt": "2026-09-15T06:00:31.576Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "수원점",
+      "storeId": "롯데-0349",
+      "floor": "B1F"
+    },
     {
       "detectedAt": "2026-09-15T05:27:23.409Z",
       "type": "브랜드 추가",
@@ -1575,7 +1583,7 @@
       "label": "B1 식품ㅣ생활가전",
       "url": "floor-maps/lotte/0349/B1F.svg",
       "brands": [],
-      "signature": "e4c312ba82e65396611beebe0afc5075fcd9d7766d35b4029bffd290b92dc40f"
+      "signature": "ad1e64115d3bfa0158a3507d962c2e9d9cd6635e4acfcc9151c7b83e5a9783a0"
     },
     "롯데-0349|B2F|B2 주차장": {
       "company": "롯데",
