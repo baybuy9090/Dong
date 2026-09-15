@@ -37,6 +37,35 @@ test('브랜드 랭킹과 갭 분석 사이에 점포별 컨템 브랜드 리스
   assert.match(html, /class="store-brand-name".*openStoreDetail/);
 });
 
+test('매트릭스는 지점 머리글을 고정하고 전체 점포 맞춤 축소를 지원한다', () => {
+  assert.match(html, /id="matrixWrap"/);
+  assert.match(html, /#matrixWrap \.matrix-table thead th \{ position: sticky; top: 0/);
+  assert.match(html, /id="matrixFitToggle"[^>]*onclick="toggleMatrixFit\(\)"/);
+  assert.match(html, /function applyMatrixFit\(\)/);
+  assert.match(html, /\(wrap\.clientWidth - 2\) \/ naturalWidth/);
+  assert.match(html, /table\.style\.zoom = String\(scale\)/);
+  assert.match(html, /전체 점포 맞춤/);
+});
+
+test('브랜드 랭킹 회사별 숫자는 축약된 한 줄 형식으로 표시한다', () => {
+  assert.match(html, /company-롯데">롯 \$\{r\.l\}/);
+  assert.match(html, /company-현대">현 \$\{r\.h\}/);
+  assert.match(html, /company-신세계">신세계 \$\{r\.sg\}/);
+  assert.match(html, /bar-detail-text[^>]*white-space:nowrap/);
+});
+
+test('한눈에 보기 상단에서 2025년 백화점 매출 순위를 연다', () => {
+  const overview = html.indexOf('id="overviewView"');
+  const salesButton = html.indexOf('id="salesRankingOpen"');
+  const monthlyArchive = html.indexOf('id="monthlyOverviewToggle"');
+  assert.ok(overview < salesButton && salesButton < monthlyArchive);
+  assert.match(html, /id="salesRankingModal"[^>]*role="dialog"/);
+  assert.match(html, /function loadSalesRanking\(\)/);
+  assert.match(html, /fetch\('sales-2025\.json\?_='/);
+  assert.match(html, /sales-growth-up/);
+  assert.match(html, /sales-growth-down/);
+});
+
 test('브랜드 상세는 해당 층 도면 버튼과 공통 디자인 토큰을 사용한다', () => {
   assert.match(html, /해당 층 도면 보기/);
   assert.match(html, /function compactFloorLabel\(floor\)/);
