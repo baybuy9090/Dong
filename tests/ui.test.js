@@ -25,6 +25,18 @@ test('랭킹은 상위 10개만 먼저 보여주고 전체 보기로 확장한�
   assert.doesNotMatch(html, /(?<![A-Z_])tierOrder\.forEach/);
 });
 
+test('브랜드 랭킹과 갭 분석 사이에 점포별 컨템 브랜드 리스트를 표시한다', () => {
+  const storePanel = html.indexOf('id="storeBrandRanking"');
+  assert.ok(html.indexOf('id="brandRanking"') < storePanel);
+  assert.ok(storePanel < html.indexOf('id="gapTable"'));
+  assert.match(html, /let storeRankingExpanded = false/);
+  assert.match(html, /b\.brands\.length - a\.brands\.length/);
+  assert.match(html, /rankedStoreRows\.slice\(0, 10\)/);
+  assert.match(html, /전체 \$\{rankedStoreRows\.length\}개 점포 보기/);
+  assert.match(html, /class="store-brand-chip" onclick="openBrandDetail/);
+  assert.match(html, /class="store-brand-name".*openStoreDetail/);
+});
+
 test('브랜드 상세는 해당 층 도면 버튼과 공통 디자인 토큰을 사용한다', () => {
   assert.match(html, /해당 층 도면 보기/);
   assert.match(html, /function compactFloorLabel\(floor\)/);

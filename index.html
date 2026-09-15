@@ -274,6 +274,29 @@
     @keyframes growBar { from { transform: scaleX(0); } to { transform: scaleX(1); } }
     .bar-num { width: 34px; text-align: right; font-weight: 600; color: #333; }
 
+    .store-brand-row {
+      display: grid; grid-template-columns: 28px minmax(135px, 180px) 54px minmax(0, 1fr);
+      gap: 9px; align-items: start; padding: 10px 4px; border-bottom: 1px solid #f0f0f0;
+    }
+    .store-brand-row:last-child { border-bottom: 0; }
+    .store-brand-rank {
+      display: inline-flex; width: 24px; height: 24px; align-items: center; justify-content: center;
+      border-radius: 8px; background: #f0f0f2; color: #666; font-size: 10.5px; font-weight: 800;
+    }
+    .store-brand-name { font-size: 12.5px; font-weight: 700; line-height: 24px; }
+    .store-brand-name a { color: inherit; text-decoration: none; }
+    .store-brand-name a:hover { text-decoration: underline; }
+    .store-brand-count {
+      justify-self: end; border-radius: 12px; padding: 4px 8px; background: #f5f6f8;
+      color: #444; font-size: 10.5px; font-weight: 800; white-space: nowrap;
+    }
+    .store-brand-chips { display: flex; flex-wrap: wrap; gap: 5px; min-width: 0; }
+    .store-brand-chip {
+      border: 1px solid #e2e3e6; border-radius: 10px; padding: 3px 7px; background: #fff;
+      color: #555; font-size: 10.5px; line-height: 1.25; cursor: pointer;
+    }
+    .store-brand-chip:hover { border-color: #aaa; background: #f7f7f8; color: #222; }
+
     .region-item { border-bottom: 1px solid #f0f0f0; }
     .region-header {
       display: flex; justify-content: space-between; align-items: center;
@@ -385,6 +408,11 @@
       .bar-num { order: 2; }
       .bar-track { order: 3; flex-basis: 100%; height: 22px; }
       .bar-detail-text { order: 4; flex-basis: 100%; font-size: 12px !important; color: #555 !important; }
+
+      .store-brand-row { grid-template-columns: 26px minmax(0, 1fr) auto; gap: 7px; padding: 11px 2px; }
+      .store-brand-name { font-size: 13px; }
+      .store-brand-chips { grid-column: 2 / -1; gap: 4px; }
+      .store-brand-chip { font-size: 10.5px; padding: 4px 7px; }
 
       .region-header { padding: 11px 4px; font-size: 13px; }
       .region-header .meta { font-size: 12px; }
@@ -500,6 +528,12 @@
     <div class="panel" style="margin-bottom:14px;">
       <h3>브랜드별 입점 수 랭킹 (전체 지점 기준, 롯데/현대/신세계 구간 표시)</h3>
       <div id="brandRanking"></div>
+    </div>
+
+    <div class="panel" style="margin-bottom:14px;">
+      <h3>점포별 컨템 브랜드 리스트</h3>
+      <div class="subtitle" style="margin-bottom:8px;">현재 입점한 컨템 브랜드가 많은 점포부터 보여줍니다. 점포명과 브랜드를 누르면 상세 정보를 볼 수 있습니다.</div>
+      <div id="storeBrandRanking"></div>
     </div>
 
     <div class="panel" style="margin-bottom:14px;">
@@ -674,6 +708,7 @@
     let sortKey = null, sortDir = 1;
     let favOnly = false;
     let rankingExpanded = false;
+    let storeRankingExpanded = false;
     const favorites = new Set((() => { try { return JSON.parse(localStorage.getItem('dongDdaengFavBrands') || '[]'); } catch (e) { return []; } })());
 
     // 입·퇴점/확인필요 항목에 대해 사람이 내린 결정 ("confirm"=정상 처리, "reject"=삭제 확정).
@@ -1624,7 +1659,38 @@
       }
       document.getElementById('brandRanking').innerHTML = rankingHtml;
 
-      // ── 패널 2: 갭 분석 ──
+      // ── 패널 2: 점포별 컨템 브랜드 리스트 ──
+      const companyPriority = { '롯데':0, '현대':1, '신세계':2 };
+      const brandOrder = new Map(ALL_BRANDS_ORDERED.map((brand, index) => [brand, index]));
+      const storeStats = {};
+      filtered.forEach(r => {
+        const key = r.storeId || DONG_CONFIG.storeId(r.company, r.store);
+        if (!storeStats[key]) storeStats[key] = { company:r.company, store:r.store, brands:new Set() };
+        storeStats[key].brands.add(r.brand);
+      });
+      const rankedStoreRows = Object.values(storeStats).map(row => ({
+        ...row,
+        brands:[...row.brands].sort((a, b) =>
+          (brandOrder.get(a) ?? 999) - (brandOrder.get(b) ?? 999) || a.localeCompare(b, 'ko')),
+      })).sort((a, b) =>
+        b.brands.length - a.brands.length
+        || (companyPriority[a.company] ?? 9) - (companyPriority[b.company] ?? 9)
+        || a.store.localeCompare(b.store, 'ko'));
+      const visibleStoreRows = storeRankingExpanded ? rankedStoreRows : rankedStoreRows.slice(0, 10);
+      let storeRankingHtml = visibleStoreRows.map((row, index) => `
+        <div class="store-brand-row">
+          <span class="store-brand-rank">${index + 1}</span>
+          <div class="store-brand-name"><a href="#" onclick="openStoreDetail('${row.company}','${row.store}');return false;"><span class="${companyClass(row.company)}">${row.company}</span> ${row.store}</a></div>
+          <span class="store-brand-count">${row.brands.length}개</span>
+          <div class="store-brand-chips">${row.brands.map(brand => `<button type="button" class="store-brand-chip" onclick="openBrandDetail('${brand}')"><span class="tier-dot" style="background:${tierColor(brand)};"></span>${brand}</button>`).join('')}</div>
+        </div>`).join('');
+      if (rankedStoreRows.length > 10) {
+        storeRankingHtml += `<div style="text-align:center;margin-top:12px;"><button class="btn btn-secondary" onclick="toggleStoreRankingExpanded()">${storeRankingExpanded ? '상위 10개만 보기' : `전체 ${rankedStoreRows.length}개 점포 보기`}</button></div>`;
+      }
+      document.getElementById('storeBrandRanking').innerHTML = storeRankingHtml
+        || '<div class="empty">현재 조건에 해당하는 점포가 없습니다</div>';
+
+      // ── 패널 3: 갭 분석 ──
       const gapRows = brandRows.map(r => {
         const vals = [['롯데', r.l], ['현대', r.h], ['신세계', r.sg]];
         const maxEntry = vals.reduce((a, b) => b[1] > a[1] ? b : a);
@@ -1752,6 +1818,12 @@
       rankingExpanded = !rankingExpanded;
       renderOverview();
       document.getElementById('brandRanking').scrollIntoView({ behavior:'smooth', block:'nearest' });
+    }
+
+    function toggleStoreRankingExpanded() {
+      storeRankingExpanded = !storeRankingExpanded;
+      renderOverview();
+      document.getElementById('storeBrandRanking').scrollIntoView({ behavior:'smooth', block:'nearest' });
     }
 
     const openRegions = new Set();
