@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T22:30:47.581Z",
+  "lastUpdated": "2026-09-15T00:01:31.036Z",
   "data": {
     "롯데-0013|띠어리맨": [
       {
@@ -156,6 +156,17 @@
       }
     ],
     "롯데-0022|시스템옴므": [
+      {
+        "company": "롯데",
+        "store": "노원점",
+        "storeId": "롯데-0022",
+        "floor": "05F",
+        "label": "5F 남성패션ㅣ골프",
+        "floorKey": "05F|5F 남성패션ㅣ골프",
+        "url": "floor-maps/lotte/0022/05F.svg"
+      }
+    ],
+    "롯데-0022|질스튜어트뉴욕": [
       {
         "company": "롯데",
         "store": "노원점",
@@ -332,6 +343,17 @@
       }
     ],
     "롯데-0399|준지": [
+      {
+        "company": "롯데",
+        "store": "동탄점",
+        "storeId": "롯데-0399",
+        "floor": "04F",
+        "label": "4F 킨더유니버스(아동ㆍ유아) | 남성패션",
+        "floorKey": "04F|4F 킨더유니버스(아동ㆍ유아) | 남성패션",
+        "url": "floor-maps/lotte/0399/04F.svg"
+      }
+    ],
+    "롯데-0399|질스튜어트뉴욕": [
       {
         "company": "롯데",
         "store": "동탄점",
@@ -694,6 +716,17 @@
         "url": "floor-maps/lotte/0005/04F.svg"
       }
     ],
+    "롯데-0005|질스튜어트뉴욕": [
+      {
+        "company": "롯데",
+        "store": "부산본점",
+        "storeId": "롯데-0005",
+        "floor": "04F",
+        "label": "4F 남성패션ㅣ골프",
+        "floorKey": "04F|4F 남성패션ㅣ골프",
+        "url": "floor-maps/lotte/0005/04F.svg"
+      }
+    ],
     "롯데-0005|타임옴므": [
       {
         "company": "롯데",
@@ -1035,6 +1068,17 @@
         "url": "floor-maps/lotte/0002/05F.svg"
       }
     ],
+    "롯데-0002|질스튜어트뉴욕": [
+      {
+        "company": "롯데",
+        "store": "잠실점",
+        "storeId": "롯데-0002",
+        "floor": "05F",
+        "label": "5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
+        "floorKey": "05F|5F 남성정장ㅣ컨템포러리ㅣ셔츠넥타이ㅣ안경",
+        "url": "floor-maps/lotte/0002/05F.svg"
+      }
+    ],
     "롯데-0002|톰그레이하운드맨": [
       {
         "company": "롯데",
@@ -1244,6 +1288,17 @@
         "url": "floor-maps/lotte/0017/05F.svg"
       }
     ],
+    "롯데-0017|질스튜어트뉴욕": [
+      {
+        "company": "롯데",
+        "store": "창원점",
+        "storeId": "롯데-0017",
+        "floor": "05F",
+        "label": "5F 남성패션ㅣ트래디셔널ㅣ바버샵",
+        "floorKey": "05F|5F 남성패션ㅣ트래디셔널ㅣ바버샵",
+        "url": "floor-maps/lotte/0017/05F.svg"
+      }
+    ],
     "롯데-0017|클럽모나코": [
       {
         "company": "롯데",
@@ -1442,6 +1497,17 @@
         "url": "floor-maps/hyundai/B00142000/B1.svg"
       }
     ],
+    "현대-B00142000|질스튜어트뉴욕": [
+      {
+        "company": "현대",
+        "store": "목동",
+        "storeId": "현대-B00142000",
+        "floor": "B1",
+        "label": "B1 층 안내도",
+        "floorKey": "B1|B1 층 안내도",
+        "url": "floor-maps/hyundai/B00142000/B1.svg"
+      }
+    ],
     "현대-B00142000|클럽모나코": [
       {
         "company": "현대",
@@ -1575,6 +1641,17 @@
       }
     ],
     "현대-B00122000|준지": [
+      {
+        "company": "현대",
+        "store": "무역센터",
+        "storeId": "현대-B00122000",
+        "floor": "7F",
+        "label": "7F 층 안내도",
+        "floorKey": "7F|7F 층 안내도",
+        "url": "floor-maps/hyundai/B00122000/7F.svg"
+      }
+    ],
+    "현대-B00122000|질스튜어트뉴욕": [
       {
         "company": "현대",
         "store": "무역센터",
@@ -2422,6 +2499,17 @@
       }
     ],
     "현대-B00145000|시스템옴므": [
+      {
+        "company": "현대",
+        "store": "킨텍스",
+        "storeId": "현대-B00145000",
+        "floor": "6F",
+        "label": "6F 층 안내도",
+        "floorKey": "6F|6F 층 안내도",
+        "url": "floor-maps/hyundai/B00145000/6F.svg"
+      }
+    ],
+    "현대-B00145000|질스튜어트뉴욕": [
       {
         "company": "현대",
         "store": "킨텍스",

@@ -267,7 +267,7 @@ async function fetchLotteFloors(storeName, cstrCd, rootDir = __dirname, activeBr
         ? new Set([...activeBrands].filter(brand => !isExcludedManagedBrand(store, { floor }, brand)))
         : new Set();
       const scopedFloorData = scopeLotteFloorData(floorData, cstrCd, floorCode, info.cstrTownCd, info);
-      const managedPois = trackedPois(scopedFloorData, allowedBrands);
+      const managedPois = trackedPois(scopedFloorData, allowedBrands, { floorLabel:label });
       const brands = uniqueBrands(managedPois.flatMap(item => item.brands));
       const fileName = `${safeFloorFileName(floor)}.svg`;
       const managedFileName = `${safeFloorFileName(floor)}-managed.svg`;
@@ -331,11 +331,28 @@ function uniqueBrands(values) {
     .sort((a, b) => a.localeCompare(b, 'ko'));
 }
 
-function trackedPois(floor, allowedBrands = null) {
-  return (floor.pois || []).map(poi => ({
-    poi,
-    brands: uniqueBrands([poiTitle(poi)]).filter(brand => !allowedBrands || allowedBrands.has(brand)),
-  }))
+function isMensFloorLabel(label) {
+  return /(남성|맨즈|MEN'S|MENSWEAR|\bMENS\b|\bMEN\b)/i.test(String(label || ''));
+}
+
+function isBareJillStuartTitle(title) {
+  return /^질스튜어트$/i.test(String(title || '').replace(/\s+/g, ' ').trim());
+}
+
+function trackedPois(floor, allowedBrands = null, options = {}) {
+  return (floor.pois || []).map(poi => {
+    const title = poiTitle(poi);
+    const brands = uniqueBrands([title]);
+    // 일부 롯데 남성층 POI는 '뉴욕'을 생략하고 질스튜어트로만 내려온다.
+    // 여성층의 동명 브랜드와 섞이지 않도록 공식 층 라벨이 남성층일 때만 보완한다.
+    if (isBareJillStuartTitle(title) && isMensFloorLabel(options.floorLabel)) {
+      brands.push('질스튜어트뉴욕');
+    }
+    return {
+      poi,
+      brands: [...new Set(brands)].filter(brand => !allowedBrands || allowedBrands.has(brand)),
+    };
+  })
     .filter(item => item.brands.length > 0);
 }
 
@@ -697,7 +714,7 @@ if (require.main === module) {
 
 module.exports = {
   extractFloorNum, htmlValue, languageText, safeFloorFileName,
-  pointInPolygon, uniqueBrands, isManagedFloor, isExcludedManagedBrand, activeBrandsByStore, verifyFloorEntries,
+  pointInPolygon, uniqueBrands, trackedPois, isManagedFloor, isExcludedManagedBrand, activeBrandsByStore, verifyFloorEntries,
   sanitizeOfficialSvg, addSvgClassById, renderLotteFloorSvg, fetchLotteFloors,
   dabeeoMetadataValue, lottePoiMetadata, lotteFloorViewBox, scopeLotteFloorData,
   renderHyundaiFloorSvg, fetchHyundaiMap, fetchHyundaiFloors,

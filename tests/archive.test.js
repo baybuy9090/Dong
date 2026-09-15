@@ -17,4 +17,7 @@ test('기존 스냅샷으로 8월 월별 아카이브를 생성한다', () => {
   assert.ok(Array.isArray(august.exit));
   assert.equal(august.new.length, 6);
   assert.equal(august.exit.length, 4);
+  const newKeys = new Set(august.new.map(row => `${row.storeId}|${row.brand}`));
+  assert.ok(newKeys.has('롯데-0005|질스튜어트뉴욕'));
+  assert.ok(!newKeys.has('롯데-0005|스톤아일랜드'));
 });

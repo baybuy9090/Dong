@@ -5,7 +5,7 @@ const path = require('node:path');
 const CONFIG = require('../config');
 const {
   htmlValue, languageText, safeFloorFileName, renderHyundaiFloorSvg,
-  isManagedFloor, isExcludedManagedBrand, activeBrandsByStore, verifyFloorEntries,
+  isManagedFloor, isExcludedManagedBrand, activeBrandsByStore, verifyFloorEntries, trackedPois,
   sanitizeOfficialSvg, addSvgClassById, renderLotteFloorSvg,
   lottePoiMetadata, lotteFloorViewBox, scopeLotteFloorData,
   buildBrandFloorIndex, detectFloorChanges,
@@ -138,6 +138,12 @@ test('공식 남성층과 현재 입점 브랜드를 교차 검증한다', () =>
   assert.deepEqual(floors[1].brands, ['띠어리맨']);
 });
 
+test('질스튜어트 단독 POI는 공식 남성층에서만 뉴욕 매장으로 보완한다', () => {
+  const floor = { pois:[{ title:'질스튜어트', position:{ x:10, y:10 } }] };
+  assert.deepEqual(trackedPois(floor, new Set(['질스튜어트뉴욕']), { floorLabel:'5F 남성패션' })[0].brands, ['질스튜어트뉴욕']);
+  assert.deepEqual(trackedPois(floor, new Set(['질스튜어트뉴욕']), { floorLabel:'3F 여성패션' }), []);
+});
+
 test('브랜드별 정확한 층 인덱스와 도면 변경 이력을 만든다', () => {
   const store = CONFIG.storeRows[0];
   const data = { [store.code]: [{ floor:'4F', label:'4F 안내도', url:'map.svg', brands:['타임옴므'] }] };
@@ -168,6 +174,16 @@ test('관리 브랜드는 같은 점포에서 남성층 한 곳에만 연결한�
     .filter(([, locations]) => new Set(locations.map(item => item.floor)).size > 1)
     .map(([key, locations]) => ({ key, floors:locations.map(item => item.floor) }));
   assert.deepEqual(duplicates, []);
+});
+
+test('질스튜어트뉴욕은 액세서리 전용 본점을 제외한 현재 19개 점포 도면에 연결한다', () => {
+  const rows = require('../data.json').data.filter(row => row.brand === '질스튜어트뉴욕' && !/(퇴점|누락)/.test(row.note || ''));
+  const index = require('../brand-floor-index.json').data;
+  const missing = rows.filter(row => row.storeId !== '롯데-0001' && !(index[`${row.storeId}|질스튜어트뉴욕`] || []).length);
+  assert.deepEqual(missing, []);
+  assert.equal(rows.length, 20);
+  assert.equal(Object.keys(index).filter(key => key.endsWith('|질스튜어트뉴욕')).length, 19);
+  assert.deepEqual((index['롯데-0005|질스튜어트뉴욕'] || []).map(item => item.floor), ['04F']);
 });
 
 test('현대 13개 지점의 생성된 SVG 도면이 데이터 파일과 연결된다', () => {
