@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-15T00:01:31.036Z",
+  "lastUpdated": "2026-09-15T04:45:11.460Z",
   "diagnostics": [
     {
       "storeId": "신세계-SC00002",
@@ -455,7 +455,7 @@
       {
         "floor": "5F",
         "label": "5F 영캐주얼/진캐주얼/영패션/이지 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00006/guide/floor/__icsFiles/afieldfile/2026/09/01/WjO7a8edjNTA.jpg",
+        "url": "https://www.shinsegae.com/cms12/SC00006/guide/floor/__icsFiles/afieldfile/2026/09/15/rXFTdIWCTgH6.jpg",
         "brands": []
       },
       {
@@ -485,7 +485,7 @@
       {
         "floor": "B1F",
         "label": "B1 신세계푸드마켓/푸드플라자/건강/사은행사장/카드센터 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00006/guide/floor/__icsFiles/afieldfile/2026/08/25/CzdZhQYPZSL8.png",
+        "url": "https://www.shinsegae.com/cms12/SC00006/guide/floor/__icsFiles/afieldfile/2026/09/15/sYTc68u6YrQj.png",
         "brands": []
       },
       {
@@ -941,13 +941,13 @@
       {
         "floor": "2F",
         "label": "2F 해외유명브랜드/럭셔리 워치 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00008/guide/floor/__icsFiles/afieldfile/2026/09/10/2F-260910-20260910094331-20260910094332.jpg",
+        "url": "https://www.shinsegae.com/cms12/SC00008/guide/floor/__icsFiles/afieldfile/2026/09/15/2F-260915-20260915094610-20260915094612.jpg",
         "brands": []
       },
       {
         "floor": "1F",
         "label": "1F 해외유명브랜드/화장품/스파랜드 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00008/guide/floor/__icsFiles/afieldfile/2026/09/03/1F-260901-20260903022312-20260903022314.jpg",
+        "url": "https://www.shinsegae.com/cms12/SC00008/guide/floor/__icsFiles/afieldfile/2026/09/15/1F-260915-20260915094550-20260915094553.jpg",
         "brands": []
       },
       {
@@ -1133,7 +1133,7 @@
       {
         "floor": "4F",
         "label": "4F 여성캐주얼ㅣ잡화 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00003/guide/floor/__icsFiles/afieldfile/2026/09/11/MTAu4DckpslG.png",
+        "url": "https://www.shinsegae.com/cms12/SC00003/guide/floor/__icsFiles/afieldfile/2026/09/15/KpvImX1JFR80.png",
         "brands": []
       },
       {
@@ -2950,7 +2950,7 @@
         "url": "floor-maps/lotte/0002/05F.svg",
         "highlightUrl": "floor-maps/lotte/0002/05F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/17893676224796Bt3N.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789433722061PLDsx.svg",
         "brands": [
           "띠어리맨",
           "맨온더분",
@@ -2961,10 +2961,12 @@
           "수트서플라이",
           "슬로웨어",
           "시스템옴므",
+          "아페쎄맨",
           "알레그리",
           "이로맨",
           "질스튜어트뉴욕",
           "톰그레이하운드맨",
+          "CP컴퍼니",
           "DKNY맨"
         ]
       },
@@ -2992,7 +2994,7 @@
         "url": "floor-maps/lotte/0002/02F.svg",
         "highlightUrl": "floor-maps/lotte/0002/02F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789025144392mFHxE.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789440504550vLXm6.svg",
         "brands": []
       },
       {
@@ -3494,7 +3496,7 @@
         "url": "floor-maps/lotte/0341/B1F.svg",
         "highlightUrl": "floor-maps/lotte/0341/B1F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/1787706804068Ns0rw.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/04d6e1a9-cea4-4102-9cf4-bf541be794bd/17894337519651lVr7.svg",
         "brands": []
       },
       {

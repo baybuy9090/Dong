@@ -21,3 +21,12 @@ test('기존 스냅샷으로 8월 월별 아카이브를 생성한다', () => {
   assert.ok(newKeys.has('롯데-0005|질스튜어트뉴욕'));
   assert.ok(!newKeys.has('롯데-0005|스톤아일랜드'));
 });
+
+test('9월 아카이브에 잠실점 신규 오픈 2개 브랜드가 포함된다', () => {
+  const archive = buildMonthlyArchive(path.join(__dirname, '..', 'history'));
+  const september = archive.months.find(item => item.month === '2026-09');
+  assert.ok(september);
+  const newKeys = new Set(september.new.map(row => `${row.storeId}|${row.brand}`));
+  assert.ok(newKeys.has('롯데-0002|아페쎄맨'));
+  assert.ok(newKeys.has('롯데-0002|CP컴퍼니'));
+});

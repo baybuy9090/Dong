@@ -186,6 +186,21 @@ test('질스튜어트뉴욕은 액세서리 전용 본점을 제외한 현재 19
   assert.deepEqual((index['롯데-0005|질스튜어트뉴욕'] || []).map(item => item.floor), ['04F']);
 });
 
+test('잠실점 신규 오픈 2개 브랜드는 공식 5F POI와 강조 도면에 연결한다', () => {
+  const images = require('../floor-images.json').data['0002'];
+  const index = require('../brand-floor-index.json').data;
+  const floor = images.find(item => item.floor === '05F');
+  assert.ok(floor);
+  assert.ok(floor.brands.includes('아페쎄맨'));
+  assert.ok(floor.brands.includes('CP컴퍼니'));
+  assert.equal('pendingPoiBrands' in floor, false);
+  assert.deepEqual((index['롯데-0002|아페쎄맨'] || []).map(item => item.floor), ['05F']);
+  assert.deepEqual((index['롯데-0002|CP컴퍼니'] || []).map(item => item.floor), ['05F']);
+  const svg = fs.readFileSync(path.join(__dirname, '..', floor.highlightUrl), 'utf8');
+  assert.match(svg, /★ A\.P\.C맨/);
+  assert.match(svg, /★ C\.P\. Company/);
+});
+
 test('현대 13개 지점의 생성된 SVG 도면이 데이터 파일과 연결된다', () => {
   const payload = require('../floor-images.json');
   const stores = CONFIG.storeRows.filter(store => store.company === '현대');

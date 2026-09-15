@@ -24,6 +24,12 @@ test('질스튜어트뉴욕의 도면 표기 변형은 찾고 액세서리 매�
   assert.deepEqual(matchBrands('JILLSTUART ACC'), []);
 });
 
+test('CP컴퍼니 남성 매장은 찾고 잠실 아동 매장은 제외한다', () => {
+  assert.deepEqual(matchBrands('5F C.P. COMPANY'), ['CP컴퍼니']);
+  assert.deepEqual(matchBrands('8F CP컴퍼니 언더식스틴'), []);
+  assert.deepEqual(matchBrands('CP컴퍼니 언더식스틴 / 5F C.P. COMPANY'), ['CP컴퍼니']);
+});
+
 test('수집 지연 행은 변화 확정에는 쓰지 않지만 현재 점포 존재는 유지한다', () => {
   const row = normalizeRow({ company: '롯데', store: '수원점', brand: '타임옴므', note: '수집 지연 - 직전 정상값 유지', dataQuality: 'stale' });
   assert.equal(observedSet([row]).size, 0);
@@ -33,6 +39,12 @@ test('수집 지연 행은 변화 확정에는 쓰지 않지만 현재 점포 �
 test('작업 목록의 점포 ID는 유일하다', () => {
   const jobs = buildJobList();
   assert.equal(new Set(jobs.map(job => job.storeId)).size, jobs.length);
+});
+
+test('잠실점 신규 오픈 브랜드는 과거 오탐 제외 목록에 남아 있지 않는다', () => {
+  const source = require('node:fs').readFileSync(require.resolve('../crawler'), 'utf8');
+  assert.doesNotMatch(source, /\['롯데','잠실점','아페쎄맨'\]/);
+  assert.doesNotMatch(source, /\['롯데','잠실점','CP컴퍼니'\]/);
 });
 
 test('월간 변화는 정상 수집 2회째에 확정된다', () => {

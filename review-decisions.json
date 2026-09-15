@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-15",
   "decisions": [
     {
       "key": "롯데-0001|POTTERY",
@@ -30,6 +30,28 @@
       "decision": "confirm",
       "reviewedAt": "2026-09-14",
       "note": "입점 확인"
+    },
+    {
+      "key": "롯데-0002|아페쎄맨",
+      "company": "롯데",
+      "store": "잠실점",
+      "storeId": "롯데-0002",
+      "brand": "아페쎄맨",
+      "decision": "confirm",
+      "reviewedAt": "2026-09-15",
+      "note": "롯데 공식 5F 남성패션관 신규 오픈 확인",
+      "sourceUrl": "https://www.lotteshopping.com/shpgnews/shpgnewsDetail?shpgNewsNo=SNM00000000000557736&ch=shopnow"
+    },
+    {
+      "key": "롯데-0002|CP컴퍼니",
+      "company": "롯데",
+      "store": "잠실점",
+      "storeId": "롯데-0002",
+      "brand": "CP컴퍼니",
+      "decision": "confirm",
+      "reviewedAt": "2026-09-15",
+      "note": "롯데 공식 5F 남성패션관 신규 오픈 확인",
+      "sourceUrl": "https://www.lotteshopping.com/shpgnews/shpgnewsDetail?shpgNewsNo=SNM00000000000557736&ch=shopnow"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T04:28:03.598Z",
+  "generatedAt": "2026-09-15T04:48:42.386Z",
   "months": [
     {
       "month": "2026-08",
@@ -73,8 +73,20 @@
     {
       "month": "2026-09",
       "baselineSnapshot": "2026-08-31",
-      "endSnapshot": "2026-09-14",
+      "endSnapshot": "2026-09-15",
       "new": [
+        {
+          "company": "롯데",
+          "store": "잠실점",
+          "storeId": "롯데-0002",
+          "brand": "아페쎄맨"
+        },
+        {
+          "company": "롯데",
+          "store": "잠실점",
+          "storeId": "롯데-0002",
+          "brand": "CP컴퍼니"
+        },
         {
           "company": "롯데",
           "store": "창원점",

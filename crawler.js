@@ -68,6 +68,7 @@ function matchBrands(rawText) {
   const WOMEN_MARKERS = ['여성', '우먼즈', '팜므', "WOMEN'S", 'WOMENSWEAR', 'WOMENS', 'WOMEN', 'LADIES', '레이디스'];
   const EXCLUDE_PATTERNS = {
     '바버': ['바버샵', '바버숍', '마제스티바버샵', '마제스티 바버샵', '마제스티 바버숍'],
+    'CP컴퍼니': ['CP컴퍼니 언더식스틴', 'CP 컴퍼니 언더식스틴', 'C.P. COMPANY UNDER SIXTEEN', 'CP COMPANY UNDER SIXTEEN'],
     'POTTERY': ['우치포터리', '우치 포터리', '포터리하우스', '포터리 하우스', 'POTTERY BARN'],
     '송지오옴므': ['송지오파리', '송지오 파리'],
     '질스튜어트뉴욕': ['질스튜어트 핸드백', '질스튜어트 ACC', 'JILLSTUART ACC', 'JILL STUART ACC'],
@@ -385,15 +386,27 @@ async function main() {
     if (!results.some(r => CONFIG.rowKey(r) === CONFIG.rowKey(row))) results.push({ ...row, sales: '', note: '확인' });
   });
 
+  // 공식 층별안내 반영이 늦어도 사람이 실제 입점을 확인한 브랜드는 유지한다.
+  // review-decisions.json을 단일 출처로 사용해 점포별 하드코딩이 늘어나지 않게 한다.
+  reviews.forEach((review, key) => {
+    if (review.decision !== 'confirm' || results.some(row => CONFIG.rowKey(row) === key)) return;
+    results.push({
+      company: review.company, store: review.store, storeId: review.storeId,
+      brand: review.brand, sales: '', note: '확인',
+    });
+  });
+
   const legacyRejected = [
     ['신세계','대전','이로맨'], ['현대','천호','POTTERY'], ['현대','목동','POTTERY'], ['현대','울산','POTTERY'],
     ['신세계','대구','아스페시'], ['신세계','강남','아스페시'], ['신세계','본점','아스페시'], ['현대','목동','아스페시'],
-    ['신세계','하남','우영미'], ['롯데','동탄점','아페쎄맨'], ['롯데','잠실점','아페쎄맨'], ['신세계','광주','아페쎄맨'],
+    ['신세계','하남','우영미'], ['롯데','동탄점','아페쎄맨'], ['신세계','광주','아페쎄맨'],
     ['현대','본점','아페쎄맨'], ['신세계','대전','아페쎄맨'], ['현대','여의도','아페쎄맨'], ['현대','미아','DKNY맨'],
-    ['롯데','잠실점','CP컴퍼니'],
   ].map(([company, store, brand]) => CONFIG.rowKey(normalizeRow({ company, store, brand })));
   const rejected = new Set(legacyRejected);
-  reviews.forEach((decision, key) => { if (decision.decision === 'reject') rejected.add(key); });
+  reviews.forEach((decision, key) => {
+    if (decision.decision === 'reject') rejected.add(key);
+    else if (decision.decision === 'confirm') rejected.delete(key);
+  });
   results = results.map(normalizeRow).filter(row => !rejected.has(CONFIG.rowKey(row)));
 
   // 한 회사가 통째로 비거나 급락한 날은 직전 정상값을 유지하고 저하 상태로 게시한다.
@@ -418,7 +431,13 @@ async function main() {
     // 사용자가 실제 입점을 확인한 조합은 외부 사이트가 일시적으로 지연돼도
     // 다시 수집 지연/재확인 대상으로 되돌리지 않는다.
     if (review && review.decision === 'confirm' && isPresent(row)) {
-      return { ...row, note: '확인됨(검토)', dataQuality: 'manual', reviewedAt: review.reviewedAt || '' };
+      const isNewThisMonth = !monthStartSet.has(key);
+      return {
+        ...row,
+        note: isNewThisMonth ? '이번 달 신규 입점' : '확인됨(검토)',
+        ...(isNewThisMonth ? { changeMonth:monthKey } : {}),
+        dataQuality: 'manual', reviewedAt: review.reviewedAt || '',
+      };
     }
     if (!isObserved(row)) return row;
     if (!monthStartSet.has(key)) {

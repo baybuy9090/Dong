@@ -27,3 +27,13 @@ test('사용자가 입점을 확인한 3개 조합은 재확인이나 수집 지
   assert.ok(rows.every(row => row.note === '확인됨(검토)'));
   assert.ok(rows.every(row => row.dataQuality === 'manual'));
 });
+
+test('잠실점 9월 신규 오픈 2개 브랜드가 확정 상태로 반영된다', () => {
+  const brands = new Set(['아페쎄맨', 'CP컴퍼니']);
+  const rows = data.data.filter(row => row.storeId === '롯데-0002' && brands.has(row.brand));
+  assert.equal(rows.length, 2);
+  assert.ok(rows.every(row => row.note === '이번 달 신규 입점'));
+  assert.ok(rows.every(row => row.changeMonth === '2026-09'));
+  assert.ok(rows.every(row => row.comparisonCheck === '2026-08-31 미입점'));
+  assert.ok(rows.every(row => row.dataQuality === 'manual'));
+});
