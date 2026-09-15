@@ -37,3 +37,11 @@ test('잠실점 9월 신규 오픈 2개 브랜드가 확정 상태로 반영된�
   assert.ok(rows.every(row => row.comparisonCheck === '2026-08-31 미입점'));
   assert.ok(rows.every(row => row.dataQuality === 'manual'));
 });
+
+test('현대 중동과 판교 CP컴퍼니는 직전 월부터 입점 상태로 유지된다', () => {
+  const storeIds = new Set(['현대-B00143000', '현대-B00148000']);
+  const rows = data.data.filter(row => storeIds.has(row.storeId) && row.brand === 'CP컴퍼니');
+  assert.equal(rows.length, 2);
+  assert.ok(rows.every(row => row.note === '확인'));
+  assert.ok(rows.every(row => row.comparisonCheck === '2026-08-31 입점'));
+});

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-15T04:45:11.460Z",
+  "lastUpdated": "2026-09-15T05:27:23.409Z",
   "diagnostics": [
     {
       "storeId": "신세계-SC00002",
@@ -265,7 +265,7 @@
       "storeId": "현대-B00143000",
       "store": "중동",
       "status": "ok",
-      "floors": 16,
+      "floors": 32,
       "format": "svg"
     },
     {
@@ -3570,6 +3570,7 @@
         "url": "floor-maps/hyundai/B00142000/8F.svg",
         "highlightUrl": "floor-maps/hyundai/B00142000/8F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00142000",
         "brands": []
       },
       {
@@ -3578,6 +3579,7 @@
         "url": "floor-maps/hyundai/B00142000/7F.svg",
         "highlightUrl": "floor-maps/hyundai/B00142000/7F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00142000",
         "brands": []
       },
       {
@@ -3586,6 +3588,7 @@
         "url": "floor-maps/hyundai/B00142000/6F.svg",
         "highlightUrl": "floor-maps/hyundai/B00142000/6F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00142000",
         "brands": []
       },
       {
@@ -3594,6 +3597,7 @@
         "url": "floor-maps/hyundai/B00142000/5F.svg",
         "highlightUrl": "floor-maps/hyundai/B00142000/5F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00142000",
         "brands": []
       },
       {
@@ -3602,6 +3606,7 @@
         "url": "floor-maps/hyundai/B00142000/4F.svg",
         "highlightUrl": "floor-maps/hyundai/B00142000/4F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00142000",
         "brands": []
       },
       {
@@ -3610,6 +3615,7 @@
         "url": "floor-maps/hyundai/B00142000/3F.svg",
         "highlightUrl": "floor-maps/hyundai/B00142000/3F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00142000",
         "brands": []
       },
       {
@@ -3618,6 +3624,7 @@
         "url": "floor-maps/hyundai/B00142000/2F.svg",
         "highlightUrl": "floor-maps/hyundai/B00142000/2F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00142000",
         "brands": []
       },
       {
@@ -3626,6 +3633,7 @@
         "url": "floor-maps/hyundai/B00142000/1F.svg",
         "highlightUrl": "floor-maps/hyundai/B00142000/1F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00142000",
         "brands": []
       },
       {
@@ -3634,6 +3642,7 @@
         "url": "floor-maps/hyundai/B00142000/B1.svg",
         "highlightUrl": "floor-maps/hyundai/B00142000/B1-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00142000",
         "brands": [
           "띠어리맨",
           "바버",
@@ -3655,6 +3664,7 @@
         "url": "floor-maps/hyundai/B00142000/B2.svg",
         "highlightUrl": "floor-maps/hyundai/B00142000/B2-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00142000",
         "brands": []
       },
       {
@@ -3663,6 +3673,7 @@
         "url": "floor-maps/hyundai/B00142000/B3.svg",
         "highlightUrl": "floor-maps/hyundai/B00142000/B3-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00142000",
         "brands": []
       },
       {
@@ -3671,6 +3682,7 @@
         "url": "floor-maps/hyundai/B00142000/B4.svg",
         "highlightUrl": "floor-maps/hyundai/B00142000/B4-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00142000",
         "brands": []
       },
       {
@@ -3679,6 +3691,7 @@
         "url": "floor-maps/hyundai/B00142000/B5.svg",
         "highlightUrl": "floor-maps/hyundai/B00142000/B5-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00142000",
         "brands": []
       },
       {
@@ -3687,6 +3700,7 @@
         "url": "floor-maps/hyundai/B00142000/B6.svg",
         "highlightUrl": "floor-maps/hyundai/B00142000/B6-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00142000",
         "brands": []
       }
     ],
@@ -3697,6 +3711,7 @@
         "url": "floor-maps/hyundai/B00122000/11F.svg",
         "highlightUrl": "floor-maps/hyundai/B00122000/11F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00122000",
         "brands": []
       },
       {
@@ -3705,6 +3720,7 @@
         "url": "floor-maps/hyundai/B00122000/10F.svg",
         "highlightUrl": "floor-maps/hyundai/B00122000/10F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00122000",
         "brands": []
       },
       {
@@ -3713,6 +3729,7 @@
         "url": "floor-maps/hyundai/B00122000/9F.svg",
         "highlightUrl": "floor-maps/hyundai/B00122000/9F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00122000",
         "brands": []
       },
       {
@@ -3721,6 +3738,7 @@
         "url": "floor-maps/hyundai/B00122000/8F.svg",
         "highlightUrl": "floor-maps/hyundai/B00122000/8F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00122000",
         "brands": []
       },
       {
@@ -3729,6 +3747,7 @@
         "url": "floor-maps/hyundai/B00122000/7F.svg",
         "highlightUrl": "floor-maps/hyundai/B00122000/7F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00122000",
         "brands": [
           "띠어리맨",
           "비이커",
@@ -3753,6 +3772,7 @@
         "url": "floor-maps/hyundai/B00122000/6F.svg",
         "highlightUrl": "floor-maps/hyundai/B00122000/6F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00122000",
         "brands": []
       },
       {
@@ -3761,6 +3781,7 @@
         "url": "floor-maps/hyundai/B00122000/5F.svg",
         "highlightUrl": "floor-maps/hyundai/B00122000/5F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00122000",
         "brands": []
       },
       {
@@ -3769,6 +3790,7 @@
         "url": "floor-maps/hyundai/B00122000/4F.svg",
         "highlightUrl": "floor-maps/hyundai/B00122000/4F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00122000",
         "brands": []
       },
       {
@@ -3777,6 +3799,7 @@
         "url": "floor-maps/hyundai/B00122000/3F.svg",
         "highlightUrl": "floor-maps/hyundai/B00122000/3F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00122000",
         "brands": []
       },
       {
@@ -3785,6 +3808,7 @@
         "url": "floor-maps/hyundai/B00122000/2F.svg",
         "highlightUrl": "floor-maps/hyundai/B00122000/2F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00122000",
         "brands": []
       },
       {
@@ -3793,6 +3817,7 @@
         "url": "floor-maps/hyundai/B00122000/1F.svg",
         "highlightUrl": "floor-maps/hyundai/B00122000/1F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00122000",
         "brands": []
       },
       {
@@ -3801,6 +3826,7 @@
         "url": "floor-maps/hyundai/B00122000/B1.svg",
         "highlightUrl": "floor-maps/hyundai/B00122000/B1-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00122000",
         "brands": []
       },
       {
@@ -3809,6 +3835,7 @@
         "url": "floor-maps/hyundai/B00122000/B2.svg",
         "highlightUrl": "floor-maps/hyundai/B00122000/B2-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00122000",
         "brands": []
       },
       {
@@ -3817,6 +3844,7 @@
         "url": "floor-maps/hyundai/B00122000/B3.svg",
         "highlightUrl": "floor-maps/hyundai/B00122000/B3-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00122000",
         "brands": []
       },
       {
@@ -3825,6 +3853,7 @@
         "url": "floor-maps/hyundai/B00122000/B4.svg",
         "highlightUrl": "floor-maps/hyundai/B00122000/B4-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00122000",
         "brands": []
       }
     ],
@@ -3835,6 +3864,7 @@
         "url": "floor-maps/hyundai/B00141000/11F.svg",
         "highlightUrl": "floor-maps/hyundai/B00141000/11F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00141000",
         "brands": []
       },
       {
@@ -3843,6 +3873,7 @@
         "url": "floor-maps/hyundai/B00141000/10F.svg",
         "highlightUrl": "floor-maps/hyundai/B00141000/10F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00141000",
         "brands": []
       },
       {
@@ -3851,6 +3882,7 @@
         "url": "floor-maps/hyundai/B00141000/9F.svg",
         "highlightUrl": "floor-maps/hyundai/B00141000/9F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00141000",
         "brands": []
       },
       {
@@ -3859,6 +3891,7 @@
         "url": "floor-maps/hyundai/B00141000/8F.svg",
         "highlightUrl": "floor-maps/hyundai/B00141000/8F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00141000",
         "brands": []
       },
       {
@@ -3867,6 +3900,7 @@
         "url": "floor-maps/hyundai/B00141000/7F.svg",
         "highlightUrl": "floor-maps/hyundai/B00141000/7F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00141000",
         "brands": []
       },
       {
@@ -3875,6 +3909,7 @@
         "url": "floor-maps/hyundai/B00141000/6F.svg",
         "highlightUrl": "floor-maps/hyundai/B00141000/6F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00141000",
         "brands": []
       },
       {
@@ -3883,6 +3918,7 @@
         "url": "floor-maps/hyundai/B00141000/5F.svg",
         "highlightUrl": "floor-maps/hyundai/B00141000/5F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00141000",
         "brands": [
           "띠어리맨",
           "바버",
@@ -3896,6 +3932,7 @@
         "url": "floor-maps/hyundai/B00141000/4F.svg",
         "highlightUrl": "floor-maps/hyundai/B00141000/4F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00141000",
         "brands": []
       },
       {
@@ -3904,6 +3941,7 @@
         "url": "floor-maps/hyundai/B00141000/3F.svg",
         "highlightUrl": "floor-maps/hyundai/B00141000/3F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00141000",
         "brands": []
       },
       {
@@ -3912,6 +3950,7 @@
         "url": "floor-maps/hyundai/B00141000/2F.svg",
         "highlightUrl": "floor-maps/hyundai/B00141000/2F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00141000",
         "brands": []
       },
       {
@@ -3920,6 +3959,7 @@
         "url": "floor-maps/hyundai/B00141000/1F.svg",
         "highlightUrl": "floor-maps/hyundai/B00141000/1F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00141000",
         "brands": []
       },
       {
@@ -3928,6 +3968,7 @@
         "url": "floor-maps/hyundai/B00141000/B1.svg",
         "highlightUrl": "floor-maps/hyundai/B00141000/B1-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00141000",
         "brands": []
       },
       {
@@ -3936,6 +3977,7 @@
         "url": "floor-maps/hyundai/B00141000/B2.svg",
         "highlightUrl": "floor-maps/hyundai/B00141000/B2-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00141000",
         "brands": []
       },
       {
@@ -3944,6 +3986,7 @@
         "url": "floor-maps/hyundai/B00141000/B3.svg",
         "highlightUrl": "floor-maps/hyundai/B00141000/B3-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00141000",
         "brands": []
       },
       {
@@ -3952,6 +3995,7 @@
         "url": "floor-maps/hyundai/B00141000/B4.svg",
         "highlightUrl": "floor-maps/hyundai/B00141000/B4-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00141000",
         "brands": []
       },
       {
@@ -3960,6 +4004,7 @@
         "url": "floor-maps/hyundai/B00141000/B5.svg",
         "highlightUrl": "floor-maps/hyundai/B00141000/B5-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00141000",
         "brands": []
       }
     ],
@@ -3970,6 +4015,7 @@
         "url": "floor-maps/hyundai/B00121000/6F.svg",
         "highlightUrl": "floor-maps/hyundai/B00121000/6F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00121000",
         "brands": []
       },
       {
@@ -3978,6 +4024,7 @@
         "url": "floor-maps/hyundai/B00121000/5F.svg",
         "highlightUrl": "floor-maps/hyundai/B00121000/5F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00121000",
         "brands": []
       },
       {
@@ -3986,6 +4033,7 @@
         "url": "floor-maps/hyundai/B00121000/4F.svg",
         "highlightUrl": "floor-maps/hyundai/B00121000/4F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00121000",
         "brands": [
           "띠어리맨",
           "비이커",
@@ -4001,6 +4049,7 @@
         "url": "floor-maps/hyundai/B00121000/3F.svg",
         "highlightUrl": "floor-maps/hyundai/B00121000/3F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00121000",
         "brands": []
       },
       {
@@ -4009,6 +4058,7 @@
         "url": "floor-maps/hyundai/B00121000/2F.svg",
         "highlightUrl": "floor-maps/hyundai/B00121000/2F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00121000",
         "brands": []
       },
       {
@@ -4017,6 +4067,7 @@
         "url": "floor-maps/hyundai/B00121000/1F.svg",
         "highlightUrl": "floor-maps/hyundai/B00121000/1F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00121000",
         "brands": []
       },
       {
@@ -4025,6 +4076,7 @@
         "url": "floor-maps/hyundai/B00121000/B1.svg",
         "highlightUrl": "floor-maps/hyundai/B00121000/B1-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00121000",
         "brands": []
       },
       {
@@ -4033,6 +4085,7 @@
         "url": "floor-maps/hyundai/B00121000/B2.svg",
         "highlightUrl": "floor-maps/hyundai/B00121000/B2-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00121000",
         "brands": []
       },
       {
@@ -4041,6 +4094,7 @@
         "url": "floor-maps/hyundai/B00121000/B3.svg",
         "highlightUrl": "floor-maps/hyundai/B00121000/B3-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00121000",
         "brands": []
       },
       {
@@ -4049,6 +4103,7 @@
         "url": "floor-maps/hyundai/B00121000/B4.svg",
         "highlightUrl": "floor-maps/hyundai/B00121000/B4-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00121000",
         "brands": []
       }
     ],
@@ -4059,6 +4114,7 @@
         "url": "floor-maps/hyundai/B00127000/13F.svg",
         "highlightUrl": "floor-maps/hyundai/B00127000/13F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00127000",
         "brands": []
       },
       {
@@ -4067,6 +4123,7 @@
         "url": "floor-maps/hyundai/B00127000/12F.svg",
         "highlightUrl": "floor-maps/hyundai/B00127000/12F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00127000",
         "brands": []
       },
       {
@@ -4075,6 +4132,7 @@
         "url": "floor-maps/hyundai/B00127000/11F.svg",
         "highlightUrl": "floor-maps/hyundai/B00127000/11F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00127000",
         "brands": []
       },
       {
@@ -4083,6 +4141,7 @@
         "url": "floor-maps/hyundai/B00127000/10F.svg",
         "highlightUrl": "floor-maps/hyundai/B00127000/10F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00127000",
         "brands": []
       },
       {
@@ -4091,6 +4150,7 @@
         "url": "floor-maps/hyundai/B00127000/9F.svg",
         "highlightUrl": "floor-maps/hyundai/B00127000/9F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00127000",
         "brands": []
       },
       {
@@ -4099,6 +4159,7 @@
         "url": "floor-maps/hyundai/B00127000/8F.svg",
         "highlightUrl": "floor-maps/hyundai/B00127000/8F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00127000",
         "brands": []
       },
       {
@@ -4107,6 +4168,7 @@
         "url": "floor-maps/hyundai/B00127000/7F.svg",
         "highlightUrl": "floor-maps/hyundai/B00127000/7F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00127000",
         "brands": []
       },
       {
@@ -4115,6 +4177,7 @@
         "url": "floor-maps/hyundai/B00127000/6F.svg",
         "highlightUrl": "floor-maps/hyundai/B00127000/6F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00127000",
         "brands": [
           "띠어리맨",
           "시스템옴므",
@@ -4131,6 +4194,7 @@
         "url": "floor-maps/hyundai/B00127000/5F.svg",
         "highlightUrl": "floor-maps/hyundai/B00127000/5F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00127000",
         "brands": []
       },
       {
@@ -4139,6 +4203,7 @@
         "url": "floor-maps/hyundai/B00127000/4F.svg",
         "highlightUrl": "floor-maps/hyundai/B00127000/4F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00127000",
         "brands": []
       },
       {
@@ -4147,6 +4212,7 @@
         "url": "floor-maps/hyundai/B00127000/3F.svg",
         "highlightUrl": "floor-maps/hyundai/B00127000/3F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00127000",
         "brands": []
       },
       {
@@ -4155,6 +4221,7 @@
         "url": "floor-maps/hyundai/B00127000/2F.svg",
         "highlightUrl": "floor-maps/hyundai/B00127000/2F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00127000",
         "brands": []
       },
       {
@@ -4163,6 +4230,7 @@
         "url": "floor-maps/hyundai/B00127000/1F.svg",
         "highlightUrl": "floor-maps/hyundai/B00127000/1F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00127000",
         "brands": []
       },
       {
@@ -4171,6 +4239,7 @@
         "url": "floor-maps/hyundai/B00127000/B1.svg",
         "highlightUrl": "floor-maps/hyundai/B00127000/B1-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00127000",
         "brands": []
       },
       {
@@ -4179,6 +4248,7 @@
         "url": "floor-maps/hyundai/B00127000/B2.svg",
         "highlightUrl": "floor-maps/hyundai/B00127000/B2-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00127000",
         "brands": []
       },
       {
@@ -4187,6 +4257,7 @@
         "url": "floor-maps/hyundai/B00127000/B3.svg",
         "highlightUrl": "floor-maps/hyundai/B00127000/B3-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00127000",
         "brands": []
       },
       {
@@ -4195,6 +4266,7 @@
         "url": "floor-maps/hyundai/B00127000/B4.svg",
         "highlightUrl": "floor-maps/hyundai/B00127000/B4-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00127000",
         "brands": []
       },
       {
@@ -4203,6 +4275,7 @@
         "url": "floor-maps/hyundai/B00127000/B5.svg",
         "highlightUrl": "floor-maps/hyundai/B00127000/B5-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00127000",
         "brands": []
       }
     ],
@@ -4213,6 +4286,7 @@
         "url": "floor-maps/hyundai/B00140000/6F.svg",
         "highlightUrl": "floor-maps/hyundai/B00140000/6F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00140000",
         "brands": []
       },
       {
@@ -4221,6 +4295,7 @@
         "url": "floor-maps/hyundai/B00140000/5F.svg",
         "highlightUrl": "floor-maps/hyundai/B00140000/5F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00140000",
         "brands": []
       },
       {
@@ -4229,6 +4304,7 @@
         "url": "floor-maps/hyundai/B00140000/4F.svg",
         "highlightUrl": "floor-maps/hyundai/B00140000/4F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00140000",
         "brands": []
       },
       {
@@ -4237,6 +4313,7 @@
         "url": "floor-maps/hyundai/B00140000/3F.svg",
         "highlightUrl": "floor-maps/hyundai/B00140000/3F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00140000",
         "brands": [
           "띠어리맨",
           "모드맨",
@@ -4264,6 +4341,7 @@
         "url": "floor-maps/hyundai/B00140000/2F.svg",
         "highlightUrl": "floor-maps/hyundai/B00140000/2F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00140000",
         "brands": [
           "스톤아일랜드",
           "우영미"
@@ -4275,6 +4353,7 @@
         "url": "floor-maps/hyundai/B00140000/1F.svg",
         "highlightUrl": "floor-maps/hyundai/B00140000/1F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00140000",
         "brands": []
       },
       {
@@ -4283,6 +4362,7 @@
         "url": "floor-maps/hyundai/B00140000/B1.svg",
         "highlightUrl": "floor-maps/hyundai/B00140000/B1-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00140000",
         "brands": []
       },
       {
@@ -4291,6 +4371,7 @@
         "url": "floor-maps/hyundai/B00140000/B2.svg",
         "highlightUrl": "floor-maps/hyundai/B00140000/B2-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00140000",
         "brands": []
       },
       {
@@ -4299,6 +4380,7 @@
         "url": "floor-maps/hyundai/B00140000/B3.svg",
         "highlightUrl": "floor-maps/hyundai/B00140000/B3-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00140000",
         "brands": []
       },
       {
@@ -4307,6 +4389,7 @@
         "url": "floor-maps/hyundai/B00140000/B4.svg",
         "highlightUrl": "floor-maps/hyundai/B00140000/B4-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00140000",
         "brands": []
       },
       {
@@ -4315,6 +4398,7 @@
         "url": "floor-maps/hyundai/B00140000/B5.svg",
         "highlightUrl": "floor-maps/hyundai/B00140000/B5-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00140000",
         "brands": []
       },
       {
@@ -4323,6 +4407,7 @@
         "url": "floor-maps/hyundai/B00140000/B6.svg",
         "highlightUrl": "floor-maps/hyundai/B00140000/B6-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00140000",
         "brands": []
       }
     ],
@@ -4333,6 +4418,7 @@
         "url": "floor-maps/hyundai/B00129000/13F.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/13F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": []
       },
       {
@@ -4341,6 +4427,7 @@
         "url": "floor-maps/hyundai/B00129000/12F.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/12F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": []
       },
       {
@@ -4349,6 +4436,7 @@
         "url": "floor-maps/hyundai/B00129000/11F.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/11F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": []
       },
       {
@@ -4357,6 +4445,7 @@
         "url": "floor-maps/hyundai/B00129000/10F.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/10F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": []
       },
       {
@@ -4365,6 +4454,7 @@
         "url": "floor-maps/hyundai/B00129000/9F.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/9F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": []
       },
       {
@@ -4373,6 +4463,7 @@
         "url": "floor-maps/hyundai/B00129000/8F.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/8F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": [
           "띠어리맨",
           "바버",
@@ -4392,6 +4483,7 @@
         "url": "floor-maps/hyundai/B00129000/7F.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/7F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": []
       },
       {
@@ -4400,6 +4492,7 @@
         "url": "floor-maps/hyundai/B00129000/6F.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/6F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": []
       },
       {
@@ -4408,6 +4501,7 @@
         "url": "floor-maps/hyundai/B00129000/5F.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/5F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": []
       },
       {
@@ -4416,6 +4510,7 @@
         "url": "floor-maps/hyundai/B00129000/4F.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/4F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": []
       },
       {
@@ -4424,6 +4519,7 @@
         "url": "floor-maps/hyundai/B00129000/3F.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/3F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": []
       },
       {
@@ -4432,6 +4528,7 @@
         "url": "floor-maps/hyundai/B00129000/2F.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/2F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": []
       },
       {
@@ -4440,6 +4537,7 @@
         "url": "floor-maps/hyundai/B00129000/1F.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/1F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": []
       },
       {
@@ -4448,6 +4546,7 @@
         "url": "floor-maps/hyundai/B00129000/B1.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/B1-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": []
       },
       {
@@ -4456,6 +4555,7 @@
         "url": "floor-maps/hyundai/B00129000/B2.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/B2-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": []
       },
       {
@@ -4464,6 +4564,7 @@
         "url": "floor-maps/hyundai/B00129000/B3.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/B3-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": []
       },
       {
@@ -4472,6 +4573,7 @@
         "url": "floor-maps/hyundai/B00129000/B4.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/B4-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": []
       },
       {
@@ -4480,6 +4582,7 @@
         "url": "floor-maps/hyundai/B00129000/B5.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/B5-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": []
       },
       {
@@ -4488,6 +4591,7 @@
         "url": "floor-maps/hyundai/B00129000/B6.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/B6-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": []
       },
       {
@@ -4496,6 +4600,7 @@
         "url": "floor-maps/hyundai/B00129000/B7.svg",
         "highlightUrl": "floor-maps/hyundai/B00129000/B7-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00129000",
         "brands": []
       }
     ],
@@ -4506,6 +4611,7 @@
         "url": "floor-maps/hyundai/B00143000/10F.svg",
         "highlightUrl": "floor-maps/hyundai/B00143000/10F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143000",
         "brands": []
       },
       {
@@ -4514,6 +4620,7 @@
         "url": "floor-maps/hyundai/B00143000/9F.svg",
         "highlightUrl": "floor-maps/hyundai/B00143000/9F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143000",
         "brands": []
       },
       {
@@ -4522,6 +4629,7 @@
         "url": "floor-maps/hyundai/B00143000/8F.svg",
         "highlightUrl": "floor-maps/hyundai/B00143000/8F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143000",
         "brands": []
       },
       {
@@ -4530,6 +4638,7 @@
         "url": "floor-maps/hyundai/B00143000/7F.svg",
         "highlightUrl": "floor-maps/hyundai/B00143000/7F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143000",
         "brands": []
       },
       {
@@ -4538,6 +4647,7 @@
         "url": "floor-maps/hyundai/B00143000/6F.svg",
         "highlightUrl": "floor-maps/hyundai/B00143000/6F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143000",
         "brands": []
       },
       {
@@ -4546,6 +4656,7 @@
         "url": "floor-maps/hyundai/B00143000/5F.svg",
         "highlightUrl": "floor-maps/hyundai/B00143000/5F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143000",
         "brands": [
           "띠어리맨",
           "바버",
@@ -4564,6 +4675,7 @@
         "url": "floor-maps/hyundai/B00143000/4F.svg",
         "highlightUrl": "floor-maps/hyundai/B00143000/4F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143000",
         "brands": []
       },
       {
@@ -4572,6 +4684,7 @@
         "url": "floor-maps/hyundai/B00143000/3F.svg",
         "highlightUrl": "floor-maps/hyundai/B00143000/3F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143000",
         "brands": []
       },
       {
@@ -4580,6 +4693,7 @@
         "url": "floor-maps/hyundai/B00143000/2F.svg",
         "highlightUrl": "floor-maps/hyundai/B00143000/2F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143000",
         "brands": []
       },
       {
@@ -4588,6 +4702,7 @@
         "url": "floor-maps/hyundai/B00143000/1F.svg",
         "highlightUrl": "floor-maps/hyundai/B00143000/1F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143000",
         "brands": []
       },
       {
@@ -4596,6 +4711,7 @@
         "url": "floor-maps/hyundai/B00143000/B1.svg",
         "highlightUrl": "floor-maps/hyundai/B00143000/B1-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143000",
         "brands": []
       },
       {
@@ -4604,6 +4720,7 @@
         "url": "floor-maps/hyundai/B00143000/B2.svg",
         "highlightUrl": "floor-maps/hyundai/B00143000/B2-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143000",
         "brands": []
       },
       {
@@ -4612,6 +4729,7 @@
         "url": "floor-maps/hyundai/B00143000/B3.svg",
         "highlightUrl": "floor-maps/hyundai/B00143000/B3-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143000",
         "brands": []
       },
       {
@@ -4620,6 +4738,7 @@
         "url": "floor-maps/hyundai/B00143000/B4.svg",
         "highlightUrl": "floor-maps/hyundai/B00143000/B4-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143000",
         "brands": []
       },
       {
@@ -4628,6 +4747,7 @@
         "url": "floor-maps/hyundai/B00143000/B5.svg",
         "highlightUrl": "floor-maps/hyundai/B00143000/B5-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143000",
         "brands": []
       },
       {
@@ -4636,6 +4756,153 @@
         "url": "floor-maps/hyundai/B00143000/B6.svg",
         "highlightUrl": "floor-maps/hyundai/B00143000/B6-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143000",
+        "brands": []
+      },
+      {
+        "floor": "WEST 10F",
+        "label": "WEST 10F 층 안내도",
+        "url": "floor-maps/hyundai/B00143100/10F.svg",
+        "highlightUrl": "floor-maps/hyundai/B00143100/10F-managed.svg",
+        "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143100",
+        "brands": []
+      },
+      {
+        "floor": "WEST 9F",
+        "label": "WEST 9F 층 안내도",
+        "url": "floor-maps/hyundai/B00143100/9F.svg",
+        "highlightUrl": "floor-maps/hyundai/B00143100/9F-managed.svg",
+        "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143100",
+        "brands": []
+      },
+      {
+        "floor": "WEST 8F",
+        "label": "WEST 8F 층 안내도",
+        "url": "floor-maps/hyundai/B00143100/8F.svg",
+        "highlightUrl": "floor-maps/hyundai/B00143100/8F-managed.svg",
+        "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143100",
+        "brands": []
+      },
+      {
+        "floor": "WEST 7F",
+        "label": "WEST 7F 층 안내도",
+        "url": "floor-maps/hyundai/B00143100/7F.svg",
+        "highlightUrl": "floor-maps/hyundai/B00143100/7F-managed.svg",
+        "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143100",
+        "brands": []
+      },
+      {
+        "floor": "WEST 6F",
+        "label": "WEST 6F 층 안내도",
+        "url": "floor-maps/hyundai/B00143100/6F.svg",
+        "highlightUrl": "floor-maps/hyundai/B00143100/6F-managed.svg",
+        "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143100",
+        "brands": []
+      },
+      {
+        "floor": "WEST 5F",
+        "label": "WEST 5F 층 안내도",
+        "url": "floor-maps/hyundai/B00143100/5F.svg",
+        "highlightUrl": "floor-maps/hyundai/B00143100/5F-managed.svg",
+        "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143100",
+        "brands": []
+      },
+      {
+        "floor": "WEST 4F",
+        "label": "WEST 4F 층 안내도",
+        "url": "floor-maps/hyundai/B00143100/4F.svg",
+        "highlightUrl": "floor-maps/hyundai/B00143100/4F-managed.svg",
+        "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143100",
+        "brands": []
+      },
+      {
+        "floor": "WEST 3F",
+        "label": "WEST 3F 층 안내도",
+        "url": "floor-maps/hyundai/B00143100/3F.svg",
+        "highlightUrl": "floor-maps/hyundai/B00143100/3F-managed.svg",
+        "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143100",
+        "brands": []
+      },
+      {
+        "floor": "WEST 2F",
+        "label": "WEST 2F 층 안내도",
+        "url": "floor-maps/hyundai/B00143100/2F.svg",
+        "highlightUrl": "floor-maps/hyundai/B00143100/2F-managed.svg",
+        "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143100",
+        "brands": []
+      },
+      {
+        "floor": "WEST 1F",
+        "label": "WEST 1F 층 안내도",
+        "url": "floor-maps/hyundai/B00143100/1F.svg",
+        "highlightUrl": "floor-maps/hyundai/B00143100/1F-managed.svg",
+        "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143100",
+        "brands": [
+          "CP컴퍼니"
+        ]
+      },
+      {
+        "floor": "WEST B1",
+        "label": "WEST B1 층 안내도",
+        "url": "floor-maps/hyundai/B00143100/B1.svg",
+        "highlightUrl": "floor-maps/hyundai/B00143100/B1-managed.svg",
+        "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143100",
+        "brands": []
+      },
+      {
+        "floor": "WEST B2",
+        "label": "WEST B2 층 안내도",
+        "url": "floor-maps/hyundai/B00143100/B2.svg",
+        "highlightUrl": "floor-maps/hyundai/B00143100/B2-managed.svg",
+        "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143100",
+        "brands": []
+      },
+      {
+        "floor": "WEST B3",
+        "label": "WEST B3 층 안내도",
+        "url": "floor-maps/hyundai/B00143100/B3.svg",
+        "highlightUrl": "floor-maps/hyundai/B00143100/B3-managed.svg",
+        "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143100",
+        "brands": []
+      },
+      {
+        "floor": "WEST B4",
+        "label": "WEST B4 층 안내도",
+        "url": "floor-maps/hyundai/B00143100/B4.svg",
+        "highlightUrl": "floor-maps/hyundai/B00143100/B4-managed.svg",
+        "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143100",
+        "brands": []
+      },
+      {
+        "floor": "WEST B5",
+        "label": "WEST B5 층 안내도",
+        "url": "floor-maps/hyundai/B00143100/B5.svg",
+        "highlightUrl": "floor-maps/hyundai/B00143100/B5-managed.svg",
+        "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143100",
+        "brands": []
+      },
+      {
+        "floor": "WEST B6",
+        "label": "WEST B6 층 안내도",
+        "url": "floor-maps/hyundai/B00143100/B6.svg",
+        "highlightUrl": "floor-maps/hyundai/B00143100/B6-managed.svg",
+        "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00143100",
         "brands": []
       }
     ],
@@ -4646,6 +4913,7 @@
         "url": "floor-maps/hyundai/B00126000/13F.svg",
         "highlightUrl": "floor-maps/hyundai/B00126000/13F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00126000",
         "brands": []
       },
       {
@@ -4654,6 +4922,7 @@
         "url": "floor-maps/hyundai/B00126000/12F.svg",
         "highlightUrl": "floor-maps/hyundai/B00126000/12F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00126000",
         "brands": []
       },
       {
@@ -4662,6 +4931,7 @@
         "url": "floor-maps/hyundai/B00126000/11F.svg",
         "highlightUrl": "floor-maps/hyundai/B00126000/11F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00126000",
         "brands": []
       },
       {
@@ -4670,6 +4940,7 @@
         "url": "floor-maps/hyundai/B00126000/10F.svg",
         "highlightUrl": "floor-maps/hyundai/B00126000/10F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00126000",
         "brands": []
       },
       {
@@ -4678,6 +4949,7 @@
         "url": "floor-maps/hyundai/B00126000/9F.svg",
         "highlightUrl": "floor-maps/hyundai/B00126000/9F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00126000",
         "brands": []
       },
       {
@@ -4686,6 +4958,7 @@
         "url": "floor-maps/hyundai/B00126000/8F.svg",
         "highlightUrl": "floor-maps/hyundai/B00126000/8F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00126000",
         "brands": []
       },
       {
@@ -4694,6 +4967,7 @@
         "url": "floor-maps/hyundai/B00126000/7F.svg",
         "highlightUrl": "floor-maps/hyundai/B00126000/7F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00126000",
         "brands": []
       },
       {
@@ -4702,6 +4976,7 @@
         "url": "floor-maps/hyundai/B00126000/6F.svg",
         "highlightUrl": "floor-maps/hyundai/B00126000/6F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00126000",
         "brands": [
           "띠어리맨",
           "바버",
@@ -4717,6 +4992,7 @@
         "url": "floor-maps/hyundai/B00126000/5F.svg",
         "highlightUrl": "floor-maps/hyundai/B00126000/5F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00126000",
         "brands": []
       },
       {
@@ -4725,6 +5001,7 @@
         "url": "floor-maps/hyundai/B00126000/4F.svg",
         "highlightUrl": "floor-maps/hyundai/B00126000/4F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00126000",
         "brands": []
       },
       {
@@ -4733,6 +5010,7 @@
         "url": "floor-maps/hyundai/B00126000/3F.svg",
         "highlightUrl": "floor-maps/hyundai/B00126000/3F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00126000",
         "brands": []
       },
       {
@@ -4741,6 +5019,7 @@
         "url": "floor-maps/hyundai/B00126000/2F.svg",
         "highlightUrl": "floor-maps/hyundai/B00126000/2F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00126000",
         "brands": []
       },
       {
@@ -4749,6 +5028,7 @@
         "url": "floor-maps/hyundai/B00126000/1F.svg",
         "highlightUrl": "floor-maps/hyundai/B00126000/1F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00126000",
         "brands": []
       },
       {
@@ -4757,6 +5037,7 @@
         "url": "floor-maps/hyundai/B00126000/B1.svg",
         "highlightUrl": "floor-maps/hyundai/B00126000/B1-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00126000",
         "brands": []
       },
       {
@@ -4765,6 +5046,7 @@
         "url": "floor-maps/hyundai/B00126000/B2.svg",
         "highlightUrl": "floor-maps/hyundai/B00126000/B2-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00126000",
         "brands": []
       },
       {
@@ -4773,6 +5055,7 @@
         "url": "floor-maps/hyundai/B00126000/B3.svg",
         "highlightUrl": "floor-maps/hyundai/B00126000/B3-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00126000",
         "brands": []
       },
       {
@@ -4781,6 +5064,7 @@
         "url": "floor-maps/hyundai/B00126000/B4.svg",
         "highlightUrl": "floor-maps/hyundai/B00126000/B4-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00126000",
         "brands": []
       },
       {
@@ -4789,6 +5073,7 @@
         "url": "floor-maps/hyundai/B00126000/B5.svg",
         "highlightUrl": "floor-maps/hyundai/B00126000/B5-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00126000",
         "brands": []
       }
     ],
@@ -4799,6 +5084,7 @@
         "url": "floor-maps/hyundai/B00147000/7F.svg",
         "highlightUrl": "floor-maps/hyundai/B00147000/7F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00147000",
         "brands": []
       },
       {
@@ -4807,6 +5093,7 @@
         "url": "floor-maps/hyundai/B00147000/6F.svg",
         "highlightUrl": "floor-maps/hyundai/B00147000/6F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00147000",
         "brands": []
       },
       {
@@ -4815,6 +5102,7 @@
         "url": "floor-maps/hyundai/B00147000/5F.svg",
         "highlightUrl": "floor-maps/hyundai/B00147000/5F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00147000",
         "brands": []
       },
       {
@@ -4823,6 +5111,7 @@
         "url": "floor-maps/hyundai/B00147000/4F.svg",
         "highlightUrl": "floor-maps/hyundai/B00147000/4F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00147000",
         "brands": [
           "띠어리맨",
           "바버",
@@ -4839,6 +5128,7 @@
         "url": "floor-maps/hyundai/B00147000/3F.svg",
         "highlightUrl": "floor-maps/hyundai/B00147000/3F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00147000",
         "brands": []
       },
       {
@@ -4847,6 +5137,7 @@
         "url": "floor-maps/hyundai/B00147000/2F.svg",
         "highlightUrl": "floor-maps/hyundai/B00147000/2F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00147000",
         "brands": []
       },
       {
@@ -4855,6 +5146,7 @@
         "url": "floor-maps/hyundai/B00147000/1F.svg",
         "highlightUrl": "floor-maps/hyundai/B00147000/1F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00147000",
         "brands": []
       },
       {
@@ -4863,6 +5155,7 @@
         "url": "floor-maps/hyundai/B00147000/B1.svg",
         "highlightUrl": "floor-maps/hyundai/B00147000/B1-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00147000",
         "brands": []
       },
       {
@@ -4871,6 +5164,7 @@
         "url": "floor-maps/hyundai/B00147000/B2.svg",
         "highlightUrl": "floor-maps/hyundai/B00147000/B2-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00147000",
         "brands": []
       },
       {
@@ -4879,6 +5173,7 @@
         "url": "floor-maps/hyundai/B00147000/B3.svg",
         "highlightUrl": "floor-maps/hyundai/B00147000/B3-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00147000",
         "brands": []
       }
     ],
@@ -4889,6 +5184,7 @@
         "url": "floor-maps/hyundai/B00145000/10F.svg",
         "highlightUrl": "floor-maps/hyundai/B00145000/10F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00145000",
         "brands": []
       },
       {
@@ -4897,6 +5193,7 @@
         "url": "floor-maps/hyundai/B00145000/9F.svg",
         "highlightUrl": "floor-maps/hyundai/B00145000/9F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00145000",
         "brands": []
       },
       {
@@ -4905,6 +5202,7 @@
         "url": "floor-maps/hyundai/B00145000/8F.svg",
         "highlightUrl": "floor-maps/hyundai/B00145000/8F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00145000",
         "brands": []
       },
       {
@@ -4913,6 +5211,7 @@
         "url": "floor-maps/hyundai/B00145000/7F.svg",
         "highlightUrl": "floor-maps/hyundai/B00145000/7F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00145000",
         "brands": []
       },
       {
@@ -4921,6 +5220,7 @@
         "url": "floor-maps/hyundai/B00145000/6F.svg",
         "highlightUrl": "floor-maps/hyundai/B00145000/6F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00145000",
         "brands": [
           "띠어리맨",
           "바버",
@@ -4939,6 +5239,7 @@
         "url": "floor-maps/hyundai/B00145000/5F.svg",
         "highlightUrl": "floor-maps/hyundai/B00145000/5F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00145000",
         "brands": []
       },
       {
@@ -4947,6 +5248,7 @@
         "url": "floor-maps/hyundai/B00145000/4F.svg",
         "highlightUrl": "floor-maps/hyundai/B00145000/4F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00145000",
         "brands": []
       },
       {
@@ -4955,6 +5257,7 @@
         "url": "floor-maps/hyundai/B00145000/3F.svg",
         "highlightUrl": "floor-maps/hyundai/B00145000/3F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00145000",
         "brands": []
       },
       {
@@ -4963,6 +5266,7 @@
         "url": "floor-maps/hyundai/B00145000/2F.svg",
         "highlightUrl": "floor-maps/hyundai/B00145000/2F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00145000",
         "brands": []
       },
       {
@@ -4971,6 +5275,7 @@
         "url": "floor-maps/hyundai/B00145000/1F.svg",
         "highlightUrl": "floor-maps/hyundai/B00145000/1F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00145000",
         "brands": []
       },
       {
@@ -4979,6 +5284,7 @@
         "url": "floor-maps/hyundai/B00145000/B1.svg",
         "highlightUrl": "floor-maps/hyundai/B00145000/B1-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00145000",
         "brands": []
       },
       {
@@ -4987,6 +5293,7 @@
         "url": "floor-maps/hyundai/B00145000/B2.svg",
         "highlightUrl": "floor-maps/hyundai/B00145000/B2-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00145000",
         "brands": []
       },
       {
@@ -4995,6 +5302,7 @@
         "url": "floor-maps/hyundai/B00145000/B3.svg",
         "highlightUrl": "floor-maps/hyundai/B00145000/B3-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00145000",
         "brands": []
       },
       {
@@ -5003,6 +5311,7 @@
         "url": "floor-maps/hyundai/B00145000/B4.svg",
         "highlightUrl": "floor-maps/hyundai/B00145000/B4-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00145000",
         "brands": []
       },
       {
@@ -5011,6 +5320,7 @@
         "url": "floor-maps/hyundai/B00145000/B5.svg",
         "highlightUrl": "floor-maps/hyundai/B00145000/B5-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00145000",
         "brands": []
       }
     ],
@@ -5021,6 +5331,7 @@
         "url": "floor-maps/hyundai/B00148000/10F.svg",
         "highlightUrl": "floor-maps/hyundai/B00148000/10F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00148000",
         "brands": []
       },
       {
@@ -5029,6 +5340,7 @@
         "url": "floor-maps/hyundai/B00148000/9F.svg",
         "highlightUrl": "floor-maps/hyundai/B00148000/9F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00148000",
         "brands": []
       },
       {
@@ -5037,6 +5349,7 @@
         "url": "floor-maps/hyundai/B00148000/8F.svg",
         "highlightUrl": "floor-maps/hyundai/B00148000/8F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00148000",
         "brands": []
       },
       {
@@ -5045,6 +5358,7 @@
         "url": "floor-maps/hyundai/B00148000/7F.svg",
         "highlightUrl": "floor-maps/hyundai/B00148000/7F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00148000",
         "brands": [
           "바버",
           "지오송지오"
@@ -5056,6 +5370,7 @@
         "url": "floor-maps/hyundai/B00148000/6F.svg",
         "highlightUrl": "floor-maps/hyundai/B00148000/6F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00148000",
         "brands": [
           "띠어리맨",
           "비이커",
@@ -5075,6 +5390,7 @@
           "클럽모나코",
           "타임옴므",
           "톰그레이하운드맨",
+          "CP컴퍼니",
           "DKNY맨"
         ]
       },
@@ -5084,6 +5400,7 @@
         "url": "floor-maps/hyundai/B00148000/5F.svg",
         "highlightUrl": "floor-maps/hyundai/B00148000/5F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00148000",
         "brands": []
       },
       {
@@ -5092,6 +5409,7 @@
         "url": "floor-maps/hyundai/B00148000/4F.svg",
         "highlightUrl": "floor-maps/hyundai/B00148000/4F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00148000",
         "brands": []
       },
       {
@@ -5100,6 +5418,7 @@
         "url": "floor-maps/hyundai/B00148000/3F.svg",
         "highlightUrl": "floor-maps/hyundai/B00148000/3F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00148000",
         "brands": []
       },
       {
@@ -5108,6 +5427,7 @@
         "url": "floor-maps/hyundai/B00148000/2F.svg",
         "highlightUrl": "floor-maps/hyundai/B00148000/2F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00148000",
         "brands": []
       },
       {
@@ -5116,6 +5436,7 @@
         "url": "floor-maps/hyundai/B00148000/1F.svg",
         "highlightUrl": "floor-maps/hyundai/B00148000/1F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00148000",
         "brands": []
       },
       {
@@ -5124,6 +5445,7 @@
         "url": "floor-maps/hyundai/B00148000/B1.svg",
         "highlightUrl": "floor-maps/hyundai/B00148000/B1-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00148000",
         "brands": []
       },
       {
@@ -5132,6 +5454,7 @@
         "url": "floor-maps/hyundai/B00148000/B2.svg",
         "highlightUrl": "floor-maps/hyundai/B00148000/B2-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00148000",
         "brands": []
       },
       {
@@ -5140,6 +5463,7 @@
         "url": "floor-maps/hyundai/B00148000/B3.svg",
         "highlightUrl": "floor-maps/hyundai/B00148000/B3-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00148000",
         "brands": []
       },
       {
@@ -5148,6 +5472,7 @@
         "url": "floor-maps/hyundai/B00148000/B4.svg",
         "highlightUrl": "floor-maps/hyundai/B00148000/B4-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00148000",
         "brands": []
       },
       {
@@ -5156,6 +5481,7 @@
         "url": "floor-maps/hyundai/B00148000/B5.svg",
         "highlightUrl": "floor-maps/hyundai/B00148000/B5-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00148000",
         "brands": []
       },
       {
@@ -5164,6 +5490,7 @@
         "url": "floor-maps/hyundai/B00148000/B6.svg",
         "highlightUrl": "floor-maps/hyundai/B00148000/B6-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00148000",
         "brands": []
       }
     ],
@@ -5174,6 +5501,7 @@
         "url": "floor-maps/hyundai/B00146000/9F.svg",
         "highlightUrl": "floor-maps/hyundai/B00146000/9F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00146000",
         "brands": []
       },
       {
@@ -5182,6 +5510,7 @@
         "url": "floor-maps/hyundai/B00146000/8F.svg",
         "highlightUrl": "floor-maps/hyundai/B00146000/8F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00146000",
         "brands": []
       },
       {
@@ -5190,6 +5519,7 @@
         "url": "floor-maps/hyundai/B00146000/7F.svg",
         "highlightUrl": "floor-maps/hyundai/B00146000/7F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00146000",
         "brands": []
       },
       {
@@ -5198,6 +5528,7 @@
         "url": "floor-maps/hyundai/B00146000/6F.svg",
         "highlightUrl": "floor-maps/hyundai/B00146000/6F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00146000",
         "brands": []
       },
       {
@@ -5206,6 +5537,7 @@
         "url": "floor-maps/hyundai/B00146000/5F.svg",
         "highlightUrl": "floor-maps/hyundai/B00146000/5F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00146000",
         "brands": [
           "띠어리맨",
           "바버",
@@ -5234,6 +5566,7 @@
         "url": "floor-maps/hyundai/B00146000/4F.svg",
         "highlightUrl": "floor-maps/hyundai/B00146000/4F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00146000",
         "brands": []
       },
       {
@@ -5242,6 +5575,7 @@
         "url": "floor-maps/hyundai/B00146000/3F.svg",
         "highlightUrl": "floor-maps/hyundai/B00146000/3F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00146000",
         "brands": []
       },
       {
@@ -5250,6 +5584,7 @@
         "url": "floor-maps/hyundai/B00146000/2F.svg",
         "highlightUrl": "floor-maps/hyundai/B00146000/2F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00146000",
         "brands": []
       },
       {
@@ -5258,6 +5593,7 @@
         "url": "floor-maps/hyundai/B00146000/1F.svg",
         "highlightUrl": "floor-maps/hyundai/B00146000/1F-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00146000",
         "brands": []
       },
       {
@@ -5266,6 +5602,7 @@
         "url": "floor-maps/hyundai/B00146000/B1.svg",
         "highlightUrl": "floor-maps/hyundai/B00146000/B1-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00146000",
         "brands": []
       },
       {
@@ -5274,6 +5611,7 @@
         "url": "floor-maps/hyundai/B00146000/B2.svg",
         "highlightUrl": "floor-maps/hyundai/B00146000/B2-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00146000",
         "brands": []
       },
       {
@@ -5282,6 +5620,7 @@
         "url": "floor-maps/hyundai/B00146000/B3.svg",
         "highlightUrl": "floor-maps/hyundai/B00146000/B3-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00146000",
         "brands": []
       },
       {
@@ -5290,6 +5629,7 @@
         "url": "floor-maps/hyundai/B00146000/B4.svg",
         "highlightUrl": "floor-maps/hyundai/B00146000/B4-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00146000",
         "brands": []
       },
       {
@@ -5298,6 +5638,7 @@
         "url": "floor-maps/hyundai/B00146000/B5.svg",
         "highlightUrl": "floor-maps/hyundai/B00146000/B5-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00146000",
         "brands": []
       },
       {
@@ -5306,6 +5647,7 @@
         "url": "floor-maps/hyundai/B00146000/B6.svg",
         "highlightUrl": "floor-maps/hyundai/B00146000/B6-managed.svg",
         "source": "hyundai-dabeeo",
+        "sourceBranchCode": "B00146000",
         "brands": []
       }
     ]

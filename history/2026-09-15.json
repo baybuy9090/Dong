@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-15T04:46:48.642Z",
+  "lastUpdated": "2026-09-15T05:23:52.302Z",
   "comparisonAsOf": "2026-08-31",
   "monthKey": "2026-09",
   "monthStartSnapshot": "2026-08-31",
@@ -279,10 +279,10 @@
       "company": "현대",
       "store": "중동",
       "status": "ok",
-      "brands": 9,
-      "successfulPages": 1,
+      "brands": 10,
+      "successfulPages": 2,
       "failedPages": 0,
-      "expectedPages": 1
+      "expectedPages": 2
     },
     {
       "storeId": "현대-B00126000",
@@ -319,7 +319,7 @@
       "company": "현대",
       "store": "판교",
       "status": "ok",
-      "brands": 21,
+      "brands": 22,
       "successfulPages": 1,
       "failedPages": 0,
       "expectedPages": 1
@@ -2641,6 +2641,15 @@
     },
     {
       "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "brand": "CP컴퍼니",
+      "sales": "",
+      "note": "확인",
+      "comparisonCheck": "2026-08-31 입점"
+    },
+    {
+      "company": "현대",
       "store": "천호",
       "storeId": "현대-B00126000",
       "brand": "솔리드옴므",
@@ -2851,6 +2860,15 @@
       "store": "킨텍스",
       "storeId": "현대-B00145000",
       "brand": "바버",
+      "sales": "",
+      "note": "확인",
+      "comparisonCheck": "2026-08-31 입점"
+    },
+    {
+      "company": "현대",
+      "store": "판교",
+      "storeId": "현대-B00148000",
+      "brand": "CP컴퍼니",
       "sales": "",
       "note": "확인",
       "comparisonCheck": "2026-08-31 입점"
@@ -4040,6 +4058,15 @@
       "company": "신세계",
       "store": "센텀",
       "storeId": "신세계-SC00008",
+      "brand": "CP컴퍼니",
+      "sales": "",
+      "note": "확인",
+      "comparisonCheck": "2026-08-31 입점"
+    },
+    {
+      "company": "신세계",
+      "store": "센텀",
+      "storeId": "신세계-SC00008",
       "brand": "바버",
       "sales": "",
       "note": "확인",
@@ -4087,15 +4114,6 @@
       "store": "센텀",
       "storeId": "신세계-SC00008",
       "brand": "아페쎄맨",
-      "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-08-31 입점"
-    },
-    {
-      "company": "신세계",
-      "store": "센텀",
-      "storeId": "신세계-SC00008",
-      "brand": "CP컴퍼니",
       "sales": "",
       "note": "확인",
       "comparisonCheck": "2026-08-31 입점"
@@ -4519,6 +4537,15 @@
       "company": "신세계",
       "store": "경기",
       "storeId": "신세계-SC00007",
+      "brand": "CP컴퍼니",
+      "sales": "",
+      "note": "확인",
+      "comparisonCheck": "2026-08-31 입점"
+    },
+    {
+      "company": "신세계",
+      "store": "경기",
+      "storeId": "신세계-SC00007",
       "brand": "시스템옴므",
       "sales": "",
       "note": "확인",
@@ -4538,15 +4565,6 @@
       "store": "경기",
       "storeId": "신세계-SC00007",
       "brand": "아페쎄맨",
-      "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-08-31 입점"
-    },
-    {
-      "company": "신세계",
-      "store": "경기",
-      "storeId": "신세계-SC00007",
-      "brand": "CP컴퍼니",
       "sales": "",
       "note": "확인",
       "comparisonCheck": "2026-08-31 입점"

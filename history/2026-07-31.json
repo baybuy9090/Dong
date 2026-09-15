@@ -1821,6 +1821,14 @@
     {
       "company": "현대",
       "store": "중동",
+      "brand": "CP컴퍼니",
+      "sales": "",
+      "note": "확인",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "현대",
+      "store": "중동",
       "brand": "시스템옴므",
       "sales": "",
       "note": "확인",
@@ -2070,6 +2078,14 @@
       "company": "현대",
       "store": "판교",
       "brand": "질스튜어트뉴욕",
+      "sales": "",
+      "note": "확인",
+      "baselineCheck": "일치"
+    },
+    {
+      "company": "현대",
+      "store": "판교",
+      "brand": "CP컴퍼니",
       "sales": "",
       "note": "확인",
       "baselineCheck": "일치"

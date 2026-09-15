@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-15T04:45:11.460Z",
+  "lastUpdated": "2026-09-15T05:27:23.409Z",
   "data": {
     "롯데-0013|띠어리맨": [
       {
@@ -2344,6 +2344,17 @@
         "url": "floor-maps/hyundai/B00143000/5F.svg"
       }
     ],
+    "현대-B00143000|CP컴퍼니": [
+      {
+        "company": "현대",
+        "store": "중동",
+        "storeId": "현대-B00143000",
+        "floor": "WEST 1F",
+        "label": "WEST 1F 층 안내도",
+        "floorKey": "WEST 1F|WEST 1F 층 안내도",
+        "url": "floor-maps/hyundai/B00143100/1F.svg"
+      }
+    ],
     "현대-B00126000|띠어리맨": [
       {
         "company": "현대",
@@ -2796,6 +2807,17 @@
       }
     ],
     "현대-B00148000|톰그레이하운드맨": [
+      {
+        "company": "현대",
+        "store": "판교",
+        "storeId": "현대-B00148000",
+        "floor": "6F",
+        "label": "6F 층 안내도",
+        "floorKey": "6F|6F 층 안내도",
+        "url": "floor-maps/hyundai/B00148000/6F.svg"
+      }
+    ],
+    "현대-B00148000|CP컴퍼니": [
       {
         "company": "현대",
         "store": "판교",

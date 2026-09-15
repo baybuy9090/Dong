@@ -72,6 +72,7 @@ const DABEEO4_DATA_BASE = 'https://data.maps.dabeeo.com/api';
 const HYUNDAI_MANAGED_FLOORS = {
   B00142000: ['B1'], B00122000: ['7F'], B00141000: ['5F'], B00121000: ['4F'],
   B00127000: ['6F'], B00140000: ['2F', '3F'], B00129000: ['8F'], B00143000: ['5F'],
+  B00143100: ['1F'],
   B00126000: ['6F'], B00147000: ['4F'], B00145000: ['6F'], B00148000: ['6F', '7F'],
   B00146000: ['5F'],
 };
@@ -509,15 +510,17 @@ async function fetchHyundaiMap(branchCd) {
   return mapPayload.payload;
 }
 
-async function fetchHyundaiFloors(storeName, branchCd, rootDir = __dirname, activeBrands = null) {
+async function fetchHyundaiFloors(storeName, branchCd, rootDir = __dirname, activeBrands = null, branchLabel = '') {
   const mapData = await fetchHyundaiMap(branchCd);
   const outputDir = path.join(rootDir, 'floor-maps', 'hyundai', branchCd);
   fs.mkdirSync(outputDir, { recursive: true });
   return (mapData.floors || []).map(floor => {
     const label = languageText(floor.name) || floor.id;
     const store = CONFIG.getStore('현대', storeName);
-    const allowedBrands = isManagedFloor(store, { floor:label, label })
-      ? new Set([...activeBrands].filter(brand => !isExcludedManagedBrand(store, { floor:label }, brand)))
+    const branchStore = { ...store, code:branchCd };
+    const displayFloor = branchLabel ? `${branchLabel} ${label}` : label;
+    const allowedBrands = isManagedFloor(branchStore, { floor:label, label })
+      ? new Set([...(activeBrands || [])].filter(brand => !isExcludedManagedBrand(store, { floor:displayFloor }, brand)))
       : new Set();
     const brands = uniqueBrands((floor.pois || []).map(poiTitle)).filter(brand => !allowedBrands || allowedBrands.has(brand));
     const fileName = `${safeFloorFileName(label)}.svg`;
@@ -525,8 +528,9 @@ async function fetchHyundaiFloors(storeName, branchCd, rootDir = __dirname, acti
     fs.writeFileSync(path.join(outputDir, fileName), renderHyundaiFloorSvg(mapData, floor, storeName, { showHighlights:false, allowedBrands }), 'utf8');
     fs.writeFileSync(path.join(outputDir, managedFileName), renderHyundaiFloorSvg(mapData, floor, storeName, { showHighlights:true, allowedBrands }), 'utf8');
     return {
-      floor: label, label: `${label} 층 안내도`, url: `floor-maps/hyundai/${branchCd}/${fileName}`,
-      highlightUrl: `floor-maps/hyundai/${branchCd}/${managedFileName}`, source: 'hyundai-dabeeo', brands,
+      floor: displayFloor, label: `${displayFloor} 층 안내도`, url: `floor-maps/hyundai/${branchCd}/${fileName}`,
+      highlightUrl: `floor-maps/hyundai/${branchCd}/${managedFileName}`, source: 'hyundai-dabeeo',
+      sourceBranchCode: branchCd, brands,
     };
   });
 }
@@ -672,7 +676,14 @@ async function main() {
     process.stdout.write(`수집 중: 현대 ${store} ... `);
     try {
       const storeConfig = CONFIG.getStore('현대', store);
-      data[code] = await fetchHyundaiFloors(store, code, __dirname, activeBrandMap.get(storeConfig.id) || new Set());
+      const branches = CONFIG.hyundaiBranches(store, code);
+      const branchFloors = [];
+      for (const branch of branches) {
+        branchFloors.push(...await fetchHyundaiFloors(
+          store, branch.code, __dirname, activeBrandMap.get(storeConfig.id) || new Set(), branch.label,
+        ));
+      }
+      data[code] = branchFloors;
       if (data[code].length === 0 && (previous[code] || []).length) throw new Error('0개 층 응답');
       diagnostics.push({ storeId: `현대-${code}`, store, status: 'ok', floors: data[code].length, format: 'svg' });
       console.log(`${data[code].length}개 층`);

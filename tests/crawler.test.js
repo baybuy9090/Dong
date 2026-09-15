@@ -26,6 +26,9 @@ test('질스튜어트뉴욕의 도면 표기 변형은 찾고 액세서리 매�
 
 test('CP컴퍼니 남성 매장은 찾고 잠실 아동 매장은 제외한다', () => {
   assert.deepEqual(matchBrands('5F C.P. COMPANY'), ['CP컴퍼니']);
+  assert.deepEqual(matchBrands('6F 수입&컨템포러리 C.P.컴퍼니'), ['CP컴퍼니']);
+  assert.deepEqual(matchBrands('1F Trend CP 컴퍼니'), ['CP컴퍼니']);
+  assert.deepEqual(matchBrands('여성 <strong class="brand">CP 컴퍼니</strong>'), ['CP컴퍼니']);
   assert.deepEqual(matchBrands('8F CP컴퍼니 언더식스틴'), []);
   assert.deepEqual(matchBrands('CP컴퍼니 언더식스틴 / 5F C.P. COMPANY'), ['CP컴퍼니']);
 });

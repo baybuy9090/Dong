@@ -37,3 +37,12 @@ test('37개 전체 브랜드를 뉴스 수집 대상으로 삼는다', () => {
   assert.deepEqual(CONFIG.newsExcludedBrands, []);
   CONFIG.brands.forEach(brand => assert.ok(newsQueriesForBrand(brand).length >= 1));
 });
+
+test('CP컴퍼니는 영문 브랜드명으로도 검색하고 기사 연관성을 판정한다', () => {
+  const queries = newsQueriesForBrand('CP컴퍼니');
+  assert.ok(queries.some(query => query.includes('CP COMPANY')));
+  assert.deepEqual(filterByBrandRelevance([
+    { title:'CP COMPANY, 서울 신규 매장 오픈' },
+    { title:'다른 패션 브랜드 신상품 공개' },
+  ], 'CP컴퍼니').map(item => item.title), ['CP COMPANY, 서울 신규 매장 오픈']);
+});

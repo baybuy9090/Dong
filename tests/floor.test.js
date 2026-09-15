@@ -112,6 +112,8 @@ test('공식 남성층과 현재 입점 브랜드를 교차 검증한다', () =>
   const hyundai = CONFIG.getStore('현대', '목동');
   assert.equal(isManagedFloor(hyundai, { floor:'4F', label:'4F 층 안내도' }), false);
   assert.equal(isManagedFloor(hyundai, { floor:'B1', label:'B1 층 안내도' }), true);
+  const jungdongWest = { ...CONFIG.getStore('현대', '중동'), code:'B00143100' };
+  assert.equal(isManagedFloor(jungdongWest, { floor:'1F', label:'1F Trend' }), true);
   const lotte = CONFIG.getStore('롯데', '잠실점');
   assert.equal(isManagedFloor(lotte, { floor:'08F', label:'8F 아동ㆍ유아' }), false);
   const dongtan = CONFIG.getStore('롯데', '동탄점');
@@ -201,6 +203,16 @@ test('잠실점 신규 오픈 2개 브랜드는 공식 5F POI와 강조 도면�
   assert.match(svg, /★ C\.P\. Company/);
 });
 
+test('현대 중동과 판교 CP컴퍼니는 각 공식 남성 도면에 연결한다', () => {
+  const index = require('../brand-floor-index.json').data;
+  assert.deepEqual((index['현대-B00143000|CP컴퍼니'] || []).map(item => item.floor), ['WEST 1F']);
+  assert.deepEqual((index['현대-B00148000|CP컴퍼니'] || []).map(item => item.floor), ['6F']);
+  const middleSvg = fs.readFileSync(path.join(__dirname, '..', 'floor-maps/hyundai/B00143100/1F-managed.svg'), 'utf8');
+  const pangyoSvg = fs.readFileSync(path.join(__dirname, '..', 'floor-maps/hyundai/B00148000/6F-managed.svg'), 'utf8');
+  assert.match(middleSvg, /★ CP 컴퍼니/);
+  assert.match(pangyoSvg, /★ C\.P\.컴퍼니/);
+});
+
 test('현대 13개 지점의 생성된 SVG 도면이 데이터 파일과 연결된다', () => {
   const payload = require('../floor-images.json');
   const stores = CONFIG.storeRows.filter(store => store.company === '현대');
@@ -210,7 +222,7 @@ test('현대 13개 지점의 생성된 SVG 도면이 데이터 파일과 연결�
     assert.ok(Array.isArray(floors) && floors.length > 0, `${store.name} 도면 없음`);
     floors.forEach(floor => {
       assert.equal(floor.source, 'hyundai-dabeeo');
-      assert.ok(floor.url.startsWith(`floor-maps/hyundai/${store.code}/`));
+      assert.ok(floor.url.startsWith('floor-maps/hyundai/'));
       assert.ok(fs.existsSync(path.join(__dirname, '..', floor.url)), `${floor.url} 파일 없음`);
     });
   });

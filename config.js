@@ -61,9 +61,18 @@
   function storeId(company, name) { return (getStore(company, name) || {}).id || `${company}-${name}`; }
   function rowKey(row) { return `${row.storeId || storeId(row.company, row.store)}|${row.brand}`; }
 
+  // 하나의 점포가 공식 사이트에서 복수 건물 코드로 나뉘는 경우. 중동점은
+  // EAST(B00143000)와 WEST/U-PLEX(B00143100)를 모두 봐야 전체 입점 현황이 잡힌다.
+  const hyundaiExtraBranches = {
+    '중동': [{ code:'B00143100', label:'WEST' }],
+  };
+  function hyundaiBranches(storeName, primaryCode) {
+    return [{ code:primaryCode, label:'' }, ...(hyundaiExtraBranches[storeName] || [])];
+  }
+
   return {
     stores, storeRows, brandTiers, brands: Object.values(brandTiers).flat(),
     newsExcludedBrands: [],
-    getStore, normalizeStoreName, storeId, rowKey,
+    getStore, normalizeStoreName, storeId, rowKey, hyundaiBranches,
   };
 }));

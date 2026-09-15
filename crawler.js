@@ -19,7 +19,10 @@ const LOTTE_EXTRA_TOWNS = {
 
 const BRAND_PATTERNS = {
   '아페쎄맨': ['A.P.C', '에이피씨', '아페쎄', 'APC맨'],
-  'CP컴퍼니': ['CP컴퍼니', 'C.P. COMPANY', 'C.P.COMPANY', 'CP COMPANY', '씨피컴퍼니', '씨피 컴퍼니'],
+  'CP컴퍼니': [
+    'CP컴퍼니', 'C.P.컴퍼니', 'C.P 컴퍼니', 'C.P. COMPANY', 'C.P.COMPANY',
+    'CP COMPANY', 'CP 컴퍼니', '씨피컴퍼니', '씨피 컴퍼니',
+  ],
   'DKNY맨': ['DKNY'],
   'PAF': ['PAF'],
   'POTTERY': ['포터리', 'POTTERY'],
@@ -152,6 +155,12 @@ function matchBrands(rawText) {
     if (lastMen === -1 && lastWomen === -1) found.add(m.brand);
     else if (lastMen > lastWomen) found.add(m.brand);
   });
+  // 현대 중동 WEST처럼 성별 카테고리 없이 Trend 층에 있는 매장은 페이지의
+  // 실제 매장명 태그를 우선한다. 주변 다른 층의 '여성' 문구가 앞서 나왔다는
+  // 이유로 명시적인 CP 컴퍼니 매장까지 제외되지 않게 한다.
+  if (/<strong[^>]*class=["'][^"']*\bbrand\b[^"']*["'][^>]*>\s*CP\s*컴퍼니\s*<\/strong>/i.test(String(rawText || ''))) {
+    found.add('CP컴퍼니');
+  }
   return Array.from(found);
 }
 
@@ -224,9 +233,26 @@ let lastHyundaiText = null;
 let lastHyundaiStore = null;
 
 async function fetchHyundaiBrands(storeName, branchCd) {
-  const url = `https://www.ehyundai.com/newPortal/DP/FG/FG000000_V.do?branchCd=${branchCd}`;
-  const res = await fetchWithRetry(url, 2);
-  const text = await res.text();
+  const found = new Set();
+  const texts = [];
+  let successfulPages = 0;
+  let failedPages = 0;
+  const branches = CONFIG.hyundaiBranches(storeName, branchCd);
+  for (const branch of branches) {
+    try {
+      const url = `https://www.ehyundai.com/newPortal/DP/FG/FG000000_V.do?branchCd=${branch.code}`;
+      const res = await fetchWithRetry(url, 2);
+      const text = await res.text();
+      texts.push(text);
+      matchBrands(text).forEach(brand => found.add(brand));
+      successfulPages++;
+    } catch (e) {
+      failedPages++;
+      console.log(`현대 ${storeName} ${branch.label || '본관'} 오류: ${e.message}`);
+    }
+  }
+  if (successfulPages === 0) throw new Error(`모든 건물 호출 실패 (${failedPages}/${branches.length})`);
+  const text = texts.join('\n');
   let suspiciousDuplicate = false;
   if (lastHyundaiText !== null && text.substring(0, 3000) === lastHyundaiText.substring(0, 3000)) {
     suspiciousDuplicate = true;
@@ -234,7 +260,10 @@ async function fetchHyundaiBrands(storeName, branchCd) {
   }
   lastHyundaiText = text;
   lastHyundaiStore = storeName;
-  return { found: matchBrands(text), suspiciousDuplicate, successfulPages: 1, failedPages: 0, expectedPages: 1 };
+  return {
+    found: Array.from(found), suspiciousDuplicate,
+    successfulPages, failedPages, expectedPages: branches.length,
+  };
 }
 
 async function fetchShinsegaeBrands(storeCd) {

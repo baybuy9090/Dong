@@ -1,7 +1,165 @@
 {
   "schemaVersion": 5,
-  "lastUpdated": "2026-09-15T04:45:11.460Z",
+  "lastUpdated": "2026-09-15T05:27:23.409Z",
   "events": [
+    {
+      "detectedAt": "2026-09-15T05:27:23.409Z",
+      "type": "브랜드 추가",
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "brand": "CP컴퍼니",
+      "floors": [
+        "WEST 1F"
+      ],
+      "before": [],
+      "after": [
+        "WEST 1F"
+      ]
+    },
+    {
+      "detectedAt": "2026-09-15T05:19:54.977Z",
+      "type": "층 추가",
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 10F"
+    },
+    {
+      "detectedAt": "2026-09-15T05:19:54.977Z",
+      "type": "층 추가",
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 9F"
+    },
+    {
+      "detectedAt": "2026-09-15T05:19:54.977Z",
+      "type": "층 추가",
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 8F"
+    },
+    {
+      "detectedAt": "2026-09-15T05:19:54.977Z",
+      "type": "층 추가",
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 7F"
+    },
+    {
+      "detectedAt": "2026-09-15T05:19:54.977Z",
+      "type": "층 추가",
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 6F"
+    },
+    {
+      "detectedAt": "2026-09-15T05:19:54.977Z",
+      "type": "층 추가",
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 5F"
+    },
+    {
+      "detectedAt": "2026-09-15T05:19:54.977Z",
+      "type": "층 추가",
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 4F"
+    },
+    {
+      "detectedAt": "2026-09-15T05:19:54.977Z",
+      "type": "층 추가",
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 3F"
+    },
+    {
+      "detectedAt": "2026-09-15T05:19:54.977Z",
+      "type": "층 추가",
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 2F"
+    },
+    {
+      "detectedAt": "2026-09-15T05:19:54.977Z",
+      "type": "층 추가",
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 1F"
+    },
+    {
+      "detectedAt": "2026-09-15T05:19:54.977Z",
+      "type": "층 추가",
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST B1"
+    },
+    {
+      "detectedAt": "2026-09-15T05:19:54.977Z",
+      "type": "층 추가",
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST B2"
+    },
+    {
+      "detectedAt": "2026-09-15T05:19:54.977Z",
+      "type": "층 추가",
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST B3"
+    },
+    {
+      "detectedAt": "2026-09-15T05:19:54.977Z",
+      "type": "층 추가",
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST B4"
+    },
+    {
+      "detectedAt": "2026-09-15T05:19:54.977Z",
+      "type": "층 추가",
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST B5"
+    },
+    {
+      "detectedAt": "2026-09-15T05:19:54.977Z",
+      "type": "층 추가",
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST B6"
+    },
+    {
+      "detectedAt": "2026-09-15T05:19:54.977Z",
+      "type": "브랜드 추가",
+      "company": "현대",
+      "store": "판교",
+      "storeId": "현대-B00148000",
+      "brand": "CP컴퍼니",
+      "floors": [
+        "6F"
+      ],
+      "before": [],
+      "after": [
+        "6F"
+      ]
+    },
     {
       "detectedAt": "2026-09-15T04:45:11.460Z",
       "type": "도면 변경",
@@ -3917,6 +4075,168 @@
       "brands": [],
       "signature": "85ae20b58fbbcbbe04c018cef90fe26cc919e6ebd8ae1df895e6cc7863fe4c95"
     },
+    "현대-B00143000|WEST 10F|WEST 10F 층 안내도": {
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 10F",
+      "label": "WEST 10F 층 안내도",
+      "url": "floor-maps/hyundai/B00143100/10F.svg",
+      "brands": [],
+      "signature": "968cf38a129b2ca1085aec746d498dace3100122a33e5df8c9ad429e43b4a185"
+    },
+    "현대-B00143000|WEST 9F|WEST 9F 층 안내도": {
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 9F",
+      "label": "WEST 9F 층 안내도",
+      "url": "floor-maps/hyundai/B00143100/9F.svg",
+      "brands": [],
+      "signature": "f81f179173a8ef56ee46cb283c683a2326455922a19423b40708ac1eab0cd6ba"
+    },
+    "현대-B00143000|WEST 8F|WEST 8F 층 안내도": {
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 8F",
+      "label": "WEST 8F 층 안내도",
+      "url": "floor-maps/hyundai/B00143100/8F.svg",
+      "brands": [],
+      "signature": "9ed3208182ebc406d1a90b4278937d01b542069ca79c3c53ccd6651f70a001cb"
+    },
+    "현대-B00143000|WEST 7F|WEST 7F 층 안내도": {
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 7F",
+      "label": "WEST 7F 층 안내도",
+      "url": "floor-maps/hyundai/B00143100/7F.svg",
+      "brands": [],
+      "signature": "fd588bfb968ed1321b45f91cf02d654f10c571d53ed344d7066ac80c02c8eff7"
+    },
+    "현대-B00143000|WEST 6F|WEST 6F 층 안내도": {
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 6F",
+      "label": "WEST 6F 층 안내도",
+      "url": "floor-maps/hyundai/B00143100/6F.svg",
+      "brands": [],
+      "signature": "46dfc4d8f31cc1d7b94355615d76b5872b5043803d99bdd81d06660dd88b4a3f"
+    },
+    "현대-B00143000|WEST 5F|WEST 5F 층 안내도": {
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 5F",
+      "label": "WEST 5F 층 안내도",
+      "url": "floor-maps/hyundai/B00143100/5F.svg",
+      "brands": [],
+      "signature": "ed5dbddb7170a129b6bbf9eab17aee0b9ad81066939042c26f68a0a50b39edf2"
+    },
+    "현대-B00143000|WEST 4F|WEST 4F 층 안내도": {
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 4F",
+      "label": "WEST 4F 층 안내도",
+      "url": "floor-maps/hyundai/B00143100/4F.svg",
+      "brands": [],
+      "signature": "7d92ea29afbd8690386eec171b007f43ff41cc9e47e85f48bfd88420b4458c51"
+    },
+    "현대-B00143000|WEST 3F|WEST 3F 층 안내도": {
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 3F",
+      "label": "WEST 3F 층 안내도",
+      "url": "floor-maps/hyundai/B00143100/3F.svg",
+      "brands": [],
+      "signature": "6b7e3b7d18cb0f266e594b8b54dc5736538e2fb15bf1fcf0f13ea0ee48e687e5"
+    },
+    "현대-B00143000|WEST 2F|WEST 2F 층 안내도": {
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 2F",
+      "label": "WEST 2F 층 안내도",
+      "url": "floor-maps/hyundai/B00143100/2F.svg",
+      "brands": [],
+      "signature": "f14b8e11b7e42c75f46d96a81b4394f44f34011d9b812ea0c75e532ada06bc59"
+    },
+    "현대-B00143000|WEST 1F|WEST 1F 층 안내도": {
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST 1F",
+      "label": "WEST 1F 층 안내도",
+      "url": "floor-maps/hyundai/B00143100/1F.svg",
+      "brands": [
+        "CP컴퍼니"
+      ],
+      "signature": "b8c35362c839a365d6ec8854519a04eb201607c5c606aa9092b54a06b5f99fb7"
+    },
+    "현대-B00143000|WEST B1|WEST B1 층 안내도": {
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST B1",
+      "label": "WEST B1 층 안내도",
+      "url": "floor-maps/hyundai/B00143100/B1.svg",
+      "brands": [],
+      "signature": "64b9d852a8bd3f13a80ed828de4e6c425fa1c00bd0f5787ede19e5a06f672d3f"
+    },
+    "현대-B00143000|WEST B2|WEST B2 층 안내도": {
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST B2",
+      "label": "WEST B2 층 안내도",
+      "url": "floor-maps/hyundai/B00143100/B2.svg",
+      "brands": [],
+      "signature": "c8c44e2fd29eed36a302e4f43382fe5e794efc6d7bbdeabff999fd9f5af9c0c9"
+    },
+    "현대-B00143000|WEST B3|WEST B3 층 안내도": {
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST B3",
+      "label": "WEST B3 층 안내도",
+      "url": "floor-maps/hyundai/B00143100/B3.svg",
+      "brands": [],
+      "signature": "e1c96dfb2147a8378cad7ae71b5efd163282a07c92c5e5f137bad515e9121911"
+    },
+    "현대-B00143000|WEST B4|WEST B4 층 안내도": {
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST B4",
+      "label": "WEST B4 층 안내도",
+      "url": "floor-maps/hyundai/B00143100/B4.svg",
+      "brands": [],
+      "signature": "0066a33aaa953b367a438dd38e47a41b46eebd313b4aef3988ac8b7bcbfa1628"
+    },
+    "현대-B00143000|WEST B5|WEST B5 층 안내도": {
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST B5",
+      "label": "WEST B5 층 안내도",
+      "url": "floor-maps/hyundai/B00143100/B5.svg",
+      "brands": [],
+      "signature": "1c01df69abebd41b6faba0ed711ac6e49868d43f0a99ef58c5911131a41881f8"
+    },
+    "현대-B00143000|WEST B6|WEST B6 층 안내도": {
+      "company": "현대",
+      "store": "중동",
+      "storeId": "현대-B00143000",
+      "floor": "WEST B6",
+      "label": "WEST B6 층 안내도",
+      "url": "floor-maps/hyundai/B00143100/B6.svg",
+      "brands": [],
+      "signature": "85ae20b58fbbcbbe04c018cef90fe26cc919e6ebd8ae1df895e6cc7863fe4c95"
+    },
     "현대-B00126000|13F|13F 층 안내도": {
       "company": "현대",
       "store": "천호",
@@ -4441,9 +4761,10 @@
         "클럽모나코",
         "타임옴므",
         "톰그레이하운드맨",
+        "CP컴퍼니",
         "DKNY맨"
       ],
-      "signature": "be1f6fa28c86fa1113d32306f6a3144e4e75e00c4663fb801eacee9c49d548cd"
+      "signature": "e8f42ddd377bfc299d5e43423a523e00120b0885cfc5098278558d5587130803"
     },
     "현대-B00148000|5F|5F 층 안내도": {
       "company": "현대",
