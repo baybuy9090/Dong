@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T03:18:31.503Z",
+  "generatedAt": "2026-09-18T03:04:23.089Z",
   "months": [
     {
       "month": "2026-08",
@@ -73,7 +73,7 @@
     {
       "month": "2026-09",
       "baselineSnapshot": "2026-08-31",
-      "endSnapshot": "2026-09-17",
+      "endSnapshot": "2026-09-18",
       "new": [
         {
           "company": "롯데",
@@ -107,6 +107,12 @@
         },
         {
           "company": "신세계",
+          "store": "대구",
+          "storeId": "신세계-SC00013",
+          "brand": "지오송지오"
+        },
+        {
+          "company": "신세계",
           "store": "대전",
           "storeId": "신세계-SC00060",
           "brand": "TEN-C"
@@ -122,6 +128,12 @@
           "store": "센텀",
           "storeId": "신세계-SC00008",
           "brand": "알레그리"
+        },
+        {
+          "company": "신세계",
+          "store": "천안아산",
+          "storeId": "신세계-SC00009",
+          "brand": "POTTERY"
         }
       ],
       "exit": []
