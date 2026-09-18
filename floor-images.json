@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-17T05:56:39.101Z",
+  "lastUpdated": "2026-09-18T05:44:21.896Z",
   "diagnostics": [
     {
       "storeId": "신세계-SC00002",
@@ -215,104 +215,91 @@
     {
       "storeId": "현대-B00142000",
       "store": "목동",
-      "status": "stale",
-      "error": "지도 인증값 없음",
+      "status": "ok",
       "floors": 14,
       "format": "svg"
     },
     {
       "storeId": "현대-B00122000",
       "store": "무역센터",
-      "status": "stale",
-      "error": "지도 인증값 없음",
+      "status": "ok",
       "floors": 15,
       "format": "svg"
     },
     {
       "storeId": "현대-B00141000",
       "store": "미아",
-      "status": "stale",
-      "error": "지도 인증값 없음",
+      "status": "ok",
       "floors": 16,
       "format": "svg"
     },
     {
       "storeId": "현대-B00121000",
       "store": "본점",
-      "status": "stale",
-      "error": "지도 인증값 없음",
+      "status": "ok",
       "floors": 10,
       "format": "svg"
     },
     {
       "storeId": "현대-B00127000",
       "store": "신촌",
-      "status": "stale",
-      "error": "지도 인증값 없음",
+      "status": "ok",
       "floors": 18,
       "format": "svg"
     },
     {
       "storeId": "현대-B00140000",
       "store": "여의도",
-      "status": "stale",
-      "error": "지도 인증값 없음",
+      "status": "ok",
       "floors": 12,
       "format": "svg"
     },
     {
       "storeId": "현대-B00129000",
       "store": "울산",
-      "status": "stale",
-      "error": "지도 인증값 없음",
+      "status": "ok",
       "floors": 20,
       "format": "svg"
     },
     {
       "storeId": "현대-B00143000",
       "store": "중동",
-      "status": "stale",
-      "error": "지도 인증값 없음",
+      "status": "ok",
       "floors": 32,
       "format": "svg"
     },
     {
       "storeId": "현대-B00126000",
       "store": "천호",
-      "status": "stale",
-      "error": "지도 인증값 없음",
+      "status": "ok",
       "floors": 18,
       "format": "svg"
     },
     {
       "storeId": "현대-B00147000",
       "store": "충청",
-      "status": "stale",
-      "error": "지도 인증값 없음",
+      "status": "ok",
       "floors": 10,
       "format": "svg"
     },
     {
       "storeId": "현대-B00145000",
       "store": "킨텍스",
-      "status": "stale",
-      "error": "지도 인증값 없음",
+      "status": "ok",
       "floors": 15,
       "format": "svg"
     },
     {
       "storeId": "현대-B00148000",
       "store": "판교",
-      "status": "stale",
-      "error": "지도 인증값 없음",
+      "status": "ok",
       "floors": 16,
       "format": "svg"
     },
     {
       "storeId": "현대-B00146000",
       "store": "대구",
-      "status": "stale",
-      "error": "지도 인증값 없음",
+      "status": "ok",
       "floors": 15,
       "format": "svg"
     }
@@ -486,13 +473,13 @@
       {
         "floor": "2F",
         "label": "2F 명품/화장품/잡화 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00006/guide/floor/__icsFiles/afieldfile/2026/08/25/Pvv5YHN8ebUO.png",
+        "url": "https://www.shinsegae.com/cms12/SC00006/guide/floor/__icsFiles/afieldfile/2026/09/18/QeS25XOZw6Z2.jpg",
         "brands": []
       },
       {
         "floor": "1F",
         "label": "1F 명품/광장/신세계갤러리 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00006/guide/floor/__icsFiles/afieldfile/2026/07/06/b1UWoZQSCS9r.png",
+        "url": "https://www.shinsegae.com/cms12/SC00006/guide/floor/__icsFiles/afieldfile/2026/09/18/8PKCozGDMLy1.png",
         "brands": []
       },
       {
@@ -578,19 +565,19 @@
       {
         "floor": "5F",
         "label": "5F 럭셔리 부티크｜럭셔리 주얼리 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00013/guide/floor/__icsFiles/afieldfile/2026/09/04/5F-20260904055039-20260904055041.png",
+        "url": "https://www.shinsegae.com/cms12/SC00013/guide/floor/__icsFiles/afieldfile/2026/09/17/5F-20260917071306-20260917071308.png",
         "brands": []
       },
       {
         "floor": "4F",
-        "label": "4F 리뉴얼 오픈 준비중 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00013/guide/floor/__icsFiles/afieldfile/2026/09/03/4F-20260428100857-20260428100858.png",
+        "label": "4F 럭셔리 패션 안내도",
+        "url": "https://www.shinsegae.com/cms12/SC00013/guide/floor/__icsFiles/afieldfile/2026/09/17/4F-20260917071326-20260917071333.png",
         "brands": []
       },
       {
         "floor": "3F",
         "label": "3F 패션｜시즌잡화 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00013/guide/floor/__icsFiles/afieldfile/2026/07/01/3F-20260701043513-20260701043516.png",
+        "url": "https://www.shinsegae.com/cms12/SC00013/guide/floor/__icsFiles/afieldfile/2026/09/17/3F-20260917071349-20260917071351.png",
         "brands": []
       },
       {
@@ -611,6 +598,7 @@
           "알레그리",
           "이로맨",
           "준지",
+          "지오송지오",
           "질스튜어트뉴욕",
           "클럽모나코",
           "타임옴므",
@@ -670,7 +658,7 @@
       {
         "floor": "3F",
         "label": "3F 여성｜남성｜슈즈｜핸드백 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00060/guide/floor/__icsFiles/afieldfile/2026/09/14/3F_260902-20260903095311-20260903095319.png",
+        "url": "https://www.shinsegae.com/cms12/SC00060/guide/floor/__icsFiles/afieldfile/2026/09/17/3F_260918-20260917043243-20260917043301.png",
         "brands": [
           "띠어리맨",
           "맨온더분",
@@ -759,7 +747,7 @@
       {
         "floor": "1F",
         "label": "1F 화장품/핸드백/패션/잡화 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00005/guide/floor/__icsFiles/afieldfile/2026/08/21/Y88IWaLptpF6.jpg",
+        "url": "https://www.shinsegae.com/cms12/SC00005/guide/floor/__icsFiles/afieldfile/2026/09/18/zzq3XxcVO33h.png",
         "brands": []
       },
       {
@@ -847,7 +835,7 @@
       {
         "floor": "4F",
         "label": "4F 컨템포러리 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00001/guide/floor/__icsFiles/afieldfile/2026/08/20/GHFahogqxmNd.png",
+        "url": "https://www.shinsegae.com/cms12/SC00001/guide/floor/__icsFiles/afieldfile/2026/09/18/k3XstHJUaHxr.png",
         "brands": []
       },
       {
@@ -960,7 +948,7 @@
       {
         "floor": "1F",
         "label": "1F 해외유명브랜드/화장품/스파랜드 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00008/guide/floor/__icsFiles/afieldfile/2026/09/15/1F-260915-20260915094550-20260915094553.jpg",
+        "url": "https://www.shinsegae.com/cms12/SC00008/guide/floor/__icsFiles/afieldfile/2026/09/18/1F-260918-20260918094311-20260918094314.jpg",
         "brands": []
       },
       {
@@ -1033,7 +1021,7 @@
       {
         "floor": "2F",
         "label": "2F 푸드홀/신세계 팩토리스토어 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00010/guide/floor/__icsFiles/afieldfile/2026/08/13/141414-20260813015744-20260813015746.png",
+        "url": "https://www.shinsegae.com/cms12/SC00010/guide/floor/__icsFiles/afieldfile/2026/09/18/FN050sTWe6vC.png",
         "brands": []
       },
       {
@@ -1047,25 +1035,25 @@
       {
         "floor": "6F",
         "label": "6F 신세계아카데미/통합서비스센터 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/05/27/A-6-20260527030951-20260527030953.jpg",
+        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/17/A-6-20260917021711-20260917021713.jpg",
         "brands": []
       },
       {
         "floor": "5F",
         "label": "5F 전문식당가/스카이파크 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/05/27/A-5-20260527030933-20260527030936.jpg",
+        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/17/A-5-20260917021655-20260917021657.jpg",
         "brands": []
       },
       {
         "floor": "4F",
         "label": "4F 생활/아동 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/08/25/A-4-20260825095304-20260825095306.jpg",
+        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/17/A-4-20260917021637-20260917021640.jpg",
         "brands": []
       },
       {
         "floor": "3F",
         "label": "3F 남성/골프 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/11/A-3-20260911090701-20260911090703.jpg",
+        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/17/A-3-20260917021609-20260917021612.jpg",
         "brands": [
           "띠어리맨",
           "솔리드옴므",
@@ -1078,19 +1066,19 @@
       {
         "floor": "2F",
         "label": "2F 여성패션 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/03/A-2-20260903050419-20260903050422.jpg",
+        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/17/A-2-20260917021541-20260917021543.jpg",
         "brands": []
       },
       {
         "floor": "1F",
         "label": "1F 화장품/해외유명브랜드/잡화 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/15/A-1-20260915051551-20260915051553.jpg",
+        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/17/A-1-20260917021519-20260917021529.jpg",
         "brands": []
       },
       {
         "floor": "B1F",
         "label": "B1 시외버스터미널/이마트 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/03/06/A-B1-20260306054329-20260306054332.jpg",
+        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/17/A-B1-20260917021459-20260917021504.jpg",
         "brands": []
       }
     ],
@@ -1128,7 +1116,7 @@
       {
         "floor": "5F",
         "label": "5F 남성 패션 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00003/guide/floor/__icsFiles/afieldfile/2026/07/31/GjV0rsScrIpe.png",
+        "url": "https://www.shinsegae.com/cms12/SC00003/guide/floor/__icsFiles/afieldfile/2026/09/17/vBrRCqw1Jgse.png",
         "brands": [
           "띠어리맨",
           "바버",
@@ -1241,7 +1229,7 @@
       {
         "floor": "6F",
         "label": "6F 생활 <------> 스포츠 [주차동8F] 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00007/guide/floor/__icsFiles/afieldfile/2026/09/01/6F_260901-20260901010950-20260901010953.png",
+        "url": "https://www.shinsegae.com/cms12/SC00007/guide/floor/__icsFiles/afieldfile/2026/09/17/QhQfZRxE08Ae.png",
         "brands": []
       },
       {
@@ -1292,7 +1280,7 @@
       {
         "floor": "1F",
         "label": "1F 화장품 · 해외유명브랜드 · 럭셔리 워치&주얼리 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00007/guide/floor/__icsFiles/afieldfile/2026/08/25/1F_260825-20260825095208-20260825095226.png",
+        "url": "https://www.shinsegae.com/cms12/SC00007/guide/floor/__icsFiles/afieldfile/2026/09/18/01RIo2qZ5ow2.png",
         "brands": []
       },
       {
@@ -1393,7 +1381,7 @@
         "url": "floor-maps/lotte/0013/B1F.svg",
         "highlightUrl": "floor-maps/lotte/0013/B1F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e007fa2b-6558-4534-a147-6628496a6af6/1788589359313J7eef.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e007fa2b-6558-4534-a147-6628496a6af6/1789696976846fDefl.svg",
         "brands": []
       }
     ],
@@ -1449,7 +1437,7 @@
         "url": "floor-maps/lotte/0333/08F.svg",
         "highlightUrl": "floor-maps/lotte/0333/08F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/17890321589851OZhF.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/1789692085199yXzmx.svg",
         "brands": []
       },
       {
@@ -1505,7 +1493,7 @@
         "url": "floor-maps/lotte/0333/02F.svg",
         "highlightUrl": "floor-maps/lotte/0333/02F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/1789532967011cGOVz.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/1789692220727HQyMT.svg",
         "brands": []
       },
       {
@@ -1840,7 +1828,7 @@
         "url": "floor-maps/lotte/0023/03F.svg",
         "highlightUrl": "floor-maps/lotte/0023/03F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/b0a99aec-cb47-4a99-9981-2f034d451767/17773690111626nMdr.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/b0a99aec-cb47-4a99-9981-2f034d451767/1789640049848wYCKg.svg",
         "brands": []
       },
       {
@@ -2018,7 +2006,7 @@
         "url": "floor-maps/lotte/0001/14F.svg",
         "highlightUrl": "floor-maps/lotte/0001/14F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1789488066691pkxaP.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1789574484009AUEhT.svg",
         "brands": []
       },
       {
@@ -2063,7 +2051,7 @@
         "url": "floor-maps/lotte/0001/09F.svg",
         "highlightUrl": "floor-maps/lotte/0001/09F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1789488065169QTBq0.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1789574481103m2f0A.svg",
         "brands": []
       },
       {
@@ -2081,7 +2069,7 @@
         "url": "floor-maps/lotte/0001/07F.svg",
         "highlightUrl": "floor-maps/lotte/0001/07F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1788694588857e737j.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/17896305430714tbS2.svg",
         "brands": []
       },
       {
@@ -2264,7 +2252,7 @@
         "url": "floor-maps/lotte/0005/07F.svg",
         "highlightUrl": "floor-maps/lotte/0005/07F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/17890053859300MLCq.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/1789642107859k38ks.svg",
         "brands": []
       },
       {
@@ -2353,7 +2341,7 @@
         "url": "floor-maps/lotte/0005/B2F.svg",
         "highlightUrl": "floor-maps/lotte/0005/B2F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/1789302806539UNenE.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/1789627489060jzSaR.svg",
         "brands": []
       },
       {
@@ -2889,7 +2877,7 @@
         "url": "floor-maps/lotte/0011/B2F.svg",
         "highlightUrl": "floor-maps/lotte/0011/B2F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/67d82918-3262-4917-8d97-76b17519e93f/1789520630256VUpsY.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/67d82918-3262-4917-8d97-76b17519e93f/1789691814955nX4Yj.svg",
         "brands": []
       }
     ],
@@ -2989,7 +2977,7 @@
         "url": "floor-maps/lotte/0002/04F.svg",
         "highlightUrl": "floor-maps/lotte/0002/04F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789524651813bQVHo.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789706702633wsPo8.svg",
         "brands": []
       },
       {
@@ -2998,7 +2986,7 @@
         "url": "floor-maps/lotte/0002/03F.svg",
         "highlightUrl": "floor-maps/lotte/0002/03F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789367572516uuHqU.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789634898857LPu9Z.svg",
         "brands": []
       },
       {
@@ -3007,7 +2995,7 @@
         "url": "floor-maps/lotte/0002/02F.svg",
         "highlightUrl": "floor-maps/lotte/0002/02F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789440504550vLXm6.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789634297754rnckj.svg",
         "brands": []
       },
       {
@@ -3025,7 +3013,7 @@
         "url": "floor-maps/lotte/0002/B1F.svg",
         "highlightUrl": "floor-maps/lotte/0002/B1F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789540698872uWqAp.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789705793361ERoaX.svg",
         "brands": []
       },
       {
@@ -3096,7 +3084,7 @@
         "url": "floor-maps/lotte/0348/03F.svg",
         "highlightUrl": "floor-maps/lotte/0348/03F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1788309931949Oxeaf.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789633924773XZZP5.svg",
         "brands": []
       },
       {
@@ -3105,7 +3093,7 @@
         "url": "floor-maps/lotte/0348/02F.svg",
         "highlightUrl": "floor-maps/lotte/0348/02F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789520138473mpDf4.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789634949500Zf9X5.svg",
         "brands": []
       },
       {
@@ -3114,7 +3102,7 @@
         "url": "floor-maps/lotte/0348/01F.svg",
         "highlightUrl": "floor-maps/lotte/0348/01F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1788853271092JQ8ox.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1789693653654TgkBJ.svg",
         "brands": []
       },
       {
@@ -3161,7 +3149,7 @@
         "url": "floor-maps/lotte/0025/06F.svg",
         "highlightUrl": "floor-maps/lotte/0025/06F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/36fd26a1-26fd-451a-a2c3-4b234ac6e013/1789530597281NILET.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/36fd26a1-26fd-451a-a2c3-4b234ac6e013/1789645457789dra3Y.svg",
         "brands": []
       },
       {
@@ -3170,7 +3158,7 @@
         "url": "floor-maps/lotte/0025/05F.svg",
         "highlightUrl": "floor-maps/lotte/0025/05F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/36fd26a1-26fd-451a-a2c3-4b234ac6e013/1789554009344Z1y1i.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/36fd26a1-26fd-451a-a2c3-4b234ac6e013/17896455438323YKTD.svg",
         "brands": []
       },
       {
@@ -3195,7 +3183,7 @@
         "url": "floor-maps/lotte/0025/03F.svg",
         "highlightUrl": "floor-maps/lotte/0025/03F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/36fd26a1-26fd-451a-a2c3-4b234ac6e013/1788748489284AFXBb.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/36fd26a1-26fd-451a-a2c3-4b234ac6e013/1789643574000EDLub.svg",
         "brands": []
       },
       {
@@ -3297,7 +3285,7 @@
         "url": "floor-maps/lotte/0017/B1F.svg",
         "highlightUrl": "floor-maps/lotte/0017/B1F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/2b4bb9ed-9da5-42c2-b290-a2aae8d16e42/1789536142303Pmy40.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/2b4bb9ed-9da5-42c2-b290-a2aae8d16e42/1789536245498Q3yAh.svg",
         "brands": []
       }
     ],
@@ -3355,7 +3343,7 @@
         "url": "floor-maps/lotte/0004/04F.svg",
         "highlightUrl": "floor-maps/lotte/0004/04F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1786504006956EBWQT.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1789632643683sGhl8.svg",
         "brands": []
       },
       {
