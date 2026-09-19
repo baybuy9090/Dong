@@ -1,7 +1,23 @@
 {
   "schemaVersion": 5,
-  "lastUpdated": "2026-09-18T05:44:21.896Z",
+  "lastUpdated": "2026-09-19T05:38:39.782Z",
   "events": [
+    {
+      "detectedAt": "2026-09-19T05:38:39.782Z",
+      "type": "도면 변경",
+      "company": "현대",
+      "store": "무역센터",
+      "storeId": "현대-B00122000",
+      "floor": "6F"
+    },
+    {
+      "detectedAt": "2026-09-19T05:38:39.782Z",
+      "type": "도면 변경",
+      "company": "현대",
+      "store": "충청",
+      "storeId": "현대-B00147000",
+      "floor": "3F"
+    },
     {
       "detectedAt": "2026-09-18T05:44:21.896Z",
       "type": "도면 변경",
@@ -3951,7 +3967,7 @@
       "label": "6F 층 안내도",
       "url": "floor-maps/hyundai/B00122000/6F.svg",
       "brands": [],
-      "signature": "90c1ab736f0779b529a1ff43b66cff7ebc8f1a10f90449c3c62fd94e496ed43f"
+      "signature": "48b7553332c61d6a9c5ad840b86c4380cff3df841eb5cabb29674c4da53daf3c"
     },
     "현대-B00122000|5F|5F 층 안내도": {
       "company": "현대",
@@ -5431,7 +5447,7 @@
       "label": "3F 층 안내도",
       "url": "floor-maps/hyundai/B00147000/3F.svg",
       "brands": [],
-      "signature": "030ccfe0046f57b0557778d016a03ae3429c90ceaadb05745a14aaa77572e92c"
+      "signature": "980465104f28b006f7e18093e229f5e29cc8ee11a545c249302a949d83a210b6"
     },
     "현대-B00147000|2F|2F 층 안내도": {
       "company": "현대",
