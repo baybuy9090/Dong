@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-19T01:02:00.164Z",
+  "lastUpdated": "2026-09-20T00:48:07.160Z",
   "windowDays": 60,
   "coverage": {
     "total": 37,
@@ -38,7 +38,7 @@
         "솔리드옴므",
         "솔리드옴므 패션 브랜드"
       ],
-      "candidates": 5,
+      "candidates": 6,
       "sources": {
         "google": true,
         "naver": true
@@ -51,7 +51,7 @@
         "시스템옴므",
         "시스템옴므 패션 브랜드"
       ],
-      "candidates": 11,
+      "candidates": 12,
       "sources": {
         "google": true,
         "naver": true
@@ -77,7 +77,7 @@
         "JUUN.J 패션",
         "준지 패션"
       ],
-      "candidates": 31,
+      "candidates": 32,
       "sources": {
         "google": true,
         "naver": true
@@ -131,7 +131,7 @@
         "비이커",
         "비이커 패션 브랜드"
       ],
-      "candidates": 8,
+      "candidates": 7,
       "sources": {
         "google": true,
         "naver": true
@@ -232,7 +232,7 @@
         "알레그리",
         "알레그리 패션 브랜드"
       ],
-      "candidates": 15,
+      "candidates": 14,
       "sources": {
         "google": true,
         "naver": true
@@ -374,7 +374,7 @@
         "PAF 패션 브랜드",
         "포스트아카이브팩션"
       ],
-      "candidates": 11,
+      "candidates": 12,
       "sources": {
         "google": true,
         "naver": true
@@ -399,7 +399,7 @@
         "이스트로그 패션",
         "프레이트 패션"
       ],
-      "candidates": 2,
+      "candidates": 3,
       "sources": {
         "google": true,
         "naver": true
@@ -412,7 +412,7 @@
         "헤리티지플로스",
         "헤리티지플로스 패션 브랜드"
       ],
-      "candidates": 5,
+      "candidates": 6,
       "sources": {
         "google": true,
         "naver": true
@@ -483,6 +483,16 @@
   ],
   "industry": [
     {
+      "title": "K패션, 해외 진출 공식 바뀐다... '수출' 넘어 현지화 경쟁",
+      "link": "https://www.meconomynews.com/news/articleView.html?idxno=201803",
+      "source": "meconomynews.com",
+      "pubDate": "2026-09-19T05:56:00.000Z",
+      "sentiment": "neutral",
+      "events": [
+        "신규 매장·팝업"
+      ]
+    },
+    {
       "title": "네파, 종로직영점 리뉴얼 오픈...헤지스, 홍콩 첫 매장 오픈",
       "link": "https://www.slist.kr/news/articleView.html?idxno=767322",
       "source": "slist.kr",
@@ -546,14 +556,6 @@
       "events": [
         "실적·성장"
       ]
-    },
-    {
-      "title": "LF 헤지스, 홍콩 첫 진출... 3년 내 6개 매장으로 늘린다",
-      "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=208774",
-      "source": "thefirstmedia.net",
-      "pubDate": "2026-09-16T07:10:00.000Z",
-      "sentiment": "neutral",
-      "events": []
     }
   ],
   "data": {
@@ -643,6 +645,16 @@
     ],
     "솔리드옴므": [
       {
+        "title": "김재원, 가을 비주얼로 팬미팅 앞둔 근황 공개",
+        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16200358",
+        "source": "topstarnews.net",
+        "pubDate": "2026-09-19T13:28:00.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "협업·신제품"
+        ]
+      },
+      {
         "title": "배우 김재원, SKA 레드카펫서 포멀 수트로 존재감…월드투어 이어 글로...",
         "link": "https://www.topstarnews.net/news/articleView.html?idxno=16188215",
         "source": "topstarnews.net",
@@ -690,6 +702,14 @@
       }
     ],
     "시스템옴므": [
+      {
+        "title": "불황에 가죽·스웨이드 뜬다…패션업계, FW 승부수",
+        "link": "https://it.chosun.com/news/articleView.html?idxno=2023092170489",
+        "source": "it.chosun.com",
+        "pubDate": "2026-09-19T22:00:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
       {
         "title": "한섬, 해외 브랜드 12개 매출 50%↑…편집숍·팝업 전략 통했다",
         "link": "https://www.1conomynews.co.kr/news/articleView.html?idxno=50448",
@@ -758,17 +778,6 @@
         "events": [
           "협업·신제품",
           "실적·성장"
-        ]
-      },
-      {
-        "title": "한섬 시스템 파리, 해러즈 입성…완판이 부른 런던 팝업",
-        "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065589043436069",
-        "source": "megaeconomy.co.kr",
-        "pubDate": "2026-09-04T05:00:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "신규 매장·팝업",
-          "협업·신제품"
         ]
       }
     ],
@@ -874,6 +883,14 @@
         ]
       },
       {
+        "title": "추석 앞두고 가을옷 할인···\"빈폴부터 르메르·아미 더 저렴하게\"",
+        "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2472033",
+        "source": "enewstoday.co.kr",
+        "pubDate": "2026-09-18T00:15:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
         "title": "안효섭, 생로랑→준지 글로벌 앰버서더…‘패션 황태자’ 존재감",
         "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE53VkRMczdrNG1DTmFGNTJzejZqaGx2dmthR3lxMDlVdFl6eU5ISmh1Z1UtZEFiNGdjWlloQ0xrM2hzMzdRVmc?oc=5",
         "source": "v.daum.net",
@@ -905,14 +922,6 @@
         "source": "vogue.co.kr",
         "pubDate": "2026-09-08T01:02:00.000Z",
         "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "미스토홀딩스, 중화권 K-패션 러시 '수혜'…높은 주주환원율까지 \"투자...",
-        "link": "http://www.newsprime.co.kr/news/article.html?no=746767",
-        "source": "newsprime.co.kr",
-        "pubDate": "2026-09-07T23:26:00.000Z",
-        "sentiment": "positive",
         "events": []
       }
     ],
@@ -1009,6 +1018,14 @@
         ]
       },
       {
+        "title": "스톤아일랜드, 창립 40주년 기념",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0zRXE1Sl83WUpBZk81anZET1BqanRBTmdncTgyUVZXOWl6eEVWRVRjZ3RrRmhEcE1qamt3akpOR25adTVuTDJUUEV6R0dSeXdWdU9RTm9sWWtuWUg5MVA5WEtaeG43Y3ZnVFVtQl9CQVoxMjZkUkVQTkNkbEU?oc=5",
+        "source": "fpost.co.kr",
+        "pubDate": "2026-09-06T19:06:03.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
         "title": "서울 곳곳에 숨은 1만6천 개 동전…〈프리즈 서울 2026〉, 코엑스 밖으로",
         "link": "https://www.sctoday.co.kr/news/articleView.html?idxno=48497",
         "source": "sctoday.co.kr",
@@ -1059,14 +1076,6 @@
         "pubDate": "2026-08-26T13:04:00.000Z",
         "sentiment": "neutral",
         "events": []
-      },
-      {
-        "title": "올해 2분기 가장 핫한 브랜드 '샤넬'…여름·스포츠가 트렌드 끌었다",
-        "link": "http://www.ktnews.com/news/articleView.html?idxno=147556",
-        "source": "ktnews.com",
-        "pubDate": "2026-08-06T03:14:00.000Z",
-        "sentiment": "positive",
-        "events": []
       }
     ],
     "CP컴퍼니": [
@@ -1095,14 +1104,6 @@
         "link": "https://wemakenews.co.kr/news/view.php?no=26338",
         "source": "wemakenews.co.kr",
         "pubDate": "2026-09-18T01:26:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "추석 앞두고 가을옷 할인···\"빈폴부터 르메르·아미 더 저렴하게\"",
-        "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2472033",
-        "source": "enewstoday.co.kr",
-        "pubDate": "2026-09-18T00:15:00.000Z",
         "sentiment": "neutral",
         "events": []
       }
@@ -1270,6 +1271,14 @@
     ],
     "바버": [
       {
+        "title": "'추석 배송부터 아트·디자이너관·리빙 할인까지'… 백화점 3사, 추석 ...",
+        "link": "http://www.kdfnews.com/news/articleView.html?idxno=188257",
+        "source": "kdfnews.com",
+        "pubDate": "2026-09-20T00:02:00.000Z",
+        "sentiment": "positive",
+        "events": []
+      },
+      {
         "title": "올가을 ‘이 패션’ 뜬다…화려한 로고 대신 돌아온 ‘클래식’",
         "link": "https://www.etoday.co.kr/news/view/2625366",
         "source": "etoday.co.kr",
@@ -1328,16 +1337,6 @@
         "pubDate": "2026-09-16T05:46:00.000Z",
         "sentiment": "neutral",
         "events": []
-      },
-      {
-        "title": "환율 하락에 수입 패션 하반기 전망 '활짝'…FW시즌 수익성 정조준",
-        "link": "https://www.etnews.com/20260911000260",
-        "source": "etnews.com",
-        "pubDate": "2026-09-13T05:01:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "실적·성장"
-        ]
       }
     ],
     "산드로옴므": [],
@@ -1530,7 +1529,7 @@
       {
         "title": "SI, “맨온더분 팝업스테이지 인기”",
         "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNU1dOd3F6UmlLZ1ZnUWo5UUw1UjJ3Qnh2THNFMTc1NHp1el9vMWdoUm5LT0JWcC1uQ1pjZ09IaFNiNkhCMWRmSExYQ3VLLU1VLWdLMzJnR2pENm5zcjYxck5VbWxRUjdoQmkwMjV2RkV0WVB1SExVektVNEhaa0VYSlcwUF9GUQ?oc=5",
-        "source": "패션포스트",
+        "source": "fpost.co.kr",
         "pubDate": "2026-09-10T16:45:39.000Z",
         "sentiment": "positive",
         "events": [
@@ -1546,10 +1545,10 @@
         "events": []
       },
       {
-        "title": "맨온더분, 한국 `겨울바다` 정취 담은 2026 가을·겨울 컬렉션 공개",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1KbXFuMURqQzQ0T095NmZFXzAteU83M1EtejZ1dDRXMmRTd0dYMzNBVFlWakx5NkhHQXpkUXl0T3dwXzhsLTQ0Ukp1Q24xUlhXQ0FqRnV5RnRVRzE0aEdGXzRn?oc=5",
-        "source": "ddaily.co.kr",
-        "pubDate": "2026-09-08T07:00:00.000Z",
+        "title": "맨온더분, 26 가을·겨울 컬렉션 공개",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBVX090YVA1RU5CVUJGMFVyN21FQ2x0Um5lZ1BjN3JoLWUzSlZ3a2RFQWlSaXNaZUJNcVBwUmdRSHBmb3FSS0lnZV82bE5nR3lLeWFwVU1xbUU2T0dsb0FNVUg4T2h1VmZYTUFfQTVzTDhGUQ?oc=5",
+        "source": "어패럴뉴스",
+        "pubDate": "2026-09-08T01:41:27.000Z",
         "sentiment": "neutral",
         "events": [
           "협업·신제품"
@@ -1568,6 +1567,14 @@
     ],
     "슬로웨어": [
       {
+        "title": "'추석 배송부터 아트·디자이너관·리빙 할인까지'… 백화점 3사, 추석 ...",
+        "link": "http://www.kdfnews.com/news/articleView.html?idxno=188257",
+        "source": "kdfnews.com",
+        "pubDate": "2026-09-20T00:02:00.000Z",
+        "sentiment": "positive",
+        "events": []
+      },
+      {
         "title": "삼성물산 패션부문 추석 앞두고 '브랜드데이' 행사, 가을 신상품 10% 할...",
         "link": "https://www.businesspost.co.kr/BP?command=article_view&num=447547",
         "source": "businesspost.co.kr",
@@ -1583,14 +1590,6 @@
         "source": "asiatime.co.kr",
         "pubDate": "2026-09-18T00:54:00.000Z",
         "sentiment": "positive",
-        "events": []
-      },
-      {
-        "title": "추석 앞두고 가을옷 할인···\"빈폴부터 르메르·아미 더 저렴하게\"",
-        "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2472033",
-        "source": "enewstoday.co.kr",
-        "pubDate": "2026-09-18T00:15:00.000Z",
-        "sentiment": "neutral",
         "events": []
       }
     ],
@@ -1655,18 +1654,18 @@
     ],
     "PAF": [
       {
-        "title": "POST ARCHIVE FACTION(PAF), 이탈리아 가죽에 레이저 커팅 꽃잎을 새긴 Petal Trainers 공개",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVzA0LXVzRFhyUWgxeGU5bzl2QWl1eWFiQVRUeG16bUtWNkh0U3JZb3NfdGptWElYcjRtdGRmazZ4dDRfRmlidFVJYzZEMWlpM1d6NDQ3cWt3VjJPWXQ2MjBBUDRUOHJ5TE0xRXVsVXJ1MjRzRjg0WlRGLTZnckpuNjBPR0JPbGNUYmlpaGlrN1FwbWR2bHFYV3E1bTVPV1ppd2RhZmtEenM1cDNHekE?oc=5",
-        "source": "Hypebeast.KR",
-        "pubDate": "2026-09-08T09:10:41.000Z",
+        "title": "포스트아카이브팩션(파프), 첫 자체 개발 스니커즈 발매",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE82ZXNTb1hxV0I0WTNXUWpVQ0NFSEh5MjFGV2RNejhrNklEcnZfOUxIeEhMQzJUemJsNV9uVVNzTjJWc05aNEdHWFdBOE1rMjd5c0ZLWTJsNU9aNXFXb0NLU290Q3VMRzc3S0lzeUJjZVhlNC1FTERJaGNn?oc=5",
+        "source": "eyesmag.com",
+        "pubDate": "2026-09-09T08:29:10.000Z",
         "sentiment": "neutral",
         "events": []
       },
       {
-        "title": "포스트아카이브팩션(파프), 첫 자체 개발 스니커즈 발매",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE82ZXNTb1hxV0I0WTNXUWpVQ0NFSEh5MjFGV2RNejhrNklEcnZfOUxIeEhMQzJUemJsNV9uVVNzTjJWc05aNEdHWFdBOE1rMjd5c0ZLWTJsNU9aNXFXb0NLU290Q3VMRzc3S0lzeUJjZVhlNC1FTERJaGNn?oc=5",
-        "source": "eyesmag.com",
-        "pubDate": "2026-09-08T07:00:00.000Z",
+        "title": "POST ARCHIVE FACTION(PAF), 이탈리아 가죽에 레이저 커팅 꽃잎을 새긴 Petal Trainers 공개",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVzA0LXVzRFhyUWgxeGU5bzl2QWl1eWFiQVRUeG16bUtWNkh0U3JZb3NfdGptWElYcjRtdGRmazZ4dDRfRmlidFVJYzZEMWlpM1d6NDQ3cWt3VjJPWXQ2MjBBUDRUOHJ5TE0xRXVsVXJ1MjRzRjg0WlRGLTZnckpuNjBPR0JPbGNUYmlpaGlrN1FwbWR2bHFYV3E1bTVPV1ppd2RhZmtEenM1cDNHekE?oc=5",
+        "source": "Hypebeast.KR",
+        "pubDate": "2026-09-08T09:10:41.000Z",
         "sentiment": "neutral",
         "events": []
       },
@@ -1685,6 +1684,16 @@
         "link": "https://sports.khan.co.kr/article/202609022327003?pt=nv",
         "source": "sports.khan.co.kr",
         "pubDate": "2026-09-02T14:28:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품"
+        ]
+      },
+      {
+        "title": "온, PAF와 여섯 시즌 협업 마무리한 ‘커렌트 폼 5.0’ 공개",
+        "link": "http://www.lawissue.co.kr/view.php?ud=202609022006533976204ead0791_12",
+        "source": "lawissue.co.kr",
+        "pubDate": "2026-09-02T11:08:00.000Z",
         "sentiment": "positive",
         "events": [
           "협업·신제품"
@@ -1715,18 +1724,20 @@
         "pubDate": "2026-08-31T01:58:00.000Z",
         "sentiment": "neutral",
         "events": []
-      },
-      {
-        "title": "K패션 지원책 현장서 찾는다…콘진원, 업계 소통창구 공식화",
-        "link": "https://www.etoday.co.kr/news/view/2619923",
-        "source": "etoday.co.kr",
-        "pubDate": "2026-08-31T01:48:00.000Z",
-        "sentiment": "neutral",
-        "events": []
       }
     ],
     "TEN-C": [],
     "이스트로그(프레이트)": [
+      {
+        "title": "CJ온스타일, 글로벌 패션 ‘4대 축’ 완성…프리미엄 패션 강화",
+        "link": "https://biz.heraldcorp.com/article/10862740?ref=naver",
+        "source": "biz.heraldcorp.com",
+        "pubDate": "2026-09-06T23:01:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품"
+        ]
+      },
       {
         "title": "머렐·이스트로그, 2차 협업 신발 ‘HUT MOC 2 LEISURE’ 3일 발매",
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE43V3ByVTdLRFUzMk11WDRlMy0xREx1SWcxamVtYWFNRHB2NU9oR29aVmRrZ3FZMlR0REpuMl8taW4tdVZycFkwc2NIeU9vTDFr?oc=5",
@@ -1749,6 +1760,16 @@
       }
     ],
     "헤리티지플로스": [
+      {
+        "title": "패션 협업, '브랜드 결합' 넘어 취향과 세계관 입힌다 [최기자의 패션 ...",
+        "link": "https://www.meconomynews.com/news/articleView.html?idxno=201809",
+        "source": "meconomynews.com",
+        "pubDate": "2026-09-19T06:34:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품"
+        ]
+      },
       {
         "title": "가벼워진 패딩에 자개 매트리스까지…가을 신제품 쏟아진다",
         "link": "https://www.segye.com/newsView/20260919502054?OutUrl=naver",
