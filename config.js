@@ -61,6 +61,20 @@
   function storeId(company, name) { return (getStore(company, name) || {}).id || `${company}-${name}`; }
   function rowKey(row) { return `${row.storeId || storeId(row.company, row.store)}|${row.brand}`; }
 
+  // 공식 롯데 사이트에서 하나의 점포가 복수 건물 코드로 나뉘는 경우.
+  // 수원점의 쇼핑몰은 백화점(0349)과 다른 0404로 내려오므로
+  // 입점 현황과 도면 모두 두 코드를 하나의 수원점으로 합쳐야 한다.
+  const lotteExtraAreas = {
+    '부산본점': [{ code:'0005', townCode:'C00402', label:'에비뉴엘', floors:['01', '02', 'M3F', 'MF'] }],
+    '수원점': [{ code:'0404', townCode:'C00401', label:'몰', floors:['05', '04', '03', '02', '01'] }],
+  };
+  function lotteAreas(storeName, primaryCode, primaryFloors = null) {
+    return [
+      { code:primaryCode, townCode:'C00401', label:'', floors:primaryFloors },
+      ...(lotteExtraAreas[storeName] || []),
+    ];
+  }
+
   // 하나의 점포가 공식 사이트에서 복수 건물 코드로 나뉘는 경우. 중동점은
   // EAST(B00143000)와 WEST/U-PLEX(B00143100)를 모두 봐야 전체 입점 현황이 잡힌다.
   const hyundaiExtraBranches = {
@@ -73,6 +87,6 @@
   return {
     stores, storeRows, brandTiers, brands: Object.values(brandTiers).flat(),
     newsExcludedBrands: [],
-    getStore, normalizeStoreName, storeId, rowKey, hyundaiBranches,
+    getStore, normalizeStoreName, storeId, rowKey, lotteAreas, hyundaiBranches,
   };
 }));

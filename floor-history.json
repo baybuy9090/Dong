@@ -1,7 +1,92 @@
 {
   "schemaVersion": 5,
-  "lastUpdated": "2026-09-21T06:03:36.055Z",
+  "lastUpdated": "2026-09-22T00:38:47.225Z",
   "events": [
+    {
+      "detectedAt": "2026-09-22T00:38:47.225Z",
+      "type": "층 추가",
+      "company": "롯데",
+      "store": "수원점",
+      "storeId": "롯데-0349",
+      "floor": "몰 5F"
+    },
+    {
+      "detectedAt": "2026-09-22T00:38:47.225Z",
+      "type": "층 추가",
+      "company": "롯데",
+      "store": "수원점",
+      "storeId": "롯데-0349",
+      "floor": "몰 4F"
+    },
+    {
+      "detectedAt": "2026-09-22T00:38:47.225Z",
+      "type": "층 추가",
+      "company": "롯데",
+      "store": "수원점",
+      "storeId": "롯데-0349",
+      "floor": "몰 3F"
+    },
+    {
+      "detectedAt": "2026-09-22T00:38:47.225Z",
+      "type": "층 추가",
+      "company": "롯데",
+      "store": "수원점",
+      "storeId": "롯데-0349",
+      "floor": "몰 2F"
+    },
+    {
+      "detectedAt": "2026-09-22T00:38:47.225Z",
+      "type": "층 추가",
+      "company": "롯데",
+      "store": "수원점",
+      "storeId": "롯데-0349",
+      "floor": "몰 1F"
+    },
+    {
+      "detectedAt": "2026-09-22T00:38:47.225Z",
+      "type": "브랜드 추가",
+      "company": "롯데",
+      "store": "수원점",
+      "storeId": "롯데-0349",
+      "brand": "솔리드옴므",
+      "floors": [
+        "몰 2F"
+      ],
+      "before": [],
+      "after": [
+        "몰 2F"
+      ]
+    },
+    {
+      "detectedAt": "2026-09-22T00:38:47.225Z",
+      "type": "브랜드 추가",
+      "company": "롯데",
+      "store": "수원점",
+      "storeId": "롯데-0349",
+      "brand": "CP컴퍼니",
+      "floors": [
+        "몰 2F"
+      ],
+      "before": [],
+      "after": [
+        "몰 2F"
+      ]
+    },
+    {
+      "detectedAt": "2026-09-22T00:38:47.225Z",
+      "type": "브랜드 추가",
+      "company": "롯데",
+      "store": "수원점",
+      "storeId": "롯데-0349",
+      "brand": "바버",
+      "floors": [
+        "몰 1F"
+      ],
+      "before": [],
+      "after": [
+        "몰 1F"
+      ]
+    },
     {
       "detectedAt": "2026-09-21T06:03:36.055Z",
       "type": "도면 변경",
@@ -2905,6 +2990,61 @@
       "url": "floor-maps/lotte/0349/B2F.svg",
       "brands": [],
       "signature": "fab26e991b8ffc8aa972abbc1402159f25ceb3e34fdd72e5ff432cc31f4fb715"
+    },
+    "롯데-0349|몰 5F|몰 5F 롯데시네마ㅣ백화점": {
+      "company": "롯데",
+      "store": "수원점",
+      "storeId": "롯데-0349",
+      "floor": "몰 5F",
+      "label": "몰 5F 롯데시네마ㅣ백화점",
+      "url": "floor-maps/lotte/0349/몰-05F.svg",
+      "brands": [],
+      "signature": "34d472e29cac38d101836b1263c50007506b43fc89cbcbac192d08b240d41418"
+    },
+    "롯데-0349|몰 4F|몰 4F 롯데시네마ㅣ레스토랑ㅣ백화점": {
+      "company": "롯데",
+      "store": "수원점",
+      "storeId": "롯데-0349",
+      "floor": "몰 4F",
+      "label": "몰 4F 롯데시네마ㅣ레스토랑ㅣ백화점",
+      "url": "floor-maps/lotte/0349/몰-04F.svg",
+      "brands": [],
+      "signature": "66ff5528b95ee023511f7b74778235b4ee86b52f60e57f95d79b588e59d5a723"
+    },
+    "롯데-0349|몰 3F|몰 3F 다이닝에비뉴ㅣ아동ㅣ리빙": {
+      "company": "롯데",
+      "store": "수원점",
+      "storeId": "롯데-0349",
+      "floor": "몰 3F",
+      "label": "몰 3F 다이닝에비뉴ㅣ아동ㅣ리빙",
+      "url": "floor-maps/lotte/0349/몰-03F.svg",
+      "brands": [],
+      "signature": "3c9f3f3bf5391649482864a5fbd47eaa71f2cf0f605ec4ef310b65e64cb6ae00"
+    },
+    "롯데-0349|몰 2F|몰 2F SPAㅣ패션ㅣ잡화ㅣ뷰티ㅣ스포츠": {
+      "company": "롯데",
+      "store": "수원점",
+      "storeId": "롯데-0349",
+      "floor": "몰 2F",
+      "label": "몰 2F SPAㅣ패션ㅣ잡화ㅣ뷰티ㅣ스포츠",
+      "url": "floor-maps/lotte/0349/몰-02F.svg",
+      "brands": [
+        "솔리드옴므",
+        "CP컴퍼니"
+      ],
+      "signature": "3fac65f25cfeb5cb0840d3b300db3e3153e0815e098c434267538ba7854febbb"
+    },
+    "롯데-0349|몰 1F|몰 1F SPAㅣ패션ㅣ잡화ㅣ카페ㅣ스포츠": {
+      "company": "롯데",
+      "store": "수원점",
+      "storeId": "롯데-0349",
+      "floor": "몰 1F",
+      "label": "몰 1F SPAㅣ패션ㅣ잡화ㅣ카페ㅣ스포츠",
+      "url": "floor-maps/lotte/0349/몰-01F.svg",
+      "brands": [
+        "바버"
+      ],
+      "signature": "ed3cd82e7e147bab554e23810bdd7c46a127bc3d6d68899fd72030548beeb93a"
     },
     "롯데-0010|11F|11F 샤롯데가든ㅣ전망대ㅣ카페": {
       "company": "롯데",

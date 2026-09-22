@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-21T06:03:36.055Z",
+  "lastUpdated": "2026-09-22T00:38:47.225Z",
   "data": {
     "롯데-0013|띠어리맨": [
       {
@@ -802,6 +802,39 @@
         "label": "2F 해외패션",
         "floorKey": "02F|2F 해외패션",
         "url": "floor-maps/lotte/0349/02F.svg"
+      }
+    ],
+    "롯데-0349|솔리드옴므": [
+      {
+        "company": "롯데",
+        "store": "수원점",
+        "storeId": "롯데-0349",
+        "floor": "몰 2F",
+        "label": "몰 2F SPAㅣ패션ㅣ잡화ㅣ뷰티ㅣ스포츠",
+        "floorKey": "몰 2F|몰 2F SPAㅣ패션ㅣ잡화ㅣ뷰티ㅣ스포츠",
+        "url": "floor-maps/lotte/0349/몰-02F.svg"
+      }
+    ],
+    "롯데-0349|CP컴퍼니": [
+      {
+        "company": "롯데",
+        "store": "수원점",
+        "storeId": "롯데-0349",
+        "floor": "몰 2F",
+        "label": "몰 2F SPAㅣ패션ㅣ잡화ㅣ뷰티ㅣ스포츠",
+        "floorKey": "몰 2F|몰 2F SPAㅣ패션ㅣ잡화ㅣ뷰티ㅣ스포츠",
+        "url": "floor-maps/lotte/0349/몰-02F.svg"
+      }
+    ],
+    "롯데-0349|바버": [
+      {
+        "company": "롯데",
+        "store": "수원점",
+        "storeId": "롯데-0349",
+        "floor": "몰 1F",
+        "label": "몰 1F SPAㅣ패션ㅣ잡화ㅣ카페ㅣ스포츠",
+        "floorKey": "몰 1F|몰 1F SPAㅣ패션ㅣ잡화ㅣ카페ㅣ스포츠",
+        "url": "floor-maps/lotte/0349/몰-01F.svg"
       }
     ],
     "롯데-0010|시스템옴므": [

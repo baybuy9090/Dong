@@ -9,13 +9,8 @@ const path = require('path');
 const CONFIG = require('./config');
 const { writeMonthlyArchive, isReliable, previousMonthKey } = require('./monthly-archive');
 
-// 같은 cstrCd 안에 "백화점"(C00401) 말고 다른 관(town)이 별도로 있는 지점들.
-// 남성 컨템포러리 브랜드가 있는지 직접 확인해서 있는 곳만 등록함
-// (강남 더콘란샵·문화센터, 광복 아쿠아몰, 동탄 D.Avenue, 창원 영플라자,
-// 평촌 문화홀은 확인해봤으나 남성 컨템포러리 브랜드가 없어 제외).
-const LOTTE_EXTRA_TOWNS = {
-  '부산본점': [{ townCd: 'C00402', floors: ['01', '02', 'M3F', 'MF'] }],
-};
+// 강남 더콘란샵·문화센터, 광복 아쿠아몰, 동탄 D.Avenue, 창원 영플라자,
+// 평촌 문화홀은 확인해봤으나 남성 컨템포러리 브랜드가 없어 추가 수집 대상에서 제외한다.
 
 const BRAND_PATTERNS = {
   '아페쎄맨': ['A.P.C', '에이피씨', '아페쎄', 'APC맨'],
@@ -187,31 +182,13 @@ async function fetchWithRetry(url, maxRetries) {
 async function fetchLotteBrands(cstrCd, storeName) {
   const found = new Set();
   const candidateFlrCds = ['08', '07', '06', '05', '04', '03', '02', '01', 'B1', 'B2'];
-  const townCd = 'C00401'; // ⚠️ 강남점 기준값, 다른 지점은 다를 수 있음
   let successfulPages = 0;
   let failedPages = 0;
-  for (const flrCd of candidateFlrCds) {
-    try {
-      const url = `https://www.lotteshopping.com/store/floorDetailAjax?cstrCd=${cstrCd}&cstrTownCd=${townCd}&flrCd=${flrCd}`;
-      const res = await fetchWithRetry(url, 2);
-      const text = await res.text();
-      successfulPages++;
-      matchBrands(text).forEach(b => found.add(b));
-      await sleep(300);
-    } catch (e) {
-      failedPages++;
-      console.log(`롯데 ${cstrCd} ${flrCd}층 오류: ${e.message}`);
-    }
-  }
-
-  // "백화점" 관 외에 에비뉴엘 등 별도 관이 있는 지점은 그 층들도 추가로 확인
-  // (예: 부산본점은 cstrCd는 같고 cstrTownCd만 C00402로 다른 "에비뉴엘" 관에
-  // 스톤아일랜드 등이 입점해 있는데, 기존엔 C00401만 봐서 놓치고 있었음)
-  const extraTowns = LOTTE_EXTRA_TOWNS[storeName] || [];
-  for (const { townCd: extraTownCd, floors } of extraTowns) {
-    for (const flrCd of floors) {
+  const areas = CONFIG.lotteAreas(storeName, cstrCd, candidateFlrCds);
+  for (const area of areas) {
+    for (const flrCd of area.floors || candidateFlrCds) {
       try {
-        const url = `https://www.lotteshopping.com/store/floorDetailAjax?cstrCd=${cstrCd}&cstrTownCd=${extraTownCd}&flrCd=${flrCd}`;
+        const url = `https://www.lotteshopping.com/store/floorDetailAjax?cstrCd=${area.code}&cstrTownCd=${area.townCode}&flrCd=${flrCd}`;
         const res = await fetchWithRetry(url, 2);
         const text = await res.text();
         successfulPages++;
@@ -219,12 +196,12 @@ async function fetchLotteBrands(cstrCd, storeName) {
         await sleep(300);
       } catch (e) {
         failedPages++;
-        console.log(`롯데 ${cstrCd} ${extraTownCd} ${flrCd}층 오류: ${e.message}`);
+        console.log(`롯데 ${area.code} ${area.townCode} ${flrCd}층 오류: ${e.message}`);
       }
     }
   }
 
-  const expectedPages = candidateFlrCds.length + extraTowns.reduce((sum, town) => sum + town.floors.length, 0);
+  const expectedPages = areas.reduce((sum, area) => sum + (area.floors || candidateFlrCds).length, 0);
   if (successfulPages === 0) throw new Error(`모든 층 호출 실패 (${failedPages}/${expectedPages})`);
   return { found: Array.from(found), successfulPages, failedPages, expectedPages };
 }

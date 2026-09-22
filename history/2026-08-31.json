@@ -668,6 +668,33 @@
     },
     {
       "company": "롯데",
+      "store": "수원점",
+      "storeId": "롯데-0349",
+      "brand": "CP컴퍼니",
+      "sales": "",
+      "note": "수집 범위 보정",
+      "dataQuality": "historical-correction"
+    },
+    {
+      "company": "롯데",
+      "store": "수원점",
+      "storeId": "롯데-0349",
+      "brand": "바버",
+      "sales": "",
+      "note": "수집 범위 보정",
+      "dataQuality": "historical-correction"
+    },
+    {
+      "company": "롯데",
+      "store": "수원점",
+      "storeId": "롯데-0349",
+      "brand": "솔리드옴므",
+      "sales": "",
+      "note": "수집 범위 보정",
+      "dataQuality": "historical-correction"
+    },
+    {
+      "company": "롯데",
       "store": "영등포",
       "brand": "시스템옴므",
       "sales": "",

@@ -9,6 +9,13 @@ test('수원 명칭은 같은 점포 ID와 수원점 표시명으로 정규화�
   }
 });
 
+test('롯데 수원점은 백화점과 쇼핑몰 공식 코드를 모두 수집한다', () => {
+  assert.deepEqual(config.lotteAreas('수원점', '0349'), [
+    { code:'0349', townCode:'C00401', label:'', floors:null },
+    { code:'0404', townCode:'C00401', label:'몰', floors:['05', '04', '03', '02', '01'] },
+  ]);
+});
+
 test('공통 설정에는 3사 45개 지점과 37개 브랜드가 있다', () => {
   assert.equal(config.storeRows.length, 45);
   assert.equal(new Set(config.brands).size, 37);

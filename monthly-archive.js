@@ -25,7 +25,10 @@ function isReliable(payload) {
 
 function activeMap(payload) {
   const map = new Map();
-  (payload.data || []).filter(isActive).map(normalizeRow).forEach(row => map.set(`${row.storeId}|${row.brand}`, row));
+  (payload.data || []).filter(isActive).forEach(source => {
+    const row = normalizeRow(source);
+    map.set(`${row.storeId}|${row.brand}`, { ...row, dataQuality:source.dataQuality || '' });
+  });
   return map;
 }
 
@@ -54,8 +57,12 @@ function buildMonthlyArchive(historyDir) {
     const current = latestByMonth.get(month);
     const before = activeMap(previous.payload);
     const after = activeMap(current.payload);
-    const additions = [...after].filter(([key]) => !before.has(key)).map(([,row]) => row);
-    const exits = [...before].filter(([key]) => !after.has(key)).map(([,row]) => row);
+    // 수집 범위 누락을 과거 기준일에 보정한 행은 실제 신규 입점이 아니다.
+    // 해당 월의 신규 목록에서만 빼고, 다음 달 비교 기준으로는 정상 사용한다.
+    const additions = [...after]
+      .filter(([key, row]) => !before.has(key) && row.dataQuality !== 'historical-correction')
+      .map(([,row]) => normalizeRow(row));
+    const exits = [...before].filter(([key]) => !after.has(key)).map(([,row]) => normalizeRow(row));
     archive.push({
       month,
       baselineSnapshot: previous.snapshot,

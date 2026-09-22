@@ -203,6 +203,19 @@ test('잠실점 신규 오픈 2개 브랜드는 공식 5F POI와 강조 도면�
   assert.match(svg, /★ C\.P\. Company/);
 });
 
+test('수원점 쇼핑몰 브랜드는 몰 1·2층 공식 도면에 연결한다', () => {
+  const images = require('../floor-images.json').data['0349'];
+  const index = require('../brand-floor-index.json').data;
+  assert.deepEqual((index['롯데-0349|바버'] || []).map(item => item.floor), ['몰 1F']);
+  assert.deepEqual((index['롯데-0349|솔리드옴므'] || []).map(item => item.floor), ['몰 2F']);
+  assert.deepEqual((index['롯데-0349|CP컴퍼니'] || []).map(item => item.floor), ['몰 2F']);
+  for (const floorName of ['몰 1F', '몰 2F']) {
+    const floor = images.find(item => item.floor === floorName);
+    assert.ok(floor, `${floorName} 도면 없음`);
+    assert.ok(fs.existsSync(path.join(__dirname, '..', floor.highlightUrl)));
+  }
+});
+
 test('현대 중동과 판교 CP컴퍼니는 각 공식 남성 도면에 연결한다', () => {
   const index = require('../brand-floor-index.json').data;
   assert.deepEqual((index['현대-B00143000|CP컴퍼니'] || []).map(item => item.floor), ['WEST 1F']);

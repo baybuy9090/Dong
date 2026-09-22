@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-21T06:03:36.055Z",
+  "lastUpdated": "2026-09-22T00:38:47.225Z",
   "diagnostics": [
     {
       "storeId": "신세계-SC00002",
@@ -139,7 +139,7 @@
       "storeId": "롯데-0349",
       "store": "수원점",
       "status": "ok",
-      "floors": 10,
+      "floors": 15,
       "format": "svg"
     },
     {
@@ -2468,6 +2468,56 @@
         "source": "lotte-dabeeo",
         "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/bc7d1826-44a6-4e17-9016-416c07a1c0c2/177420030932556oTF.svg",
         "brands": []
+      },
+      {
+        "floor": "몰 5F",
+        "label": "몰 5F 롯데시네마ㅣ백화점",
+        "url": "floor-maps/lotte/0349/몰-05F.svg",
+        "highlightUrl": "floor-maps/lotte/0349/몰-05F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/bc7d1826-44a6-4e17-9016-416c07a1c0c2/1774200450945Kv475.svg",
+        "brands": []
+      },
+      {
+        "floor": "몰 4F",
+        "label": "몰 4F 롯데시네마ㅣ레스토랑ㅣ백화점",
+        "url": "floor-maps/lotte/0349/몰-04F.svg",
+        "highlightUrl": "floor-maps/lotte/0349/몰-04F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/bc7d1826-44a6-4e17-9016-416c07a1c0c2/1782800612529ZnkIJ.svg",
+        "brands": []
+      },
+      {
+        "floor": "몰 3F",
+        "label": "몰 3F 다이닝에비뉴ㅣ아동ㅣ리빙",
+        "url": "floor-maps/lotte/0349/몰-03F.svg",
+        "highlightUrl": "floor-maps/lotte/0349/몰-03F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/bc7d1826-44a6-4e17-9016-416c07a1c0c2/1789806535685mZJKg.svg",
+        "brands": []
+      },
+      {
+        "floor": "몰 2F",
+        "label": "몰 2F SPAㅣ패션ㅣ잡화ㅣ뷰티ㅣ스포츠",
+        "url": "floor-maps/lotte/0349/몰-02F.svg",
+        "highlightUrl": "floor-maps/lotte/0349/몰-02F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/bc7d1826-44a6-4e17-9016-416c07a1c0c2/1776757061769VMh6H.svg",
+        "brands": [
+          "솔리드옴므",
+          "CP컴퍼니"
+        ]
+      },
+      {
+        "floor": "몰 1F",
+        "label": "몰 1F SPAㅣ패션ㅣ잡화ㅣ카페ㅣ스포츠",
+        "url": "floor-maps/lotte/0349/몰-01F.svg",
+        "highlightUrl": "floor-maps/lotte/0349/몰-01F-managed.svg",
+        "source": "lotte-dabeeo",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/bc7d1826-44a6-4e17-9016-416c07a1c0c2/1789953413311I9h1H.svg",
+        "brands": [
+          "바버"
+        ]
       }
     ],
     "0010": [

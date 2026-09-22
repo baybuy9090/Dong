@@ -244,34 +244,45 @@ function scopeLotteFloorData(floorData, cstrCd, floorCode, townCode, info = {}) 
 
 async function fetchLotteFloors(storeName, cstrCd, rootDir = __dirname, activeBrands = new Set()) {
   const config = await fetchLotteShoppingMapConfig(cstrCd);
-  const townKey = Object.keys(config.townFloorInfo || {}).find(key => key.startsWith(`${cstrCd}_`)) || config.locationInfo?.town;
-  const townFloors = config.townFloorInfo?.[townKey] || {};
-  const floorCodes = config.floorSelect?.[townKey] || Object.keys(townFloors);
-  if (!townKey || floorCodes.length === 0) throw new Error('쇼핑맵 층 정보 없음');
+  const areas = CONFIG.lotteAreas(storeName, cstrCd).map(area => {
+    const townKey = `${area.code}_${area.townCode}`;
+    const townFloors = config.townFloorInfo?.[townKey] || {};
+    const floorCodes = area.floors || config.floorSelect?.[townKey] || Object.keys(townFloors);
+    return { ...area, townKey, townFloors, floorCodes };
+  }).filter(area => area.floorCodes.length > 0);
+  if (areas.length === 0) throw new Error('쇼핑맵 층 정보 없음');
   const token = await fetchDabeeo4Token(config.shpgMap.clientId, config.shpgMap.secret);
   const store = CONFIG.getStore('롯데', storeName);
   const outputDir = path.join(rootDir, 'floor-maps', 'lotte', cstrCd);
   fs.mkdirSync(outputDir, { recursive:true });
   let failedPages = 0;
-  const floors = await mapWithConcurrency(floorCodes, 4, async floorCode => {
-    const info = townFloors[floorCode];
-    if (!info?.flrId) return null;
+  const floorTasks = areas.flatMap(area => area.floorCodes.map(floorCode => ({ area, floorCode })));
+  const floors = await mapWithConcurrency(floorTasks, 4, async ({ area, floorCode }) => {
+    const info = area.townFloors[floorCode];
+    if (!info?.flrId) {
+      failedPages++;
+      console.error(`  [롯데 ${area.code} ${floorCode}F] 실패: 쇼핑맵 층 정보 없음`);
+      return null;
+    }
     try {
       const floorData = await fetchDabeeo4Floor(info.flrId, token);
       if (!floorData.svgUrl) throw new Error('최신 SVG 주소 없음');
       const svgRes = await fetch(floorData.svgUrl, { signal:AbortSignal.timeout(30000) });
       if (!svgRes.ok) throw new Error(`최신 SVG HTTP ${svgRes.status}`);
       const rawSvg = await svgRes.text();
-      const floor = `${floorCode}F`;
-      const label = `${info.cstrFlrCdNm || floorCode} ${info.cstrFlrCtegryNm || ''}`.trim();
+      const rawFloor = `${floorCode}F`;
+      const areaFloor = String(info.cstrFlrCdNm || floorCode).replace(/^0+(?=\d)/, '');
+      const floor = area.label ? `${area.label} ${areaFloor}` : rawFloor;
+      const label = `${area.label ? `${area.label} ` : ''}${info.cstrFlrCdNm || floorCode} ${info.cstrFlrCtegryNm || ''}`.trim();
       const allowedBrands = isManagedFloor(store, { floor, label })
         ? new Set([...activeBrands].filter(brand => !isExcludedManagedBrand(store, { floor }, brand)))
         : new Set();
-      const scopedFloorData = scopeLotteFloorData(floorData, cstrCd, floorCode, info.cstrTownCd, info);
+      const scopedFloorData = scopeLotteFloorData(floorData, area.code, floorCode, info.cstrTownCd, info);
       const managedPois = trackedPois(scopedFloorData, allowedBrands, { floorLabel:label });
       const brands = uniqueBrands(managedPois.flatMap(item => item.brands));
-      const fileName = `${safeFloorFileName(floor)}.svg`;
-      const managedFileName = `${safeFloorFileName(floor)}-managed.svg`;
+      const fileStem = `${area.label ? `${safeFloorFileName(area.label)}-` : ''}${safeFloorFileName(rawFloor)}`;
+      const fileName = `${fileStem}.svg`;
+      const managedFileName = `${fileStem}-managed.svg`;
       fs.writeFileSync(path.join(outputDir, fileName), renderLotteFloorSvg(rawSvg, scopedFloorData, storeName, floor, managedPois, false), 'utf8');
       fs.writeFileSync(path.join(outputDir, managedFileName), renderLotteFloorSvg(rawSvg, scopedFloorData, storeName, floor, managedPois, true), 'utf8');
       return {
@@ -281,11 +292,11 @@ async function fetchLotteFloors(storeName, cstrCd, rootDir = __dirname, activeBr
       };
     } catch (error) {
       failedPages++;
-      console.error(`  [롯데 ${cstrCd} ${floorCode}F] 실패:`, error.message);
+      console.error(`  [롯데 ${area.code} ${floorCode}F] 실패:`, error.message);
       return null;
     }
   });
-  return { floors:floors.filter(Boolean), failedPages, expectedPages:floorCodes.length };
+  return { floors:floors.filter(Boolean), failedPages, expectedPages:floorTasks.length };
 }
 
 // ── 현대: 공식 페이지에 평면 이미지 파일은 없지만, 공개된 다비오 Web SDK가

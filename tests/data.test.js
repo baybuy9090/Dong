@@ -45,3 +45,11 @@ test('현대 중동과 판교 CP컴퍼니는 직전 월부터 입점 상태로 �
   assert.ok(rows.every(row => row.note === '확인'));
   assert.ok(rows.every(row => row.comparisonCheck === '2026-08-31 입점'));
 });
+
+test('롯데 수원점 몰의 3개 브랜드는 기존 입점으로 반영된다', () => {
+  const brands = new Set(['CP컴퍼니', '바버', '솔리드옴므']);
+  const rows = data.data.filter(row => row.storeId === '롯데-0349' && brands.has(row.brand));
+  assert.equal(rows.length, 3);
+  assert.ok(rows.every(row => row.note === '확인'));
+  assert.ok(rows.every(row => row.comparisonCheck === '2026-08-31 입점'));
+});
