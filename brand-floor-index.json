@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-22T00:38:47.225Z",
+  "lastUpdated": "2026-09-22T05:59:33.356Z",
   "data": {
     "롯데-0013|띠어리맨": [
       {
@@ -758,6 +758,17 @@
         "label": "4F 남성패션ㅣ골프",
         "floorKey": "04F|4F 남성패션ㅣ골프",
         "url": "floor-maps/lotte/0005/04F.svg"
+      }
+    ],
+    "롯데-0005|스톤아일랜드": [
+      {
+        "company": "롯데",
+        "store": "부산본점",
+        "storeId": "롯데-0005",
+        "floor": "에비뉴엘 MF",
+        "label": "에비뉴엘 MF 해외명품",
+        "floorKey": "에비뉴엘 MF|에비뉴엘 MF 해외명품",
+        "url": "floor-maps/lotte/0005/에비뉴엘-MFF.svg"
       }
     ],
     "롯데-0349|띠어리맨": [
@@ -4376,7 +4387,7 @@
         "floor": "3F",
         "label": "3F 남성/골프 안내도",
         "floorKey": "3F|3F 남성/골프 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/21/A-3-20260921094117-20260921094120.jpg"
+        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/22/A-3-20260922094246-20260922094249.jpg"
       }
     ],
     "신세계-SC00009|솔리드옴므": [
@@ -4387,7 +4398,7 @@
         "floor": "3F",
         "label": "3F 남성/골프 안내도",
         "floorKey": "3F|3F 남성/골프 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/21/A-3-20260921094117-20260921094120.jpg"
+        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/22/A-3-20260922094246-20260922094249.jpg"
       }
     ],
     "신세계-SC00009|시스템옴므": [
@@ -4398,7 +4409,7 @@
         "floor": "3F",
         "label": "3F 남성/골프 안내도",
         "floorKey": "3F|3F 남성/골프 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/21/A-3-20260921094117-20260921094120.jpg"
+        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/22/A-3-20260922094246-20260922094249.jpg"
       }
     ],
     "신세계-SC00009|질스튜어트뉴욕": [
@@ -4409,7 +4420,7 @@
         "floor": "3F",
         "label": "3F 남성/골프 안내도",
         "floorKey": "3F|3F 남성/골프 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/21/A-3-20260921094117-20260921094120.jpg"
+        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/22/A-3-20260922094246-20260922094249.jpg"
       }
     ],
     "신세계-SC00009|클럽모나코": [
@@ -4420,7 +4431,7 @@
         "floor": "3F",
         "label": "3F 남성/골프 안내도",
         "floorKey": "3F|3F 남성/골프 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/21/A-3-20260921094117-20260921094120.jpg"
+        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/22/A-3-20260922094246-20260922094249.jpg"
       }
     ],
     "신세계-SC00009|타임옴므": [
@@ -4431,7 +4442,7 @@
         "floor": "3F",
         "label": "3F 남성/골프 안내도",
         "floorKey": "3F|3F 남성/골프 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/21/A-3-20260921094117-20260921094120.jpg"
+        "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/22/A-3-20260922094246-20260922094249.jpg"
       }
     ],
     "신세계-SC00003|띠어리맨": [
