@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-22T05:59:33.356Z",
+  "lastUpdated": "2026-09-23T05:45:04.602Z",
   "diagnostics": [
     {
       "storeId": "신세계-SC00002",
@@ -264,7 +264,8 @@
     {
       "storeId": "현대-B00143000",
       "store": "중동",
-      "status": "ok",
+      "status": "stale",
+      "error": "fetch failed",
       "floors": 32,
       "format": "svg"
     },
@@ -285,7 +286,8 @@
     {
       "storeId": "현대-B00145000",
       "store": "킨텍스",
-      "status": "ok",
+      "status": "stale",
+      "error": "fetch failed",
       "floors": 15,
       "format": "svg"
     },
@@ -835,7 +837,7 @@
       {
         "floor": "4F",
         "label": "4F 컨템포러리 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00001/guide/floor/__icsFiles/afieldfile/2026/09/18/k3XstHJUaHxr.png",
+        "url": "https://www.shinsegae.com/cms12/SC00001/guide/floor/__icsFiles/afieldfile/2026/09/22/EHEXrtJjpJzo.png",
         "brands": []
       },
       {
@@ -976,7 +978,7 @@
       {
         "floor": "8F",
         "label": "8F 아동/생활 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00010/guide/floor/__icsFiles/afieldfile/2026/09/21/LetefHe79une.png",
+        "url": "https://www.shinsegae.com/cms12/SC00010/guide/floor/__icsFiles/afieldfile/2026/09/23/oeAG7LWJRKEW.png",
         "brands": []
       },
       {
@@ -1191,7 +1193,7 @@
       {
         "floor": "1F",
         "label": "1F 여성패션 I 여성캐주얼 I 아동·유아 (리틀신세계) 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00012/guide/floor/__icsFiles/afieldfile/2026/09/21/H1kLXGRGzfFu.png",
+        "url": "https://www.shinsegae.com/cms12/SC00012/guide/floor/__icsFiles/afieldfile/2026/09/22/9QkOsJAlyY8O.png",
         "brands": []
       },
       {
@@ -1930,7 +1932,7 @@
         "url": "floor-maps/lotte/0399/02F.svg",
         "highlightUrl": "floor-maps/lotte/0399/02F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1789623431519aWq6Z.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1790068677162mnISR.svg",
         "brands": []
       },
       {
@@ -1950,7 +1952,7 @@
         "url": "floor-maps/lotte/0399/B1F.svg",
         "highlightUrl": "floor-maps/lotte/0399/B1F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1788934393889nFh9x.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1790064180422GIRaT.svg",
         "brands": []
       },
       {
@@ -2006,7 +2008,7 @@
         "url": "floor-maps/lotte/0001/14F.svg",
         "highlightUrl": "floor-maps/lotte/0001/14F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1789920064306xOqhS.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/17900928712042DeZX.svg",
         "brands": []
       },
       {
@@ -2051,7 +2053,7 @@
         "url": "floor-maps/lotte/0001/09F.svg",
         "highlightUrl": "floor-maps/lotte/0001/09F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1789920062281X69lr.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1790124539930tj0yU.svg",
         "brands": []
       },
       {
@@ -2115,7 +2117,7 @@
         "url": "floor-maps/lotte/0001/04F.svg",
         "highlightUrl": "floor-maps/lotte/0001/04F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1789985238631vfwES.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/0a4a0e22-0d70-4e93-88b0-38de76a5d2b3/1790053916537qJo24.svg",
         "brands": []
       },
       {
@@ -3195,7 +3197,7 @@
       },
       {
         "floor": "B1F",
-        "label": "B1 화장품",
+        "label": "B1 카페 | 헤어샵 | 더크라운 | 팝업",
         "url": "floor-maps/lotte/0348/B1F.svg",
         "highlightUrl": "floor-maps/lotte/0348/B1F-managed.svg",
         "source": "lotte-dabeeo",
