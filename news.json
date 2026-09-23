@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-22T01:29:52.907Z",
+  "lastUpdated": "2026-09-23T01:19:54.123Z",
   "windowDays": 60,
   "coverage": {
     "total": 37,
@@ -38,7 +38,7 @@
         "솔리드옴므",
         "솔리드옴므 패션 브랜드"
       ],
-      "candidates": 7,
+      "candidates": 8,
       "sources": {
         "google": true,
         "naver": true
@@ -64,7 +64,7 @@
         "우영미",
         "우영미 패션 브랜드"
       ],
-      "candidates": 23,
+      "candidates": 22,
       "sources": {
         "google": true,
         "naver": true
@@ -77,7 +77,7 @@
         "JUUN.J 패션",
         "준지 패션"
       ],
-      "candidates": 25,
+      "candidates": 27,
       "sources": {
         "google": true,
         "naver": true
@@ -131,7 +131,7 @@
         "비이커",
         "비이커 패션 브랜드"
       ],
-      "candidates": 13,
+      "candidates": 11,
       "sources": {
         "google": true,
         "naver": true
@@ -245,7 +245,7 @@
         "질스튜어트뉴욕",
         "질스튜어트뉴욕 패션 브랜드"
       ],
-      "candidates": 14,
+      "candidates": 13,
       "sources": {
         "google": true,
         "naver": true
@@ -322,7 +322,7 @@
         "슬로웨어",
         "슬로웨어 패션 브랜드"
       ],
-      "candidates": 8,
+      "candidates": 9,
       "sources": {
         "google": true,
         "naver": true
@@ -361,7 +361,7 @@
         "캡틴선샤인",
         "캡틴선샤인 패션 브랜드"
       ],
-      "candidates": 4,
+      "candidates": 5,
       "sources": {
         "google": true,
         "naver": true
@@ -483,80 +483,80 @@
   ],
   "industry": [
     {
-      "title": "롯데면세점, 명동본점에 헤지스 매장 단독 오픈…K-패션 경쟁력 강화",
-      "link": "https://www.cnbnews.com/news/articleView.html?idxno=1016861",
-      "source": "cnbnews.com",
-      "pubDate": "2026-09-22T01:18:00.000Z",
-      "sentiment": "positive",
-      "events": [
-        "신규 매장·팝업"
-      ]
-    },
-    {
-      "title": "\"유행보다 오래 입는 옷\"···삼성물산 패션 '비이커', 마가렛 호웰 국...",
-      "link": "https://www.smartbizn.com/news/articleView.html?idxno=154589",
-      "source": "smartbizn.com",
-      "pubDate": "2026-09-22T01:16:00.000Z",
-      "sentiment": "positive",
-      "events": []
-    },
-    {
-      "title": "[잘먹잘살+]시몬스·웅진프리드라이프·아모레퍼시픽·쿠팡·배민·NOL·...",
-      "link": "https://www.businessplus.kr/news/articleView.html?idxno=117219",
-      "source": "businessplus.kr",
-      "pubDate": "2026-09-22T01:14:00.000Z",
+      "title": "삼성물산 패션 비이커, 영국 '마가렛 호웰' 국내 사업 본격화",
+      "link": "https://www.newsworks.co.kr/news/articleView.html?idxno=854693",
+      "source": "newsworks.co.kr",
+      "pubDate": "2026-09-22T14:02:00.000Z",
       "sentiment": "neutral",
       "events": []
     },
     {
-      "title": "비이커, 마가렛 호웰 국내 사업 본격화…신세계 본점 매장 오픈",
-      "link": "https://www.news1.kr/industry/distribution/6298285",
-      "source": "news1.kr",
-      "pubDate": "2026-09-21T23:45:00.000Z",
-      "sentiment": "neutral",
-      "events": [
-        "신규 매장·팝업"
-      ]
-    },
-    {
-      "title": "삼성물산 패션, 마가렛 호웰 독점 유통…컨템포러리 브랜드 포트폴리오...",
-      "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=489362",
-      "source": "pinpointnews.co.kr",
-      "pubDate": "2026-09-21T23:28:00.000Z",
-      "sentiment": "neutral",
+      "title": "[똑똑한유통] NS홈쇼핑, 우아한형제들, 쿠팡, 롯데면세점, 현대백화점",
+      "link": "https://www.ekn.kr/web/view.php?key=20260922022188211",
+      "source": "ekn.kr",
+      "pubDate": "2026-09-22T14:00:00.000Z",
+      "sentiment": "positive",
       "events": [
         "입점·유통"
       ]
     },
     {
-      "title": "지오송지오, 유통별 육성 전략 이원화",
-      "link": "http://www.apparelnews.co.kr/news/news_view/?idx=227768",
+      "title": "디자이너 김서룡, KT알파와 손잡고 T커머스 진출",
+      "link": "http://www.apparelnews.co.kr/news/news_view/?idx=227849",
       "source": "apparelnews.co.kr",
-      "pubDate": "2026-09-20T13:06:00.000Z",
+      "pubDate": "2026-09-22T13:06:00.000Z",
       "sentiment": "neutral",
+      "events": []
+    },
+    {
+      "title": "롯데면세점, 명동본점에 헤지스 매장 오픈",
+      "link": "https://www.cnbizm.com/news/articleView.html?idxno=315984",
+      "source": "cnbizm.com",
+      "pubDate": "2026-09-22T07:16:00.000Z",
+      "sentiment": "positive",
       "events": [
         "신규 매장·팝업"
       ]
     },
     {
-      "title": "K패션, 해외 진출 공식 바뀐다... '수출' 넘어 현지화 경쟁",
-      "link": "https://www.meconomynews.com/news/articleView.html?idxno=201803",
-      "source": "meconomynews.com",
-      "pubDate": "2026-09-19T05:56:00.000Z",
-      "sentiment": "neutral",
+      "title": "[신상브리핑] 이디야커피, 오뚜기, CU, 애경산업 랩신, 쿠쿠, 삼성물산 ...",
+      "link": "https://daily.hankooki.com/news/articleView.html?idxno=1408748",
+      "source": "daily.hankooki.com",
+      "pubDate": "2026-09-22T04:32:00.000Z",
+      "sentiment": "positive",
       "events": [
-        "신규 매장·팝업"
+        "입점·유통",
+        "협업·신제품"
       ]
     },
     {
-      "title": "네파, 종로직영점 리뉴얼 오픈...헤지스, 홍콩 첫 매장 오픈",
-      "link": "https://www.slist.kr/news/articleView.html?idxno=767322",
-      "source": "slist.kr",
-      "pubDate": "2026-09-18T15:04:00.000Z",
+      "title": "“가장 영향력 있는 아티스트, 위켄드가 온다!”…10월 7~8일 고양종합운...",
+      "link": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8669491&ref=A",
+      "source": "news.kbs.co.kr",
+      "pubDate": "2026-09-22T03:17:00.000Z",
+      "sentiment": "positive",
+      "events": []
+    },
+    {
+      "title": "다이닝브랜즈그룹 아성다이소 11번가 外(유통家 이모저모)",
+      "link": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3076246",
+      "source": "newsclaim.co.kr",
+      "pubDate": "2026-09-22T02:44:00.000Z",
       "sentiment": "positive",
       "events": [
         "신규 매장·팝업",
-        "리뉴얼·확장"
+        "입점·유통"
+      ]
+    },
+    {
+      "title": "[TOP's Pick] [유통] 에이피알, 메디큐브 릴레이 팝업 스토어 운영 外",
+      "link": "https://www.topdaily.kr/articles/111879",
+      "source": "topdaily.kr",
+      "pubDate": "2026-09-10T05:03:00.000Z",
+      "sentiment": "positive",
+      "events": [
+        "신규 매장·팝업",
+        "협업·신제품"
       ]
     }
   ],
@@ -638,6 +638,16 @@
       }
     ],
     "솔리드옴므": [
+      {
+        "title": "김재원, 도쿄 팬미팅 뒤 대기실 셀카…월드투어 속 여유 한 컷",
+        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16207752",
+        "source": "topstarnews.net",
+        "pubDate": "2026-09-22T13:48:00.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "협업·신제품"
+        ]
+      },
       {
         "title": "패션 브랜드가 DDP쇼룸으로 향한 이유…'설텍2026', K-패션 AX·글로벌 성...",
         "link": "https://kr.aving.net/news/articleView.html?idxno=1814653",
@@ -851,6 +861,24 @@
     ],
     "준지": [
       {
+        "title": "수익성 높이기 나선 미스토… 美 휠라 재정비, 타이틀리스트 유럽 강화",
+        "link": "https://biz.chosun.com/distribution/channel/2026/09/22/LJJVA5B6DFCUDBA4CBRF56US3M/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+        "source": "biz.chosun.com",
+        "pubDate": "2026-09-22T07:01:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "롯데몰 동부산점, “추석 연휴엔 아울렛으로 미식·쇼핑 여행”",
+        "link": "https://www.viva100.com/article/20260922500608",
+        "source": "viva100.com",
+        "pubDate": "2026-09-22T03:06:00.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "협업·신제품"
+        ]
+      },
+      {
         "title": "신세계백화점, 외국인 쇼핑 혜택 한자리에···120개 브랜드 참여",
         "link": "http://www.finomy.com/news/articleView.html?idxno=262001",
         "source": "finomy.com",
@@ -883,9 +911,9 @@
         "events": []
       },
       {
-        "title": "신세계백화점, '글로벌 쇼핑 페스타' 개최…외국인 결제 할인·상품권 혜...",
-        "link": "https://www.ziksir.com/news/articleView.html?idxno=147027",
-        "source": "ziksir.com",
+        "title": "[유통갤러리] 신세계百, 올해 최대 규모 ‘글로벌 쇼핑 페스타’ 개최 ...",
+        "link": "https://theviewers.co.kr/View.aspx?No=4235541",
+        "source": "theviewers.co.kr",
         "pubDate": "2026-09-21T00:22:00.000Z",
         "sentiment": "positive",
         "events": []
@@ -895,24 +923,6 @@
         "link": "https://dealsite.co.kr/articles/169248",
         "source": "dealsite.co.kr",
         "pubDate": "2026-09-20T22:04:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "준지 x 알파인스타즈 RSRV 캡슐 컬렉션 공식 출시",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPYXFIREtaNTFZQ3hsclByRlRPNFpJN2JHS0FoRkRZX2g5Q3FEQXd0bEg2UVk1UjVfM2dsTnZWTkdVcGVGbTQwQm9RbmlJbkJlMzFBRl96MHh1Wm5VZE9QalFDeVBSN3MtdTYyV2hKVGphOHMySkEtVmltSExCSlBtT210eFo2MDZ0ZEVSa1NPR2g?oc=5",
-        "source": "Hypebeast.KR",
-        "pubDate": "2026-09-18T05:00:39.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "협업·신제품"
-        ]
-      },
-      {
-        "title": "안효섭, 생로랑→준지 글로벌 앰버서더…‘패션 황태자’ 존재감",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE53VkRMczdrNG1DTmFGNTJzejZqaGx2dmthR3lxMDlVdFl6eU5ISmh1Z1UtZEFiNGdjWlloQ0xrM2hzMzdRVmc?oc=5",
-        "source": "v.daum.net",
-        "pubDate": "2026-09-15T08:07:36.000Z",
         "sentiment": "neutral",
         "events": []
       }
@@ -977,16 +987,6 @@
         ]
       },
       {
-        "title": "신세계百, '어텀 실루엣(AUTUMN SILHOUETTE)' 개최...다양한 혜택 선 봬",
-        "link": "http://www.popcornnews.net/news/articleView.html?idxno=131192",
-        "source": "popcornnews.net",
-        "pubDate": "2026-08-30T21:00:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "협업·신제품"
-        ]
-      },
-      {
         "title": "신세계백화점, FW 패션 매출 SS보다 22% 많아…9월 할인전",
         "link": "https://www.seoultimes.news/news/article.html?no=2000099300",
         "source": "seoultimes.news",
@@ -995,6 +995,16 @@
         "events": [
           "협업·신제품",
           "실적·성장"
+        ]
+      },
+      {
+        "title": "신세계百, '어텀 실루엣(AUTUMN SILHOUETTE)' 개최...다양한 혜택 선 봬",
+        "link": "http://www.popcornnews.net/news/articleView.html?idxno=131192",
+        "source": "popcornnews.net",
+        "pubDate": "2026-08-30T21:00:00.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "협업·신제품"
         ]
       }
     ],
@@ -1082,21 +1092,49 @@
     ],
     "비이커": [
       {
-        "title": "비이커, 英 '마가렛 호웰' 독점 유통…신세계百 본점에 첫 매장",
-        "link": "https://www.yna.co.kr/view/AKR20260922068100030?input=1195m",
-        "source": "yna.co.kr",
-        "pubDate": "2026-09-22T01:25:00.000Z",
+        "title": "삼성물산 패션 비이커, 영국 '마가렛 호웰' 국내 사업 본격화",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9XOGFxYVlFNEx5VGJMWEZxT3ZSYU80VVM4a1I2d3dYNlgwdWpiNk12amEtRFdVeTBiQ01CWHZBRjJuSzRaNVNOQmp0eERuMEZzaXJ4eXFINFh4a1hnSnA3MV9kU2NUdXloSHl1SjBiQS1haXfSAXNBVV95cUxPVzhhcWFZRTRMeVRiTFhGcU92UmFPNFVTOGtSNnd3WDZYMHVqYjZNdmphLURXVXkwYkNNQlh2QUYybks0WjVTTkJqdHhEbjBGc2lyeHlxSDRYeGtYZ0pwNzFfZFNjVHV5aEh5dUowYkEtYWl3?oc=5",
+        "source": "뉴스웍스",
+        "pubDate": "2026-09-22T14:28:06.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "'헤리티지·스트리트·빈티지' 3색 매력… 삼성물산·키르시·이랜드, 2...",
+        "link": "http://www.kdfnews.com/news/articleView.html?idxno=188384",
+        "source": "kdfnews.com",
+        "pubDate": "2026-09-22T07:04:00.000Z",
         "sentiment": "neutral",
         "events": [
           "입점·유통"
         ]
       },
       {
-        "title": "\"유행보다 오래 입는 옷\"···삼성물산 패션 '비이커', 마가렛 호웰 국...",
-        "link": "https://www.smartbizn.com/news/articleView.html?idxno=154589",
-        "source": "smartbizn.com",
-        "pubDate": "2026-09-22T01:16:00.000Z",
+        "title": "[신상브리핑] 이디야커피, 오뚜기, CU, 애경산업 랩신, 쿠쿠, 삼성물산 ...",
+        "link": "https://daily.hankooki.com/news/articleView.html?idxno=1408748",
+        "source": "daily.hankooki.com",
+        "pubDate": "2026-09-22T04:32:00.000Z",
         "sentiment": "positive",
+        "events": [
+          "입점·유통"
+        ]
+      },
+      {
+        "title": "롯데몰 동부산점, “추석 연휴엔 아울렛으로 미식·쇼핑 여행”",
+        "link": "https://www.viva100.com/article/20260922500608",
+        "source": "viva100.com",
+        "pubDate": "2026-09-22T03:06:00.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "협업·신제품"
+        ]
+      },
+      {
+        "title": "비이커, 英 '마가렛 호웰' 독점 유통…신세계百 본점에 첫 매장",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Wb2s1R1NTOUYzaW55OGdqQnZyV0pBbGszVkJnT1BtdnhreFFlTjhJUTg1SWJmWkxvOXVrRG1FQ2tHZFY3dDkzWlc3TUQ5cTVpY01abm80ZmJFTk3SAWBBVV95cUxPa2VFbHBZNTJFUkFoSF9LQVdqQ1lFU2gwX1hSdTRYdnhiV3VmYlRkdF9Jb0g2UnZJQWRTVjNNRnFGS01lenk2QkdrVHAtVGVYR3hqdnlWb1ZHb3BBcnBhMVo?oc=5",
+        "source": "연합뉴스",
+        "pubDate": "2026-09-22T01:25:57.000Z",
+        "sentiment": "neutral",
         "events": [
           "입점·유통"
         ]
@@ -1108,34 +1146,6 @@
         "pubDate": "2026-09-22T01:14:00.000Z",
         "sentiment": "neutral",
         "events": []
-      },
-      {
-        "title": "“추석엔 아울렛” 롯데몰 동부산점, F&B 대개편·프로모션 총력",
-        "link": "https://www.sedaily.com/article/20093750?ref=naver",
-        "source": "sedaily.com",
-        "pubDate": "2026-09-22T00:07:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "협업·신제품"
-        ]
-      },
-      {
-        "title": "비이커, 영국 패션 브랜드 ‘마가렛 호웰’ 국내 사업 본격화, 오래 입을 수 있는 옷의 가치 바탕으로 컨템포러리 시장 공략",
-        "link": "https://news.google.com/rss/articles/CBMiogNBVV95cUxNUVFzaGpXUGczeThpZ3RxbzRoanpQYk5hMDAySlBmWnRmc0F5aVdpT1JDVWtSazJTQURQWmdiSWp0LTZacENJS2YtcVJaQmZnc0R4bnBLWjFSZGQtX2lqUEh5aFNES1dfcFFXSVZJOFk0X2gtRDZVTFloNmVmdlZ6VTFhWUcwWFRxaDMxaXB1bUp0cjdmRWdhWHVNOThkT0tYbmllZTFsem5ocnoxbld4elFoVncxekVkcXVCYktTN01pcjJHS0VfbmRRdS1YSmRwbDZrd19FMDlDQTV3UVh3UzY2ek5GWkNPelQ1RmhrNnJqRkNYd0c1QlhRcklYd2pZQU96bHFUT0hxQ0hlNHhId1ZBLU5NRlJQT0t2cFpJRWFRYW9rTVdKNVMzUG1QWnB6WVgyU3VLcXNCUVdQTmcydjhJWjROTHQyOWJSUVJZSUViNXJSN1RfOEJsWUVQZVZLSm5uN1NMNXQxU0szS2Rud0M5VTMwT09ZUS1SUEhmbWo2dlZFQ054M19YaDVleGtvLUdORnVrYUhLU05Td0t1bHdn?oc=5",
-        "source": "삼성물산 뉴스룸",
-        "pubDate": "2026-09-21T23:38:17.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "삼성물산 패션, 마가렛 호웰 독점 유통…컨템포러리 브랜드 포트폴리오...",
-        "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=489362",
-        "source": "pinpointnews.co.kr",
-        "pubDate": "2026-09-21T23:28:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "입점·유통"
-        ]
       },
       {
         "title": "빈폴·메종키츠네·띠어리 등 삼성물산 패션 브랜드 추석맞이 할인 행사",
@@ -1253,7 +1263,7 @@
       },
       {
         "title": "지오송지오, 유통별 육성 전략 이원화",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1nTnRNOUdETWZ5Yko4cWdicVhoTk9hb3FVNWJRaXZIOVNEVzJ3eGhOSkNBZE1QOThUenBjRW16UlBxMFVhLTV2RUlMbG5GdGhHUmYxbTI1M3pldV9qcVRMcjF4VHBodw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5LTnV1ZndRTTJrYlFhcUlneVhfYzdibHZZNWJCU3MyejJ0RXVQTUJsUE5vdlZhYjZNQnFQWE9XbGJzZjQ5MVVMbVZTSFdUNHV0RHh3eWVCOHZjQnZSaWhfU1B0TjZLbG8?oc=5",
         "source": "어패럴뉴스",
         "pubDate": "2026-09-19T15:00:00.000Z",
         "sentiment": "neutral",
@@ -1331,6 +1341,16 @@
         "events": []
       },
       {
+        "title": "바버, 가니와 업사이클링 컬렉션 공개",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQnNVczBzaW1DZ1JnZHI5R0VEVDIzOW9rTHlNNEFlNG1xY19aamM3Ykw1ZEkxQnBpX1BPMkx0UEZhQWx1RVdYeEg5c2ZBS2JvZXRadDZYbjViSTRpSWR4V183QjZQdElSU2xCZFJra0RQOFExM2VjLU1vTkNBWEluTkQxcVl5dw?oc=5",
+        "source": "패션포스트",
+        "pubDate": "2026-09-20T13:19:14.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "협업·신제품"
+        ]
+      },
+      {
         "title": "슈프림×바버, 협업 컬렉션 오는 7일 오픈",
         "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNazZ4QTRkVjJnSDFfLXBydmJ1MWtYNnQ1LUlHM19mNVBsVEx0YWM4ZG1BSXh4Zl9XMTF0Z1RCNzdYYnVDR2RNXzNLYS1vZ3lxeVZTbUxHaUpUVU5vMFhJeS1VRkJhZm1mRERlZ0s4QktGdTdhRGFWQjdxbW9RRjlMY0tKeGJDdw?oc=5",
         "source": "패션포스트",
@@ -1378,14 +1398,6 @@
         ]
       },
       {
-        "title": "[충청 유통가 레이더] 현백·커넥트현대·롯데아울렛, 추석 맞이 할인전",
-        "link": "https://www.jbnews.com/news/articleView.html?idxno=1511811",
-        "source": "jbnews.com",
-        "pubDate": "2026-09-17T08:08:00.000Z",
-        "sentiment": "positive",
-        "events": []
-      },
-      {
         "title": "어퀘스티브 테라퓨틱스 CEO 바버, 12만 달러 규모 주식 매도",
         "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5RS2VWQnptTjZpY1BoZzQyTXRhcUtUTko4d01JYXZvc01BZHVMZmxxTXZPZG1wNU1FVVVHamJwWHN3SVJHNlctZjZ2cXVkcU0zVVlBOGs1TUtwSXFWN3ItR3RBVnE1dkpzbnEyY0ZlQmRVRGlNRURuNl9MNA?oc=5",
         "source": "Investing.com 한국어",
@@ -1396,6 +1408,14 @@
     ],
     "산드로옴므": [],
     "알레그리": [
+      {
+        "title": "유나이트, 브라질 팬들과 '특별 추억'…'8개 도시 투어' 성료",
+        "link": "https://www.etnews.com/20260923000042",
+        "source": "etnews.com",
+        "pubDate": "2026-09-23T00:34:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
       {
         "title": "\"귀여움 벗고 우아함 입는다\" 올가을 돌아온 '어른 여자' 패션",
         "link": "https://www.newsis.com/view/NISX20260907_0003778963",
@@ -1461,14 +1481,6 @@
         "events": [
           "협업·신제품"
         ]
-      },
-      {
-        "title": "폭염 끝자락에 벌써 추석… 유통가 선점 경쟁",
-        "link": "https://www.pressman.kr/news/articleView.html?idxno=103408",
-        "source": "pressman.kr",
-        "pubDate": "2026-08-31T01:02:00.000Z",
-        "sentiment": "neutral",
-        "events": []
       }
     ],
     "질스튜어트뉴욕": [
@@ -1719,6 +1731,16 @@
     "POTTERY": [],
     "캡틴선샤인": [
       {
+        "title": "日 패션이 온다…직진출·매장 오픈하며 한국 투자 확대",
+        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=227846",
+        "source": "apparelnews.co.kr",
+        "pubDate": "2026-09-22T13:06:00.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "신규 매장·팝업"
+        ]
+      },
+      {
         "title": "패션업계, 글로벌 브랜드 '판권·육성' 전쟁",
         "link": "http://www.srtimes.kr/news/articleView.html?idxno=211257",
         "source": "srtimes.kr",
@@ -1961,7 +1983,7 @@
       {
         "title": "[수원소식]행궁동 편집매장 '아이엠샵'에서 수원굿즈 팝업스토어",
         "link": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOZ0pDZlc0Qm1abllyMExnZUdKQThHbzc5dXZJdE1jcjRtcjJ0dm14V1FtLU5jUm1IWExvUWN5cDBoU3JRb3J2RmEwTFBsZEpfWFM1OV84VUZ5YnEtRjlwUGpQVVE5ZFFWOWRzYjl5UUJDa0dRV1JuTVpjMnRYajFJUnM2Z1RoTzFpSVdQREtZa0J4LVBTV043UWdza01oNWUwS3pCQVJncHlYRlFub0IzS0tMcnlNQjJSeWJHZjJOYkxBNUYycmQ5VW5iNkpGbl9PcDhpTjdibTUwV2pZdGlSaFVSTGdFclBMOF9oWW9SZTdQaVlYU3VOQ0hLWVBXbjFNdlo2cHJaaDB5NUloSk5JRnYyQlpTd3hnVFJtYTcyVFlQQlJWYnB0Mm1OMlN2Zw?oc=5",
-        "source": "dailian.co.kr",
+        "source": "데일리안",
         "pubDate": "2026-09-21T03:55:00.000Z",
         "sentiment": "neutral",
         "events": [
