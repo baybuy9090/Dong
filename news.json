@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-23T01:19:54.123Z",
+  "lastUpdated": "2026-09-24T01:13:50.172Z",
   "windowDays": 60,
   "coverage": {
     "total": 37,
@@ -12,7 +12,7 @@
         "타임옴므",
         "타임옴므 패션 브랜드"
       ],
-      "candidates": 7,
+      "candidates": 6,
       "sources": {
         "google": true,
         "naver": true
@@ -64,7 +64,7 @@
         "우영미",
         "우영미 패션 브랜드"
       ],
-      "candidates": 22,
+      "candidates": 21,
       "sources": {
         "google": true,
         "naver": true
@@ -77,7 +77,7 @@
         "JUUN.J 패션",
         "준지 패션"
       ],
-      "candidates": 27,
+      "candidates": 29,
       "sources": {
         "google": true,
         "naver": true
@@ -143,7 +143,7 @@
       "queries": [
         "톰그레이하운드 패션"
       ],
-      "candidates": 8,
+      "candidates": 9,
       "sources": {
         "google": true,
         "naver": true
@@ -206,7 +206,7 @@
         "바버",
         "바버 패션 브랜드"
       ],
-      "candidates": 23,
+      "candidates": 20,
       "sources": {
         "google": true,
         "naver": true
@@ -245,7 +245,7 @@
         "질스튜어트뉴욕",
         "질스튜어트뉴욕 패션 브랜드"
       ],
-      "candidates": 13,
+      "candidates": 11,
       "sources": {
         "google": true,
         "naver": true
@@ -483,6 +483,16 @@
   ],
   "industry": [
     {
+      "title": "국내 시장은 둔화, K-패션 인기에...패션업계 돌파구된 해외시장",
+      "link": "https://www.greened.kr/news/articleView.html?idxno=350782",
+      "source": "greened.kr",
+      "pubDate": "2026-09-23T06:28:00.000Z",
+      "sentiment": "positive",
+      "events": [
+        "협업·신제품"
+      ]
+    },
+    {
       "title": "삼성물산 패션 비이커, 영국 '마가렛 호웰' 국내 사업 본격화",
       "link": "https://www.newsworks.co.kr/news/articleView.html?idxno=854693",
       "source": "newsworks.co.kr",
@@ -547,17 +557,6 @@
         "신규 매장·팝업",
         "입점·유통"
       ]
-    },
-    {
-      "title": "[TOP's Pick] [유통] 에이피알, 메디큐브 릴레이 팝업 스토어 운영 外",
-      "link": "https://www.topdaily.kr/articles/111879",
-      "source": "topdaily.kr",
-      "pubDate": "2026-09-10T05:03:00.000Z",
-      "sentiment": "positive",
-      "events": [
-        "신규 매장·팝업",
-        "협업·신제품"
-      ]
     }
   ],
   "data": {
@@ -592,14 +591,6 @@
         "source": "newsis.com",
         "pubDate": "2026-08-21T06:01:00.000Z",
         "sentiment": "positive",
-        "events": []
-      },
-      {
-        "title": "패션업계, 열대야 주춤에 가을옷 수요 '성큼'",
-        "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=477802",
-        "source": "pinpointnews.co.kr",
-        "pubDate": "2026-08-16T03:10:00.000Z",
-        "sentiment": "neutral",
         "events": []
       },
       {
@@ -715,17 +706,6 @@
     ],
     "시스템옴므": [
       {
-        "title": "국내 패션 성장률 1%…해외서 새 매출 찾는 기업들",
-        "link": "https://www.kukinews.com/article/view/kuk202609210188",
-        "source": "kukinews.com",
-        "pubDate": "2026-09-21T21:02:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "신규 매장·팝업",
-          "실적·성장"
-        ]
-      },
-      {
         "title": "해외패션 '벌크업', 뷰티 '다이어트'…김민덕호 한섬, '경영 체질' 개선",
         "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1725086",
         "source": "ebn.co.kr",
@@ -733,6 +713,17 @@
         "sentiment": "positive",
         "events": [
           "입점·유통",
+          "실적·성장"
+        ]
+      },
+      {
+        "title": "국내 패션 성장률 1%…해외서 새 매출 찾는 기업들",
+        "link": "https://www.kukinews.com/article/view/kuk202609210188",
+        "source": "kukinews.com",
+        "pubDate": "2026-09-21T21:02:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "신규 매장·팝업",
           "실적·성장"
         ]
       },
@@ -861,6 +852,26 @@
     ],
     "준지": [
       {
+        "title": "[동향] \"짧은 추석도 알차게\"…유통·호텔가, 가족 나들이객 잡기",
+        "link": "http://www.sisafocus.co.kr/news/articleView.html?idxno=365391",
+        "source": "sisafocus.co.kr",
+        "pubDate": "2026-09-24T00:38:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품"
+        ]
+      },
+      {
+        "title": "추석 나들이족 잡아라... 이색 매장·이벤트 띄우는 유통가",
+        "link": "https://www.hankookilbo.com/news/article/A2026092213390000136?did=NA",
+        "source": "hankookilbo.com",
+        "pubDate": "2026-09-23T01:30:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품"
+        ]
+      },
+      {
         "title": "수익성 높이기 나선 미스토… 美 휠라 재정비, 타이틀리스트 유럽 강화",
         "link": "https://biz.chosun.com/distribution/channel/2026/09/22/LJJVA5B6DFCUDBA4CBRF56US3M/?utm_source=naver&utm_medium=original&utm_campaign=biz",
         "source": "biz.chosun.com",
@@ -908,22 +919,6 @@
         "source": "etnews.com",
         "pubDate": "2026-09-21T03:14:00.000Z",
         "sentiment": "positive",
-        "events": []
-      },
-      {
-        "title": "[유통갤러리] 신세계百, 올해 최대 규모 ‘글로벌 쇼핑 페스타’ 개최 ...",
-        "link": "https://theviewers.co.kr/View.aspx?No=4235541",
-        "source": "theviewers.co.kr",
-        "pubDate": "2026-09-21T00:22:00.000Z",
-        "sentiment": "positive",
-        "events": []
-      },
-      {
-        "title": "미스토홀딩스, 휠라 운영 발판…중화권 'K-패션 총판' 잰걸음",
-        "link": "https://dealsite.co.kr/articles/169248",
-        "source": "dealsite.co.kr",
-        "pubDate": "2026-09-20T22:04:00.000Z",
-        "sentiment": "neutral",
         "events": []
       }
     ],
@@ -1166,6 +1161,14 @@
     ],
     "톰그레이하운드맨": [
       {
+        "title": "[유통통] 글로벌 영토 넓히는 한섬·LF···'K-패션 ' 비장의 카드는?",
+        "link": "https://www.cnbnews.com/news/articleView.html?idxno=1017086",
+        "source": "cnbnews.com",
+        "pubDate": "2026-09-23T03:14:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
         "title": "해외패션 '벌크업', 뷰티 '다이어트'…김민덕호 한섬, '경영 체질' 개선",
         "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1725086",
         "source": "ebn.co.kr",
@@ -1235,16 +1238,6 @@
         "sentiment": "positive",
         "events": [
           "신규 매장·팝업",
-          "실적·성장"
-        ]
-      },
-      {
-        "title": "현대백화점그룹 계열 한섬 해외패션 매출 50% 급증",
-        "link": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3075795",
-        "source": "newsclaim.co.kr",
-        "pubDate": "2026-09-17T07:30:00.000Z",
-        "sentiment": "neutral",
-        "events": [
           "실적·성장"
         ]
       }
@@ -1333,6 +1326,22 @@
     ],
     "바버": [
       {
+        "title": "[유통통] 글로벌 영토 넓히는 한섬·LF···'K-패션 ' 비장의 카드는?",
+        "link": "https://www.cnbnews.com/news/articleView.html?idxno=1017086",
+        "source": "cnbnews.com",
+        "pubDate": "2026-09-23T03:14:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "추석 연휴 뭐 하지?…유통가, 먹거리·쇼핑·여가 한자리에",
+        "link": "https://weekly.hankooki.com/news/articleView.html?idxno=7185711",
+        "source": "weekly.hankooki.com",
+        "pubDate": "2026-09-23T02:00:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
         "title": "[창간기획] 한국 제조 찾는 글로벌 패션, '메이드 인 코리아'가 다시 뜬...",
         "link": "http://www.apparelnews.co.kr/news/news_view/?idx=227804",
         "source": "apparelnews.co.kr",
@@ -1368,24 +1377,6 @@
         "pubDate": "2026-09-20T02:10:11.000Z",
         "sentiment": "neutral",
         "events": []
-      },
-      {
-        "title": "'추석 배송부터 아트·디자이너관·리빙 할인까지'… 백화점 3사, 추석 ...",
-        "link": "http://www.kdfnews.com/news/articleView.html?idxno=188257",
-        "source": "kdfnews.com",
-        "pubDate": "2026-09-20T00:02:00.000Z",
-        "sentiment": "positive",
-        "events": []
-      },
-      {
-        "title": "올가을 ‘이 패션’ 뜬다…화려한 로고 대신 돌아온 ‘클래식’",
-        "link": "https://www.etoday.co.kr/news/view/2625366",
-        "source": "etoday.co.kr",
-        "pubDate": "2026-09-19T00:02:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "협업·신제품"
-        ]
       },
       {
         "title": "‘뭘 더 좋아할지 몰라서’…브랜드들의 업종 넘나드는 협업 [트렌드]",
@@ -1858,7 +1849,7 @@
       {
         "title": "머렐·이스트로그, 2차 협업 신발 ‘HUT MOC 2 LEISURE’ 3일 발매",
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE43V3ByVTdLRFUzMk11WDRlMy0xREx1SWcxamVtYWFNRHB2NU9oR29aVmRrZ3FZMlR0REpuMl8taW4tdVZycFkwc2NIeU9vTDFr?oc=5",
-        "source": "패션비즈",
+        "source": "fashionbiz.co.kr",
         "pubDate": "2026-09-02T07:00:00.000Z",
         "sentiment": "positive",
         "events": [
