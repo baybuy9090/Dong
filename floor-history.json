@@ -1,7 +1,79 @@
 {
   "schemaVersion": 5,
-  "lastUpdated": "2026-09-23T05:45:04.602Z",
+  "lastUpdated": "2026-09-24T06:02:54.613Z",
   "events": [
+    {
+      "detectedAt": "2026-09-24T06:02:54.613Z",
+      "type": "도면 변경",
+      "company": "현대",
+      "store": "여의도",
+      "storeId": "현대-B00140000",
+      "floor": "5F"
+    },
+    {
+      "detectedAt": "2026-09-24T06:02:54.613Z",
+      "type": "도면 변경",
+      "company": "현대",
+      "store": "여의도",
+      "storeId": "현대-B00140000",
+      "floor": "4F"
+    },
+    {
+      "detectedAt": "2026-09-24T06:02:54.613Z",
+      "type": "도면 변경",
+      "company": "현대",
+      "store": "천호",
+      "storeId": "현대-B00126000",
+      "floor": "11F"
+    },
+    {
+      "detectedAt": "2026-09-24T06:02:54.613Z",
+      "type": "도면 변경",
+      "company": "현대",
+      "store": "천호",
+      "storeId": "현대-B00126000",
+      "floor": "8F"
+    },
+    {
+      "detectedAt": "2026-09-24T06:02:54.613Z",
+      "type": "도면 변경",
+      "company": "현대",
+      "store": "천호",
+      "storeId": "현대-B00126000",
+      "floor": "7F"
+    },
+    {
+      "detectedAt": "2026-09-24T06:02:54.613Z",
+      "type": "도면 변경",
+      "company": "현대",
+      "store": "킨텍스",
+      "storeId": "현대-B00145000",
+      "floor": "4F"
+    },
+    {
+      "detectedAt": "2026-09-24T06:02:54.613Z",
+      "type": "도면 변경",
+      "company": "현대",
+      "store": "판교",
+      "storeId": "현대-B00148000",
+      "floor": "3F"
+    },
+    {
+      "detectedAt": "2026-09-24T06:02:54.613Z",
+      "type": "도면 변경",
+      "company": "현대",
+      "store": "대구",
+      "storeId": "현대-B00146000",
+      "floor": "8F"
+    },
+    {
+      "detectedAt": "2026-09-24T06:02:54.613Z",
+      "type": "도면 변경",
+      "company": "현대",
+      "store": "대구",
+      "storeId": "현대-B00146000",
+      "floor": "1F"
+    },
     {
       "detectedAt": "2026-09-23T05:45:04.602Z",
       "type": "도면 변경",
@@ -5358,7 +5430,7 @@
       "label": "5F 층 안내도",
       "url": "floor-maps/hyundai/B00140000/5F.svg",
       "brands": [],
-      "signature": "80e981b7be5a811cacaf3090ed39437210bfa995ccf81fb2a589bf697765d643"
+      "signature": "57dcbf3f4c808db53984398ed88ecb62a4c3737a817056fe03772da2010cf0d7"
     },
     "현대-B00140000|4F|4F 층 안내도": {
       "company": "현대",
@@ -5368,7 +5440,7 @@
       "label": "4F 층 안내도",
       "url": "floor-maps/hyundai/B00140000/4F.svg",
       "brands": [],
-      "signature": "6f719bb1fef762bb4b5baaeb8bd70dea294d37d3b9a2f60423de14ef44efe372"
+      "signature": "895682be107577f5c431e8c6abeab38eb050ece7a7009f386b55b30754b8fe3d"
     },
     "현대-B00140000|3F|3F 층 안내도": {
       "company": "현대",
@@ -6053,7 +6125,7 @@
       "label": "11F 층 안내도",
       "url": "floor-maps/hyundai/B00126000/11F.svg",
       "brands": [],
-      "signature": "c5dee127a9a0c0e66709606d1d065cdf0cd803df41195f370a90b90846741932"
+      "signature": "4b677a9bfc26e0d5bd4325d9bcd79f061fbdd3d36fd75dc3e8176d6cb636738e"
     },
     "현대-B00126000|10F|10F 층 안내도": {
       "company": "현대",
@@ -6083,7 +6155,7 @@
       "label": "8F 층 안내도",
       "url": "floor-maps/hyundai/B00126000/8F.svg",
       "brands": [],
-      "signature": "799d1aed1e5b820f357b478576d0e78ea098b8d7e0cfafe7ba2ef2193c013f89"
+      "signature": "ea7e027699222094f9c27ae24e245ea50c15d99496a7c518801632a6e028ac27"
     },
     "현대-B00126000|7F|7F 층 안내도": {
       "company": "현대",
@@ -6093,7 +6165,7 @@
       "label": "7F 층 안내도",
       "url": "floor-maps/hyundai/B00126000/7F.svg",
       "brands": [],
-      "signature": "b8b5f08412014d6868c3cb976ef48538aa493587ff8bd017633f49a22fe9f83e"
+      "signature": "6b5a8da1a0589d7944afac93d4c18854d44c7433d0995783c55b2ad3df02163a"
     },
     "현대-B00126000|6F|6F 층 안내도": {
       "company": "현대",
@@ -6398,7 +6470,7 @@
       "label": "4F 층 안내도",
       "url": "floor-maps/hyundai/B00145000/4F.svg",
       "brands": [],
-      "signature": "9b48f652f778b1585ddf70dc9ab30f2d64ada165f01c48076479e12c68dbaedf"
+      "signature": "faebbb6bb66be047a4ec76b0a02e4912dc9f5df054d3c0f4d116237e25ceb84e"
     },
     "현대-B00145000|3F|3F 층 안내도": {
       "company": "현대",
@@ -6582,7 +6654,7 @@
       "label": "3F 층 안내도",
       "url": "floor-maps/hyundai/B00148000/3F.svg",
       "brands": [],
-      "signature": "1f063f09cdf83ec65d26e1676d7b7d34bfc3b6da46c398080665dfebd427d60b"
+      "signature": "30875d63da3032bb0f0ed684b7aa80a07190d74abc7513760cced44b049f9609"
     },
     "현대-B00148000|2F|2F 층 안내도": {
       "company": "현대",
@@ -6682,7 +6754,7 @@
       "label": "8F 층 안내도",
       "url": "floor-maps/hyundai/B00146000/8F.svg",
       "brands": [],
-      "signature": "11581a132734909115d8690a52521f2d07e308b4bd33fde10778e9c523593112"
+      "signature": "4fafdc944e91b9cca0616087bc7ce258288f6ffb0940c5552c7e36d1d9bef71f"
     },
     "현대-B00146000|7F|7F 층 안내도": {
       "company": "현대",
@@ -6772,7 +6844,7 @@
       "label": "1F 층 안내도",
       "url": "floor-maps/hyundai/B00146000/1F.svg",
       "brands": [],
-      "signature": "69533f1d91445438f7d1e75fe60703e5ab9944afefc743dbb6e60ad5c448ab9d"
+      "signature": "42cb00f4b8c1b5b37b9d8acf0195e796902d15302d5ffc99283392ad668010df"
     },
     "현대-B00146000|B1|B1 층 안내도": {
       "company": "현대",

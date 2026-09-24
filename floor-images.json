@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-23T05:45:04.602Z",
+  "lastUpdated": "2026-09-24T06:02:54.613Z",
   "diagnostics": [
     {
       "storeId": "신세계-SC00002",
@@ -82,135 +82,135 @@
     {
       "storeId": "롯데-0013",
       "store": "강남점",
-      "status": "ok",
-      "floors": 9,
-      "format": "svg"
+      "status": "stale",
+      "error": "fetch failed",
+      "floors": 9
     },
     {
       "storeId": "롯데-0333",
       "store": "광복점",
-      "status": "ok",
-      "floors": 14,
-      "format": "svg"
+      "status": "stale",
+      "error": "fetch failed",
+      "floors": 14
     },
     {
       "storeId": "롯데-0007",
       "store": "광주점",
-      "status": "ok",
-      "floors": 12,
-      "format": "svg"
+      "status": "stale",
+      "error": "fetch failed",
+      "floors": 12
     },
     {
       "storeId": "롯데-0022",
       "store": "노원점",
-      "status": "ok",
-      "floors": 11,
-      "format": "svg"
+      "status": "stale",
+      "error": "fetch failed",
+      "floors": 11
     },
     {
       "storeId": "롯데-0023",
       "store": "대구점",
-      "status": "ok",
-      "floors": 13,
-      "format": "svg"
+      "status": "stale",
+      "error": "fetch failed",
+      "floors": 13
     },
     {
       "storeId": "롯데-0399",
       "store": "동탄점",
-      "status": "ok",
-      "floors": 13,
-      "format": "svg"
+      "status": "stale",
+      "error": "fetch failed",
+      "floors": 13
     },
     {
       "storeId": "롯데-0001",
       "store": "본점",
-      "status": "ok",
-      "floors": 21,
-      "format": "svg"
+      "status": "stale",
+      "error": "fetch failed",
+      "floors": 21
     },
     {
       "storeId": "롯데-0005",
       "store": "부산본점",
-      "status": "ok",
-      "floors": 20,
-      "format": "svg"
+      "status": "stale",
+      "error": "fetch failed",
+      "floors": 20
     },
     {
       "storeId": "롯데-0349",
       "store": "수원점",
-      "status": "ok",
-      "floors": 15,
-      "format": "svg"
+      "status": "stale",
+      "error": "fetch failed",
+      "floors": 15
     },
     {
       "storeId": "롯데-0010",
       "store": "영등포",
-      "status": "ok",
-      "floors": 12,
-      "format": "svg"
+      "status": "stale",
+      "error": "fetch failed",
+      "floors": 12
     },
     {
       "storeId": "롯데-0015",
       "store": "울산점",
-      "status": "ok",
-      "floors": 9,
-      "format": "svg"
+      "status": "stale",
+      "error": "fetch failed",
+      "floors": 9
     },
     {
       "storeId": "롯데-0344",
       "store": "인천점",
-      "status": "ok",
-      "floors": 9,
-      "format": "svg"
+      "status": "stale",
+      "error": "fetch failed",
+      "floors": 9
     },
     {
       "storeId": "롯데-0011",
       "store": "일산",
-      "status": "ok",
-      "floors": 13,
-      "format": "svg"
+      "status": "stale",
+      "error": "fetch failed",
+      "floors": 13
     },
     {
       "storeId": "롯데-0002",
       "store": "잠실점",
-      "status": "ok",
-      "floors": 16,
-      "format": "svg"
+      "status": "stale",
+      "error": "fetch failed",
+      "floors": 16
     },
     {
       "storeId": "롯데-0348",
       "store": "잠실에비뉴엘",
-      "status": "ok",
-      "floors": 7,
-      "format": "svg"
+      "status": "stale",
+      "error": "fetch failed",
+      "floors": 7
     },
     {
       "storeId": "롯데-0025",
       "store": "전주점",
-      "status": "ok",
-      "floors": 10,
-      "format": "svg"
+      "status": "stale",
+      "error": "fetch failed",
+      "floors": 10
     },
     {
       "storeId": "롯데-0017",
       "store": "창원점",
-      "status": "ok",
-      "floors": 7,
-      "format": "svg"
+      "status": "stale",
+      "error": "fetch failed",
+      "floors": 7
     },
     {
       "storeId": "롯데-0004",
       "store": "청량리",
-      "status": "ok",
-      "floors": 11,
-      "format": "svg"
+      "status": "stale",
+      "error": "fetch failed",
+      "floors": 11
     },
     {
       "storeId": "롯데-0341",
       "store": "평촌점",
-      "status": "ok",
-      "floors": 18,
-      "format": "svg"
+      "status": "stale",
+      "error": "fetch failed",
+      "floors": 18
     },
     {
       "storeId": "현대-B00142000",
@@ -264,8 +264,7 @@
     {
       "storeId": "현대-B00143000",
       "store": "중동",
-      "status": "stale",
-      "error": "fetch failed",
+      "status": "ok",
       "floors": 32,
       "format": "svg"
     },
@@ -286,8 +285,7 @@
     {
       "storeId": "현대-B00145000",
       "store": "킨텍스",
-      "status": "stale",
-      "error": "fetch failed",
+      "status": "ok",
       "floors": 15,
       "format": "svg"
     },
