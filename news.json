@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-09-24T01:13:50.172Z",
+  "lastUpdated": "2026-09-25T01:14:27.035Z",
   "windowDays": 60,
   "coverage": {
     "total": 37,
-    "withNews": 28
+    "withNews": 27
   },
   "diagnostics": [
     {
@@ -77,7 +77,7 @@
         "JUUN.J 패션",
         "준지 패션"
       ],
-      "candidates": 29,
+      "candidates": 30,
       "sources": {
         "google": true,
         "naver": true
@@ -131,7 +131,7 @@
         "비이커",
         "비이커 패션 브랜드"
       ],
-      "candidates": 11,
+      "candidates": 12,
       "sources": {
         "google": true,
         "naver": true
@@ -206,7 +206,7 @@
         "바버",
         "바버 패션 브랜드"
       ],
-      "candidates": 20,
+      "candidates": 19,
       "sources": {
         "google": true,
         "naver": true
@@ -232,7 +232,7 @@
         "알레그리",
         "알레그리 패션 브랜드"
       ],
-      "candidates": 15,
+      "candidates": 16,
       "sources": {
         "google": true,
         "naver": true
@@ -361,7 +361,7 @@
         "캡틴선샤인",
         "캡틴선샤인 패션 브랜드"
       ],
-      "candidates": 5,
+      "candidates": 3,
       "sources": {
         "google": true,
         "naver": true
@@ -374,7 +374,7 @@
         "PAF 패션 브랜드",
         "포스트아카이브팩션"
       ],
-      "candidates": 11,
+      "candidates": 10,
       "sources": {
         "google": true,
         "naver": true
@@ -399,7 +399,7 @@
         "이스트로그 패션",
         "프레이트 패션"
       ],
-      "candidates": 2,
+      "candidates": 3,
       "sources": {
         "google": true,
         "naver": true
@@ -437,7 +437,7 @@
       "queries": [
         "모드맨 편집숍"
       ],
-      "candidates": 1,
+      "candidates": 0,
       "sources": {
         "google": true,
         "naver": true
@@ -483,6 +483,14 @@
   ],
   "industry": [
     {
+      "title": "\"오래 입는 옷의 가치\" 비이커, 英 '마가렛 호웰' 국내 사업 본격화",
+      "link": "https://www.newsis.com/view/NISX20260922_0003799603",
+      "source": "newsis.com",
+      "pubDate": "2026-09-25T00:00:00.000Z",
+      "sentiment": "neutral",
+      "events": []
+    },
+    {
       "title": "국내 시장은 둔화, K-패션 인기에...패션업계 돌파구된 해외시장",
       "link": "https://www.greened.kr/news/articleView.html?idxno=350782",
       "source": "greened.kr",
@@ -491,14 +499,6 @@
       "events": [
         "협업·신제품"
       ]
-    },
-    {
-      "title": "삼성물산 패션 비이커, 영국 '마가렛 호웰' 국내 사업 본격화",
-      "link": "https://www.newsworks.co.kr/news/articleView.html?idxno=854693",
-      "source": "newsworks.co.kr",
-      "pubDate": "2026-09-22T14:02:00.000Z",
-      "sentiment": "neutral",
-      "events": []
     },
     {
       "title": "[똑똑한유통] NS홈쇼핑, 우아한형제들, 쿠팡, 롯데면세점, 현대백화점",
@@ -529,6 +529,22 @@
       ]
     },
     {
+      "title": "삼성물산 패션, 英 ‘마가렛 호웰’ 들여온다…신세계 본점 첫 매장",
+      "link": "https://economist.co.kr/article/view/ecn202609220039",
+      "source": "economist.co.kr",
+      "pubDate": "2026-09-22T05:53:00.000Z",
+      "sentiment": "neutral",
+      "events": []
+    },
+    {
+      "title": "삼성물산 편집숍 비이커, 영국 브랜드 ‘마가렛 호웰’ 국내 전개… 시...",
+      "link": "http://www.fashionn.com/board/read_new.php?table=1006&number=62524",
+      "source": "fashionn.com",
+      "pubDate": "2026-09-22T05:42:00.000Z",
+      "sentiment": "neutral",
+      "events": []
+    },
+    {
       "title": "[신상브리핑] 이디야커피, 오뚜기, CU, 애경산업 랩신, 쿠쿠, 삼성물산 ...",
       "link": "https://daily.hankooki.com/news/articleView.html?idxno=1408748",
       "source": "daily.hankooki.com",
@@ -537,25 +553,6 @@
       "events": [
         "입점·유통",
         "협업·신제품"
-      ]
-    },
-    {
-      "title": "“가장 영향력 있는 아티스트, 위켄드가 온다!”…10월 7~8일 고양종합운...",
-      "link": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8669491&ref=A",
-      "source": "news.kbs.co.kr",
-      "pubDate": "2026-09-22T03:17:00.000Z",
-      "sentiment": "positive",
-      "events": []
-    },
-    {
-      "title": "다이닝브랜즈그룹 아성다이소 11번가 外(유통家 이모저모)",
-      "link": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3076246",
-      "source": "newsclaim.co.kr",
-      "pubDate": "2026-09-22T02:44:00.000Z",
-      "sentiment": "positive",
-      "events": [
-        "신규 매장·팝업",
-        "입점·유통"
       ]
     }
   ],
@@ -706,17 +703,6 @@
     ],
     "시스템옴므": [
       {
-        "title": "해외패션 '벌크업', 뷰티 '다이어트'…김민덕호 한섬, '경영 체질' 개선",
-        "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1725086",
-        "source": "ebn.co.kr",
-        "pubDate": "2026-09-21T21:02:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "입점·유통",
-          "실적·성장"
-        ]
-      },
-      {
         "title": "국내 패션 성장률 1%…해외서 새 매출 찾는 기업들",
         "link": "https://www.kukinews.com/article/view/kuk202609210188",
         "source": "kukinews.com",
@@ -724,6 +710,17 @@
         "sentiment": "positive",
         "events": [
           "신규 매장·팝업",
+          "실적·성장"
+        ]
+      },
+      {
+        "title": "해외패션 '벌크업', 뷰티 '다이어트'…김민덕호 한섬, '경영 체질' 개선",
+        "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1725086",
+        "source": "ebn.co.kr",
+        "pubDate": "2026-09-21T21:02:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "입점·유통",
           "실적·성장"
         ]
       },
@@ -972,16 +969,6 @@
         ]
       },
       {
-        "title": "\"가을 쇼핑 수요 잡는다\" 신세계百, 패션·스포츠·잡화 프로모션",
-        "link": "https://www.newsis.com/view/NISX20260830_0003768485",
-        "source": "newsis.com",
-        "pubDate": "2026-08-30T21:00:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "협업·신제품"
-        ]
-      },
-      {
         "title": "신세계백화점, FW 패션 매출 SS보다 22% 많아…9월 할인전",
         "link": "https://www.seoultimes.news/news/article.html?no=2000099300",
         "source": "seoultimes.news",
@@ -996,6 +983,16 @@
         "title": "신세계百, '어텀 실루엣(AUTUMN SILHOUETTE)' 개최...다양한 혜택 선 봬",
         "link": "http://www.popcornnews.net/news/articleView.html?idxno=131192",
         "source": "popcornnews.net",
+        "pubDate": "2026-08-30T21:00:00.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "협업·신제품"
+        ]
+      },
+      {
+        "title": "\"가을 쇼핑 수요 잡는다\" 신세계百, 패션·스포츠·잡화 프로모션",
+        "link": "https://www.newsis.com/view/NISX20260830_0003768485",
+        "source": "newsis.com",
         "pubDate": "2026-08-30T21:00:00.000Z",
         "sentiment": "neutral",
         "events": [
@@ -1087,10 +1084,18 @@
     ],
     "비이커": [
       {
-        "title": "삼성물산 패션 비이커, 영국 '마가렛 호웰' 국내 사업 본격화",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9XOGFxYVlFNEx5VGJMWEZxT3ZSYU80VVM4a1I2d3dYNlgwdWpiNk12amEtRFdVeTBiQ01CWHZBRjJuSzRaNVNOQmp0eERuMEZzaXJ4eXFINFh4a1hnSnA3MV9kU2NUdXloSHl1SjBiQS1haXfSAXNBVV95cUxPVzhhcWFZRTRMeVRiTFhGcU92UmFPNFVTOGtSNnd3WDZYMHVqYjZNdmphLURXVXkwYkNNQlh2QUYybks0WjVTTkJqdHhEbjBGc2lyeHlxSDRYeGtYZ0pwNzFfZFNjVHV5aEh5dUowYkEtYWl3?oc=5",
-        "source": "뉴스웍스",
-        "pubDate": "2026-09-22T14:28:06.000Z",
+        "title": "\"오래 입는 옷의 가치\" 비이커, 英 '마가렛 호웰' 국내 사업 본격화",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA0d29JTzhrSWttOTFNd3o5Ym5UYy1zY0dPTFdoV0tNQ0ZhYXdKa09rbEN1bFZhLUJrbWV0eHc0QU5yQkpOeDZxa1RMeGNnZ1RMRngyaW9sWGZFeDlQTVdsRFI1ZDhUcEhqamx2RGZWSlZQWWVVNkx3NtIBeEFVX3lxTFA0d29JTzhrSWttOTFNd3o5Ym5UYy1zY0dPTFdoV0tNQ0ZhYXdKa09rbEN1bFZhLUJrbWV0eHc0QU5yQkpOeDZxa1RMeGNnZ1RMRngyaW9sWGZFeDlQTVdsRFI1ZDhUcEhqamx2RGZWSlZQWWVVNkx3Ng?oc=5",
+        "source": "newsis.com",
+        "pubDate": "2026-09-25T00:00:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "삼성물산 패션 비이커, 英 마가렛 호웰과 유통 파트너십 MOU",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBmNndNOE5IUjVLWWdtTWttTWh3VnZ2UnFZbnRFMGpFOG9GR2YyRG1DVnczTXNxY1hxVkw3WXBuYmMyZ3FSdU96TEtiWm5ReEYyUkJOdFp1NkNGNlo3S3pWTDFDR3dXNlFlRVBRWFljYnQzT0la0gF0QVVfeXFMUGY2d004TkhSNUtZZ21Na21NaHdWdnZScVludEUwakU4b0ZHZjJEbUNWdzNNc3FjWHFWTDdZcG5iYzJncVJ1T3pMS2JablF4RjJSQk50WnU2Q0Y2WjdLelZMMUNHd1c2UWVFUFFYWWNidDNPSVo?oc=5",
+        "source": "주간한국",
+        "pubDate": "2026-09-22T09:43:16.000Z",
         "sentiment": "neutral",
         "events": []
       },
@@ -1099,6 +1104,16 @@
         "link": "http://www.kdfnews.com/news/articleView.html?idxno=188384",
         "source": "kdfnews.com",
         "pubDate": "2026-09-22T07:04:00.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "입점·유통"
+        ]
+      },
+      {
+        "title": "비이커, 영국 컨템포러리 '마가렛 호웰' 국내 독점 유통 계약... 신세계...",
+        "link": "https://www.insight.co.kr/news/574826",
+        "source": "insight.co.kr",
+        "pubDate": "2026-09-22T05:34:00.000Z",
         "sentiment": "neutral",
         "events": [
           "입점·유통"
@@ -1125,36 +1140,20 @@
         ]
       },
       {
-        "title": "비이커, 英 '마가렛 호웰' 독점 유통…신세계百 본점에 첫 매장",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Wb2s1R1NTOUYzaW55OGdqQnZyV0pBbGszVkJnT1BtdnhreFFlTjhJUTg1SWJmWkxvOXVrRG1FQ2tHZFY3dDkzWlc3TUQ5cTVpY01abm80ZmJFTk3SAWBBVV95cUxPa2VFbHBZNTJFUkFoSF9LQVdqQ1lFU2gwX1hSdTRYdnhiV3VmYlRkdF9Jb0g2UnZJQWRTVjNNRnFGS01lenk2QkdrVHAtVGVYR3hqdnlWb1ZHb3BBcnBhMVo?oc=5",
-        "source": "연합뉴스",
-        "pubDate": "2026-09-22T01:25:57.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "입점·유통"
-        ]
-      },
-      {
         "title": "[잘먹잘살+]시몬스·웅진프리드라이프·아모레퍼시픽·쿠팡·배민·NOL·...",
         "link": "https://www.businessplus.kr/news/articleView.html?idxno=117219",
         "source": "businessplus.kr",
         "pubDate": "2026-09-22T01:14:00.000Z",
         "sentiment": "neutral",
-        "events": []
+        "events": [
+          "협업·신제품"
+        ]
       },
       {
         "title": "빈폴·메종키츠네·띠어리 등 삼성물산 패션 브랜드 추석맞이 할인 행사",
         "link": "https://www.insight.co.kr/news/574155",
         "source": "insight.co.kr",
         "pubDate": "2026-09-18T07:36:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "[똑똑한패션] 네파, 삼성물산 패션, BYC, 에이블리 아무드, 못된고양이 ...",
-        "link": "https://www.ekn.kr/web/view.php?key=20260918029596646",
-        "source": "ekn.kr",
-        "pubDate": "2026-09-18T07:30:00.000Z",
         "sentiment": "neutral",
         "events": []
       }
@@ -1391,7 +1390,7 @@
       {
         "title": "어퀘스티브 테라퓨틱스 CEO 바버, 12만 달러 규모 주식 매도",
         "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5RS2VWQnptTjZpY1BoZzQyTXRhcUtUTko4d01JYXZvc01BZHVMZmxxTXZPZG1wNU1FVVVHamJwWHN3SVJHNlctZjZ2cXVkcU0zVVlBOGs1TUtwSXFWN3ItR3RBVnE1dkpzbnEyY0ZlQmRVRGlNRURuNl9MNA?oc=5",
-        "source": "Investing.com 한국어",
+        "source": "kr.investing.com",
         "pubDate": "2026-09-16T18:31:00.000Z",
         "sentiment": "neutral",
         "events": []
@@ -1748,26 +1747,6 @@
         "pubDate": "2026-08-02T04:52:00.000Z",
         "sentiment": "neutral",
         "events": []
-      },
-      {
-        "title": "‘노재팬’ 그늘 걷히자…日 맥주 웃고 패션 브랜드 몰려왔다",
-        "link": "https://www.sedaily.com/article/20072084?ref=naver",
-        "source": "sedaily.com",
-        "pubDate": "2026-07-26T22:26:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "실적·성장"
-        ]
-      },
-      {
-        "title": "삿포로 맥주·도쿄룩…일상 파고든 日 브랜드",
-        "link": "https://www.sedaily.com/article/20071889?ref=naver",
-        "source": "sedaily.com",
-        "pubDate": "2026-07-26T02:56:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "실적·성장"
-        ]
       }
     ],
     "PAF": [
@@ -1847,9 +1826,19 @@
     "TEN-C": [],
     "이스트로그(프레이트)": [
       {
+        "title": "CJ온스타일, 글로벌 패션 ‘4대 축’ 완성",
+        "link": "https://biz.heraldcorp.com/article/10864885?ref=naver",
+        "source": "biz.heraldcorp.com",
+        "pubDate": "2026-09-07T02:37:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품"
+        ]
+      },
+      {
         "title": "머렐·이스트로그, 2차 협업 신발 ‘HUT MOC 2 LEISURE’ 3일 발매",
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE43V3ByVTdLRFUzMk11WDRlMy0xREx1SWcxamVtYWFNRHB2NU9oR29aVmRrZ3FZMlR0REpuMl8taW4tdVZycFkwc2NIeU9vTDFr?oc=5",
-        "source": "fashionbiz.co.kr",
+        "source": "패션비즈",
         "pubDate": "2026-09-02T07:00:00.000Z",
         "sentiment": "positive",
         "events": [
@@ -1949,18 +1938,7 @@
         "events": []
       }
     ],
-    "모드맨": [
-      {
-        "title": "네이버 이커머스를 견인하는 패션…'노크잇'과 '크림' 상승세",
-        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=226549",
-        "source": "apparelnews.co.kr",
-        "pubDate": "2026-07-26T13:02:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "입점·유통"
-        ]
-      }
-    ],
+    "모드맨": [],
     "스컬프스토어": [],
     "아이엠샵": [
       {
