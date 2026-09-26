@@ -1,7 +1,71 @@
 {
   "schemaVersion": 5,
-  "lastUpdated": "2026-09-25T06:01:45.608Z",
+  "lastUpdated": "2026-09-26T06:01:29.125Z",
   "events": [
+    {
+      "detectedAt": "2026-09-26T06:01:29.125Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "울산점",
+      "storeId": "롯데-0015",
+      "floor": "04F"
+    },
+    {
+      "detectedAt": "2026-09-26T06:01:29.125Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "울산점",
+      "storeId": "롯데-0015",
+      "floor": "02F"
+    },
+    {
+      "detectedAt": "2026-09-26T06:01:29.125Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "일산",
+      "storeId": "롯데-0011",
+      "floor": "B2F"
+    },
+    {
+      "detectedAt": "2026-09-26T06:01:29.125Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "잠실점",
+      "storeId": "롯데-0002",
+      "floor": "08F"
+    },
+    {
+      "detectedAt": "2026-09-26T06:01:29.125Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "잠실점",
+      "storeId": "롯데-0002",
+      "floor": "02F"
+    },
+    {
+      "detectedAt": "2026-09-26T06:01:29.125Z",
+      "type": "도면 변경",
+      "company": "현대",
+      "store": "판교",
+      "storeId": "현대-B00148000",
+      "floor": "8F"
+    },
+    {
+      "detectedAt": "2026-09-26T06:01:29.125Z",
+      "type": "도면 변경",
+      "company": "신세계",
+      "store": "대구",
+      "storeId": "신세계-SC00013",
+      "floor": "4F"
+    },
+    {
+      "detectedAt": "2026-09-26T06:01:29.125Z",
+      "type": "도면 변경",
+      "company": "신세계",
+      "store": "천안아산",
+      "storeId": "신세계-SC00009",
+      "floor": "3F"
+    },
     {
       "detectedAt": "2026-09-25T06:01:45.608Z",
       "type": "도면 변경",
@@ -3745,7 +3809,7 @@
       "label": "4F 스포츠 | 영패션",
       "url": "floor-maps/lotte/0015/04F.svg",
       "brands": [],
-      "signature": "7c8f4ced678b645b53eecc59a63f2ec31e4f681445706db7d1e3e4da2086a09b"
+      "signature": "694d4a033de8a3bc102f541d3f3cd1874b55b2ce2c859fcdd75c1d06260cc66a"
     },
     "롯데-0015|03F|3F 본관 : 여성패션ㅣ영플라자 : 롯데시네마": {
       "company": "롯데",
@@ -3765,7 +3829,7 @@
       "label": "2F 여성정장ㅣ구두, 시네마동: ABC마트",
       "url": "floor-maps/lotte/0015/02F.svg",
       "brands": [],
-      "signature": "ee31d473ad2084620b3b549409ce40f853d44c7fdc16a4a9d7c870637172c501"
+      "signature": "333727c846950c86b5c1454bbd8c7ee569840593800ce624595a1864bdbd0f34"
     },
     "롯데-0015|01F|1F 패션잡화ㅣ화장품ㅣ영플라자": {
       "company": "롯데",
@@ -4019,7 +4083,7 @@
       "label": "B2 식품 Ι 푸드마켓",
       "url": "floor-maps/lotte/0011/B2F.svg",
       "brands": [],
-      "signature": "956a6b03ee839a93f34ed519f4432464edd21ba4221fb4aa739caa6ff0d2934e"
+      "signature": "eec0b5004235ca387c7c213bbff4c5091abe714354827f268c2ff67eb9c229d5"
     },
     "롯데-0002|12F|12F 문화센터": {
       "company": "롯데",
@@ -4069,7 +4133,7 @@
       "label": "8F 아동ㆍ유아ㅣ사은품증정",
       "url": "floor-maps/lotte/0002/08F.svg",
       "brands": [],
-      "signature": "c685f77a6ee136b32d426121380b4f23be0e745a0e6b4fce89ef209496b2dc62"
+      "signature": "8ea425154b5cc4d14913bce272592ae9290cc6c81e4a4c44e6359366c11e371b"
     },
     "롯데-0002|07F|7F 스포츠ㅣ애슬레져": {
       "company": "롯데",
@@ -4146,7 +4210,7 @@
       "label": "2F 키네틱그라운드·무신사 | 캐릭터 | 진·영패션 | 슈즈",
       "url": "floor-maps/lotte/0002/02F.svg",
       "brands": [],
-      "signature": "7802cbbb404e0d4e45625f286fd1578f7f85e4ecb9b370293a7ce95168b6d6b9"
+      "signature": "6abc1e55b54608292126b5474279c6aacf9dfa14860890efef1bee11d43ee4f6"
     },
     "롯데-0002|01F|1F 명품잡화ㅣ화장품ㅣ시계&보석": {
       "company": "롯데",
@@ -6708,7 +6772,7 @@
       "label": "8F 층 안내도",
       "url": "floor-maps/hyundai/B00148000/8F.svg",
       "brands": [],
-      "signature": "15b544752c3d68e592d7435a6120c4a311fe1eb48cda230c72affdfd8829992b"
+      "signature": "f7c121a96eba1935987d3cf6090763ad1e41b22368051f1cab7316c2f62641b5"
     },
     "현대-B00148000|7F|7F 층 안내도": {
       "company": "현대",
@@ -7436,9 +7500,9 @@
       "storeId": "신세계-SC00013",
       "floor": "4F",
       "label": "4F 럭셔리 패션 안내도",
-      "url": "https://www.shinsegae.com/cms12/SC00013/guide/floor/__icsFiles/afieldfile/2026/09/17/4F-20260917071326-20260917071333.png",
+      "url": "https://www.shinsegae.com/cms12/SC00013/guide/floor/__icsFiles/afieldfile/2026/09/26/4F-20260926093010-20260926093016.png",
       "brands": [],
-      "signature": "0bfa9576cc6e21ec2b88ea41f3c387da0b06ff89b267ab9822acff90c253bba9"
+      "signature": "bd81fd57dc74f74c1fbb4e25ff4ff41773d3d1616d5a95f405f26472b934afa0"
     },
     "신세계-SC00013|3F|3F 패션｜시즌잡화 안내도": {
       "company": "신세계",
@@ -8162,7 +8226,7 @@
       "storeId": "신세계-SC00009",
       "floor": "3F",
       "label": "3F 남성/골프 안내도",
-      "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/22/A-3-20260922094246-20260922094249.jpg",
+      "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/09/26/A-3-20260926075743-20260926075746.jpg",
       "brands": [
         "띠어리맨",
         "솔리드옴므",
@@ -8171,7 +8235,7 @@
         "클럽모나코",
         "타임옴므"
       ],
-      "signature": "819727bbaa669d18f3674e6c70c692aac3af667cd633cf9d2cebf8f73e94dd16"
+      "signature": "5b8a524974d921343676b06dccd6b328e70067c8cae18e687d6707544cf4aaf1"
     },
     "신세계-SC00009|2F|2F 여성패션 안내도": {
       "company": "신세계",
