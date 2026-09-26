@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-25T01:14:27.035Z",
+  "lastUpdated": "2026-09-26T01:16:45.064Z",
   "windowDays": 60,
   "coverage": {
     "total": 37,
@@ -131,7 +131,7 @@
         "비이커",
         "비이커 패션 브랜드"
       ],
-      "candidates": 12,
+      "candidates": 11,
       "sources": {
         "google": true,
         "naver": true
@@ -206,7 +206,7 @@
         "바버",
         "바버 패션 브랜드"
       ],
-      "candidates": 19,
+      "candidates": 18,
       "sources": {
         "google": true,
         "naver": true
@@ -232,7 +232,7 @@
         "알레그리",
         "알레그리 패션 브랜드"
       ],
-      "candidates": 16,
+      "candidates": 15,
       "sources": {
         "google": true,
         "naver": true
@@ -245,7 +245,7 @@
         "질스튜어트뉴욕",
         "질스튜어트뉴욕 패션 브랜드"
       ],
-      "candidates": 11,
+      "candidates": 10,
       "sources": {
         "google": true,
         "naver": true
@@ -399,7 +399,7 @@
         "이스트로그 패션",
         "프레이트 패션"
       ],
-      "candidates": 3,
+      "candidates": 2,
       "sources": {
         "google": true,
         "naver": true
@@ -412,7 +412,7 @@
         "헤리티지플로스",
         "헤리티지플로스 패션 브랜드"
       ],
-      "candidates": 6,
+      "candidates": 5,
       "sources": {
         "google": true,
         "naver": true
@@ -483,6 +483,16 @@
   ],
   "industry": [
     {
+      "title": "\"재킷부터 로퍼까지\"…올가을 패션가 점령한 '스웨이드'",
+      "link": "https://www.ajunews.com/view/20260926052704503",
+      "source": "ajunews.com",
+      "pubDate": "2026-09-25T23:16:00.000Z",
+      "sentiment": "neutral",
+      "events": [
+        "협업·신제품"
+      ]
+    },
+    {
       "title": "\"오래 입는 옷의 가치\" 비이커, 英 '마가렛 호웰' 국내 사업 본격화",
       "link": "https://www.newsis.com/view/NISX20260922_0003799603",
       "source": "newsis.com",
@@ -543,17 +553,6 @@
       "pubDate": "2026-09-22T05:42:00.000Z",
       "sentiment": "neutral",
       "events": []
-    },
-    {
-      "title": "[신상브리핑] 이디야커피, 오뚜기, CU, 애경산업 랩신, 쿠쿠, 삼성물산 ...",
-      "link": "https://daily.hankooki.com/news/articleView.html?idxno=1408748",
-      "source": "daily.hankooki.com",
-      "pubDate": "2026-09-22T04:32:00.000Z",
-      "sentiment": "positive",
-      "events": [
-        "입점·유통",
-        "협업·신제품"
-      ]
     }
   ],
   "data": {
@@ -969,14 +968,13 @@
         ]
       },
       {
-        "title": "신세계백화점, FW 패션 매출 SS보다 22% 많아…9월 할인전",
-        "link": "https://www.seoultimes.news/news/article.html?no=2000099300",
-        "source": "seoultimes.news",
+        "title": "\"가을 쇼핑 수요 잡는다\" 신세계百, 패션·스포츠·잡화 프로모션",
+        "link": "https://www.newsis.com/view/NISX20260830_0003768485",
+        "source": "newsis.com",
         "pubDate": "2026-08-30T21:00:00.000Z",
         "sentiment": "neutral",
         "events": [
-          "협업·신제품",
-          "실적·성장"
+          "협업·신제품"
         ]
       },
       {
@@ -990,13 +988,14 @@
         ]
       },
       {
-        "title": "\"가을 쇼핑 수요 잡는다\" 신세계百, 패션·스포츠·잡화 프로모션",
-        "link": "https://www.newsis.com/view/NISX20260830_0003768485",
-        "source": "newsis.com",
+        "title": "신세계백화점, FW 패션 매출 SS보다 22% 많아…9월 할인전",
+        "link": "https://www.seoultimes.news/news/article.html?no=2000099300",
+        "source": "seoultimes.news",
         "pubDate": "2026-08-30T21:00:00.000Z",
         "sentiment": "neutral",
         "events": [
-          "협업·신제품"
+          "협업·신제품",
+          "실적·성장"
         ]
       }
     ],
@@ -1086,7 +1085,7 @@
       {
         "title": "\"오래 입는 옷의 가치\" 비이커, 英 '마가렛 호웰' 국내 사업 본격화",
         "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA0d29JTzhrSWttOTFNd3o5Ym5UYy1zY0dPTFdoV0tNQ0ZhYXdKa09rbEN1bFZhLUJrbWV0eHc0QU5yQkpOeDZxa1RMeGNnZ1RMRngyaW9sWGZFeDlQTVdsRFI1ZDhUcEhqamx2RGZWSlZQWWVVNkx3NtIBeEFVX3lxTFA0d29JTzhrSWttOTFNd3o5Ym5UYy1zY0dPTFdoV0tNQ0ZhYXdKa09rbEN1bFZhLUJrbWV0eHc0QU5yQkpOeDZxa1RMeGNnZ1RMRngyaW9sWGZFeDlQTVdsRFI1ZDhUcEhqamx2RGZWSlZQWWVVNkx3Ng?oc=5",
-        "source": "newsis.com",
+        "source": "뉴시스",
         "pubDate": "2026-09-25T00:00:00.000Z",
         "sentiment": "neutral",
         "events": []
@@ -1255,7 +1254,7 @@
       },
       {
         "title": "지오송지오, 유통별 육성 전략 이원화",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5LTnV1ZndRTTJrYlFhcUlneVhfYzdibHZZNWJCU3MyejJ0RXVQTUJsUE5vdlZhYjZNQnFQWE9XbGJzZjQ5MVVMbVZTSFdUNHV0RHh3eWVCOHZjQnZSaWhfU1B0TjZLbG8?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBubWV4dHBUV00yTGkwR2RJRGhWOGx3UElILUlkclNzX2NuWGhOa2pUTm5fTmg5cm4ycEJDYUZob0FLWXpic2FIOHlhdkVTdDdtOFlIcnhUMEh5M1MtUDBvMEhMMGVlV2w1bi1qdWRNVW41LXRHUXc?oc=5",
         "source": "어패럴뉴스",
         "pubDate": "2026-09-19T15:00:00.000Z",
         "sentiment": "neutral",
@@ -1325,6 +1324,16 @@
     ],
     "바버": [
       {
+        "title": "사이퍼 디지털, 바버 레이크 데이터센터 임대 기간 20년으로 연장…계약 매출 90억 달러 돌파",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1LVlNtUHU4WTdnalRMXzBiVU15aGFGRUFzOHpLZTR0ajVqZ2tBdTRzVmtxek1yUmJWQjFoTkVNeFdXNnZQaHZ3Y29Da1BveXFQN0hoN1lrYUNJZHJEOGlIZk1ka0d3R21QaEN1elluTHBlRUU?oc=5",
+        "source": "데이터투자",
+        "pubDate": "2026-09-25T12:08:21.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "실적·성장"
+        ]
+      },
+      {
         "title": "[유통통] 글로벌 영토 넓히는 한섬·LF···'K-패션 ' 비장의 카드는?",
         "link": "https://www.cnbnews.com/news/articleView.html?idxno=1017086",
         "source": "cnbnews.com",
@@ -1347,16 +1356,6 @@
         "pubDate": "2026-09-21T13:06:00.000Z",
         "sentiment": "neutral",
         "events": []
-      },
-      {
-        "title": "바버, 가니와 업사이클링 컬렉션 공개",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQnNVczBzaW1DZ1JnZHI5R0VEVDIzOW9rTHlNNEFlNG1xY19aamM3Ykw1ZEkxQnBpX1BPMkx0UEZhQWx1RVdYeEg5c2ZBS2JvZXRadDZYbjViSTRpSWR4V183QjZQdElSU2xCZFJra0RQOFExM2VjLU1vTkNBWEluTkQxcVl5dw?oc=5",
-        "source": "패션포스트",
-        "pubDate": "2026-09-20T13:19:14.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "협업·신제품"
-        ]
       },
       {
         "title": "슈프림×바버, 협업 컬렉션 오는 7일 오픈",
@@ -1388,11 +1387,11 @@
         ]
       },
       {
-        "title": "어퀘스티브 테라퓨틱스 CEO 바버, 12만 달러 규모 주식 매도",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5RS2VWQnptTjZpY1BoZzQyTXRhcUtUTko4d01JYXZvc01BZHVMZmxxTXZPZG1wNU1FVVVHamJwWHN3SVJHNlctZjZ2cXVkcU0zVVlBOGs1TUtwSXFWN3ItR3RBVnE1dkpzbnEyY0ZlQmRVRGlNRURuNl9MNA?oc=5",
-        "source": "kr.investing.com",
-        "pubDate": "2026-09-16T18:31:00.000Z",
-        "sentiment": "neutral",
+        "title": "환율 하락에 수입 패션 하반기 전망 '활짝'…FW시즌 수익성 정조준",
+        "link": "https://www.etnews.com/20260911000260",
+        "source": "etnews.com",
+        "pubDate": "2026-09-13T05:01:00.000Z",
+        "sentiment": "negative",
         "events": []
       }
     ],
@@ -1754,7 +1753,7 @@
         "title": "POST ARCHIVE FACTION(PAF), 이탈리아 가죽에 레이저 커팅 꽃잎을 새긴 Petal Trainers 공개",
         "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVzA0LXVzRFhyUWgxeGU5bzl2QWl1eWFiQVRUeG16bUtWNkh0U3JZb3NfdGptWElYcjRtdGRmazZ4dDRfRmlidFVJYzZEMWlpM1d6NDQ3cWt3VjJPWXQ2MjBBUDRUOHJ5TE0xRXVsVXJ1MjRzRjg0WlRGLTZnckpuNjBPR0JPbGNUYmlpaGlrN1FwbWR2bHFYV3E1bTVPV1ppd2RhZmtEenM1cDNHekE?oc=5",
         "source": "Hypebeast.KR",
-        "pubDate": "2026-09-08T09:10:41.000Z",
+        "pubDate": "2026-09-08T07:00:00.000Z",
         "sentiment": "neutral",
         "events": []
       },
@@ -1844,16 +1843,6 @@
         "events": [
           "협업·신제품"
         ]
-      },
-      {
-        "title": "[유通하는 사람들] ⑯ 김기현 신세계백화점 여성패션팀장…\"K-헤리티지...",
-        "link": "https://www.youthdaily.co.kr/news/article.html?no=223828",
-        "source": "youthdaily.co.kr",
-        "pubDate": "2026-07-27T23:00:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "리뉴얼·확장"
-        ]
       }
     ],
     "헤리티지플로스": [
@@ -1906,16 +1895,6 @@
         "events": [
           "협업·신제품"
         ]
-      },
-      {
-        "title": "[유通하는 사람들] ⑯ 김기현 신세계백화점 여성패션팀장…\"K-헤리티지...",
-        "link": "https://www.youthdaily.co.kr/news/article.html?no=223828",
-        "source": "youthdaily.co.kr",
-        "pubDate": "2026-07-27T23:00:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "리뉴얼·확장"
-        ]
       }
     ],
     "에잇디비젼": [
@@ -1952,7 +1931,7 @@
       {
         "title": "[수원소식]행궁동 편집매장 '아이엠샵'에서 수원굿즈 팝업스토어",
         "link": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOZ0pDZlc0Qm1abllyMExnZUdKQThHbzc5dXZJdE1jcjRtcjJ0dm14V1FtLU5jUm1IWExvUWN5cDBoU3JRb3J2RmEwTFBsZEpfWFM1OV84VUZ5YnEtRjlwUGpQVVE5ZFFWOWRzYjl5UUJDa0dRV1JuTVpjMnRYajFJUnM2Z1RoTzFpSVdQREtZa0J4LVBTV043UWdza01oNWUwS3pCQVJncHlYRlFub0IzS0tMcnlNQjJSeWJHZjJOYkxBNUYycmQ5VW5iNkpGbl9PcDhpTjdibTUwV2pZdGlSaFVSTGdFclBMOF9oWW9SZTdQaVlYU3VOQ0hLWVBXbjFNdlo2cHJaaDB5NUloSk5JRnYyQlpTd3hnVFJtYTcyVFlQQlJWYnB0Mm1OMlN2Zw?oc=5",
-        "source": "데일리안",
+        "source": "dailian.co.kr",
         "pubDate": "2026-09-21T03:55:00.000Z",
         "sentiment": "neutral",
         "events": [
