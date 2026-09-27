@@ -1,7 +1,143 @@
 {
   "schemaVersion": 5,
-  "lastUpdated": "2026-09-26T06:01:29.125Z",
+  "lastUpdated": "2026-09-27T06:28:38.746Z",
   "events": [
+    {
+      "detectedAt": "2026-09-27T06:28:38.746Z",
+      "type": "층 추가",
+      "company": "롯데",
+      "store": "울산점",
+      "storeId": "롯데-0015",
+      "floor": "07F"
+    },
+    {
+      "detectedAt": "2026-09-27T06:28:38.746Z",
+      "type": "층 추가",
+      "company": "롯데",
+      "store": "울산점",
+      "storeId": "롯데-0015",
+      "floor": "06F"
+    },
+    {
+      "detectedAt": "2026-09-27T06:28:38.746Z",
+      "type": "층 추가",
+      "company": "롯데",
+      "store": "울산점",
+      "storeId": "롯데-0015",
+      "floor": "05F"
+    },
+    {
+      "detectedAt": "2026-09-27T06:28:38.746Z",
+      "type": "층 추가",
+      "company": "롯데",
+      "store": "울산점",
+      "storeId": "롯데-0015",
+      "floor": "04F"
+    },
+    {
+      "detectedAt": "2026-09-27T06:28:38.746Z",
+      "type": "층 추가",
+      "company": "롯데",
+      "store": "울산점",
+      "storeId": "롯데-0015",
+      "floor": "03F"
+    },
+    {
+      "detectedAt": "2026-09-27T06:28:38.746Z",
+      "type": "층 추가",
+      "company": "롯데",
+      "store": "울산점",
+      "storeId": "롯데-0015",
+      "floor": "02F"
+    },
+    {
+      "detectedAt": "2026-09-27T06:28:38.746Z",
+      "type": "층 추가",
+      "company": "롯데",
+      "store": "울산점",
+      "storeId": "롯데-0015",
+      "floor": "01F"
+    },
+    {
+      "detectedAt": "2026-09-27T06:28:38.746Z",
+      "type": "층 추가",
+      "company": "롯데",
+      "store": "울산점",
+      "storeId": "롯데-0015",
+      "floor": "B1F"
+    },
+    {
+      "detectedAt": "2026-09-27T06:28:38.746Z",
+      "type": "도면 변경",
+      "company": "현대",
+      "store": "대구",
+      "storeId": "현대-B00146000",
+      "floor": "8F"
+    },
+    {
+      "detectedAt": "2026-09-27T06:28:38.746Z",
+      "type": "층 삭제",
+      "company": "롯데",
+      "store": "울산점",
+      "storeId": "롯데-0015",
+      "floor": "07F"
+    },
+    {
+      "detectedAt": "2026-09-27T06:28:38.746Z",
+      "type": "층 삭제",
+      "company": "롯데",
+      "store": "울산점",
+      "storeId": "롯데-0015",
+      "floor": "06F"
+    },
+    {
+      "detectedAt": "2026-09-27T06:28:38.746Z",
+      "type": "층 삭제",
+      "company": "롯데",
+      "store": "울산점",
+      "storeId": "롯데-0015",
+      "floor": "05F"
+    },
+    {
+      "detectedAt": "2026-09-27T06:28:38.746Z",
+      "type": "층 삭제",
+      "company": "롯데",
+      "store": "울산점",
+      "storeId": "롯데-0015",
+      "floor": "04F"
+    },
+    {
+      "detectedAt": "2026-09-27T06:28:38.746Z",
+      "type": "층 삭제",
+      "company": "롯데",
+      "store": "울산점",
+      "storeId": "롯데-0015",
+      "floor": "03F"
+    },
+    {
+      "detectedAt": "2026-09-27T06:28:38.746Z",
+      "type": "층 삭제",
+      "company": "롯데",
+      "store": "울산점",
+      "storeId": "롯데-0015",
+      "floor": "02F"
+    },
+    {
+      "detectedAt": "2026-09-27T06:28:38.746Z",
+      "type": "층 삭제",
+      "company": "롯데",
+      "store": "울산점",
+      "storeId": "롯데-0015",
+      "floor": "01F"
+    },
+    {
+      "detectedAt": "2026-09-27T06:28:38.746Z",
+      "type": "층 삭제",
+      "company": "롯데",
+      "store": "울산점",
+      "storeId": "롯데-0015",
+      "floor": "B1F"
+    },
     {
       "detectedAt": "2026-09-26T06:01:29.125Z",
       "type": "도면 변경",
@@ -3771,85 +3907,85 @@
       "brands": [],
       "signature": "b13efdbd7be079aea27632c19a18672330bfd9ea3edea3ae9f97f1494d3629c4"
     },
-    "롯데-0015|07F|7F 키즈ㆍ유아휴게실ㅣ영플라자 : 그랜드휠": {
+    "롯데-0015|07F|7F 키즈 | 점행사장 | 펫카페 | 그랜드휠": {
       "company": "롯데",
       "store": "울산점",
       "storeId": "롯데-0015",
       "floor": "07F",
-      "label": "7F 키즈ㆍ유아휴게실ㅣ영플라자 : 그랜드휠",
+      "label": "7F 키즈 | 점행사장 | 펫카페 | 그랜드휠",
       "url": "floor-maps/lotte/0015/07F.svg",
       "brands": [],
-      "signature": "28389d1df76a2229c047f894a2a734a4cbefc988e9f5f1a8dade77af98e665a2"
+      "signature": "1eacb37c1689ab88d5e51f1c4796580f62798c1c1523b87e7e9d1bf37ffc6563"
     },
-    "롯데-0015|06F|6F 본관 : 남성패션 | 아웃도어": {
+    "롯데-0015|06F|6F 남성패션 | 레저/스포츠": {
       "company": "롯데",
       "store": "울산점",
       "storeId": "롯데-0015",
       "floor": "06F",
-      "label": "6F 본관 : 남성패션 | 아웃도어",
+      "label": "6F 남성패션 | 레저/스포츠",
       "url": "floor-maps/lotte/0015/06F.svg",
       "brands": [],
       "signature": "b1579cb3ff5fb80b7112d8afcb2aba65396f2742d78ef0639e85933efef2c3e3"
     },
-    "롯데-0015|05F|5F 아웃도어ㅣ골프 | 영패션": {
+    "롯데-0015|05F|5F 골프 | 레저 | 스포츠": {
       "company": "롯데",
       "store": "울산점",
       "storeId": "롯데-0015",
       "floor": "05F",
-      "label": "5F 아웃도어ㅣ골프 | 영패션",
+      "label": "5F 골프 | 레저 | 스포츠",
       "url": "floor-maps/lotte/0015/05F.svg",
       "brands": [],
-      "signature": "4f62ff34bbf0779865a49e41f3d7987734850b0799d0159d998da649a28d6344"
+      "signature": "d3c338cd8fbea4baff7c3ea6dacd777268f5e18e2818e0e399e576195a101e57"
     },
-    "롯데-0015|04F|4F 스포츠 | 영패션": {
+    "롯데-0015|04F|4F 레저/스포츠 | 영패션": {
       "company": "롯데",
       "store": "울산점",
       "storeId": "롯데-0015",
       "floor": "04F",
-      "label": "4F 스포츠 | 영패션",
+      "label": "4F 레저/스포츠 | 영패션",
       "url": "floor-maps/lotte/0015/04F.svg",
       "brands": [],
-      "signature": "694d4a033de8a3bc102f541d3f3cd1874b55b2ce2c859fcdd75c1d06260cc66a"
+      "signature": "ad73bab43a8c5958d0fa7f92d712df2cba8f75d7ce4cd7cefb4297e8816350f3"
     },
-    "롯데-0015|03F|3F 본관 : 여성패션ㅣ영플라자 : 롯데시네마": {
+    "롯데-0015|03F|3F 여성/영패션 | 시네마": {
       "company": "롯데",
       "store": "울산점",
       "storeId": "롯데-0015",
       "floor": "03F",
-      "label": "3F 본관 : 여성패션ㅣ영플라자 : 롯데시네마",
+      "label": "3F 여성/영패션 | 시네마",
       "url": "floor-maps/lotte/0015/03F.svg",
       "brands": [],
       "signature": "e7b51571da45a381a1cd1bd9847d4553d096b3239533db8dcd740af292419f71"
     },
-    "롯데-0015|02F|2F 여성정장ㅣ구두, 시네마동: ABC마트": {
+    "롯데-0015|02F|2F 여성패션 | 구두 | 핸드백 | 시네마": {
       "company": "롯데",
       "store": "울산점",
       "storeId": "롯데-0015",
       "floor": "02F",
-      "label": "2F 여성정장ㅣ구두, 시네마동: ABC마트",
+      "label": "2F 여성패션 | 구두 | 핸드백 | 시네마",
       "url": "floor-maps/lotte/0015/02F.svg",
       "brands": [],
-      "signature": "333727c846950c86b5c1454bbd8c7ee569840593800ce624595a1864bdbd0f34"
+      "signature": "f80e32bcae6a097d9f7fe1cbc986580fd644686e51e9018d7697026c6458b7f0"
     },
-    "롯데-0015|01F|1F 패션잡화ㅣ화장품ㅣ영플라자": {
+    "롯데-0015|01F|1F 화장품 | 해외패션 | 액세서리 | 영플라자": {
       "company": "롯데",
       "store": "울산점",
       "storeId": "롯데-0015",
       "floor": "01F",
-      "label": "1F 패션잡화ㅣ화장품ㅣ영플라자",
+      "label": "1F 화장품 | 해외패션 | 액세서리 | 영플라자",
       "url": "floor-maps/lotte/0015/01F.svg",
       "brands": [],
-      "signature": "ff1454c377677480f444c7dc410bf7ed10ea481feeb5f2dd878fe11cbbf8e769"
+      "signature": "83be170686c0a02839c3385c4f88b0acf4ca6d8e1b61417e061c89233c00143f"
     },
-    "롯데-0015|B1F|B1 식품관ㅣ생활가전": {
+    "롯데-0015|B1F|B1 식품관ㅣ생활가전 | SPA": {
       "company": "롯데",
       "store": "울산점",
       "storeId": "롯데-0015",
       "floor": "B1F",
-      "label": "B1 식품관ㅣ생활가전",
+      "label": "B1 식품관ㅣ생활가전 | SPA",
       "url": "floor-maps/lotte/0015/B1F.svg",
       "brands": [],
-      "signature": "ec850c93e0a39bd9fc76c214e30cd13fe5c0822e24840d9a6f4517c91e0c38a7"
+      "signature": "c88ac64f3380d98fb678f365aa8ce7f460ab590d03719bdeaec00c70c79b9305"
     },
     "롯데-0344|07F|7F 주차장": {
       "company": "롯데",
@@ -6946,7 +7082,7 @@
       "label": "8F 층 안내도",
       "url": "floor-maps/hyundai/B00146000/8F.svg",
       "brands": [],
-      "signature": "4fafdc944e91b9cca0616087bc7ce258288f6ffb0940c5552c7e36d1d9bef71f"
+      "signature": "2bedfb0d353fcebcbbb14ccb894ba28b72d92cd676363df30a3367daac8400de"
     },
     "현대-B00146000|7F|7F 층 안내도": {
       "company": "현대",
