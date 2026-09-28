@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T03:32:23.866Z",
+  "generatedAt": "2026-09-28T03:30:13.421Z",
   "months": [
     {
       "month": "2026-08",
@@ -73,7 +73,7 @@
     {
       "month": "2026-09",
       "baselineSnapshot": "2026-08-31",
-      "endSnapshot": "2026-09-27",
+      "endSnapshot": "2026-09-28",
       "new": [
         {
           "company": "롯데",
