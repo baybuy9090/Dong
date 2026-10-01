@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T03:52:31.933Z",
+  "generatedAt": "2026-10-01T04:00:38.259Z",
   "months": [
     {
       "month": "2026-08",
@@ -134,6 +134,32 @@
           "store": "천안아산",
           "storeId": "신세계-SC00009",
           "brand": "POTTERY"
+        }
+      ],
+      "exit": []
+    },
+    {
+      "month": "2026-10",
+      "baselineSnapshot": "2026-09-30",
+      "endSnapshot": "2026-10-01",
+      "new": [
+        {
+          "company": "롯데",
+          "store": "잠실에비뉴엘",
+          "storeId": "롯데-0348",
+          "brand": "TEN-C"
+        },
+        {
+          "company": "롯데",
+          "store": "전주점",
+          "storeId": "롯데-0025",
+          "brand": "질스튜어트뉴욕"
+        },
+        {
+          "company": "신세계",
+          "store": "하남",
+          "storeId": "신세계-SC00012",
+          "brand": "알레그리"
         }
       ],
       "exit": []
