@@ -2,6 +2,16 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const { classifyEvents, filterByBrandRelevance, hasBrandMention, newsQueriesForBrand } = require('../news-crawler');
 const CONFIG = require('../config');
+const { isExcludedArticle } = require('../news-crawler');
+
+test('확인된 과거 기사는 검색 날짜나 링크가 바뀌어도 다시 게시하지 않는다', () => {
+  const article = { title: '랄프로렌, ‘클럽모나코’ 매각', source: '패션포스트', pubDate: '2026-10-06T00:00:00Z' };
+  assert.equal(isExcludedArticle(article), true);
+  assert.equal(isExcludedArticle({ ...article, title: '랄프 로렌, "클럽 모나코" 매각' }), true);
+  assert.deepEqual(filterRecentAndSort([article], Date.parse('2026-10-06T01:00:00Z')), []);
+  assert.equal(isExcludedArticle({ ...article, title: '클럽모나코 신규 매장 오픈' }), false);
+  assert.equal(isExcludedArticle({ ...article, source: '다른 언론사' }), false);
+});
 const { normalizeNewsDate, filterRecentAndSort, parseGoogleItems } = require('../news-crawler');
 
 test('뉴스는 재사용 기사도 60일 경계와 미래·잘못된 날짜를 검사한다', () => {

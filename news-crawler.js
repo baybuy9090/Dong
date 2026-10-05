@@ -212,10 +212,18 @@ function filterRecentAndSort(items, now = Date.now()) {
   const cutoff = now - NEWS_WINDOW_DAYS * 86400000;
   return items
     .filter(article => {
+      if (isExcludedArticle(article)) return false;
       const published = Date.parse(article.pubDate);
       return Number.isFinite(published) && published >= cutoff && published <= now;
     })
     .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+}
+
+function isExcludedArticle(article) {
+  const normalize = value => String(value || '').normalize('NFKC').replace(/[\s\p{P}\p{S}]/gu, '').toLowerCase();
+  return require('./news-exclusions.json').articles.some(excluded =>
+    normalize(article.title) === normalize(excluded.title) &&
+    normalize(article.source) === normalize(excluded.source));
 }
 
 // 한글 완성형 음절 또는 영문자/숫자는 "단어를 구성하는 문자"로 취급.
@@ -495,6 +503,7 @@ if (require.main === module) {
 }
 
 module.exports = {
+  isExcludedArticle,
   normalizeNewsDate, filterRecentAndSort, parseGoogleItems,
   classifySentiment, classifyEvents, titleSimilarity, dedupSimilarTitles,
   filterByContentRelevance, hasBrandMention, filterByBrandRelevance, newsQueriesForBrand,

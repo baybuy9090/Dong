@@ -3,7 +3,7 @@
   "windowDays": 60,
   "coverage": {
     "total": 37,
-    "withNews": 14
+    "withNews": 13
   },
   "diagnostics": [
     {
@@ -849,18 +849,7 @@
         "events": []
       }
     ],
-    "클럽모나코": [
-      {
-        "title": "랄프로렌, ‘클럽모나코’ 매각",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPV0NuZDhNallOTUhXY2V3VTVHUzRsLVRlUnB6ck5FQ2pDRXZJMVJRMTgyR3dRSEoyYXhSY3R5bEVaWDFDOFMyTlpCR2M2d0lqQmp6clNNaGV3TG5MWWl1RVVzOEN2VmZ3X0pGb1JtN2hNeHhxM1QwZ2tTZF9sa3JHMmwwempVdw?oc=5",
-        "source": "패션포스트",
-        "pubDate": "2026-09-30T01:15:28.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "경영·계약 변경"
-        ]
-      }
-    ],
+    "클럽모나코": [],
     "맨온더분": [
       {
         "title": "SI, “맨온더분 팝업스테이지 인기”",
