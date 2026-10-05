@@ -1,6 +1,25 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const { matchBrands, normalizeRow, observedSet, presenceSet, additionNote, exitNote, companyQualityIssue, koreaDateKey, buildJobList } = require('../crawler');
+const { parsePotteryStores } = require('../crawler');
+
+test('포터리 공식 매장은 관리 점포만 수집하고 여성·유사 상호는 제외한다', () => {
+  const html = '<u>포터리 현대 판교 (PTRY Hyundai Pangyo)</u>' +
+    '<u>포터리 현대 판교 (PTRY Hyundai Pangyo)</u>' +
+    '<u>포터리 신세계 강남 (PTRY Shinsegae Gangnam)</u>' +
+    '<u>포터리 고양 스타필드 (PTRY Starfield)</u>' +
+    '<u>포터리 현대 목동 우먼 (PTRY Women)</u>' +
+    '<u>포터리하우스 현대 울산 (House)</u>';
+  assert.deepEqual(parsePotteryStores(html).map(row => row.storeId).sort(), ['신세계-SC00002', '현대-B00148000']);
+});
+
+test('포터리 팝업은 한국 날짜로 운영기간 안에서만 추가한다', () => {
+  const html = '<u>포터리 현대 판교 (PTRY)</u><u>포터리 롯데 본점 팝업 스토어 (PTRY)</u>운영기간: 2026-08-01 ~ 2027-01-31';
+  assert.equal(parsePotteryStores(html, new Date('2026-07-31T14:59:00Z')).length, 1);
+  assert.equal(parsePotteryStores(html, new Date('2026-07-31T15:00:00Z')).length, 2);
+  assert.equal(parsePotteryStores(html, new Date('2027-01-31T15:00:00Z')).length, 1);
+  assert.throws(() => parsePotteryStores('<html>점검 중</html>'), /해석하지 못/);
+});
 
 test('남성 브랜드는 찾고 명시된 여성 브랜드는 제외한다', () => {
   assert.deepEqual(matchBrands('남성 패션 타임옴므 시스템옴므').sort(), ['시스템옴므', '타임옴므']);

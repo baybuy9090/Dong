@@ -97,6 +97,12 @@ function stripTags(str) {
   return str.replace(/<[^>]*>/g, '');
 }
 
+function normalizeNewsDate(value) {
+  if (!value) return null;
+  const timestamp = Date.parse(value);
+  return Number.isFinite(timestamp) ? new Date(timestamp).toISOString() : null;
+}
+
 // ── 구글 뉴스 RSS ──
 function parseGoogleItems(xml) {
   const items = [];
@@ -117,7 +123,7 @@ function parseGoogleItems(xml) {
       title,
       link: linkMatch[1].trim(),
       source,
-      pubDate: pubDateMatch ? new Date(pubDateMatch[1].trim()).toISOString() : null,
+      pubDate: normalizeNewsDate(pubDateMatch?.[1].trim()),
       _desc: descriptionMatch ? decodeEntities(stripTags(descriptionMatch[1])).trim() : '',
     });
   });
@@ -129,8 +135,9 @@ async function fetchGoogleNews(query) {
   // 여러 단어로 조합한 검색어는 따옴표를 걸면 그 문구 그대로 나온 기사만 찾게 되어
   // 결과가 0건에 가까워지므로 그대로 검색.
   const q = query.includes(' ') ? query : `"${query}"`;
-  const url = `https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=ko&gl=KR&ceid=KR:ko`;
+  const url = `https://news.google.com/rss/search?q=${encodeURIComponent(`${q} when:${NEWS_WINDOW_DAYS}d`)}&hl=ko&gl=KR&ceid=KR:ko`;
   const res = await fetch(url, {
+    signal: AbortSignal.timeout(30000),
     headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' },
   });
   if (!res.ok) throw new Error('HTTP ' + res.status);
@@ -153,6 +160,7 @@ async function fetchNaverNews(query) {
   const q = query.replace(/"/g, '');
   const url = `https://openapi.naver.com/v1/search/news.json?query=${encodeURIComponent(q)}&display=20&sort=date`;
   const res = await fetch(url, {
+    signal: AbortSignal.timeout(30000),
     headers: {
       'X-Naver-Client-Id': NAVER_CLIENT_ID,
       'X-Naver-Client-Secret': NAVER_CLIENT_SECRET,
@@ -166,7 +174,7 @@ async function fetchNaverNews(query) {
       title: decodeEntities(stripTags(item.title || '')).trim(),
       link,
       source: sourceFromUrl(link),
-      pubDate: item.pubDate ? new Date(item.pubDate).toISOString() : null,
+      pubDate: normalizeNewsDate(item.pubDate),
       // 관련성 필터링에만 쓰고 최종 저장 전에 제거하는 임시 필드
       _desc: decodeEntities(stripTags(item.description || '')).trim(),
     };
@@ -200,10 +208,13 @@ async function fetchAllSources(query) {
 }
 
 // 최근 수집 기간 이내 기사만 남기고 최신순 정렬한다.
-function filterRecentAndSort(items) {
-  const cutoff = Date.now() - NEWS_WINDOW_DAYS * 86400000;
+function filterRecentAndSort(items, now = Date.now()) {
+  const cutoff = now - NEWS_WINDOW_DAYS * 86400000;
   return items
-    .filter(a => a.pubDate && new Date(a.pubDate).getTime() >= cutoff)
+    .filter(article => {
+      const published = Date.parse(article.pubDate);
+      return Number.isFinite(published) && published >= cutoff && published <= now;
+    })
     .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 }
 
@@ -447,7 +458,7 @@ async function main() {
   for (const brand of BRANDS) {
     process.stdout.write(`수집 중: ${brand} ... `);
     const batch = await fetchBrandCandidates(brand);
-    rawByBrand[brand] = batch.succeeded ? batch.items : (previous.data[brand] || []);
+    rawByBrand[brand] = filterRecentAndSort(batch.succeeded ? batch.items : (previous.data[brand] || []));
     diagnostics.push({ brand, queries:batch.queries, candidates:batch.items.length, sources: batch.sources, status: batch.succeeded ? 'ok' : 'stale' });
     console.log(`${rawByBrand[brand].length}건 (중복 브랜드 필터 전)`);
     await sleep(400);
@@ -456,12 +467,12 @@ async function main() {
   const cleanedByBrand = dropCrossBrandNoise(rawByBrand);
   const data = {};
   BRANDS.forEach(brand => {
-    data[brand] = cleanedByBrand[brand].slice(0, ARTICLES_PER_BRAND).map(finalizeArticle);
+    data[brand] = filterRecentAndSort(cleanedByBrand[brand]).slice(0, ARTICLES_PER_BRAND).map(finalizeArticle);
   });
 
   process.stdout.write('수집 중: [업계 전체] 남성/맨즈 컨템포러리 ... ');
   const industryBatch = await fetchIndustryNews();
-  const industry = industryBatch.succeeded ? industryBatch.items : (previous.industry || []);
+  const industry = filterRecentAndSort(industryBatch.succeeded ? industryBatch.items : (previous.industry || []));
   console.log(`${industry.length}건`);
 
   const output = {
@@ -484,6 +495,7 @@ if (require.main === module) {
 }
 
 module.exports = {
+  normalizeNewsDate, filterRecentAndSort, parseGoogleItems,
   classifySentiment, classifyEvents, titleSimilarity, dedupSimilarTitles,
   filterByContentRelevance, hasBrandMention, filterByBrandRelevance, newsQueriesForBrand,
 };

@@ -2,6 +2,34 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const { classifyEvents, filterByBrandRelevance, hasBrandMention, newsQueriesForBrand } = require('../news-crawler');
 const CONFIG = require('../config');
+const { normalizeNewsDate, filterRecentAndSort, parseGoogleItems } = require('../news-crawler');
+
+test('뉴스는 재사용 기사도 60일 경계와 미래·잘못된 날짜를 검사한다', () => {
+  const now = Date.parse('2026-10-05T00:00:00Z');
+  const cutoff = now - 60 * 86400000;
+  const items = [cutoff - 1, cutoff, now, now + 1].map(timestamp => ({ pubDate: new Date(timestamp).toISOString() }));
+  items.push({ pubDate: null }, { pubDate: 'invalid' }, {});
+  assert.deepEqual(filterRecentAndSort(items, now).map(item => Date.parse(item.pubDate)), [now, cutoff]);
+  assert.deepEqual(filterRecentAndSort([{ pubDate: '2005-01-01' }], now), []);
+});
+
+test('RSS의 잘못된 날짜 하나 때문에 전체 수집이 실패하지 않는다', () => {
+  assert.equal(normalizeNewsDate('invalid'), null);
+  assert.equal(normalizeNewsDate(null), null);
+  const items = parseGoogleItems('<item><title>기사</title><link>https://example.com/news</link><pubDate>invalid</pubDate></item>');
+  assert.equal(items.length, 1);
+  assert.equal(items[0].pubDate, null);
+  assert.deepEqual(filterRecentAndSort(items), []);
+});
+
+test('화면의 날짜 필터도 수집기의 60일 기준과 일치한다', () => {
+  const html = require('node:fs').readFileSync(require('node:path').join(__dirname, '../index.html'), 'utf8');
+  const source = html.match(/function recentNewsOnly\(items, now = Date.now\(\)\) \{[\s\S]*?\n    \}/)[0];
+  const filter = require('node:vm').runInNewContext(`(${source})`);
+  const now = Date.parse('2026-10-05T00:00:00Z');
+  const items = ['2005-01-01', '2026-09-05', 'invalid', '2027-01-01'].map(pubDate => ({ pubDate }));
+  assert.equal(JSON.stringify(filter(items, now)), JSON.stringify(filterRecentAndSort(items, now)));
+});
 
 test('뉴스를 실무 이벤트로 다중 분류한다', () => {
   assert.deepEqual(classifyEvents('성수 플래그십 신규 오픈으로 유통 확장'), ['신규 매장·팝업', '리뉴얼·확장']);

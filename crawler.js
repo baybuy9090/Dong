@@ -161,11 +161,40 @@ function matchBrands(rawText) {
 
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
+const POTTERY_STORE_URL = 'https://ptry.co.kr/offline.html';
+
+function parsePotteryStores(html, now = new Date()) {
+  const headings = [...String(html).matchAll(/<u\b[^>]*>([\s\S]*?)<\/u>/gi)];
+  const rows = new Map();
+  const today = koreaDateKey(now);
+  for (const [index, heading] of headings.entries()) {
+    const title = heading[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+    const match = title.match(/^포터리\s+(롯데|현대|신세계)\s+(.+?)\s*\(/);
+    if (!match || /여성|우먼|WOMEN/i.test(title)) continue;
+    const storeName = match[2].replace(/\s+팝업 스토어$/, '').trim();
+    const store = CONFIG.getStore(match[1], storeName) || CONFIG.getStore(match[1], `${storeName}점`);
+    if (!store) continue;
+    const section = html.slice(heading.index, headings[index + 1]?.index ?? html.length);
+    const period = section.match(/(\d{4}-\d{2}-\d{2})\s*~\s*(\d{4}-\d{2}-\d{2})/);
+    if (/팝업/.test(title) && !period) continue;
+    if (period && (today < period[1] || today > period[2])) continue;
+    const row = {
+      company: store.company, store: store.name, storeId: store.id,
+      brand: 'POTTERY', sales: '', note: '확인', sourceUrl: POTTERY_STORE_URL,
+      ...(period ? { operatingPeriod: { start: period[1], end: period[2] } } : {}),
+    };
+    rows.set(CONFIG.rowKey(row), row);
+  }
+  if (!rows.size) throw new Error('포터리 공식 매장 목록을 해석하지 못했습니다');
+  return [...rows.values()];
+}
+
 async function fetchWithRetry(url, maxRetries) {
   let lastError;
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
       const res = await fetch(url, {
+        signal: AbortSignal.timeout(30000),
         headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' }
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -383,6 +412,27 @@ async function main() {
     await sleep(500);
   }
 
+  let potterySource;
+  try {
+    const response = await fetchWithRetry(POTTERY_STORE_URL, 3);
+    const officialRows = parsePotteryStores(await response.text(), now);
+    for (const row of officialRows) {
+      const existing = results.findIndex(item => CONFIG.rowKey(item) === CONFIG.rowKey(row));
+      if (existing === -1) results.push(row);
+      else results[existing] = row;
+    }
+    potterySource = { status: 'ok', count: officialRows.length, url: POTTERY_STORE_URL };
+    console.log(`포터리 공식 매장 대조: ${officialRows.length}개`);
+  } catch (error) {
+    potterySource = { status: 'error', error: error.message, url: POTTERY_STORE_URL };
+    for (const row of previousRows.filter(row => row.sourceUrl === POTTERY_STORE_URL && isPresent(row))) {
+      if (!results.some(item => CONFIG.rowKey(item) === CONFIG.rowKey(row))) {
+        results.push({ ...row, note: '수집 오류 - 직전 정상값 유지', dataQuality: 'stale' });
+      }
+    }
+    console.log(`포터리 공식 매장 대조 오류: ${error.message}`);
+  }
+
   // 사이트 구조상 자동 매칭이 어려운, 사람이 직접 확인한 상시 예외.
   const MANUAL_CONFIRMED = [
     { company: '롯데', store: '본점', brand: '바버' },
@@ -417,6 +467,7 @@ async function main() {
 
   // 한 회사가 통째로 비거나 급락한 날은 직전 정상값을 유지하고 저하 상태로 게시한다.
   const qualityIssues = [];
+  if (potterySource.status !== 'ok') qualityIssues.push(`포터리 보조 수집 실패: ${potterySource.error}`);
   for (const company of ['롯데', '현대', '신세계']) {
     const prevCount = previousRows.filter(r => r.company === company && isObserved(r)).length;
     const freshCount = results.filter(r => r.company === company && isObserved(r)).length;
@@ -489,6 +540,7 @@ async function main() {
     },
     health: { status: qualityIssues.length ? 'degraded' : 'ok', issues: qualityIssues },
     diagnostics,
+    supplementarySources: { pottery: potterySource },
     data: finalResults,
   };
 
@@ -523,4 +575,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { matchBrands, normalizeRow, isObserved, isPresent, observedSet, presenceSet, additionNote, exitNote, companyQualityIssue, koreaDateKey, loadMonthStartRows, buildJobList };
+module.exports = { matchBrands, parsePotteryStores, normalizeRow, isObserved, isPresent, observedSet, presenceSet, additionNote, exitNote, companyQualityIssue, koreaDateKey, loadMonthStartRows, buildJobList };

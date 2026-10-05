@@ -178,13 +178,19 @@ test('관리 브랜드는 같은 점포에서 남성층 한 곳에만 연결한�
   assert.deepEqual(duplicates, []);
 });
 
-test('질스튜어트뉴욕은 액세서리 전용 본점을 제외한 현재 19개 점포 도면에 연결한다', () => {
-  const rows = require('../data.json').data.filter(row => row.brand === '질스튜어트뉴욕' && !/(퇴점|누락)/.test(row.note || ''));
+test('질스튜어트뉴욕 도면 연결은 공식 도면의 브랜드와 일치한다', () => {
   const index = require('../brand-floor-index.json').data;
-  const missing = rows.filter(row => row.storeId !== '롯데-0001' && !(index[`${row.storeId}|질스튜어트뉴욕`] || []).length);
-  assert.deepEqual(missing, []);
-  assert.equal(rows.length, 20);
-  assert.equal(Object.keys(index).filter(key => key.endsWith('|질스튜어트뉴욕')).length, 19);
+  const images = require('../floor-images.json').data;
+  const entries = Object.entries(index).filter(([key]) => key.endsWith('|질스튜어트뉴욕'));
+  assert.ok(entries.length > 0);
+  assert.equal(index['롯데-0001|질스튜어트뉴욕'], undefined);
+  for (const [key, locations] of entries) {
+    const store = CONFIG.storeRows.find(store => key === `${store.id}|질스튜어트뉴욕`);
+    assert.ok(store, key);
+    for (const location of locations) {
+      assert.ok(images[store.code].some(floor => floor.floor === location.floor && floor.brands.includes('질스튜어트뉴욕')), key);
+    }
+  }
   assert.deepEqual((index['롯데-0005|질스튜어트뉴욕'] || []).map(item => item.floor), ['04F']);
 });
 

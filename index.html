@@ -2497,14 +2497,22 @@
         .catch(() => { committedReviewDecisions = []; });
     }
 
+    function recentNewsOnly(items, now = Date.now()) {
+      const cutoff = now - 60 * 86400000;
+      return (items || []).filter(article => {
+        const published = Date.parse(article.pubDate);
+        return Number.isFinite(published) && published >= cutoff && published <= now;
+      });
+    }
+
     function loadNews() {
       fetch('news.json?_=' + Date.now())
         .then(res => { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
         .then(payload => {
-          newsData = payload.data || {};
-          newsIndustry = payload.industry || [];
+          newsData = Object.fromEntries(Object.entries(payload.data || {}).map(([brand, items]) => [brand, recentNewsOnly(items)]));
+          newsIndustry = recentNewsOnly(payload.industry);
           newsLastUpdated = payload.lastUpdated || '';
-          newsWindowDays = payload.windowDays || 60;
+          newsWindowDays = 60;
           if (currentTab === 'news') renderNews();
           if (currentTab === 'overview') renderOverview();
         })
@@ -2634,6 +2642,8 @@
     }
 
     function renderNews() {
+      newsData = Object.fromEntries(Object.entries(newsData).map(([brand, items]) => [brand, recentNewsOnly(items)]));
+      newsIndustry = recentNewsOnly(newsIndustry);
       const escapeHtml = s => String(s == null ? '' : s)
         .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
         .replace(/"/g, '&quot;').replace(/'/g, '&#39;');

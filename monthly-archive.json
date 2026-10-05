@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T04:00:38.259Z",
+  "generatedAt": "2026-10-05T09:56:09.962Z",
   "months": [
     {
       "month": "2026-08",
@@ -141,13 +141,19 @@
     {
       "month": "2026-10",
       "baselineSnapshot": "2026-09-30",
-      "endSnapshot": "2026-10-01",
+      "endSnapshot": "2026-10-05",
       "new": [
         {
           "company": "롯데",
           "store": "잠실에비뉴엘",
           "storeId": "롯데-0348",
           "brand": "TEN-C"
+        },
+        {
+          "company": "롯데",
+          "store": "잠실점",
+          "storeId": "롯데-0002",
+          "brand": "산드로옴므"
         },
         {
           "company": "롯데",
@@ -160,6 +166,12 @@
           "store": "하남",
           "storeId": "신세계-SC00012",
           "brand": "알레그리"
+        },
+        {
+          "company": "현대",
+          "store": "판교",
+          "storeId": "현대-B00148000",
+          "brand": "POTTERY"
         }
       ],
       "exit": []

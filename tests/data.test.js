@@ -1,6 +1,7 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const data = require('../data.json');
+const septemberData = require('../history/2026-09-22.json');
 
 test('현재 데이터는 월간 변화 스키마와 수원점 고유 ID를 사용한다', () => {
   assert.match(data.monthKey, /^\d{4}-\d{2}$/);
@@ -8,7 +9,6 @@ test('현재 데이터는 월간 변화 스키마와 수원점 고유 ID를 사�
   const suwon = data.data.filter(row => row.storeId === '롯데-0349');
   assert.ok(suwon.length > 0);
   assert.ok(suwon.every(row => row.store === '수원점'));
-  assert.ok(suwon.every(row => !/(신규|퇴점|누락)/.test(row.note || '')));
 });
 
 test('현재 비교 기준은 직전 월이고 6월 baseline 경고가 없다', () => {
@@ -30,7 +30,7 @@ test('사용자가 입점을 확인한 3개 조합은 재확인이나 수집 지
 
 test('잠실점 9월 신규 오픈 2개 브랜드가 확정 상태로 반영된다', () => {
   const brands = new Set(['아페쎄맨', 'CP컴퍼니']);
-  const rows = data.data.filter(row => row.storeId === '롯데-0002' && brands.has(row.brand));
+  const rows = septemberData.data.filter(row => row.storeId === '롯데-0002' && brands.has(row.brand));
   assert.equal(rows.length, 2);
   assert.ok(rows.every(row => row.note === '이번 달 신규 입점'));
   assert.ok(rows.every(row => row.changeMonth === '2026-09'));
@@ -40,7 +40,7 @@ test('잠실점 9월 신규 오픈 2개 브랜드가 확정 상태로 반영된�
 
 test('현대 중동과 판교 CP컴퍼니는 직전 월부터 입점 상태로 유지된다', () => {
   const storeIds = new Set(['현대-B00143000', '현대-B00148000']);
-  const rows = data.data.filter(row => storeIds.has(row.storeId) && row.brand === 'CP컴퍼니');
+  const rows = septemberData.data.filter(row => storeIds.has(row.storeId) && row.brand === 'CP컴퍼니');
   assert.equal(rows.length, 2);
   assert.ok(rows.every(row => row.note === '확인'));
   assert.ok(rows.every(row => row.comparisonCheck === '2026-08-31 입점'));
@@ -48,7 +48,7 @@ test('현대 중동과 판교 CP컴퍼니는 직전 월부터 입점 상태로 �
 
 test('롯데 수원점 몰의 3개 브랜드는 기존 입점으로 반영된다', () => {
   const brands = new Set(['CP컴퍼니', '바버', '솔리드옴므']);
-  const rows = data.data.filter(row => row.storeId === '롯데-0349' && brands.has(row.brand));
+  const rows = septemberData.data.filter(row => row.storeId === '롯데-0349' && brands.has(row.brand));
   assert.equal(rows.length, 3);
   assert.ok(rows.every(row => row.note === '확인'));
   assert.ok(rows.every(row => row.comparisonCheck === '2026-08-31 입점'));

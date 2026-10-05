@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: '20'
 
-      - name: 뉴스 크롤러 실행
+      - name: 회귀 테스트
         run: npm test
 
       - name: 뉴스 데이터 수집
