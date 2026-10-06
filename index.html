@@ -2475,7 +2475,7 @@
     let newsData = {};
     let newsIndustry = [];
     let newsLastUpdated = '';
-    let newsWindowDays = 60;
+    let newsWindowDays = 14;
 
     function loadMonthlyArchive() {
       fetch('monthly-archive.json?_=' + Date.now())
@@ -2497,8 +2497,8 @@
         .catch(() => { committedReviewDecisions = []; });
     }
 
-    function recentNewsOnly(items, now = Date.now()) {
-      const cutoff = now - 60 * 86400000;
+    function recentNewsOnly(items, now = Date.now(), windowDays = newsWindowDays) {
+      const cutoff = now - windowDays * 86400000;
       return (items || []).filter(article => {
         const published = Date.parse(article.pubDate);
         return Number.isFinite(published) && published >= cutoff && published <= now;
@@ -2512,7 +2512,7 @@
           newsData = Object.fromEntries(Object.entries(payload.data || {}).map(([brand, items]) => [brand, recentNewsOnly(items)]));
           newsIndustry = recentNewsOnly(payload.industry);
           newsLastUpdated = payload.lastUpdated || '';
-          newsWindowDays = 60;
+          newsWindowDays = 14;
           if (currentTab === 'news') renderNews();
           if (currentTab === 'overview') renderOverview();
         })

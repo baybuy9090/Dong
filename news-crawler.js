@@ -80,7 +80,7 @@ const INDUSTRY_QUERIES = ['남성 컨템포러리', '맨즈 컨템포러리'];
 
 const ARTICLES_PER_BRAND = 8;
 const INDUSTRY_ARTICLES = 8;
-const NEWS_WINDOW_DAYS = 60;
+const NEWS_WINDOW_DAYS = 14;
 
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
