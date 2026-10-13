@@ -503,6 +503,7 @@ if (require.main === module) {
 }
 
 module.exports = {
+  NEWS_WINDOW_DAYS,
   isExcludedArticle,
   normalizeNewsDate, filterRecentAndSort, parseGoogleItems,
   classifySentiment, classifyEvents, titleSimilarity, dedupSimilarTitles,

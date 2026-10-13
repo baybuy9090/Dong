@@ -12,11 +12,11 @@ test('확인된 과거 기사는 검색 날짜나 링크가 바뀌어도 다시 
   assert.equal(isExcludedArticle({ ...article, title: '클럽모나코 신규 매장 오픈' }), false);
   assert.equal(isExcludedArticle({ ...article, source: '다른 언론사' }), false);
 });
-const { normalizeNewsDate, filterRecentAndSort, parseGoogleItems } = require('../news-crawler');
+const { NEWS_WINDOW_DAYS, normalizeNewsDate, filterRecentAndSort, parseGoogleItems } = require('../news-crawler');
 
-test('뉴스는 재사용 기사도 60일 경계와 미래·잘못된 날짜를 검사한다', () => {
+test('뉴스는 재사용 기사도 설정된 기간 경계와 미래·잘못된 날짜를 검사한다', () => {
   const now = Date.parse('2026-10-05T00:00:00Z');
-  const cutoff = now - 60 * 86400000;
+  const cutoff = now - NEWS_WINDOW_DAYS * 86400000;
   const items = [cutoff - 1, cutoff, now, now + 1].map(timestamp => ({ pubDate: new Date(timestamp).toISOString() }));
   items.push({ pubDate: null }, { pubDate: 'invalid' }, {});
   assert.deepEqual(filterRecentAndSort(items, now).map(item => Date.parse(item.pubDate)), [now, cutoff]);
@@ -32,12 +32,18 @@ test('RSS의 잘못된 날짜 하나 때문에 전체 수집이 실패하지 않
   assert.deepEqual(filterRecentAndSort(items), []);
 });
 
-test('화면의 날짜 필터도 수집기의 60일 기준과 일치한다', () => {
+test('화면의 날짜 필터와 기본 기간은 수집기 설정과 일치한다', () => {
   const html = require('node:fs').readFileSync(require('node:path').join(__dirname, '../index.html'), 'utf8');
-  const source = html.match(/function recentNewsOnly\(items, now = Date.now\(\)\) \{[\s\S]*?\n    \}/)[0];
-  const filter = require('node:vm').runInNewContext(`(${source})`);
+  const source = html.match(/function recentNewsOnly\([^\n]+\) \{[\s\S]*?\n    \}/);
+  assert.ok(source, '화면 뉴스 필터 함수가 필요합니다');
+  const settings = [...html.matchAll(/\bnewsWindowDays\s*=\s*(\d+)/g)].map(match => Number(match[1]));
+  assert.ok(settings.length > 0);
+  assert.ok(settings.every(days => days === NEWS_WINDOW_DAYS));
+  const filter = require('node:vm').runInNewContext(`(${source[0]})`, { newsWindowDays: settings[0] });
   const now = Date.parse('2026-10-05T00:00:00Z');
-  const items = ['2005-01-01', '2026-09-05', 'invalid', '2027-01-01'].map(pubDate => ({ pubDate }));
+  const cutoff = now - NEWS_WINDOW_DAYS * 86400000;
+  const items = [now, cutoff, cutoff - 1, now + 1].map(timestamp => ({ pubDate: new Date(timestamp).toISOString() }));
+  items.push({ pubDate: 'invalid' }, {});
   assert.equal(JSON.stringify(filter(items, now)), JSON.stringify(filterRecentAndSort(items, now)));
 });
 
