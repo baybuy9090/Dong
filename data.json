@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-10-06T04:41:38.990Z",
+  "lastUpdated": "2026-10-14T03:23:52.595Z",
   "comparisonAsOf": "2026-09-30",
   "monthKey": "2026-10",
   "monthStartSnapshot": "2026-09-30",
   "monthlySummary": {
     "new": 5,
     "exit": 0,
-    "pending": 0,
+    "pending": 1,
     "stale": 0
   },
   "health": {
@@ -319,7 +319,7 @@
       "company": "현대",
       "store": "판교",
       "status": "ok",
-      "brands": 22,
+      "brands": 23,
       "successfulPages": 1,
       "failedPages": 0,
       "expectedPages": 1
@@ -369,7 +369,7 @@
       "company": "신세계",
       "store": "대구",
       "status": "ok",
-      "brands": 18,
+      "brands": 17,
       "successfulPages": 1,
       "failedPages": 0,
       "expectedPages": 1
@@ -3086,6 +3086,17 @@
       "company": "현대",
       "store": "판교",
       "storeId": "현대-B00148000",
+      "brand": "POTTERY",
+      "sales": "",
+      "note": "이번 달 신규 입점",
+      "sourceUrl": "https://ptry.co.kr/offline.html",
+      "changeMonth": "2026-10",
+      "comparisonCheck": "2026-09-30 미입점"
+    },
+    {
+      "company": "현대",
+      "store": "판교",
+      "storeId": "현대-B00148000",
       "brand": "띠어리맨",
       "sales": "",
       "note": "확인",
@@ -3726,15 +3737,6 @@
       "store": "대구",
       "storeId": "신세계-SC00013",
       "brand": "이로맨",
-      "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-09-30 입점"
-    },
-    {
-      "company": "신세계",
-      "store": "대구",
-      "storeId": "신세계-SC00013",
-      "brand": "지오송지오",
       "sales": "",
       "note": "확인",
       "comparisonCheck": "2026-09-30 입점"
@@ -4797,23 +4799,22 @@
       "comparisonCheck": "2026-09-30 입점"
     },
     {
-      "company": "현대",
-      "store": "판교",
-      "storeId": "현대-B00148000",
-      "brand": "POTTERY",
-      "sales": "",
-      "note": "이번 달 신규 입점",
-      "sourceUrl": "https://ptry.co.kr/offline.html",
-      "changeMonth": "2026-10",
-      "comparisonCheck": "2026-09-30 미입점"
-    },
-    {
       "company": "롯데",
       "store": "본점",
       "brand": "바버",
       "storeId": "롯데-0001",
       "sales": "",
       "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
+    },
+    {
+      "company": "신세계",
+      "store": "대구",
+      "storeId": "신세계-SC00013",
+      "brand": "지오송지오",
+      "sales": "",
+      "note": "퇴점 재확인 중",
+      "changeMonth": "2026-10",
       "comparisonCheck": "2026-09-30 입점"
     }
   ]
