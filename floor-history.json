@@ -1,7 +1,253 @@
 {
   "schemaVersion": 5,
-  "lastUpdated": "2026-10-14T06:01:10.292Z",
+  "lastUpdated": "2026-10-15T05:45:58.505Z",
   "events": [
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "본점",
+      "storeId": "롯데-0001",
+      "floor": "14F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "본점",
+      "storeId": "롯데-0001",
+      "floor": "09F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "본점",
+      "storeId": "롯데-0001",
+      "floor": "B1F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "울산점",
+      "storeId": "롯데-0015",
+      "floor": "B1F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "인천점",
+      "storeId": "롯데-0344",
+      "floor": "04F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "잠실점",
+      "storeId": "롯데-0002",
+      "floor": "02F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "잠실에비뉴엘",
+      "storeId": "롯데-0348",
+      "floor": "06F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "잠실에비뉴엘",
+      "storeId": "롯데-0348",
+      "floor": "05F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "잠실에비뉴엘",
+      "storeId": "롯데-0348",
+      "floor": "B1F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "청량리",
+      "storeId": "롯데-0004",
+      "floor": "07F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "청량리",
+      "storeId": "롯데-0004",
+      "floor": "04F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "청량리",
+      "storeId": "롯데-0004",
+      "floor": "03F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "청량리",
+      "storeId": "롯데-0004",
+      "floor": "02F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "청량리",
+      "storeId": "롯데-0004",
+      "floor": "B1F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "청량리",
+      "storeId": "롯데-0004",
+      "floor": "B2F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "평촌점",
+      "storeId": "롯데-0341",
+      "floor": "03F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "평촌점",
+      "storeId": "롯데-0341",
+      "floor": "B1F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "현대",
+      "store": "미아",
+      "storeId": "현대-B00141000",
+      "floor": "4F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "현대",
+      "store": "여의도",
+      "storeId": "현대-B00140000",
+      "floor": "4F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "현대",
+      "store": "킨텍스",
+      "storeId": "현대-B00145000",
+      "floor": "1F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "신세계",
+      "store": "김해",
+      "storeId": "신세계-SC00011",
+      "floor": "3F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "신세계",
+      "store": "대전",
+      "storeId": "신세계-SC00060",
+      "floor": "4F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "신세계",
+      "store": "센텀",
+      "storeId": "신세계-SC00008",
+      "floor": "4F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "신세계",
+      "store": "센텀",
+      "storeId": "신세계-SC00008",
+      "floor": "3F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "신세계",
+      "store": "천안아산",
+      "storeId": "신세계-SC00009",
+      "floor": "3F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "신세계",
+      "store": "타임스퀘어",
+      "storeId": "신세계-SC00003",
+      "floor": "4F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "도면 변경",
+      "company": "신세계",
+      "store": "하남",
+      "storeId": "신세계-SC00012",
+      "floor": "1F"
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "브랜드 추가",
+      "company": "신세계",
+      "store": "대구",
+      "storeId": "신세계-SC00013",
+      "brand": "산드로옴므",
+      "floors": [
+        "2F"
+      ],
+      "before": [],
+      "after": [
+        "2F"
+      ]
+    },
+    {
+      "detectedAt": "2026-10-15T05:45:58.505Z",
+      "type": "브랜드 추가",
+      "company": "신세계",
+      "store": "센텀",
+      "storeId": "신세계-SC00008",
+      "brand": "헤리티지플로스",
+      "floors": [
+        "5F"
+      ],
+      "before": [],
+      "after": [
+        "5F"
+      ]
+    },
     {
       "detectedAt": "2026-10-14T06:01:10.292Z",
       "type": "도면 변경",
@@ -3839,238 +4085,6 @@
       "store": "무역센터",
       "storeId": "현대-B00122000",
       "floor": "6F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "무역센터",
-      "storeId": "현대-B00122000",
-      "floor": "5F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "무역센터",
-      "storeId": "현대-B00122000",
-      "floor": "3F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "본점",
-      "storeId": "현대-B00121000",
-      "floor": "B2"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "신촌",
-      "storeId": "현대-B00127000",
-      "floor": "7F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "신촌",
-      "storeId": "현대-B00127000",
-      "floor": "2F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "신촌",
-      "storeId": "현대-B00127000",
-      "floor": "B2"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "여의도",
-      "storeId": "현대-B00140000",
-      "floor": "B1"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "울산",
-      "storeId": "현대-B00129000",
-      "floor": "13F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "울산",
-      "storeId": "현대-B00129000",
-      "floor": "6F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "중동",
-      "storeId": "현대-B00143000",
-      "floor": "2F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "중동",
-      "storeId": "현대-B00143000",
-      "floor": "WEST 2F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "천호",
-      "storeId": "현대-B00126000",
-      "floor": "2F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "천호",
-      "storeId": "현대-B00126000",
-      "floor": "B1"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "충청",
-      "storeId": "현대-B00147000",
-      "floor": "1F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "킨텍스",
-      "storeId": "현대-B00145000",
-      "floor": "4F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "킨텍스",
-      "storeId": "현대-B00145000",
-      "floor": "2F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "판교",
-      "storeId": "현대-B00148000",
-      "floor": "4F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "판교",
-      "storeId": "현대-B00148000",
-      "floor": "B1"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "대구",
-      "storeId": "현대-B00146000",
-      "floor": "2F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "신세계",
-      "store": "광주",
-      "storeId": "신세계-SC00006",
-      "floor": "2F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "신세계",
-      "store": "광주",
-      "storeId": "신세계-SC00006",
-      "floor": "1F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "신세계",
-      "store": "대구",
-      "storeId": "신세계-SC00013",
-      "floor": "5F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "층 추가",
-      "company": "신세계",
-      "store": "대구",
-      "storeId": "신세계-SC00013",
-      "floor": "4F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "신세계",
-      "store": "대구",
-      "storeId": "신세계-SC00013",
-      "floor": "3F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "신세계",
-      "store": "대전",
-      "storeId": "신세계-SC00060",
-      "floor": "3F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "신세계",
-      "store": "마산",
-      "storeId": "신세계-SC00005",
-      "floor": "1F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "신세계",
-      "store": "본점",
-      "storeId": "신세계-SC00001",
-      "floor": "4F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "신세계",
-      "store": "센텀",
-      "storeId": "신세계-SC00008",
-      "floor": "1F"
-    },
-    {
-      "detectedAt": "2026-09-18T05:44:21.896Z",
-      "type": "도면 변경",
-      "company": "신세계",
-      "store": "의정부",
-      "storeId": "신세계-SC00010",
-      "floor": "2F"
     }
   ],
   "current": {
@@ -4845,7 +4859,7 @@
       "label": "14F 식당가",
       "url": "floor-maps/lotte/0001/14F.svg",
       "brands": [],
-      "signature": "65622748bec485029360fa4fc11c66eff03465c887a695642f295c1c4e048d1c"
+      "signature": "aa79e2934a65a0b9e0cd7299020decc75162228de56baf8f29aeb91b949eadab"
     },
     "롯데-0001|13F|13F 식당가": {
       "company": "롯데",
@@ -4895,7 +4909,7 @@
       "label": "9F 면세점 l 키네틱 그라운드(K-패션 전문관)",
       "url": "floor-maps/lotte/0001/09F.svg",
       "brands": [],
-      "signature": "ea8b4f290667ed4f24e3310f727f166ef9793870f18ffefe05acb89ec3036a62"
+      "signature": "5f121c4be61e591dd49de259fd8707ac0e29716f8b0c28b618070d6d5f7211b8"
     },
     "롯데-0001|08F|8F 가전ㆍ가구ㅣ주방식기ㅣ홈데코ㅣ홈패션": {
       "company": "롯데",
@@ -5004,7 +5018,7 @@
       "label": "B1 푸드에비뉴ㅣ화장품ㅣ보석ㅣ핸드백 l 구두ㅣ문화센터",
       "url": "floor-maps/lotte/0001/B1F.svg",
       "brands": [],
-      "signature": "e9306c37b5350e72a01d61dea2be7a20dee7caf21d41f8f2bf06a38e0b859425"
+      "signature": "19fbc3d60275d10d9e8f2c6d42922ace3f48f8f4b15f1407a4993539c2c4d32e"
     },
     "롯데-0001|B2F|B2 주차장": {
       "company": "롯데",
@@ -5656,7 +5670,7 @@
       "label": "B1 식품관ㅣ생활가전",
       "url": "floor-maps/lotte/0015/B1F.svg",
       "brands": [],
-      "signature": "dfba28b03681be9ecd60b9c58d0b98a06dac835f7f54c50ae5c803f8257a7e8f"
+      "signature": "38d93634c3cef46b5c3f82aecdfa089d71b5c5c34489c355094b13ff9003578a"
     },
     "롯데-0344|07F|7F 주차장": {
       "company": "롯데",
@@ -5707,7 +5721,7 @@
         "타임옴므",
         "DKNY맨"
       ],
-      "signature": "d8cd14432c91fd07d531335028a0edb9087ee4d95c509a230176091209655a5e"
+      "signature": "6a1a30b3beda3fcaaa8ba6e96599f655b686ae7067630fd3343b7dbe4142c063"
     },
     "롯데-0344|03F|3F 아동·유아 | 여성·영패션 | 구두·핸드백 | 란제리": {
       "company": "롯데",
@@ -6017,7 +6031,7 @@
       "label": "2F 키네틱그라운드·무신사 | 캐릭터 | 진·영패션 | 슈즈",
       "url": "floor-maps/lotte/0002/02F.svg",
       "brands": [],
-      "signature": "c2176232c042bdb70338e329b0f5f7b83afe0bb79663268168841bafd1b40a87"
+      "signature": "1c8fbfad0ba6600013d571d1e580f4599f3d7ac3119a52d1facc410828c96871"
     },
     "롯데-0002|01F|1F 명품잡화ㅣ화장품ㅣ시계&보석": {
       "company": "롯데",
@@ -6077,7 +6091,7 @@
       "label": "6F 프리미엄 F&B ㅣ와인",
       "url": "floor-maps/lotte/0348/06F.svg",
       "brands": [],
-      "signature": "fe21f6c04bef6900283d533c8e350496f80e18775674db9f32e06634b10bb274"
+      "signature": "711599b5c022d4a9b72b04ea5a37f3837e23393356b9b12ed4c8ab4adc4aad72"
     },
     "롯데-0348|05F|5F 여성 컨템포러리": {
       "company": "롯데",
@@ -6087,7 +6101,7 @@
       "label": "5F 여성 컨템포러리",
       "url": "floor-maps/lotte/0348/05F.svg",
       "brands": [],
-      "signature": "cd247115dae896f99de25d891f637beb594b339c0860c8235fd53dac4960b6b7"
+      "signature": "751b6a26c139de7d024d31ae79c20eeb8dba6efe54c46584fa64c99c259bc504"
     },
     "롯데-0348|04F|4F 럭셔리 맨즈": {
       "company": "롯데",
@@ -6145,7 +6159,7 @@
       "label": "B1 카페 | 헤어샵 | 더크라운 | 팝업",
       "url": "floor-maps/lotte/0348/B1F.svg",
       "brands": [],
-      "signature": "bafa13eada9991b52df3a0253595d67f7ebc04c481619d54202f712d362bc0b3"
+      "signature": "ed98ac8eb2ea7a06f31759962f3f10f48da40a69c70df13f4a56ad80dd6082e7"
     },
     "롯데-0025|09F|9F 삐삐블럭ㅣ샤롯데가든": {
       "company": "롯데",
@@ -6363,7 +6377,7 @@
       "label": "7F 생활가전ㅣ식당가ㅣ테라스가든",
       "url": "floor-maps/lotte/0004/07F.svg",
       "brands": [],
-      "signature": "b9076e6aa0638ba76602451fc8e6b80a65ff0cce911c9333bc1a74bbcac80c8a"
+      "signature": "8c9940d631f1b142b8bdd78e0273c4223eaaa3fcee1fb72535f5d9fe3d6526cb"
     },
     "롯데-0004|06F|6F 스포츠ㅣ골프ㅣ아동": {
       "company": "롯데",
@@ -6395,7 +6409,7 @@
       "label": "4F 여성정장ㅣ구두ㅣ점행사장ㅣ사은행사장",
       "url": "floor-maps/lotte/0004/04F.svg",
       "brands": [],
-      "signature": "7e4a7321492c50ee1abffeaf092e5ee8012af1b81093d02fbc22af9165e783c6"
+      "signature": "d02b831f5c5d253b79ae8e3bd661692b0d5700ba80018ae237f618b4534199ae"
     },
     "롯데-0004|03F|3F 여성캐주얼ㅣ영캐주얼": {
       "company": "롯데",
@@ -6405,7 +6419,7 @@
       "label": "3F 여성캐주얼ㅣ영캐주얼",
       "url": "floor-maps/lotte/0004/03F.svg",
       "brands": [],
-      "signature": "80a5b9e8a9bff9bb7326ca39d7ab922477523d9a4e687995e508948b3b1750cf"
+      "signature": "d59d7b6619eea2e83f552f4b77040ac67b555ff1b0b70ea7d35853be68a96796"
     },
     "롯데-0004|02F|2F 영캐주얼ㅣ스트리트캐주얼": {
       "company": "롯데",
@@ -6415,7 +6429,7 @@
       "label": "2F 영캐주얼ㅣ스트리트캐주얼",
       "url": "floor-maps/lotte/0004/02F.svg",
       "brands": [],
-      "signature": "a55395e4a9750a73f6f57d48320486e99d35889d542ad2fa51c2c99b6538a100"
+      "signature": "151d096e9889c3aa58971fbc14f30617b69e79a6bf241a48e0f78e1ba0483e94"
     },
     "롯데-0004|01F|1F 화장품ㅣ패션ㆍ장신잡화": {
       "company": "롯데",
@@ -6435,7 +6449,7 @@
       "label": "B1 영플라자ㅣ교보문고",
       "url": "floor-maps/lotte/0004/B1F.svg",
       "brands": [],
-      "signature": "9e3c1a927f4ad857b20850187a5b4b92467e4b480961abf11b9e32b724a80484"
+      "signature": "69ba00a8669a2a34368691af74197abaa689299b3578ea9a027f09ce26e07d56"
     },
     "롯데-0004|B2F|B2 식품 슈퍼ㅣF&B": {
       "company": "롯데",
@@ -6445,7 +6459,7 @@
       "label": "B2 식품 슈퍼ㅣF&B",
       "url": "floor-maps/lotte/0004/B2F.svg",
       "brands": [],
-      "signature": "36ede25d196f61ee24cd742e61fd1c9e38c9c89e08f6180fff95dcaa1ecd2aec"
+      "signature": "2759c17b8148479ee41edca56a043b58e21db35b982130a4e989b2979888e7b6"
     },
     "롯데-0341|10F|10F 샤롯데가든ㅣ아웃백ㅣ카페": {
       "company": "롯데",
@@ -6533,7 +6547,7 @@
       "label": "3F 여성패션ㅣ패션잡화ㅣ핸드백ㅣ구두",
       "url": "floor-maps/lotte/0341/03F.svg",
       "brands": [],
-      "signature": "5c7cc51a4209e86a47f60e0af3f8711342c8ea6af673f82e8ac4accf2110e2ee"
+      "signature": "eb6fb0810f8c89762537aee4df35b62d2f1ad2ebeaaed5950fae7efb15ef3555"
     },
     "롯데-0341|02F|2F 영캐주얼ㅣ무신사 스탠다드": {
       "company": "롯데",
@@ -6563,7 +6577,7 @@
       "label": "B1 푸드에비뉴 | 팝업스테이지",
       "url": "floor-maps/lotte/0341/B1F.svg",
       "brands": [],
-      "signature": "bf50a2b3b23f38a36b79e59bcc1b48f9705d579e51fe109b1ccd572f31c33595"
+      "signature": "08a5cebc63390618c6528c493cbc0c2d6c1d059638a976d5a27c36b654f7ec97"
     },
     "롯데-0341|B2F|B2 주차장": {
       "company": "롯데",
@@ -7037,7 +7051,7 @@
       "label": "4F 층 안내도",
       "url": "floor-maps/hyundai/B00141000/4F.svg",
       "brands": [],
-      "signature": "8890b59bcaabef29d4b10cef5224f23835675fc802b1ad0bed2bc869aa2c4449"
+      "signature": "bec835d261ebb7a6bdcda9cafa545ff5a50094086a373a588791d6f37d00cc4d"
     },
     "현대-B00141000|3F|3F 층 안내도": {
       "company": "현대",
@@ -7442,7 +7456,7 @@
       "label": "4F 층 안내도",
       "url": "floor-maps/hyundai/B00140000/4F.svg",
       "brands": [],
-      "signature": "44dc7618ffe417f2d4d3c789d1a1332973a07c6d5de7b743b03bd51291a00682"
+      "signature": "bbb43b6677fb8366ff7aa0026fc7e49642c821d0f52343e3f97bc75006d0a3da"
     },
     "현대-B00140000|3F|3F 층 안내도": {
       "company": "현대",
@@ -8502,7 +8516,7 @@
       "label": "1F 층 안내도",
       "url": "floor-maps/hyundai/B00145000/1F.svg",
       "brands": [],
-      "signature": "3a963b7f2c3832860ec530b1dd382612ed96af3620760ee1ade52404cbd9f76d"
+      "signature": "dcb74a2e5bccf88a4d9f8fd92abfd644bddd0ba1d2a0c58517c83fa9b541cbaf"
     },
     "현대-B00145000|B1|B1 층 안내도": {
       "company": "현대",
@@ -9216,13 +9230,13 @@
       "storeId": "신세계-SC00011",
       "floor": "3F",
       "label": "3F 남성/스포츠/캐주얼 안내도",
-      "url": "https://www.shinsegae.com/cms12/SC00011/guide/floor/__icsFiles/afieldfile/2026/09/21/DxEYO2QubD0R.jpg",
+      "url": "https://www.shinsegae.com/cms12/SC00011/guide/floor/__icsFiles/afieldfile/2026/10/15/oPMtNof53KKC.jpg",
       "brands": [
         "지오송지오",
         "클럽모나코",
         "CP컴퍼니"
       ],
-      "signature": "2505750a68bb5e22eadea13ae78be57f6684fda195992712a663599be613dc3a"
+      "signature": "2f7d642887b311c7e39b5dc107d60a43307cbe4251b23fcb7ddb633205d68e28"
     },
     "신세계-SC00011|2F|2F 여성/아동·유아/구두/라이프스타일 안내도": {
       "company": "신세계",
@@ -9336,6 +9350,7 @@
         "맨온더분",
         "바버",
         "비이커",
+        "산드로옴므",
         "솔리드옴므",
         "송지오옴므",
         "스톤아일랜드",
@@ -9350,7 +9365,7 @@
         "타임옴므",
         "CP컴퍼니"
       ],
-      "signature": "f09184408fa52575c964c1853525c5fea68ea5a2669cc5ac40823bd4349ce487"
+      "signature": "ac06a7ba3fb3f1ae073f05ddc195126b0955d2573da6d7f6390261670d52820f"
     },
     "신세계-SC00013|1F|1F 화장품｜액세서리｜럭셔리 워치 안내도": {
       "company": "신세계",
@@ -9428,9 +9443,9 @@
       "storeId": "신세계-SC00060",
       "floor": "4F",
       "label": "4F 스포츠/아웃도어 ｜골프｜리틀신세계(아동/유아)｜란제리 안내도",
-      "url": "https://www.shinsegae.com/cms12/SC00060/guide/floor/__icsFiles/afieldfile/2026/10/09/4F_261009_2-20261009110950-20261009110953.png",
+      "url": "https://www.shinsegae.com/cms12/SC00060/guide/floor/__icsFiles/afieldfile/2026/10/15/4F_261015-20261015095234-20261015095238.png",
       "brands": [],
-      "signature": "30bd3190969d592d0618001b3702d4c9cdf79b0f9c590d97801186f3324dacbd"
+      "signature": "98652112c060bf8a58bdf4ae36c8a0fbea576a667a4b38418a81464cfe3dd1ee"
     },
     "신세계-SC00060|3F|3F 여성｜남성｜슈즈｜핸드백 안내도": {
       "company": "신세계",
@@ -9813,7 +9828,7 @@
       "storeId": "신세계-SC00008",
       "floor": "5F",
       "label": "5F 남성/씨네드쉐프 안내도",
-      "url": "https://www.shinsegae.com/cms12/SC00008/guide/floor/__icsFiles/afieldfile/2026/10/12/5F-260910-20260910094437-20260910094439.jpg",
+      "url": "https://www.shinsegae.com/cms12/SC00008/guide/floor/__icsFiles/afieldfile/2026/10/15/5F-261015-20261015100725-20261015100728.jpg",
       "brands": [
         "띠어리맨",
         "맨온더분",
@@ -9833,10 +9848,11 @@
         "지오송지오",
         "질스튜어트뉴욕",
         "타임옴므",
+        "헤리티지플로스",
         "CP컴퍼니",
         "DKNY맨"
       ],
-      "signature": "b2af8193ae3aebd18b9adfda11dec7591274f803344b827393c16b0d5677d728"
+      "signature": "a9cf16824ecb8806b36f682060fc6aaca2330df4edafabb8ff8586006cc863fd"
     },
     "신세계-SC00008|4F|4F 뉴컨템퍼러리/아이스링크 안내도": {
       "company": "신세계",
@@ -9844,9 +9860,9 @@
       "storeId": "신세계-SC00008",
       "floor": "4F",
       "label": "4F 뉴컨템퍼러리/아이스링크 안내도",
-      "url": "https://www.shinsegae.com/cms12/SC00008/guide/floor/__icsFiles/afieldfile/2026/09/01/4F-260901-20260901095252-20260901095254.jpg",
+      "url": "https://www.shinsegae.com/cms12/SC00008/guide/floor/__icsFiles/afieldfile/2026/10/15/4F-261015-20261015100645-20261015100648.jpg",
       "brands": [],
-      "signature": "b3bde5cc18c18ee19d29a0fe11420c32eab74c0dbc22dd58e452622249b6cad8"
+      "signature": "64dea5ed5193ed4fe2246fc7e975db9919fcc8d07799d181191c86b0bbec0df6"
     },
     "신세계-SC00008|3F|3F 컨템퍼러리/란제리 안내도": {
       "company": "신세계",
@@ -9854,9 +9870,9 @@
       "storeId": "신세계-SC00008",
       "floor": "3F",
       "label": "3F 컨템퍼러리/란제리 안내도",
-      "url": "https://www.shinsegae.com/cms12/SC00008/guide/floor/__icsFiles/afieldfile/2026/10/01/3F-261001-20261001111815-20261001111816.jpg",
+      "url": "https://www.shinsegae.com/cms12/SC00008/guide/floor/__icsFiles/afieldfile/2026/10/15/3F-261015-20261015100551-20261015100620.jpg",
       "brands": [],
-      "signature": "1673deb883ba4121491aba7797be106d57f1e51eea69e5bc529fecc67601b91e"
+      "signature": "a91d0c53333a170c6d6da080668cdc37bc7cc8c69e18b0d185a6b62a9ce767b4"
     },
     "신세계-SC00008|2F|2F 해외유명브랜드/럭셔리 워치 안내도": {
       "company": "신세계",
@@ -10035,7 +10051,7 @@
       "storeId": "신세계-SC00009",
       "floor": "3F",
       "label": "3F 남성/골프 안내도",
-      "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/10/02/A-3-20261002021247-20261002021249.jpg",
+      "url": "https://www.shinsegae.com/cms12/SC00009/guide/floor/__icsFiles/afieldfile/2026/10/14/A-3-20261014054339-20261014054342.jpg",
       "brands": [
         "띠어리맨",
         "솔리드옴므",
@@ -10044,7 +10060,7 @@
         "클럽모나코",
         "타임옴므"
       ],
-      "signature": "0650c04b0eeb5fe5cabb18f2829ec7c8771d2026deae04e1c5a35b620e2ef9d3"
+      "signature": "3e102166bb7bb1de27c4a46e8dfa7e394246573d12cf5e35f92c70e83ec82256"
     },
     "신세계-SC00009|2F|2F 여성패션 안내도": {
       "company": "신세계",
@@ -10154,9 +10170,9 @@
       "storeId": "신세계-SC00003",
       "floor": "4F",
       "label": "4F 여성캐주얼ㅣ잡화 안내도",
-      "url": "https://www.shinsegae.com/cms12/SC00003/guide/floor/__icsFiles/afieldfile/2026/09/15/KpvImX1JFR80.png",
+      "url": "https://www.shinsegae.com/cms12/SC00003/guide/floor/__icsFiles/afieldfile/2026/10/15/tm8Z0AFR7JLI.png",
       "brands": [],
-      "signature": "389ffe9e397be9b1f9089f92612c382ddf383e09c68c677b8cc874318c2dd941"
+      "signature": "93c6c4e74a1871f89e8899deff6e79b44e1b8a1e2b7e147816d0e1908d69a629"
     },
     "신세계-SC00003|3F|3F 여성 패션 안내도": {
       "company": "신세계",
@@ -10242,9 +10258,9 @@
       "storeId": "신세계-SC00012",
       "floor": "1F",
       "label": "1F 여성패션 I 여성캐주얼 I 아동·유아 (리틀신세계) 안내도",
-      "url": "https://www.shinsegae.com/cms12/SC00012/guide/floor/__icsFiles/afieldfile/2026/10/13/zLR99mxUxdXI.png",
+      "url": "https://www.shinsegae.com/cms12/SC00012/guide/floor/__icsFiles/afieldfile/2026/10/14/aCWlOM4X7kbp.png",
       "brands": [],
-      "signature": "e4a8df28462f3222563e6003e85e0e1c6f3cd7ec98d2689a354a3a476b4ffee0"
+      "signature": "47e3408e1687df1a8530160642354a72c622e3d78b86da76c89237b9300eb938"
     },
     "신세계-SC00012|B1F|B1  푸드홀·식당가 (고메가든) I 생활 안내도": {
       "company": "신세계",
