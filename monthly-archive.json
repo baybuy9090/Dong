@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T03:27:13.585Z",
+  "generatedAt": "2026-10-15T03:05:03.201Z",
   "months": [
     {
       "month": "2026-08",
@@ -141,7 +141,7 @@
     {
       "month": "2026-10",
       "baselineSnapshot": "2026-09-30",
-      "endSnapshot": "2026-10-14",
+      "endSnapshot": "2026-10-15",
       "new": [
         {
           "company": "롯데",
@@ -160,6 +160,18 @@
           "store": "전주점",
           "storeId": "롯데-0025",
           "brand": "질스튜어트뉴욕"
+        },
+        {
+          "company": "신세계",
+          "store": "대구",
+          "storeId": "신세계-SC00013",
+          "brand": "산드로옴므"
+        },
+        {
+          "company": "신세계",
+          "store": "센텀",
+          "storeId": "신세계-SC00008",
+          "brand": "헤리티지플로스"
         },
         {
           "company": "신세계",

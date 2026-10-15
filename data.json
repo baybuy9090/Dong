@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-10-14T03:23:52.595Z",
+  "lastUpdated": "2026-10-15T03:02:12.196Z",
   "comparisonAsOf": "2026-09-30",
   "monthKey": "2026-10",
   "monthStartSnapshot": "2026-09-30",
   "monthlySummary": {
     "new": 5,
-    "exit": 0,
-    "pending": 1,
+    "exit": 1,
+    "pending": 2,
     "stale": 0
   },
   "health": {
@@ -369,7 +369,7 @@
       "company": "신세계",
       "store": "대구",
       "status": "ok",
-      "brands": 17,
+      "brands": 18,
       "successfulPages": 1,
       "failedPages": 0,
       "expectedPages": 1
@@ -409,7 +409,7 @@
       "company": "신세계",
       "store": "센텀",
       "status": "ok",
-      "brands": 21,
+      "brands": 22,
       "successfulPages": 1,
       "failedPages": 0,
       "expectedPages": 1
@@ -3709,6 +3709,16 @@
       "company": "신세계",
       "store": "대구",
       "storeId": "신세계-SC00013",
+      "brand": "산드로옴므",
+      "sales": "",
+      "note": "신규 입점 재확인 중",
+      "changeMonth": "2026-10",
+      "comparisonCheck": "2026-09-30 미입점"
+    },
+    {
+      "company": "신세계",
+      "store": "대구",
+      "storeId": "신세계-SC00013",
       "brand": "솔리드옴므",
       "sales": "",
       "note": "확인",
@@ -4127,6 +4137,16 @@
       "sales": "",
       "note": "확인",
       "comparisonCheck": "2026-09-30 입점"
+    },
+    {
+      "company": "신세계",
+      "store": "센텀",
+      "storeId": "신세계-SC00008",
+      "brand": "헤리티지플로스",
+      "sales": "",
+      "note": "신규 입점 재확인 중",
+      "changeMonth": "2026-10",
+      "comparisonCheck": "2026-09-30 미입점"
     },
     {
       "company": "신세계",
@@ -4813,7 +4833,7 @@
       "storeId": "신세계-SC00013",
       "brand": "지오송지오",
       "sales": "",
-      "note": "퇴점 재확인 중",
+      "note": "이번 달 퇴점",
       "changeMonth": "2026-10",
       "comparisonCheck": "2026-09-30 입점"
     }
