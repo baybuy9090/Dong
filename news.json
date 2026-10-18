@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-10-17T01:10:33.951Z",
+  "lastUpdated": "2026-10-18T00:42:41.060Z",
   "windowDays": 14,
   "coverage": {
     "total": 37,
-    "withNews": 18
+    "withNews": 17
   },
   "diagnostics": [
     {
@@ -51,7 +51,7 @@
         "시스템옴므",
         "시스템옴므 패션 브랜드"
       ],
-      "candidates": 5,
+      "candidates": 4,
       "sources": {
         "google": true,
         "naver": true
@@ -64,7 +64,7 @@
         "우영미",
         "우영미 패션 브랜드"
       ],
-      "candidates": 3,
+      "candidates": 2,
       "sources": {
         "google": true,
         "naver": true
@@ -103,7 +103,7 @@
         "스톤아일랜드",
         "스톤아일랜드 패션 브랜드"
       ],
-      "candidates": 2,
+      "candidates": 1,
       "sources": {
         "google": true,
         "naver": true
@@ -206,7 +206,7 @@
         "바버",
         "바버 패션 브랜드"
       ],
-      "candidates": 14,
+      "candidates": 15,
       "sources": {
         "google": true,
         "naver": true
@@ -374,7 +374,7 @@
         "PAF 패션 브랜드",
         "포스트아카이브팩션"
       ],
-      "candidates": 1,
+      "candidates": 0,
       "sources": {
         "google": true,
         "naver": true
@@ -399,7 +399,7 @@
         "이스트로그 패션",
         "프레이트 패션"
       ],
-      "candidates": 4,
+      "candidates": 2,
       "sources": {
         "google": true,
         "naver": true
@@ -483,10 +483,40 @@
   ],
   "industry": [
     {
-      "title": "세븐틴 정한X조슈아, 뷰티·패션 브랜드 앰배서더 발탁",
-      "link": "https://www.bntnews.co.kr/article/view/bnt202610170091",
-      "source": "bntnews.co.kr",
-      "pubDate": "2026-10-17T00:22:00.000Z",
+      "title": "[패션·잡화 트렌드] 몽클로스, 일본 로프트 입점 확대…헤어·바디케어...",
+      "link": "https://www.ibabynews.com/news/articleView.html?idxno=155303",
+      "source": "ibabynews.com",
+      "pubDate": "2026-10-18T00:22:00.000Z",
+      "sentiment": "neutral",
+      "events": [
+        "신규 매장·팝업",
+        "입점·유통",
+        "협업·신제품"
+      ]
+    },
+    {
+      "title": "“이제 이 옷 사려고 일본 안가도 된다”…한국에 상륙한 J패션의 정체",
+      "link": "https://www.mk.co.kr/article/12178424",
+      "source": "mk.co.kr",
+      "pubDate": "2026-10-17T04:22:00.000Z",
+      "sentiment": "neutral",
+      "events": []
+    },
+    {
+      "title": "세븐틴 정한X조슈아, 파리 패션위크 휩쓸더니…브랜드 앰배서더 잇단 발...",
+      "link": "https://mhnse.com/news/articleView.html?idxno=1598208",
+      "source": "mhnse.com",
+      "pubDate": "2026-10-17T01:24:00.000Z",
+      "sentiment": "neutral",
+      "events": [
+        "협업·신제품"
+      ]
+    },
+    {
+      "title": "세븐틴 정한·조슈아, 명품·뷰티 잇단 발탁…광고계 접수",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16249597",
+      "source": "topstarnews.net",
+      "pubDate": "2026-10-17T00:12:00.000Z",
       "sentiment": "neutral",
       "events": [
         "협업·신제품"
@@ -528,34 +558,6 @@
       "pubDate": "2026-10-15T15:00:00.000Z",
       "sentiment": "neutral",
       "events": []
-    },
-    {
-      "title": "신세계 센텀시티, '러프사이드·블랭크룸' 부산 첫 입점",
-      "link": "https://www.ajunews.com/view/20261015203505491",
-      "source": "ajunews.com",
-      "pubDate": "2026-10-15T11:58:00.000Z",
-      "sentiment": "neutral",
-      "events": [
-        "입점·유통"
-      ]
-    },
-    {
-      "title": "[뷰티업계 9월 동향] 아모레퍼시픽, 창립 81주년 기념식-인베스터 데이...",
-      "link": "http://www.wsobi.com/news/articleView.html?idxno=319782",
-      "source": "wsobi.com",
-      "pubDate": "2026-10-15T08:14:00.000Z",
-      "sentiment": "neutral",
-      "events": []
-    },
-    {
-      "title": "[패션·잡화 트렌드] 올리비아로렌, '2026 겨울 컬렉션' 출시…기은세 뉴...",
-      "link": "https://www.ibabynews.com/news/articleView.html?idxno=155236",
-      "source": "ibabynews.com",
-      "pubDate": "2026-10-15T02:58:00.000Z",
-      "sentiment": "neutral",
-      "events": [
-        "협업·신제품"
-      ]
     }
   ],
   "data": {
@@ -611,14 +613,6 @@
         "events": [
           "협업·신제품"
         ]
-      },
-      {
-        "title": "갤러리아 명품관에 '국새 키캡' 떴다…K-콘텐츠로 中 국경절 공략",
-        "link": "https://www.apnews.kr/news/articleView.html?idxno=3051711",
-        "source": "apnews.kr",
-        "pubDate": "2026-10-03T04:00:00.000Z",
-        "sentiment": "neutral",
-        "events": []
       }
     ],
     "우영미": [
@@ -635,14 +629,6 @@
         "link": "https://www.newsis.com/view/NISX20261008_0003819792",
         "source": "newsis.com",
         "pubDate": "2026-10-09T21:00:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "갤러리아 명품관에 '국새 키캡' 떴다…K-콘텐츠로 中 국경절 공략",
-        "link": "https://www.apnews.kr/news/articleView.html?idxno=3051711",
-        "source": "apnews.kr",
-        "pubDate": "2026-10-03T04:00:00.000Z",
         "sentiment": "neutral",
         "events": []
       }
@@ -699,20 +685,22 @@
         "events": []
       },
       {
-        "title": "[패션 새소식] LF 바버, 아이들 미연과 26FW 스타일 제안… 준지, 안효섭과 26FW 화보 공개 外",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB1Nmx2RkdobC10aFM3dmNaQXFiOWs2NGM4dHdYRDZfNmRlazRwbmNNaXBhM3VBX0x3QTJsel9RMzIyS0t3S2lmT29JOE5qZVhyRDdTdndIZFVaZHRVc2x3NV9kV1ZrMENIZUtITjc3VHFxa3Yy0gF0QVVfeXFMUHU2bHZGR2hsLXRoUzd2Y1pBcWI5azY0Yzh0d1hENl82ZGVrNHBuY01pcGEzdUFfTHdBMmx6X1EzMjJLS3dLaWZPb0k4TmplWHJEN1N2d0hkVVpkdFVzbHc1X2RXVmswQ0hlS0hONzdUcXFrdjI?oc=5",
-        "source": "스포츠한국",
-        "pubDate": "2026-10-14T09:16:06.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
         "title": "안효섭이 완벽 소화한 ‘준지(JUUN.J)’ 파리 런웨이 룩",
         "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE52emtadFhjY05GOTJvRHpJY2JnU1pBZThkQVRLcmJ1Y0NRbGtTZlpxSFcwQXFRMXgwdlZGWXZ3aWxxMkdqMmc?oc=5",
         "source": "패션서울",
         "pubDate": "2026-10-14T09:02:18.000Z",
         "sentiment": "neutral",
         "events": []
+      },
+      {
+        "title": "[패션 새소식] LF 바버, 아이들 미연과 26FW 스타일 제안… 준지, 안효섭...",
+        "link": "https://sports.hankooki.com/news/articleView.html?idxno=6941669",
+        "source": "sports.hankooki.com",
+        "pubDate": "2026-10-14T08:50:00.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "협업·신제품"
+        ]
       }
     ],
     "송지오옴므": [
@@ -726,16 +714,6 @@
       }
     ],
     "스톤아일랜드": [
-      {
-        "title": "“포토그래퍼의 취향이 쌓인 빈티지 책장”",
-        "link": "https://woman.donga.com/3/all/12/6411793/1",
-        "source": "woman.donga.com",
-        "pubDate": "2026-10-12T22:02:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "협업·신제품"
-        ]
-      },
       {
         "title": "“성수를 도쿄 하라주쿠처럼”…이태리 디자이너와 손잡은 무신사 스탠...",
         "link": "https://www.mk.co.kr/article/12170306",
@@ -850,6 +828,16 @@
     ],
     "바버": [
       {
+        "title": "\"스타가 입고, 선수도 뛴다\"... 패션업계 '앰버서더 마케팅' 경쟁 [최기...",
+        "link": "https://www.meconomynews.com/news/articleView.html?idxno=202661",
+        "source": "meconomynews.com",
+        "pubDate": "2026-10-18T00:28:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품"
+        ]
+      },
+      {
         "title": "A.P.C. x 바버(Barbour), 아카이브의 쏜프루프 왁스 코튼을 활용한 FW26 컬렉션 공개",
         "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPX1pTUk5rWnVPZHk1d1VJYWM3QWpWZVN4Mld0eEhUSURUcW5IeTB2YWJqUjlGWGZNQmpiMXpNa1hvbjZLZ0M5ZURhMEhzYlE1anZRdHExbjJUVi1DWFJZUmw1THBsaERtZC1lUTRsR3B5QU5ZcEtaY2tUMEtwY1Q0eGRrT1BVWnRxeUNzcGFsWWVnVnk3RjJSRGtjUkFUUnhZZDV4Xw?oc=5",
         "source": "Hypebeast.KR",
@@ -914,14 +902,6 @@
         "pubDate": "2026-10-13T06:37:51.000Z",
         "sentiment": "neutral",
         "events": []
-      },
-      {
-        "title": "SSG닷컴, '패션명품 쓱세일' 개최…\"겨울옷 미리 준비하세요\"",
-        "link": "https://www.thepublic.kr/news/articleView.html?idxno=322037",
-        "source": "thepublic.kr",
-        "pubDate": "2026-10-13T06:28:00.000Z",
-        "sentiment": "positive",
-        "events": []
       }
     ],
     "산드로옴므": [
@@ -982,7 +962,7 @@
         "title": "알레그리, 챔피언스리그 2차전 앞두고 기자회견…비야레알전 준비",
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9nYnBwNThabnJ3OUJoSVVGVV9HMGJybDM2dlBNNXJtaGJZQWMtZlVWTzd2TjNWTHk5SmNybS10UEQ5VUpRVEFQc19GZi1VVlk0aHhoUGdjU0o2TFhIV1RMRTZpc1MzYTJuRm96a1B3?oc=5",
         "source": "국제뉴스",
-        "pubDate": "2026-10-09T07:00:00.000Z",
+        "pubDate": "2026-10-13T17:40:21.000Z",
         "sentiment": "neutral",
         "events": []
       }
@@ -1092,28 +1072,9 @@
     ],
     "POTTERY": [],
     "캡틴선샤인": [],
-    "PAF": [
-      {
-        "title": "포스트아카이브팩션(PAF), 한남동에 새 플래그십…26FW 3차 발매 동시 진행",
-        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE16Z05TTDRRQnMxY3VTTG5nLTBXTzNfNHUtWi1zSG83VWpodFRiRlhIcllyUjQ3MHFLWUZLMVhtTXdjWWFDUWhYdVVkY3g?oc=5",
-        "source": "TENANT news",
-        "pubDate": "2026-10-03T07:00:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "신규 매장·팝업"
-        ]
-      }
-    ],
+    "PAF": [],
     "TEN-C": [],
     "이스트로그(프레이트)": [
-      {
-        "title": "데상트, 스포츠 기술력에 이스트로그 밀리터리 감성 결합",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1qU0Q1dGsyU0Y1N2V6V0VydWVVdHJiS1NWbnJjVUN4ZDhMX2tPWHpaODl2ZVZUbTJ5eFdsYUNzNE5YU0tvR3loY0pzeVBONGlOYWpCUHoyczlqV2lELTBhNEZ5MGZ6SFFLOElNdmJ1VU43QQ?oc=5",
-        "source": "어패럴뉴스",
-        "pubDate": "2026-10-16T09:42:39.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
       {
         "title": "데상트 X 이스트로그, 두 번째 협업 '키네틱 컨투어' 컬렉션 공개",
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB1MUJmNTBTNVFJdW4xRGVqc05LdnhpOGd0eENuTi1RU204UnpJTjdrUTdzNUVUYkJIOXlkdWVsR050elY1azh2SWVkU205ekZw?oc=5",
@@ -1133,14 +1094,6 @@
         "events": [
           "협업·신제품"
         ]
-      },
-      {
-        "title": "'다시, 서울숲'…무신사, 14일까지 서울숲 상권 상생 캠페인",
-        "link": "https://www.wolyo.co.kr/news/articleView.html?idxno=318630",
-        "source": "wolyo.co.kr",
-        "pubDate": "2026-10-03T04:46:00.000Z",
-        "sentiment": "neutral",
-        "events": []
       }
     ],
     "헤리티지플로스": [],
