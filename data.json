@@ -1,153 +1,208 @@
 {
-  "lastUpdated": "2026-10-17T02:51:24.818Z",
+  "lastUpdated": "2026-10-18T02:53:00.622Z",
   "comparisonAsOf": "2026-09-30",
   "monthKey": "2026-10",
   "monthStartSnapshot": "2026-09-30",
   "monthlySummary": {
     "new": 4,
     "exit": 1,
-    "pending": 0,
-    "stale": 156
+    "pending": 3,
+    "stale": 0
   },
   "health": {
-    "status": "degraded",
-    "issues": [
-      "롯데 수집 품질 게이트 실패: 정상 1/160, 이상 지점 19/19"
-    ]
+    "status": "ok",
+    "issues": []
   },
   "diagnostics": [
     {
       "storeId": "롯데-0013",
       "company": "롯데",
       "store": "강남점",
-      "status": "error",
-      "error": "모든 층 호출 실패 (10/10)"
+      "status": "ok",
+      "brands": 5,
+      "successfulPages": 10,
+      "failedPages": 0,
+      "expectedPages": 10
     },
     {
       "storeId": "롯데-0333",
       "company": "롯데",
       "store": "광복점",
-      "status": "error",
-      "error": "모든 층 호출 실패 (10/10)"
+      "status": "ok",
+      "brands": 1,
+      "successfulPages": 10,
+      "failedPages": 0,
+      "expectedPages": 10
     },
     {
       "storeId": "롯데-0007",
       "company": "롯데",
       "store": "광주점",
-      "status": "error",
-      "error": "모든 층 호출 실패 (10/10)"
+      "status": "ok",
+      "brands": 6,
+      "successfulPages": 10,
+      "failedPages": 0,
+      "expectedPages": 10
     },
     {
       "storeId": "롯데-0022",
       "company": "롯데",
       "store": "노원점",
-      "status": "error",
-      "error": "모든 층 호출 실패 (10/10)"
+      "status": "ok",
+      "brands": 6,
+      "successfulPages": 10,
+      "failedPages": 0,
+      "expectedPages": 10
     },
     {
       "storeId": "롯데-0023",
       "company": "롯데",
       "store": "대구점",
-      "status": "error",
-      "error": "모든 층 호출 실패 (10/10)"
+      "status": "ok",
+      "brands": 8,
+      "successfulPages": 10,
+      "failedPages": 0,
+      "expectedPages": 10
     },
     {
       "storeId": "롯데-0399",
       "company": "롯데",
       "store": "동탄점",
-      "status": "error",
-      "error": "모든 층 호출 실패 (10/10)"
+      "status": "ok",
+      "brands": 10,
+      "successfulPages": 10,
+      "failedPages": 0,
+      "expectedPages": 10
     },
     {
       "storeId": "롯데-0001",
       "company": "롯데",
       "store": "본점",
-      "status": "error",
-      "error": "모든 층 호출 실패 (10/10)"
+      "status": "ok",
+      "brands": 20,
+      "successfulPages": 10,
+      "failedPages": 0,
+      "expectedPages": 10
     },
     {
       "storeId": "롯데-0005",
       "company": "롯데",
       "store": "부산본점",
-      "status": "error",
-      "error": "모든 층 호출 실패 (14/14)"
+      "status": "ok",
+      "brands": 20,
+      "successfulPages": 14,
+      "failedPages": 0,
+      "expectedPages": 14
     },
     {
       "storeId": "롯데-0349",
       "company": "롯데",
       "store": "수원점",
-      "status": "error",
-      "error": "모든 층 호출 실패 (15/15)"
+      "status": "ok",
+      "brands": 10,
+      "successfulPages": 15,
+      "failedPages": 0,
+      "expectedPages": 15
     },
     {
       "storeId": "롯데-0010",
       "company": "롯데",
       "store": "영등포",
-      "status": "error",
-      "error": "모든 층 호출 실패 (10/10)"
+      "status": "ok",
+      "brands": 2,
+      "successfulPages": 10,
+      "failedPages": 0,
+      "expectedPages": 10
     },
     {
       "storeId": "롯데-0015",
       "company": "롯데",
       "store": "울산점",
-      "status": "error",
-      "error": "모든 층 호출 실패 (10/10)"
+      "status": "ok",
+      "brands": 0,
+      "successfulPages": 10,
+      "failedPages": 0,
+      "expectedPages": 10
     },
     {
       "storeId": "롯데-0344",
       "company": "롯데",
       "store": "인천점",
-      "status": "error",
-      "error": "모든 층 호출 실패 (10/10)"
+      "status": "ok",
+      "brands": 16,
+      "successfulPages": 10,
+      "failedPages": 0,
+      "expectedPages": 10
     },
     {
       "storeId": "롯데-0011",
       "company": "롯데",
       "store": "일산",
-      "status": "error",
-      "error": "모든 층 호출 실패 (10/10)"
+      "status": "ok",
+      "brands": 2,
+      "successfulPages": 10,
+      "failedPages": 0,
+      "expectedPages": 10
     },
     {
       "storeId": "롯데-0002",
       "company": "롯데",
       "store": "잠실점",
-      "status": "error",
-      "error": "모든 층 호출 실패 (10/10)"
+      "status": "ok",
+      "brands": 22,
+      "successfulPages": 10,
+      "failedPages": 0,
+      "expectedPages": 10
     },
     {
       "storeId": "롯데-0348",
       "company": "롯데",
       "store": "잠실에비뉴엘",
-      "status": "error",
-      "error": "모든 층 호출 실패 (10/10)"
+      "status": "ok",
+      "brands": 6,
+      "successfulPages": 10,
+      "failedPages": 0,
+      "expectedPages": 10
     },
     {
       "storeId": "롯데-0025",
       "company": "롯데",
       "store": "전주점",
-      "status": "error",
-      "error": "모든 층 호출 실패 (10/10)"
+      "status": "ok",
+      "brands": 7,
+      "successfulPages": 10,
+      "failedPages": 0,
+      "expectedPages": 10
     },
     {
       "storeId": "롯데-0017",
       "company": "롯데",
       "store": "창원점",
-      "status": "error",
-      "error": "모든 층 호출 실패 (10/10)"
+      "status": "ok",
+      "brands": 9,
+      "successfulPages": 10,
+      "failedPages": 0,
+      "expectedPages": 10
     },
     {
       "storeId": "롯데-0004",
       "company": "롯데",
       "store": "청량리",
-      "status": "error",
-      "error": "모든 층 호출 실패 (10/10)"
+      "status": "ok",
+      "brands": 1,
+      "successfulPages": 10,
+      "failedPages": 0,
+      "expectedPages": 10
     },
     {
       "storeId": "롯데-0341",
       "company": "롯데",
       "store": "평촌점",
-      "status": "error",
-      "error": "모든 층 호출 실패 (10/10)"
+      "status": "ok",
+      "brands": 8,
+      "successfulPages": 10,
+      "failedPages": 0,
+      "expectedPages": 10
     },
     {
       "storeId": "현대-B00142000",
@@ -424,9 +479,8 @@
       "storeId": "롯데-0013",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -434,9 +488,8 @@
       "storeId": "롯데-0013",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -444,9 +497,8 @@
       "storeId": "롯데-0013",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -454,9 +506,8 @@
       "storeId": "롯데-0013",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -464,9 +515,8 @@
       "storeId": "롯데-0013",
       "brand": "이로맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -474,9 +524,8 @@
       "storeId": "롯데-0333",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -484,9 +533,8 @@
       "storeId": "롯데-0007",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -494,9 +542,8 @@
       "storeId": "롯데-0007",
       "brand": "지오송지오",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -504,9 +551,8 @@
       "storeId": "롯데-0007",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -514,9 +560,8 @@
       "storeId": "롯데-0007",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -524,9 +569,8 @@
       "storeId": "롯데-0007",
       "brand": "타임옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -534,9 +578,8 @@
       "storeId": "롯데-0007",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -544,9 +587,8 @@
       "storeId": "롯데-0022",
       "brand": "질스튜어트뉴욕",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -554,9 +596,8 @@
       "storeId": "롯데-0022",
       "brand": "솔리드옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -564,9 +605,8 @@
       "storeId": "롯데-0022",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -574,9 +614,8 @@
       "storeId": "롯데-0022",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -584,9 +623,8 @@
       "storeId": "롯데-0022",
       "brand": "타임옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -594,9 +632,8 @@
       "storeId": "롯데-0022",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -604,9 +641,8 @@
       "storeId": "롯데-0023",
       "brand": "CP컴퍼니",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -614,9 +650,8 @@
       "storeId": "롯데-0023",
       "brand": "스톤아일랜드",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -624,9 +659,8 @@
       "storeId": "롯데-0023",
       "brand": "솔리드옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -634,9 +668,8 @@
       "storeId": "롯데-0023",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -644,9 +677,8 @@
       "storeId": "롯데-0023",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -654,9 +686,8 @@
       "storeId": "롯데-0023",
       "brand": "타임옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -664,9 +695,8 @@
       "storeId": "롯데-0023",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -674,9 +704,8 @@
       "storeId": "롯데-0023",
       "brand": "송지오옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -684,9 +713,8 @@
       "storeId": "롯데-0399",
       "brand": "CP컴퍼니",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -694,9 +722,8 @@
       "storeId": "롯데-0399",
       "brand": "질스튜어트뉴욕",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -704,9 +731,8 @@
       "storeId": "롯데-0399",
       "brand": "솔리드옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -714,9 +740,8 @@
       "storeId": "롯데-0399",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -724,9 +749,8 @@
       "storeId": "롯데-0399",
       "brand": "타임옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -734,9 +758,8 @@
       "storeId": "롯데-0399",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -744,9 +767,8 @@
       "storeId": "롯데-0399",
       "brand": "송지오옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -754,9 +776,8 @@
       "storeId": "롯데-0399",
       "brand": "바버",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -764,9 +785,8 @@
       "storeId": "롯데-0399",
       "brand": "준지",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -774,9 +794,8 @@
       "storeId": "롯데-0399",
       "brand": "우영미",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -784,9 +803,8 @@
       "storeId": "롯데-0001",
       "brand": "CP컴퍼니",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -794,9 +812,8 @@
       "storeId": "롯데-0001",
       "brand": "질스튜어트뉴욕",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -804,9 +821,8 @@
       "storeId": "롯데-0001",
       "brand": "수트서플라이",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -814,9 +830,8 @@
       "storeId": "롯데-0001",
       "brand": "산드로옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -824,9 +839,8 @@
       "storeId": "롯데-0001",
       "brand": "솔리드옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -834,9 +848,8 @@
       "storeId": "롯데-0001",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -844,9 +857,8 @@
       "storeId": "롯데-0001",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -854,9 +866,8 @@
       "storeId": "롯데-0001",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -864,9 +875,8 @@
       "storeId": "롯데-0001",
       "brand": "맨메이드카페",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -874,9 +884,8 @@
       "storeId": "롯데-0001",
       "brand": "슬로웨어",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -884,9 +893,8 @@
       "storeId": "롯데-0001",
       "brand": "아스페시",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -894,9 +902,8 @@
       "storeId": "롯데-0001",
       "brand": "타임옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -904,9 +911,8 @@
       "storeId": "롯데-0001",
       "brand": "아페쎄맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -930,9 +936,8 @@
       "storeId": "롯데-0001",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -940,9 +945,8 @@
       "storeId": "롯데-0001",
       "brand": "비이커",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -950,9 +954,8 @@
       "storeId": "롯데-0001",
       "brand": "송지오옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -960,9 +963,8 @@
       "storeId": "롯데-0001",
       "brand": "준지",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -970,9 +972,8 @@
       "storeId": "롯데-0001",
       "brand": "스톤아일랜드",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -980,19 +981,8 @@
       "storeId": "롯데-0001",
       "brand": "우영미",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
-    },
-    {
-      "company": "롯데",
-      "store": "본점",
-      "brand": "바버",
-      "storeId": "롯데-0001",
-      "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1000,9 +990,8 @@
       "storeId": "롯데-0005",
       "brand": "질스튜어트뉴욕",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1010,9 +999,8 @@
       "storeId": "롯데-0005",
       "brand": "톰그레이하운드맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1020,9 +1008,8 @@
       "storeId": "롯데-0005",
       "brand": "플랫폼플레이스",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1030,9 +1017,8 @@
       "storeId": "롯데-0005",
       "brand": "CP컴퍼니",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1040,9 +1026,8 @@
       "storeId": "롯데-0005",
       "brand": "수트서플라이",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1050,9 +1035,8 @@
       "storeId": "롯데-0005",
       "brand": "솔리드옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1060,9 +1044,8 @@
       "storeId": "롯데-0005",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1070,9 +1053,8 @@
       "storeId": "롯데-0005",
       "brand": "지오송지오",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1080,9 +1062,8 @@
       "storeId": "롯데-0005",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1090,9 +1071,8 @@
       "storeId": "롯데-0005",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1100,9 +1080,8 @@
       "storeId": "롯데-0005",
       "brand": "슬로웨어",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1110,9 +1089,8 @@
       "storeId": "롯데-0005",
       "brand": "타임옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1120,9 +1098,8 @@
       "storeId": "롯데-0005",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1130,9 +1107,8 @@
       "storeId": "롯데-0005",
       "brand": "비이커",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1140,9 +1116,8 @@
       "storeId": "롯데-0005",
       "brand": "송지오옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1150,9 +1125,8 @@
       "storeId": "롯데-0005",
       "brand": "이로맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1160,9 +1134,8 @@
       "storeId": "롯데-0005",
       "brand": "지제로",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1170,9 +1143,8 @@
       "storeId": "롯데-0005",
       "brand": "바버",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1180,9 +1152,8 @@
       "storeId": "롯데-0005",
       "brand": "준지",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1190,9 +1161,8 @@
       "storeId": "롯데-0005",
       "brand": "스톤아일랜드",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1200,9 +1170,8 @@
       "storeId": "롯데-0349",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1210,9 +1179,8 @@
       "storeId": "롯데-0349",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1220,9 +1188,8 @@
       "storeId": "롯데-0349",
       "brand": "타임옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1230,9 +1197,8 @@
       "storeId": "롯데-0349",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1240,9 +1206,8 @@
       "storeId": "롯데-0349",
       "brand": "송지오옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1250,9 +1215,8 @@
       "storeId": "롯데-0349",
       "brand": "이로맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1260,9 +1224,8 @@
       "storeId": "롯데-0349",
       "brand": "스톤아일랜드",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1270,9 +1233,8 @@
       "storeId": "롯데-0349",
       "brand": "CP컴퍼니",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1280,9 +1242,8 @@
       "storeId": "롯데-0349",
       "brand": "솔리드옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1290,9 +1251,8 @@
       "storeId": "롯데-0349",
       "brand": "바버",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1300,9 +1260,8 @@
       "storeId": "롯데-0010",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1310,17 +1269,16 @@
       "storeId": "롯데-0010",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
       "store": "울산점",
       "storeId": "롯데-0015",
-      "brand": "(오류)",
+      "brand": "(확인된 브랜드 없음)",
       "sales": "",
-      "note": "모든 층 호출 실패 (10/10)"
+      "note": "확인"
     },
     {
       "company": "롯데",
@@ -1328,9 +1286,8 @@
       "storeId": "롯데-0344",
       "brand": "톰그레이하운드맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1338,9 +1295,8 @@
       "storeId": "롯데-0344",
       "brand": "수트서플라이",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1348,9 +1304,8 @@
       "storeId": "롯데-0344",
       "brand": "솔리드옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1358,9 +1313,8 @@
       "storeId": "롯데-0344",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1368,9 +1322,8 @@
       "storeId": "롯데-0344",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1378,9 +1331,8 @@
       "storeId": "롯데-0344",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1388,9 +1340,8 @@
       "storeId": "롯데-0344",
       "brand": "타임옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1398,9 +1349,8 @@
       "storeId": "롯데-0344",
       "brand": "아페쎄맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1408,9 +1358,8 @@
       "storeId": "롯데-0344",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1418,9 +1367,8 @@
       "storeId": "롯데-0344",
       "brand": "비이커",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1428,9 +1376,8 @@
       "storeId": "롯데-0344",
       "brand": "송지오옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1438,9 +1385,8 @@
       "storeId": "롯데-0344",
       "brand": "바버",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1448,9 +1394,8 @@
       "storeId": "롯데-0344",
       "brand": "준지",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1458,9 +1403,8 @@
       "storeId": "롯데-0344",
       "brand": "CP컴퍼니",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1468,9 +1412,8 @@
       "storeId": "롯데-0344",
       "brand": "스톤아일랜드",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1478,9 +1421,8 @@
       "storeId": "롯데-0344",
       "brand": "우영미",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1488,9 +1430,8 @@
       "storeId": "롯데-0011",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1498,9 +1439,8 @@
       "storeId": "롯데-0011",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1519,9 +1459,8 @@
       "storeId": "롯데-0002",
       "brand": "질스튜어트뉴욕",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1529,9 +1468,8 @@
       "storeId": "롯데-0002",
       "brand": "톰그레이하운드맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1539,9 +1477,8 @@
       "storeId": "롯데-0002",
       "brand": "수트서플라이",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1549,10 +1486,9 @@
       "storeId": "롯데-0002",
       "brand": "산드로옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
+      "note": "신규 입점 재확인 중",
       "changeMonth": "2026-10",
-      "comparisonCheck": "2026-09-30 미입점",
-      "dataQuality": "stale"
+      "comparisonCheck": "2026-09-30 미입점"
     },
     {
       "company": "롯데",
@@ -1560,9 +1496,8 @@
       "storeId": "롯데-0002",
       "brand": "솔리드옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1570,9 +1505,8 @@
       "storeId": "롯데-0002",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1580,9 +1514,8 @@
       "storeId": "롯데-0002",
       "brand": "지오송지오",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1590,9 +1523,8 @@
       "storeId": "롯데-0002",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1600,9 +1532,8 @@
       "storeId": "롯데-0002",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1610,9 +1541,8 @@
       "storeId": "롯데-0002",
       "brand": "맨온더분",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1620,9 +1550,8 @@
       "storeId": "롯데-0002",
       "brand": "슬로웨어",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1630,9 +1559,8 @@
       "storeId": "롯데-0002",
       "brand": "알레그리",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1640,9 +1568,8 @@
       "storeId": "롯데-0002",
       "brand": "타임옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1661,9 +1588,8 @@
       "storeId": "롯데-0002",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1671,9 +1597,8 @@
       "storeId": "롯데-0002",
       "brand": "비이커",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1681,9 +1606,8 @@
       "storeId": "롯데-0002",
       "brand": "송지오옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1691,9 +1615,8 @@
       "storeId": "롯데-0002",
       "brand": "이로맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1712,9 +1635,8 @@
       "storeId": "롯데-0002",
       "brand": "준지",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1722,9 +1644,8 @@
       "storeId": "롯데-0002",
       "brand": "바버",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1732,9 +1653,8 @@
       "storeId": "롯데-0348",
       "brand": "CP컴퍼니",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1742,9 +1662,8 @@
       "storeId": "롯데-0348",
       "brand": "스톤아일랜드",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1752,9 +1671,8 @@
       "storeId": "롯데-0348",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1762,9 +1680,8 @@
       "storeId": "롯데-0348",
       "brand": "우영미",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1772,9 +1689,8 @@
       "storeId": "롯데-0348",
       "brand": "준지",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1782,10 +1698,9 @@
       "storeId": "롯데-0348",
       "brand": "TEN-C",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
+      "note": "신규 입점 재확인 중",
       "changeMonth": "2026-10",
-      "comparisonCheck": "2026-09-30 미입점",
-      "dataQuality": "stale"
+      "comparisonCheck": "2026-09-30 미입점"
     },
     {
       "company": "롯데",
@@ -1793,10 +1708,9 @@
       "storeId": "롯데-0025",
       "brand": "질스튜어트뉴욕",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
+      "note": "신규 입점 재확인 중",
       "changeMonth": "2026-10",
-      "comparisonCheck": "2026-09-30 미입점",
-      "dataQuality": "stale"
+      "comparisonCheck": "2026-09-30 미입점"
     },
     {
       "company": "롯데",
@@ -1804,9 +1718,8 @@
       "storeId": "롯데-0025",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1814,9 +1727,8 @@
       "storeId": "롯데-0025",
       "brand": "지오송지오",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1824,9 +1736,8 @@
       "storeId": "롯데-0025",
       "brand": "타임옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1834,9 +1745,8 @@
       "storeId": "롯데-0025",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1844,9 +1754,8 @@
       "storeId": "롯데-0025",
       "brand": "바버",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1854,9 +1763,8 @@
       "storeId": "롯데-0025",
       "brand": "준지",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1864,9 +1772,8 @@
       "storeId": "롯데-0017",
       "brand": "질스튜어트뉴욕",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1874,9 +1781,8 @@
       "storeId": "롯데-0017",
       "brand": "솔리드옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1884,9 +1790,8 @@
       "storeId": "롯데-0017",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1894,9 +1799,8 @@
       "storeId": "롯데-0017",
       "brand": "지오송지오",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1904,9 +1808,8 @@
       "storeId": "롯데-0017",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1914,9 +1817,8 @@
       "storeId": "롯데-0017",
       "brand": "타임옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1924,9 +1826,8 @@
       "storeId": "롯데-0017",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1934,9 +1835,8 @@
       "storeId": "롯데-0017",
       "brand": "송지오옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1944,9 +1844,8 @@
       "storeId": "롯데-0017",
       "brand": "바버",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1954,9 +1853,8 @@
       "storeId": "롯데-0004",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1964,9 +1862,8 @@
       "storeId": "롯데-0341",
       "brand": "솔리드옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1974,9 +1871,8 @@
       "storeId": "롯데-0341",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1984,9 +1880,8 @@
       "storeId": "롯데-0341",
       "brand": "지오송지오",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -1994,9 +1889,8 @@
       "storeId": "롯데-0341",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -2004,9 +1898,8 @@
       "storeId": "롯데-0341",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -2014,9 +1907,8 @@
       "storeId": "롯데-0341",
       "brand": "타임옴므",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -2024,9 +1916,8 @@
       "storeId": "롯데-0341",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "롯데",
@@ -2034,9 +1925,8 @@
       "storeId": "롯데-0341",
       "brand": "이로맨",
       "sales": "",
-      "note": "수집 오류 - 직전 정상값 유지",
-      "comparisonCheck": "2026-09-30 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-09-30 입점"
     },
     {
       "company": "현대",
@@ -4926,6 +4816,15 @@
       "sales": "",
       "note": "확인",
       "sourceUrl": "https://ptry.co.kr/offline.html",
+      "comparisonCheck": "2026-09-30 입점"
+    },
+    {
+      "company": "롯데",
+      "store": "본점",
+      "brand": "바버",
+      "storeId": "롯데-0001",
+      "sales": "",
+      "note": "확인",
       "comparisonCheck": "2026-09-30 입점"
     },
     {
