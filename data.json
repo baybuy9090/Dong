@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-10-18T02:53:00.622Z",
+  "lastUpdated": "2026-10-19T03:06:04.891Z",
   "comparisonAsOf": "2026-09-30",
   "monthKey": "2026-10",
   "monthStartSnapshot": "2026-09-30",
   "monthlySummary": {
-    "new": 4,
+    "new": 7,
     "exit": 1,
-    "pending": 3,
+    "pending": 0,
     "stale": 0
   },
   "health": {
@@ -1486,7 +1486,7 @@
       "storeId": "롯데-0002",
       "brand": "산드로옴므",
       "sales": "",
-      "note": "신규 입점 재확인 중",
+      "note": "이번 달 신규 입점",
       "changeMonth": "2026-10",
       "comparisonCheck": "2026-09-30 미입점"
     },
@@ -1698,7 +1698,7 @@
       "storeId": "롯데-0348",
       "brand": "TEN-C",
       "sales": "",
-      "note": "신규 입점 재확인 중",
+      "note": "이번 달 신규 입점",
       "changeMonth": "2026-10",
       "comparisonCheck": "2026-09-30 미입점"
     },
@@ -1708,7 +1708,7 @@
       "storeId": "롯데-0025",
       "brand": "질스튜어트뉴욕",
       "sales": "",
-      "note": "신규 입점 재확인 중",
+      "note": "이번 달 신규 입점",
       "changeMonth": "2026-10",
       "comparisonCheck": "2026-09-30 미입점"
     },
