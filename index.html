@@ -539,21 +539,21 @@
 
   <div class="tabs">
     <button class="tab-btn tabnav-btn active" data-tab="overview" id="tabOverview" onclick="switchTab('overview')">📊 한눈에 보기</button>
-    <button class="tab-btn tabnav-btn" data-tab="market" id="tabMarket" onclick="switchTab('market')">◈ 상권</button>
     <button class="tab-btn tabnav-btn" data-tab="map" id="tabMap" onclick="switchTab('map')">📍 상권 지도</button>
     <button class="tab-btn tabnav-btn" data-tab="floor" id="tabFloor" onclick="switchTab('floor')">🗺️ 층 도면 보기</button>
     <button class="tab-btn tabnav-btn" data-tab="news" id="tabNews" onclick="switchTab('news')">📰 브랜드 뉴스</button>
     <button class="tab-btn tabnav-btn" data-tab="table" id="tabTable" onclick="switchTab('table')">📋 표·매트릭스</button>
+    <button class="tab-btn tabnav-btn" data-tab="market" id="tabMarket" onclick="switchTab('market')">◈ 상권</button>
   </div>
 
   <!-- 모바일 전용 하단 고정 탭바 (680px 이하에서만 표시, PC용 .tabs는 그대로 유지) -->
   <nav class="mobile-tabbar" id="mobileTabbar">
     <button class="mobile-tabbar-btn tabnav-btn active" data-tab="overview" onclick="switchTab('overview')"><span class="mtb-icon">📊</span><span class="mtb-label">한눈에</span></button>
-    <button class="mobile-tabbar-btn tabnav-btn" data-tab="market" onclick="switchTab('market')"><span class="mtb-icon">◈</span><span class="mtb-label">상권</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="map" onclick="switchTab('map')"><span class="mtb-icon">📍</span><span class="mtb-label">지도</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="floor" onclick="switchTab('floor')"><span class="mtb-icon">🗺️</span><span class="mtb-label">도면</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="news" onclick="switchTab('news')"><span class="mtb-icon">📰</span><span class="mtb-label">뉴스</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="table" onclick="switchTab('table')"><span class="mtb-icon">📋</span><span class="mtb-label">표</span></button>
+    <button class="mobile-tabbar-btn tabnav-btn" data-tab="market" onclick="switchTab('market')"><span class="mtb-icon">◈</span><span class="mtb-label">상권</span></button>
   </nav>
 
   <!-- 모바일 전용 필터 트리거 (누르면 아래 .controls가 바텀시트로 올라옴) -->
@@ -739,7 +739,7 @@
     </div>
   </div>
 
-  <div id="marketView" aria-label="상권 경쟁 현황"></div>
+  <div id="marketView" aria-label="상권 입점 현황"></div>
 
   <!-- 브랜드 뉴스 -->
   <div id="newsView">
@@ -793,8 +793,7 @@
     function renderMarket() {
       if (!marketUI) marketUI = Market.createUI(DONG_CONFIG, {
         overrides: () => baselineOverrides,
-        tier: tierOf, color: companyColor, source: floorGuideUrl,
-        detail: openBrandDetail, export: downloadExcel,
+        tier: tierOf, color: companyColor, export: downloadExcel,
       });
       else marketUI.refresh();
     }

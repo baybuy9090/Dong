@@ -24,7 +24,7 @@
 .market-chips { display:flex; gap:7px; flex-wrap:wrap; margin-top:10px; font-size:12px; }
 #marketView .market-chips button { border-color:#badbd4; color:#176557; background:#eef8f5; }
 .market-status { font-size:11px; color:#617481; margin:12px 2px; line-height:1.7; }
-.market-kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:14px; }
+.market-kpis { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; margin-bottom:14px; }
 .market-kpis>div { padding:22px; border-radius:12px; border:1px solid #dce6eb; background:white; }
 .market-kpis>div:last-child { background:#eaf6f2; border-color:#a9d2c5; }
 .market-kpis span { font-size:12px; color:#5c737e; }.market-kpis strong { display:block; font-size:34px; margin-top:10px; letter-spacing:-1px; }

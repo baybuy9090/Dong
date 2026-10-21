@@ -4,6 +4,19 @@ const { buildComparison } = require('../market');
 const config = require('../config');
 const stores = [config.getStore('롯데', '본점'), config.getStore('신세계', '본점'), config.getStore('현대', '본점')];
 const brands = ['타임옴므', '바버', 'POTTERY', '이로맨'];
+test('상권 메뉴는 맨 끝에 있고 입점 구성과 월간 변화만 제공한다', () => {
+  const fs = require('node:fs');
+  const path = require('node:path');
+  const html = fs.readFileSync(path.join(__dirname, '../index.html'), 'utf8');
+  const source = fs.readFileSync(path.join(__dirname, '../market.js'), 'utf8');
+  for (const navigation of [html.match(/<div class="tabs">([\s\S]*?)<\/div>/)[1], html.match(/<nav class="mobile-tabbar"[^>]*>([\s\S]*?)<\/nav>/)[1]]) {
+    assert.equal([...navigation.matchAll(/data-tab="([^"]+)"/g)].at(-1)[1], 'market');
+  }
+  assert.match(source, /const tabs = \[\['all', '입점 구성'\], \['changes', '월간 변화'\]\]/);
+  assert.doesNotMatch(source, /경쟁|정상 확인|marketEvidence|dongMarketSelection/);
+  assert.match(source, /filter\(store => store.company === '롯데'\)/);
+  assert.doesNotMatch(source, /store.company !== base\(\).company/);
+});
 function compare(rows, options = {}) {
   return buildComparison({ stores, brands, baseId: stores[0].id, peerIds: [stores[1].id],
     payload: { data: rows, diagnostics: stores.map(store => ({ storeId: store.id, status: 'ok' })) }, ...options });
