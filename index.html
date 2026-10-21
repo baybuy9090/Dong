@@ -518,6 +518,7 @@
     }
   </style>
   <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8bd8d20b20b6e21a2865e280d779164e"></script>
+  <link rel="stylesheet" href="market.css">
 </head>
 <body>
   <div class="header-bar">
@@ -538,6 +539,7 @@
 
   <div class="tabs">
     <button class="tab-btn tabnav-btn active" data-tab="overview" id="tabOverview" onclick="switchTab('overview')">📊 한눈에 보기</button>
+    <button class="tab-btn tabnav-btn" data-tab="market" id="tabMarket" onclick="switchTab('market')">◈ 상권</button>
     <button class="tab-btn tabnav-btn" data-tab="map" id="tabMap" onclick="switchTab('map')">📍 상권 지도</button>
     <button class="tab-btn tabnav-btn" data-tab="floor" id="tabFloor" onclick="switchTab('floor')">🗺️ 층 도면 보기</button>
     <button class="tab-btn tabnav-btn" data-tab="news" id="tabNews" onclick="switchTab('news')">📰 브랜드 뉴스</button>
@@ -547,6 +549,7 @@
   <!-- 모바일 전용 하단 고정 탭바 (680px 이하에서만 표시, PC용 .tabs는 그대로 유지) -->
   <nav class="mobile-tabbar" id="mobileTabbar">
     <button class="mobile-tabbar-btn tabnav-btn active" data-tab="overview" onclick="switchTab('overview')"><span class="mtb-icon">📊</span><span class="mtb-label">한눈에</span></button>
+    <button class="mobile-tabbar-btn tabnav-btn" data-tab="market" onclick="switchTab('market')"><span class="mtb-icon">◈</span><span class="mtb-label">상권</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="map" onclick="switchTab('map')"><span class="mtb-icon">📍</span><span class="mtb-label">지도</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="floor" onclick="switchTab('floor')"><span class="mtb-icon">🗺️</span><span class="mtb-label">도면</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="news" onclick="switchTab('news')"><span class="mtb-icon">📰</span><span class="mtb-label">뉴스</span></button>
@@ -736,6 +739,8 @@
     </div>
   </div>
 
+  <div id="marketView" aria-label="상권 경쟁 현황"></div>
+
   <!-- 브랜드 뉴스 -->
   <div id="newsView">
     <div class="panel" style="margin-bottom:14px;">
@@ -781,8 +786,18 @@
   </div>
 
   <script src="config.js"></script>
+  <script src="market.js"></script>
   <script>
     let allData = [];
+    let marketUI = null;
+    function renderMarket() {
+      if (!marketUI) marketUI = Market.createUI(DONG_CONFIG, {
+        overrides: () => baselineOverrides,
+        tier: tierOf, color: companyColor, source: floorGuideUrl,
+        detail: openBrandDetail, export: downloadExcel,
+      });
+      else marketUI.refresh();
+    }
     let comparisonAsOf = '';
     let currentMonthKey = '';
     let monthStartSnapshot = '';
@@ -1304,6 +1319,8 @@
 
     function switchTab(tab) {
       currentTab = tab;
+      if (tab === 'market') history.replaceState(null, '', '#market');
+      else if (location.hash === '#market') history.replaceState(null, '', location.pathname + location.search);
       document.querySelectorAll('.tabnav-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.tab === tab);
         btn.setAttribute('aria-selected', btn.dataset.tab === tab ? 'true' : 'false');
@@ -1313,14 +1330,17 @@
       document.getElementById('floorView').style.display = tab === 'floor' ? 'block' : 'none';
       document.getElementById('mapView').style.display = tab === 'map' ? 'block' : 'none';
       document.getElementById('newsView').style.display = tab === 'news' ? 'block' : 'none';
-      document.getElementById('controlsBar').style.display = (tab === 'map' || tab === 'news') ? 'none' : 'flex';
-      document.getElementById('mobileFilterTrigger').style.display = (tab === 'map' || tab === 'news') ? 'none' : '';
+      document.getElementById('marketView').style.display = tab === 'market' ? 'block' : 'none';
+      document.getElementById('summary').style.display = tab === 'market' ? 'none' : '';
+      document.getElementById('controlsBar').style.display = (tab === 'map' || tab === 'news' || tab === 'market') ? 'none' : 'flex';
+      document.getElementById('mobileFilterTrigger').style.display = (tab === 'map' || tab === 'news' || tab === 'market') ? 'none' : '';
       closeMobileFilterSheet();
       if (tab === 'table' && tableSub === 'matrix') renderMatrix();
       if (tab === 'overview') renderOverview();
       if (tab === 'floor') renderFloorView();
       if (tab === 'map') renderMap();
       if (tab === 'news') renderNews();
+      if (tab === 'market') renderMarket();
       if (tab !== 'overview') {
         const stickyHeader = document.getElementById('regionRankingStickyHeader');
         if (stickyHeader) stickyHeader.style.display = 'none';
@@ -1517,6 +1537,7 @@
     }
 
     function render() {
+      if (currentTab === 'market' && marketUI) marketUI.refresh();
       const filtered = currentFiltered();
       const q = document.getElementById('brandSearch').value.trim();
       updateMobileFilterBadge();
@@ -2697,6 +2718,7 @@
     loadFloorIndex();
     loadFloorHistory();
     loadSalesRanking();
+    if (location.hash === '#market') switchTab('market');
   </script>
 </body>
 </html>
