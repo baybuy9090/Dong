@@ -4,6 +4,11 @@ const { buildComparison, marketStores } = require('../market');
 const config = require('../config');
 const stores = [config.getStore('롯데', '본점'), config.getStore('신세계', '본점'), config.getStore('현대', '본점')];
 const brands = ['타임옴므', '바버', 'POTTERY', '이로맨'];
+test('상권 탭에서도 공통 전체 현황 카드를 숨기지 않는다', () => {
+  const html = require('node:fs').readFileSync(require('node:path').join(__dirname, '../index.html'), 'utf8');
+  assert.match(html, /document\.getElementById\('summary'\)\.style\.display = '';/);
+  assert.doesNotMatch(html, /document\.getElementById\('summary'\)\.style\.display = tab === 'market'/);
+});
 test('상권 목록에서만 롯데 울산을 제외하고 현대 울산과 원본 설정은 유지한다', () => {
   const visible = marketStores(config.storeRows);
   assert.equal(visible.some(store => store.id === '롯데-0015'), false);
