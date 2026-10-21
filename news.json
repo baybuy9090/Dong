@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-10-20T01:38:42.699Z",
+  "lastUpdated": "2026-10-21T01:23:37.486Z",
   "windowDays": 14,
   "coverage": {
     "total": 37,
-    "withNews": 18
+    "withNews": 19
   },
   "diagnostics": [
     {
@@ -12,7 +12,7 @@
         "타임옴므",
         "타임옴므 패션 브랜드"
       ],
-      "candidates": 1,
+      "candidates": 0,
       "sources": {
         "google": true,
         "naver": true
@@ -51,7 +51,7 @@
         "시스템옴므",
         "시스템옴므 패션 브랜드"
       ],
-      "candidates": 4,
+      "candidates": 1,
       "sources": {
         "google": true,
         "naver": true
@@ -77,7 +77,7 @@
         "JUUN.J 패션",
         "준지 패션"
       ],
-      "candidates": 19,
+      "candidates": 20,
       "sources": {
         "google": true,
         "naver": true
@@ -90,7 +90,7 @@
         "송지오옴므",
         "송지오옴므 패션 브랜드"
       ],
-      "candidates": 4,
+      "candidates": 7,
       "sources": {
         "google": true,
         "naver": true
@@ -131,7 +131,7 @@
         "비이커",
         "비이커 패션 브랜드"
       ],
-      "candidates": 9,
+      "candidates": 10,
       "sources": {
         "google": true,
         "naver": true
@@ -143,7 +143,7 @@
       "queries": [
         "톰그레이하운드 패션"
       ],
-      "candidates": 6,
+      "candidates": 5,
       "sources": {
         "google": true,
         "naver": true
@@ -193,7 +193,7 @@
         "지오송지오",
         "지오송지오 패션 브랜드"
       ],
-      "candidates": 1,
+      "candidates": 2,
       "sources": {
         "google": true,
         "naver": true
@@ -206,7 +206,7 @@
         "바버",
         "바버 패션 브랜드"
       ],
-      "candidates": 21,
+      "candidates": 24,
       "sources": {
         "google": true,
         "naver": true
@@ -270,7 +270,7 @@
       "queries": [
         "DKNY 패션 브랜드"
       ],
-      "candidates": 7,
+      "candidates": 8,
       "sources": {
         "google": true,
         "naver": true
@@ -283,7 +283,7 @@
         "클럽모나코",
         "클럽모나코 패션 브랜드"
       ],
-      "candidates": 5,
+      "candidates": 4,
       "sources": {
         "google": true,
         "naver": true
@@ -296,7 +296,7 @@
         "맨온더분",
         "맨온더분 패션 브랜드"
       ],
-      "candidates": 6,
+      "candidates": 9,
       "sources": {
         "google": true,
         "naver": true
@@ -399,7 +399,7 @@
         "이스트로그 패션",
         "프레이트 패션"
       ],
-      "candidates": 2,
+      "candidates": 3,
       "sources": {
         "google": true,
         "naver": true
@@ -483,6 +483,38 @@
   ],
   "industry": [
     {
+      "title": "마르디 메크르디, 세븐틴 정한과 첫 유니섹스 컬렉션 팝업 성료",
+      "link": "http://www.ktnews.com/news/articleView.html?idxno=149494",
+      "source": "ktnews.com",
+      "pubDate": "2026-10-20T06:14:00.000Z",
+      "sentiment": "positive",
+      "events": [
+        "신규 매장·팝업",
+        "협업·신제품"
+      ]
+    },
+    {
+      "title": "[패션·잡화트렌드] 더캐시미어, 남성 라인 확대 출시…프리미엄 가을·...",
+      "link": "https://www.ibabynews.com/news/articleView.html?idxno=155376",
+      "source": "ibabynews.com",
+      "pubDate": "2026-10-20T05:08:00.000Z",
+      "sentiment": "positive",
+      "events": [
+        "리뉴얼·확장",
+        "협업·신제품"
+      ]
+    },
+    {
+      "title": "'마르디메크르디' 도산 팝업, 첫날 수백 명 방문객 몰려",
+      "link": "http://www.apparelnews.co.kr/news/news_view/?idx=228349",
+      "source": "apparelnews.co.kr",
+      "pubDate": "2026-10-20T02:04:00.000Z",
+      "sentiment": "neutral",
+      "events": [
+        "신규 매장·팝업"
+      ]
+    },
+    {
       "title": "미스토홀딩스, 골프가 떠받치는 실적…중화권에서 K패션 시험대 오른다",
       "link": "http://www.ftoday.co.kr/news/articleView.html?idxno=367614",
       "source": "ftoday.co.kr",
@@ -531,34 +563,6 @@
       "events": [
         "신규 매장·팝업"
       ]
-    },
-    {
-      "title": "바버 X A.P.C., 왁스 코튼과 데님의 '에이징' 가치 담은 협업 컬렉션 출...",
-      "link": "http://www.apparelnews.co.kr/news/news_view/?idx=228322",
-      "source": "apparelnews.co.kr",
-      "pubDate": "2026-10-19T02:50:00.000Z",
-      "sentiment": "positive",
-      "events": [
-        "협업·신제품"
-      ]
-    },
-    {
-      "title": "LF 바버, 아페쎄(A.P.C)와 협업! 영국 헤리티지와 프랑스 컨템포러리의...",
-      "link": "http://www.fashionn.com/board/read_new.php?table=1006&number=62846",
-      "source": "fashionn.com",
-      "pubDate": "2026-10-19T02:10:00.000Z",
-      "sentiment": "positive",
-      "events": [
-        "협업·신제품"
-      ]
-    },
-    {
-      "title": "130년 헤리티지 바버와 프렌치 감성 아페쎄가 만났다...클래식의 재해석",
-      "link": "http://www.popcornnews.net/news/articleView.html?idxno=136362",
-      "source": "popcornnews.net",
-      "pubDate": "2026-10-18T23:52:00.000Z",
-      "sentiment": "neutral",
-      "events": []
     }
   ],
   "data": {
@@ -566,20 +570,20 @@
     "띠어리맨": [],
     "솔리드옴므": [
       {
-        "title": "김재원, 한복 입고 전한 '뮤직뱅크' 사랑…연못 배경 눈맞춤",
-        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16249324",
+        "title": "김재원, 엘리베이터 셀카로 담은 일상…'최종면접' 개봉 앞두고 활약",
+        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16252844",
         "source": "topstarnews.net",
-        "pubDate": "2026-10-16T13:26:00.000Z",
+        "pubDate": "2026-10-20T13:36:00.000Z",
         "sentiment": "neutral",
         "events": [
           "협업·신제품"
         ]
       },
       {
-        "title": "김재원, 흑색 턱시도 빛낸 부산의 저녁…영화 '최종면접' 출격 앞두고 존...",
-        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16239994",
+        "title": "김재원, 한복 입고 전한 '뮤직뱅크' 사랑…연못 배경 눈맞춤",
+        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16249324",
         "source": "topstarnews.net",
-        "pubDate": "2026-10-06T13:54:00.000Z",
+        "pubDate": "2026-10-16T13:26:00.000Z",
         "sentiment": "neutral",
         "events": [
           "협업·신제품"
@@ -594,26 +598,6 @@
         "pubDate": "2026-10-12T00:32:00.000Z",
         "sentiment": "neutral",
         "events": []
-      },
-      {
-        "title": "글로벌 명품 다 모인 파리에 편집숍 낸 뒤 \"차근차근 13년\"…한섬의 '뚝...",
-        "link": "https://www.hankyung.com/article/202610066193g",
-        "source": "hankyung.com",
-        "pubDate": "2026-10-06T10:01:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "협업·신제품"
-        ]
-      },
-      {
-        "title": "[유통업계 9월 동향] 현대백화점그룹 한섬·현대그린푸드·현대리바트·...",
-        "link": "http://www.wsobi.com/news/articleView.html?idxno=319239",
-        "source": "wsobi.com",
-        "pubDate": "2026-10-06T05:40:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "협업·신제품"
-        ]
       }
     ],
     "우영미": [
@@ -636,14 +620,37 @@
     ],
     "준지": [
       {
-        "title": "미스토홀딩스, 골프가 떠받치는 실적…중화권에서 K패션 시험대 오른다",
-        "link": "http://www.ftoday.co.kr/news/articleView.html?idxno=367614",
-        "source": "ftoday.co.kr",
-        "pubDate": "2026-10-19T09:18:00.000Z",
+        "title": "D’FESTA THE ORIGIN, K-POP 아티스트 48인과 함께한 대규모 예술 전시 개...",
+        "link": "https://www.fashionbiz.co.kr/article/230439",
+        "source": "fashionbiz.co.kr",
+        "pubDate": "2026-10-21T00:16:00.000Z",
         "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "혜리 MC '스타일 워즈', 72인 패션 서바이벌 11월 11일 출격",
+        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16253064",
+        "source": "topstarnews.net",
+        "pubDate": "2026-10-20T23:10:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "‘스타일 워즈’ 혜리도 놀란 패션 전쟁",
+        "link": "https://www.bntnews.co.kr/article/view/bnt202610210062",
+        "source": "bntnews.co.kr",
+        "pubDate": "2026-10-20T23:08:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "패션 대기업, '브랜드 세계관' 경쟁...AI 캐릭터·예술·글로벌 IP로 차별...",
+        "link": "http://www.ktnews.com/news/articleView.html?idxno=149520",
+        "source": "ktnews.com",
+        "pubDate": "2026-10-20T08:40:00.000Z",
+        "sentiment": "positive",
         "events": [
-          "신규 매장·팝업",
-          "실적·성장"
+          "협업·신제품"
         ]
       },
       {
@@ -665,22 +672,6 @@
         "events": []
       },
       {
-        "title": "72인 패션 전쟁 '스타일 워즈', 11월 11일 첫 공개",
-        "link": "https://news.tf.co.kr/read/entertain/2376993.htm",
-        "source": "news.tf.co.kr",
-        "pubDate": "2026-10-16T00:40:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "혜리 MC→홍진경·배정남·최실장 '스타일 워즈', 72인 프리티저 공개",
-        "link": "https://www.slist.kr/news/articleView.html?idxno=773885",
-        "source": "slist.kr",
-        "pubDate": "2026-10-16T00:04:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
         "title": "공포 만화가 달콤한 디저트·귀여운 굿즈로…롯데월드 속 ‘이토 준지’",
         "link": "https://www.newsis.com/view/NISX20261015_0003828188",
         "source": "newsis.com",
@@ -689,27 +680,40 @@
         "events": []
       },
       {
-        "title": "신세계百, 센텀시티 남성관 새단장 오픈",
-        "link": "http://www.biztribune.co.kr/news/articleView.html?idxno=360605",
-        "source": "biztribune.co.kr",
-        "pubDate": "2026-10-14T09:02:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "신규 매장·팝업"
-        ]
-      },
-      {
-        "title": "[패션 새소식] LF 바버, 아이들 미연과 26FW 스타일 제안… 준지, 안효섭...",
-        "link": "https://sports.hankooki.com/news/articleView.html?idxno=6941669",
-        "source": "sports.hankooki.com",
-        "pubDate": "2026-10-14T08:50:00.000Z",
+        "title": "안효섭, 턱시도 위에 핀스트라이프 코트…준지 26FW의 새로운 클래식",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9sQnhUZTRXYnlpU0hrc2xLXzJBcllCUDZpWi1EQW5rc01rN1lGRm02M3pIcklsYkdMSUYyYk1lRThCdkZBaFNkRHpwVTFrbjlZTElDQ0tEcWZkamJ5VmVj?oc=5",
+        "source": "스타패션",
+        "pubDate": "2026-10-15T04:23:00.000Z",
         "sentiment": "neutral",
-        "events": [
-          "협업·신제품"
-        ]
+        "events": []
       }
     ],
-    "송지오옴므": [],
+    "송지오옴므": [
+      {
+        "title": "신세계사이먼, 23일부터 아울렛 전점서 최대 30% 추가 할인",
+        "link": "https://www.m-i.kr/news/articleView.html?idxno=2008366",
+        "source": "m-i.kr",
+        "pubDate": "2026-10-21T00:58:00.000Z",
+        "sentiment": "positive",
+        "events": []
+      },
+      {
+        "title": "신세계 프리미엄 아울렛, 연중 최대 할인전 '슈퍼새터데이' 개최",
+        "link": "https://www.etnews.com/20261021000070",
+        "source": "etnews.com",
+        "pubDate": "2026-10-21T00:57:00.000Z",
+        "sentiment": "positive",
+        "events": []
+      },
+      {
+        "title": "[유통갤러리] 대교랭귀지스퀘어 \"3명 이상이면 외국어 자격증 수업 열어...",
+        "link": "https://theviewers.co.kr/View.aspx?No=4272373",
+        "source": "theviewers.co.kr",
+        "pubDate": "2026-10-21T00:54:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      }
+    ],
     "스톤아일랜드": [
       {
         "title": "신세계百, 250여 브랜드 패션전…제휴카드 구매 최대 7% 리워드",
@@ -769,20 +773,23 @@
     ],
     "CP컴퍼니": [
       {
-        "title": "신세계百, 남녀 패션 행사 진행…250여 개 브랜드 참여",
-        "link": "https://www.lcnews.co.kr/news/articleView.html?idxno=209856",
-        "source": "lcnews.co.kr",
-        "pubDate": "2026-10-19T02:08:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
         "title": "신세계百, 가을·겨울 패션 행사 ‘멘즈·우먼스 위크’ 개최...소비자 ...",
         "link": "https://www.thebigdata.co.kr/view.php?ud=202610190941328418df3c2a17b7_23",
         "source": "thebigdata.co.kr",
         "pubDate": "2026-10-19T00:52:00.000Z",
         "sentiment": "positive",
         "events": []
+      },
+      {
+        "title": "신세계백화점, '멘즈·우먼스위크' 진행…250여개 브랜드 참여",
+        "link": "http://www.newscape.co.kr/news/articleView.html?idxno=125160",
+        "source": "newscape.co.kr",
+        "pubDate": "2026-10-19T00:46:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "신규 매장·팝업",
+          "협업·신제품"
+        ]
       },
       {
         "title": "[유통딜리버리] 신세계百ㆍCUㆍ세븐일레븐ㆍ이마트24ㆍGS샵ㆍSSG닷컴ㆍW...",
@@ -809,6 +816,16 @@
         "link": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2339731",
         "source": "webeconomy.co.kr",
         "pubDate": "2026-10-19T09:06:00.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "입점·유통"
+        ]
+      },
+      {
+        "title": "“英 ‘마가렛 호웰’ 철학 공감하는 한국 팬 만들고 싶어”",
+        "link": "https://biz.heraldcorp.com/article/10907085?ref=naver",
+        "source": "biz.heraldcorp.com",
+        "pubDate": "2026-10-19T02:31:00.000Z",
         "sentiment": "neutral",
         "events": [
           "입점·유통"
@@ -863,12 +880,22 @@
     ],
     "톰그레이하운드맨": [
       {
-        "title": "한섬 더캐시미어, FW 남성 라인업 확대 출시",
-        "link": "https://www.gokorea.kr/news/articleView.html?idxno=882017",
-        "source": "gokorea.kr",
-        "pubDate": "2026-10-20T00:58:00.000Z",
+        "title": "[패션·잡화트렌드] 더캐시미어, 남성 라인 확대 출시…프리미엄 가을·...",
+        "link": "https://www.ibabynews.com/news/articleView.html?idxno=155376",
+        "source": "ibabynews.com",
+        "pubDate": "2026-10-20T05:08:00.000Z",
         "sentiment": "neutral",
         "events": []
+      },
+      {
+        "title": "한섬 더캐시미어, 가을·겨울(FW) 시즌 남성 컬렉션 강화",
+        "link": "https://www.woodkorea.co.kr/news/articleView.html?idxno=91966",
+        "source": "woodkorea.co.kr",
+        "pubDate": "2026-10-20T00:36:00.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "협업·신제품"
+        ]
       },
       {
         "title": "[충청 유통가 레이더] 찬 바람 불자 바빠진 유통가",
@@ -899,30 +926,22 @@
         "events": [
           "신규 매장·팝업"
         ]
-      },
-      {
-        "title": "패션 대형사, 자체 브랜드 투자는 '주춤'…해외 브랜드 도입 경쟁",
-        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=228090",
-        "source": "apparelnews.co.kr",
-        "pubDate": "2026-10-07T13:06:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "글로벌 명품 다 모인 파리에 편집숍 낸 뒤 \"차근차근 13년\"…한섬의 '뚝...",
-        "link": "https://www.hankyung.com/article/202610066193g",
-        "source": "hankyung.com",
-        "pubDate": "2026-10-06T10:01:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "협업·신제품"
-        ]
       }
     ],
     "플랫폼플레이스": [],
     "아페쎄맨": [],
     "이로맨": [],
     "지오송지오": [
+      {
+        "title": "남성복 성장 양극화…2개 브랜드에 83% 집중",
+        "link": "http://www.ktnews.com/news/articleView.html?idxno=149517",
+        "source": "ktnews.com",
+        "pubDate": "2026-10-20T07:46:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "실적·성장"
+        ]
+      },
       {
         "title": "롯데百 광주점, 가을 세일 막바지…상품 최대 60% 할인",
         "link": "https://www.namdonews.com/news/articleView.html?idxno=925524",
@@ -933,6 +952,22 @@
       }
     ],
     "바버": [
+      {
+        "title": "[유통갤러리] 대교랭귀지스퀘어 \"3명 이상이면 외국어 자격증 수업 열어...",
+        "link": "https://theviewers.co.kr/View.aspx?No=4272373",
+        "source": "theviewers.co.kr",
+        "pubDate": "2026-10-21T00:54:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "[유통딜리버리] 신세계百ㆍ이마트24ㆍ신세계사이먼ㆍW컨셉ㆍ29CMㆍGS25ㆍ...",
+        "link": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202610210922350660419",
+        "source": "dnews.co.kr",
+        "pubDate": "2026-10-21T00:40:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
       {
         "title": "[똑똑한패션] 르무통, 패션그룹형지, 이랜드재단, 신세계인터내셔날, L...",
         "link": "https://www.ekn.kr/web/view.php?key=20261019025508283",
@@ -984,34 +1019,12 @@
         ]
       },
       {
-        "title": "바버 X A.P.C., 왁스 코튼과 데님의 '에이징' 가치 담은 협업 컬렉션 출...",
-        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=228322",
-        "source": "apparelnews.co.kr",
-        "pubDate": "2026-10-19T02:50:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "협업·신제품"
-        ]
-      },
-      {
-        "title": "LF 바버, 아페쎄(A.P.C)와 협업! 영국 헤리티지와 프랑스 컨템포러리의...",
-        "link": "http://www.fashionn.com/board/read_new.php?table=1006&number=62846",
-        "source": "fashionn.com",
-        "pubDate": "2026-10-19T02:10:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "협업·신제품"
-        ]
-      },
-      {
-        "title": "왁스 재킷과 생지 데님의 만남···LF 바버, 아페쎄와 협업",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1mTHhZOVQzc19nQlRNRi11UVd5YzZaLUVSOVllTklIclo4cU9rVTlEc0dKNjhWMWN6dkFuYnpJNktlX1RHcHplYlV4VVZiR3JHZzk1NHRJSWc3N3o3WC1CN2NpR1ktNUp5LUgzNg?oc=5",
-        "source": "스마트비즈",
-        "pubDate": "2026-10-19T00:31:48.000Z",
-        "sentiment": "positive",
-        "events": [
-          "협업·신제품"
-        ]
+        "title": "바버 X 아페쎄, 왁스 코튼과 데님의 만남",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE0zckpnNUlVb25zQ3ozMmxGcWdPa2FocVlvT1liZkR0ajJReGxrMnE0X1pWN05vYWR3Q0ZVblpQZE9vejlCTFE?oc=5",
+        "source": "패션서울",
+        "pubDate": "2026-10-19T02:01:00.000Z",
+        "sentiment": "neutral",
+        "events": []
       }
     ],
     "산드로옴므": [
@@ -1091,6 +1104,14 @@
     "아스페시": [],
     "DKNY맨": [
       {
+        "title": "패션 대기업, '브랜드 세계관' 경쟁...AI 캐릭터·예술·글로벌 IP로 차별...",
+        "link": "http://www.ktnews.com/news/articleView.html?idxno=149520",
+        "source": "ktnews.com",
+        "pubDate": "2026-10-20T08:40:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
         "title": "롯데百 광주점, '한섬 글로벌 패션 위크' 진행",
         "link": "https://www.namdonews.com/news/articleView.html?idxno=926232",
         "source": "namdonews.com",
@@ -1156,16 +1177,6 @@
         ]
       },
       {
-        "title": "[충청 유통가 레이더] 찬 바람 불자 바빠진 유통가",
-        "link": "https://www.jbnews.com/news/articleView.html?idxno=1513601",
-        "source": "jbnews.com",
-        "pubDate": "2026-10-15T06:06:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "협업·신제품"
-        ]
-      },
-      {
         "title": "[시대포토] 롯데백광주점, 한섬 패션그룹 브랜드 할인 행사",
         "link": "https://www.sidae.com/article/2026101514421466049",
         "source": "sidae.com",
@@ -1174,30 +1185,69 @@
         "events": [
           "협업·신제품"
         ]
+      },
+      {
+        "title": "[현대百 M&A 史] 수입 브랜드로 몸집 키운 한섬…'제2의 타임'은 아직",
+        "link": "https://news.dealsitetv.com/articles/176635",
+        "source": "news.dealsitetv.com",
+        "pubDate": "2026-10-08T23:02:00.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "실적·성장",
+          "경영·계약 변경"
+        ]
       }
     ],
     "맨온더분": [
       {
-        "title": "美 LA 간 신세계인터 남성복 '맨온더분', K패션 띄운다",
-        "link": "https://www.econovill.com/news/articleView.html?idxno=754212",
-        "source": "econovill.com",
-        "pubDate": "2026-10-20T01:26:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "'미국 본격 진출' 맨온더분, LA 하이엔드 편집숍 '저스트원아이' 입점",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE04TXFlSmRfNlJhS3VWOTBOVzgtTURLeXVxM2V3MUJlZ0VkdzRHYjRLZG5pNE1DWUZzOU8xVThuWEFGZnV3cUJ4aEZwcXBMRmdW?oc=5",
-        "source": "패션비즈",
-        "pubDate": "2026-10-20T01:23:24.000Z",
+        "title": "신세계인터 맨온더분, 美 하이엔드 편집숍 입점",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1QUUlXMUtKbkUxckhEcm9TMGNYSExELUJNczBUOHU3Tm9QUkhwaTI3TnNya2xYMVA3RVEwZ1FqNjZSOWJ4NGR4Wm96QzR6bGw4cmRRbVQ3UGNVcEVLQlBLVWJNU2hZZnZVTEow0gFvQVVfeXFMTnlOemd2VUFld254Z1BSVVJGUXpNd2N1NUVnTXZOVk96X0JkUmx4VWppV1Bxa1I0alJoS1pRclVpV3F4YWhuYmpXOTFOMTBHZnVadW1Pblo2VmdiQXNuSmtHRkZIRXlwLVdpdDg1VkRj?oc=5",
+        "source": "한국아이닷컴",
+        "pubDate": "2026-10-20T23:36:28.000Z",
         "sentiment": "neutral",
         "events": [
           "입점·유통"
         ]
       },
       {
+        "title": "신세계인터, 미국 남성복시장 진출",
+        "link": "https://www.naeil.com/news/read/605702?ref=naver",
+        "source": "naeil.com",
+        "pubDate": "2026-10-20T04:04:00.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "입점·유통"
+        ]
+      },
+      {
+        "title": "신세계인터내셔날 '맨온더분', 미국 LA 진출…북미 시장 공략 본격화",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9OcldVaGEyRUFIS3YwaUZqd3pEamh3MExlYjdNd0Vjd3NleVpWTDRTS1B5UExrVTFaOW4tc0JSdE52UE9raFZmUWdVNko0aUl0UE9iTFdxMnNNMktrOVp5cENEWlp1aVVEQmNwMnBZVEU?oc=5",
+        "source": "위키리크스한국",
+        "pubDate": "2026-10-20T02:08:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "맨온더분, 미국 첫 진출…\"해외 성장 기반 확대\"",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOOUpWREdDX1MwYTFpUGVfeUlhWDkzZVpLNVdOUVdmRDVkSmhPdGM2VnZScFZMZ0VEVW0tVk9ETktlN3dneWhTT3hWeXUxN2NHQlZpdlMzTDY1S09qWDkxLXlfQV92NVhwRUt5LVh2M21zdk81TWJ4aUJSaHBWak13WA?oc=5",
+        "source": "이데일리",
+        "pubDate": "2026-10-20T01:55:17.000Z",
+        "sentiment": "positive",
+        "events": [
+          "실적·성장"
+        ]
+      },
+      {
+        "title": "美 LA 간 신세계인터 남성복 '맨온더분', K패션 띄운다",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB4Y0lQR1ZWa2M0OEhSdndnMmtLa253WExxS3VJcTRKbVk5RllGNVROVkRqbzRfSEdIX09JejJrM0ZvbGpHc3hoSjZic29fNlRjTVpQcUhJTkJUUDR3b1BQeEpQMWxVUTdSaTdwNQ?oc=5",
+        "source": "ER 이코노믹리뷰",
+        "pubDate": "2026-10-20T01:24:40.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
         "title": "[위클리오늘] 맨온더분, 자주(JAJU)(10.20)",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5FY1N0QzRORHFfZ3JLaUpJOWFfejFFcjRSbTlUQU5iY2Ntal9xcks4Mm5xNUtZeG96bndtOHZvRFFWcFdBa01NX0t3QkhSUWRlUVF4dzRXSm9iRGl4ZUk2emlrbFRWUDhwUjhjRWRB?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0zYU4tMGpucWc0NDJYQXo1eVQxMFRBem53clJVaXJJT292ZFRTejdvLWd5cjl1eXRFNUEyQmllTzZMSVE1bVQ2ZV94OFlLUlZfcG9NOFlUSUQ3dldlZUlYRnpsdGlwNFhOOWpPNDZ2NA?oc=5",
         "source": "위클리오늘",
         "pubDate": "2026-10-20T00:53:10.000Z",
         "sentiment": "neutral",
@@ -1220,14 +1270,6 @@
         "events": [
           "협업·신제품"
         ]
-      },
-      {
-        "title": "W컨셉, 남성 전문관 6년 만에 개편…3040 남성 공략 강화",
-        "link": "http://www.ktnews.com/news/articleView.html?idxno=149182",
-        "source": "ktnews.com",
-        "pubDate": "2026-10-08T04:14:00.000Z",
-        "sentiment": "positive",
-        "events": []
       }
     ],
     "수트서플라이": [],
@@ -1257,10 +1299,20 @@
     "TEN-C": [],
     "이스트로그(프레이트)": [
       {
-        "title": "데상트 X 이스트로그, 두 번째 협업 '키네틱 컨투어' 컬렉션 공개",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB1MUJmNTBTNVFJdW4xRGVqc05LdnhpOGd0eENuTi1RU204UnpJTjdrUTdzNUVUYkJIOXlkdWVsR050elY1azh2SWVkU205ekZw?oc=5",
-        "source": "패션비즈",
-        "pubDate": "2026-10-16T07:27:03.000Z",
+        "title": "[패션·잡화트렌드] 더캐시미어, 남성 라인 확대 출시…프리미엄 가을·...",
+        "link": "https://www.ibabynews.com/news/articleView.html?idxno=155376",
+        "source": "ibabynews.com",
+        "pubDate": "2026-10-20T05:08:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품"
+        ]
+      },
+      {
+        "title": "[협업]데상트 x 이스트로그 ‘키네틱 컨투어 KINETIC CONTOUR’",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9WMmVHQjlWOGV6d2VFdGhBNmQwVkU0cWRzZEgtcTExYTBidHA3eEwxd1JRa1MzOVlMRTdIVW5JWHhBVmthT280YjU2U05KQWVLME5iU2tKOTlQRGpwNWhhWXV1c3RxSzA?oc=5",
+        "source": "국제섬유신문",
+        "pubDate": "2026-10-20T01:51:36.000Z",
         "sentiment": "positive",
         "events": [
           "협업·신제품"
