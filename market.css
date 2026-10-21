@@ -43,7 +43,7 @@
 .market-table { border-collapse:separate; border-spacing:0; width:100%; font-size:12px; }
 .market-table th,.market-table td { min-width:135px; padding:14px; text-align:center; border-bottom:1px solid #e5ecf0; white-space:nowrap; }
 .market-table thead th { position:sticky; top:0; z-index:2; background:#edf3f6; color:#234657; }
-.market-table tbody th { position:sticky; left:0; z-index:1; background:white; text-align:left; }
+.market-table tbody th { position:sticky; top:auto; left:0; z-index:1; background:white; color:#182c3e; text-align:left; }
 .market-table thead th:first-child { left:0; z-index:3; }
 .market-table small { display:block; font-size:10px; margin-top:5px; font-weight:400; color:#70818e; }
 .market-cell-present { color:#147660; background:#f5fbf8; }.market-cell-absent { color:#83909b; }.market-cell-unknown { color:#93621a; background:#fff9ed; }

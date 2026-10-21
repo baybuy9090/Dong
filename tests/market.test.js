@@ -4,6 +4,13 @@ const { buildComparison } = require('../market');
 const config = require('../config');
 const stores = [config.getStore('롯데', '본점'), config.getStore('신세계', '본점'), config.getStore('현대', '본점')];
 const brands = ['타임옴므', '바버', 'POTTERY', '이로맨'];
+test('상권 브랜드명은 흰 배경에서 읽히고 본문 행은 상단에 겹치지 않는다', () => {
+  const css = require('node:fs').readFileSync(require('node:path').join(__dirname, '../market.css'), 'utf8');
+  const rule = css.match(/\.market-table tbody th\s*\{([^}]+)\}/)[1];
+  assert.match(rule, /color:\s*#182c3e/);
+  assert.match(rule, /top:\s*auto/);
+  assert.match(rule, /left:\s*0/);
+});
 test('상권 메뉴는 맨 끝에 있고 입점 구성과 월간 변화만 제공한다', () => {
   const fs = require('node:fs');
   const path = require('node:path');
