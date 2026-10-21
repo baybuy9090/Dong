@@ -47,7 +47,12 @@
     } };
   }
 
+  function marketStores(stores) {
+    return stores.filter(store => store.id !== '롯데-0015');
+  }
+
   function createUI(config, hooks) {
+    config = { ...config, storeRows: marketStores(config.storeRows) };
     const container = document.getElementById('marketView');
     const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
     const label = store => `${store.company} ${store.name === '수원점' ? '수원' : store.name}`;
@@ -169,5 +174,5 @@
     load();
     return { refresh: render };
   }
-  return { buildComparison, createUI };
+  return { buildComparison, createUI, marketStores };
 }));

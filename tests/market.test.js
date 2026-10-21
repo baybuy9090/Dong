@@ -1,9 +1,16 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { buildComparison } = require('../market');
+const { buildComparison, marketStores } = require('../market');
 const config = require('../config');
 const stores = [config.getStore('롯데', '본점'), config.getStore('신세계', '본점'), config.getStore('현대', '본점')];
 const brands = ['타임옴므', '바버', 'POTTERY', '이로맨'];
+test('상권 목록에서만 롯데 울산을 제외하고 현대 울산과 원본 설정은 유지한다', () => {
+  const visible = marketStores(config.storeRows);
+  assert.equal(visible.some(store => store.id === '롯데-0015'), false);
+  assert.ok(visible.some(store => store.company === '현대' && store.name === '울산'));
+  assert.ok(config.storeRows.some(store => store.id === '롯데-0015'));
+  assert.equal(visible.length, config.storeRows.length - 1);
+});
 test('상권 브랜드명은 흰 배경에서 읽히고 본문 행은 상단에 겹치지 않는다', () => {
   const css = require('node:fs').readFileSync(require('node:path').join(__dirname, '../market.css'), 'utf8');
   const rule = css.match(/\.market-table tbody th\s*\{([^}]+)\}/)[1];
