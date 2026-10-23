@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-22T05:55:52.050Z",
+  "lastUpdated": "2026-10-23T05:53:21.907Z",
   "data": {
     "롯데-0013|띠어리맨": [
       {
@@ -1750,6 +1750,17 @@
         "url": "floor-maps/hyundai/B00122000/7F.svg"
       }
     ],
+    "현대-B00122000|캡틴선샤인": [
+      {
+        "company": "현대",
+        "store": "무역센터",
+        "storeId": "현대-B00122000",
+        "floor": "7F",
+        "label": "7F 층 안내도",
+        "floorKey": "7F|7F 층 안내도",
+        "url": "floor-maps/hyundai/B00122000/7F.svg"
+      }
+    ],
     "현대-B00122000|클럽모나코": [
       {
         "company": "현대",
@@ -3397,7 +3408,7 @@
         "floor": "6F",
         "label": "6F 남성 부티크 안내도",
         "floorKey": "6F|6F 남성 부티크 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00002/guide/floor/__icsFiles/afieldfile/2026/10/02/GB5ML6L5PEw1.png"
+        "url": "https://www.shinsegae.com/cms12/SC00002/guide/floor/__icsFiles/afieldfile/2026/10/22/ogKqbBuYpuah.png"
       }
     ],
     "신세계-SC00006|띠어리맨": [
