@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T03:11:59.249Z",
+  "generatedAt": "2026-10-23T03:17:32.968Z",
   "months": [
     {
       "month": "2026-08",
@@ -141,7 +141,7 @@
     {
       "month": "2026-10",
       "baselineSnapshot": "2026-09-30",
-      "endSnapshot": "2026-10-22",
+      "endSnapshot": "2026-10-23",
       "new": [
         {
           "company": "롯데",
@@ -178,6 +178,12 @@
           "store": "하남",
           "storeId": "신세계-SC00012",
           "brand": "알레그리"
+        },
+        {
+          "company": "현대",
+          "store": "무역센터",
+          "storeId": "현대-B00122000",
+          "brand": "캡틴선샤인"
         },
         {
           "company": "현대",

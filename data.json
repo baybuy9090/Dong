@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-10-22T03:08:56.748Z",
+  "lastUpdated": "2026-10-23T03:14:14.307Z",
   "comparisonAsOf": "2026-09-30",
   "monthKey": "2026-10",
   "monthStartSnapshot": "2026-09-30",
   "monthlySummary": {
     "new": 7,
     "exit": 1,
-    "pending": 0,
+    "pending": 1,
     "stale": 0
   },
   "health": {
@@ -219,7 +219,7 @@
       "company": "현대",
       "store": "무역센터",
       "status": "ok",
-      "brands": 15,
+      "brands": 16,
       "successfulPages": 1,
       "failedPages": 0,
       "expectedPages": 1
@@ -2116,6 +2116,16 @@
       "sales": "",
       "note": "확인",
       "comparisonCheck": "2026-09-30 입점"
+    },
+    {
+      "company": "현대",
+      "store": "무역센터",
+      "storeId": "현대-B00122000",
+      "brand": "캡틴선샤인",
+      "sales": "",
+      "note": "신규 입점 재확인 중",
+      "changeMonth": "2026-10",
+      "comparisonCheck": "2026-09-30 미입점"
     },
     {
       "company": "현대",
