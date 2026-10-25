@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-24T05:37:12.982Z",
+  "lastUpdated": "2026-10-25T05:52:43.097Z",
   "diagnostics": [
     {
       "storeId": "신세계-SC00002",
@@ -222,7 +222,8 @@
     {
       "storeId": "현대-B00122000",
       "store": "무역센터",
-      "status": "ok",
+      "status": "stale",
+      "error": "fetch failed",
       "floors": 15,
       "format": "svg"
     },
@@ -264,7 +265,8 @@
     {
       "storeId": "현대-B00143000",
       "store": "중동",
-      "status": "ok",
+      "status": "stale",
+      "error": "fetch failed",
       "floors": 32,
       "format": "svg"
     },

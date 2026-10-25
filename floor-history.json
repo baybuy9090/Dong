@@ -1,7 +1,15 @@
 {
   "schemaVersion": 5,
-  "lastUpdated": "2026-10-24T05:37:12.982Z",
+  "lastUpdated": "2026-10-25T05:52:43.097Z",
   "events": [
+    {
+      "detectedAt": "2026-10-25T05:52:43.097Z",
+      "type": "도면 변경",
+      "company": "현대",
+      "store": "목동",
+      "storeId": "현대-B00142000",
+      "floor": "4F"
+    },
     {
       "detectedAt": "2026-10-24T05:37:12.982Z",
       "type": "도면 변경",
@@ -4056,14 +4064,6 @@
       "store": "판교",
       "storeId": "현대-B00148000",
       "floor": "9F"
-    },
-    {
-      "detectedAt": "2026-09-30T06:31:32.947Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "판교",
-      "storeId": "현대-B00148000",
-      "floor": "B1"
     }
   ],
   "current": {
@@ -6676,7 +6676,7 @@
       "label": "4F 층 안내도",
       "url": "floor-maps/hyundai/B00142000/4F.svg",
       "brands": [],
-      "signature": "f4ee88b9894246118623e795530edc43700a0af99c270b2950dd98256566c7d2"
+      "signature": "8796ade15b9909e245129cc81e52da853b3d21589537e016d4dcc39bc0560840"
     },
     "현대-B00142000|3F|3F 층 안내도": {
       "company": "현대",
