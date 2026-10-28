@@ -23,17 +23,20 @@ test('상권 브랜드명은 흰 배경에서 읽히고 본문 행은 상단에 
   assert.match(rule, /top:\s*auto/);
   assert.match(rule, /left:\s*0/);
 });
-test('상권 메뉴는 맨 끝에 있고 입점 구성과 월간 변화만 제공한다', () => {
+test('점별 비교 메뉴는 층 도면 보기 바로 앞에 있고 입점 구성과 월간 변화만 제공한다', () => {
   const fs = require('node:fs');
   const path = require('node:path');
   const html = fs.readFileSync(path.join(__dirname, '../index.html'), 'utf8');
   const source = fs.readFileSync(path.join(__dirname, '../market.js'), 'utf8');
   for (const navigation of [html.match(/<div class="tabs">([\s\S]*?)<\/div>/)[1], html.match(/<nav class="mobile-tabbar"[^>]*>([\s\S]*?)<\/nav>/)[1]]) {
-    assert.equal([...navigation.matchAll(/data-tab="([^"]+)"/g)].at(-1)[1], 'market');
+    const order = [...navigation.matchAll(/data-tab="([^"]+)"/g)].map(match => match[1]);
+    assert.equal(order[order.indexOf('floor') - 1], 'market');
   }
   assert.match(source, /const tabs = \[\['all', '입점 구성'\], \['changes', '월간 변화'\]\]/);
   assert.doesNotMatch(source, /경쟁|정상 확인|marketEvidence|dongMarketSelection/);
   assert.match(source, /filter\(store => store.company === '롯데'\)/);
+  assert.match(html, /🏬 점별 비교/);
+  assert.doesNotMatch(html, /◈ 상권/);
   assert.doesNotMatch(source, /store.company !== base\(\).company/);
 });
 function compare(rows, options = {}) {

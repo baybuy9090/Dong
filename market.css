@@ -24,15 +24,27 @@
 .market-chips { display:flex; gap:7px; flex-wrap:wrap; margin-top:10px; font-size:12px; }
 #marketView .market-chips button { border-color:#badbd4; color:#176557; background:#eef8f5; }
 .market-status { font-size:11px; color:#617481; margin:12px 2px; line-height:1.7; }
-.market-kpis { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; margin-bottom:14px; }
-.market-kpis>div { padding:22px; border-radius:12px; border:1px solid #dce6eb; background:white; }
-.market-kpis>div:last-child { background:#eaf6f2; border-color:#a9d2c5; }
+.market-kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:14px; }
+#marketView .market-kpi { display:block; text-align:left; padding:20px; border-radius:12px; border:1px solid #dce6eb; background:white; color:#182c3e; }
+#marketView .market-kpi[aria-pressed=true] { border-color:#183e51; box-shadow:inset 0 0 0 2px #183e51; }
+#marketView .market-kpi-common { background:#eaf6f2; border-color:#a9d2c5; }
+#marketView .market-kpi-exclusive { background:#eef3fb; border-color:#bfd0e8; }
+#marketView .market-kpi-candidate { background:#fff7ea; border-color:#ecd3a6; }
+.market-kpis em { display:block; font-style:normal; font-size:10.5px; color:#7a8a94; margin-top:6px; }
 .market-kpis span { font-size:12px; color:#5c737e; }.market-kpis strong { display:block; font-size:34px; margin-top:10px; letter-spacing:-1px; }
 .market-kpis small { font-size:11px; margin-left:8px; font-weight:400; letter-spacing:0; }
 .market-note { font-size:12px; line-height:1.8; color:#64717c; padding:10px 2px 18px; }
 .market-panel h3 { font-size:16px; margin:0 0 20px; }.market-panel h3 small { font-size:11px; font-weight:400; color:#718592; margin-left:10px; }
 .market-bar-row { display:grid; grid-template-columns:145px 1fr 50px 90px; align-items:center; gap:12px; margin:12px 0; font-size:12px; }
-.market-track { background:#eef2f5; border-radius:6px; overflow:hidden; height:16px; }.market-track i { display:block; height:100%; border-radius:6px; }
+.market-track { display:flex; background:#eef2f5; border-radius:6px; overflow:hidden; height:16px; min-width:4px; }.market-track i { display:block; height:100%; }
+.market-bar-row.is-base span { font-weight:700; }
+.market-bar-row span em { font-style:normal; font-size:10px; background:#183e51; color:white; border-radius:4px; padding:1px 5px; margin-left:6px; }
+.market-company-dot { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:6px; }
+.market-tier-legend { display:flex; gap:12px; flex-wrap:wrap; font-size:11px; color:#5c737e; margin-top:12px; }
+.market-tier-legend i { display:inline-block; width:9px; height:9px; border-radius:2px; margin-right:4px; vertical-align:-1px; }
+.market-table td.market-base-col { box-shadow:inset 2px 0 0 #9fbdd0, inset -2px 0 0 #9fbdd0; }
+.market-table thead th.market-base-col { background:#dbe8f0; }
+.market-cat { font-weight:700; } .market-cat-common { color:#147660; } .market-cat-exclusive { color:#2b5c9e; } .market-cat-candidate { color:#a3660b; }
 .market-bar-row small { color:#7c6b48; font-size:10px; }
 .market-toolbar { display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap; }
 .market-sections { display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
@@ -56,7 +68,7 @@
 @media(max-width:680px) {
   .market-hero { padding:22px 18px; display:block; }.market-hero h2 { font-size:27px; }.market-hero h2 span { display:block; margin:8px 0; font-size:16px; }.market-actions { margin-top:20px; }
   .market-controls,.market-panel { padding:16px; }.market-selects { gap:12px; }.market-selects label { width:100%; }.market-selects label:first-child { min-width:0; }
-  .market-kpis { grid-template-columns:repeat(2,1fr); gap:8px; }.market-kpis>div { padding:16px; }.market-kpis strong { font-size:29px; }
+  .market-kpis { grid-template-columns:repeat(2,1fr); gap:8px; }#marketView .market-kpi { padding:14px; }.market-kpis strong { font-size:29px; }
   .market-bar-row { grid-template-columns:95px 1fr 35px; gap:8px; font-size:11px; }.market-bar-row small { grid-column:2/4; }
   .market-panel h3 small { display:block; margin:6px 0; }.market-search { width:100%; }.market-search label:last-child { flex:1; }.market-search input { width:100%; box-sizing:border-box; }
   .market-table th,.market-table td { min-width:110px; padding:12px 8px; font-size:11px; }.market-table tbody th { min-width:115px; }.market-candidates { grid-template-columns:1fr; }

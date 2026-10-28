@@ -5,10 +5,14 @@ const path = require('node:path');
 
 const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
 
-test('입퇴점 변화와 월별 아카이브는 한 줄 접힘 패널로 통합된다', () => {
+test('월별 입퇴점 추이는 브랜드 랭킹 아래에 차트로 보이고 상세 내역은 접힘 패널로 둔다', () => {
   assert.match(html, /id="monthlyOverviewToggle"[^>]*aria-expanded="false"/);
   assert.match(html, /id="monthlyOverviewDetails" hidden/);
-  assert.ok(html.indexOf('id="monthlyOverviewDetails"') < html.indexOf('id="brandRanking"'));
+  assert.ok(html.indexOf('id="brandRanking"') < html.indexOf('id="monthlyArchiveChart"'));
+  assert.ok(html.indexOf('id="monthlyArchiveChart"') < html.indexOf('id="storeBrandRanking"'));
+  assert.ok(html.indexOf('id="monthlyArchiveChart"') < html.indexOf('id="monthlyOverviewDetails"'));
+  assert.match(html, /function renderMonthlyArchiveChart\(months\)/);
+  assert.match(html, /function renderMonthlyBrandMovers\(months\)/);
   assert.doesNotMatch(html, /id="monthlyChangeMore"/);
   assert.match(html, /월별 입·퇴점 아카이브 · \$\{monthLabel\} 신규/);
   assert.match(html, /const months = current \? \[current, \.\.\.past\] : past/);

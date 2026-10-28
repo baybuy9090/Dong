@@ -110,7 +110,7 @@
       const custom = peers.length !== auto.length || peers.some(id => !auto.includes(id));
       const options = config.storeRows.filter(store => store.company === '롯데').map(store => `<option value="${escape(store.id)}" ${store.id === baseId ? 'selected' : ''}>${escape(label(store))} · ${escape(store.region)}</option>`).join('');
       container.innerHTML = `
-        <header class="market-hero"><div><div class="market-eyebrow">TRADE AREA INTELLIGENCE</div><h2>상권 <span>점포별 입점 현황</span></h2><p>브랜드 구성의 차이를 찾고, 다음 MD 검토를 시작하세요.</p></div><div class="market-actions"><button data-action="export" ${!payload ? 'disabled' : ''}>엑셀 내보내기</button><button data-action="print" ${!payload ? 'disabled' : ''}>보고용 인쇄</button></div></header>
+        <header class="market-hero"><div><div class="market-eyebrow">STORE-BY-STORE COMPARISON</div><h2>점별 비교 <span>기준 점포 vs 비교 점포 브랜드 구성</span></h2><p>공통·단독 보유 브랜드와 비교 점포에만 있는 브랜드를 한눈에 확인하세요.</p></div><div class="market-actions"><button data-action="export" ${!payload ? 'disabled' : ''}>엑셀 내보내기</button><button data-action="print" ${!payload ? 'disabled' : ''}>보고용 인쇄</button></div></header>
         <section class="market-controls"><div class="market-selects"><label>기준 점포<select id="marketBase">${options}</select></label><label>기준 시점<select id="marketSnapshot"><option value="latest">최신 수집</option>${history.map(key => `<option value="${key}" ${key === snapshot ? 'selected' : ''}>${key} 기록</option>`).join('')}</select></label><button data-action="auto">같은 상권 자동 선택</button></div>
         <div class="market-context"><b>${escape(base().region)}</b><span>${custom ? '사용자 지정 비교' : '동일 상권 · 점포 비교'} · 비교 점포 ${peers.length}곳</span></div>
         <details class="market-picker"><summary>비교 점포 편집 · 같은 회사 또는 다른 상권도 추가할 수 있습니다</summary><div class="market-store-grid">${config.storeRows.filter(store => store.id !== baseId).map(store => `<label><input type="checkbox" data-peer="${escape(store.id)}" ${peers.includes(store.id) ? 'checked' : ''}><span>${escape(label(store))}<small>${escape(store.region)}</small></span></label>`).join('')}</div></details>
@@ -119,17 +119,26 @@
         ${!payload ? '' : content()}`;
     }
     function content() {
-      const cards = [['base', '기준 점포 입점', '브랜드'], ['common', '공통 보유', '브랜드']];
+      const cards = [['base', '기준 점포 입점', '브랜드', '기준 점포에서 확인된 전체 브랜드'], ['common', '공통 보유', '브랜드', '기준 점포와 비교 점포 모두 보유'],
+        ['exclusive', '기준 점포에만', '브랜드', '비교 점포에는 자료 없음'], ['candidate', '비교 점포에만', '브랜드', '기준 점포에는 자료 없음 · 검토 대상']];
       const items = visibleItems();
       const tabs = [['all', '입점 구성'], ['changes', '월간 변화']];
-      const totals = model.selected.map((store, index) => ({ store, count: model.items.filter(item => item.cells[index].state === 'present').length, uncertain: model.items.filter(item => item.cells[index].state === 'unknown').length }));
+      const tierNames = Object.keys(config.brandTiers);
+      const totals = model.selected.map((store, index) => {
+        const present = model.items.filter(item => item.cells[index].state === 'present');
+        return { store, count: present.length, uncertain: model.items.filter(item => item.cells[index].state === 'unknown').length,
+          tiers: tierNames.map(name => ({ name, count: present.filter(item => hooks.tier(item.brand) === name).length })).filter(entry => entry.count) };
+      });
       const max = Math.max(1, ...totals.map(item => item.count));
-      return `<div class="market-kpis">${cards.map(([key, title, unit]) => `<div><span>${title}</span><strong>${key !== 'base' && !peers.length ? '—' : model.counts[key]}<small>${unit}</small></strong></div>`).join('')}</div>
+      const tierColor = name => (hooks.tierColor ? hooks.tierColor(name) : '#7d8f99');
+      const categoryLabels = { common: '공통', exclusive: '기준점 단독', candidate: '비교점에만', base: '', uncertain: '미확정', exit: '퇴점' };
+      return `<div class="market-kpis">${cards.map(([key, title, unit, hint]) => `<button type="button" class="market-kpi market-kpi-${key}" data-section="${key === 'base' ? 'all' : key}" aria-pressed="${section === key || (key === 'base' && section === 'all')}"><span>${title}</span><strong>${key !== 'base' && !peers.length ? '—' : model.counts[key]}<small>${unit}</small></strong><em>${hint}</em></button>`).join('')}</div>
         <div class="market-note">선택한 비교 점포 내 결과입니다. ‘자료 없음’은 미입점 확정이 아닙니다. 수집 미확정 ${model.counts.uncertain}개 브랜드는 집계에서 구분합니다. 매출·면적·계약 조건은 별도 검토가 필요합니다.</div>
-        <section class="market-panel"><h3>점포별 브랜드 구성 <small>확인된 브랜드 수 · 중복 제외</small></h3><div class="market-bars">${totals.map(({ store, count, uncertain }) => `<div class="market-bar-row"><span>${escape(label(store))}</span><div class="market-track"><i style="width:${count / max * 100}%;background:${hooks.color(store.company)}"></i></div><b>${count}개</b><small>${uncertain ? `수집 미확정 ${uncertain}` : ''}</small></div>`).join('')}</div></section>
+        <section class="market-panel"><h3>점포별 브랜드 구성 <small>확인된 브랜드 수 · 막대 색은 티어</small></h3><div class="market-bars">${totals.map(({ store, count, uncertain, tiers }, index) => `<div class="market-bar-row${index === 0 ? ' is-base' : ''}"><span><i class="market-company-dot" style="background:${hooks.color(store.company)}"></i>${escape(label(store))}${index === 0 ? '<em>기준</em>' : ''}</span><div class="market-track" style="width:${count / max * 100}%">${tiers.map(entry => `<i style="width:${entry.count / count * 100}%;background:${tierColor(entry.name)}" title="${escape(entry.name)} ${entry.count}개"></i>`).join('')}</div><b>${count}개</b><small>${uncertain ? `수집 미확정 ${uncertain}` : ''}</small></div>`).join('')}</div>
+        <div class="market-tier-legend">${tierNames.filter(name => totals.some(t => t.tiers.some(entry => entry.name === name))).map(name => `<span><i style="background:${tierColor(name)}"></i>${escape(name)}</span>`).join('')}</div></section>
         <section class="market-panel"><div class="market-toolbar"><div class="market-sections" role="group" aria-label="비교 결과 유형">${tabs.map(([key, name]) => `<button data-section="${key}" aria-pressed="${section === key}">${name}</button>`).join('')}</div><div class="market-search"><label>티어<select id="marketTier"><option value="">전체</option>${Object.keys(config.brandTiers).map(name => `<option ${name === tier ? 'selected' : ''}>${escape(name)}</option>`).join('')}</select></label><label>브랜드 검색<input id="marketQuery" value="${escape(query)}" placeholder="브랜드명 입력"></label></div></div>
-        <p class="market-result-count">${items.length}개 브랜드 · 요약 카드와 그래프는 전체 비교 기준입니다.${section === 'changes' ? ' 선택 기록의 월간 확정 변화만 표시합니다.' : ''}</p>
-        <div class="market-table-wrap" tabindex="0" aria-label="점포별 브랜드 비교표, 가로 스크롤 가능"><table class="market-table"><thead><tr><th>브랜드 / 상권</th>${model.selected.map(store => `<th>${escape(label(store))}<small>${escape(store.region)}</small></th>`).join('')}</tr></thead><tbody>${items.map(item => `<tr><th>${escape(item.brand)}<small>${escape(hooks.tier(item.brand))}</small></th>${item.cells.map(cell => `<td class="market-cell-${cell.state}" title="${escape(cell.reason)}">${stateLabels[cell.state]}${section === 'changes' ? `<small>${escape(cell.row?.note || '')}</small>` : ''}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
+        <p class="market-result-count">${items.length}개 브랜드${['common', 'exclusive', 'candidate'].includes(section) ? ` · ${escape(cards.find(card => card[0] === section)[1])}만 보는 중` : ''} · 요약 카드는 전체 비교 기준이며, 카드를 누르면 해당 브랜드만 표로 볼 수 있습니다.${section === 'changes' ? ' 선택 기록의 월간 확정 변화만 표시합니다.' : ''}</p>
+        <div class="market-table-wrap" tabindex="0" aria-label="점포별 브랜드 비교표, 가로 스크롤 가능"><table class="market-table"><thead><tr><th>브랜드 / 점포</th>${model.selected.map((store, index) => `<th${index === 0 ? ' class="market-base-col"' : ''}>${index === 0 ? '기준 · ' : ''}${escape(label(store))}<small>${escape(store.region)}</small></th>`).join('')}</tr></thead><tbody>${items.map(item => `<tr><th>${escape(item.brand)}<small>${escape(hooks.tier(item.brand))}${categoryLabels[item.category] ? ` · <span class="market-cat market-cat-${item.category}">${categoryLabels[item.category]}</span>` : ''}</small></th>${item.cells.map((cell, index) => `<td class="market-cell-${cell.state}${index === 0 ? ' market-base-col' : ''}" title="${escape(cell.reason)}">${stateLabels[cell.state]}${section === 'changes' ? `<small>${escape(cell.row?.note || '')}</small>` : ''}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
         ${!items.length ? '<div class="market-empty">해당 조건의 브랜드가 없습니다. 비교 점포 또는 필터를 변경해 주세요.</div>' : ''}</section>`;
     }
     container.addEventListener('change', event => {
@@ -162,7 +171,7 @@
       else if (button.dataset.action === 'retry') load();
       else if (button.dataset.action === 'print' && payload) window.print();
       else if (button.dataset.action === 'export' && payload) {
-        hooks.export([['상권 입점 현황', label(base()), snapshot, payload.lastUpdated], ['비교 범위', ...model.selected.map(label)], ['브랜드', ...model.selected.map(label)], ...visibleItems().map(item => [item.brand, ...item.cells.map(cell => `${stateLabels[cell.state]} (${cell.reason})`)])], '상권_입점현황.xls');
+        hooks.export([['점별 비교', label(base()), snapshot, payload.lastUpdated], ['비교 범위', ...model.selected.map(label)], ['브랜드', '구분', ...model.selected.map(label)], ...visibleItems().map(item => [item.brand, ({ common: '공통', exclusive: '기준점 단독', candidate: '비교점에만' })[item.category] || '', ...item.cells.map(cell => `${stateLabels[cell.state]} (${cell.reason})`)])], '점별비교_입점현황.xls');
       }
     });
     Promise.allSettled([json('history/index.json'), json('review-decisions.json')]).then(results => {

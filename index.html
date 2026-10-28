@@ -201,6 +201,35 @@
 
     .empty { padding: 40px; text-align: center; color: #999; font-size: 13px; }
 
+    .archive-kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:14px; }
+    .archive-kpis > div { background:#f7f8fa; border-radius:8px; padding:9px 11px; }
+    .archive-kpis span { display:block; font-size:10.5px; color:#888; }
+    .archive-kpis b { font-size:16px; }
+    .archive-chart { display:flex; gap:10px; align-items:stretch; overflow-x:auto; padding:4px 2px 2px; }
+    .archive-col { flex:1 1 0; min-width:56px; max-width:200px; display:flex; flex-direction:column; align-items:stretch; }
+    .archive-col.is-current .archive-seg { opacity:.45; }
+    .archive-half { height:78px; display:flex; flex-direction:column; gap:2px; padding:0 18%; }
+    .archive-half.up { justify-content:flex-end; }
+    .archive-half.down { justify-content:flex-start; }
+    .archive-seg { display:block; width:100%; min-height:3px; border-radius:3px; }
+    .archive-axis { height:1px; background:#bbb; margin:2px 0; }
+    .archive-num { font-size:11px; font-weight:700; text-align:center; height:15px; }
+    .archive-num.up { color:#1a9d4c; } .archive-num.down { color:#d9363e; }
+    .archive-month { text-align:center; font-size:11px; color:#555; margin-top:4px; font-weight:600; }
+    .archive-month small { display:block; font-size:9.5px; color:#d97e0e; font-weight:600; }
+    .archive-legend { display:flex; gap:12px; flex-wrap:wrap; font-size:11px; color:#666; margin-top:8px; align-items:center; }
+    .archive-legend i { display:inline-block; width:9px; height:9px; border-radius:2px; margin-right:4px; vertical-align:-1px; }
+    .archive-legend-note { margin-left:auto; color:#999; }
+    .archive-subhead { font-size:12.5px; margin:18px 0 8px; color:#444; }
+    .archive-subhead small { font-weight:400; color:#999; margin-left:6px; }
+    .archive-movers { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:4px 18px; }
+    .archive-mover { display:grid; grid-template-columns:120px 1fr 1fr 36px; align-items:center; gap:6px; font-size:12px; padding:3px 0; }
+    .archive-mover-name { display:flex; align-items:center; overflow:hidden; white-space:nowrap; }
+    .archive-mover-bar { height:10px; background:#f2f2f4; border-radius:3px; display:flex; }
+    .archive-mover-bar.down { justify-content:flex-end; }
+    .archive-mover-bar i { display:block; height:100%; border-radius:3px; }
+    .archive-mover-bar.down i { background:#d9363e; } .archive-mover-bar.up i { background:#1a9d4c; }
+    .archive-mover-net { text-align:right; font-size:12px; } .archive-mover-net.pos { color:#1a9d4c; } .archive-mover-net.neg { color:#d9363e; }
     #tableMatrixView, #floorView, #mapView, #newsView { display: none; }
     .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
     .news-card { background: white; border: 1px solid #eee; border-radius: 10px; padding: 14px 16px; }
@@ -376,6 +405,10 @@
     .mobile-tabbar, .mobile-filter-trigger, .filter-backdrop, .mobile-sheet-header { display: none; }
 
     @media (max-width: 680px) {
+      .archive-kpis { grid-template-columns:repeat(2,1fr); }
+      .archive-half { height:60px; }
+      .archive-mover { grid-template-columns:96px 1fr 1fr 32px; }
+      .archive-legend-note { margin-left:0; }
       body { padding: 0 12px 84px; font-size: 14px; }
       .header-bar { margin: 0 -12px 16px; padding: 18px 16px 16px; border-radius: 0 0 14px 14px; }
       .header-bar h1 { font-size: 17px; padding-right: 76px; line-height: 1.35; }
@@ -540,20 +573,20 @@
   <div class="tabs">
     <button class="tab-btn tabnav-btn active" data-tab="overview" id="tabOverview" onclick="switchTab('overview')">📊 한눈에 보기</button>
     <button class="tab-btn tabnav-btn" data-tab="map" id="tabMap" onclick="switchTab('map')">📍 상권 지도</button>
+    <button class="tab-btn tabnav-btn" data-tab="market" id="tabMarket" onclick="switchTab('market')">🏬 점별 비교</button>
     <button class="tab-btn tabnav-btn" data-tab="floor" id="tabFloor" onclick="switchTab('floor')">🗺️ 층 도면 보기</button>
     <button class="tab-btn tabnav-btn" data-tab="news" id="tabNews" onclick="switchTab('news')">📰 브랜드 뉴스</button>
     <button class="tab-btn tabnav-btn" data-tab="table" id="tabTable" onclick="switchTab('table')">📋 표·매트릭스</button>
-    <button class="tab-btn tabnav-btn" data-tab="market" id="tabMarket" onclick="switchTab('market')">◈ 상권</button>
   </div>
 
   <!-- 모바일 전용 하단 고정 탭바 (680px 이하에서만 표시, PC용 .tabs는 그대로 유지) -->
   <nav class="mobile-tabbar" id="mobileTabbar">
     <button class="mobile-tabbar-btn tabnav-btn active" data-tab="overview" onclick="switchTab('overview')"><span class="mtb-icon">📊</span><span class="mtb-label">한눈에</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="map" onclick="switchTab('map')"><span class="mtb-icon">📍</span><span class="mtb-label">지도</span></button>
+    <button class="mobile-tabbar-btn tabnav-btn" data-tab="market" onclick="switchTab('market')"><span class="mtb-icon">🏬</span><span class="mtb-label">점별</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="floor" onclick="switchTab('floor')"><span class="mtb-icon">🗺️</span><span class="mtb-label">도면</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="news" onclick="switchTab('news')"><span class="mtb-icon">📰</span><span class="mtb-label">뉴스</span></button>
     <button class="mobile-tabbar-btn tabnav-btn" data-tab="table" onclick="switchTab('table')"><span class="mtb-icon">📋</span><span class="mtb-label">표</span></button>
-    <button class="mobile-tabbar-btn tabnav-btn" data-tab="market" onclick="switchTab('market')"><span class="mtb-icon">◈</span><span class="mtb-label">상권</span></button>
   </nav>
 
   <!-- 모바일 전용 필터 트리거 (누르면 아래 .controls가 바텀시트로 올라옴) -->
@@ -580,19 +613,26 @@
     <div class="overview-toolbar">
       <button type="button" class="btn btn-primary" id="salesRankingOpen" onclick="openSalesRanking()">🏆 2025 백화점 매출 순위</button>
     </div>
-    <div class="panel" style="margin-bottom:14px;padding:10px 14px;">
-      <button type="button" id="monthlyOverviewToggle" aria-expanded="false" onclick="toggleMonthlyOverview()" style="width:100%;border:0;background:transparent;padding:0;display:flex;align-items:center;justify-content:space-between;gap:10px;cursor:pointer;text-align:left;">
-        <span id="monthlyOverviewSummary" style="font-size:13px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">월별 입·퇴점 아카이브 불러오는 중</span>
-        <span id="monthlyOverviewToggleLabel" style="font-size:11px;color:#777;white-space:nowrap;">펼치기 ▾</span>
-      </button>
-      <div id="monthlyOverviewDetails" hidden style="padding-top:12px;margin-top:10px;border-top:1px solid #eee;">
-        <div class="subtitle" id="monthlyChangeSubtitle" style="margin-bottom:8px;">각 월의 마지막 정상 데이터와 직전 월을 비교합니다. 월을 누르면 입·퇴점 내역이 열립니다.</div>
-        <div id="monthlyArchiveList"></div>
-      </div>
-    </div>
     <div class="panel" style="margin-bottom:14px;">
       <h3>브랜드별 입점 수 랭킹 (전체 지점 기준, 롯데/현대/신세계 구간 표시)</h3>
       <div id="brandRanking"></div>
+    </div>
+
+    <div class="panel" style="margin-bottom:14px;">
+      <h3>월별 입·퇴점 추이</h3>
+      <div class="subtitle" style="margin-bottom:10px;">월말 정상 데이터를 직전 월과 비교한 신규 입점(위)·퇴점(아래) 건수입니다. 막대 색은 회사, 이번 달은 아직 확정 전이라 옅게 표시합니다. 막대에 마우스를 올리면 내역이 나옵니다.</div>
+      <div id="monthlyArchiveChart"></div>
+      <div id="monthlyBrandMovers"></div>
+      <div style="padding-top:10px;margin-top:12px;border-top:1px solid #eee;">
+        <button type="button" id="monthlyOverviewToggle" aria-expanded="false" onclick="toggleMonthlyOverview()" style="width:100%;border:0;background:transparent;padding:0;display:flex;align-items:center;justify-content:space-between;gap:10px;cursor:pointer;text-align:left;">
+          <span id="monthlyOverviewSummary" style="font-size:13px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">월별 입·퇴점 아카이브 불러오는 중</span>
+          <span id="monthlyOverviewToggleLabel" style="font-size:11px;color:#777;white-space:nowrap;">상세 펼치기 ▾</span>
+        </button>
+        <div id="monthlyOverviewDetails" hidden style="padding-top:12px;margin-top:10px;border-top:1px solid #eee;">
+          <div class="subtitle" id="monthlyChangeSubtitle" style="margin-bottom:8px;">각 월의 마지막 정상 데이터와 직전 월을 비교합니다. 월을 누르면 입·퇴점 내역이 열립니다.</div>
+          <div id="monthlyArchiveList"></div>
+        </div>
+      </div>
     </div>
 
     <div class="panel" style="margin-bottom:14px;">
@@ -739,7 +779,7 @@
     </div>
   </div>
 
-  <div id="marketView" aria-label="상권 입점 현황"></div>
+  <div id="marketView" aria-label="점별 비교"></div>
 
   <!-- 브랜드 뉴스 -->
   <div id="newsView">
@@ -794,6 +834,7 @@
       if (!marketUI) marketUI = Market.createUI(DONG_CONFIG, {
         overrides: () => baselineOverrides,
         tier: tierOf, color: companyColor, export: downloadExcel,
+        tierColor: name => TIER_COLORS[name] || '#999',
       });
       else marketUI.refresh();
     }
@@ -1673,7 +1714,7 @@
       const label = document.getElementById('monthlyOverviewToggleLabel');
       details.hidden = !details.hidden;
       button.setAttribute('aria-expanded', String(!details.hidden));
-      label.textContent = details.hidden ? '펼치기 ▾' : '접기 ▴';
+      label.textContent = details.hidden ? '상세 펼치기 ▾' : '상세 접기 ▴';
     }
 
     function renderMonthlyArchive() {
@@ -1687,6 +1728,8 @@
       } : null;
       const past = monthlyArchive.filter(item => item.month !== currentMonthKey).sort((a,b) => b.month.localeCompare(a.month));
       const months = current ? [current, ...past] : past;
+      renderMonthlyArchiveChart(months);
+      renderMonthlyBrandMovers(months);
       if (!months.length) {
         container.innerHTML = '<div class="empty" style="padding:20px;">아카이브할 이전 월 데이터가 없습니다.</div>';
         return;
@@ -1708,6 +1751,75 @@
           </div>
         </div>`;
       }).join('');
+    }
+
+    const ARCHIVE_COMPANIES = ['롯데', '현대', '신세계'];
+    function archiveEscape(value) {
+      return String(value ?? '').replace(/[&<>"']/g, ch => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[ch]));
+    }
+
+    // 월별 신규(위)·퇴점(아래)을 회사별로 쌓은 발산형 막대. 이번 달은 확정 전이라 옅게.
+    function renderMonthlyArchiveChart(months) {
+      const container = document.getElementById('monthlyArchiveChart');
+      if (!container) return;
+      const ordered = [...months].sort((a, b) => a.month.localeCompare(b.month));
+      if (!ordered.length) { container.innerHTML = '<div class="empty" style="padding:20px;">아직 비교할 월 데이터가 없습니다.</div>'; return; }
+      const byCompany = rows => ARCHIVE_COMPANIES.map(c => ({ company:c, rows:(rows || []).filter(r => r.company === c) }));
+      const maxValue = Math.max(1, ...ordered.flatMap(m => [(m.new || []).length, (m.exit || []).length]));
+      const totalNew = ordered.reduce((n, m) => n + (m.new || []).length, 0);
+      const totalExit = ordered.reduce((n, m) => n + (m.exit || []).length, 0);
+      const net = totalNew - totalExit;
+      const tooltip = (label, rows) => rows.length ? `${label} ${rows.length}건\n` + rows.map(r => `· ${r.company} ${r.store} ${r.brand}`).join('\n') : `${label} 없음`;
+      const stack = (rows, direction) => byCompany(rows).filter(g => g.rows.length).map(g =>
+        `<i class="archive-seg" style="height:${g.rows.length / maxValue * 100}%;background:${companyColor(g.company)};" title="${archiveEscape(tooltip(`${g.company} ${direction}`, g.rows))}"></i>`).join('');
+      container.innerHTML = `
+        <div class="archive-kpis">
+          <div><span>기간</span><b>${archiveEscape(ordered[0].month)} ~ ${archiveEscape(ordered.at(-1).month)}</b></div>
+          <div><span>누적 신규 입점</span><b style="color:#1a9d4c;">+${totalNew}</b></div>
+          <div><span>누적 퇴점</span><b style="color:#d9363e;">−${totalExit}</b></div>
+          <div><span>순증감</span><b>${net > 0 ? '+' : net < 0 ? '−' : ''}${Math.abs(net)}</b></div>
+        </div>
+        <div class="archive-chart" role="img" aria-label="월별 신규 입점과 퇴점 건수">
+          ${ordered.map(m => {
+            const n = (m.new || []).length, x = (m.exit || []).length;
+            return `<div class="archive-col${m.current ? ' is-current' : ''}">
+              <div class="archive-num up">${n ? '+' + n : ''}</div>
+              <div class="archive-half up" title="${archiveEscape(tooltip(m.month + ' 신규 입점', m.new || []))}">${stack(m.new, '신규')}</div>
+              <div class="archive-axis"></div>
+              <div class="archive-half down" title="${archiveEscape(tooltip(m.month + ' 퇴점', m.exit || []))}">${stack(m.exit, '퇴점')}</div>
+              <div class="archive-num down">${x ? '−' + x : ''}</div>
+              <div class="archive-month">${archiveEscape(m.month.slice(2).replace('-', '.'))}${m.current ? '<small>진행 중</small>' : ''}</div>
+            </div>`;
+          }).join('')}
+        </div>
+        <div class="archive-legend">${ARCHIVE_COMPANIES.map(c => `<span><i style="background:${companyColor(c)}"></i>${c}</span>`).join('')}<span class="archive-legend-note">위 = 신규 입점 · 아래 = 퇴점</span></div>`;
+    }
+
+    // 기간 전체에서 입·퇴점 변화가 있었던 브랜드를 순증감 순으로 보여준다.
+    function renderMonthlyBrandMovers(months) {
+      const container = document.getElementById('monthlyBrandMovers');
+      if (!container) return;
+      const stats = {};
+      months.forEach(m => {
+        (m.new || []).forEach(r => { (stats[r.brand] ||= { brand:r.brand, add:[], drop:[] }).add.push(r); });
+        (m.exit || []).forEach(r => { (stats[r.brand] ||= { brand:r.brand, add:[], drop:[] }).drop.push(r); });
+      });
+      const rows = Object.values(stats)
+        .map(s => ({ ...s, net:s.add.length - s.drop.length }))
+        .sort((a, b) => b.net - a.net || (b.add.length + b.drop.length) - (a.add.length + a.drop.length) || a.brand.localeCompare(b.brand, 'ko'));
+      if (!rows.length) { container.innerHTML = ''; return; }
+      const maxCount = Math.max(1, ...rows.flatMap(r => [r.add.length, r.drop.length]));
+      const where = list => list.map(r => `${r.company} ${r.store}`).join(', ');
+      container.innerHTML = `
+        <h4 class="archive-subhead">브랜드별 순증감 <small>기간 내 입·퇴점이 있었던 ${rows.length}개 브랜드</small></h4>
+        <div class="archive-movers">
+          ${rows.map(r => `<div class="archive-mover">
+            <span class="archive-mover-name"><span class="tier-dot" style="background:${tierColor(r.brand)};"></span><span class="brand-link" onclick="openBrandDetail('${archiveEscape(r.brand)}')">${archiveEscape(r.brand)}</span></span>
+            <span class="archive-mover-bar down" title="${archiveEscape(r.drop.length ? '퇴점: ' + where(r.drop) : '')}"><i style="width:${r.drop.length / maxCount * 100}%"></i></span>
+            <span class="archive-mover-bar up" title="${archiveEscape(r.add.length ? '신규: ' + where(r.add) : '')}"><i style="width:${r.add.length / maxCount * 100}%"></i></span>
+            <b class="archive-mover-net ${r.net > 0 ? 'pos' : r.net < 0 ? 'neg' : ''}">${r.net > 0 ? '+' : r.net < 0 ? '−' : '±'}${Math.abs(r.net)}</b>
+          </div>`).join('')}
+        </div>`;
     }
 
     function toggleArchiveMonth(id) {
