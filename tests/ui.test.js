@@ -13,6 +13,10 @@ test('월별 입퇴점 추이는 브랜드 랭킹 아래에 차트로 보이고 
   assert.ok(html.indexOf('id="monthlyArchiveChart"') < html.indexOf('id="monthlyOverviewDetails"'));
   assert.match(html, /function renderMonthlyArchiveChart\(months\)/);
   assert.match(html, /function renderMonthlyBrandMovers\(months\)/);
+  assert.match(html, /id="monthlyArchiveRange"/);
+  assert.ok(html.indexOf('id="monthlyArchiveRange"') < html.indexOf('id="monthlyArchiveChart"'));
+  assert.match(html, /function setArchivePreset\(count\)/);
+  assert.match(html, /archive-legend-top/);
   assert.doesNotMatch(html, /id="monthlyChangeMore"/);
   assert.match(html, /월별 입·퇴점 아카이브 · \$\{monthLabel\} 신규/);
   assert.match(html, /const months = current \? \[current, \.\.\.past\] : past/);

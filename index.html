@@ -228,7 +228,17 @@
     .archive-mover-bar { height:10px; background:#f2f2f4; border-radius:3px; display:flex; }
     .archive-mover-bar.down { justify-content:flex-end; }
     .archive-mover-bar i { display:block; height:100%; border-radius:3px; }
-    .archive-mover-bar.down i { background:#d9363e; } .archive-mover-bar.up i { background:#1a9d4c; }
+    .archive-mover-bar i { border-radius:0; } .archive-mover-bar i:first-child { border-radius:3px 0 0 3px; } .archive-mover-bar i:last-child { border-radius:0 3px 3px 0; } .archive-mover-bar i:only-child { border-radius:3px; }
+    .archive-mover-bar.down { box-shadow:inset -1px 0 0 #bbb; } .archive-mover-bar.up { box-shadow:inset 1px 0 0 #bbb; }
+    .archive-mover-head { font-size:10.5px; color:#999; padding-bottom:0; }
+    .archive-mover-head span:nth-child(2) { text-align:right; } .archive-mover-head span:last-child { text-align:right; }
+    .archive-range { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-bottom:12px; font-size:12px; }
+    .archive-range label { display:flex; align-items:center; gap:6px; font-weight:600; color:#555; }
+    .archive-range select { padding:5px 8px; font-size:12px; }
+    .archive-presets { display:flex; gap:4px; flex-wrap:wrap; }
+    .archive-presets button { border:1px solid #ddd; background:white; border-radius:14px; padding:4px 10px; font-size:11px; cursor:pointer; color:#555; }
+    .archive-presets button.active { background:#2c2c34; border-color:#2c2c34; color:white; }
+    .archive-legend-top { margin:0 0 0 auto; font-weight:600; color:#444; }
     .archive-mover-net { text-align:right; font-size:12px; } .archive-mover-net.pos { color:#1a9d4c; } .archive-mover-net.neg { color:#d9363e; }
     #tableMatrixView, #floorView, #mapView, #newsView { display: none; }
     .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
@@ -409,6 +419,8 @@
       .archive-half { height:60px; }
       .archive-mover { grid-template-columns:96px 1fr 1fr 32px; }
       .archive-legend-note { margin-left:0; }
+      .archive-legend-top { margin-left:0; width:100%; }
+      .archive-range select { font-size:16px; }
       body { padding: 0 12px 84px; font-size: 14px; }
       .header-bar { margin: 0 -12px 16px; padding: 18px 16px 16px; border-radius: 0 0 14px 14px; }
       .header-bar h1 { font-size: 17px; padding-right: 76px; line-height: 1.35; }
@@ -620,7 +632,8 @@
 
     <div class="panel" style="margin-bottom:14px;">
       <h3>월별 입·퇴점 추이</h3>
-      <div class="subtitle" style="margin-bottom:10px;">월말 정상 데이터를 직전 월과 비교한 신규 입점(위)·퇴점(아래) 건수입니다. 막대 색은 회사, 이번 달은 아직 확정 전이라 옅게 표시합니다. 막대에 마우스를 올리면 내역이 나옵니다.</div>
+      <div class="subtitle" style="margin-bottom:10px;">월말 정상 데이터를 직전 월과 비교한 신규 입점(위)·퇴점(아래) 건수입니다. 기간을 고르면 아래 브랜드별 순증감도 같은 기간으로 바뀝니다. 이번 달은 확정 전이라 옅게 표시하며, 막대에 마우스를 올리면 내역이 나옵니다.</div>
+      <div id="monthlyArchiveRange" class="archive-range"></div>
       <div id="monthlyArchiveChart"></div>
       <div id="monthlyBrandMovers"></div>
       <div style="padding-top:10px;margin-top:12px;border-top:1px solid #eee;">
@@ -1728,8 +1741,8 @@
       } : null;
       const past = monthlyArchive.filter(item => item.month !== currentMonthKey).sort((a,b) => b.month.localeCompare(a.month));
       const months = current ? [current, ...past] : past;
-      renderMonthlyArchiveChart(months);
-      renderMonthlyBrandMovers(months);
+      archiveAllMonths = months;
+      renderArchiveVisuals();
       if (!months.length) {
         container.innerHTML = '<div class="empty" style="padding:20px;">아카이브할 이전 월 데이터가 없습니다.</div>';
         return;
@@ -1756,6 +1769,48 @@
     const ARCHIVE_COMPANIES = ['롯데', '현대', '신세계'];
     function archiveEscape(value) {
       return String(value ?? '').replace(/[&<>"']/g, ch => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[ch]));
+    }
+
+    // 기간 선택: 시작·끝 월을 고르면 막대와 브랜드별 순증감이 같은 범위로 다시 그려진다.
+    let archiveAllMonths = [];
+    let archiveRange = { from:'', to:'' };
+    function archiveRangeMonths() {
+      const keys = archiveAllMonths.map(m => m.month).sort();
+      if (!keys.length) return [];
+      let from = keys.includes(archiveRange.from) ? archiveRange.from : keys[0];
+      let to = keys.includes(archiveRange.to) ? archiveRange.to : keys.at(-1);
+      if (from > to) [from, to] = [to, from];
+      return archiveAllMonths.filter(m => m.month >= from && m.month <= to);
+    }
+    function setArchiveRange(field, value) {
+      const keys = archiveAllMonths.map(m => m.month).sort();
+      archiveRange = { from: archiveRange.from || keys[0], to: archiveRange.to || keys.at(-1), [field]: value };
+      renderArchiveVisuals();
+    }
+    function setArchivePreset(count) {
+      const keys = archiveAllMonths.map(m => m.month).sort();
+      archiveRange = count ? { from: keys[Math.max(0, keys.length - count)], to: keys.at(-1) } : { from:'', to:'' };
+      renderArchiveVisuals();
+    }
+    function renderArchiveVisuals() {
+      const control = document.getElementById('monthlyArchiveRange');
+      const keys = archiveAllMonths.map(m => m.month).sort();
+      const months = archiveRangeMonths();
+      const shown = months.map(m => m.month).sort();
+      const view = { from: shown[0], to: shown.at(-1) };
+      if (control) {
+        const option = selected => keys.map(k => `<option value="${k}" ${k === selected ? 'selected' : ''}>${k}${k === currentMonthKey ? ' (진행 중)' : ''}</option>`).join('');
+        const span = shown.length;
+        control.innerHTML = keys.length ? `
+          <label>기간 <select onchange="setArchiveRange('from', this.value)">${option(view.from)}</select></label>
+          <span>~</span>
+          <select aria-label="끝 월" onchange="setArchiveRange('to', this.value)">${option(view.to)}</select>
+          <span class="archive-presets">${[[3,'최근 3개월'],[6,'최근 6개월'],[12,'최근 12개월'],[0,'전체']].map(([n, name]) =>
+            `<button type="button" class="${(n ? span === n && view.to === keys.at(-1) && n < keys.length : span === keys.length) ? 'active' : ''}" onclick="setArchivePreset(${n})">${name}</button>`).join('')}</span>
+          <span class="archive-legend archive-legend-top">${ARCHIVE_COMPANIES.map(c => `<span><i style="background:${companyColor(c)}"></i>${c}</span>`).join('')}</span>` : '';
+      }
+      renderMonthlyArchiveChart(months);
+      renderMonthlyBrandMovers(months);
     }
 
     // 월별 신규(위)·퇴점(아래)을 회사별로 쌓은 발산형 막대. 이번 달은 확정 전이라 옅게.
@@ -1792,7 +1847,7 @@
             </div>`;
           }).join('')}
         </div>
-        <div class="archive-legend">${ARCHIVE_COMPANIES.map(c => `<span><i style="background:${companyColor(c)}"></i>${c}</span>`).join('')}<span class="archive-legend-note">위 = 신규 입점 · 아래 = 퇴점</span></div>`;
+        <div class="archive-legend"><span class="archive-legend-note">축 위 = 신규 입점 · 축 아래 = 퇴점</span></div>`;
     }
 
     // 기간 전체에서 입·퇴점 변화가 있었던 브랜드를 순증감 순으로 보여준다.
@@ -1809,14 +1864,16 @@
         .sort((a, b) => b.net - a.net || (b.add.length + b.drop.length) - (a.add.length + a.drop.length) || a.brand.localeCompare(b.brand, 'ko'));
       if (!rows.length) { container.innerHTML = ''; return; }
       const maxCount = Math.max(1, ...rows.flatMap(r => [r.add.length, r.drop.length]));
-      const where = list => list.map(r => `${r.company} ${r.store}`).join(', ');
+      const segments = list => ARCHIVE_COMPANIES.map(c => ({ company:c, rows:list.filter(r => r.company === c) })).filter(g => g.rows.length)
+        .map(g => `<i style="width:${g.rows.length / maxCount * 100}%;background:${companyColor(g.company)};" title="${archiveEscape(`${g.company} ${g.rows.length}건: ` + g.rows.map(r => r.store).join(', '))}"></i>`).join('');
       container.innerHTML = `
-        <h4 class="archive-subhead">브랜드별 순증감 <small>기간 내 입·퇴점이 있었던 ${rows.length}개 브랜드</small></h4>
+        <h4 class="archive-subhead">브랜드별 순증감 <small>선택 기간 내 입·퇴점이 있었던 ${rows.length}개 브랜드 · 막대 색은 회사</small></h4>
         <div class="archive-movers">
+          ${[0, 1, 2].slice(0, Math.min(3, rows.length)).map(() => `<div class="archive-mover archive-mover-head"><span></span><span>◀ 퇴점</span><span>신규 ▶</span><span>순증감</span></div>`).join('')}
           ${rows.map(r => `<div class="archive-mover">
             <span class="archive-mover-name"><span class="tier-dot" style="background:${tierColor(r.brand)};"></span><span class="brand-link" onclick="openBrandDetail('${archiveEscape(r.brand)}')">${archiveEscape(r.brand)}</span></span>
-            <span class="archive-mover-bar down" title="${archiveEscape(r.drop.length ? '퇴점: ' + where(r.drop) : '')}"><i style="width:${r.drop.length / maxCount * 100}%"></i></span>
-            <span class="archive-mover-bar up" title="${archiveEscape(r.add.length ? '신규: ' + where(r.add) : '')}"><i style="width:${r.add.length / maxCount * 100}%"></i></span>
+            <span class="archive-mover-bar down">${segments(r.drop)}</span>
+            <span class="archive-mover-bar up">${segments(r.add)}</span>
             <b class="archive-mover-net ${r.net > 0 ? 'pos' : r.net < 0 ? 'neg' : ''}">${r.net > 0 ? '+' : r.net < 0 ? '−' : '±'}${Math.abs(r.net)}</b>
           </div>`).join('')}
         </div>`;
