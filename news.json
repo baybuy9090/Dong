@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-10-30T02:27:16.358Z",
+  "lastUpdated": "2026-10-31T02:06:49.940Z",
   "windowDays": 14,
   "coverage": {
     "total": 37,
-    "withNews": 19
+    "withNews": 17
   },
   "diagnostics": [
     {
@@ -38,7 +38,7 @@
         "솔리드옴므",
         "솔리드옴므 패션 브랜드"
       ],
-      "candidates": 3,
+      "candidates": 2,
       "sources": {
         "google": true,
         "naver": true
@@ -77,7 +77,7 @@
         "JUUN.J 패션",
         "준지 패션"
       ],
-      "candidates": 17,
+      "candidates": 18,
       "sources": {
         "google": true,
         "naver": true
@@ -206,7 +206,7 @@
         "바버",
         "바버 패션 브랜드"
       ],
-      "candidates": 15,
+      "candidates": 14,
       "sources": {
         "google": true,
         "naver": true
@@ -219,7 +219,7 @@
         "산드로옴므",
         "산드로옴므 패션 브랜드"
       ],
-      "candidates": 1,
+      "candidates": 0,
       "sources": {
         "google": true,
         "naver": true
@@ -232,7 +232,7 @@
         "알레그리",
         "알레그리 패션 브랜드"
       ],
-      "candidates": 2,
+      "candidates": 1,
       "sources": {
         "google": true,
         "naver": true
@@ -399,7 +399,7 @@
         "이스트로그 패션",
         "프레이트 패션"
       ],
-      "candidates": 6,
+      "candidates": 4,
       "sources": {
         "google": true,
         "naver": true
@@ -483,6 +483,34 @@
   ],
   "industry": [
     {
+      "title": "\"패션 성수기\" 가을·겨울 옷 쏟아진다[패션·뷰티 HOT신상]",
+      "link": "https://www.newsis.com/view/NISX20261030_0003848742",
+      "source": "newsis.com",
+      "pubDate": "2026-10-31T00:00:00.000Z",
+      "sentiment": "neutral",
+      "events": [
+        "협업·신제품"
+      ]
+    },
+    {
+      "title": "[똑똑한패션] 무신사, 에이블리, 코오롱FnC, 신세계인터내셔날",
+      "link": "https://www.ekn.kr/web/view.php?key=20261030026343628",
+      "source": "ekn.kr",
+      "pubDate": "2026-10-30T13:28:00.000Z",
+      "sentiment": "positive",
+      "events": [
+        "협업·신제품"
+      ]
+    },
+    {
+      "title": "피스피스스튜디오 마르디 메크르디, 日 매장 유니섹스 라인 출시",
+      "link": "https://www.the-stock.kr/news/articleView.html?idxno=33675",
+      "source": "the-stock.kr",
+      "pubDate": "2026-10-30T07:38:00.000Z",
+      "sentiment": "neutral",
+      "events": []
+    },
+    {
       "title": "패션업계, 리버시블 아우터 경쟁… 실용성에 개성 더해 소비자 공략",
       "link": "https://www.viva100.com/article/20261030500386",
       "source": "viva100.com",
@@ -531,35 +559,6 @@
       "pubDate": "2026-10-29T07:16:00.000Z",
       "sentiment": "neutral",
       "events": []
-    },
-    {
-      "title": "[Weekly 패션] 신성통상 탑텐·준지·디스커버리·르셉템버",
-      "link": "https://www.startuptoday.co.kr/news/articleView.html?idxno=817420",
-      "source": "startuptoday.co.kr",
-      "pubDate": "2026-10-28T06:08:00.000Z",
-      "sentiment": "neutral",
-      "events": []
-    },
-    {
-      "title": "[유통소식] 이마트, 쓱데이 혜택 총출동…반값 할인부터 한정판까지",
-      "link": "http://www.4th.kr/news/articleView.html?idxno=2120527",
-      "source": "4th.kr",
-      "pubDate": "2026-10-27T21:00:00.000Z",
-      "sentiment": "positive",
-      "events": [
-        "실적·성장"
-      ]
-    },
-    {
-      "title": "캐리스노트, 롯데백화점 잠실점 매장 리뉴얼 오픈",
-      "link": "http://www.apparelnews.co.kr/news/news_view/?idx=228568",
-      "source": "apparelnews.co.kr",
-      "pubDate": "2026-10-27T08:12:00.000Z",
-      "sentiment": "positive",
-      "events": [
-        "신규 매장·팝업",
-        "리뉴얼·확장"
-      ]
     }
   ],
   "data": {
@@ -622,38 +621,26 @@
         "events": [
           "협업·신제품"
         ]
-      },
-      {
-        "title": "김재원, 한복 입고 전한 '뮤직뱅크' 사랑…연못 배경 눈맞춤",
-        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16249324",
-        "source": "topstarnews.net",
-        "pubDate": "2026-10-16T13:26:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "협업·신제품"
-        ]
       }
     ],
     "시스템옴므": [
       {
-        "title": "신세계 천안아산점, 스포츠·남성 50여개 브랜드 새단장",
-        "link": "http://www.newslock.co.kr/news/articleView.html?idxno=138976",
-        "source": "newslock.co.kr",
-        "pubDate": "2026-10-30T02:24:00.000Z",
+        "title": "신세계百 천안아산점, 스포츠·남성관 새단장…2030 고객 공략",
+        "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065616758950501",
+        "source": "megaeconomy.co.kr",
+        "pubDate": "2026-10-30T12:42:00.000Z",
         "sentiment": "neutral",
         "events": [
           "입점·유통"
         ]
       },
       {
-        "title": "신세계百 천안아산점, 패션 매장 새단장…2030 고객 공략",
-        "link": "https://www.fnnews.com/news/202610301046083590",
-        "source": "fnnews.com",
-        "pubDate": "2026-10-30T01:51:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "입점·유통"
-        ]
+        "title": "백화점부터 플랫폼까지…패션업계 '남성 그루밍족' 유치전 후끈",
+        "link": "https://news.tf.co.kr/read/economy/2382943.htm",
+        "source": "news.tf.co.kr",
+        "pubDate": "2026-10-30T05:54:00.000Z",
+        "sentiment": "positive",
+        "events": []
       },
       {
         "title": "[재무리뷰①] 옷 밖으로, 국경 너머로…패션 3사, 성장 보폭 넓힌다",
@@ -682,6 +669,14 @@
     ],
     "준지": [
       {
+        "title": "[전시] K-POP 아티스트 48인과 함께한 '디페스타 디 오리진'",
+        "link": "https://www.ppss.kr/news/articleView.html?idxno=318225",
+        "source": "ppss.kr",
+        "pubDate": "2026-10-30T03:01:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
         "title": "삼성물산 패션, 실적 회복세…주력 브랜드 판매 호조",
         "link": "https://www.sentv.co.kr/article/view/sentv202610290135",
         "source": "sentv.co.kr",
@@ -704,11 +699,13 @@
       },
       {
         "title": "[Weekly 패션] 신성통상 탑텐·준지·디스커버리·르셉템버",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBoak9wVUd0QjN3YnBvQWJPWkZwbDBCdWp6VHdkdWF1bDd6aTFkYTlTSmR0WXh3cV9DYkItREhvWVVNVXRmanZsS3RjbHRVZ1A4aHg0U09ad1pIQVNBV0J4Qktxc2F1N1JDa0VfeTBmLUUwU3M?oc=5",
-        "source": "오늘경제",
-        "pubDate": "2026-10-28T06:06:39.000Z",
-        "sentiment": "neutral",
-        "events": []
+        "link": "https://www.startuptoday.co.kr/news/articleView.html?idxno=817420",
+        "source": "startuptoday.co.kr",
+        "pubDate": "2026-10-28T06:08:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품"
+        ]
       },
       {
         "title": "MC 혜리 X 홍진경·준지·배정남·최실장 심사위원, ‘스타일 워즈’ 첫 스틸 공개!",
@@ -719,10 +716,10 @@
         "events": []
       },
       {
-        "title": "준지, K팝 아티스트 48인 전시 '디페스타 디 오리진' 의상 협업",
-        "link": "http://www.ktnews.com/news/articleView.html?idxno=149712",
-        "source": "ktnews.com",
-        "pubDate": "2026-10-27T16:42:00.000Z",
+        "title": "준지, K-팝 아티스트 48인 예술 전시에 의상 협업",
+        "link": "https://biz.heraldcorp.com/article/10916647?ref=naver",
+        "source": "biz.heraldcorp.com",
+        "pubDate": "2026-10-27T08:30:00.000Z",
         "sentiment": "positive",
         "events": [
           "협업·신제품"
@@ -747,14 +744,6 @@
         "events": [
           "협업·신제품"
         ]
-      },
-      {
-        "title": "\"블랙으로 풀어낸 K-POP 서사\"... 준지, '디페스타'서 파격적 해체·재구...",
-        "link": "https://www.insight.co.kr/news/579359",
-        "source": "insight.co.kr",
-        "pubDate": "2026-10-27T06:16:00.000Z",
-        "sentiment": "neutral",
-        "events": []
       }
     ],
     "송지오옴므": [
@@ -1058,22 +1047,23 @@
         ]
       },
       {
-        "title": "의류 수선시장 2030년 37억 유로 전망…패션산업 새 성장축 될까",
-        "link": "http://www.ktnews.com/news/articleView.html?idxno=149637",
-        "source": "ktnews.com",
-        "pubDate": "2026-10-23T11:12:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "실적·성장"
-        ]
-      },
-      {
         "title": "H&M부터 가니까지, 10월 주목해야 할 패션 협업 6",
         "link": "https://www.harpersbazaar.co.kr/article/1911655",
         "source": "harpersbazaar.co.kr",
         "pubDate": "2026-10-21T09:52:00.000Z",
         "sentiment": "positive",
         "events": [
+          "협업·신제품"
+        ]
+      },
+      {
+        "title": "단독 상품부터 기부 캠페인까지…패션업계 협업 전략 통했다 [트렌드]",
+        "link": "https://www.segye.com/newsView/20261021514327?OutUrl=naver",
+        "source": "segye.com",
+        "pubDate": "2026-10-21T05:08:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "입점·유통",
           "협업·신제품"
         ]
       },
@@ -1086,32 +1076,8 @@
         "events": []
       }
     ],
-    "산드로옴므": [
-      {
-        "title": "\"제니와 사진 찍고 PB 장보고\"…주말 쇼핑 행사 풍성[위클리 쇼핑]",
-        "link": "https://www.newsis.com/view/NISX20261016_0003829738",
-        "source": "newsis.com",
-        "pubDate": "2026-10-16T22:00:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "신규 매장·팝업",
-          "리뉴얼·확장"
-        ]
-      }
-    ],
-    "알레그리": [
-      {
-        "title": "\"제니와 사진 찍고 PB 장보고\"…주말 쇼핑 행사 풍성[위클리 쇼핑]",
-        "link": "https://www.newsis.com/view/NISX20261016_0003829738",
-        "source": "newsis.com",
-        "pubDate": "2026-10-16T22:00:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "신규 매장·팝업",
-          "리뉴얼·확장"
-        ]
-      }
-    ],
+    "산드로옴므": [],
+    "알레그리": [],
     "질스튜어트뉴욕": [],
     "아스페시": [],
     "DKNY맨": [
@@ -1226,20 +1192,10 @@
     "TEN-C": [],
     "이스트로그(프레이트)": [
       {
-        "title": "브룩스브라더스·CGV, 수박빈티지와 '아카이브 컬렉션' 선보여·'블랙 트...",
-        "link": "http://www.wsobi.com/news/articleView.html?idxno=320706",
-        "source": "wsobi.com",
-        "pubDate": "2026-10-30T01:38:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "협업·신제품"
-        ]
-      },
-      {
-        "title": "브룩스브라더스, 도쿄서 찾은 빈티지 4종 현대적으로 재현",
-        "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=499989",
-        "source": "pinpointnews.co.kr",
-        "pubDate": "2026-10-30T01:28:00.000Z",
+        "title": "브룩스브라더스, 일본 빈티지 4종 복원해 아카이브 컬렉션 구성",
+        "link": "https://www.lawissue.co.kr/view.php?ud=202610301152194442204ead0791_12",
+        "source": "lawissue.co.kr",
+        "pubDate": "2026-10-30T02:54:00.000Z",
         "sentiment": "positive",
         "events": [
           "협업·신제품"
@@ -1268,16 +1224,6 @@
         "link": "https://www.ibabynews.com/news/articleView.html?idxno=155376",
         "source": "ibabynews.com",
         "pubDate": "2026-10-20T05:08:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "협업·신제품"
-        ]
-      },
-      {
-        "title": "데상트, 이스트로그와 2차 협업…어반 테크웨어 정조준",
-        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9EZ19neUZIdWp1S0tsM0F2UkZYWGhPWXkwaDI3X21KeHdIR3lBR1pNclM2UVJGRDdLcXlldVRtVGk5dEdWSEVmZThmRlc?oc=5",
-        "source": "TENANT news",
-        "pubDate": "2026-10-16T07:00:00.000Z",
         "sentiment": "positive",
         "events": [
           "협업·신제품"
