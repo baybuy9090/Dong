@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T03:58:22.697Z",
+  "generatedAt": "2026-11-01T04:12:20.842Z",
   "months": [
     {
       "month": "2026-08",
@@ -200,6 +200,13 @@
           "brand": "지오송지오"
         }
       ]
+    },
+    {
+      "month": "2026-11",
+      "baselineSnapshot": "2026-10-31",
+      "endSnapshot": "2026-11-01",
+      "new": [],
+      "exit": []
     }
   ]
 }
