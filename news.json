@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-31T02:06:49.940Z",
+  "lastUpdated": "2026-11-01T01:58:28.558Z",
   "windowDays": 14,
   "coverage": {
     "total": 37,
@@ -12,7 +12,7 @@
         "타임옴므",
         "타임옴므 패션 브랜드"
       ],
-      "candidates": 3,
+      "candidates": 4,
       "sources": {
         "google": true,
         "naver": true
@@ -38,7 +38,7 @@
         "솔리드옴므",
         "솔리드옴므 패션 브랜드"
       ],
-      "candidates": 2,
+      "candidates": 3,
       "sources": {
         "google": true,
         "naver": true
@@ -51,7 +51,7 @@
         "시스템옴므",
         "시스템옴므 패션 브랜드"
       ],
-      "candidates": 4,
+      "candidates": 5,
       "sources": {
         "google": true,
         "naver": true
@@ -64,7 +64,7 @@
         "우영미",
         "우영미 패션 브랜드"
       ],
-      "candidates": 2,
+      "candidates": 3,
       "sources": {
         "google": true,
         "naver": true
@@ -90,7 +90,7 @@
         "송지오옴므",
         "송지오옴므 패션 브랜드"
       ],
-      "candidates": 5,
+      "candidates": 6,
       "sources": {
         "google": true,
         "naver": true
@@ -143,7 +143,7 @@
       "queries": [
         "톰그레이하운드 패션"
       ],
-      "candidates": 2,
+      "candidates": 3,
       "sources": {
         "google": true,
         "naver": true
@@ -483,6 +483,24 @@
   ],
   "industry": [
     {
+      "title": "패션에 문화 입혔다…차별화된 색깔로 경쟁력 강화",
+      "link": "https://www.segye.com/newsView/20261031504496?OutUrl=naver",
+      "source": "segye.com",
+      "pubDate": "2026-10-31T04:46:00.000Z",
+      "sentiment": "neutral",
+      "events": []
+    },
+    {
+      "title": "연말 앞둔 뷰티업계, 홀리데이 한정판 경쟁 시작 [최기자의 화장품 털기...",
+      "link": "https://www.meconomynews.com/news/articleView.html?idxno=203118",
+      "source": "meconomynews.com",
+      "pubDate": "2026-10-31T02:26:00.000Z",
+      "sentiment": "neutral",
+      "events": [
+        "협업·신제품"
+      ]
+    },
+    {
       "title": "\"패션 성수기\" 가을·겨울 옷 쏟아진다[패션·뷰티 HOT신상]",
       "link": "https://www.newsis.com/view/NISX20261030_0003848742",
       "source": "newsis.com",
@@ -541,24 +559,6 @@
       "events": [
         "협업·신제품"
       ]
-    },
-    {
-      "title": "지방권 10개 백화점 남성 컨템포러리·디자이너 매출",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZ0x2NDlfUTFVaE85SklrY0x6QUhrLVlTNjlhb3BTSmNIRFl2YjdORjJQR29BUzdOamI0Rjd2OFJPb2lTV0NkMVpFdmo3dnhsWTBBX21DaXJSV2N3RUFJTHNwZ0U1N0xwM1hOOE9sMmpRNHBwbXFCc3lqSkFUbkc4TmRB?oc=5",
-      "source": "어패럴뉴스",
-      "pubDate": "2026-10-29T13:46:15.000Z",
-      "sentiment": "neutral",
-      "events": [
-        "실적·성장"
-      ]
-    },
-    {
-      "title": "[똑똑한패션] 무신사, 삼성물산 패션 띠어리, 패션그룹형지, 세정",
-      "link": "https://www.ekn.kr/web/view.php?key=20261029022512910",
-      "source": "ekn.kr",
-      "pubDate": "2026-10-29T07:16:00.000Z",
-      "sentiment": "neutral",
-      "events": []
     }
   ],
   "data": {
@@ -578,7 +578,7 @@
         "title": "남자 옷이 이렇게 섹시했나..? 이수혁 타임옴므 화보",
         "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBaRDNGR29OR3QtOEhRTHZHbk92eGNFa0l5UFVYZ2stb3UyemRlTDluaGYwdHhib04xN25lZDdDMkhIeXhiUXQ0SjdmeU5mcVlMSG5Z0gFYQVVfeXFMTTlKWWdWMDFWSG1pTnVsdmc1Z2F5emhreUlaMFItQzVLQ0VHVE9USEpXb04yTXJNUUtmTnBTR3VEZFBGQnpOekFVVFJiTnBSdnM5b0tWaS1EUA?oc=5",
         "source": "네이트뷰",
-        "pubDate": "2026-10-23T13:39:00.000Z",
+        "pubDate": "2026-10-23T07:00:00.000Z",
         "sentiment": "neutral",
         "events": []
       },
@@ -625,6 +625,14 @@
     ],
     "시스템옴므": [
       {
+        "title": "한섬 '시스템 파리' 일본 진출…백화점 유통망 확대",
+        "link": "http://www.4th.kr/news/articleView.html?idxno=2120873",
+        "source": "4th.kr",
+        "pubDate": "2026-11-01T01:28:00.000Z",
+        "sentiment": "positive",
+        "events": []
+      },
+      {
         "title": "신세계百 천안아산점, 스포츠·남성관 새단장…2030 고객 공략",
         "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065616758950501",
         "source": "megaeconomy.co.kr",
@@ -657,14 +665,12 @@
     ],
     "우영미": [
       {
-        "title": "수도권 주요 14개 백화점 남성 컨템포러리·디자이너 매출",
-        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=228433",
-        "source": "apparelnews.co.kr",
-        "pubDate": "2026-10-22T13:02:00.000Z",
+        "title": "톰 포드부터 생로랑까지, 밤을 위한 슈트 스타일",
+        "link": "https://www.esquirekorea.co.kr/article/1912069",
+        "source": "esquirekorea.co.kr",
+        "pubDate": "2026-10-31T23:00:00.000Z",
         "sentiment": "neutral",
-        "events": [
-          "실적·성장"
-        ]
+        "events": []
       }
     ],
     "준지": [
@@ -842,18 +848,18 @@
     ],
     "CP컴퍼니": [
       {
-        "title": "C.P. 컴퍼니, 한국 진출 30주년 기념 아카이브 전시 개최",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNVzFyV2ZuM3F1cDZyaTRNMGZQa2ZqUi15ZVhENEZhSEhlNkFFTXVlQ0VHNmwtZk5jZTlDdEZpeFZxeUhkZndtSVFMaGdFR2NGN2g5dGlYSEFWQnRyLV9VZmU1TkczaEdkN3BMVVgwRVJmRXZiaXpZU3hyVGk4clpMNWo3X3V6NjJx?oc=5",
-        "source": "아이즈매거진 | eyesmag",
-        "pubDate": "2026-10-22T13:02:44.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
         "title": "RIIZE Community Post - C.P. Company 30th",
         "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE41UDBoQnkzZkRLTUZ5dWRlSHdPbndFUndqVFVROXlQd19JSVFlWkdSSE01SVFKZk9DZTIxNnpWLWdPVnkwQnVIMklwUUxuRUZjdDZHYjhR?oc=5",
         "source": "Weverse",
         "pubDate": "2026-10-22T08:57:20.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "C.P. 컴퍼니, 한국 진출 30주년 기념 아카이브 전시 개최",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNVzFyV2ZuM3F1cDZyaTRNMGZQa2ZqUi15ZVhENEZhSEhlNkFFTXVlQ0VHNmwtZk5jZTlDdEZpeFZxeUhkZndtSVFMaGdFR2NGN2g5dGlYSEFWQnRyLV9VZmU1TkczaEdkN3BMVVgwRVJmRXZiaXpZU3hyVGk4clpMNWo3X3V6NjJx?oc=5",
+        "source": "아이즈매거진 | eyesmag",
+        "pubDate": "2026-10-22T07:00:00.000Z",
         "sentiment": "neutral",
         "events": []
       },
@@ -960,6 +966,16 @@
     ],
     "톰그레이하운드맨": [
       {
+        "title": "수입 브랜드로 성장 이끈 유태영, 한섬 대표로…’외형·내실' 두 토끼 ...",
+        "link": "https://www.g-enews.com/view.php?ud=202610301548414374056c162803_1",
+        "source": "g-enews.com",
+        "pubDate": "2026-11-01T00:00:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "실적·성장"
+        ]
+      },
+      {
         "title": "[패션·잡화트렌드] 더캐시미어, 남성 라인 확대 출시…프리미엄 가을·...",
         "link": "https://www.ibabynews.com/news/articleView.html?idxno=155376",
         "source": "ibabynews.com",
@@ -1004,8 +1020,8 @@
     "바버": [
       {
         "title": "압박의 메이시 바버, KO 본능의 칼리 주디스 잡을까?",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE84OTRyWnB2ekxmTE1hdTZpY0NTQmZCUk85YW5rYkU5ZEVoc2RNVXZTYU55MmVBOEpNbUhWQlMxd0JfenN4cGtOMS1OMzJaVWNoQldOLWIyRTNUUXZ2dEdKQnZUcW9LRTFBTlpuUUsxRjVHeVU2?oc=5",
-        "source": "OhmyNews",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBSQlF0Q256R0lja2wtVE54TC1hc05CZ1RSV2gycTBPRmxzZVc3akR4dW10VFk5UGtfeFpFaFFycElDWkdpQVk2MHVXYTU3M3VJbWFFek5KZko1ekxST2NjM01vM1BNZTBiLVhWTmJZU3NWQklTazNzNWJLWnl0UQ?oc=5",
+        "source": "오마이스타",
         "pubDate": "2026-10-28T00:21:00.000Z",
         "sentiment": "neutral",
         "events": []
