@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-01T07:17:11.656Z",
+  "lastUpdated": "2026-11-02T07:32:06.902Z",
   "diagnostics": [
     {
       "storeId": "신세계-SC00002",
@@ -424,7 +424,7 @@
       {
         "floor": "8F",
         "label": "8F 생활 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00006/guide/floor/__icsFiles/afieldfile/2026/05/21/yo7baVyoyi7H.png",
+        "url": "https://www.shinsegae.com/cms12/SC00006/guide/floor/__icsFiles/afieldfile/2026/11/02/wMmk9Ds91NM4.png",
         "brands": []
       },
       {
@@ -473,7 +473,7 @@
       {
         "floor": "2F",
         "label": "2F 명품/화장품 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00006/guide/floor/__icsFiles/afieldfile/2026/10/06/Bryud3m0et0g.png",
+        "url": "https://www.shinsegae.com/cms12/SC00006/guide/floor/__icsFiles/afieldfile/2026/11/02/SDQlBefA0lHL.png",
         "brands": []
       },
       {
@@ -559,7 +559,7 @@
       {
         "floor": "6F",
         "label": "6F 여성 패션｜뉴컨템포러리｜스포츠｜골프 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00013/guide/floor/__icsFiles/afieldfile/2026/08/31/6F-20260831064532-20260831064535.png",
+        "url": "https://www.shinsegae.com/cms12/SC00013/guide/floor/__icsFiles/afieldfile/2026/11/02/6F-20261102101106-20261102101109.png",
         "brands": []
       },
       {
@@ -583,7 +583,7 @@
       {
         "floor": "2F",
         "label": "2F 남성 패션 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00013/guide/floor/__icsFiles/afieldfile/2026/10/01/2F-20261001101704-20261001101706.png",
+        "url": "https://www.shinsegae.com/cms12/SC00013/guide/floor/__icsFiles/afieldfile/2026/11/02/2F-20261102101005-20261102101007.png",
         "brands": [
           "띠어리맨",
           "맨온더분",
@@ -753,7 +753,7 @@
       {
         "floor": "B1F",
         "label": "B1 신세계 푸드마켓ㆍF&B 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00005/guide/floor/__icsFiles/afieldfile/2026/10/20/M62Xj6fSA0to.png",
+        "url": "https://www.shinsegae.com/cms12/SC00005/guide/floor/__icsFiles/afieldfile/2026/11/02/sQlcrVLRj3QT.png",
         "brands": []
       }
     ],
@@ -977,7 +977,7 @@
       {
         "floor": "8F",
         "label": "8F 아동/생활 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00010/guide/floor/__icsFiles/afieldfile/2026/10/16/1016_8f-20261016044838-20261016044841.png",
+        "url": "https://www.shinsegae.com/cms12/SC00010/guide/floor/__icsFiles/afieldfile/2026/11/02/1102_8f-20261102014937-20261102014940.png",
         "brands": []
       },
       {
@@ -1231,7 +1231,7 @@
       {
         "floor": "6F",
         "label": "6F 생활 <------> 스포츠 [주차동8F] 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00007/guide/floor/__icsFiles/afieldfile/2026/10/30/6F_261026(261030)-20261030101821-20261030101824.png",
+        "url": "https://www.shinsegae.com/cms12/SC00007/guide/floor/__icsFiles/afieldfile/2026/11/02/6F_261021(261101)-20261102101323-20261102101327.png",
         "brands": []
       },
       {
@@ -2650,7 +2650,7 @@
         "url": "floor-maps/lotte/0010/02F.svg",
         "highlightUrl": "floor-maps/lotte/0010/02F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/09710d3a-1c61-4c3f-8336-0e11dfbabd9a/178832415307803TI8.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/09710d3a-1c61-4c3f-8336-0e11dfbabd9a/1793527772995JTPCC.svg",
         "brands": []
       },
       {
@@ -3067,7 +3067,7 @@
         "url": "floor-maps/lotte/0002/04F.svg",
         "highlightUrl": "floor-maps/lotte/0002/04F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1793236020866rlOV0.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1793579001189v0eMt.svg",
         "brands": []
       },
       {
@@ -3076,7 +3076,7 @@
         "url": "floor-maps/lotte/0002/03F.svg",
         "highlightUrl": "floor-maps/lotte/0002/03F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1793260811489ixVFe.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1793325436402XOeNa.svg",
         "brands": []
       },
       {
@@ -3194,7 +3194,7 @@
         "url": "floor-maps/lotte/0348/01F.svg",
         "highlightUrl": "floor-maps/lotte/0348/01F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1793250247940VsAet.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1793578569588ISS4k.svg",
         "brands": []
       },
       {
@@ -3203,7 +3203,7 @@
         "url": "floor-maps/lotte/0348/B1F.svg",
         "highlightUrl": "floor-maps/lotte/0348/B1F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1793324031529BIEka.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/17936026806809PuTo.svg",
         "brands": []
       }
     ],
@@ -3416,7 +3416,7 @@
         "url": "floor-maps/lotte/0004/06F.svg",
         "highlightUrl": "floor-maps/lotte/0004/06F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1793441178381nzj91.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1793582906857Y7SZ5.svg",
         "brands": []
       },
       {
