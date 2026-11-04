@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-03T05:12:06.422Z",
+  "lastUpdated": "2026-11-04T04:42:09.437Z",
   "comparisonAsOf": "2026-10-31",
   "monthKey": "2026-11",
   "monthStartSnapshot": "2026-10-31",
@@ -7,11 +7,13 @@
     "new": 0,
     "exit": 0,
     "pending": 0,
-    "stale": 0
+    "stale": 153
   },
   "health": {
-    "status": "ok",
-    "issues": []
+    "status": "degraded",
+    "issues": [
+      "현대 수집 품질 게이트 실패: 정상 1/155, 이상 지점 13/13"
+    ]
   },
   "diagnostics": [
     {
@@ -208,131 +210,92 @@
       "storeId": "현대-B00142000",
       "company": "현대",
       "store": "목동",
-      "status": "ok",
-      "brands": 15,
-      "successfulPages": 1,
-      "failedPages": 0,
-      "expectedPages": 1
+      "status": "error",
+      "error": "모든 건물 호출 실패 (1/1)"
     },
     {
       "storeId": "현대-B00122000",
       "company": "현대",
       "store": "무역센터",
-      "status": "ok",
-      "brands": 16,
-      "successfulPages": 1,
-      "failedPages": 0,
-      "expectedPages": 1
+      "status": "error",
+      "error": "모든 건물 호출 실패 (1/1)"
     },
     {
       "storeId": "현대-B00141000",
       "company": "현대",
       "store": "미아",
-      "status": "ok",
-      "brands": 4,
-      "successfulPages": 1,
-      "failedPages": 0,
-      "expectedPages": 1
+      "status": "error",
+      "error": "모든 건물 호출 실패 (1/1)"
     },
     {
       "storeId": "현대-B00121000",
       "company": "현대",
       "store": "본점",
-      "status": "ok",
-      "brands": 6,
-      "successfulPages": 1,
-      "failedPages": 0,
-      "expectedPages": 1
+      "status": "error",
+      "error": "모든 건물 호출 실패 (1/1)"
     },
     {
       "storeId": "현대-B00127000",
       "company": "현대",
       "store": "신촌",
-      "status": "ok",
-      "brands": 7,
-      "successfulPages": 1,
-      "failedPages": 0,
-      "expectedPages": 1
+      "status": "error",
+      "error": "모든 건물 호출 실패 (1/1)"
     },
     {
       "storeId": "현대-B00140000",
       "company": "현대",
       "store": "여의도",
-      "status": "ok",
-      "brands": 22,
-      "successfulPages": 1,
-      "failedPages": 0,
-      "expectedPages": 1
+      "status": "error",
+      "error": "모든 건물 호출 실패 (1/1)"
     },
     {
       "storeId": "현대-B00129000",
       "company": "현대",
       "store": "울산",
-      "status": "ok",
-      "brands": 10,
-      "successfulPages": 1,
-      "failedPages": 0,
-      "expectedPages": 1
+      "status": "error",
+      "error": "모든 건물 호출 실패 (1/1)"
     },
     {
       "storeId": "현대-B00143000",
       "company": "현대",
       "store": "중동",
-      "status": "ok",
-      "brands": 10,
-      "successfulPages": 2,
-      "failedPages": 0,
-      "expectedPages": 2
+      "status": "error",
+      "error": "모든 건물 호출 실패 (2/2)"
     },
     {
       "storeId": "현대-B00126000",
       "company": "현대",
       "store": "천호",
-      "status": "ok",
-      "brands": 8,
-      "successfulPages": 1,
-      "failedPages": 0,
-      "expectedPages": 1
+      "status": "error",
+      "error": "모든 건물 호출 실패 (1/1)"
     },
     {
       "storeId": "현대-B00147000",
       "company": "현대",
       "store": "충청",
-      "status": "ok",
-      "brands": 7,
-      "successfulPages": 1,
-      "failedPages": 0,
-      "expectedPages": 1
+      "status": "error",
+      "error": "모든 건물 호출 실패 (1/1)"
     },
     {
       "storeId": "현대-B00145000",
       "company": "현대",
       "store": "킨텍스",
-      "status": "ok",
-      "brands": 9,
-      "successfulPages": 1,
-      "failedPages": 0,
-      "expectedPages": 1
+      "status": "error",
+      "error": "모든 건물 호출 실패 (1/1)"
     },
     {
       "storeId": "현대-B00148000",
       "company": "현대",
       "store": "판교",
-      "status": "ok",
-      "brands": 23,
-      "successfulPages": 1,
-      "failedPages": 0,
-      "expectedPages": 1
+      "status": "error",
+      "error": "모든 건물 호출 실패 (1/1)"
     },
     {
       "storeId": "현대-B00146000",
       "company": "현대",
       "store": "대구",
-      "status": "ok",
-      "brands": 20,
-      "successfulPages": 1,
-      "failedPages": 0,
-      "expectedPages": 1
+      "status": "error",
+      "error": "모든 건물 호출 실패 (1/1)"
     },
     {
       "storeId": "신세계-SC00002",
@@ -1931,8 +1894,9 @@
       "storeId": "현대-B00142000",
       "brand": "질스튜어트뉴욕",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -1940,8 +1904,9 @@
       "storeId": "현대-B00142000",
       "brand": "톰그레이하운드맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -1949,8 +1914,9 @@
       "storeId": "현대-B00142000",
       "brand": "CP컴퍼니",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -1958,8 +1924,9 @@
       "storeId": "현대-B00142000",
       "brand": "솔리드옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -1967,8 +1934,9 @@
       "storeId": "현대-B00142000",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -1976,8 +1944,9 @@
       "storeId": "현대-B00142000",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -1985,8 +1954,9 @@
       "storeId": "현대-B00142000",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -1994,8 +1964,9 @@
       "storeId": "현대-B00142000",
       "brand": "슬로웨어",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2003,8 +1974,9 @@
       "storeId": "현대-B00142000",
       "brand": "알레그리",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2012,8 +1984,9 @@
       "storeId": "현대-B00142000",
       "brand": "타임옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2021,8 +1994,9 @@
       "storeId": "현대-B00142000",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2030,8 +2004,9 @@
       "storeId": "현대-B00142000",
       "brand": "송지오옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2039,8 +2014,9 @@
       "storeId": "현대-B00142000",
       "brand": "바버",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2048,8 +2024,9 @@
       "storeId": "현대-B00142000",
       "brand": "준지",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2057,8 +2034,9 @@
       "storeId": "현대-B00122000",
       "brand": "질스튜어트뉴욕",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2066,8 +2044,9 @@
       "storeId": "현대-B00122000",
       "brand": "톰그레이하운드맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2075,8 +2054,9 @@
       "storeId": "현대-B00122000",
       "brand": "산드로옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2084,8 +2064,9 @@
       "storeId": "현대-B00122000",
       "brand": "수트서플라이",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2093,8 +2074,9 @@
       "storeId": "현대-B00122000",
       "brand": "스톤아일랜드",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2102,8 +2084,9 @@
       "storeId": "현대-B00122000",
       "brand": "솔리드옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2111,8 +2094,9 @@
       "storeId": "현대-B00122000",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2120,8 +2104,9 @@
       "storeId": "현대-B00122000",
       "brand": "캡틴선샤인",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2129,8 +2114,9 @@
       "storeId": "현대-B00122000",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2138,8 +2124,9 @@
       "storeId": "현대-B00122000",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2147,8 +2134,9 @@
       "storeId": "현대-B00122000",
       "brand": "슬로웨어",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2156,8 +2144,9 @@
       "storeId": "현대-B00122000",
       "brand": "알레그리",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2165,8 +2154,9 @@
       "storeId": "현대-B00122000",
       "brand": "타임옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2174,8 +2164,9 @@
       "storeId": "현대-B00122000",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2183,8 +2174,9 @@
       "storeId": "현대-B00122000",
       "brand": "비이커",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2192,8 +2184,9 @@
       "storeId": "현대-B00122000",
       "brand": "준지",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2201,8 +2194,9 @@
       "storeId": "현대-B00141000",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2210,8 +2204,9 @@
       "storeId": "현대-B00141000",
       "brand": "타임옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2219,8 +2214,9 @@
       "storeId": "현대-B00141000",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2228,8 +2224,9 @@
       "storeId": "현대-B00141000",
       "brand": "바버",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2237,8 +2234,9 @@
       "storeId": "현대-B00121000",
       "brand": "스톤아일랜드",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2246,8 +2244,9 @@
       "storeId": "현대-B00121000",
       "brand": "솔리드옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2255,8 +2254,9 @@
       "storeId": "현대-B00121000",
       "brand": "알레그리",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2264,8 +2264,9 @@
       "storeId": "현대-B00121000",
       "brand": "타임옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2273,8 +2274,9 @@
       "storeId": "현대-B00121000",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2282,8 +2284,9 @@
       "storeId": "현대-B00121000",
       "brand": "비이커",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2291,8 +2294,9 @@
       "storeId": "현대-B00127000",
       "brand": "질스튜어트뉴욕",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2300,8 +2304,9 @@
       "storeId": "현대-B00127000",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2309,8 +2314,9 @@
       "storeId": "현대-B00127000",
       "brand": "지오송지오",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2318,8 +2324,9 @@
       "storeId": "현대-B00127000",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2327,8 +2334,9 @@
       "storeId": "현대-B00127000",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2336,8 +2344,9 @@
       "storeId": "현대-B00127000",
       "brand": "타임옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2345,8 +2354,9 @@
       "storeId": "현대-B00127000",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2354,8 +2364,9 @@
       "storeId": "현대-B00140000",
       "brand": "톰그레이하운드맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2363,8 +2374,9 @@
       "storeId": "현대-B00140000",
       "brand": "수트서플라이",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2372,8 +2384,9 @@
       "storeId": "현대-B00140000",
       "brand": "스톤아일랜드",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2381,8 +2394,9 @@
       "storeId": "현대-B00140000",
       "brand": "CP컴퍼니",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2390,8 +2404,9 @@
       "storeId": "현대-B00140000",
       "brand": "TEN-C",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2399,8 +2414,9 @@
       "storeId": "현대-B00140000",
       "brand": "솔리드옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2408,8 +2424,9 @@
       "storeId": "현대-B00140000",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2417,8 +2434,9 @@
       "storeId": "현대-B00140000",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2426,8 +2444,9 @@
       "storeId": "현대-B00140000",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2435,8 +2454,9 @@
       "storeId": "현대-B00140000",
       "brand": "아스페시",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2444,8 +2464,9 @@
       "storeId": "현대-B00140000",
       "brand": "아이엠샵",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2453,8 +2474,9 @@
       "storeId": "현대-B00140000",
       "brand": "이스트로그(프레이트)",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2462,8 +2484,9 @@
       "storeId": "현대-B00140000",
       "brand": "타임옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2471,8 +2494,9 @@
       "storeId": "현대-B00140000",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2480,8 +2504,9 @@
       "storeId": "현대-B00140000",
       "brand": "모드맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2489,8 +2514,9 @@
       "storeId": "현대-B00140000",
       "brand": "비이커",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2498,8 +2524,9 @@
       "storeId": "현대-B00140000",
       "brand": "송지오옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2507,8 +2534,9 @@
       "storeId": "현대-B00140000",
       "brand": "스컬프스토어",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2516,8 +2544,9 @@
       "storeId": "현대-B00140000",
       "brand": "우영미",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2525,8 +2554,9 @@
       "storeId": "현대-B00140000",
       "brand": "바버",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2534,8 +2564,9 @@
       "storeId": "현대-B00140000",
       "brand": "준지",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2543,8 +2574,9 @@
       "storeId": "현대-B00129000",
       "brand": "CP컴퍼니",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2552,8 +2584,9 @@
       "storeId": "현대-B00129000",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2561,8 +2594,9 @@
       "storeId": "현대-B00129000",
       "brand": "지오송지오",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2570,8 +2604,9 @@
       "storeId": "현대-B00129000",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2579,8 +2614,9 @@
       "storeId": "현대-B00129000",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2588,8 +2624,9 @@
       "storeId": "현대-B00129000",
       "brand": "알레그리",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2597,8 +2634,9 @@
       "storeId": "현대-B00129000",
       "brand": "타임옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2606,8 +2644,9 @@
       "storeId": "현대-B00129000",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2615,8 +2654,9 @@
       "storeId": "현대-B00129000",
       "brand": "송지오옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2624,8 +2664,9 @@
       "storeId": "현대-B00129000",
       "brand": "바버",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2633,8 +2674,9 @@
       "storeId": "현대-B00143000",
       "brand": "질스튜어트뉴욕",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2642,8 +2684,9 @@
       "storeId": "현대-B00143000",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2662,8 +2705,9 @@
       "storeId": "현대-B00143000",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2671,8 +2715,9 @@
       "storeId": "현대-B00143000",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2680,8 +2725,9 @@
       "storeId": "현대-B00143000",
       "brand": "알레그리",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2689,8 +2735,9 @@
       "storeId": "현대-B00143000",
       "brand": "타임옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2698,8 +2745,9 @@
       "storeId": "현대-B00143000",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2707,8 +2755,9 @@
       "storeId": "현대-B00143000",
       "brand": "바버",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2716,8 +2765,9 @@
       "storeId": "현대-B00143000",
       "brand": "CP컴퍼니",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2725,8 +2775,9 @@
       "storeId": "현대-B00126000",
       "brand": "솔리드옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2734,8 +2785,9 @@
       "storeId": "현대-B00126000",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2743,8 +2795,9 @@
       "storeId": "현대-B00126000",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2752,8 +2805,9 @@
       "storeId": "현대-B00126000",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2761,8 +2815,9 @@
       "storeId": "현대-B00126000",
       "brand": "알레그리",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2770,8 +2825,9 @@
       "storeId": "현대-B00126000",
       "brand": "타임옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2779,8 +2835,9 @@
       "storeId": "현대-B00126000",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2788,8 +2845,9 @@
       "storeId": "현대-B00126000",
       "brand": "바버",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2797,8 +2855,9 @@
       "storeId": "현대-B00147000",
       "brand": "질스튜어트뉴욕",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2806,8 +2865,9 @@
       "storeId": "현대-B00147000",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2815,8 +2875,9 @@
       "storeId": "현대-B00147000",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2824,8 +2885,9 @@
       "storeId": "현대-B00147000",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2833,8 +2895,9 @@
       "storeId": "현대-B00147000",
       "brand": "타임옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2842,8 +2905,9 @@
       "storeId": "현대-B00147000",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2851,8 +2915,9 @@
       "storeId": "현대-B00147000",
       "brand": "바버",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2860,8 +2925,9 @@
       "storeId": "현대-B00145000",
       "brand": "질스튜어트뉴욕",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2869,8 +2935,9 @@
       "storeId": "현대-B00145000",
       "brand": "CP컴퍼니",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2878,8 +2945,9 @@
       "storeId": "현대-B00145000",
       "brand": "솔리드옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2887,8 +2955,9 @@
       "storeId": "현대-B00145000",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2896,8 +2965,9 @@
       "storeId": "현대-B00145000",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2905,8 +2975,9 @@
       "storeId": "현대-B00145000",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2914,8 +2985,9 @@
       "storeId": "현대-B00145000",
       "brand": "타임옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2923,8 +2995,9 @@
       "storeId": "현대-B00145000",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2932,8 +3005,9 @@
       "storeId": "현대-B00145000",
       "brand": "바버",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2941,8 +3015,9 @@
       "storeId": "현대-B00148000",
       "brand": "CP컴퍼니",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2950,8 +3025,9 @@
       "storeId": "현대-B00148000",
       "brand": "질스튜어트뉴욕",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2959,8 +3035,9 @@
       "storeId": "현대-B00148000",
       "brand": "톰그레이하운드맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2968,8 +3045,9 @@
       "storeId": "현대-B00148000",
       "brand": "스톤아일랜드",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2977,8 +3055,9 @@
       "storeId": "현대-B00148000",
       "brand": "아페쎄맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2986,8 +3065,9 @@
       "storeId": "현대-B00148000",
       "brand": "산드로옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -2995,8 +3075,9 @@
       "storeId": "현대-B00148000",
       "brand": "솔리드옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3004,8 +3085,9 @@
       "storeId": "현대-B00148000",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3013,8 +3095,9 @@
       "storeId": "현대-B00148000",
       "brand": "지오송지오",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3022,8 +3105,9 @@
       "storeId": "현대-B00148000",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3031,8 +3115,9 @@
       "storeId": "현대-B00148000",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3040,8 +3125,9 @@
       "storeId": "현대-B00148000",
       "brand": "슬로웨어",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3049,8 +3135,9 @@
       "storeId": "현대-B00148000",
       "brand": "아스페시",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3058,8 +3145,9 @@
       "storeId": "현대-B00148000",
       "brand": "아이엠샵",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3067,8 +3155,9 @@
       "storeId": "현대-B00148000",
       "brand": "알레그리",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3076,8 +3165,9 @@
       "storeId": "현대-B00148000",
       "brand": "이스트로그(프레이트)",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3085,8 +3175,9 @@
       "storeId": "현대-B00148000",
       "brand": "타임옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3104,8 +3195,9 @@
       "storeId": "현대-B00148000",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3113,8 +3205,9 @@
       "storeId": "현대-B00148000",
       "brand": "비이커",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3122,8 +3215,9 @@
       "storeId": "현대-B00148000",
       "brand": "스컬프스토어",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3131,8 +3225,9 @@
       "storeId": "현대-B00148000",
       "brand": "바버",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3140,8 +3235,9 @@
       "storeId": "현대-B00148000",
       "brand": "준지",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3149,8 +3245,9 @@
       "storeId": "현대-B00146000",
       "brand": "톰그레이하운드맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3158,8 +3255,9 @@
       "storeId": "현대-B00146000",
       "brand": "수트서플라이",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3167,8 +3265,9 @@
       "storeId": "현대-B00146000",
       "brand": "스톤아일랜드",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3176,8 +3275,9 @@
       "storeId": "현대-B00146000",
       "brand": "CP컴퍼니",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3185,8 +3285,9 @@
       "storeId": "현대-B00146000",
       "brand": "산드로옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3194,8 +3295,9 @@
       "storeId": "현대-B00146000",
       "brand": "솔리드옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3203,8 +3305,9 @@
       "storeId": "현대-B00146000",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3212,8 +3315,9 @@
       "storeId": "현대-B00146000",
       "brand": "클럽모나코",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3221,8 +3325,9 @@
       "storeId": "현대-B00146000",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3230,8 +3335,9 @@
       "storeId": "현대-B00146000",
       "brand": "아스페시",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3239,8 +3345,9 @@
       "storeId": "현대-B00146000",
       "brand": "아이엠샵",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3248,8 +3355,9 @@
       "storeId": "현대-B00146000",
       "brand": "알레그리",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3257,8 +3365,9 @@
       "storeId": "현대-B00146000",
       "brand": "이스트로그(프레이트)",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3266,8 +3375,9 @@
       "storeId": "현대-B00146000",
       "brand": "타임옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3275,8 +3385,9 @@
       "storeId": "현대-B00146000",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3284,8 +3395,9 @@
       "storeId": "현대-B00146000",
       "brand": "비이커",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3293,8 +3405,9 @@
       "storeId": "현대-B00146000",
       "brand": "송지오옴므",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3302,8 +3415,9 @@
       "storeId": "현대-B00146000",
       "brand": "스컬프스토어",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3311,8 +3425,9 @@
       "storeId": "현대-B00146000",
       "brand": "바버",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "현대",
@@ -3320,8 +3435,9 @@
       "storeId": "현대-B00146000",
       "brand": "준지",
       "sales": "",
-      "note": "확인",
-      "comparisonCheck": "2026-10-31 입점"
+      "note": "수집 오류 - 직전 정상값 유지",
+      "comparisonCheck": "2026-10-31 입점",
+      "dataQuality": "stale"
     },
     {
       "company": "신세계",
