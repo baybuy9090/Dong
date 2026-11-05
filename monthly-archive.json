@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T04:50:03.851Z",
+  "generatedAt": "2026-11-05T05:00:05.545Z",
   "months": [
     {
       "month": "2026-08",
@@ -204,7 +204,7 @@
     {
       "month": "2026-11",
       "baselineSnapshot": "2026-10-31",
-      "endSnapshot": "2026-11-03",
+      "endSnapshot": "2026-11-05",
       "new": [],
       "exit": []
     }
