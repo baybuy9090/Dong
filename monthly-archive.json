@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T05:00:05.545Z",
+  "generatedAt": "2026-11-06T04:59:38.564Z",
   "months": [
     {
       "month": "2026-08",
@@ -204,8 +204,15 @@
     {
       "month": "2026-11",
       "baselineSnapshot": "2026-10-31",
-      "endSnapshot": "2026-11-05",
-      "new": [],
+      "endSnapshot": "2026-11-06",
+      "new": [
+        {
+          "company": "신세계",
+          "store": "대구",
+          "storeId": "신세계-SC00013",
+          "brand": "이스트로그(프레이트)"
+        }
+      ],
       "exit": []
     }
   ]

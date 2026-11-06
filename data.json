@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-11-05T04:57:11.816Z",
+  "lastUpdated": "2026-11-06T04:56:46.931Z",
   "comparisonAsOf": "2026-10-31",
   "monthKey": "2026-11",
   "monthStartSnapshot": "2026-10-31",
   "monthlySummary": {
     "new": 0,
     "exit": 0,
-    "pending": 0,
+    "pending": 1,
     "stale": 0
   },
   "health": {
@@ -369,7 +369,7 @@
       "company": "신세계",
       "store": "대구",
       "status": "ok",
-      "brands": 18,
+      "brands": 19,
       "successfulPages": 1,
       "failedPages": 0,
       "expectedPages": 1
@@ -3790,6 +3790,16 @@
       "sales": "",
       "note": "확인",
       "comparisonCheck": "2026-10-31 입점"
+    },
+    {
+      "company": "신세계",
+      "store": "대구",
+      "storeId": "신세계-SC00013",
+      "brand": "이스트로그(프레이트)",
+      "sales": "",
+      "note": "신규 입점 재확인 중",
+      "changeMonth": "2026-11",
+      "comparisonCheck": "2026-10-31 미입점"
     },
     {
       "company": "신세계",
