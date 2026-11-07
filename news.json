@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-11-06T03:17:00.625Z",
+  "lastUpdated": "2026-11-07T02:36:27.867Z",
   "windowDays": 14,
   "coverage": {
     "total": 37,
-    "withNews": 17
+    "withNews": 16
   },
   "diagnostics": [
     {
@@ -12,7 +12,7 @@
         "타임옴므",
         "타임옴므 패션 브랜드"
       ],
-      "candidates": 1,
+      "candidates": 0,
       "sources": {
         "google": true,
         "naver": true
@@ -38,7 +38,7 @@
         "솔리드옴므",
         "솔리드옴므 패션 브랜드"
       ],
-      "candidates": 2,
+      "candidates": 4,
       "sources": {
         "google": true,
         "naver": true
@@ -77,7 +77,7 @@
         "JUUN.J 패션",
         "준지 패션"
       ],
-      "candidates": 17,
+      "candidates": 20,
       "sources": {
         "google": true,
         "naver": true
@@ -131,7 +131,7 @@
         "비이커",
         "비이커 패션 브랜드"
       ],
-      "candidates": 13,
+      "candidates": 11,
       "sources": {
         "google": true,
         "naver": true
@@ -206,7 +206,7 @@
         "바버",
         "바버 패션 브랜드"
       ],
-      "candidates": 8,
+      "candidates": 10,
       "sources": {
         "google": true,
         "naver": true
@@ -483,6 +483,35 @@
   ],
   "industry": [
     {
+      "title": "테일러메이드 어패럴, 26겨울 컬렉션→아떼 바네사부르노, 26FW '만두백'",
+      "link": "https://www.slist.kr/news/articleView.html?idxno=779660",
+      "source": "slist.kr",
+      "pubDate": "2026-11-06T11:26:00.000Z",
+      "sentiment": "neutral",
+      "events": [
+        "협업·신제품"
+      ]
+    },
+    {
+      "title": "한섬·신세계 웃고 롯데GFR 울고…백화점 패션 3사, 엇갈린 성적표",
+      "link": "http://www.newstomato.com/ReadNews.aspx?no=1319564&inflow=N",
+      "source": "newstomato.com",
+      "pubDate": "2026-11-06T07:12:00.000Z",
+      "sentiment": "positive",
+      "events": []
+    },
+    {
+      "title": "파보에, AK플라자 분당점서 첫 오프라인 진출",
+      "link": "http://www.ktnews.com/news/articleView.html?idxno=149991",
+      "source": "ktnews.com",
+      "pubDate": "2026-11-06T06:24:00.000Z",
+      "sentiment": "positive",
+      "events": [
+        "신규 매장·팝업",
+        "리뉴얼·확장"
+      ]
+    },
+    {
       "title": "일꼬르소, 추동 시즌 순조로운 출발",
       "link": "http://www.apparelnews.co.kr/news/news_view/?idx=228787",
       "source": "apparelnews.co.kr",
@@ -526,45 +555,10 @@
         "협업·신제품",
         "실적·성장"
       ]
-    },
-    {
-      "title": "제이제이지고트·프로스펙스·구호, 겨울 겨냥 핵심 아우터 공개 [KDF br...",
-      "link": "http://www.kdfnews.com/news/articleView.html?idxno=190368",
-      "source": "kdfnews.com",
-      "pubDate": "2026-11-03T06:24:00.000Z",
-      "sentiment": "neutral",
-      "events": []
-    },
-    {
-      "title": "\"클래식 테일러링에 감각적인 변주\"…LF TNGT, 2030 남성 '눈도장'",
-      "link": "https://www.thepublic.kr/news/articleView.html?idxno=324914",
-      "source": "thepublic.kr",
-      "pubDate": "2026-11-03T05:32:00.000Z",
-      "sentiment": "positive",
-      "events": [
-        "실적·성장"
-      ]
-    },
-    {
-      "title": "TNGT, ‘한 끗’ 다른 스타일로 2030세대 취향저격! 2030 남성 비중 50%까...",
-      "link": "http://www.fashionn.com/board/read_new.php?table=1006&number=63018",
-      "source": "fashionn.com",
-      "pubDate": "2026-11-03T02:52:00.000Z",
-      "sentiment": "neutral",
-      "events": []
     }
   ],
   "data": {
-    "타임옴므": [
-      {
-        "title": "남자 옷이 이렇게 섹시했나..? 이수혁 타임옴므 화보",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBaRDNGR29OR3QtOEhRTHZHbk92eGNFa0l5UFVYZ2stb3UyemRlTDluaGYwdHhib04xN25lZDdDMkhIeXhiUXQ0SjdmeU5mcVlMSG5Z0gFYQVVfeXFMTTlKWWdWMDFWSG1pTnVsdmc1Z2F5emhreUlaMFItQzVLQ0VHVE9USEpXb04yTXJNUUtmTnBTR3VEZFBGQnpOekFVVFJiTnBSdnM5b0tWaS1EUA?oc=5",
-        "source": "네이트뷰",
-        "pubDate": "2026-10-23T07:00:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      }
-    ],
+    "타임옴므": [],
     "띠어리맨": [
       {
         "title": "[똑똑한패션] 무신사, 삼성물산 패션 띠어리, 패션그룹형지, 세정",
@@ -577,6 +571,16 @@
     ],
     "솔리드옴므": [
       {
+        "title": "김재원, 민소매 데님룩으로 탄탄한 피지컬…'최종면접' 대세 행보 잇는...",
+        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16270386",
+        "source": "topstarnews.net",
+        "pubDate": "2026-11-06T14:14:00.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "협업·신제품"
+        ]
+      },
+      {
         "title": "김재원, 수트 차림으로 근황 공개…'최종면접' 스크린 데뷔 기대감",
         "link": "https://www.topstarnews.net/news/articleView.html?idxno=16267505",
         "source": "topstarnews.net",
@@ -584,6 +588,16 @@
         "sentiment": "positive",
         "events": [
           "협업·신제품"
+        ]
+      },
+      {
+        "title": "지방권 10개 백화점 남성 컨템포러리·디자이너 매출",
+        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=228617",
+        "source": "apparelnews.co.kr",
+        "pubDate": "2026-10-29T13:02:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "실적·성장"
         ]
       },
       {
@@ -728,6 +742,16 @@
     ],
     "준지": [
       {
+        "title": "할인보다 '브랜드 가치'···패션家 '질적 성장' 승부수",
+        "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2489390",
+        "source": "enewstoday.co.kr",
+        "pubDate": "2026-11-07T00:00:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "실적·성장"
+        ]
+      },
+      {
         "title": "10톤 '옷산' 등장…패션 서바이벌 '스타일 워즈' 관전 포인트 '셋'",
         "link": "https://www.nocutnews.co.kr/news/6603119?utm_source=naver&utm_medium=article&utm_campaign=20261106102257",
         "source": "nocutnews.co.kr",
@@ -781,14 +805,6 @@
         "source": "패션포스트",
         "pubDate": "2026-11-04T02:18:32.000Z",
         "sentiment": "positive",
-        "events": []
-      },
-      {
-        "title": "준지, 예술로 소통하다…K-POP 스타 48인의 새로운 매력",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5MR0RtQy01RHluc080bC1xcHdNR2JSZkJBU3RiT2M1ZU4waGw2SEc4T2wtbEIxNEpEdlRHS19GSWNnYkJuVVlLTlZ5a3lyZ0hZZjVqUTZab21MeF9xZEp6Q2VfbnVRVmpMbWRtVg?oc=5",
-        "source": "매경헬스",
-        "pubDate": "2026-11-03T05:15:13.000Z",
-        "sentiment": "neutral",
         "events": []
       }
     ],
@@ -934,15 +950,23 @@
     "이로맨": [],
     "지오송지오": [
       {
-        "title": "롯데홈쇼핑·마리오아울렛, 패딩-다운 충전재 정보 QR로 공개·가을·겨...",
-        "link": "http://www.wsobi.com/news/articleView.html?idxno=320279",
-        "source": "wsobi.com",
-        "pubDate": "2026-10-23T06:50:00.000Z",
-        "sentiment": "positive",
+        "title": "남성복, 겨울 성수기 '프리미엄 아우터' 총력전",
+        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=228647",
+        "source": "apparelnews.co.kr",
+        "pubDate": "2026-11-01T13:02:00.000Z",
+        "sentiment": "neutral",
         "events": []
       }
     ],
     "바버": [
+      {
+        "title": "[해외 크리에이티브] 바버·아드만, 월레스와 그로밋의 겨울 모험 그린 크리스마스 광고 공개",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBNQ0FZMXlnbkcydEV0ZUhmRkVtZUVtRUtyd1Z4eGpTVE9Nel83MEYwX1I2N0lUNXA0UWxNRkF6Q0Nfa3AwdnFhX2JwdG1wREw1Q1MwT3d4U1RvVWZCeHN1SWlTQ2Z2emM4ZUNrSg?oc=5",
+        "source": "매드타임스",
+        "pubDate": "2026-11-06T15:00:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
       {
         "title": "월리스와 그로밋이 아드만 스튜디오의 최신 바버 홀리데이 영화에서 따뜻한 연말연시 인사를 전합니다.",
         "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNc25rcWR1WDVoc1NwRjcxZi00VkxScVl1b292Y2gxQWRrVmc0dkdrTGVBT29tdzBnOThiUzBNSWoyVjQzUHVtZTlTOW0xVGd2SldGX25rbEtFbUw1RE1Ram95bFU4R3VJVnlKcmwwUGFINnNRWE1IYi1NeDZkdE5uMFloQ0RmdjlFZzItNmh2X3dKYXU2NjZsTzVPRUpGTjNlMmxQT0N6Nm94WXVrUHpFUVZ3Z2xLTWZGUGc?oc=5",
@@ -973,6 +997,17 @@
         ]
       },
       {
+        "title": "사이퍼 디지털, 첫 HPC 리스 매출 기록, 바버 레이크 계약 확장",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE40d3RfRFBOUjB5T3dUcFlCdVBkeFN1UnVxaXBKVHZVcmswN3FGQndOeHNpblhuZ2ZnTGk1RGpvZVFoUmptb0JXNWlyV3FYXzM2SWtseFFLYTd4YUpaeHVBWWw4NDByT3hqQkE?oc=5",
+        "source": "TradingKey",
+        "pubDate": "2026-11-03T00:03:25.000Z",
+        "sentiment": "positive",
+        "events": [
+          "리뉴얼·확장",
+          "실적·성장"
+        ]
+      },
+      {
         "title": "사이퍼 디지털(CIFR) 2026년 3분기 실적 발표 콘퍼런스 콜: 바버 레이크 91억 달러 달성",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5JWFB2dW9Tc0VFZkl6LTdDcFJyLUtDTGhKVXNUaDRFbFNvdzVYQUNHTG4zTk1lQzg2dnlzUHdUUUstWVZZUmpYTDJCUHFtZ2xHMWtyYU16TjRZNGpiNWU2T1VrWklXRGps?oc=5",
         "source": "TradingKey",
@@ -1000,24 +1035,6 @@
           "신규 매장·팝업",
           "실적·성장"
         ]
-      },
-      {
-        "title": "[똑똑한패션] LF몰, 아디다스, 지그재그, BYC, 신세계인터내셔날, 이랜드...",
-        "link": "https://www.ekn.kr/web/view.php?key=20261102023314248",
-        "source": "ekn.kr",
-        "pubDate": "2026-11-02T07:00:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "협업·신제품"
-        ]
-      },
-      {
-        "title": "압박의 메이시 바버, KO 본능의 칼리 주디스 잡을까?",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBSQlF0Q256R0lja2wtVE54TC1hc05CZ1RSV2gycTBPRmxzZVc3akR4dW10VFk5UGtfeFpFaFFycElDWkdpQVk2MHVXYTU3M3VJbWFFek5KZko1ekxST2NjM01vM1BNZTBiLVhWTmJZU3NWQklTazNzNWJLWnl0UQ?oc=5",
-        "source": "오마이스타",
-        "pubDate": "2026-10-28T00:21:00.000Z",
-        "sentiment": "neutral",
-        "events": []
       }
     ],
     "산드로옴므": [],
@@ -1165,6 +1182,17 @@
     ],
     "맨온더분": [
       {
+        "title": "맨온더분 x 비탈레 바르베리스 까노니꼬 협업, 청담 플래그십 스토어 전시",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRURrZkxwY2RlVGVMT1FoVklsa1VpbXJrdzdfRW43dy1aQllkWGx0ODNlZnFaTjJCTlZRM1JfUG15XzlROHozb2h1cWcxNXVudWxLY21KNWJWRnhCVFRyWFNnNGFQdE9WdTk2RFhGRTdGOTVxUTZDYWpTQXlaeEMtQy1ZNFV0RlZialR2NXdmRVh3dFpIc1E?oc=5",
+        "source": "PAP Magazine",
+        "pubDate": "2026-11-07T00:00:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "신규 매장·팝업",
+          "협업·신제품"
+        ]
+      },
+      {
         "title": "신세계인터내셔날, 쓱데이 맞아 신세계V 총공세",
         "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065593051508814",
         "source": "megaeconomy.co.kr",
@@ -1191,14 +1219,6 @@
         "events": [
           "입점·유통"
         ]
-      },
-      {
-        "title": "맨온더분의 현재 그리고 미래",
-        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQd2lhclc3aGlVQlZFTHVxLTBrSXpadjJFWHBPajVpaU5hWUZEN05IOGpTRFlDTHc5bUJUd1hVRlZzZnhFSHZ0aTlzZ3duR0lyR19ZLVVZbElKeFlzN0ZQUGRBQlBrdE1VaXYtbGRfNF93STJWMkVDaE1LS1R1TGFjaHJPSlNSYmRubXhrcmRwOFhSQWVJZHctSTk4ZGd2dFBXWmwzSU1pQXdkVmVfbldHYjVTRFZvdnhmSS1JNS1oMDdVa0E2dUZuTEo0NzhSVmY4cDliWGM4VDh2OXZMMzUw?oc=5",
-        "source": "W Korea",
-        "pubDate": "2026-10-23T07:00:00.000Z",
-        "sentiment": "neutral",
-        "events": []
       }
     ],
     "수트서플라이": [],
