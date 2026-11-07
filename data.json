@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-11-06T04:56:46.931Z",
+  "lastUpdated": "2026-11-07T04:29:12.963Z",
   "comparisonAsOf": "2026-10-31",
   "monthKey": "2026-11",
   "monthStartSnapshot": "2026-10-31",
   "monthlySummary": {
-    "new": 0,
+    "new": 1,
     "exit": 0,
-    "pending": 1,
+    "pending": 0,
     "stale": 0
   },
   "health": {
@@ -3797,7 +3797,7 @@
       "storeId": "신세계-SC00013",
       "brand": "이스트로그(프레이트)",
       "sales": "",
-      "note": "신규 입점 재확인 중",
+      "note": "이번 달 신규 입점",
       "changeMonth": "2026-11",
       "comparisonCheck": "2026-10-31 미입점"
     },
