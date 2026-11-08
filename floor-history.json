@@ -1,7 +1,23 @@
 {
   "schemaVersion": 5,
-  "lastUpdated": "2026-11-07T06:58:03.499Z",
+  "lastUpdated": "2026-11-08T07:04:17.649Z",
   "events": [
+    {
+      "detectedAt": "2026-11-08T07:04:17.649Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "부산본점",
+      "storeId": "롯데-0005",
+      "floor": "B2F"
+    },
+    {
+      "detectedAt": "2026-11-08T07:04:17.649Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "청량리",
+      "storeId": "롯데-0004",
+      "floor": "05F"
+    },
     {
       "detectedAt": "2026-11-07T06:58:03.499Z",
       "type": "도면 변경",
@@ -3999,22 +4015,6 @@
       "store": "잠실점",
       "storeId": "롯데-0002",
       "floor": "02F"
-    },
-    {
-      "detectedAt": "2026-10-15T05:45:58.505Z",
-      "type": "도면 변경",
-      "company": "롯데",
-      "store": "잠실에비뉴엘",
-      "storeId": "롯데-0348",
-      "floor": "06F"
-    },
-    {
-      "detectedAt": "2026-10-15T05:45:58.505Z",
-      "type": "도면 변경",
-      "company": "롯데",
-      "store": "잠실에비뉴엘",
-      "storeId": "롯데-0348",
-      "floor": "05F"
     }
   ],
   "current": {
@@ -5155,7 +5155,7 @@
       "label": "B2 식품관 푸드에비뉴",
       "url": "floor-maps/lotte/0005/B2F.svg",
       "brands": [],
-      "signature": "e2743bc6c2fa5a8f90b27a508f2130f068fcdb5009dbe68e70c8b54d12d5967d"
+      "signature": "c7018235e04ecfdebe0a6a621a98a590dc8db94539b0daf395302b02d450734a"
     },
     "롯데-0005|B3F|B3 주차장": {
       "company": "롯데",
@@ -6329,7 +6329,7 @@
       "brands": [
         "시스템옴므"
       ],
-      "signature": "5e5862b538c463f143bc901612868ea9aa1176e18bc8c0e7b5c82947c51fdf9f"
+      "signature": "6b72cb8ac9d2fa501215791c21628180e3cd9bc9fbb8c1a011ea16a2a9945c38"
     },
     "롯데-0004|04F|4F 여성정장ㅣ구두ㅣ점행사장ㅣ사은행사장": {
       "company": "롯데",

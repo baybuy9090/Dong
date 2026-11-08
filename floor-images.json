@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-07T06:58:03.499Z",
+  "lastUpdated": "2026-11-08T07:04:17.649Z",
   "diagnostics": [
     {
       "storeId": "신세계-SC00002",
@@ -2344,7 +2344,7 @@
         "url": "floor-maps/lotte/0005/B2F.svg",
         "highlightUrl": "floor-maps/lotte/0005/B2F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/1793760488928SU71O.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/41ec21cc-a28b-4e09-b363-0c9e24ee5dc5/1794036099906SW4ab.svg",
         "brands": []
       },
       {
@@ -3426,7 +3426,7 @@
         "url": "floor-maps/lotte/0004/05F.svg",
         "highlightUrl": "floor-maps/lotte/0004/05F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1792578531515nYvKj.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1794046768046L8UtG.svg",
         "brands": [
           "시스템옴므"
         ]
