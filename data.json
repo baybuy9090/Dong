@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-10T05:50:01.997Z",
+  "lastUpdated": "2026-11-11T04:33:05.676Z",
   "comparisonAsOf": "2026-10-31",
   "monthKey": "2026-11",
   "monthStartSnapshot": "2026-10-31",
@@ -7,7 +7,7 @@
     "new": 1,
     "exit": 0,
     "pending": 0,
-    "stale": 12
+    "stale": 0
   },
   "health": {
     "status": "ok",
@@ -348,8 +348,8 @@
       "storeId": "신세계-SC00006",
       "company": "신세계",
       "store": "광주",
-      "status": "stale",
-      "brands": 0,
+      "status": "ok",
+      "brands": 12,
       "successfulPages": 1,
       "failedPages": 0,
       "expectedPages": 1
@@ -3554,9 +3554,8 @@
       "storeId": "신세계-SC00006",
       "brand": "바버",
       "sales": "",
-      "note": "수집 지연 - 직전 정상값 유지",
-      "comparisonCheck": "2026-10-31 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-10-31 입점"
     },
     {
       "company": "신세계",
@@ -3564,9 +3563,8 @@
       "storeId": "신세계-SC00006",
       "brand": "스톤아일랜드",
       "sales": "",
-      "note": "수집 지연 - 직전 정상값 유지",
-      "comparisonCheck": "2026-10-31 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-10-31 입점"
     },
     {
       "company": "신세계",
@@ -3574,9 +3572,8 @@
       "storeId": "신세계-SC00006",
       "brand": "시스템옴므",
       "sales": "",
-      "note": "수집 지연 - 직전 정상값 유지",
-      "comparisonCheck": "2026-10-31 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-10-31 입점"
     },
     {
       "company": "신세계",
@@ -3584,9 +3581,8 @@
       "storeId": "신세계-SC00006",
       "brand": "준지",
       "sales": "",
-      "note": "수집 지연 - 직전 정상값 유지",
-      "comparisonCheck": "2026-10-31 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-10-31 입점"
     },
     {
       "company": "신세계",
@@ -3594,9 +3590,8 @@
       "storeId": "신세계-SC00006",
       "brand": "CP컴퍼니",
       "sales": "",
-      "note": "수집 지연 - 직전 정상값 유지",
-      "comparisonCheck": "2026-10-31 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-10-31 입점"
     },
     {
       "company": "신세계",
@@ -3604,9 +3599,8 @@
       "storeId": "신세계-SC00006",
       "brand": "솔리드옴므",
       "sales": "",
-      "note": "수집 지연 - 직전 정상값 유지",
-      "comparisonCheck": "2026-10-31 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-10-31 입점"
     },
     {
       "company": "신세계",
@@ -3614,9 +3608,8 @@
       "storeId": "신세계-SC00006",
       "brand": "DKNY맨",
       "sales": "",
-      "note": "수집 지연 - 직전 정상값 유지",
-      "comparisonCheck": "2026-10-31 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-10-31 입점"
     },
     {
       "company": "신세계",
@@ -3624,9 +3617,8 @@
       "storeId": "신세계-SC00006",
       "brand": "알레그리",
       "sales": "",
-      "note": "수집 지연 - 직전 정상값 유지",
-      "comparisonCheck": "2026-10-31 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-10-31 입점"
     },
     {
       "company": "신세계",
@@ -3634,9 +3626,8 @@
       "storeId": "신세계-SC00006",
       "brand": "타임옴므",
       "sales": "",
-      "note": "수집 지연 - 직전 정상값 유지",
-      "comparisonCheck": "2026-10-31 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-10-31 입점"
     },
     {
       "company": "신세계",
@@ -3644,9 +3635,8 @@
       "storeId": "신세계-SC00006",
       "brand": "띠어리맨",
       "sales": "",
-      "note": "수집 지연 - 직전 정상값 유지",
-      "comparisonCheck": "2026-10-31 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-10-31 입점"
     },
     {
       "company": "신세계",
@@ -3654,9 +3644,8 @@
       "storeId": "신세계-SC00006",
       "brand": "비이커",
       "sales": "",
-      "note": "수집 지연 - 직전 정상값 유지",
-      "comparisonCheck": "2026-10-31 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-10-31 입점"
     },
     {
       "company": "신세계",
@@ -3664,9 +3653,8 @@
       "storeId": "신세계-SC00006",
       "brand": "송지오옴므",
       "sales": "",
-      "note": "수집 지연 - 직전 정상값 유지",
-      "comparisonCheck": "2026-10-31 입점",
-      "dataQuality": "stale"
+      "note": "확인",
+      "comparisonCheck": "2026-10-31 입점"
     },
     {
       "company": "신세계",
