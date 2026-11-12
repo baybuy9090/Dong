@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T04:36:11.869Z",
+  "generatedAt": "2026-11-12T05:41:12.366Z",
   "months": [
     {
       "month": "2026-08",
@@ -204,7 +204,7 @@
     {
       "month": "2026-11",
       "baselineSnapshot": "2026-10-31",
-      "endSnapshot": "2026-11-11",
+      "endSnapshot": "2026-11-12",
       "new": [
         {
           "company": "신세계",
