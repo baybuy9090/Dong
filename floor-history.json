@@ -1,7 +1,31 @@
 {
   "schemaVersion": 5,
-  "lastUpdated": "2026-11-13T07:45:20.192Z",
+  "lastUpdated": "2026-11-14T07:31:11.797Z",
   "events": [
+    {
+      "detectedAt": "2026-11-14T07:31:11.797Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "대구점",
+      "storeId": "롯데-0023",
+      "floor": "07F"
+    },
+    {
+      "detectedAt": "2026-11-14T07:31:11.797Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "청량리",
+      "storeId": "롯데-0004",
+      "floor": "05F"
+    },
+    {
+      "detectedAt": "2026-11-14T07:31:11.797Z",
+      "type": "도면 변경",
+      "company": "롯데",
+      "store": "청량리",
+      "storeId": "롯데-0004",
+      "floor": "B2F"
+    },
     {
       "detectedAt": "2026-11-13T07:45:20.192Z",
       "type": "도면 변경",
@@ -3991,30 +4015,6 @@
       "store": "천호",
       "storeId": "현대-B00126000",
       "floor": "7F"
-    },
-    {
-      "detectedAt": "2026-10-22T05:55:52.050Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "천호",
-      "storeId": "현대-B00126000",
-      "floor": "3F"
-    },
-    {
-      "detectedAt": "2026-10-22T05:55:52.050Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "판교",
-      "storeId": "현대-B00148000",
-      "floor": "2F"
-    },
-    {
-      "detectedAt": "2026-10-22T05:55:52.050Z",
-      "type": "도면 변경",
-      "company": "현대",
-      "store": "판교",
-      "storeId": "현대-B00148000",
-      "floor": "B1"
     }
   ],
   "current": {
@@ -4548,7 +4548,7 @@
       "label": "7F 아웃도어ㅣ스포츠ㅣKIDS PARK(하이마운틴어드벤처)",
       "url": "floor-maps/lotte/0023/07F.svg",
       "brands": [],
-      "signature": "f8823b1c17cc4c302112ca73d81dcf5f55c30656e14979a38dd14461facb67ce"
+      "signature": "2eec38622364e4ad4fe114b2fbd1c3c5925a400ba91e12e720c62d46e53dfa39"
     },
     "롯데-0023|06F|6F 남성패션ㅣ남성컨템포러리ㅣ골프ㅣGDR아카데미": {
       "company": "롯데",
@@ -6329,7 +6329,7 @@
       "brands": [
         "시스템옴므"
       ],
-      "signature": "6b72cb8ac9d2fa501215791c21628180e3cd9bc9fbb8c1a011ea16a2a9945c38"
+      "signature": "1faeb3067f9db7688cf133179c152d17ea1831380b89c35de90694ffda972d74"
     },
     "롯데-0004|04F|4F 여성정장ㅣ구두ㅣ점행사장ㅣ사은행사장": {
       "company": "롯데",
@@ -6389,7 +6389,7 @@
       "label": "B2 식품 슈퍼ㅣF&B",
       "url": "floor-maps/lotte/0004/B2F.svg",
       "brands": [],
-      "signature": "7592751d5edf9ece12d88f52f60ca1c9498945ed70c73e2b46359a8f7c704dd3"
+      "signature": "ff69348f5037837fff47e1856e44958e5a1c5cd8b2cc7e652f0d5432dc8560cb"
     },
     "롯데-0341|10F|10F 샤롯데가든ㅣ아웃백ㅣ카페": {
       "company": "롯데",

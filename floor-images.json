@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-13T07:45:20.192Z",
+  "lastUpdated": "2026-11-14T07:31:11.797Z",
   "diagnostics": [
     {
       "storeId": "신세계-SC00002",
@@ -222,7 +222,8 @@
     {
       "storeId": "현대-B00122000",
       "store": "무역센터",
-      "status": "ok",
+      "status": "stale",
+      "error": "fetch failed",
       "floors": 15,
       "format": "svg"
     },
@@ -1786,7 +1787,7 @@
         "url": "floor-maps/lotte/0023/07F.svg",
         "highlightUrl": "floor-maps/lotte/0023/07F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/b0a99aec-cb47-4a99-9981-2f034d451767/1790764471055DhW5Z.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/b0a99aec-cb47-4a99-9981-2f034d451767/1794623607675KPI3C.svg",
         "brands": []
       },
       {
@@ -3426,7 +3427,7 @@
         "url": "floor-maps/lotte/0004/05F.svg",
         "highlightUrl": "floor-maps/lotte/0004/05F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1794046768046L8UtG.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1794635127653r0yj0.svg",
         "brands": [
           "시스템옴므"
         ]
@@ -3482,7 +3483,7 @@
         "url": "floor-maps/lotte/0004/B2F.svg",
         "highlightUrl": "floor-maps/lotte/0004/B2F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/1793699151342009Bj.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e5430e7d-5e16-4ebc-bdd9-77d162a08fb2/17943838476150FCUD.svg",
         "brands": []
       }
     ],
