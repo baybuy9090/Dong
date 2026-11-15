@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-14T02:56:53.638Z",
+  "lastUpdated": "2026-11-15T02:27:48.863Z",
   "windowDays": 14,
   "coverage": {
     "total": 37,
@@ -64,7 +64,7 @@
         "우영미",
         "우영미 패션 브랜드"
       ],
-      "candidates": 4,
+      "candidates": 3,
       "sources": {
         "google": true,
         "naver": true
@@ -77,7 +77,7 @@
         "JUUN.J 패션",
         "준지 패션"
       ],
-      "candidates": 32,
+      "candidates": 33,
       "sources": {
         "google": true,
         "naver": true
@@ -118,7 +118,7 @@
         "C.P. COMPANY 패션",
         "CP COMPANY 패션"
       ],
-      "candidates": 3,
+      "candidates": 4,
       "sources": {
         "google": true,
         "naver": true
@@ -143,7 +143,7 @@
       "queries": [
         "톰그레이하운드 패션"
       ],
-      "candidates": 7,
+      "candidates": 5,
       "sources": {
         "google": true,
         "naver": true
@@ -232,7 +232,7 @@
         "알레그리",
         "알레그리 패션 브랜드"
       ],
-      "candidates": 4,
+      "candidates": 3,
       "sources": {
         "google": true,
         "naver": true
@@ -245,7 +245,7 @@
         "질스튜어트뉴욕",
         "질스튜어트뉴욕 패션 브랜드"
       ],
-      "candidates": 6,
+      "candidates": 5,
       "sources": {
         "google": true,
         "naver": true
@@ -614,14 +614,6 @@
         "events": [
           "협업·신제품"
         ]
-      },
-      {
-        "title": "톰 포드부터 생로랑까지, 밤을 위한 슈트 스타일",
-        "link": "https://www.esquirekorea.co.kr/article/1912069",
-        "source": "esquirekorea.co.kr",
-        "pubDate": "2026-10-31T23:00:00.000Z",
-        "sentiment": "neutral",
-        "events": []
       }
     ],
     "준지": [
@@ -707,6 +699,16 @@
     "스톤아일랜드": [],
     "CP컴퍼니": [
       {
+        "title": "로아 x C.P. 컴퍼니, 첫 협업 컬렉션 공개",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1VVUo5QVQzZmU4bW1LQ2l6cmNZQW1MdXZsTFUzamRIQW82QWlnOHVpbUJhNGthdG8zcUJ0ZWhYTUg5X3Y1eUpHN0t2dnc5SVNNTkRYX3ZzYmZqdjZaM0pscjQ1VGhXcVp5RXRSWW10X2pCWUJjWEZwcw?oc=5",
+        "source": "아이즈매거진 | eyesmag",
+        "pubDate": "2026-11-14T04:35:20.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품"
+        ]
+      },
+      {
         "title": "‘스코틀랜드 헤리티지’ 킨록 앤더슨, 한국·일본 중심 사업 확대 추진",
         "link": "https://www.munhwa.com/article/11628929?ref=naver",
         "source": "munhwa.com",
@@ -777,16 +779,6 @@
         "events": []
       },
       {
-        "title": "타임·시스템에 '신명품'까지… 한섬, '수입 패션'으로 체질 바꿨다",
-        "link": "https://news.bizwatch.co.kr/article/consumer/2026/11/03/0036",
-        "source": "news.bizwatch.co.kr",
-        "pubDate": "2026-11-03T22:50:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "입점·유통"
-        ]
-      },
-      {
         "title": "새 수장 맞는 한섬, 투트랙 전략… 파리서 존재감 키우고 국내선 수입 ...",
         "link": "https://biz.chosun.com/distribution/channel/2026/11/03/O54YWOQE2JBBPJQLNGYHFCYTKQ/?utm_source=naver&utm_medium=original&utm_campaign=biz",
         "source": "biz.chosun.com",
@@ -822,16 +814,6 @@
         "pubDate": "2026-11-01T23:12:00.000Z",
         "sentiment": "neutral",
         "events": []
-      },
-      {
-        "title": "수입 브랜드로 성장 이끈 유태영, 한섬 대표로…’외형·내실' 두 토끼 ...",
-        "link": "https://www.g-enews.com/view.php?ud=202610301548414374056c162803_1",
-        "source": "g-enews.com",
-        "pubDate": "2026-11-01T00:00:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "실적·성장"
-        ]
       }
     ],
     "플랫폼플레이스": [],
@@ -939,14 +921,6 @@
         "pubDate": "2026-11-05T07:26:00.000Z",
         "sentiment": "positive",
         "events": []
-      },
-      {
-        "title": "하프클럽, 연중 최대 행사 '하프블프' 진행..4050 여심 공략",
-        "link": "http://www.breaknews.com/1248628",
-        "source": "breaknews.com",
-        "pubDate": "2026-11-05T05:12:00.000Z",
-        "sentiment": "positive",
-        "events": []
       }
     ],
     "질스튜어트뉴욕": [
@@ -965,14 +939,6 @@
         "link": "http://www.breaknews.com/1248628",
         "source": "breaknews.com",
         "pubDate": "2026-11-05T05:12:00.000Z",
-        "sentiment": "positive",
-        "events": []
-      },
-      {
-        "title": "[유통갤러리] 11번가 ‘그랜드십일절’, AI·특가로 쇼핑열기 잇는다 外",
-        "link": "https://theviewers.co.kr/View.aspx?No=4298415",
-        "source": "theviewers.co.kr",
-        "pubDate": "2026-11-05T00:34:00.000Z",
         "sentiment": "positive",
         "events": []
       },
