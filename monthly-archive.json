@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T04:39:37.573Z",
+  "generatedAt": "2026-11-17T06:25:20.403Z",
   "months": [
     {
       "month": "2026-08",
@@ -204,7 +204,7 @@
     {
       "month": "2026-11",
       "baselineSnapshot": "2026-10-31",
-      "endSnapshot": "2026-11-16",
+      "endSnapshot": "2026-11-17",
       "new": [
         {
           "company": "신세계",
@@ -213,7 +213,14 @@
           "brand": "이스트로그(프레이트)"
         }
       ],
-      "exit": []
+      "exit": [
+        {
+          "company": "현대",
+          "store": "무역센터",
+          "storeId": "현대-B00122000",
+          "brand": "준지"
+        }
+      ]
     }
   ]
 }
