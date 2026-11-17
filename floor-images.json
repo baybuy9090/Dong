@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-16T07:49:07.441Z",
+  "lastUpdated": "2026-11-17T08:58:06.058Z",
   "diagnostics": [
     {
       "storeId": "신세계-SC00002",
@@ -336,7 +336,7 @@
       {
         "floor": "7F",
         "label": "7F 골프/남성 캐주얼/남성 컨템포러리/정장 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00002/guide/floor/__icsFiles/afieldfile/2026/09/04/qWxiccGghqRj.png",
+        "url": "https://www.shinsegae.com/cms12/SC00002/guide/floor/__icsFiles/afieldfile/2026/11/17/GY5FSwwKSZxi.png",
         "brands": [
           "띠어리맨",
           "맨온더분",
@@ -374,7 +374,7 @@
       {
         "floor": "5F",
         "label": "5F 여성 클래식/뉴 컨템포러리/핸드백 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00002/guide/floor/__icsFiles/afieldfile/2026/11/10/CR8TldsBKpZG.png",
+        "url": "https://www.shinsegae.com/cms12/SC00002/guide/floor/__icsFiles/afieldfile/2026/11/17/Ag2WOczMPiL8.png",
         "brands": []
       },
       {
@@ -1487,7 +1487,7 @@
         "url": "floor-maps/lotte/0333/03F.svg",
         "highlightUrl": "floor-maps/lotte/0333/03F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/17890324306462Fi8k.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/351320c2-d0a6-4181-a73a-b8eb208d8255/1794819728187c07W9.svg",
         "brands": []
       },
       {
@@ -1739,7 +1739,7 @@
         "url": "floor-maps/lotte/0022/B1F.svg",
         "highlightUrl": "floor-maps/lotte/0022/B1F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/be0f7419-39f7-47ac-860a-663357db0a80/1793787505047HcE6s.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/be0f7419-39f7-47ac-860a-663357db0a80/1794889348616XH1rE.svg",
         "brands": []
       }
     ],
@@ -3077,7 +3077,7 @@
         "url": "floor-maps/lotte/0002/03F.svg",
         "highlightUrl": "floor-maps/lotte/0002/03F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1794531550507xbePG.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1794877543152Rcl0g.svg",
         "brands": []
       },
       {
@@ -3104,7 +3104,7 @@
         "url": "floor-maps/lotte/0002/B1F.svg",
         "highlightUrl": "floor-maps/lotte/0002/B1F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/17943666763989gU1D.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1794877372422CC8gl.svg",
         "brands": []
       },
       {
@@ -3204,7 +3204,7 @@
         "url": "floor-maps/lotte/0348/B1F.svg",
         "highlightUrl": "floor-maps/lotte/0348/B1F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/17945312212271Q4nI.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1794625085324B9yF0.svg",
         "brands": []
       }
     ],
@@ -3853,7 +3853,6 @@
           "슬로웨어",
           "시스템옴므",
           "알레그리",
-          "준지",
           "질스튜어트뉴욕",
           "캡틴선샤인",
           "클럽모나코",
