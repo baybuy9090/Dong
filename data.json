@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-11-17T06:22:30.937Z",
+  "lastUpdated": "2026-11-18T05:47:11.094Z",
   "comparisonAsOf": "2026-10-31",
   "monthKey": "2026-11",
   "monthStartSnapshot": "2026-10-31",
   "monthlySummary": {
     "new": 1,
-    "exit": 0,
-    "pending": 1,
+    "exit": 1,
+    "pending": 0,
     "stale": 0
   },
   "health": {
@@ -4836,7 +4836,7 @@
       "storeId": "현대-B00122000",
       "brand": "준지",
       "sales": "",
-      "note": "퇴점 재확인 중",
+      "note": "이번 달 퇴점",
       "changeMonth": "2026-11",
       "comparisonCheck": "2026-10-31 입점"
     }
