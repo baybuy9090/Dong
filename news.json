@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-20T03:54:15.917Z",
+  "lastUpdated": "2026-11-21T03:50:37.952Z",
   "windowDays": 14,
   "coverage": {
     "total": 37,
@@ -38,7 +38,7 @@
         "솔리드옴므",
         "솔리드옴므 패션 브랜드"
       ],
-      "candidates": 1,
+      "candidates": 0,
       "sources": {
         "google": true,
         "naver": true
@@ -103,7 +103,7 @@
         "스톤아일랜드",
         "스톤아일랜드 패션 브랜드"
       ],
-      "candidates": 0,
+      "candidates": 1,
       "sources": {
         "google": true,
         "naver": true
@@ -131,7 +131,7 @@
         "비이커",
         "비이커 패션 브랜드"
       ],
-      "candidates": 11,
+      "candidates": 12,
       "sources": {
         "google": true,
         "naver": true
@@ -206,7 +206,7 @@
         "바버",
         "바버 패션 브랜드"
       ],
-      "candidates": 19,
+      "candidates": 18,
       "sources": {
         "google": true,
         "naver": true
@@ -232,7 +232,7 @@
         "알레그리",
         "알레그리 패션 브랜드"
       ],
-      "candidates": 2,
+      "candidates": 3,
       "sources": {
         "google": true,
         "naver": true
@@ -245,7 +245,7 @@
         "질스튜어트뉴욕",
         "질스튜어트뉴욕 패션 브랜드"
       ],
-      "candidates": 13,
+      "candidates": 12,
       "sources": {
         "google": true,
         "naver": true
@@ -348,7 +348,7 @@
         "POTTERY 패션 브랜드",
         "포터리 의류 브랜드"
       ],
-      "candidates": 1,
+      "candidates": 2,
       "sources": {
         "google": true,
         "naver": true
@@ -483,6 +483,14 @@
   ],
   "industry": [
     {
+      "title": "말보다 절절한 몸의 언어…발레는 어떻게 이야기가 될까?[주말의 취향]",
+      "link": "https://www.khan.co.kr/article/202611211100011",
+      "source": "khan.co.kr",
+      "pubDate": "2026-11-21T02:00:00.000Z",
+      "sentiment": "neutral",
+      "events": []
+    },
+    {
       "title": "구찌부터 호카까지 33만개 상품 쏟아진다…알럭스, 명품 패션 '블프' 돌...",
       "link": "https://www.techm.kr/news/articleView.html?idxno=157600",
       "source": "techm.kr",
@@ -551,33 +559,12 @@
       "events": [
         "입점·유통"
       ]
-    },
-    {
-      "title": "대기업들이 투자한 K패션, 사업 확장에 속도",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE15UU0xY1lla043RXlKcDZVUzlHZE5GNlpYRUMtYmJYbTNUZUlGS2pvemJpdFgwY3BlQlI2ZS02VTloazVlY19yS3NOSWt5SlRHVmZ1T3JMeVZiTGhzcl9vVDlfZklfYWVlSjN3SEg3R3I?oc=5",
-      "source": "어패럴뉴스",
-      "pubDate": "2026-11-13T06:46:01.000Z",
-      "sentiment": "positive",
-      "events": [
-        "리뉴얼·확장"
-      ]
     }
   ],
   "data": {
     "타임옴므": [],
     "띠어리맨": [],
-    "솔리드옴므": [
-      {
-        "title": "김재원, 민소매 데님룩으로 탄탄한 피지컬…'최종면접' 대세 행보 잇는...",
-        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16270386",
-        "source": "topstarnews.net",
-        "pubDate": "2026-11-06T14:14:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "협업·신제품"
-        ]
-      }
-    ],
+    "솔리드옴므": [],
     "시스템옴므": [],
     "우영미": [
       {
@@ -592,6 +579,14 @@
       }
     ],
     "준지": [
+      {
+        "title": "새벽 3시까지 촬영하더니…혜리, 병원서 모자·마스크 쓰고 '링거'→고...",
+        "link": "https://www.tvreport.co.kr/entertainment/article/1092637/",
+        "source": "tvreport.co.kr",
+        "pubDate": "2026-11-21T03:31:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
       {
         "title": "‘스타일 워즈’ 이승훈, 시스루 앞에서 무너졌다…‘위너’가 ‘루저...",
         "link": "https://www.wikitree.co.kr/articles/1176229",
@@ -647,14 +642,6 @@
         "pubDate": "2026-11-18T00:14:00.000Z",
         "sentiment": "neutral",
         "events": []
-      },
-      {
-        "title": "혜리, 병원 침대서 찍은 사진 공개하며 \"아프지 말자~~~\" 무슨 일?",
-        "link": "https://www.insight.co.kr/news/582444",
-        "source": "insight.co.kr",
-        "pubDate": "2026-11-17T09:40:00.000Z",
-        "sentiment": "neutral",
-        "events": []
       }
     ],
     "송지오옴므": [
@@ -667,53 +654,65 @@
         "events": []
       }
     ],
-    "스톤아일랜드": [],
+    "스톤아일랜드": [
+      {
+        "title": "[현장]고어텍스 50년, 50인과 함께한 아웃도어와 일상",
+        "link": "http://www.ktnews.com/news/articleView.html?idxno=150278",
+        "source": "ktnews.com",
+        "pubDate": "2026-11-18T04:52:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "신규 매장·팝업",
+          "협업·신제품"
+        ]
+      }
+    ],
     "CP컴퍼니": [
       {
-        "title": "알럭스, 12월 1일까지 'R.LUX 패션 블랙 프라이데이'…2500개 브랜드 33만...",
-        "link": "https://www.nextdaily.co.kr/news/articleView.html?idxno=255144",
-        "source": "nextdaily.co.kr",
-        "pubDate": "2026-11-20T01:30:00.000Z",
+        "title": "수능 끝나자 220원 특가까지…구찌·셀린느부터 생굴까지 할인 경쟁",
+        "link": "https://www.segye.com/newsView/20261121502248?OutUrl=naver",
+        "source": "segye.com",
+        "pubDate": "2026-11-20T23:42:00.000Z",
         "sentiment": "neutral",
         "events": []
       },
       {
-        "title": "구찌부터 호카까지 33만개 상품 쏟아진다…알럭스, 명품 패션 '블프' 돌...",
-        "link": "https://www.techm.kr/news/articleView.html?idxno=157600",
-        "source": "techm.kr",
-        "pubDate": "2026-11-20T00:42:00.000Z",
+        "title": "알럭스, 블랙프라이데이 행사…구찌·셀린느 등 2500개 브랜드 참여",
+        "link": "https://zdnet.co.kr/view/?no=20261120183502",
+        "source": "zdnet.co.kr",
+        "pubDate": "2026-11-20T09:40:00.000Z",
         "sentiment": "neutral",
         "events": []
       },
       {
-        "title": "유통업계 '제8회 상전유통학술상' 시상식 개최·'R.LUX 패션 블랙 프라이...",
-        "link": "http://www.wsobi.com/news/articleView.html?idxno=322189",
-        "source": "wsobi.com",
-        "pubDate": "2026-11-20T00:32:00.000Z",
+        "title": "모자부터 신발까지 다 걸렸다…올겨울 '영포티룩'에 발끈 [이러쿵저러쿵...",
+        "link": "https://www.hankyung.com/article/202611200185v",
+        "source": "hankyung.com",
+        "pubDate": "2026-11-20T06:27:00.000Z",
         "sentiment": "neutral",
         "events": []
       },
       {
-        "title": "[똑똑한쇼핑] 이마트, 롯데온, 쿠팡 알럭스, 마리오아울렛, 신세계사이...",
-        "link": "https://www.ekn.kr/web/view.php?key=20261120027002337",
-        "source": "ekn.kr",
-        "pubDate": "2026-11-20T00:30:00.000Z",
+        "title": "알럭스, 패션 블랙 프라이데이 진행…33만개 상품 선보여",
+        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=229151",
+        "source": "apparelnews.co.kr",
+        "pubDate": "2026-11-20T04:42:00.000Z",
         "sentiment": "neutral",
         "events": []
       },
       {
-        "title": "[유통소식] 이마트, 참다랑어·굴·감귤 최대 50% 할인…겨울용품도 특...",
-        "link": "http://www.4th.kr/news/articleView.html?idxno=2122267",
-        "source": "4th.kr",
-        "pubDate": "2026-11-19T21:00:00.000Z",
-        "sentiment": "positive",
+        "title": "구찌·버버리도 ‘블프’… 쿠팡 알럭스, 33만개 명품 패션 할인전",
+        "link": "https://biz.chosun.com/distribution/channel/2026/11/20/VFSJBZF34JCHBPXZJQ3MA6AZFU/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+        "source": "biz.chosun.com",
+        "pubDate": "2026-11-20T04:26:00.000Z",
+        "sentiment": "neutral",
         "events": []
       },
       {
         "title": "로아 x C.P. 컴퍼니, 첫 협업 컬렉션 공개",
         "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1VVUo5QVQzZmU4bW1LQ2l6cmNZQW1MdXZsTFUzamRIQW82QWlnOHVpbUJhNGthdG8zcUJ0ZWhYTUg5X3Y1eUpHN0t2dnc5SVNNTkRYX3ZzYmZqdjZaM0pscjQ1VGhXcVp5RXRSWW10X2pCWUJjWEZwcw?oc=5",
         "source": "아이즈매거진 | eyesmag",
-        "pubDate": "2026-11-15T12:27:26.000Z",
+        "pubDate": "2026-11-15T18:32:27.000Z",
         "sentiment": "positive",
         "events": [
           "협업·신제품"
@@ -728,6 +727,16 @@
         "pubDate": "2026-11-20T02:34:00.000Z",
         "sentiment": "neutral",
         "events": []
+      },
+      {
+        "title": "피닉스, 비이커 청담에서 26FW 팝업스토어 오픈…스키웨어 기술을 도시의 스타일로",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9CVlhGRG9KczUyOFREdi1TX0RrUjJGT2ZYRXBEYjhjTkhTZElkZmladG5hSXlyRFpfOWh5OVJlZ203X2lyQjNIdkJiNm1scW5lMFBsZkRTQXV6QmU4RnBhUEpxcXpGU0JXcFE?oc=5",
+        "source": "더블유더블유디코리아",
+        "pubDate": "2026-11-17T08:00:00.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "신규 매장·팝업"
+        ]
       },
       {
         "title": "러닝 브랜드, 전개사 교체와 직진출 전환 잇달아",
@@ -776,14 +785,6 @@
         "pubDate": "2026-11-13T02:27:00.000Z",
         "sentiment": "positive",
         "events": []
-      },
-      {
-        "title": "[굿모닝! 13일 유통가 소식] 파리바게뜨·LG생활건강·코웨이·배민·BBQ...",
-        "link": "https://www.goodkyung.com/news/articleView.html?idxno=293426",
-        "source": "goodkyung.com",
-        "pubDate": "2026-11-13T02:04:00.000Z",
-        "sentiment": "neutral",
-        "events": []
       }
     ],
     "톰그레이하운드맨": [
@@ -811,6 +812,24 @@
     "이로맨": [],
     "지오송지오": [],
     "바버": [
+      {
+        "title": "폐업 딛고 다시 선 여성 바버…울산 블랙업맨즈, 텍스쳐컷으로 차별화",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1xaWRoWGlsNG85LTBDcHFZaUxZZ1lWUEl1ejRHWGg5NWNVT1FmQUdfZ19ocnN5MTk0SVNZNGxiZHJCVkFzM1ZEUVA3djNXbjlpSjgyRDhVblNaU1l6Tkk0dU50bkNUdjA4alFJUEdlMDRod9IBckFVX3lxTE1xaWRoWGlsNG85LTBDcHFZaUxZZ1lWUEl1ejRHWGg5NWNVT1FmQUdfZ19ocnN5MTk0SVNZNGxiZHJCVkFzM1ZEUVA3djNXbjlpSjgyRDhVblNaU1l6Tkk0dU50bkNUdjA4alFJUEdlMDRodw?oc=5",
+        "source": "뉴스아이이에스",
+        "pubDate": "2026-11-20T15:44:35.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "예약 30분 만에 매진…롯데백화점, 잠실에 19세기 영국 크리스마스 거리...",
+        "link": "https://www.wikileaks-kr.org/news/articleView.html?idxno=194981",
+        "source": "wikileaks-kr.org",
+        "pubDate": "2026-11-20T08:36:00.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "신규 매장·팝업"
+        ]
+      },
       {
         "title": "[현장] 잠실에 푼 130년 이야기...LF 바버 크리스마스 팝업 가보니",
         "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBqVnhHYWxFZV9OWk9KNE9JenJKTDBaaXlyMVZxeVdzMHFhVlkwbGNaazdiXzNDeVVfdjI3N0k1VktIcmFsSG9jcDJNajNrdXVCS045YmdjUnVycDNk?oc=5",
@@ -861,24 +880,6 @@
         ]
       },
       {
-        "title": "롯데백화점, 잠실에 '19세기 영국' 테마 크리스마스 마켓 개장",
-        "link": "http://www.yonhapnewstv.co.kr/news/AKR20261119163403psB",
-        "source": "yonhapnewstv.co.kr",
-        "pubDate": "2026-11-19T07:34:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "협업·신제품"
-        ]
-      },
-      {
-        "title": "[유통단신] CJ제일제당·한국수산회, 'K-씨푸드' 쿠킹 클래스 마무리 外...",
-        "link": "https://www.getnews.co.kr/news/articleView.html?idxno=887740",
-        "source": "getnews.co.kr",
-        "pubDate": "2026-11-19T05:50:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
         "title": "영국 마켓부터 뉴욕 거리까지...유통가, 크리스마스 콘텐츠 경쟁",
         "link": "http://www.opinionnews.co.kr/news/articleView.html?idxno=147264",
         "source": "opinionnews.co.kr",
@@ -896,6 +897,14 @@
         "link": "https://www.job-post.co.kr/news/articleView.html?idxno=238590",
         "source": "job-post.co.kr",
         "pubDate": "2026-11-16T05:28:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "소사, 마시밀리아노 알레그리는 미래가 없으며 스타일과 연속성도 보이지 않는다고 언급",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Rek9DbWxrZWdCRWtKaUlzWGNsX29DRTNfSjdfM3FVNEtMS0xkYjFIdXFPQ2oxbmdhbWExQ1Z0c3FpMWJVaFFKQzFtM2x4QXVZdmQ2NUd5UzF1YjQ?oc=5",
+        "source": "AllFootball",
+        "pubDate": "2026-11-09T04:14:28.000Z",
         "sentiment": "neutral",
         "events": []
       },
@@ -958,16 +967,6 @@
         ]
       },
       {
-        "title": "\"운동화 대신 로퍼\"…LF, 가을 로퍼 판매 호조",
-        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=229065",
-        "source": "apparelnews.co.kr",
-        "pubDate": "2026-11-17T06:38:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "실적·성장"
-        ]
-      },
-      {
         "title": "요즘 대세는 '편한 로퍼'… LF 질스튜어트뉴욕 로퍼 매출 8배 '껑충'",
         "link": "https://www.thepublic.kr/news/articleView.html?idxno=327062",
         "source": "thepublic.kr",
@@ -986,6 +985,14 @@
         "events": [
           "실적·성장"
         ]
+      },
+      {
+        "title": "[신상브리핑] 오뚜기, 파리바게뜨, 이니스프리, 닥터지, 청호나이스, 롯...",
+        "link": "https://daily.hankooki.com/news/articleView.html?idxno=1425830",
+        "source": "daily.hankooki.com",
+        "pubDate": "2026-11-17T04:30:00.000Z",
+        "sentiment": "negative",
+        "events": []
       }
     ],
     "아스페시": [],
@@ -1073,12 +1080,22 @@
     "지제로": [],
     "POTTERY": [
       {
-        "title": "신세계사이먼, 렉토·잉크·포터리 릴레이 할인전 진행",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1YLU9zRW9oNlprOW0xNmIxYU9jaGRUREFOMlBJZXdYZkloa25Uc2JpbzI2TzZHV1pzN09UbjI1OFEwcjRDTFhsWmVtQ2p3b3lGZE1WTUQ0dFBBeXIzZGl1c0MxUmQ?oc=5",
-        "source": "매일일보",
+        "title": "\"렉토·잉크·포터리 최대 90% 할인\"…신세계 프리미엄 아울렛 릴레이 세일",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE00b3V5Nm9lbXRSUG9HZ3B0c0xLQzZ6d3RsTXV4WnZJdDFGdzZDTGVjbmM5NXpIYWpWV2xnYzNXR01RZW1YZWZfaEFvSGF4WjlReVM1bkI5R0tyNUptZVVjRtIBeEFVX3lxTE1uX2lTbFN1ak92UDZtc1NIYkRQN1oybmZSVkpOeG5vaGI2Y1lPVl9sa09sMkxuX2JuZXNfRVZpSlQ4VmVHaXM3S2RMMTh2YzdpVE1xZjNOdjJTYVZ2eDJDUDBVaG1XczltSGNydFctVFJ3cFZYeEpTRg?oc=5",
+        "source": "뉴시스",
         "pubDate": "2026-11-11T08:00:00.000Z",
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "events": []
+      },
+      {
+        "title": "신세계사이먼, 렉토·잉크·포터리 할인 행사…K-패션 수요 공략",
+        "link": "https://weekly.hankooki.com/news/articleView.html?idxno=7193374",
+        "source": "weekly.hankooki.com",
+        "pubDate": "2026-11-11T06:24:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "입점·유통"
+        ]
       }
     ],
     "캡틴선샤인": [
@@ -1095,10 +1112,10 @@
     ],
     "PAF": [
       {
-        "title": "로버트 패틴슨이 입은 K-패션 브랜드는?... ‘포스트아카이브팩션’ 재...",
-        "link": "https://www.fashionbiz.co.kr/article/231234",
-        "source": "fashionbiz.co.kr",
-        "pubDate": "2026-11-20T01:52:00.000Z",
+        "title": "로버트 패틴슨이 입은 K-패션 브랜드는?... ‘포스트아카이브팩션’ 재킷 화제",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0zYVpuOHA3Yml0a0N1enhpeXVTXzQ5MHFrelprYWdiUmlCTDNkVE1oMGVOUFRZQXZGTUZnVkFkSW44c0UwakhIQ2pIb2pWTzJT?oc=5",
+        "source": "패션비즈",
+        "pubDate": "2026-11-20T02:01:15.000Z",
         "sentiment": "positive",
         "events": []
       }
