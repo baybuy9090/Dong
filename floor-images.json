@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-21T08:10:29.383Z",
+  "lastUpdated": "2026-11-22T07:55:04.726Z",
   "diagnostics": [
     {
       "storeId": "신세계-SC00002",
@@ -117,9 +117,9 @@
     {
       "storeId": "롯데-0399",
       "store": "동탄점",
-      "status": "stale",
-      "error": "1/13개 층 호출 실패",
-      "floors": 13
+      "status": "ok",
+      "floors": 13,
+      "format": "svg"
     },
     {
       "storeId": "롯데-0001",
@@ -1878,7 +1878,7 @@
         "url": "floor-maps/lotte/0399/07F.svg",
         "highlightUrl": "floor-maps/lotte/0399/07F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1795071752789SQe3v.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/17953237711921F3hL.svg",
         "brands": []
       },
       {
@@ -1942,7 +1942,7 @@
         "url": "floor-maps/lotte/0399/01F.svg",
         "highlightUrl": "floor-maps/lotte/0399/01F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/17950535325437dOu3.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1795242003270WymkO.svg",
         "brands": [
           "우영미"
         ]
@@ -1953,7 +1953,7 @@
         "url": "floor-maps/lotte/0399/B1F.svg",
         "highlightUrl": "floor-maps/lotte/0399/B1F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1791359814959c0Yrf.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1795331749274CDvav.svg",
         "brands": []
       },
       {
@@ -1971,7 +1971,7 @@
         "url": "floor-maps/lotte/0399/B3F.svg",
         "highlightUrl": "floor-maps/lotte/0399/B3F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1795071702661LZo5i.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1795323729937WDjhw.svg",
         "brands": []
       },
       {
@@ -2828,7 +2828,7 @@
         "url": "floor-maps/lotte/0344/01F.svg",
         "highlightUrl": "floor-maps/lotte/0344/01F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/1ec800a4-52ae-4a72-a0ce-935018f4c8a8/1795240327267rb0S5.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/1ec800a4-52ae-4a72-a0ce-935018f4c8a8/1795254613597ThB4P.svg",
         "brands": []
       },
       {
@@ -2950,7 +2950,7 @@
         "url": "floor-maps/lotte/0011/01F.svg",
         "highlightUrl": "floor-maps/lotte/0011/01F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/67d82918-3262-4917-8d97-76b17519e93f/1791363676315j53tL.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/67d82918-3262-4917-8d97-76b17519e93f/1795252931061b4zDH.svg",
         "brands": []
       },
       {
