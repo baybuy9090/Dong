@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-23T08:49:04.660Z",
+  "lastUpdated": "2026-11-24T10:47:46.542Z",
   "diagnostics": [
     {
       "storeId": "신세계-SC00002",
@@ -264,8 +264,7 @@
     {
       "storeId": "현대-B00143000",
       "store": "중동",
-      "status": "stale",
-      "error": "fetch failed",
+      "status": "ok",
       "floors": 32,
       "format": "svg"
     },
@@ -616,7 +615,7 @@
       {
         "floor": "B1F",
         "label": "B1 스위트파크｜푸드마켓｜푸드플라자 안내도",
-        "url": "https://www.shinsegae.com/cms12/SC00013/guide/floor/__icsFiles/afieldfile/2026/09/16/B1-20260916100131-20260916100133.png",
+        "url": "https://www.shinsegae.com/cms12/SC00013/guide/floor/__icsFiles/afieldfile/2026/11/24/B1-20261124100156-20261124100158.png",
         "brands": []
       },
       {
@@ -1334,7 +1333,7 @@
         "url": "floor-maps/lotte/0013/05F.svg",
         "highlightUrl": "floor-maps/lotte/0013/05F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e007fa2b-6558-4534-a147-6628496a6af6/1795421250616FZoLH.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e007fa2b-6558-4534-a147-6628496a6af6/1795482792234eKe3x.svg",
         "brands": [
           "띠어리맨",
           "시스템옴므",
@@ -1358,7 +1357,7 @@
         "url": "floor-maps/lotte/0013/03F.svg",
         "highlightUrl": "floor-maps/lotte/0013/03F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e007fa2b-6558-4534-a147-6628496a6af6/1794804062710FzVJT.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e007fa2b-6558-4534-a147-6628496a6af6/1795507066402NIvKz.svg",
         "brands": []
       },
       {
@@ -1376,7 +1375,7 @@
         "url": "floor-maps/lotte/0013/01F.svg",
         "highlightUrl": "floor-maps/lotte/0013/01F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e007fa2b-6558-4534-a147-6628496a6af6/1795064318226tGn9u.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e007fa2b-6558-4534-a147-6628496a6af6/17954290400833Ux8W.svg",
         "brands": []
       },
       {
@@ -1731,7 +1730,7 @@
         "url": "floor-maps/lotte/0022/01F.svg",
         "highlightUrl": "floor-maps/lotte/0022/01F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/be0f7419-39f7-47ac-860a-663357db0a80/1793952740826Qnxt1.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/be0f7419-39f7-47ac-860a-663357db0a80/1795416159549xzygF.svg",
         "brands": []
       },
       {
@@ -1934,7 +1933,7 @@
         "url": "floor-maps/lotte/0399/02F.svg",
         "highlightUrl": "floor-maps/lotte/0399/02F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/17950534631627BO0M.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1795505685262HYVk5.svg",
         "brands": []
       },
       {
@@ -1954,7 +1953,7 @@
         "url": "floor-maps/lotte/0399/B1F.svg",
         "highlightUrl": "floor-maps/lotte/0399/B1F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1795331749274CDvav.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/99f441a7-743f-4b0f-9fa9-27f6d7f273bc/1795428643469IAG99.svg",
         "brands": []
       },
       {
@@ -3196,7 +3195,7 @@
         "url": "floor-maps/lotte/0348/01F.svg",
         "highlightUrl": "floor-maps/lotte/0348/01F-managed.svg",
         "source": "lotte-dabeeo",
-        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1795136587166HEzc0.svg",
+        "sourceUrl": "https://editor4-public-assets-prod.s3.ap-northeast-2.amazonaws.com/mapData/e2048cd2-68f3-44fd-8310-0c30a43f6092/1795508455945V6VpW.svg",
         "brands": []
       },
       {
