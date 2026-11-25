@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-11-24T06:50:26.269Z",
+  "lastUpdated": "2026-11-25T05:17:08.979Z",
   "windowDays": 14,
   "coverage": {
     "total": 37,
-    "withNews": 16
+    "withNews": 15
   },
   "diagnostics": [
     {
@@ -131,7 +131,7 @@
         "비이커",
         "비이커 패션 브랜드"
       ],
-      "candidates": 13,
+      "candidates": 16,
       "sources": {
         "google": true,
         "naver": true
@@ -206,7 +206,7 @@
         "바버",
         "바버 패션 브랜드"
       ],
-      "candidates": 14,
+      "candidates": 13,
       "sources": {
         "google": true,
         "naver": true
@@ -232,7 +232,7 @@
         "알레그리",
         "알레그리 패션 브랜드"
       ],
-      "candidates": 3,
+      "candidates": 5,
       "sources": {
         "google": true,
         "naver": true
@@ -296,7 +296,7 @@
         "맨온더분",
         "맨온더분 패션 브랜드"
       ],
-      "candidates": 1,
+      "candidates": 0,
       "sources": {
         "google": true,
         "naver": true
@@ -399,7 +399,7 @@
         "이스트로그 패션",
         "프레이트 패션"
       ],
-      "candidates": 6,
+      "candidates": 7,
       "sources": {
         "google": true,
         "naver": true
@@ -483,6 +483,25 @@
   ],
   "industry": [
     {
+      "title": "세정그룹 ‘유러닝 페스타’로 상생 가치 실현···시각장애인 러너 지...",
+      "link": "https://sports.khan.co.kr/article/202611241836003?pt=nv",
+      "source": "sports.khan.co.kr",
+      "pubDate": "2026-11-24T09:38:00.000Z",
+      "sentiment": "neutral",
+      "events": []
+    },
+    {
+      "title": "상폐 위기에 적자 행진… 최혜원 형지I&C 대표 '사면초가'",
+      "link": "https://www.sisaweek.com/news/articleView.html?idxno=239171",
+      "source": "sisaweek.com",
+      "pubDate": "2026-11-24T09:04:00.000Z",
+      "sentiment": "negative",
+      "events": [
+        "협업·신제품",
+        "실적·성장"
+      ]
+    },
+    {
       "title": "누군가의 버팀목이어야 했던 여성들…《무너진 기둥에서도 살아가야 한...",
       "link": "http://www.ikoreanspirit.com/news/articleView.html?idxno=88405",
       "source": "ikoreanspirit.com",
@@ -533,28 +552,6 @@
       "pubDate": "2026-11-20T00:42:00.000Z",
       "sentiment": "neutral",
       "events": []
-    },
-    {
-      "title": "한섬 13년 줄적자에도 프랑스법인 투자 뚝심, '해외 전문가' 유태영 수입...",
-      "link": "https://www.businesspost.co.kr/BP?command=article_view&num=452294",
-      "source": "businesspost.co.kr",
-      "pubDate": "2026-11-18T07:18:00.000Z",
-      "sentiment": "neutral",
-      "events": [
-        "신규 매장·팝업",
-        "실적·성장"
-      ]
-    },
-    {
-      "title": "[기업家] 신세계그룹 ②ㅣ 사업 경쟁력 강화…해외 진출·ESG 등 속도",
-      "link": "https://www.cbci.co.kr/news/articleView.html?idxno=627805",
-      "source": "cbci.co.kr",
-      "pubDate": "2026-11-17T15:20:00.000Z",
-      "sentiment": "positive",
-      "events": [
-        "협업·신제품",
-        "실적·성장"
-      ]
     }
   ],
   "data": {
@@ -573,6 +570,40 @@
     "시스템옴므": [],
     "우영미": [],
     "준지": [
+      {
+        "title": "‘스타일 워즈’ 영상 밖으로 나왔다…26일 더현대 서울 60분 런웨이 열...",
+        "link": "https://www.wikitree.co.kr/articles/1177668",
+        "source": "wikitree.co.kr",
+        "pubDate": "2026-11-25T04:56:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "'스타일워즈' 3라운드 팀전 미션 갈등 고조",
+        "link": "https://www.bntnews.co.kr/article/view/bnt202611250141",
+        "source": "bntnews.co.kr",
+        "pubDate": "2026-11-25T00:04:00.000Z",
+        "sentiment": "positive",
+        "events": []
+      },
+      {
+        "title": "'제2의 MLB' 꿈꾸는 K패션…中 시장 재공략",
+        "link": "https://www.fnnews.com/news/202611241558202949",
+        "source": "fnnews.com",
+        "pubDate": "2026-11-24T23:46:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "삼성물산 패션, 3분기 실적 '호조'…브랜드별 성장전략 통했다",
+        "link": "http://www.ktnews.com/news/articleView.html?idxno=150422",
+        "source": "ktnews.com",
+        "pubDate": "2026-11-24T17:06:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "실적·성장"
+        ]
+      },
       {
         "title": "[한한령 새국면 ③] 中 다시 보는 K뷰티·패션…10년 새 달라진 시장 공...",
         "link": "https://www.ddaily.co.kr/page/view/2026112316171419801",
@@ -606,38 +637,6 @@
         "events": [
           "실적·성장"
         ]
-      },
-      {
-        "title": "“中에 팔던 시대 지났다”…기술·생산·유통까지 바꾸는 K-기업 [차이...",
-        "link": "https://www.etoday.co.kr/news/view/2651063",
-        "source": "etoday.co.kr",
-        "pubDate": "2026-11-22T20:00:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "'스타일 워즈' 디즈니+ 6위…위너 이승훈·정담 탈락, '블랙 프린스'는 ...",
-        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16282953",
-        "source": "topstarnews.net",
-        "pubDate": "2026-11-22T09:10:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "새벽 3시까지 촬영하더니…혜리, 병원서 모자·마스크 쓰고 '링거'→고...",
-        "link": "https://www.tvreport.co.kr/entertainment/article/1092637/",
-        "source": "tvreport.co.kr",
-        "pubDate": "2026-11-21T03:31:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "‘스타일 워즈’ 이승훈, 시스루 앞에서 무너졌다…‘위너’가 ‘루저...",
-        "link": "https://www.wikitree.co.kr/articles/1176229",
-        "source": "wikitree.co.kr",
-        "pubDate": "2026-11-20T01:28:00.000Z",
-        "sentiment": "neutral",
-        "events": []
       }
     ],
     "송지오옴므": [],
@@ -698,11 +697,11 @@
         "events": []
       },
       {
-        "title": "쿠팡 알럭스, 패션 블랙 프라이데이 개최…33만여 개 상품 선보여",
-        "link": "https://www.seoultimes.news/news/article.html?no=2000102453",
-        "source": "seoultimes.news",
+        "title": "알럭스, 럭셔리 패션 33만개 상품 할인 … '블랙 프라이데이' 개최",
+        "link": "http://www.worktoday.co.kr/news/articleView.html?idxno=92364",
+        "source": "worktoday.co.kr",
         "pubDate": "2026-11-20T00:52:00.000Z",
-        "sentiment": "neutral",
+        "sentiment": "negative",
         "events": []
       },
       {
@@ -718,70 +717,68 @@
     ],
     "비이커": [
       {
-        "title": "[월요기획] 패션 대기업, 3분기 매출 훈풍 속 수익성 개선 얼마나?",
-        "link": "https://www.fashionbiz.co.kr/article/231251",
-        "source": "fashionbiz.co.kr",
-        "pubDate": "2026-11-23T00:34:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "실적·성장"
-        ]
-      },
-      {
-        "title": "마가렛 호웰의 우아한 신념, 매니징 디렉터 캐롤라인 애트우드와의 인터...",
-        "link": "https://www.marieclairekorea.com/fashion/2026/11/margaret-howell-10/?utm_source=naver&utm_medium=partnership",
-        "source": "marieclairekorea.com",
-        "pubDate": "2026-11-20T02:34:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "피닉스, 비이커 청담에서 26FW 팝업스토어 오픈…스키웨어 기술을 도시의 스타일로",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9CVlhGRG9KczUyOFREdi1TX0RrUjJGT2ZYRXBEYjhjTkhTZElkZmladG5hSXlyRFpfOWh5OVJlZ203X2lyQjNIdkJiNm1scW5lMFBsZkRTQXV6QmU4RnBhUEpxcXpGU0JXcFE?oc=5",
-        "source": "더블유더블유디코리아",
-        "pubDate": "2026-11-17T08:00:00.000Z",
+        "title": "'비이커' 놀이도감, 주예린과 홀리데이 뮤직 캠페인 공개",
+        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=229233",
+        "source": "apparelnews.co.kr",
+        "pubDate": "2026-11-25T04:10:00.000Z",
         "sentiment": "neutral",
         "events": [
           "신규 매장·팝업"
         ]
       },
       {
-        "title": "러닝 브랜드, 전개사 교체와 직진출 전환 잇달아",
-        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=229027",
-        "source": "apparelnews.co.kr",
-        "pubDate": "2026-11-16T13:02:00.000Z",
+        "title": "삼성물산 비이커, 패션에 음악 접목…연말 문화 마케팅",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBVNUo0TW9LdUJ4cGk1WnBhZWs4ZENWT0FFeGJiblJvc0lXd0Z0QXdrWkdUSENOdTZWTmJEVTV4TDZoSFBRQmotdVRDQWJ4TXYwZWJodVlmelhtZy11VzhEM1lUZnV2U1dFY1E?oc=5",
+        "source": "한국면세뉴스",
+        "pubDate": "2026-11-25T03:07:23.000Z",
         "sentiment": "neutral",
         "events": []
       },
       {
-        "title": "'삼성라이온즈 우승' 삼성 계열사 감사 행사",
-        "link": "https://www.idaegu.co.kr/news/articleView.html?idxno=565402",
-        "source": "idaegu.co.kr",
-        "pubDate": "2026-11-15T12:24:00.000Z",
+        "title": "비이커, 음악으로 홀리데이 감성 입힌다",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE80bjduY2FqXy1GREp3bm5SZW1LZGJBQ2diZ3RUSXB2eEVfejlKZTZPVXRRMVFsd2hkZlFnbGlFS0t6anpSR2gteWJFSlZGRGJFakNfeHQ0U1U2bURGLUc3ZGNQT3UwTzBY?oc=5",
+        "source": "한국섬유신문",
+        "pubDate": "2026-11-25T02:18:41.000Z",
         "sentiment": "neutral",
         "events": []
       },
       {
-        "title": "12년 기다린 우승, 쇼핑 혜택으로…삼성發 '챔피언 특수'",
-        "link": "http://www.newsprime.co.kr/news/article.html?no=754986",
-        "source": "newsprime.co.kr",
-        "pubDate": "2026-11-15T07:46:00.000Z",
+        "title": "옷에 음악을 입히다… 비이커, 문화 플랫폼 입지 강화",
+        "link": "http://www.the-biz.co.kr/news/articleView.html?idxno=732069",
+        "source": "the-biz.co.kr",
+        "pubDate": "2026-11-25T01:14:00.000Z",
         "sentiment": "neutral",
         "events": []
       },
       {
-        "title": "삼성물산 패션, '삼성라이온즈 챔피언 페스타' ...빈폴·갤럭시·아미 등...",
-        "link": "http://www.econonews.co.kr/news/articleView.html?idxno=447184",
-        "source": "econonews.co.kr",
-        "pubDate": "2026-11-14T02:06:00.000Z",
+        "title": "[Weekly 패션] 무신사 블프 '1000억' 돌파·MLB키즈 등",
+        "link": "https://www.startuptoday.co.kr/news/articleView.html?idxno=820014",
+        "source": "startuptoday.co.kr",
+        "pubDate": "2026-11-25T00:50:00.000Z",
         "sentiment": "neutral",
         "events": []
       },
       {
-        "title": "\"가전제품부터 패션까지\" 삼성라이온즈, V9 우승 기념 줄줄이 기념 행사",
-        "link": "https://www.hidomin.com/news/articleView.html?idxno=729267",
-        "source": "hidomin.com",
-        "pubDate": "2026-11-13T07:26:00.000Z",
+        "title": "[오늘의 유통가] 우아한형제들, 배달로봇 ‘딜리’ 서비스 출시…아파트...",
+        "link": "https://dealsite.co.kr/articles/173459",
+        "source": "dealsite.co.kr",
+        "pubDate": "2026-11-25T00:32:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "비이커, 홀리데이 뮤직 캠페인 ‘Somewhere Warm’ 전개… 패션·음악 결합한 문화 플랫폼 강화",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ZQVo4bkpfOFNnZHIyWEk3UlgtbUo5Y0xYY2xkYkhJUXdYU2wwQVBSRldSTGxVeU52WnNQdFo5Z01ZRnJQQnBKTk1rMlh3VDlLYzJMYmZVNVp2VUtRVlFqbE9iaHlLaldwSDkwUTdGWQ?oc=5",
+        "source": "비즈니스리포트",
+        "pubDate": "2026-11-24T23:52:56.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "비이커, 놀이도감·주혜린 콘서트까지…\"문화 플랫폼 강화\"",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tanFCeFJpaGs5cG5pX3l1MDhFb3FhLThNS3pXYnd0NmpGZHljVlQ2dndqRGUyOTNsSkZlMlZ0S3NjV3Q2Z3ZnQWh4RXd1S2ZBWjZMVGVrZnI1VlJi?oc=5",
+        "source": "뉴스핌",
+        "pubDate": "2026-11-24T23:13:00.000Z",
         "sentiment": "neutral",
         "events": []
       }
@@ -821,6 +818,14 @@
     "이로맨": [],
     "지오송지오": [],
     "바버": [
+      {
+        "title": "LF, 3분기 영업이익 217% 급증…브랜드 경쟁력 재 확인",
+        "link": "http://www.ktnews.com/news/articleView.html?idxno=150423",
+        "source": "ktnews.com",
+        "pubDate": "2026-11-24T17:18:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
       {
         "title": "TP, 보온 충전재 브랜드 ‘신클라우드’ 리브랜딩 진행",
         "link": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202611240103&t=NN",
@@ -884,20 +889,26 @@
         "pubDate": "2026-11-19T08:16:00.000Z",
         "sentiment": "neutral",
         "events": []
-      },
-      {
-        "title": "영국 마켓부터 뉴욕 거리까지...유통가, 크리스마스 콘텐츠 경쟁",
-        "link": "http://www.opinionnews.co.kr/news/articleView.html?idxno=147264",
-        "source": "opinionnews.co.kr",
-        "pubDate": "2026-11-19T05:50:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "신규 매장·팝업"
-        ]
       }
     ],
     "산드로옴므": [],
     "알레그리": [
+      {
+        "title": "예린, 노란 은행잎 앞 화이트룩…'REACH YOU'로 이어가는 솔로 행보",
+        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16285023",
+        "source": "topstarnews.net",
+        "pubDate": "2026-11-24T09:12:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "사바티니: 콘테는 마시밀리아노 알레그리에게 무례했고 루치아노 스팔레티에게도 부적절했다",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE13WHVuSVJsTXkwTXlRLW01Q2xHNnotODE4bUp3ZnFoUDM1MnB6aUR5eGRpNlVNU0pEWGY5RzNuMnVMN0dmZ1JXcUo2TDBvdTJnMnRGekswMFUyaUdMSVg0?oc=5",
+        "source": "AllFootball",
+        "pubDate": "2026-11-23T14:03:28.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
       {
         "title": "알레그리: 크리스티안 풀리시치는 대체 불가능한 선수, 겨울 이적시장은 계획대로 진행될 것",
         "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE01TzVzTjN5ajZLZ2xMQ3FsRmc3ZGg5eHpjUzVLc1l0c2hMZFV6TnJDSC13VGk5dHNiWUtJN2NUSm0wUGt5a1Z5ZEsxTXNXcEI4Ni1nNTRDWl9GNjhMeWE0?oc=5",
@@ -1004,28 +1015,16 @@
     "아스페시": [],
     "DKNY맨": [
       {
-        "title": "DKNY 겨울 캠페인으로 돌아온 Iris Law와 Amelia Gray",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOXzJWa1IzWGIzRFFIcEk4UkowVF9ydmw4TV9zek5YTU5yZmJac0ZuTGhrZjljUk5MVjBMa3FFaEl3UEl1YzlFa1RMX0ZEbUpWXzY3TFJ6eGVYSllvVjhFWGN5RVU1QkJITk05cFQ5aUNNbjBJQ1hYVldSRUUxNGNrYmVKUFZpMkpwRWp2TW1MaVgzUmdHV1hXZ1ZDQm5NY2pJLUdJRVBRd0k?oc=5",
-        "source": "Hypebae",
-        "pubDate": "2026-11-11T13:22:08.000Z",
+        "title": "[Who Is ?] 하정수 세아상역 대표이사 부회장",
+        "link": "https://www.businesspost.co.kr/BP?command=article_view&num=452714",
+        "source": "businesspost.co.kr",
+        "pubDate": "2026-11-24T22:00:00.000Z",
         "sentiment": "neutral",
         "events": []
       }
     ],
     "클럽모나코": [],
-    "맨온더분": [
-      {
-        "title": "'럭셔리 패션·뷰티 날개' 신세계인터내셔날, 3분기 영업익 51억…흑자 ...",
-        "link": "https://www.widedaily.com/news/articleView.html?idxno=303311",
-        "source": "widedaily.com",
-        "pubDate": "2026-11-10T07:30:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "협업·신제품",
-          "실적·성장"
-        ]
-      }
-    ],
+    "맨온더분": [],
     "수트서플라이": [],
     "슬로웨어": [
       {
@@ -1107,6 +1106,17 @@
     ],
     "TEN-C": [],
     "이스트로그(프레이트)": [
+      {
+        "title": "코넥스솔루션, 편집숍 '센트럴포스트' 두 번째 직영점 오픈",
+        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=229221",
+        "source": "apparelnews.co.kr",
+        "pubDate": "2026-11-24T13:02:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "신규 매장·팝업",
+          "리뉴얼·확장"
+        ]
+      },
       {
         "title": "브룩스브라더스, 패션 플랫폼 매출 51% 증가…젊은층 공략 성과",
         "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065615792085947",
