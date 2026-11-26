@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-11-25T05:17:08.979Z",
+  "lastUpdated": "2026-11-26T04:44:57.878Z",
   "windowDays": 14,
   "coverage": {
     "total": 37,
-    "withNews": 15
+    "withNews": 14
   },
   "diagnostics": [
     {
@@ -77,7 +77,7 @@
         "JUUN.J 패션",
         "준지 패션"
       ],
-      "candidates": 22,
+      "candidates": 21,
       "sources": {
         "google": true,
         "naver": true
@@ -131,7 +131,7 @@
         "비이커",
         "비이커 패션 브랜드"
       ],
-      "candidates": 16,
+      "candidates": 20,
       "sources": {
         "google": true,
         "naver": true
@@ -206,7 +206,7 @@
         "바버",
         "바버 패션 브랜드"
       ],
-      "candidates": 13,
+      "candidates": 14,
       "sources": {
         "google": true,
         "naver": true
@@ -232,7 +232,7 @@
         "알레그리",
         "알레그리 패션 브랜드"
       ],
-      "candidates": 5,
+      "candidates": 6,
       "sources": {
         "google": true,
         "naver": true
@@ -245,7 +245,7 @@
         "질스튜어트뉴욕",
         "질스튜어트뉴욕 패션 브랜드"
       ],
-      "candidates": 14,
+      "candidates": 15,
       "sources": {
         "google": true,
         "naver": true
@@ -348,7 +348,7 @@
         "POTTERY 패션 브랜드",
         "포터리 의류 브랜드"
       ],
-      "candidates": 1,
+      "candidates": 0,
       "sources": {
         "google": true,
         "naver": true
@@ -463,7 +463,7 @@
       ],
       "candidates": 0,
       "sources": {
-        "google": true,
+        "google": false,
         "naver": true
       },
       "status": "ok"
@@ -475,13 +475,29 @@
       ],
       "candidates": 0,
       "sources": {
-        "google": true,
+        "google": false,
         "naver": true
       },
       "status": "ok"
     }
   ],
   "industry": [
+    {
+      "title": "\"오래 입는 클래식\" 트레몰로, 소재 디자인 강화한 겨울 코트로 남심 잡...",
+      "link": "https://www.sportschosun.com/life/2026-11-26/202611260100162500015006",
+      "source": "sportschosun.com",
+      "pubDate": "2026-11-26T00:57:00.000Z",
+      "sentiment": "neutral",
+      "events": []
+    },
+    {
+      "title": "부산의 수제화 기술로 만든 '칠링세러머니클럽', 국내외 공략",
+      "link": "http://www.apparelnews.co.kr/news/news_view/?idx=229236",
+      "source": "apparelnews.co.kr",
+      "pubDate": "2026-11-25T13:02:00.000Z",
+      "sentiment": "neutral",
+      "events": []
+    },
     {
       "title": "세정그룹 ‘유러닝 페스타’로 상생 가치 실현···시각장애인 러너 지...",
       "link": "https://sports.khan.co.kr/article/202611241836003?pt=nv",
@@ -506,14 +522,6 @@
       "link": "http://www.ikoreanspirit.com/news/articleView.html?idxno=88405",
       "source": "ikoreanspirit.com",
       "pubDate": "2026-11-23T04:36:00.000Z",
-      "sentiment": "neutral",
-      "events": []
-    },
-    {
-      "title": "I TALK ABOUT CONTEMPORARY, 그룹전 개최",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1BenBiZEpUTjJjWmZ0cHBmWFBLU1lyYTVKbzZRcnJ1UUhMTy1tZW1sODMxc0Y3MldoRVBzZTNBeDhCRWNCSkVGRktMQTNrOTdmVHc4NklmNHNhQ0VLM0RQMkRSZnloTHQ0cmotMWRNZWE?oc=5",
-      "source": "용인일보",
-      "pubDate": "2026-11-23T02:27:41.000Z",
       "sentiment": "neutral",
       "events": []
     },
@@ -544,14 +552,6 @@
       "pubDate": "2026-11-21T02:00:00.000Z",
       "sentiment": "neutral",
       "events": []
-    },
-    {
-      "title": "구찌부터 호카까지 33만개 상품 쏟아진다…알럭스, 명품 패션 '블프' 돌...",
-      "link": "https://www.techm.kr/news/articleView.html?idxno=157600",
-      "source": "techm.kr",
-      "pubDate": "2026-11-20T00:42:00.000Z",
-      "sentiment": "neutral",
-      "events": []
     }
   ],
   "data": {
@@ -570,6 +570,22 @@
     "시스템옴므": [],
     "우영미": [],
     "준지": [
+      {
+        "title": "디즈니+ '스타일 워즈', 팀전 미션서 고집 충돌…홍진경·최실장도 인정...",
+        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16286600",
+        "source": "topstarnews.net",
+        "pubDate": "2026-11-26T00:10:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "'스타일 워즈' 우승 후보 줄탈락 예고…패배하면 팀원 전원 탈락",
+        "link": "https://www.etoday.co.kr/news/view/2652885",
+        "source": "etoday.co.kr",
+        "pubDate": "2026-11-25T07:08:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
       {
         "title": "‘스타일 워즈’ 영상 밖으로 나왔다…26일 더현대 서울 60분 런웨이 열...",
         "link": "https://www.wikitree.co.kr/articles/1177668",
@@ -619,24 +635,6 @@
         "pubDate": "2026-11-23T23:34:00.000Z",
         "sentiment": "neutral",
         "events": []
-      },
-      {
-        "title": "알파드라이브원(ALD1) “원하는 미래를 상상하면 없던 힘도 나거든요”",
-        "link": "https://www.gqkorea.co.kr/2026/11/23/%ec%95%8c%ed%8c%8c%eb%93%9c%eb%9d%bc%ec%9d%b4%eb%b8%8c%ec%9b%90ald1-%ec%a2%8b%ec%9d%80-%ea%b2%b0%ea%b3%bc%ec%9d%b4%eb%93%a0-%ec%95%84%ec%89%ac%ec%9a%b4-%ea%b2%b0%ea%b3%bc%ec%9d%b4%eb%93%a0/?utm_source=naver&utm_medium=partnership",
-        "source": "gqkorea.co.kr",
-        "pubDate": "2026-11-23T09:00:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "[월요기획] 패션 대기업, 3분기 매출 훈풍 속 수익성 개선 얼마나?",
-        "link": "https://www.fashionbiz.co.kr/article/231251",
-        "source": "fashionbiz.co.kr",
-        "pubDate": "2026-11-23T00:34:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "실적·성장"
-        ]
       }
     ],
     "송지오옴므": [],
@@ -717,13 +715,59 @@
     ],
     "비이커": [
       {
-        "title": "'비이커' 놀이도감, 주예린과 홀리데이 뮤직 캠페인 공개",
-        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=229233",
-        "source": "apparelnews.co.kr",
-        "pubDate": "2026-11-25T04:10:00.000Z",
+        "title": "비이커, 놀이도감·주혜린과 홀리데이 뮤직 캠페인 공개",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE93ODEyOVhMTTUwUjVfa0NOdGRmMFBYbkpHbE1Wdi0zYWlJOEk2cnhoSzQyaXpkWjNjNlVGSGdSX1kyMHFNWEtMX0l6dXZRUm9mcVRCdFU1VnJZX2xWZU9RcG9FR2RkTW95WHlrYlJjckU?oc=5",
+        "source": "비즈트리뷴",
+        "pubDate": "2026-11-25T11:18:45.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "[똑똑한유통] 신세계라이브쇼핑, 삼성물산 패션 비이커, SK스토아, 스토...",
+        "link": "https://www.ekn.kr/web/view.php?key=20261125024364705",
+        "source": "ekn.kr",
+        "pubDate": "2026-11-25T08:48:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품"
+        ]
+      },
+      {
+        "title": "비이커, 패션 넘어 음악·공간으로 확장…문화 플랫폼 전략 강화",
+        "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065598260825858",
+        "source": "megaeconomy.co.kr",
+        "pubDate": "2026-11-25T07:36:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "리뉴얼·확장"
+        ]
+      },
+      {
+        "title": "삼성물산 패션 비이커, 실리카겔 김춘추·주혜린과 캠페인 전개",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0ydGhqbXdDUXJGejBXLUpKMl8xb19XU0dSMm9DN19wcmFwZkwyOE1MYVBldXlPc0k4V1BqeHlXUDhfNk16a0lSdGV0TEROWDNzT2RiV2VqWVNsaXJVX2VQRVJHQXpEY1lXdjEtdWxXZnQ?oc=5",
+        "source": "신아일보",
+        "pubDate": "2026-11-25T07:15:31.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "비이커, 매장을 연말 공연장으로···패션·음악 결합한 홀리데이 캠페...",
+        "link": "https://www.smartbizn.com/news/articleView.html?idxno=160580",
+        "source": "smartbizn.com",
+        "pubDate": "2026-11-25T06:02:00.000Z",
         "sentiment": "neutral",
         "events": [
           "신규 매장·팝업"
+        ]
+      },
+      {
+        "title": "[유통레이더] CJ온스타일, 롯데홈쇼핑, CJ올리브영, 골프존, 롯데월드 아...",
+        "link": "https://daily.hankooki.com/news/articleView.html?idxno=1428742",
+        "source": "daily.hankooki.com",
+        "pubDate": "2026-11-25T06:00:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품"
         ]
       },
       {
@@ -739,46 +783,6 @@
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE80bjduY2FqXy1GREp3bm5SZW1LZGJBQ2diZ3RUSXB2eEVfejlKZTZPVXRRMVFsd2hkZlFnbGlFS0t6anpSR2gteWJFSlZGRGJFakNfeHQ0U1U2bURGLUc3ZGNQT3UwTzBY?oc=5",
         "source": "한국섬유신문",
         "pubDate": "2026-11-25T02:18:41.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "옷에 음악을 입히다… 비이커, 문화 플랫폼 입지 강화",
-        "link": "http://www.the-biz.co.kr/news/articleView.html?idxno=732069",
-        "source": "the-biz.co.kr",
-        "pubDate": "2026-11-25T01:14:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "[Weekly 패션] 무신사 블프 '1000억' 돌파·MLB키즈 등",
-        "link": "https://www.startuptoday.co.kr/news/articleView.html?idxno=820014",
-        "source": "startuptoday.co.kr",
-        "pubDate": "2026-11-25T00:50:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "[오늘의 유통가] 우아한형제들, 배달로봇 ‘딜리’ 서비스 출시…아파트...",
-        "link": "https://dealsite.co.kr/articles/173459",
-        "source": "dealsite.co.kr",
-        "pubDate": "2026-11-25T00:32:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "비이커, 홀리데이 뮤직 캠페인 ‘Somewhere Warm’ 전개… 패션·음악 결합한 문화 플랫폼 강화",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ZQVo4bkpfOFNnZHIyWEk3UlgtbUo5Y0xYY2xkYkhJUXdYU2wwQVBSRldSTGxVeU52WnNQdFo5Z01ZRnJQQnBKTk1rMlh3VDlLYzJMYmZVNVp2VUtRVlFqbE9iaHlLaldwSDkwUTdGWQ?oc=5",
-        "source": "비즈니스리포트",
-        "pubDate": "2026-11-24T23:52:56.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "비이커, 놀이도감·주혜린 콘서트까지…\"문화 플랫폼 강화\"",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tanFCeFJpaGs5cG5pX3l1MDhFb3FhLThNS3pXYnd0NmpGZHljVlQ2dndqRGUyOTNsSkZlMlZ0S3NjV3Q2Z3ZnQWh4RXd1S2ZBWjZMVGVrZnI1VlJi?oc=5",
-        "source": "뉴스핌",
-        "pubDate": "2026-11-24T23:13:00.000Z",
         "sentiment": "neutral",
         "events": []
       }
@@ -818,6 +822,24 @@
     "이로맨": [],
     "지오송지오": [],
     "바버": [
+      {
+        "title": "\"쇼핑하러 오지 않아도 된다\"...롯데백화점, 공간으로 여는 리테일의 다...",
+        "link": "https://www.techm.kr/news/articleView.html?idxno=157833",
+        "source": "techm.kr",
+        "pubDate": "2026-11-26T03:58:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품"
+        ]
+      },
+      {
+        "title": "K패션·뷰티부터 명품까지…‘홀리데이 특수’ 경험 마케팅 총력",
+        "link": "https://www.edaily.co.kr/News/Read?newsId=02974966645649328&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+        "source": "edaily.co.kr",
+        "pubDate": "2026-11-25T05:28:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
       {
         "title": "LF, 3분기 영업이익 217% 급증…브랜드 경쟁력 재 확인",
         "link": "http://www.ktnews.com/news/articleView.html?idxno=150423",
@@ -873,26 +895,18 @@
         "events": [
           "신규 매장·팝업"
         ]
-      },
-      {
-        "title": "LF 바버, 롯데타운서 홀리데이 세계관 펼친다",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9Md29zQ1JsM0VOeFE1aXpMMDNkeUhJTXV6bkd1emliYVNzZ1YxYXNUSnZ0WG8zTjVsRmRjbE9ubEVLeXZORWVLck5iWWVHZDJ5Mzc5S0FkdldfdXJmTXJaNXh5YldYaUhwQ3ZhTw?oc=5",
-        "source": "ER 이코노믹리뷰",
-        "pubDate": "2026-11-19T09:13:47.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "[똑똑한패션] 지그재그, LF 바버, 코오롱FnC 헬리녹스, 신성통상 올젠, ...",
-        "link": "https://www.ekn.kr/web/view.php?key=20261119025582125",
-        "source": "ekn.kr",
-        "pubDate": "2026-11-19T08:16:00.000Z",
-        "sentiment": "neutral",
-        "events": []
       }
     ],
     "산드로옴므": [],
     "알레그리": [
+      {
+        "title": "알레그리, 최근 챔피언스리그 12경기 중 9패",
+        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9sSUpoOFZYMkZNMjYzUmEya0VwNm92MWNZYlhhSm1vdXllTFRVTjA2TE44dWphSkZOOHZtS3BUSlZLVzlOeGRGeXp0VUdTTjBQZUwyVGN1RQ?oc=5",
+        "source": "懂球帝",
+        "pubDate": "2026-11-25T03:47:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
       {
         "title": "예린, 노란 은행잎 앞 화이트룩…'REACH YOU'로 이어가는 솔로 행보",
         "link": "https://www.topstarnews.net/news/articleView.html?idxno=16285023",
@@ -919,7 +933,7 @@
       },
       {
         "title": "이탈리아 언론: 더브라위너 국가대표 경기 140분 이상 출전, 마시밀리아노 알레그리 특별 휴식 이틀 추가 허용",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB4bzhaSk8yUmNjb0ttVFE3dmQ5bDk2ZXFESE1PQU9EWi1wTWI3TmZvbVY4alZBMWJ0amxSd1Utbk5tdXVpdnZDSzNVOFVZR1FGRmRnV3p3RzFzVF9NNC1GREttTWI?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4zRVJKRERVcjRyekZOOERkZzFCWGVsV1NkZ2VJLTU0YmNtdUF4Sl9EZUF0X1Y5R1FFZmdROWJISGtfamptUHhpNUVveGhMb2NVcTgwY2FmZWpFMkt2LWswMDFZLVE?oc=5",
         "source": "AllFootball",
         "pubDate": "2026-11-18T00:06:12.000Z",
         "sentiment": "neutral",
@@ -935,6 +949,14 @@
       }
     ],
     "질스튜어트뉴욕": [
+      {
+        "title": "'퍼는 짧아지고 깃은 높아지고'…겨울 아우터가 달라진다",
+        "link": "https://www.asiatime.co.kr/article/20261125500352",
+        "source": "asiatime.co.kr",
+        "pubDate": "2026-11-25T06:54:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
       {
         "title": "LF 헤지스, 캐나다 '카나타'와 손잡았다… 헤리티지 입은 클래식 패션 강...",
         "link": "https://www.s-journal.co.kr/news/articleView.html?idxno=45547",
@@ -1000,16 +1022,6 @@
         "events": [
           "실적·성장"
         ]
-      },
-      {
-        "title": "LF, 로퍼 중심 클래식 슈즈 강화…소프트 클래식 수요 공략",
-        "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065597344896167",
-        "source": "megaeconomy.co.kr",
-        "pubDate": "2026-11-17T07:18:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "실적·성장"
-        ]
       }
     ],
     "아스페시": [],
@@ -1061,16 +1073,7 @@
       }
     ],
     "지제로": [],
-    "POTTERY": [
-      {
-        "title": "신세계사이먼, 렉토·잉크·포터리 릴레이 할인전 진행",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1YLU9zRW9oNlprOW0xNmIxYU9jaGRUREFOMlBJZXdYZkloa25Uc2JpbzI2TzZHV1pzN09UbjI1OFEwcjRDTFhsWmVtQ2p3b3lGZE1WTUQ0dFBBeXIzZGl1c0MxUmQ?oc=5",
-        "source": "매일일보",
-        "pubDate": "2026-11-11T08:00:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      }
-    ],
+    "POTTERY": [],
     "캡틴선샤인": [
       {
         "title": "패션·홈쇼핑업계, 3분기 실적 '선방'…브랜드 경쟁력·수익성 확보 '치...",
