@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-11-26T04:44:57.878Z",
+  "lastUpdated": "2026-11-27T04:51:50.433Z",
   "windowDays": 14,
   "coverage": {
     "total": 37,
-    "withNews": 14
+    "withNews": 13
   },
   "diagnostics": [
     {
@@ -77,7 +77,7 @@
         "JUUN.J 패션",
         "준지 패션"
       ],
-      "candidates": 21,
+      "candidates": 22,
       "sources": {
         "google": true,
         "naver": true
@@ -131,7 +131,7 @@
         "비이커",
         "비이커 패션 브랜드"
       ],
-      "candidates": 20,
+      "candidates": 16,
       "sources": {
         "google": true,
         "naver": true
@@ -206,7 +206,7 @@
         "바버",
         "바버 패션 브랜드"
       ],
-      "candidates": 14,
+      "candidates": 15,
       "sources": {
         "google": true,
         "naver": true
@@ -232,7 +232,7 @@
         "알레그리",
         "알레그리 패션 브랜드"
       ],
-      "candidates": 6,
+      "candidates": 5,
       "sources": {
         "google": true,
         "naver": true
@@ -245,7 +245,7 @@
         "질스튜어트뉴욕",
         "질스튜어트뉴욕 패션 브랜드"
       ],
-      "candidates": 15,
+      "candidates": 14,
       "sources": {
         "google": true,
         "naver": true
@@ -322,7 +322,7 @@
         "슬로웨어",
         "슬로웨어 패션 브랜드"
       ],
-      "candidates": 4,
+      "candidates": 2,
       "sources": {
         "google": true,
         "naver": true
@@ -361,7 +361,7 @@
         "캡틴선샤인",
         "캡틴선샤인 패션 브랜드"
       ],
-      "candidates": 1,
+      "candidates": 0,
       "sources": {
         "google": true,
         "naver": true
@@ -399,7 +399,7 @@
         "이스트로그 패션",
         "프레이트 패션"
       ],
-      "candidates": 7,
+      "candidates": 8,
       "sources": {
         "google": true,
         "naver": true
@@ -463,7 +463,7 @@
       ],
       "candidates": 0,
       "sources": {
-        "google": false,
+        "google": true,
         "naver": true
       },
       "status": "ok"
@@ -475,7 +475,7 @@
       ],
       "candidates": 0,
       "sources": {
-        "google": false,
+        "google": true,
         "naver": true
       },
       "status": "ok"
@@ -571,10 +571,21 @@
     "우영미": [],
     "준지": [
       {
-        "title": "디즈니+ '스타일 워즈', 팀전 미션서 고집 충돌…홍진경·최실장도 인정...",
-        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16286600",
-        "source": "topstarnews.net",
-        "pubDate": "2026-11-26T00:10:00.000Z",
+        "title": "[현장] 무신사 스탠다드 서울숲, 상권 활성화 이끌 새 랜드마크",
+        "link": "http://www.ktnews.com/news/articleView.html?idxno=150485",
+        "source": "ktnews.com",
+        "pubDate": "2026-11-26T13:50:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품",
+          "실적·성장"
+        ]
+      },
+      {
+        "title": "‘스타일 워즈’ 첫 팀전서 고집 충돌 터졌다…씬 스틸러 “필요 없다”...",
+        "link": "https://www.wikitree.co.kr/articles/1178136",
+        "source": "wikitree.co.kr",
+        "pubDate": "2026-11-26T11:12:00.000Z",
         "sentiment": "neutral",
         "events": []
       },
@@ -625,14 +636,6 @@
         "link": "https://www.ddaily.co.kr/page/view/2026112316171419801",
         "source": "ddaily.co.kr",
         "pubDate": "2026-11-24T03:00:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "무신사, 중국 상하이서 공식 인증 받았다…마뗑킴·마르디도 대륙 공략...",
-        "link": "https://www.segye.com/newsView/20261124503048?OutUrl=naver",
-        "source": "segye.com",
-        "pubDate": "2026-11-23T23:34:00.000Z",
         "sentiment": "neutral",
         "events": []
       }
@@ -695,11 +698,11 @@
         "events": []
       },
       {
-        "title": "알럭스, 럭셔리 패션 33만개 상품 할인 … '블랙 프라이데이' 개최",
-        "link": "http://www.worktoday.co.kr/news/articleView.html?idxno=92364",
-        "source": "worktoday.co.kr",
+        "title": "쿠팡 알럭스, 패션 블랙 프라이데이 개최…33만여 개 상품 선보여",
+        "link": "https://www.seoultimes.news/news/article.html?no=2000102453",
+        "source": "seoultimes.news",
         "pubDate": "2026-11-20T00:52:00.000Z",
-        "sentiment": "negative",
+        "sentiment": "neutral",
         "events": []
       },
       {
@@ -714,6 +717,28 @@
       }
     ],
     "비이커": [
+      {
+        "title": "준태킴, 디퓨전 라인·협업으로 소비자 저변 넓힌다",
+        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=229275",
+        "source": "apparelnews.co.kr",
+        "pubDate": "2026-11-26T13:04:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품",
+          "실적·성장"
+        ]
+      },
+      {
+        "title": "삼성물산 패션부문, 맞춤형 아우터로 추위 잡고 '비이커' 음악으로 연말...",
+        "link": "https://www.s-journal.co.kr/news/articleView.html?idxno=45676",
+        "source": "s-journal.co.kr",
+        "pubDate": "2026-11-26T05:10:00.000Z",
+        "sentiment": "neutral",
+        "events": [
+          "신규 매장·팝업",
+          "협업·신제품"
+        ]
+      },
       {
         "title": "비이커, 놀이도감·주혜린과 홀리데이 뮤직 캠페인 공개",
         "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE93ODEyOVhMTTUwUjVfa0NOdGRmMFBYbkpHbE1Wdi0zYWlJOEk2cnhoSzQyaXpkWjNjNlVGSGdSX1kyMHFNWEtMX0l6dXZRUm9mcVRCdFU1VnJZX2xWZU9RcG9FR2RkTW95WHlrYlJjckU?oc=5",
@@ -769,22 +794,6 @@
         "events": [
           "협업·신제품"
         ]
-      },
-      {
-        "title": "삼성물산 비이커, 패션에 음악 접목…연말 문화 마케팅",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBVNUo0TW9LdUJ4cGk1WnBhZWs4ZENWT0FFeGJiblJvc0lXd0Z0QXdrWkdUSENOdTZWTmJEVTV4TDZoSFBRQmotdVRDQWJ4TXYwZWJodVlmelhtZy11VzhEM1lUZnV2U1dFY1E?oc=5",
-        "source": "한국면세뉴스",
-        "pubDate": "2026-11-25T03:07:23.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "비이커, 음악으로 홀리데이 감성 입힌다",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE80bjduY2FqXy1GREp3bm5SZW1LZGJBQ2diZ3RUSXB2eEVfejlKZTZPVXRRMVFsd2hkZlFnbGlFS0t6anpSR2gteWJFSlZGRGJFakNfeHQ0U1U2bURGLUc3ZGNQT3UwTzBY?oc=5",
-        "source": "한국섬유신문",
-        "pubDate": "2026-11-25T02:18:41.000Z",
-        "sentiment": "neutral",
-        "events": []
       }
     ],
     "톰그레이하운드맨": [
@@ -822,6 +831,16 @@
     "이로맨": [],
     "지오송지오": [],
     "바버": [
+      {
+        "title": "매장이 곧 콘텐츠…연말 나들이 목적지로",
+        "link": "http://www.smedaily.co.kr/news/articleView.html?idxno=366706",
+        "source": "smedaily.co.kr",
+        "pubDate": "2026-11-27T01:52:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품"
+        ]
+      },
       {
         "title": "\"쇼핑하러 오지 않아도 된다\"...롯데백화점, 공간으로 여는 리테일의 다...",
         "link": "https://www.techm.kr/news/articleView.html?idxno=157833",
@@ -861,16 +880,6 @@
         "link": "https://www.segye.com/newsView/20261123514308?OutUrl=naver",
         "source": "segye.com",
         "pubDate": "2026-11-23T07:38:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "협업·신제품"
-        ]
-      },
-      {
-        "title": "크리스마스 앞두고 벨리곰·헬로키티·미키마우스 총출동…유통가 캐릭...",
-        "link": "https://www.segye.com/newsView/20261123502199?OutUrl=naver",
-        "source": "segye.com",
-        "pubDate": "2026-11-22T23:11:00.000Z",
         "sentiment": "positive",
         "events": [
           "협업·신제품"
@@ -928,14 +937,6 @@
         "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE01TzVzTjN5ajZLZ2xMQ3FsRmc3ZGg5eHpjUzVLc1l0c2hMZFV6TnJDSC13VGk5dHNiWUtJN2NUSm0wUGt5a1Z5ZEsxTXNXcEI4Ni1nNTRDWl9GNjhMeWE0?oc=5",
         "source": "AllFootball",
         "pubDate": "2026-11-21T22:05:49.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "이탈리아 언론: 더브라위너 국가대표 경기 140분 이상 출전, 마시밀리아노 알레그리 특별 휴식 이틀 추가 허용",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4zRVJKRERVcjRyekZOOERkZzFCWGVsV1NkZ2VJLTU0YmNtdUF4Sl9EZUF0X1Y5R1FFZmdROWJISGtfamptUHhpNUVveGhMb2NVcTgwY2FmZWpFMkt2LWswMDFZLVE?oc=5",
-        "source": "AllFootball",
-        "pubDate": "2026-11-18T00:06:12.000Z",
         "sentiment": "neutral",
         "events": []
       },
@@ -1054,38 +1055,11 @@
         "pubDate": "2026-11-13T06:14:00.000Z",
         "sentiment": "neutral",
         "events": []
-      },
-      {
-        "title": "12년 만 삼성라이온즈 우승에 패션 할인도 '홈런'",
-        "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2492201",
-        "source": "enewstoday.co.kr",
-        "pubDate": "2026-11-13T02:35:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "[굿모닝! 13일 유통가 소식] 파리바게뜨·LG생활건강·코웨이·배민·BBQ...",
-        "link": "https://www.goodkyung.com/news/articleView.html?idxno=293426",
-        "source": "goodkyung.com",
-        "pubDate": "2026-11-13T02:04:00.000Z",
-        "sentiment": "neutral",
-        "events": []
       }
     ],
     "지제로": [],
     "POTTERY": [],
-    "캡틴선샤인": [
-      {
-        "title": "패션·홈쇼핑업계, 3분기 실적 '선방'…브랜드 경쟁력·수익성 확보 '치...",
-        "link": "http://www.srtimes.kr/news/articleView.html?idxno=217439",
-        "source": "srtimes.kr",
-        "pubDate": "2026-11-12T06:38:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "실적·성장"
-        ]
-      }
-    ],
+    "캡틴선샤인": [],
     "PAF": [
       {
         "title": "포스트 아카이브 팩션(PAF), 26 FW 컬렉션 드롭과 함께 서울 한남 플래그십 스토어 오픈",
@@ -1121,10 +1095,10 @@
         ]
       },
       {
-        "title": "브룩스브라더스, 패션 플랫폼 매출 51% 증가…젊은층 공략 성과",
-        "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065615792085947",
-        "source": "megaeconomy.co.kr",
-        "pubDate": "2026-11-16T12:26:00.000Z",
+        "title": "美브룩스브라더스, 무신사∙29CM 등 매출 51%↑...MZ 공략",
+        "link": "https://www.slist.kr/news/articleView.html?idxno=782242",
+        "source": "slist.kr",
+        "pubDate": "2026-11-16T08:54:00.000Z",
         "sentiment": "positive",
         "events": [
           "협업·신제품",
@@ -1139,6 +1113,17 @@
         "sentiment": "positive",
         "events": [
           "협업·신제품"
+        ]
+      },
+      {
+        "title": "\"200년 클래식의 변신\"…브룩스브라더스, 패션 플랫폼 매출 51% 증가",
+        "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=213682",
+        "source": "thefirstmedia.net",
+        "pubDate": "2026-11-16T05:48:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "협업·신제품",
+          "실적·성장"
         ]
       },
       {
