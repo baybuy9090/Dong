@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-11-27T04:51:50.433Z",
+  "lastUpdated": "2026-11-28T04:36:30.588Z",
   "windowDays": 14,
   "coverage": {
     "total": 37,
-    "withNews": 13
+    "withNews": 12
   },
   "diagnostics": [
     {
@@ -103,7 +103,7 @@
         "스톤아일랜드",
         "스톤아일랜드 패션 브랜드"
       ],
-      "candidates": 2,
+      "candidates": 1,
       "sources": {
         "google": true,
         "naver": true
@@ -118,7 +118,7 @@
         "C.P. COMPANY 패션",
         "CP COMPANY 패션"
       ],
-      "candidates": 6,
+      "candidates": 5,
       "sources": {
         "google": true,
         "naver": true
@@ -131,7 +131,7 @@
         "비이커",
         "비이커 패션 브랜드"
       ],
-      "candidates": 16,
+      "candidates": 15,
       "sources": {
         "google": true,
         "naver": true
@@ -206,7 +206,7 @@
         "바버",
         "바버 패션 브랜드"
       ],
-      "candidates": 15,
+      "candidates": 14,
       "sources": {
         "google": true,
         "naver": true
@@ -322,7 +322,7 @@
         "슬로웨어",
         "슬로웨어 패션 브랜드"
       ],
-      "candidates": 2,
+      "candidates": 0,
       "sources": {
         "google": true,
         "naver": true
@@ -374,7 +374,7 @@
         "PAF 패션 브랜드",
         "포스트아카이브팩션"
       ],
-      "candidates": 2,
+      "candidates": 3,
       "sources": {
         "google": true,
         "naver": true
@@ -483,6 +483,16 @@
   ],
   "industry": [
     {
+      "title": "2026 한국디자이너패션어워즈, 임동준 최우수디자이너상",
+      "link": "https://www.nocutnews.co.kr/news/6613869?utm_source=naver&utm_medium=article&utm_campaign=20261127164339",
+      "source": "nocutnews.co.kr",
+      "pubDate": "2026-11-27T07:44:00.000Z",
+      "sentiment": "positive",
+      "events": [
+        "입점·유통"
+      ]
+    },
+    {
       "title": "\"오래 입는 클래식\" 트레몰로, 소재 디자인 강화한 겨울 코트로 남심 잡...",
       "link": "https://www.sportschosun.com/life/2026-11-26/202611260100162500015006",
       "source": "sportschosun.com",
@@ -544,14 +554,6 @@
       "events": [
         "협업·신제품"
       ]
-    },
-    {
-      "title": "말보다 절절한 몸의 언어…발레는 어떻게 이야기가 될까?[주말의 취향]",
-      "link": "https://www.khan.co.kr/article/202611211100011",
-      "source": "khan.co.kr",
-      "pubDate": "2026-11-21T02:00:00.000Z",
-      "sentiment": "neutral",
-      "events": []
     }
   ],
   "data": {
@@ -570,6 +572,24 @@
     "시스템옴므": [],
     "우영미": [],
     "준지": [
+      {
+        "title": "한중관계 개선 기대 속 K패션…중국 사업 재도약 채비",
+        "link": "https://www.sentv.co.kr/article/view/sentv202611270192",
+        "source": "sentv.co.kr",
+        "pubDate": "2026-11-27T23:02:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "신규 매장·팝업"
+        ]
+      },
+      {
+        "title": "디즈니+ 예능 '스타일 워즈', 더현대 서울서 '런웨이 : 더 멜팅 팟' 패션...",
+        "link": "https://www.topstarnews.net/news/articleView.html?idxno=16288008",
+        "source": "topstarnews.net",
+        "pubDate": "2026-11-27T08:22:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
       {
         "title": "[현장] 무신사 스탠다드 서울숲, 상권 활성화 이끌 새 랜드마크",
         "link": "http://www.ktnews.com/news/articleView.html?idxno=150485",
@@ -598,14 +618,6 @@
         "events": []
       },
       {
-        "title": "‘스타일 워즈’ 영상 밖으로 나왔다…26일 더현대 서울 60분 런웨이 열...",
-        "link": "https://www.wikitree.co.kr/articles/1177668",
-        "source": "wikitree.co.kr",
-        "pubDate": "2026-11-25T04:56:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
         "title": "'스타일워즈' 3라운드 팀전 미션 갈등 고조",
         "link": "https://www.bntnews.co.kr/article/view/bnt202611250141",
         "source": "bntnews.co.kr",
@@ -630,37 +642,18 @@
         "events": [
           "실적·성장"
         ]
-      },
-      {
-        "title": "[한한령 새국면 ③] 中 다시 보는 K뷰티·패션…10년 새 달라진 시장 공...",
-        "link": "https://www.ddaily.co.kr/page/view/2026112316171419801",
-        "source": "ddaily.co.kr",
-        "pubDate": "2026-11-24T03:00:00.000Z",
-        "sentiment": "neutral",
-        "events": []
       }
     ],
     "송지오옴므": [],
     "스톤아일랜드": [
       {
-        "title": "픽사 애니메이터·발망 디자이너 합류…서울시무용단 '안무가 랩'",
-        "link": "https://www.newsis.com/view/NISX20261118_0003873881",
-        "source": "newsis.com",
-        "pubDate": "2026-11-18T08:46:00.000Z",
-        "sentiment": "neutral",
-        "events": [
-          "협업·신제품"
-        ]
-      },
-      {
-        "title": "[현장]고어텍스 50년, 50인과 함께한 아웃도어와 일상",
-        "link": "http://www.ktnews.com/news/articleView.html?idxno=150278",
-        "source": "ktnews.com",
-        "pubDate": "2026-11-18T04:52:00.000Z",
+        "title": "[패션 공간의 경제학①] 스톤아일랜드, 밀라노 매장 600㎡로 확장…점포 수보다 입지·공간에 투자",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9iRFg0QjRvWEZYeDh3bjZOemxSeDZMbU9UMmJfX0RobVllZE5WcWFTZkdMUlptdWNTQi1UMFNJRlIyMVRyRnYzaG9iTXZTUGg0Vk1oVXJMdzQ5aHNxaDBDYXBPVEl2Q01sTzk5S3B4NA?oc=5",
+        "source": "케이트렌디뉴스",
+        "pubDate": "2026-11-27T21:10:16.000Z",
         "sentiment": "positive",
         "events": [
-          "신규 매장·팝업",
-          "협업·신제품"
+          "리뉴얼·확장"
         ]
       }
     ],
@@ -690,30 +683,20 @@
         "events": []
       },
       {
+        "title": "알럭스, 패션 블랙 프라이데이 진행…33만개 상품 선보여",
+        "link": "http://www.apparelnews.co.kr/news/news_view/?idx=229151",
+        "source": "apparelnews.co.kr",
+        "pubDate": "2026-11-20T04:42:00.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
         "title": "구찌·버버리도 ‘블프’… 쿠팡 알럭스, 33만개 명품 패션 할인전",
         "link": "https://biz.chosun.com/distribution/channel/2026/11/20/VFSJBZF34JCHBPXZJQ3MA6AZFU/?utm_source=naver&utm_medium=original&utm_campaign=biz",
         "source": "biz.chosun.com",
         "pubDate": "2026-11-20T04:26:00.000Z",
         "sentiment": "neutral",
         "events": []
-      },
-      {
-        "title": "쿠팡 알럭스, 패션 블랙 프라이데이 개최…33만여 개 상품 선보여",
-        "link": "https://www.seoultimes.news/news/article.html?no=2000102453",
-        "source": "seoultimes.news",
-        "pubDate": "2026-11-20T00:52:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "로아 x C.P. 컴퍼니, 첫 협업 컬렉션 공개",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1VVUo5QVQzZmU4bW1LQ2l6cmNZQW1MdXZsTFUzamRIQW82QWlnOHVpbUJhNGthdG8zcUJ0ZWhYTUg5X3Y1eUpHN0t2dnc5SVNNTkRYX3ZzYmZqdjZaM0pscjQ1VGhXcVp5RXRSWW10X2pCWUJjWEZwcw?oc=5",
-        "source": "아이즈매거진 | eyesmag",
-        "pubDate": "2026-11-13T08:00:00.000Z",
-        "sentiment": "positive",
-        "events": [
-          "협업·신제품"
-        ]
       }
     ],
     "비이커": [
@@ -852,37 +835,13 @@
         ]
       },
       {
-        "title": "K패션·뷰티부터 명품까지…‘홀리데이 특수’ 경험 마케팅 총력",
-        "link": "https://www.edaily.co.kr/News/Read?newsId=02974966645649328&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-        "source": "edaily.co.kr",
-        "pubDate": "2026-11-25T05:28:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
         "title": "LF, 3분기 영업이익 217% 급증…브랜드 경쟁력 재 확인",
         "link": "http://www.ktnews.com/news/articleView.html?idxno=150423",
         "source": "ktnews.com",
         "pubDate": "2026-11-24T17:18:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "TP, 보온 충전재 브랜드 ‘신클라우드’ 리브랜딩 진행",
-        "link": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202611240103&t=NN",
-        "source": "wowtv.co.kr",
-        "pubDate": "2026-11-24T05:57:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "연말 대목 맞은 백화점 업계…고객 유치 사활",
-        "link": "https://www.segye.com/newsView/20261123514308?OutUrl=naver",
-        "source": "segye.com",
-        "pubDate": "2026-11-23T07:38:00.000Z",
         "sentiment": "positive",
         "events": [
-          "협업·신제품"
+          "실적·성장"
         ]
       },
       {
@@ -896,14 +855,41 @@
         ]
       },
       {
-        "title": "LF 바버, 잠실 크리스마스 팝업 오픈",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOLTNGd1I1ZU1QQ295SEluS05UWjNPMVFQSzJ3bGdSMk1BUkpmWXhkMV9iWHhRR0FTdGIzbGk0Tlp2S19OWWdpMFRlcW5rdnBOSUI2Zlg2N1MtdlRjVDlObUR4X1kxTWVlVi1IUkZCMXIwUUlZV2RXek5FQmppWkEyVGJFdDYwUQ?oc=5",
-        "source": "데일리바이트(DAILY BYTE)",
-        "pubDate": "2026-11-20T01:42:08.000Z",
+        "title": "[현장] 잠실에 푼 130년 이야기...LF 바버 크리스마스 팝업 가보니",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBqVnhHYWxFZV9OWk9KNE9JenJKTDBaaXlyMVZxeVdzMHFhVlkwbGNaazdiXzNDeVVfdjI3N0k1VktIcmFsSG9jcDJNajNrdXVCS045YmdjUnVycDNk?oc=5",
+        "source": "뉴스핌",
+        "pubDate": "2026-11-20T01:42:00.000Z",
         "sentiment": "neutral",
         "events": [
           "신규 매장·팝업"
         ]
+      },
+      {
+        "title": "LF 바버, 롯데타운서 홀리데이 세계관 펼친다",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9Md29zQ1JsM0VOeFE1aXpMMDNkeUhJTXV6bkd1emliYVNzZ1YxYXNUSnZ0WG8zTjVsRmRjbE9ubEVLeXZORWVLck5iWWVHZDJ5Mzc5S0FkdldfdXJmTXJaNXh5YldYaUhwQ3ZhTw?oc=5",
+        "source": "ER 이코노믹리뷰",
+        "pubDate": "2026-11-19T09:13:47.000Z",
+        "sentiment": "neutral",
+        "events": []
+      },
+      {
+        "title": "바버, 잠실에 영국식 크리스마스 마켓…월레스와 그로밋 협업 팝업",
+        "link": "https://www.joongangenews.com/news/articleView.html?idxno=565183",
+        "source": "joongangenews.com",
+        "pubDate": "2026-11-19T08:30:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "신규 매장·팝업",
+          "협업·신제품"
+        ]
+      },
+      {
+        "title": "[똑똑한패션] 지그재그, LF 바버, 코오롱FnC 헬리녹스, 신성통상 올젠, ...",
+        "link": "https://www.ekn.kr/web/view.php?key=20261119025582125",
+        "source": "ekn.kr",
+        "pubDate": "2026-11-19T08:16:00.000Z",
+        "sentiment": "neutral",
+        "events": []
       }
     ],
     "산드로옴므": [],
@@ -1039,28 +1025,21 @@
     "클럽모나코": [],
     "맨온더분": [],
     "수트서플라이": [],
-    "슬로웨어": [
-      {
-        "title": "삼성물산 패션, '삼성라이온즈 챔피언 페스타' ...빈폴·갤럭시·아미 등...",
-        "link": "http://www.econonews.co.kr/news/articleView.html?idxno=447184",
-        "source": "econonews.co.kr",
-        "pubDate": "2026-11-14T02:06:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      },
-      {
-        "title": "삼성물산 패션, 12년 기다린 우승턱 쏜다",
-        "link": "http://www.4th.kr/news/articleView.html?idxno=2121822",
-        "source": "4th.kr",
-        "pubDate": "2026-11-13T06:14:00.000Z",
-        "sentiment": "neutral",
-        "events": []
-      }
-    ],
+    "슬로웨어": [],
     "지제로": [],
     "POTTERY": [],
     "캡틴선샤인": [],
     "PAF": [
+      {
+        "title": "2026 한국디자이너패션어워즈, 임동준 최우수디자이너상",
+        "link": "https://www.nocutnews.co.kr/news/6613869?utm_source=naver&utm_medium=article&utm_campaign=20261127164339",
+        "source": "nocutnews.co.kr",
+        "pubDate": "2026-11-27T07:44:00.000Z",
+        "sentiment": "positive",
+        "events": [
+          "입점·유통"
+        ]
+      },
       {
         "title": "포스트 아카이브 팩션(PAF), 26 FW 컬렉션 드롭과 함께 서울 한남 플래그십 스토어 오픈",
         "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOemJRai1PVU9Jb3hveGJoSkxBcUNXcE1fazNVSk4yLWlUVjRJblA1SXRwUmVpVWdoS0o4Sm14Qld4Z25tQzN5ZlFfWWs3Q1piRDh0eTdjZEtrVkpCdXRkVFBjUGZnMzdFM3dWWDd3M0pRVDNIQjRUNHNtRFA4bV9QYkNyeE9ON1Q0dVBzak5LMUV5YnJ2am5LSTctYk9zRGRYRmZHNTlMNHhoV3M?oc=5",
