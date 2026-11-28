@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-11-27T06:33:54.491Z",
+  "lastUpdated": "2026-11-28T06:08:08.647Z",
   "comparisonAsOf": "2026-10-31",
   "monthKey": "2026-11",
   "monthStartSnapshot": "2026-10-31",
   "monthlySummary": {
     "new": 1,
     "exit": 1,
-    "pending": 0,
+    "pending": 1,
     "stale": 0
   },
   "health": {
@@ -19,7 +19,7 @@
       "company": "롯데",
       "store": "강남점",
       "status": "ok",
-      "brands": 5,
+      "brands": 6,
       "successfulPages": 10,
       "failedPages": 0,
       "expectedPages": 10
@@ -481,6 +481,16 @@
       "sales": "",
       "note": "확인",
       "comparisonCheck": "2026-10-31 입점"
+    },
+    {
+      "company": "롯데",
+      "store": "강남점",
+      "storeId": "롯데-0013",
+      "brand": "지오송지오",
+      "sales": "",
+      "note": "신규 입점 재확인 중",
+      "changeMonth": "2026-11",
+      "comparisonCheck": "2026-10-31 미입점"
     },
     {
       "company": "롯데",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T06:36:46.658Z",
+  "generatedAt": "2026-11-28T06:10:56.358Z",
   "months": [
     {
       "month": "2026-08",
@@ -204,8 +204,14 @@
     {
       "month": "2026-11",
       "baselineSnapshot": "2026-10-31",
-      "endSnapshot": "2026-11-27",
+      "endSnapshot": "2026-11-28",
       "new": [
+        {
+          "company": "롯데",
+          "store": "강남점",
+          "storeId": "롯데-0013",
+          "brand": "지오송지오"
+        },
         {
           "company": "신세계",
           "store": "대구",
